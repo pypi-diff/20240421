@@ -861,3 +861,24 @@
 [2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infuzu-python-sdk-0.9.tar.gz]
 [2024-04-21 01:36:31] INFO root fetch - main [MainThread]: End processing [infuzu-python-sdk]: success
 [2024-04-21 01:36:31] INFO root fetch - main [MainThread]: Store serial: [22860240]
+[2024-04-21 01:38:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860240]
+[2024-04-21 01:38:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 01:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ploteries
+[2024-04-21 01:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: michi
+[2024-04-21 01:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yt-dlp
+[2024-04-21 01:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC281
+[2024-04-21 01:38:40] WARNING root fetch - processPackages [PythonTestLJC281]: Skipping, unable to determine old version
+[2024-04-21 01:38:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC281] error
+[2024-04-21 01:38:40] WARNING root fetch - processPackages [michi]: Skipping, unable to determine old version
+[2024-04-21 01:38:40] WARNING root fetch - processPackages [ploteries]: Skipping, unable to determine old version
+[2024-04-21 01:38:40] INFO root fetch - main [MainThread]: End processing [michi] error
+[2024-04-21 01:38:40] INFO root fetch - main [MainThread]: End processing [ploteries] error
+[2024-04-21 01:38:40] INFO root fetch - processPackages [yt-dlp]: New version: [2024.4.9.232723.dev0] Old Version: [2024.4.9]
+[2024-04-21 01:38:40] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/52/85/af44c30f0cc5d94ebbce365f8ee40eea6e9d7a1d26d50f16e3766ca8410c/yt_dlp-2024.4.9.tar.gz
+[2024-04-21 01:38:41] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/3d/26/45a9189ceae8b6fa894afcbb6e4dfa15bfa476b1c4750920529f8dce5039/yt_dlp-2024.4.9.232723.dev0.tar.gz
+[2024-04-21 01:38:41] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-04-21 01:38:41] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.4.9.tar.gz tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz --markdown 20240421/y/yt-dlp/2024.4.9-2024.4.9.232723.dev0/README.md --exclude *.pyd
+[2024-04-21 01:38:46] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.tar.gz]
+[2024-04-21 01:38:46] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz]
+[2024-04-21 01:38:46] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-04-21 01:38:46] INFO root fetch - main [MainThread]: Store serial: [22860259]
