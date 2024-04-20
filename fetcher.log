@@ -339,3 +339,27 @@
 [2024-04-21 00:35:56] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
 [2024-04-21 00:35:56] INFO root fetch - main [MainThread]: End processing [autowsgr] error
 [2024-04-21 00:35:56] INFO root fetch - main [MainThread]: Store serial: [22859969]
+[2024-04-21 00:37:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859969]
+[2024-04-21 00:38:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphlit-client
+[2024-04-21 00:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC259
+[2024-04-21 00:38:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: matrix-alertbot
+[2024-04-21 00:38:04] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420006] Old Version: [1.0.20240420005]
+[2024-04-21 00:38:05] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/3c/e6/d9055dd2d52e6e3eee9e862abc4712df169610b077ef9747ac8a2d37fe20/graphlit_client-1.0.20240420005.tar.gz
+[2024-04-21 00:38:05] INFO root fetch - processPackages [matrix-alertbot]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-21 00:38:05] WARNING root fetch - processPackages [PythonTestLJC259]: Skipping, unable to determine old version
+[2024-04-21 00:38:05] INFO root fetch - main [MainThread]: End processing [PythonTestLJC259] error
+[2024-04-21 00:38:05] INFO root fetch - processPackages [matrix-alertbot]: Downloading https://files.pythonhosted.org/packages/2d/60/6b17ce43a3eb10f2a414922b143bc5a96ec34095c3d822380e3e3e22b134/matrix_alertbot-0.2.1.tar.gz
+[2024-04-21 00:38:05] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/d5/f1/77ae5405c1f4a00190cb341951887332ed07df705dc558e24752f1bcf2de/graphlit_client-1.0.20240420006.tar.gz
+[2024-04-21 00:38:05] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 00:38:05] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420005.tar.gz tmp/graphlit_client-1.0.20240420006.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420005-1.0.20240420006/README.md --exclude *.pyd
+[2024-04-21 00:38:05] INFO root fetch - processPackages [matrix-alertbot]: Downloading https://files.pythonhosted.org/packages/58/1f/2771e5891b99cbe1b702a2240b1199e3fa3584d23ca57e5eff28e92b8e0d/matrix_alertbot-0.2.2.tar.gz
+[2024-04-21 00:38:05] INFO root fetch - processPackages [matrix-alertbot]: executing diffoscope
+[2024-04-21 00:38:05] INFO root fetch - processPackages [matrix-alertbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix_alertbot-0.2.1.tar.gz tmp/matrix_alertbot-0.2.2.tar.gz --markdown 20240421/m/matrix-alertbot/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-21 00:38:06] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420005.tar.gz]
+[2024-04-21 00:38:06] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420006.tar.gz]
+[2024-04-21 00:38:06] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 00:38:06] INFO root fetch - processPackages [matrix-alertbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_alertbot-0.2.1.tar.gz]
+[2024-04-21 00:38:06] INFO root fetch - processPackages [matrix-alertbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_alertbot-0.2.2.tar.gz]
+[2024-04-21 00:38:06] INFO root fetch - main [MainThread]: End processing [matrix-alertbot]: success
+[2024-04-21 00:38:06] INFO root fetch - main [MainThread]: Store serial: [22859980]
