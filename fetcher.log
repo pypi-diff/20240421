@@ -645,3 +645,21 @@
 [2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a9.tar.gz]
 [2024-04-21 01:08:33] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
 [2024-04-21 01:08:33] INFO root fetch - main [MainThread]: Store serial: [22860124]
+[2024-04-21 01:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860124]
+[2024-04-21 01:10:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 01:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-bus-client
+[2024-04-21 01:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: temmies
+[2024-04-21 01:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC271
+[2024-04-21 01:10:42] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.9a9] Old Version: [0.0.9a8]
+[2024-04-21 01:10:42] WARNING root fetch - processPackages [temmies]: Skipping, unable to determine old version
+[2024-04-21 01:10:42] INFO root fetch - main [MainThread]: End processing [temmies] error
+[2024-04-21 01:10:42] WARNING root fetch - processPackages [PythonTestLJC271]: Skipping, unable to determine old version
+[2024-04-21 01:10:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC271] error
+[2024-04-21 01:10:42] INFO root fetch - processPackages [ovos-bus-client]: Downloading https://files.pythonhosted.org/packages/48/67/a3f7fa596d43ebf50ef4417ed98aeb2f4710f242de2f500bb079e132f7f8/ovos-bus-client-0.0.9a8.tar.gz
+[2024-04-21 01:10:42] INFO root fetch - processPackages [ovos-bus-client]: Downloading https://files.pythonhosted.org/packages/6c/1d/335214bf8b8e351022da81df48337c36be2b9689c9c776c9e42dcf44ff7d/ovos-bus-client-0.0.9a9.tar.gz
+[2024-04-21 01:10:42] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2024-04-21 01:10:42] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-bus-client-0.0.9a8.tar.gz tmp/ovos-bus-client-0.0.9a9.tar.gz --markdown 20240421/o/ovos-bus-client/0.0.9a8-0.0.9a9/README.md --exclude *.pyd
+[2024-04-21 01:10:43] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a8.tar.gz]
+[2024-04-21 01:10:43] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a9.tar.gz]
+[2024-04-21 01:10:43] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
+[2024-04-21 01:10:43] INFO root fetch - main [MainThread]: Store serial: [22860137]
