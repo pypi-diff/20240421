@@ -58,3 +58,21 @@
 [2024-04-21 00:05:30] INFO root fetch - processPackages [pub-worm]: Remove: archive file [/home/abi/fetcher/tmp/pub_worm-0.2.6.tar.gz]
 [2024-04-21 00:05:30] INFO root fetch - main [MainThread]: End processing [pub-worm]: success
 [2024-04-21 00:05:30] INFO root fetch - main [MainThread]: Store serial: [22859818]
+[2024-04-21 00:07:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859818]
+[2024-04-21 00:07:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapitool
+[2024-04-21 00:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper2vec
+[2024-04-21 00:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-sovits-python
+[2024-04-21 00:07:38] INFO root fetch - processPackages [paper2vec]: New version: [0.3] Old Version: [0.2]
+[2024-04-21 00:07:38] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/55/b4/b4e5fdb910649e4d2cc8d8196f733faf991fe08568c2ae540932fdee53c0/paper2vec-0.2.tar.gz
+[2024-04-21 00:07:38] WARNING root fetch - processPackages [fastapitool]: Skipping, unable to determine old version
+[2024-04-21 00:07:38] INFO root fetch - main [MainThread]: End processing [fastapitool] error
+[2024-04-21 00:07:38] WARNING root fetch - processPackages [gpt-sovits-python]: Skipping, unable to determine old version
+[2024-04-21 00:07:38] INFO root fetch - main [MainThread]: End processing [gpt-sovits-python] error
+[2024-04-21 00:07:38] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/75/d4/db83472b63049d94df4dda51b9a6ab809e2bb23c44dc55db67f7168d3048/paper2vec-0.3.tar.gz
+[2024-04-21 00:07:39] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-21 00:07:39] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-0.2.tar.gz tmp/paper2vec-0.3.tar.gz --markdown 20240421/p/paper2vec/0.2-0.3/README.md --exclude *.pyd
+[2024-04-21 00:07:39] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.2.tar.gz]
+[2024-04-21 00:07:39] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.3.tar.gz]
+[2024-04-21 00:07:39] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-21 00:07:39] INFO root fetch - main [MainThread]: Store serial: [22859831]
