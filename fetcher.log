@@ -558,3 +558,24 @@
 [2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.0.tar.gz]
 [2024-04-21 01:02:01] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
 [2024-04-21 01:02:01] INFO root fetch - main [MainThread]: Store serial: [22860079]
+[2024-04-21 01:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860079]
+[2024-04-21 01:04:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ubo-app
+[2024-04-21 01:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orso
+[2024-04-21 01:04:10] INFO root fetch - processPackages [orso]: New version: [0.0.99] Old Version: [0.0.97]
+[2024-04-21 01:04:10] INFO root fetch - processPackages [ubo-app]: New version: [0.9.9] Old Version: [0.9.8a4]
+[2024-04-21 01:04:10] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/7f/44/c9b678951273a9e9d68f6792efdb0a6d7c20d4d59015b193b974dd2cc5f3/orso-0.0.97.tar.gz
+[2024-04-21 01:04:10] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/95/e9/c4e16198ab3bdf6b007857bc40357fe1bb068e7391f5fe793ca7f6e9819d/ubo_app-0.9.8a4.tar.gz
+[2024-04-21 01:04:10] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/03/62/532b5a6178cc484d36c6b124c65d4de27ba7fd3af10850166b93c9a661cd/orso-0.0.99.tar.gz
+[2024-04-21 01:04:10] INFO root fetch - processPackages [orso]: executing diffoscope
+[2024-04-21 01:04:10] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.97.tar.gz tmp/orso-0.0.99.tar.gz --markdown 20240421/o/orso/0.0.97-0.0.99/README.md --exclude *.pyd
+[2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/13/b7/3d42c344f38a9c5bf598c3ea5d71758fc78c30b3d3bf5b039ef153cf16b2/ubo_app-0.9.9.tar.gz
+[2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: executing diffoscope
+[2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_app-0.9.8a4.tar.gz tmp/ubo_app-0.9.9.tar.gz --markdown 20240421/u/ubo-app/0.9.8a4-0.9.9/README.md --exclude *.pyd
+[2024-04-21 01:04:11] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.97.tar.gz]
+[2024-04-21 01:04:11] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.99.tar.gz]
+[2024-04-21 01:04:11] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.8a4.tar.gz]
+[2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
+[2024-04-21 01:04:11] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
+[2024-04-21 01:04:11] INFO root fetch - main [MainThread]: Store serial: [22860091]
