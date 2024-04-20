@@ -411,3 +411,39 @@
 [2024-04-21 00:46:52] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.72.tar.gz]
 [2024-04-21 00:46:52] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
 [2024-04-21 00:46:52] INFO root fetch - main [MainThread]: Store serial: [22860005]
+[2024-04-21 00:48:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860005]
+[2024-04-21 00:49:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 00:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copyparty
+[2024-04-21 00:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: homeharvest
+[2024-04-21 00:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC263
+[2024-04-21 00:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-easily-auth
+[2024-04-21 00:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prtools
+[2024-04-21 00:49:00] WARNING root fetch - processPackages [PythonTestLJC263]: Skipping, unable to determine old version
+[2024-04-21 00:49:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC263] error
+[2024-04-21 00:49:00] WARNING root fetch - processPackages [drf-easily-auth]: Skipping, unable to determine old version
+[2024-04-21 00:49:00] INFO root fetch - main [MainThread]: End processing [drf-easily-auth] error
+[2024-04-21 00:49:00] INFO root fetch - processPackages [prtools]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-21 00:49:00] INFO root fetch - processPackages [homeharvest]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 00:49:00] INFO root fetch - processPackages [copyparty]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-21 00:49:01] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/ee/35/82f17de156d1492ba0d7f70a81ed3e1f7ab03e7c2ff18bdee5221afa91e5/homeharvest-0.3.8.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [prtools]: Downloading https://files.pythonhosted.org/packages/3e/51/415bf8495842e591548c1b8a177d42e31aa021471cb51dc29f76a2b6a9ec/prtools-1.1.1.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/aa/91/e640302f729af122c993bc72216142859cf0d38009436473c9de51f2918f/copyparty-1.9.8.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [homeharvest]: Downloading https://files.pythonhosted.org/packages/14/3a/bcc101a19e2e5e446203d0d2bd533ee0645cf7ab9697bb8e9dc45c839790/homeharvest-0.3.9.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [prtools]: Downloading https://files.pythonhosted.org/packages/c3/65/33b81df2e4042c7790fd0b4b5a3de9342469e88deefafdb36998a61d254f/prtools-1.2.0.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [homeharvest]: executing diffoscope
+[2024-04-21 00:49:01] INFO root fetch - processPackages [homeharvest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeharvest-0.3.8.tar.gz tmp/homeharvest-0.3.9.tar.gz --markdown 20240421/h/homeharvest/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 00:49:01] INFO root fetch - processPackages [prtools]: executing diffoscope
+[2024-04-21 00:49:01] INFO root fetch - processPackages [prtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prtools-1.1.1.tar.gz tmp/prtools-1.2.0.tar.gz --markdown 20240421/p/prtools/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-21 00:49:01] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/fb/5b/a1bc07b4a139d33dbbb0b5355223c94f0621cab166e1b656113ab7ccb921/copyparty-1.9.9.tar.gz
+[2024-04-21 00:49:01] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2024-04-21 00:49:01] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.9.8.tar.gz tmp/copyparty-1.9.9.tar.gz --markdown 20240421/c/copyparty/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-21 00:49:02] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.8.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.9.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - main [MainThread]: End processing [homeharvest]: success
+[2024-04-21 00:49:02] INFO root fetch - processPackages [prtools]: Remove: archive file [/home/abi/fetcher/tmp/prtools-1.1.1.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - processPackages [prtools]: Remove: archive file [/home/abi/fetcher/tmp/prtools-1.2.0.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - main [MainThread]: End processing [prtools]: success
+[2024-04-21 00:49:02] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.8.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.9.tar.gz]
+[2024-04-21 00:49:02] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2024-04-21 00:49:02] INFO root fetch - main [MainThread]: Store serial: [22860024]
