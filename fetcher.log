@@ -713,3 +713,24 @@
 [2024-04-21 01:19:18] INFO root fetch - processPackages [ovos-workshop]: Remove: archive file [/home/abi/fetcher/tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip]
 [2024-04-21 01:19:18] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
 [2024-04-21 01:19:18] INFO root fetch - main [MainThread]: Store serial: [22860164]
+[2024-04-21 01:21:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860164]
+[2024-04-21 01:21:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharkfin
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharktank
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-stt-plugin-fasterwhisper
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC275
+[2024-04-21 01:21:27] WARNING root fetch - processPackages [sharktank]: Skipping, unable to determine old version
+[2024-04-21 01:21:27] INFO root fetch - main [MainThread]: End processing [sharktank] error
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2024-04-21 01:21:27] WARNING root fetch - processPackages [sharkfin]: Skipping, unable to determine old version
+[2024-04-21 01:21:27] INFO root fetch - main [MainThread]: End processing [sharkfin] error
+[2024-04-21 01:21:27] WARNING root fetch - processPackages [PythonTestLJC275]: Skipping, unable to determine old version
+[2024-04-21 01:21:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC275] error
+[2024-04-21 01:21:27] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/40/8b/de177edeb6259b8dceeb74a43a3db2c382339062520b16eb17134f6d5497/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz
+[2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/3c/5a/dc802212d6610fa05f0dc9b12d3a02be582e32d4434e144ffeea34fabca8/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz
+[2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: executing diffoscope
+[2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz tmp/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz --markdown 20240421/o/ovos-stt-plugin-fasterwhisper/0.0.1a8-0.0.1a9/README.md --exclude *.pyd
+[2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Remove: archive file [/home/abi/fetcher/tmp/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz]
+[2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Remove: archive file [/home/abi/fetcher/tmp/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz]
+[2024-04-21 01:21:28] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-fasterwhisper]: success
+[2024-04-21 01:21:28] INFO root fetch - main [MainThread]: Store serial: [22860180]
