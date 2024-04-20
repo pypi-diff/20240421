@@ -281,3 +281,15 @@
 [2024-04-21 00:27:10] INFO root fetch - processPackages [async-firebase-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/async_firebase_rest_api-2.0.1.tar.gz]
 [2024-04-21 00:27:10] INFO root fetch - main [MainThread]: End processing [async-firebase-rest-api]: success
 [2024-04-21 00:27:10] INFO root fetch - main [MainThread]: Store serial: [22859940]
+[2024-04-21 00:29:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859940]
+[2024-04-21 00:29:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 00:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: realtime-operator
+[2024-04-21 00:29:18] INFO root fetch - processPackages [realtime-operator]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-21 00:29:18] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/3b/46/49b019eae8fe1f554098f1e01e303a7a6f7992b31a6361f7d15c8bd43d9d/realtime_operator-0.1.2.tar.gz
+[2024-04-21 00:29:18] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/31/23/4fe51b0e205ac9cb8395b777dd9912b016148442762ea510fc77a2980253/realtime_operator-0.2.0.tar.gz
+[2024-04-21 00:29:19] INFO root fetch - processPackages [realtime-operator]: executing diffoscope
+[2024-04-21 00:29:19] INFO root fetch - processPackages [realtime-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtime_operator-0.1.2.tar.gz tmp/realtime_operator-0.2.0.tar.gz --markdown 20240421/r/realtime-operator/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-21 00:29:19] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.1.2.tar.gz]
+[2024-04-21 00:29:19] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.0.tar.gz]
+[2024-04-21 00:29:19] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
+[2024-04-21 00:29:19] INFO root fetch - main [MainThread]: Store serial: [22859943]
