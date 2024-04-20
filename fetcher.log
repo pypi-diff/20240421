@@ -773,3 +773,18 @@
 [2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip]
 [2024-04-21 01:23:38] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
 [2024-04-21 01:23:38] INFO root fetch - main [MainThread]: Store serial: [22860192]
+[2024-04-21 01:25:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860192]
+[2024-04-21 01:25:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC276
+[2024-04-21 01:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio-transformer-plugin-speechbrain-langdetect
+[2024-04-21 01:25:48] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-04-21 01:25:48] WARNING root fetch - processPackages [PythonTestLJC276]: Skipping, unable to determine old version
+[2024-04-21 01:25:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC276] error
+[2024-04-21 01:25:48] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/c0/fa/0b1d4149b21e8229dffd8bebc40bc28d6855971583195bf58dd097b304e8/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a8.tar.gz
+[2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Downloading https://files.pythonhosted.org/packages/c7/96/5255ef92fcf5e30fad39197501b4d818c211c7cfda6d6b087ae223de54a2/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a9.tar.gz
+[2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: executing diffoscope
+[2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a8.tar.gz tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a9.tar.gz --markdown 20240421/o/ovos-audio-transformer-plugin-speechbrain-langdetect/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Remove: archive file [/home/abi/fetcher/tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a8.tar.gz]
+[2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Remove: archive file [/home/abi/fetcher/tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a9.tar.gz]
+[2024-04-21 01:25:49] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
+[2024-04-21 01:25:49] INFO root fetch - main [MainThread]: Store serial: [22860200]
