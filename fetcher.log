@@ -953,3 +953,24 @@
 [2024-04-21 01:49:35] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.0.0.tar.gz]
 [2024-04-21 01:49:35] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
 [2024-04-21 01:49:35] INFO root fetch - main [MainThread]: Store serial: [22860293]
+[2024-04-21 01:51:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860293]
+[2024-04-21 01:51:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seagen
+[2024-04-21 01:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genericsuite
+[2024-04-21 01:51:45] INFO root fetch - processPackages [genericsuite]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 01:51:45] INFO root fetch - processPackages [genericsuite]: Downloading https://files.pythonhosted.org/packages/53/f7/8859b21cdf470875a220e6f5474d5b7bfc60e55540a77778b029cef748b3/genericsuite-0.1.3.tar.gz
+[2024-04-21 01:51:45] INFO root fetch - processPackages [seagen]: New version: [1.5] Old Version: [1.4.2]
+[2024-04-21 01:51:45] INFO root fetch - processPackages [seagen]: Downloading https://files.pythonhosted.org/packages/45/e2/9f5c6360bc86f01ad88648a0d714dc8ad391d29d1d8596952ed0cccaba54/seagen-1.4.2.tar.gz
+[2024-04-21 01:51:45] INFO root fetch - processPackages [genericsuite]: Downloading https://files.pythonhosted.org/packages/66/34/2ff6c408935370b82a7c50437d34141f2aa18e9ecb5547c78d2cc59923bf/genericsuite-0.1.4.tar.gz
+[2024-04-21 01:51:45] INFO root fetch - processPackages [genericsuite]: executing diffoscope
+[2024-04-21 01:51:45] INFO root fetch - processPackages [genericsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genericsuite-0.1.3.tar.gz tmp/genericsuite-0.1.4.tar.gz --markdown 20240421/g/genericsuite/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 01:51:45] INFO root fetch - processPackages [seagen]: Downloading https://files.pythonhosted.org/packages/bd/cf/16c9cd47f1da1ee4ccbcbb94383bb951f99f83404c588a8f1f8df6186705/seagen-1.5.tar.gz
+[2024-04-21 01:51:45] INFO root fetch - processPackages [seagen]: executing diffoscope
+[2024-04-21 01:51:45] INFO root fetch - processPackages [seagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seagen-1.4.2.tar.gz tmp/seagen-1.5.tar.gz --markdown 20240421/s/seagen/1.4.2-1.5/README.md --exclude *.pyd
+[2024-04-21 01:51:46] INFO root fetch - processPackages [genericsuite]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite-0.1.3.tar.gz]
+[2024-04-21 01:51:46] INFO root fetch - processPackages [genericsuite]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite-0.1.4.tar.gz]
+[2024-04-21 01:51:46] INFO root fetch - main [MainThread]: End processing [genericsuite]: success
+[2024-04-21 01:51:46] INFO root fetch - processPackages [seagen]: Remove: archive file [/home/abi/fetcher/tmp/seagen-1.4.2.tar.gz]
+[2024-04-21 01:51:46] INFO root fetch - processPackages [seagen]: Remove: archive file [/home/abi/fetcher/tmp/seagen-1.5.tar.gz]
+[2024-04-21 01:51:46] INFO root fetch - main [MainThread]: End processing [seagen]: success
+[2024-04-21 01:51:46] INFO root fetch - main [MainThread]: Store serial: [22860299]
