@@ -840,3 +840,24 @@
 [2024-04-21 01:34:21] INFO root fetch - processPackages [PyICU]: Remove: archive file [/home/abi/fetcher/tmp/PyICU-2.9.tar.gz]
 [2024-04-21 01:34:21] INFO root fetch - main [MainThread]: End processing [PyICU]: success
 [2024-04-21 01:34:21] INFO root fetch - main [MainThread]: Store serial: [22860221]
+[2024-04-21 01:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860221]
+[2024-04-21 01:36:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hetman
+[2024-04-21 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minim-michi
+[2024-04-21 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC280
+[2024-04-21 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infuzu-python-sdk
+[2024-04-21 01:36:30] ERROR root fetch - processPackages [minim-michi]: Unable to get metadata: No such project 'minim-michi'
+[2024-04-21 01:36:30] INFO root fetch - main [MainThread]: End processing [minim-michi] error
+[2024-04-21 01:36:30] WARNING root fetch - processPackages [PythonTestLJC280]: Skipping, unable to determine old version
+[2024-04-21 01:36:30] INFO root fetch - main [MainThread]: End processing [PythonTestLJC280] error
+[2024-04-21 01:36:30] WARNING root fetch - processPackages [hetman]: Skipping, unable to determine old version
+[2024-04-21 01:36:30] INFO root fetch - main [MainThread]: End processing [hetman] error
+[2024-04-21 01:36:30] INFO root fetch - processPackages [infuzu-python-sdk]: New version: [0.9] Old Version: [0.8]
+[2024-04-21 01:36:30] INFO root fetch - processPackages [infuzu-python-sdk]: Downloading https://files.pythonhosted.org/packages/cc/59/2e28a85ced6e0aca6c94af9a0190551c19db6e5efaf485a99a5f8f4ba30e/infuzu-python-sdk-0.8.tar.gz
+[2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: Downloading https://files.pythonhosted.org/packages/05/fe/df68761722792b47debb6bffd3dc412127b703d9971768119e76bd96c4bb/infuzu-python-sdk-0.9.tar.gz
+[2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: executing diffoscope
+[2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infuzu-python-sdk-0.8.tar.gz tmp/infuzu-python-sdk-0.9.tar.gz --markdown 20240421/i/infuzu-python-sdk/0.8-0.9/README.md --exclude *.pyd
+[2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infuzu-python-sdk-0.8.tar.gz]
+[2024-04-21 01:36:31] INFO root fetch - processPackages [infuzu-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infuzu-python-sdk-0.9.tar.gz]
+[2024-04-21 01:36:31] INFO root fetch - main [MainThread]: End processing [infuzu-python-sdk]: success
+[2024-04-21 01:36:31] INFO root fetch - main [MainThread]: Store serial: [22860240]
