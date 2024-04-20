@@ -293,3 +293,24 @@
 [2024-04-21 00:29:19] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.0.tar.gz]
 [2024-04-21 00:29:19] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
 [2024-04-21 00:29:19] INFO root fetch - main [MainThread]: Store serial: [22859943]
+[2024-04-21 00:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859943]
+[2024-04-21 00:31:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 00:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer
+[2024-04-21 00:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphlit-client
+[2024-04-21 00:31:28] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420005] Old Version: [1.0.20240420004]
+[2024-04-21 00:31:28] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/fb/f5/7cb109521c4a4d758b95aefd80902a57399bea157031de532412e968d37a/graphlit_client-1.0.20240420004.tar.gz
+[2024-04-21 00:31:28] INFO root fetch - processPackages [model-explorer]: New version: [0.0.72] Old Version: [0.0.69]
+[2024-04-21 00:31:28] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/4f/a4/db518ac291eebc544222a3f8fa9022f8b8ce73ea3bf816eeb2b50dca2fb7/model_explorer-0.0.69.tar.gz
+[2024-04-21 00:31:28] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/3c/e6/d9055dd2d52e6e3eee9e862abc4712df169610b077ef9747ac8a2d37fe20/graphlit_client-1.0.20240420005.tar.gz
+[2024-04-21 00:31:28] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 00:31:28] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420004.tar.gz tmp/graphlit_client-1.0.20240420005.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420004-1.0.20240420005/README.md --exclude *.pyd
+[2024-04-21 00:31:29] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/f1/80/1b6c33d8a08367511d5663d20e0ed3a6cc9bfee41cd2d3421a77c19f6fea/model_explorer-0.0.72.tar.gz
+[2024-04-21 00:31:29] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-04-21 00:31:29] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.69.tar.gz tmp/model_explorer-0.0.72.tar.gz --markdown 20240421/m/model-explorer/0.0.69-0.0.72/README.md --exclude *.pyd
+[2024-04-21 00:31:29] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420004.tar.gz]
+[2024-04-21 00:31:29] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420005.tar.gz]
+[2024-04-21 00:31:29] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 00:31:38] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.69.tar.gz]
+[2024-04-21 00:31:38] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.72.tar.gz]
+[2024-04-21 00:31:38] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-04-21 00:31:38] INFO root fetch - main [MainThread]: Store serial: [22859949]
