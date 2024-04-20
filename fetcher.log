@@ -314,3 +314,17 @@
 [2024-04-21 00:31:38] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.72.tar.gz]
 [2024-04-21 00:31:38] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
 [2024-04-21 00:31:38] INFO root fetch - main [MainThread]: Store serial: [22859949]
+[2024-04-21 00:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859949]
+[2024-04-21 00:33:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libpss
+[2024-04-21 00:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC254
+[2024-04-21 00:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: task-track
+[2024-04-21 00:33:47] WARNING root fetch - processPackages [task-track]: Skipping, unable to determine old version
+[2024-04-21 00:33:47] INFO root fetch - main [MainThread]: End processing [task-track] error
+[2024-04-21 00:33:47] INFO root fetch - processPackages [libpss]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-21 00:33:47] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/e4/71468fa51eadea1ef7b791e0ab8fbb6e51c61a43f4e51ce2c92a4ed1ee2f/libpss-0.1.5.tar.gz
+[2024-04-21 00:33:47] WARNING root fetch - processPackages [PythonTestLJC254]: Skipping, unable to determine old version
+[2024-04-21 00:33:47] INFO root fetch - main [MainThread]: End processing [PythonTestLJC254] error
+[2024-04-21 00:33:47] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12678564>=10485760
+[2024-04-21 00:33:47] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 00:33:47] INFO root fetch - main [MainThread]: Store serial: [22859958]
