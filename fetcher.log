@@ -375,3 +375,15 @@
 [2024-04-21 00:42:22] WARNING root fetch - processPackages [PythonTestLJC261]: Skipping, unable to determine old version
 [2024-04-21 00:42:22] INFO root fetch - main [MainThread]: End processing [PythonTestLJC261] error
 [2024-04-21 00:42:22] INFO root fetch - main [MainThread]: Store serial: [22859990]
+[2024-04-21 00:44:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859990]
+[2024-04-21 00:44:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 00:44:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cortix
+[2024-04-21 00:44:31] INFO root fetch - processPackages [cortix]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 00:44:31] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/37/0a/9081f12313305118ece4a1c77b7feb4a79e2596d6a4dcda1ab1fa21bdca3/cortix-1.1.8.tar.gz
+[2024-04-21 00:44:31] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/8a/20/0dc7ff8b8ee40701bb4f342180d2f71ea4f0e79f48fdc930e9307c757bf5/cortix-1.1.9.tar.gz
+[2024-04-21 00:44:32] INFO root fetch - processPackages [cortix]: executing diffoscope
+[2024-04-21 00:44:32] INFO root fetch - processPackages [cortix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortix-1.1.8.tar.gz tmp/cortix-1.1.9.tar.gz --markdown 20240421/c/cortix/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 00:44:33] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.8.tar.gz]
+[2024-04-21 00:44:33] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.9.tar.gz]
+[2024-04-21 00:44:33] INFO root fetch - main [MainThread]: End processing [cortix]: success
+[2024-04-21 00:44:33] INFO root fetch - main [MainThread]: Store serial: [22859994]
