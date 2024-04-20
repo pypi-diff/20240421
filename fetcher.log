@@ -516,3 +516,30 @@
 [2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: Remove: archive file [/home/abi/fetcher/tmp/tomographic_kernel-1.0.2.tar.gz]
 [2024-04-21 00:57:40] INFO root fetch - main [MainThread]: End processing [tomographic-kernel]: success
 [2024-04-21 00:57:40] INFO root fetch - main [MainThread]: Store serial: [22860057]
+[2024-04-21 00:59:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860057]
+[2024-04-21 00:59:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zscaler-sdk-python
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC267
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ryutils
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-easily-auth
+[2024-04-21 00:59:50] WARNING root fetch - processPackages [drf-easily-auth]: Skipping, unable to determine old version
+[2024-04-21 00:59:50] INFO root fetch - main [MainThread]: End processing [drf-easily-auth] error
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ryutils]: New version: [4.1.0] Old Version: [4.0.5]
+[2024-04-21 00:59:50] INFO root fetch - processPackages [zscaler-sdk-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/3f/27/4091dce499908ecca9b71d5bae2912baf9beca99074076100b8632dc6f35/ryutils-4.0.5.tar.gz
+[2024-04-21 00:59:50] WARNING root fetch - processPackages [PythonTestLJC267]: Skipping, unable to determine old version
+[2024-04-21 00:59:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC267] error
+[2024-04-21 00:59:50] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/32/2c/de3c7b20204cc7737adf1e0e8c776c49a663e6c4757cb7bf1619dcfb717d/zscaler-sdk-python-0.1.1.tar.gz
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/69/ae/63bc9c268d9f1b214f01b1c3e311dc5bde661332acd2128c3425567efe26/ryutils-4.1.0.tar.gz
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-21 00:59:50] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.5.tar.gz tmp/ryutils-4.1.0.tar.gz --markdown 20240421/r/ryutils/4.0.5-4.1.0/README.md --exclude *.pyd
+[2024-04-21 00:59:50] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/ad/26/af9c7a554bbbdcda340aeca2cb566bbad869d77f745888370979fd51e284/zscaler-sdk-python-0.1.2.tar.gz
+[2024-04-21 00:59:51] INFO root fetch - processPackages [zscaler-sdk-python]: executing diffoscope
+[2024-04-21 00:59:51] INFO root fetch - processPackages [zscaler-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zscaler-sdk-python-0.1.1.tar.gz tmp/zscaler-sdk-python-0.1.2.tar.gz --markdown 20240421/z/zscaler-sdk-python/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 00:59:51] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.5.tar.gz]
+[2024-04-21 00:59:51] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.0.tar.gz]
+[2024-04-21 00:59:51] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-21 00:59:52] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler-sdk-python-0.1.1.tar.gz]
+[2024-04-21 00:59:52] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler-sdk-python-0.1.2.tar.gz]
+[2024-04-21 00:59:52] INFO root fetch - main [MainThread]: End processing [zscaler-sdk-python]: success
+[2024-04-21 00:59:52] INFO root fetch - main [MainThread]: Store serial: [22860071]
