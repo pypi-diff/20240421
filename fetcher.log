@@ -663,3 +663,18 @@
 [2024-04-21 01:10:43] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a9.tar.gz]
 [2024-04-21 01:10:43] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
 [2024-04-21 01:10:43] INFO root fetch - main [MainThread]: Store serial: [22860137]
+[2024-04-21 01:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860137]
+[2024-04-21 01:12:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chiasmodon
+[2024-04-21 01:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC272
+[2024-04-21 01:12:52] WARNING root fetch - processPackages [PythonTestLJC272]: Skipping, unable to determine old version
+[2024-04-21 01:12:52] INFO root fetch - main [MainThread]: End processing [PythonTestLJC272] error
+[2024-04-21 01:12:52] INFO root fetch - processPackages [chiasmodon]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 01:12:52] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/f0/c7/8b583a241070ee0f0c098d035940236c5340904bc45413bdb732e1c7218e/chiasmodon-1.1.8.tar.gz
+[2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/dd/1b/67ec3f7a82f1fe6fd665d975358abf0bc73cf8b385cb97de5869ac018be5/chiasmodon-1.1.9.tar.gz
+[2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: executing diffoscope
+[2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiasmodon-1.1.8.tar.gz tmp/chiasmodon-1.1.9.tar.gz --markdown 20240421/c/chiasmodon/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.8.tar.gz]
+[2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.9.tar.gz]
+[2024-04-21 01:12:53] INFO root fetch - main [MainThread]: End processing [chiasmodon]: success
+[2024-04-21 01:12:53] INFO root fetch - main [MainThread]: Store serial: [22860144]
