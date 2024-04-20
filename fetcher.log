@@ -492,3 +492,27 @@
 [2024-04-21 00:55:31] INFO root fetch - processPackages [svg-ultralight]: Remove: archive file [/home/abi/fetcher/tmp/svg_ultralight-0.9.0.tar.gz]
 [2024-04-21 00:55:31] INFO root fetch - main [MainThread]: End processing [svg-ultralight]: success
 [2024-04-21 00:55:31] INFO root fetch - main [MainThread]: Store serial: [22860046]
+[2024-04-21 00:57:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860046]
+[2024-04-21 00:57:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tomographic-kernel
+[2024-04-21 00:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC266
+[2024-04-21 00:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Lentil
+[2024-04-21 00:57:39] INFO root fetch - processPackages [tomographic-kernel]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 00:57:39] WARNING root fetch - processPackages [PythonTestLJC266]: Skipping, unable to determine old version
+[2024-04-21 00:57:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC266] error
+[2024-04-21 00:57:39] INFO root fetch - processPackages [Lentil]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-21 00:57:39] INFO root fetch - processPackages [tomographic-kernel]: Downloading https://files.pythonhosted.org/packages/03/97/3ac9efddd0bfc62d88bf0a7575d34d74d1bdfbe62aa7fe423c76a86ea238/tomographic_kernel-1.0.1.tar.gz
+[2024-04-21 00:57:39] INFO root fetch - processPackages [Lentil]: Downloading https://files.pythonhosted.org/packages/ee/bc/b71e3855c085b98e81bb72519d94ab7d63b98ba3a149f97a1b08c9302de9/Lentil-0.8.1.tar.gz
+[2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: Downloading https://files.pythonhosted.org/packages/87/e7/1eca08cb4b8e6366f0fd979376910750c9d058ae3bda8bfc98ad77545099/tomographic_kernel-1.0.2.tar.gz
+[2024-04-21 00:57:40] INFO root fetch - processPackages [Lentil]: Downloading https://files.pythonhosted.org/packages/f4/12/257048308352cac075f3b82e3c3876a49512f6c05ff8b80b9851a79c74fe/Lentil-0.8.2.tar.gz
+[2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: executing diffoscope
+[2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomographic_kernel-1.0.1.tar.gz tmp/tomographic_kernel-1.0.2.tar.gz --markdown 20240421/t/tomographic-kernel/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 00:57:40] INFO root fetch - processPackages [Lentil]: executing diffoscope
+[2024-04-21 00:57:40] INFO root fetch - processPackages [Lentil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lentil-0.8.1.tar.gz tmp/Lentil-0.8.2.tar.gz --markdown 20240421/L/Lentil/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-21 00:57:40] INFO root fetch - processPackages [Lentil]: Remove: archive file [/home/abi/fetcher/tmp/Lentil-0.8.1.tar.gz]
+[2024-04-21 00:57:40] INFO root fetch - processPackages [Lentil]: Remove: archive file [/home/abi/fetcher/tmp/Lentil-0.8.2.tar.gz]
+[2024-04-21 00:57:40] INFO root fetch - main [MainThread]: End processing [Lentil]: success
+[2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: Remove: archive file [/home/abi/fetcher/tmp/tomographic_kernel-1.0.1.tar.gz]
+[2024-04-21 00:57:40] INFO root fetch - processPackages [tomographic-kernel]: Remove: archive file [/home/abi/fetcher/tmp/tomographic_kernel-1.0.2.tar.gz]
+[2024-04-21 00:57:40] INFO root fetch - main [MainThread]: End processing [tomographic-kernel]: success
+[2024-04-21 00:57:40] INFO root fetch - main [MainThread]: Store serial: [22860057]
