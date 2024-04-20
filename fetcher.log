@@ -788,3 +788,21 @@
 [2024-04-21 01:25:49] INFO root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Remove: archive file [/home/abi/fetcher/tmp/ovos-audio-transformer-plugin-speechbrain-langdetect-0.0.0a9.tar.gz]
 [2024-04-21 01:25:49] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect]: success
 [2024-04-21 01:25:49] INFO root fetch - main [MainThread]: Store serial: [22860200]
+[2024-04-21 01:27:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860200]
+[2024-04-21 01:27:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 01:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easytl
+[2024-04-21 01:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC277
+[2024-04-21 01:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tracking-decorator
+[2024-04-21 01:27:58] WARNING root fetch - processPackages [tracking-decorator]: Skipping, unable to determine old version
+[2024-04-21 01:27:58] INFO root fetch - main [MainThread]: End processing [tracking-decorator] error
+[2024-04-21 01:27:58] INFO root fetch - processPackages [easytl]: New version: [0.2.0b2] Old Version: [0.2.0b0]
+[2024-04-21 01:27:58] WARNING root fetch - processPackages [PythonTestLJC277]: Skipping, unable to determine old version
+[2024-04-21 01:27:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC277] error
+[2024-04-21 01:27:58] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/3d/a3/f0ad4f102ac0e5b910d4fded61a2fe73bcae48ee3cfb31c2da6789c4b9e2/easytl-0.2.0b0.tar.gz
+[2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/7f/17/6eb094a42caa6844af6472292c90ae4d8e45103f5640727110cfac6cce8d/easytl-0.2.0b2.tar.gz
+[2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: executing diffoscope
+[2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytl-0.2.0b0.tar.gz tmp/easytl-0.2.0b2.tar.gz --markdown 20240421/e/easytl/0.2.0b0-0.2.0b2/README.md --exclude *.pyd
+[2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.2.0b0.tar.gz]
+[2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.2.0b2.tar.gz]
+[2024-04-21 01:27:59] INFO root fetch - main [MainThread]: End processing [easytl]: success
+[2024-04-21 01:27:59] INFO root fetch - main [MainThread]: Store serial: [22860211]
