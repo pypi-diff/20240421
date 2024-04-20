@@ -112,3 +112,45 @@
 [2024-04-21 00:12:00] INFO root fetch - processPackages [jsmfsb]: Remove: archive file [/home/abi/fetcher/tmp/jsmfsb-0.0.4.tar.gz]
 [2024-04-21 00:12:00] INFO root fetch - main [MainThread]: End processing [jsmfsb]: success
 [2024-04-21 00:12:00] INFO root fetch - main [MainThread]: Store serial: [22859855]
+[2024-04-21 00:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859855]
+[2024-04-21 00:14:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vaso
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unisi
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: task-track
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlimputer
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cutseq
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: annx23241535-pkg-annjojo
+[2024-04-21 00:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hima-discount
+[2024-04-21 00:14:09] INFO root fetch - processPackages [cutseq]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 00:14:09] INFO root fetch - processPackages [mlimputer]: New version: [1.0.60] Old Version: [1.0.6]
+[2024-04-21 00:14:09] WARNING root fetch - processPackages [task-track]: Skipping, unable to determine old version
+[2024-04-21 00:14:09] INFO root fetch - main [MainThread]: End processing [task-track] error
+[2024-04-21 00:14:09] INFO root fetch - processPackages [unisi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 00:14:09] WARNING root fetch - processPackages [annx23241535-pkg-annjojo]: Skipping, unable to determine old version
+[2024-04-21 00:14:09] INFO root fetch - main [MainThread]: End processing [annx23241535-pkg-annjojo] error
+[2024-04-21 00:14:09] WARNING root fetch - processPackages [hima-discount]: Skipping, unable to determine old version
+[2024-04-21 00:14:09] INFO root fetch - main [MainThread]: End processing [hima-discount] error
+[2024-04-21 00:14:09] WARNING root fetch - processPackages [vaso]: Skipping, unable to determine old version
+[2024-04-21 00:14:09] INFO root fetch - main [MainThread]: End processing [vaso] error
+[2024-04-21 00:14:09] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/46/d2/74dc10657df860d89c608c7de2f2efc6a166b5cafca4f104227381cf01b2/cutseq-0.0.1.tar.gz
+[2024-04-21 00:14:09] INFO root fetch - processPackages [mlimputer]: Downloading https://files.pythonhosted.org/packages/20/f7/cf3cf2391a2d3f55d31a62dbb9c876ad0a9e05c5cc57f8426ab7b071aade/mlimputer-1.0.6-py3-none-any.whl
+[2024-04-21 00:14:09] INFO root fetch - processPackages [unisi]: Downloading https://files.pythonhosted.org/packages/b7/34/3bcc10eb3b4d35dc0a4cb26468f6dfe83017bf8c79f5f13ad19a640b0ce2/unisi-0.1.8-py3-none-any.whl
+[2024-04-21 00:14:09] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/8e/0c/8978de43d5a41ea2ac075dfb0d0fc0e9d43818429743e756d7137b15456f/cutseq-0.0.2.tar.gz
+[2024-04-21 00:14:09] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-21 00:14:09] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.1.tar.gz tmp/cutseq-0.0.2.tar.gz --markdown 20240421/c/cutseq/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 00:14:09] INFO root fetch - processPackages [mlimputer]: Downloading https://files.pythonhosted.org/packages/ae/2f/e0a35edb856665852cb98ad9cdd4da6a56cc5eccdad91e0d6a34ae986010/mlimputer-1.0.60-py3-none-any.whl
+[2024-04-21 00:14:10] INFO root fetch - processPackages [mlimputer]: executing diffoscope
+[2024-04-21 00:14:10] INFO root fetch - processPackages [mlimputer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlimputer-1.0.6-py3-none-any.whl.zip tmp/mlimputer-1.0.60-py3-none-any.whl.zip --markdown 20240421/m/mlimputer/1.0.6-1.0.60/README.md --exclude *.pyd
+[2024-04-21 00:14:10] INFO root fetch - processPackages [unisi]: Downloading https://files.pythonhosted.org/packages/ec/ec/077ffe90d809b257bb0212a5828ec904bd555e699aa2b71e7d3c9700cadd/unisi-0.1.9-py3-none-any.whl
+[2024-04-21 00:14:10] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.1.tar.gz]
+[2024-04-21 00:14:10] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.2.tar.gz]
+[2024-04-21 00:14:10] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-21 00:14:10] INFO root fetch - processPackages [unisi]: executing diffoscope
+[2024-04-21 00:14:10] INFO root fetch - processPackages [unisi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unisi-0.1.8-py3-none-any.whl.zip tmp/unisi-0.1.9-py3-none-any.whl.zip --markdown 20240421/u/unisi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 00:14:10] INFO root fetch - processPackages [mlimputer]: Remove: archive file [/home/abi/fetcher/tmp/mlimputer-1.0.6-py3-none-any.whl.zip]
+[2024-04-21 00:14:10] INFO root fetch - processPackages [mlimputer]: Remove: archive file [/home/abi/fetcher/tmp/mlimputer-1.0.60-py3-none-any.whl.zip]
+[2024-04-21 00:14:10] INFO root fetch - main [MainThread]: End processing [mlimputer]: success
+[2024-04-21 00:14:12] INFO root fetch - processPackages [unisi]: Remove: archive file [/home/abi/fetcher/tmp/unisi-0.1.8-py3-none-any.whl.zip]
+[2024-04-21 00:14:12] INFO root fetch - processPackages [unisi]: Remove: archive file [/home/abi/fetcher/tmp/unisi-0.1.9-py3-none-any.whl.zip]
+[2024-04-21 00:14:12] INFO root fetch - main [MainThread]: End processing [unisi]: success
+[2024-04-21 00:14:12] INFO root fetch - main [MainThread]: Store serial: [22859886]
