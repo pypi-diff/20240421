@@ -456,3 +456,27 @@
 [2024-04-21 00:51:11] WARNING root fetch - processPackages [PythonTestLJC264]: Skipping, unable to determine old version
 [2024-04-21 00:51:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC264] error
 [2024-04-21 00:51:11] INFO root fetch - main [MainThread]: Store serial: [22860032]
+[2024-04-21 00:53:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860032]
+[2024-04-21 00:53:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-api
+[2024-04-21 00:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miniscons
+[2024-04-21 00:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC265
+[2024-04-21 00:53:19] INFO root fetch - processPackages [miniscons]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-21 00:53:19] WARNING root fetch - processPackages [PythonTestLJC265]: Skipping, unable to determine old version
+[2024-04-21 00:53:19] INFO root fetch - processPackages [image-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 00:53:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC265] error
+[2024-04-21 00:53:20] INFO root fetch - processPackages [image-api]: Downloading https://files.pythonhosted.org/packages/7f/0b/fdffecab1588b310da3113ab0e96977f99c3d746ca1de24258286d0afe67/image_api-0.1.0.tar.gz
+[2024-04-21 00:53:20] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/c8/19/0e1cd144f9ae0c63c7ffb39cf8f2e6c0ce6b65dc9244cd486c8ac7c93d03/miniscons-0.8.1.tar.gz
+[2024-04-21 00:53:20] INFO root fetch - processPackages [image-api]: Downloading https://files.pythonhosted.org/packages/7b/6d/0c3082887d2c0dc131936741d569937e862e4e359aba38755861aab50bb9/image_api-0.1.1.tar.gz
+[2024-04-21 00:53:20] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/99/b3/5b5df2bbdd9464ea87f25ed15e6d012213891a1282b5bf7ac607fc4eab34/miniscons-0.9.0.tar.gz
+[2024-04-21 00:53:20] INFO root fetch - processPackages [image-api]: executing diffoscope
+[2024-04-21 00:53:20] INFO root fetch - processPackages [image-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_api-0.1.0.tar.gz tmp/image_api-0.1.1.tar.gz --markdown 20240421/i/image-api/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 00:53:20] INFO root fetch - processPackages [miniscons]: executing diffoscope
+[2024-04-21 00:53:20] INFO root fetch - processPackages [miniscons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniscons-0.8.1.tar.gz tmp/miniscons-0.9.0.tar.gz --markdown 20240421/m/miniscons/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-21 00:53:21] INFO root fetch - processPackages [image-api]: Remove: archive file [/home/abi/fetcher/tmp/image_api-0.1.0.tar.gz]
+[2024-04-21 00:53:21] INFO root fetch - processPackages [image-api]: Remove: archive file [/home/abi/fetcher/tmp/image_api-0.1.1.tar.gz]
+[2024-04-21 00:53:21] INFO root fetch - main [MainThread]: End processing [image-api]: success
+[2024-04-21 00:53:21] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.8.1.tar.gz]
+[2024-04-21 00:53:21] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.9.0.tar.gz]
+[2024-04-21 00:53:21] INFO root fetch - main [MainThread]: End processing [miniscons]: success
+[2024-04-21 00:53:21] INFO root fetch - main [MainThread]: Store serial: [22860043]
