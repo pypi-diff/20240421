@@ -1013,3 +1013,33 @@
 [2024-04-21 01:56:07] INFO root fetch - processPackages [win32-pipes]: Remove: archive file [/home/abi/fetcher/tmp/win32_pipes-0.1.1.tar.gz]
 [2024-04-21 01:56:07] INFO root fetch - main [MainThread]: End processing [win32-pipes]: success
 [2024-04-21 01:56:07] INFO root fetch - main [MainThread]: Store serial: [22860343]
+[2024-04-21 01:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860343]
+[2024-04-21 01:58:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 01:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shortfin
+[2024-04-21 01:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RMCgp
+[2024-04-21 01:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infuzu-python-sdk
+[2024-04-21 01:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sortie
+[2024-04-21 01:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC287
+[2024-04-21 01:58:15] WARNING root fetch - processPackages [shortfin]: Skipping, unable to determine old version
+[2024-04-21 01:58:15] INFO root fetch - main [MainThread]: End processing [shortfin] error
+[2024-04-21 01:58:15] WARNING root fetch - processPackages [sortie]: Skipping, unable to determine old version
+[2024-04-21 01:58:15] INFO root fetch - main [MainThread]: End processing [sortie] error
+[2024-04-21 01:58:15] WARNING root fetch - processPackages [PythonTestLJC287]: Skipping, unable to determine old version
+[2024-04-21 01:58:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC287] error
+[2024-04-21 01:58:15] INFO root fetch - processPackages [infuzu-python-sdk]: New version: [0.9] Old Version: [0.8]
+[2024-04-21 01:58:15] INFO root fetch - processPackages [RMCgp]: New version: [0.0.22] Old Version: [0.0.2]
+[2024-04-21 01:58:15] INFO root fetch - processPackages [infuzu-python-sdk]: Downloading https://files.pythonhosted.org/packages/cc/59/2e28a85ced6e0aca6c94af9a0190551c19db6e5efaf485a99a5f8f4ba30e/infuzu-python-sdk-0.8.tar.gz
+[2024-04-21 01:58:15] INFO root fetch - processPackages [RMCgp]: Downloading https://files.pythonhosted.org/packages/e2/ef/73ce9072411ab2abb62ada98f2e354ed9a8ca12a78a8b9f0ede64d1fa8ee/RMCgp-0.0.2.tar.gz
+[2024-04-21 01:58:16] INFO root fetch - processPackages [infuzu-python-sdk]: Downloading https://files.pythonhosted.org/packages/05/fe/df68761722792b47debb6bffd3dc412127b703d9971768119e76bd96c4bb/infuzu-python-sdk-0.9.tar.gz
+[2024-04-21 01:58:16] INFO root fetch - processPackages [infuzu-python-sdk]: executing diffoscope
+[2024-04-21 01:58:16] INFO root fetch - processPackages [infuzu-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infuzu-python-sdk-0.8.tar.gz tmp/infuzu-python-sdk-0.9.tar.gz --markdown 20240421/i/infuzu-python-sdk/0.8-0.9/README.md --exclude *.pyd
+[2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: Downloading https://files.pythonhosted.org/packages/fe/ef/0a123d1d22b4eaa34dc1bb3280de14dc0795665ab4ddda42ba3bf4d2f47f/RMCgp-0.0.22.tar.gz
+[2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: executing diffoscope
+[2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RMCgp-0.0.2.tar.gz tmp/RMCgp-0.0.22.tar.gz --markdown 20240421/R/RMCgp/0.0.2-0.0.22/README.md --exclude *.pyd
+[2024-04-21 01:58:16] INFO root fetch - processPackages [infuzu-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infuzu-python-sdk-0.8.tar.gz]
+[2024-04-21 01:58:16] INFO root fetch - processPackages [infuzu-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infuzu-python-sdk-0.9.tar.gz]
+[2024-04-21 01:58:16] INFO root fetch - main [MainThread]: End processing [infuzu-python-sdk]: success
+[2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: Remove: archive file [/home/abi/fetcher/tmp/RMCgp-0.0.2.tar.gz]
+[2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: Remove: archive file [/home/abi/fetcher/tmp/RMCgp-0.0.22.tar.gz]
+[2024-04-21 01:58:16] INFO root fetch - main [MainThread]: End processing [RMCgp]: success
+[2024-04-21 01:58:16] INFO root fetch - main [MainThread]: Store serial: [22860362]
