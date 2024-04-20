@@ -621,3 +621,27 @@
 [2024-04-21 01:06:22] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240419.tar.gz]
 [2024-04-21 01:06:22] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-04-21 01:06:22] INFO root fetch - main [MainThread]: Store serial: [22860116]
+[2024-04-21 01:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860116]
+[2024-04-21 01:08:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 01:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mclibre-python-testing-client
+[2024-04-21 01:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC270
+[2024-04-21 01:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-bus-client
+[2024-04-21 01:08:31] WARNING root fetch - processPackages [PythonTestLJC270]: Skipping, unable to determine old version
+[2024-04-21 01:08:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC270] error
+[2024-04-21 01:08:31] INFO root fetch - processPackages [mclibre-python-testing-client]: New version: [0.0.44] Old Version: [0.0.43]
+[2024-04-21 01:08:32] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.9a9] Old Version: [0.0.9a8]
+[2024-04-21 01:08:32] INFO root fetch - processPackages [mclibre-python-testing-client]: Downloading https://files.pythonhosted.org/packages/01/16/703ff9e794633b92674ef7b9f028264e86c031ad248d04f1633ff0fb012e/mclibre_python_testing_client-0.0.43.tar.gz
+[2024-04-21 01:08:32] INFO root fetch - processPackages [ovos-bus-client]: Downloading https://files.pythonhosted.org/packages/48/67/a3f7fa596d43ebf50ef4417ed98aeb2f4710f242de2f500bb079e132f7f8/ovos-bus-client-0.0.9a8.tar.gz
+[2024-04-21 01:08:32] INFO root fetch - processPackages [mclibre-python-testing-client]: Downloading https://files.pythonhosted.org/packages/86/78/0aa2c0175af3dbf10f414e3e92492292b74ad698b9bdcf4e22858e6bd90d/mclibre_python_testing_client-0.0.44.tar.gz
+[2024-04-21 01:08:32] INFO root fetch - processPackages [mclibre-python-testing-client]: executing diffoscope
+[2024-04-21 01:08:32] INFO root fetch - processPackages [mclibre-python-testing-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mclibre_python_testing_client-0.0.43.tar.gz tmp/mclibre_python_testing_client-0.0.44.tar.gz --markdown 20240421/m/mclibre-python-testing-client/0.0.43-0.0.44/README.md --exclude *.pyd
+[2024-04-21 01:08:33] INFO root fetch - processPackages [mclibre-python-testing-client]: Remove: archive file [/home/abi/fetcher/tmp/mclibre_python_testing_client-0.0.43.tar.gz]
+[2024-04-21 01:08:33] INFO root fetch - processPackages [mclibre-python-testing-client]: Remove: archive file [/home/abi/fetcher/tmp/mclibre_python_testing_client-0.0.44.tar.gz]
+[2024-04-21 01:08:33] INFO root fetch - main [MainThread]: End processing [mclibre-python-testing-client]: success
+[2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: Downloading https://files.pythonhosted.org/packages/6c/1d/335214bf8b8e351022da81df48337c36be2b9689c9c776c9e42dcf44ff7d/ovos-bus-client-0.0.9a9.tar.gz
+[2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-bus-client-0.0.9a8.tar.gz tmp/ovos-bus-client-0.0.9a9.tar.gz --markdown 20240421/o/ovos-bus-client/0.0.9a8-0.0.9a9/README.md --exclude *.pyd
+[2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a8.tar.gz]
+[2024-04-21 01:08:33] INFO root fetch - processPackages [ovos-bus-client]: Remove: archive file [/home/abi/fetcher/tmp/ovos-bus-client-0.0.9a9.tar.gz]
+[2024-04-21 01:08:33] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
+[2024-04-21 01:08:33] INFO root fetch - main [MainThread]: Store serial: [22860124]
