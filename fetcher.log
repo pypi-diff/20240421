@@ -734,3 +734,42 @@
 [2024-04-21 01:21:28] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Remove: archive file [/home/abi/fetcher/tmp/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz]
 [2024-04-21 01:21:28] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-fasterwhisper]: success
 [2024-04-21 01:21:28] INFO root fetch - main [MainThread]: Store serial: [22860180]
+[2024-04-21 01:23:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860180]
+[2024-04-21 01:23:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-plugin-manager
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-firebase-rest-api
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gtsystem
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-stt-plugin-fasterwhisper
+[2024-04-21 01:23:37] INFO root fetch - processPackages [gtsystem]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-21 01:23:37] INFO root fetch - processPackages [async-firebase-rest-api]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2024-04-21 01:23:37] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/0f/06/d5a19f6a2ea969f4b273f16d8997530c935b14ae5438f98cf7d0903e3e9e/gtsystem-0.1.5.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [async-firebase-rest-api]: Downloading https://files.pythonhosted.org/packages/3d/ba/d372bb8968b89fe62ee513ef69213bf31cb623e599c17f34cf13e037da63/async_firebase_rest_api-2.0.0.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/40/8b/de177edeb6259b8dceeb74a43a3db2c382339062520b16eb17134f6d5497/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/b2/37/1a222e9f15849fb1ebcafce5a7ba00f48fc94ba80438f3c9e243ce6b66c3/ovos_plugin_manager-0.0.8a3-py3-none-any.whl
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Downloading https://files.pythonhosted.org/packages/3c/5a/dc802212d6610fa05f0dc9b12d3a02be582e32d4434e144ffeea34fabca8/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [async-firebase-rest-api]: Downloading https://files.pythonhosted.org/packages/80/6c/54ee9d889e3128b7b7329e4e7f0947ca35c3fc7a2cbcc8293acc80b2afcf/async_firebase_rest_api-2.0.1.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/77/e7/a7df463a1a77fab78cef9c3dc0f840b2fb104a01142de2ead5a878d97e40/gtsystem-0.1.6.tar.gz
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: executing diffoscope
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz tmp/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz --markdown 20240421/o/ovos-stt-plugin-fasterwhisper/0.0.1a8-0.0.1a9/README.md --exclude *.pyd
+[2024-04-21 01:23:37] INFO root fetch - processPackages [async-firebase-rest-api]: executing diffoscope
+[2024-04-21 01:23:37] INFO root fetch - processPackages [async-firebase-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_firebase_rest_api-2.0.0.tar.gz tmp/async_firebase_rest_api-2.0.1.tar.gz --markdown 20240421/a/async-firebase-rest-api/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-21 01:23:37] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-21 01:23:37] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.1.5.tar.gz tmp/gtsystem-0.1.6.tar.gz --markdown 20240421/g/gtsystem/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-21 01:23:37] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/52/e2/f57129caaddb3c7ec480ea84cd54a36c5f47dec4dff4add3d7d3eea6e6a8/ovos_plugin_manager-0.0.9-py3-none-any.whl
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20240421/o/ovos-plugin-manager/0.0.8a3-0.0.9/README.md --exclude *.pyd
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Remove: archive file [/home/abi/fetcher/tmp/ovos-stt-plugin-fasterwhisper-0.0.1a8.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-stt-plugin-fasterwhisper]: Remove: archive file [/home/abi/fetcher/tmp/ovos-stt-plugin-fasterwhisper-0.0.1a9.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-fasterwhisper]: success
+[2024-04-21 01:23:38] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.5.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.6.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-21 01:23:38] INFO root fetch - processPackages [async-firebase-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/async_firebase_rest_api-2.0.0.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - processPackages [async-firebase-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/async_firebase_rest_api-2.0.1.tar.gz]
+[2024-04-21 01:23:38] INFO root fetch - main [MainThread]: End processing [async-firebase-rest-api]: success
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip]
+[2024-04-21 01:23:38] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip]
+[2024-04-21 01:23:38] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2024-04-21 01:23:38] INFO root fetch - main [MainThread]: Store serial: [22860192]
