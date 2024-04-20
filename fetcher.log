@@ -936,3 +936,20 @@
 [2024-04-21 01:45:19] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.0b0.tar.gz]
 [2024-04-21 01:45:19] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
 [2024-04-21 01:45:19] INFO root fetch - main [MainThread]: Store serial: [22860285]
+[2024-04-21 01:47:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860285]
+[2024-04-21 01:47:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 01:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860285]
+[2024-04-21 01:49:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuralnetlib
+[2024-04-21 01:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC284
+[2024-04-21 01:49:34] INFO root fetch - processPackages [neuralnetlib]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-21 01:49:34] WARNING root fetch - processPackages [PythonTestLJC284]: Skipping, unable to determine old version
+[2024-04-21 01:49:34] INFO root fetch - main [MainThread]: End processing [PythonTestLJC284] error
+[2024-04-21 01:49:34] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/e0/e4/ccf41ca5f37161f5f5dbb4d07154055adc55dcff84e78d7b58c778a41ef8/neuralnetlib-1.0.1.tar.gz
+[2024-04-21 01:49:34] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/c3/92/38f9eaee08b0c5a1105365d997e0e0073c1b24ac7c1a613f34b898df5e2f/neuralnetlib-2.0.0.tar.gz
+[2024-04-21 01:49:34] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-04-21 01:49:34] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-1.0.1.tar.gz tmp/neuralnetlib-2.0.0.tar.gz --markdown 20240421/n/neuralnetlib/1.0.1-2.0.0/README.md --exclude *.pyd
+[2024-04-21 01:49:35] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-1.0.1.tar.gz]
+[2024-04-21 01:49:35] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.0.0.tar.gz]
+[2024-04-21 01:49:35] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-04-21 01:49:35] INFO root fetch - main [MainThread]: Store serial: [22860293]
