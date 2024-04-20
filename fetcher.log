@@ -369,3 +369,9 @@
 [2024-04-21 00:40:14] WARNING root fetch - processPackages [PythonTestLJC260]: Skipping, unable to determine old version
 [2024-04-21 00:40:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC260] error
 [2024-04-21 00:40:14] INFO root fetch - main [MainThread]: Store serial: [22859985]
+[2024-04-21 00:42:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859985]
+[2024-04-21 00:42:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 00:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC261
+[2024-04-21 00:42:22] WARNING root fetch - processPackages [PythonTestLJC261]: Skipping, unable to determine old version
+[2024-04-21 00:42:22] INFO root fetch - main [MainThread]: End processing [PythonTestLJC261] error
+[2024-04-21 00:42:22] INFO root fetch - main [MainThread]: Store serial: [22859990]
