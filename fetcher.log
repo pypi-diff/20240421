@@ -1,0 +1,24 @@
+[2024-04-21 00:01:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859795]
+[2024-04-21 00:01:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stockdex
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ck-apstra-api
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC246
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ck-apstra-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 00:01:05] INFO root fetch - processPackages [stockdex]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/7c/2a/abef9e7f6bfd8bbe702559b01d7558798b73d2254a4126a13c8afed7c02c/ck_apstra_api-0.2.8.tar.gz
+[2024-04-21 00:01:05] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/37/05/ab4e68366df13ec9a36235d4dadc66588992f1ba567dcf5f7f29b8eb1348/stockdex-0.3.8.tar.gz
+[2024-04-21 00:01:05] WARNING root fetch - processPackages [PythonTestLJC246]: Skipping, unable to determine old version
+[2024-04-21 00:01:05] INFO root fetch - main [MainThread]: End processing [PythonTestLJC246] error
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/dc/40/ee507ae501e4a3b7aca59c4548c03f984a891162adc467495e853534a882/ck_apstra_api-0.2.9.tar.gz
+[2024-04-21 00:01:05] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/1d/4b/9ee626f45679c90979b1f21bfbe4b576b940580a865e0a0da19692b805d2/stockdex-0.3.9.tar.gz
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ck-apstra-api]: executing diffoscope
+[2024-04-21 00:01:05] INFO root fetch - processPackages [ck-apstra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ck_apstra_api-0.2.8.tar.gz tmp/ck_apstra_api-0.2.9.tar.gz --markdown 20240421/c/ck-apstra-api/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 00:01:06] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.8.tar.gz]
+[2024-04-21 00:01:06] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.9.tar.gz]
+[2024-04-21 00:01:06] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
+[2024-04-21 00:01:07] INFO root fetch - processPackages [stockdex]: executing diffoscope
+[2024-04-21 00:01:07] INFO root fetch - processPackages [stockdex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdex-0.3.8.tar.gz tmp/stockdex-0.3.9.tar.gz --markdown 20240421/s/stockdex/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 00:01:08] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.8.tar.gz]
+[2024-04-21 00:01:08] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.9.tar.gz]
+[2024-04-21 00:01:08] INFO root fetch - main [MainThread]: End processing [stockdex]: success
+[2024-04-21 00:01:08] INFO root fetch - main [MainThread]: Store serial: [22859806]
