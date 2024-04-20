@@ -216,3 +216,36 @@
 [2024-04-21 00:20:42] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: Remove: archive file [/home/abi/fetcher/tmp/MedRoom.AI.DataEngineer-0.0.5-py3-none-any.whl.zip]
 [2024-04-21 00:20:42] INFO root fetch - main [MainThread]: End processing [MedRoom.AI.DataEngineer]: success
 [2024-04-21 00:20:42] INFO root fetch - main [MainThread]: Store serial: [22859919]
+[2024-04-21 00:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859919]
+[2024-04-21 00:22:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MedRoom.AI.DataEngineer
+[2024-04-21 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beets-filetote
+[2024-04-21 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foscat
+[2024-04-21 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyGRF
+[2024-04-21 00:22:52] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 00:22:52] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: Downloading https://files.pythonhosted.org/packages/98/b1/597765f45f1fb19d142f8135d32404f04c7a763ce01fab39b5467d5f874b/medroom_ai_dataengineer-0.0.4.tar.gz
+[2024-04-21 00:22:52] WARNING root fetch - processPackages [PyGRF]: Skipping, unable to determine old version
+[2024-04-21 00:22:52] INFO root fetch - main [MainThread]: End processing [PyGRF] error
+[2024-04-21 00:22:52] INFO root fetch - processPackages [beets-filetote]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-21 00:22:52] INFO root fetch - processPackages [foscat]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-04-21 00:22:52] INFO root fetch - processPackages [foscat]: Downloading https://files.pythonhosted.org/packages/b6/1a/cff11416f3547c8dc9a5231634209d3692fac4d553dab54be2058eae0087/foscat-3.0.8.tar.gz
+[2024-04-21 00:22:52] INFO root fetch - processPackages [beets-filetote]: Downloading https://files.pythonhosted.org/packages/7d/27/44a0a691f0c8fc55ecb5fc58a2a2efcc021bb62f6f6a2f1d24ca867e5b02/beets_filetote-0.4.8.tar.gz
+[2024-04-21 00:22:53] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: Downloading https://files.pythonhosted.org/packages/99/b5/60d9f5c98ba9c6020319173614fc022ed37d50df817a62050695e1f7a386/MedRoom.AI.DataEngineer-0.0.5-py3-none-any.whl
+[2024-04-21 00:22:53] INFO root fetch - processPackages [foscat]: Downloading https://files.pythonhosted.org/packages/42/3c/3ec0d9aa38fb2a3152ce79ba0f92a03372e73164626118a07121951ed317/foscat-3.0.9.tar.gz
+[2024-04-21 00:22:53] INFO root fetch - processPackages [beets-filetote]: Downloading https://files.pythonhosted.org/packages/53/f6/9e9872ece053a627c7df1e781ce4ba9a4bf3f6cf9a12e24498e1c8228125/beets_filetote-0.4.9.tar.gz
+[2024-04-21 00:22:53] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: executing diffoscope
+[2024-04-21 00:22:53] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medroom_ai_dataengineer-0.0.4.tar.gz tmp/MedRoom.AI.DataEngineer-0.0.5-py3-none-any.whl.zip --markdown 20240421/M/MedRoom.AI.DataEngineer/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 00:22:53] INFO root fetch - processPackages [beets-filetote]: executing diffoscope
+[2024-04-21 00:22:53] INFO root fetch - processPackages [beets-filetote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_filetote-0.4.8.tar.gz tmp/beets_filetote-0.4.9.tar.gz --markdown 20240421/b/beets-filetote/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-21 00:22:53] INFO root fetch - processPackages [foscat]: executing diffoscope
+[2024-04-21 00:22:53] INFO root fetch - processPackages [foscat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foscat-3.0.8.tar.gz tmp/foscat-3.0.9.tar.gz --markdown 20240421/f/foscat/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-04-21 00:22:54] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: Remove: archive file [/home/abi/fetcher/tmp/medroom_ai_dataengineer-0.0.4.tar.gz]
+[2024-04-21 00:22:54] INFO root fetch - processPackages [MedRoom.AI.DataEngineer]: Remove: archive file [/home/abi/fetcher/tmp/MedRoom.AI.DataEngineer-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 00:22:54] INFO root fetch - main [MainThread]: End processing [MedRoom.AI.DataEngineer]: success
+[2024-04-21 00:22:54] INFO root fetch - processPackages [beets-filetote]: Remove: archive file [/home/abi/fetcher/tmp/beets_filetote-0.4.8.tar.gz]
+[2024-04-21 00:22:54] INFO root fetch - processPackages [beets-filetote]: Remove: archive file [/home/abi/fetcher/tmp/beets_filetote-0.4.9.tar.gz]
+[2024-04-21 00:22:54] INFO root fetch - main [MainThread]: End processing [beets-filetote]: success
+[2024-04-21 00:22:54] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.8.tar.gz]
+[2024-04-21 00:22:54] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.9.tar.gz]
+[2024-04-21 00:22:54] INFO root fetch - main [MainThread]: End processing [foscat]: success
+[2024-04-21 00:22:54] INFO root fetch - main [MainThread]: Store serial: [22859932]
