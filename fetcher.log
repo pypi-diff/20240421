@@ -543,3 +543,18 @@
 [2024-04-21 00:59:52] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler-sdk-python-0.1.2.tar.gz]
 [2024-04-21 00:59:52] INFO root fetch - main [MainThread]: End processing [zscaler-sdk-python]: success
 [2024-04-21 00:59:52] INFO root fetch - main [MainThread]: Store serial: [22860071]
+[2024-04-21 01:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860071]
+[2024-04-21 01:02:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: realtime-operator
+[2024-04-21 01:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC268
+[2024-04-21 01:02:00] INFO root fetch - processPackages [realtime-operator]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-21 01:02:00] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/3b/46/49b019eae8fe1f554098f1e01e303a7a6f7992b31a6361f7d15c8bd43d9d/realtime_operator-0.1.2.tar.gz
+[2024-04-21 01:02:00] WARNING root fetch - processPackages [PythonTestLJC268]: Skipping, unable to determine old version
+[2024-04-21 01:02:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC268] error
+[2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/31/23/4fe51b0e205ac9cb8395b777dd9912b016148442762ea510fc77a2980253/realtime_operator-0.2.0.tar.gz
+[2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: executing diffoscope
+[2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtime_operator-0.1.2.tar.gz tmp/realtime_operator-0.2.0.tar.gz --markdown 20240421/r/realtime-operator/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.1.2.tar.gz]
+[2024-04-21 01:02:01] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.0.tar.gz]
+[2024-04-21 01:02:01] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
+[2024-04-21 01:02:01] INFO root fetch - main [MainThread]: Store serial: [22860079]
