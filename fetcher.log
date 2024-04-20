@@ -678,3 +678,23 @@
 [2024-04-21 01:12:53] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.9.tar.gz]
 [2024-04-21 01:12:53] INFO root fetch - main [MainThread]: End processing [chiasmodon]: success
 [2024-04-21 01:12:53] INFO root fetch - main [MainThread]: Store serial: [22860144]
+[2024-04-21 01:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860144]
+[2024-04-21 01:15:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 01:17:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860144]
+[2024-04-21 01:17:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 01:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC273
+[2024-04-21 01:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invoicing-pdfiles
+[2024-04-21 01:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvpack
+[2024-04-21 01:17:07] WARNING root fetch - processPackages [PythonTestLJC273]: Skipping, unable to determine old version
+[2024-04-21 01:17:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC273] error
+[2024-04-21 01:17:07] ERROR root fetch - processPackages [invoicing-pdfiles]: Unable to get metadata: No such project 'invoicing-pdfiles'
+[2024-04-21 01:17:07] INFO root fetch - main [MainThread]: End processing [invoicing-pdfiles] error
+[2024-04-21 01:17:07] INFO root fetch - processPackages [cvpack]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-21 01:17:07] INFO root fetch - processPackages [cvpack]: Downloading https://files.pythonhosted.org/packages/3d/82/586e66b4af70e7eafba7c44d061186eda0ed9affdc97939d36f21d1f1d4e/cvpack-0.8.0.tar.gz
+[2024-04-21 01:17:07] INFO root fetch - processPackages [cvpack]: Downloading https://files.pythonhosted.org/packages/b3/b6/e0a2f05664151c11546c2492463ba904d92eb2ccc0c9d568c86eb6c02f59/cvpack-0.9.0.tar.gz
+[2024-04-21 01:17:07] INFO root fetch - processPackages [cvpack]: executing diffoscope
+[2024-04-21 01:17:07] INFO root fetch - processPackages [cvpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvpack-0.8.0.tar.gz tmp/cvpack-0.9.0.tar.gz --markdown 20240421/c/cvpack/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-21 01:17:08] INFO root fetch - processPackages [cvpack]: Remove: archive file [/home/abi/fetcher/tmp/cvpack-0.8.0.tar.gz]
+[2024-04-21 01:17:08] INFO root fetch - processPackages [cvpack]: Remove: archive file [/home/abi/fetcher/tmp/cvpack-0.9.0.tar.gz]
+[2024-04-21 01:17:08] INFO root fetch - main [MainThread]: End processing [cvpack]: success
+[2024-04-21 01:17:08] INFO root fetch - main [MainThread]: Store serial: [22860156]
