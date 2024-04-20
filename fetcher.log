@@ -249,3 +249,35 @@
 [2024-04-21 00:22:54] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.9.tar.gz]
 [2024-04-21 00:22:54] INFO root fetch - main [MainThread]: End processing [foscat]: success
 [2024-04-21 00:22:54] INFO root fetch - main [MainThread]: Store serial: [22859932]
+[2024-04-21 00:24:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859932]
+[2024-04-21 00:25:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 00:27:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859932]
+[2024-04-21 00:27:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NCapybaraLib
+[2024-04-21 00:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-firebase-rest-api
+[2024-04-21 00:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-contract-sale
+[2024-04-21 00:27:08] INFO root fetch - processPackages [odoo-addon-contract-sale]: New version: [17.0.1.0.0.1] Old Version: [16.0.1.2.0]
+[2024-04-21 00:27:08] INFO root fetch - processPackages [NCapybaraLib]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 00:27:08] INFO root fetch - processPackages [async-firebase-rest-api]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-21 00:27:08] INFO root fetch - processPackages [NCapybaraLib]: Downloading https://files.pythonhosted.org/packages/fc/df/939b5893d4c11d73ef045d11722c7aeeb31a4443af55d3717f07a9b8ffd0/ncapybaralib-0.0.3.tar.gz
+[2024-04-21 00:27:08] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/cd/5a/685c1f306810341ae03411aa846eb15c9a6d0bd70be2b5b882cdf6241273/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl
+[2024-04-21 00:27:08] INFO root fetch - processPackages [async-firebase-rest-api]: Downloading https://files.pythonhosted.org/packages/3d/ba/d372bb8968b89fe62ee513ef69213bf31cb623e599c17f34cf13e037da63/async_firebase_rest_api-2.0.0.tar.gz
+[2024-04-21 00:27:09] INFO root fetch - processPackages [NCapybaraLib]: Downloading https://files.pythonhosted.org/packages/4f/bf/a93c8cf5240c7f7ec23335b43015d8003af8dd68866c5404e0656ec6c332/ncapybaralib-0.0.4.tar.gz
+[2024-04-21 00:27:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/3a/3e/7a50caa6cbb7137188e3775d8c3eba982d3cbd4f98b46c8736aac1bbfa1b/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl
+[2024-04-21 00:27:09] INFO root fetch - processPackages [async-firebase-rest-api]: Downloading https://files.pythonhosted.org/packages/80/6c/54ee9d889e3128b7b7329e4e7f0947ca35c3fc7a2cbcc8293acc80b2afcf/async_firebase_rest_api-2.0.1.tar.gz
+[2024-04-21 00:27:09] INFO root fetch - processPackages [NCapybaraLib]: executing diffoscope
+[2024-04-21 00:27:09] INFO root fetch - processPackages [NCapybaraLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncapybaralib-0.0.3.tar.gz tmp/ncapybaralib-0.0.4.tar.gz --markdown 20240421/N/NCapybaraLib/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 00:27:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: executing diffoscope
+[2024-04-21 00:27:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl.zip --markdown 20240421/o/odoo-addon-contract-sale/16.0.1.2.0-17.0.1.0.0.1/README.md --exclude *.pyd
+[2024-04-21 00:27:09] INFO root fetch - processPackages [async-firebase-rest-api]: executing diffoscope
+[2024-04-21 00:27:09] INFO root fetch - processPackages [async-firebase-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_firebase_rest_api-2.0.0.tar.gz tmp/async_firebase_rest_api-2.0.1.tar.gz --markdown 20240421/a/async-firebase-rest-api/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-21 00:27:09] INFO root fetch - processPackages [NCapybaraLib]: Remove: archive file [/home/abi/fetcher/tmp/ncapybaralib-0.0.3.tar.gz]
+[2024-04-21 00:27:09] INFO root fetch - processPackages [NCapybaraLib]: Remove: archive file [/home/abi/fetcher/tmp/ncapybaralib-0.0.4.tar.gz]
+[2024-04-21 00:27:09] INFO root fetch - main [MainThread]: End processing [NCapybaraLib]: success
+[2024-04-21 00:27:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-21 00:27:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl.zip]
+[2024-04-21 00:27:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-sale]: success
+[2024-04-21 00:27:10] INFO root fetch - processPackages [async-firebase-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/async_firebase_rest_api-2.0.0.tar.gz]
+[2024-04-21 00:27:10] INFO root fetch - processPackages [async-firebase-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/async_firebase_rest_api-2.0.1.tar.gz]
+[2024-04-21 00:27:10] INFO root fetch - main [MainThread]: End processing [async-firebase-rest-api]: success
+[2024-04-21 00:27:10] INFO root fetch - main [MainThread]: Store serial: [22859940]
