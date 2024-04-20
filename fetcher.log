@@ -169,3 +169,12 @@
 [2024-04-21 00:16:22] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.4.tar.gz]
 [2024-04-21 00:16:22] INFO root fetch - main [MainThread]: End processing [ryutils]: success
 [2024-04-21 00:16:22] INFO root fetch - main [MainThread]: Store serial: [22859896]
+[2024-04-21 00:18:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859896]
+[2024-04-21 00:18:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 00:18:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC252
+[2024-04-21 00:18:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlutterFinder
+[2024-04-21 00:18:32] WARNING root fetch - processPackages [FlutterFinder]: Skipping, unable to determine old version
+[2024-04-21 00:18:32] INFO root fetch - main [MainThread]: End processing [FlutterFinder] error
+[2024-04-21 00:18:32] WARNING root fetch - processPackages [PythonTestLJC252]: Skipping, unable to determine old version
+[2024-04-21 00:18:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC252] error
+[2024-04-21 00:18:32] INFO root fetch - main [MainThread]: Store serial: [22859905]
