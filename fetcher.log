@@ -974,3 +974,18 @@
 [2024-04-21 01:51:46] INFO root fetch - processPackages [seagen]: Remove: archive file [/home/abi/fetcher/tmp/seagen-1.5.tar.gz]
 [2024-04-21 01:51:46] INFO root fetch - main [MainThread]: End processing [seagen]: success
 [2024-04-21 01:51:46] INFO root fetch - main [MainThread]: Store serial: [22860299]
+[2024-04-21 01:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860299]
+[2024-04-21 01:53:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 01:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC285
+[2024-04-21 01:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hypersync
+[2024-04-21 01:53:55] WARNING root fetch - processPackages [PythonTestLJC285]: Skipping, unable to determine old version
+[2024-04-21 01:53:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC285] error
+[2024-04-21 01:53:55] INFO root fetch - processPackages [hypersync]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-04-21 01:53:55] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/2f/21/589246db67b7df3ca6406db3e108c9984b0d99bb360fcf059303f5cb6e84/hypersync-0.5.7.tar.gz
+[2024-04-21 01:53:55] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/54/a5/39cdb75d505efd9e0649b63db0bd57d01a8c70b228a97b461f88019b6ff8/hypersync-0.6.0.tar.gz
+[2024-04-21 01:53:55] INFO root fetch - processPackages [hypersync]: executing diffoscope
+[2024-04-21 01:53:55] INFO root fetch - processPackages [hypersync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypersync-0.5.7.tar.gz tmp/hypersync-0.6.0.tar.gz --markdown 20240421/h/hypersync/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-04-21 01:53:56] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.5.7.tar.gz]
+[2024-04-21 01:53:56] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.0.tar.gz]
+[2024-04-21 01:53:56] INFO root fetch - main [MainThread]: End processing [hypersync]: success
+[2024-04-21 01:53:56] INFO root fetch - main [MainThread]: Store serial: [22860321]
