@@ -806,3 +806,37 @@
 [2024-04-21 01:27:59] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.2.0b2.tar.gz]
 [2024-04-21 01:27:59] INFO root fetch - main [MainThread]: End processing [easytl]: success
 [2024-04-21 01:27:59] INFO root fetch - main [MainThread]: Store serial: [22860211]
+[2024-04-21 01:30:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860211]
+[2024-04-21 01:30:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 01:32:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860211]
+[2024-04-21 01:32:14] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 01:34:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860211]
+[2024-04-21 01:34:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 01:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ragtime
+[2024-04-21 01:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chiasmodon
+[2024-04-21 01:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyICU
+[2024-04-21 01:34:20] INFO root fetch - processPackages [chiasmodon]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 01:34:20] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/f0/c7/8b583a241070ee0f0c098d035940236c5340904bc45413bdb732e1c7218e/chiasmodon-1.1.8.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [ragtime]: New version: [0.0.29] Old Version: [0.0.28]
+[2024-04-21 01:34:20] INFO root fetch - processPackages [PyICU]: New version: [2.9] Old Version: [2.8.1]
+[2024-04-21 01:34:20] INFO root fetch - processPackages [ragtime]: Downloading https://files.pythonhosted.org/packages/fd/68/44c8713a302aa786c81a853cf66ff110a87cf17b61cc5afc9e2c6efd50d6/ragtime-0.0.28.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/dd/1b/67ec3f7a82f1fe6fd665d975358abf0bc73cf8b385cb97de5869ac018be5/chiasmodon-1.1.9.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [PyICU]: Downloading https://files.pythonhosted.org/packages/5c/d0/50e4319f07b0514a9da5dfdf65aa36c0782120c13b1d194a9c1a54cdc537/PyICU-2.8.1.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [chiasmodon]: executing diffoscope
+[2024-04-21 01:34:20] INFO root fetch - processPackages [chiasmodon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiasmodon-1.1.8.tar.gz tmp/chiasmodon-1.1.9.tar.gz --markdown 20240421/c/chiasmodon/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 01:34:20] INFO root fetch - processPackages [ragtime]: Downloading https://files.pythonhosted.org/packages/48/4c/64a44b2f399ca495374b7bc96984f31927917bbc79ba73261153e28d64e0/ragtime-0.0.29.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [PyICU]: Downloading https://files.pythonhosted.org/packages/11/76/9256430e729ad0dd4675a15a7bf0555b9085d1bea36083b9a1b095602f23/PyICU-2.9.tar.gz
+[2024-04-21 01:34:20] INFO root fetch - processPackages [ragtime]: executing diffoscope
+[2024-04-21 01:34:20] INFO root fetch - processPackages [ragtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragtime-0.0.28.tar.gz tmp/ragtime-0.0.29.tar.gz --markdown 20240421/r/ragtime/0.0.28-0.0.29/README.md --exclude *.pyd
+[2024-04-21 01:34:20] INFO root fetch - processPackages [PyICU]: executing diffoscope
+[2024-04-21 01:34:20] INFO root fetch - processPackages [PyICU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyICU-2.8.1.tar.gz tmp/PyICU-2.9.tar.gz --markdown 20240421/P/PyICU/2.8.1-2.9/README.md --exclude *.pyd
+[2024-04-21 01:34:21] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.8.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.9.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - main [MainThread]: End processing [chiasmodon]: success
+[2024-04-21 01:34:21] INFO root fetch - processPackages [ragtime]: Remove: archive file [/home/abi/fetcher/tmp/ragtime-0.0.28.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - processPackages [ragtime]: Remove: archive file [/home/abi/fetcher/tmp/ragtime-0.0.29.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - main [MainThread]: End processing [ragtime]: success
+[2024-04-21 01:34:21] INFO root fetch - processPackages [PyICU]: Remove: archive file [/home/abi/fetcher/tmp/PyICU-2.8.1.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - processPackages [PyICU]: Remove: archive file [/home/abi/fetcher/tmp/PyICU-2.9.tar.gz]
+[2024-04-21 01:34:21] INFO root fetch - main [MainThread]: End processing [PyICU]: success
+[2024-04-21 01:34:21] INFO root fetch - main [MainThread]: Store serial: [22860221]
