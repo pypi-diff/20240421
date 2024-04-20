@@ -97,3 +97,18 @@
 [2024-04-21 00:09:50] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.1.1.tar.gz]
 [2024-04-21 00:09:50] INFO root fetch - main [MainThread]: End processing [mocker-db]: success
 [2024-04-21 00:09:50] INFO root fetch - main [MainThread]: Store serial: [22859847]
+[2024-04-21 00:11:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859847]
+[2024-04-21 00:11:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 00:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC247
+[2024-04-21 00:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsmfsb
+[2024-04-21 00:11:59] WARNING root fetch - processPackages [PythonTestLJC247]: Skipping, unable to determine old version
+[2024-04-21 00:11:59] INFO root fetch - main [MainThread]: End processing [PythonTestLJC247] error
+[2024-04-21 00:11:59] INFO root fetch - processPackages [jsmfsb]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 00:11:59] INFO root fetch - processPackages [jsmfsb]: Downloading https://files.pythonhosted.org/packages/bb/3b/d85564a61fa88bbaa39bbf832a2d5d2fb6c30b1a9495963793aed1853c9f/jsmfsb-0.0.3.tar.gz
+[2024-04-21 00:11:59] INFO root fetch - processPackages [jsmfsb]: Downloading https://files.pythonhosted.org/packages/7e/0b/c8a88d69a89581f857686e8a113bdeec3084fe3d174a4948426c6e8527f7/jsmfsb-0.0.4.tar.gz
+[2024-04-21 00:11:59] INFO root fetch - processPackages [jsmfsb]: executing diffoscope
+[2024-04-21 00:11:59] INFO root fetch - processPackages [jsmfsb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmfsb-0.0.3.tar.gz tmp/jsmfsb-0.0.4.tar.gz --markdown 20240421/j/jsmfsb/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 00:12:00] INFO root fetch - processPackages [jsmfsb]: Remove: archive file [/home/abi/fetcher/tmp/jsmfsb-0.0.3.tar.gz]
+[2024-04-21 00:12:00] INFO root fetch - processPackages [jsmfsb]: Remove: archive file [/home/abi/fetcher/tmp/jsmfsb-0.0.4.tar.gz]
+[2024-04-21 00:12:00] INFO root fetch - main [MainThread]: End processing [jsmfsb]: success
+[2024-04-21 00:12:00] INFO root fetch - main [MainThread]: Store serial: [22859855]
