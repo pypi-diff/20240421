@@ -387,3 +387,27 @@
 [2024-04-21 00:44:33] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.9.tar.gz]
 [2024-04-21 00:44:33] INFO root fetch - main [MainThread]: End processing [cortix]: success
 [2024-04-21 00:44:33] INFO root fetch - main [MainThread]: Store serial: [22859994]
+[2024-04-21 00:46:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859994]
+[2024-04-21 00:46:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 00:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC262
+[2024-04-21 00:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ryutils
+[2024-04-21 00:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-explorer
+[2024-04-21 00:46:41] INFO root fetch - processPackages [model-explorer]: New version: [0.0.72] Old Version: [0.0.69]
+[2024-04-21 00:46:41] INFO root fetch - processPackages [ryutils]: New version: [4.0.5] Old Version: [4.0.4]
+[2024-04-21 00:46:41] WARNING root fetch - processPackages [PythonTestLJC262]: Skipping, unable to determine old version
+[2024-04-21 00:46:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC262] error
+[2024-04-21 00:46:41] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/4f/a4/db518ac291eebc544222a3f8fa9022f8b8ce73ea3bf816eeb2b50dca2fb7/model_explorer-0.0.69.tar.gz
+[2024-04-21 00:46:41] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/83/e3/1bcd8b1392d2501e863c6ce7eb23f8c269cd4d38dfd5cd5d954482541db8/ryutils-4.0.4.tar.gz
+[2024-04-21 00:46:42] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/3f/27/4091dce499908ecca9b71d5bae2912baf9beca99074076100b8632dc6f35/ryutils-4.0.5.tar.gz
+[2024-04-21 00:46:42] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-21 00:46:42] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.4.tar.gz tmp/ryutils-4.0.5.tar.gz --markdown 20240421/r/ryutils/4.0.4-4.0.5/README.md --exclude *.pyd
+[2024-04-21 00:46:42] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/f1/80/1b6c33d8a08367511d5663d20e0ed3a6cc9bfee41cd2d3421a77c19f6fea/model_explorer-0.0.72.tar.gz
+[2024-04-21 00:46:42] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-04-21 00:46:42] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.69.tar.gz tmp/model_explorer-0.0.72.tar.gz --markdown 20240421/m/model-explorer/0.0.69-0.0.72/README.md --exclude *.pyd
+[2024-04-21 00:46:42] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.4.tar.gz]
+[2024-04-21 00:46:42] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.5.tar.gz]
+[2024-04-21 00:46:42] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-21 00:46:52] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.69.tar.gz]
+[2024-04-21 00:46:52] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.72.tar.gz]
+[2024-04-21 00:46:52] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-04-21 00:46:52] INFO root fetch - main [MainThread]: Store serial: [22860005]
