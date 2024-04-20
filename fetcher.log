@@ -909,3 +909,30 @@
 [2024-04-21 01:43:09] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.1a3.tar.gz]
 [2024-04-21 01:43:09] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-21 01:43:09] INFO root fetch - main [MainThread]: Store serial: [22860272]
+[2024-04-21 01:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860272]
+[2024-04-21 01:45:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 01:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC283
+[2024-04-21 01:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-structured-output
+[2024-04-21 01:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pg-alchemy-kit
+[2024-04-21 01:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hetman
+[2024-04-21 01:45:18] INFO root fetch - processPackages [llm-structured-output]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 01:45:18] WARNING root fetch - processPackages [hetman]: Skipping, unable to determine old version
+[2024-04-21 01:45:18] INFO root fetch - main [MainThread]: End processing [hetman] error
+[2024-04-21 01:45:18] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/61/ae/e19591d0784d773b0273b839601b2d55e7e0e64e9df2fc897c5ee876f014/llm_structured_output-0.0.7.tar.gz
+[2024-04-21 01:45:18] WARNING root fetch - processPackages [PythonTestLJC283]: Skipping, unable to determine old version
+[2024-04-21 01:45:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC283] error
+[2024-04-21 01:45:18] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.0b0] Old Version: [0.8.3]
+[2024-04-21 01:45:18] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/23/58/a6fe6fd07d1ec5c2791f5a5db0ed3b196c60d87bd8e17cc0afa3bc420f68/llm_structured_output-0.0.8.tar.gz
+[2024-04-21 01:45:18] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/65/5c/fd33bad084add7219f801f87d5a28a580474c1164f012b465ee33e7aebc0/pg_alchemy_kit-0.8.3.tar.gz
+[2024-04-21 01:45:18] INFO root fetch - processPackages [llm-structured-output]: executing diffoscope
+[2024-04-21 01:45:18] INFO root fetch - processPackages [llm-structured-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_structured_output-0.0.7.tar.gz tmp/llm_structured_output-0.0.8.tar.gz --markdown 20240421/l/llm-structured-output/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 01:45:18] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/39/82/717d15869454afcaf33dd073a851330d8b45ed534d4b0cb126e93aaf0ca3/pg_alchemy_kit-0.9.0b0.tar.gz
+[2024-04-21 01:45:18] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-04-21 01:45:18] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.8.3.tar.gz tmp/pg_alchemy_kit-0.9.0b0.tar.gz --markdown 20240421/p/pg-alchemy-kit/0.8.3-0.9.0b0/README.md --exclude *.pyd
+[2024-04-21 01:45:19] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.7.tar.gz]
+[2024-04-21 01:45:19] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.8.tar.gz]
+[2024-04-21 01:45:19] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
+[2024-04-21 01:45:19] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.8.3.tar.gz]
+[2024-04-21 01:45:19] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.0b0.tar.gz]
+[2024-04-21 01:45:19] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-04-21 01:45:19] INFO root fetch - main [MainThread]: Store serial: [22860285]
