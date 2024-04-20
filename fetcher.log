@@ -37,3 +37,24 @@
 [2024-04-21 00:03:19] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.9.tar.gz]
 [2024-04-21 00:03:19] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
 [2024-04-21 00:03:19] INFO root fetch - main [MainThread]: Store serial: [22859813]
+[2024-04-21 00:05:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859813]
+[2024-04-21 00:05:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 00:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ck-apstra-api
+[2024-04-21 00:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pub-worm
+[2024-04-21 00:05:28] INFO root fetch - processPackages [ck-apstra-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 00:05:28] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/7c/2a/abef9e7f6bfd8bbe702559b01d7558798b73d2254a4126a13c8afed7c02c/ck_apstra_api-0.2.8.tar.gz
+[2024-04-21 00:05:28] INFO root fetch - processPackages [pub-worm]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-21 00:05:28] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/dc/40/ee507ae501e4a3b7aca59c4548c03f984a891162adc467495e853534a882/ck_apstra_api-0.2.9.tar.gz
+[2024-04-21 00:05:28] INFO root fetch - processPackages [pub-worm]: Downloading https://files.pythonhosted.org/packages/43/11/631571482818adc400afa644ca4fb69ab1c3380d266d34f0112877514a49/pub_worm-0.2.5.tar.gz
+[2024-04-21 00:05:29] INFO root fetch - processPackages [ck-apstra-api]: executing diffoscope
+[2024-04-21 00:05:29] INFO root fetch - processPackages [ck-apstra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ck_apstra_api-0.2.8.tar.gz tmp/ck_apstra_api-0.2.9.tar.gz --markdown 20240421/c/ck-apstra-api/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 00:05:29] INFO root fetch - processPackages [pub-worm]: Downloading https://files.pythonhosted.org/packages/7d/07/f0b969d2ecfe9daa5682c4565ed168d28aa1e45dff044a102bdb549c2cba/pub_worm-0.2.6.tar.gz
+[2024-04-21 00:05:29] INFO root fetch - processPackages [pub-worm]: executing diffoscope
+[2024-04-21 00:05:29] INFO root fetch - processPackages [pub-worm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pub_worm-0.2.5.tar.gz tmp/pub_worm-0.2.6.tar.gz --markdown 20240421/p/pub-worm/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-21 00:05:29] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.8.tar.gz]
+[2024-04-21 00:05:29] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.9.tar.gz]
+[2024-04-21 00:05:29] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
+[2024-04-21 00:05:30] INFO root fetch - processPackages [pub-worm]: Remove: archive file [/home/abi/fetcher/tmp/pub_worm-0.2.5.tar.gz]
+[2024-04-21 00:05:30] INFO root fetch - processPackages [pub-worm]: Remove: archive file [/home/abi/fetcher/tmp/pub_worm-0.2.6.tar.gz]
+[2024-04-21 00:05:30] INFO root fetch - main [MainThread]: End processing [pub-worm]: success
+[2024-04-21 00:05:30] INFO root fetch - main [MainThread]: Store serial: [22859818]
