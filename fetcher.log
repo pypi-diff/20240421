@@ -579,3 +579,45 @@
 [2024-04-21 01:04:11] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
 [2024-04-21 01:04:11] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
 [2024-04-21 01:04:11] INFO root fetch - main [MainThread]: Store serial: [22860091]
+[2024-04-21 01:06:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860091]
+[2024-04-21 01:06:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 01:06:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC269
+[2024-04-21 01:06:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-seeding
+[2024-04-21 01:06:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2024-04-21 01:06:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thepipe-api
+[2024-04-21 01:06:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flwr-nightly
+[2024-04-21 01:06:20] INFO root fetch - processPackages [thepipe-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 01:06:20] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240419] Old Version: [0.7.52b20240418]
+[2024-04-21 01:06:20] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240419] Old Version: [1.9.0.dev20240418]
+[2024-04-21 01:06:20] WARNING root fetch - processPackages [PythonTestLJC269]: Skipping, unable to determine old version
+[2024-04-21 01:06:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC269] error
+[2024-04-21 01:06:20] INFO root fetch - processPackages [django-seeding]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 01:06:20] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/db/8f/b4d78d034ed2d9bcf81cabff2a74e49d4247d5f70bba8dbbd8acc3329e65/thepipe_api-0.2.8.tar.gz
+[2024-04-21 01:06:20] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ae/bd/dde6e4597c99d2177f07f29dae3bf3bc77368f6133a2878a44f986da9d6d/tmnt-0.7.52b20240418.tar.gz
+[2024-04-21 01:06:20] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/5d/cd/f58a37576588a730290a3ac31a262b7b1fe1df736b8d028d309d6bc215fc/flwr_nightly-1.9.0.dev20240418.tar.gz
+[2024-04-21 01:06:20] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/96/6e/81da3e9f00c6f7ff7025c03b2b136cf967b1d6365e452ce9575946a29a48/django-seeding-1.0.8.tar.gz
+[2024-04-21 01:06:20] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/09/e6/e9f51ca6fdcb3295a5ecc03be6d9d812ffb025ede357e89edebe0d38ecfd/thepipe_api-0.2.9.tar.gz
+[2024-04-21 01:06:20] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/1a/1b/9f5691ea2b701eb3c0f42248fe28e646200d392b1b10ad0e71a143513546/tmnt-0.7.52b20240419.tar.gz
+[2024-04-21 01:06:21] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/53/9f/89a74385c1adb3d6d5181cc6f703abad3050b83c56691335bcb9123bb4cf/flwr_nightly-1.9.0.dev20240419.tar.gz
+[2024-04-21 01:06:21] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-21 01:06:21] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.2.8.tar.gz tmp/thepipe_api-0.2.9.tar.gz --markdown 20240421/t/thepipe-api/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 01:06:21] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-21 01:06:21] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240418.tar.gz tmp/tmnt-0.7.52b20240419.tar.gz --markdown 20240421/t/tmnt/0.7.52b20240418-0.7.52b20240419/README.md --exclude *.pyd
+[2024-04-21 01:06:21] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/66/04/a6d071aef8bf32477e28db6e942510a0d2557b43291fe2887b6de6706c75/django-seeding-1.0.9.tar.gz
+[2024-04-21 01:06:21] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-04-21 01:06:21] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240418.tar.gz tmp/flwr_nightly-1.9.0.dev20240419.tar.gz --markdown 20240421/f/flwr-nightly/1.9.0.dev20240418-1.9.0.dev20240419/README.md --exclude *.pyd
+[2024-04-21 01:06:21] INFO root fetch - processPackages [django-seeding]: executing diffoscope
+[2024-04-21 01:06:21] INFO root fetch - processPackages [django-seeding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-seeding-1.0.8.tar.gz tmp/django-seeding-1.0.9.tar.gz --markdown 20240421/d/django-seeding/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 01:06:21] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240418.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240419.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-21 01:06:21] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django-seeding-1.0.8.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django-seeding-1.0.9.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - main [MainThread]: End processing [django-seeding]: success
+[2024-04-21 01:06:21] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.8.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.9.tar.gz]
+[2024-04-21 01:06:21] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-21 01:06:22] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240418.tar.gz]
+[2024-04-21 01:06:22] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240419.tar.gz]
+[2024-04-21 01:06:22] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-04-21 01:06:22] INFO root fetch - main [MainThread]: Store serial: [22860116]
