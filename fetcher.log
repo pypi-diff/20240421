@@ -5415,3 +5415,21 @@
 [2024-04-21 08:38:51] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip]
 [2024-04-21 08:38:51] INFO root fetch - main [MainThread]: End processing [pyrealsense2]: success
 [2024-04-21 08:38:51] INFO root fetch - main [MainThread]: Store serial: [22862474]
+[2024-04-21 08:40:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862474]
+[2024-04-21 08:41:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 08:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paketoi
+[2024-04-21 08:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-04-21 08:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TH-camera-calibration
+[2024-04-21 08:41:00] INFO root fetch - processPackages [mteb]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-21 08:41:00] WARNING root fetch - processPackages [TH-camera-calibration]: Skipping, unable to determine old version
+[2024-04-21 08:41:00] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration] error
+[2024-04-21 08:41:00] WARNING root fetch - processPackages [paketoi]: Skipping, unable to determine old version
+[2024-04-21 08:41:00] INFO root fetch - main [MainThread]: End processing [paketoi] error
+[2024-04-21 08:41:00] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/28/8f/efe06e8ef3f3b09d68d5bbcabb979a0d2cf3f6b955f8307feddf794fa338/mteb-1.7.0.tar.gz
+[2024-04-21 08:41:01] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/e9/cc/e306e57b77e69ddcb5127b1cd38705dab96d554e192dce39d01f7dfe6f7f/mteb-1.7.1.tar.gz
+[2024-04-21 08:41:01] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-21 08:41:01] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.0.tar.gz tmp/mteb-1.7.1.tar.gz --markdown 20240421/m/mteb/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-21 08:41:02] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.0.tar.gz]
+[2024-04-21 08:41:02] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.1.tar.gz]
+[2024-04-21 08:41:02] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-21 08:41:02] INFO root fetch - main [MainThread]: Store serial: [22862489]
