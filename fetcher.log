@@ -9253,3 +9253,15 @@
 [2024-04-21 13:53:17] INFO root fetch - processPackages [geodynamic]: Remove: archive file [/home/abi/fetcher/tmp/geodynamic-0.0.8.tar.gz]
 [2024-04-21 13:53:17] INFO root fetch - main [MainThread]: End processing [geodynamic]: success
 [2024-04-21 13:53:17] INFO root fetch - main [MainThread]: Store serial: [22864132]
+[2024-04-21 13:55:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864132]
+[2024-04-21 13:55:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 13:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metronomes
+[2024-04-21 13:55:25] INFO root fetch - processPackages [metronomes]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 13:55:26] INFO root fetch - processPackages [metronomes]: Downloading https://files.pythonhosted.org/packages/3a/8c/d47fa21b2ae7b5053f1a18e9318e71d5befa83a313013fb2d8b279eee906/metronomes-0.0.1.tar.gz
+[2024-04-21 13:55:26] INFO root fetch - processPackages [metronomes]: Downloading https://files.pythonhosted.org/packages/d7/27/632fc35e368354f50b72e0163a3c4ecb4e00c5f4f8a77ab618356f21a3f8/metronomes-0.0.2.tar.gz
+[2024-04-21 13:55:26] INFO root fetch - processPackages [metronomes]: executing diffoscope
+[2024-04-21 13:55:26] INFO root fetch - processPackages [metronomes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metronomes-0.0.1.tar.gz tmp/metronomes-0.0.2.tar.gz --markdown 20240421/m/metronomes/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 13:55:27] INFO root fetch - processPackages [metronomes]: Remove: archive file [/home/abi/fetcher/tmp/metronomes-0.0.1.tar.gz]
+[2024-04-21 13:55:27] INFO root fetch - processPackages [metronomes]: Remove: archive file [/home/abi/fetcher/tmp/metronomes-0.0.2.tar.gz]
+[2024-04-21 13:55:27] INFO root fetch - main [MainThread]: End processing [metronomes]: success
+[2024-04-21 13:55:27] INFO root fetch - main [MainThread]: Store serial: [22864143]
