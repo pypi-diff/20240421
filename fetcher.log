@@ -3683,3 +3683,27 @@
 [2024-04-21 05:40:27] WARNING root fetch - processPackages [PythonTestLJC360]: Skipping, unable to determine old version
 [2024-04-21 05:40:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC360] error
 [2024-04-21 05:40:27] INFO root fetch - main [MainThread]: Store serial: [22861750]
+[2024-04-21 05:42:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861750]
+[2024-04-21 05:42:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 05:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lamda
+[2024-04-21 05:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-21 05:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC361
+[2024-04-21 05:42:35] INFO root fetch - processPackages [cerbogen]: New version: [0.0.42] Old Version: [0.0.41]
+[2024-04-21 05:42:35] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/04/02/055b66703f6a74d158356f3f4943dfde8ec71df996705f17dd71756ae7cd/cerbogen-0.0.41.tar.gz
+[2024-04-21 05:42:35] WARNING root fetch - processPackages [PythonTestLJC361]: Skipping, unable to determine old version
+[2024-04-21 05:42:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC361] error
+[2024-04-21 05:42:35] INFO root fetch - processPackages [lamda]: New version: [7.65] Old Version: [7.60]
+[2024-04-21 05:42:36] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/10/29/7e91e8ab613955e4e2f26d07393c285ea092b8c2ba4bd78c8c7ee56516fb/lamda-7.60.tar.gz
+[2024-04-21 05:42:36] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/08/5b/22caddc03a0fcc34c389cc99595ccdc36600e208cd6099a735707c53c0ae/cerbogen-0.0.42.tar.gz
+[2024-04-21 05:42:36] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 05:42:36] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.41.tar.gz tmp/cerbogen-0.0.42.tar.gz --markdown 20240421/c/cerbogen/0.0.41-0.0.42/README.md --exclude *.pyd
+[2024-04-21 05:42:36] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/7a/e9/1e38e7b7a43ba46547d8510f08b57b52b84c7addf33ca27ca10f5a49ddd0/lamda-7.65.tar.gz
+[2024-04-21 05:42:36] INFO root fetch - processPackages [lamda]: executing diffoscope
+[2024-04-21 05:42:36] INFO root fetch - processPackages [lamda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamda-7.60.tar.gz tmp/lamda-7.65.tar.gz --markdown 20240421/l/lamda/7.60-7.65/README.md --exclude *.pyd
+[2024-04-21 05:42:36] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.41.tar.gz]
+[2024-04-21 05:42:36] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.42.tar.gz]
+[2024-04-21 05:42:36] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 05:42:37] INFO root fetch - processPackages [lamda]: Remove: archive file [/home/abi/fetcher/tmp/lamda-7.60.tar.gz]
+[2024-04-21 05:42:37] INFO root fetch - processPackages [lamda]: Remove: archive file [/home/abi/fetcher/tmp/lamda-7.65.tar.gz]
+[2024-04-21 05:42:37] INFO root fetch - main [MainThread]: End processing [lamda]: success
+[2024-04-21 05:42:37] INFO root fetch - main [MainThread]: Store serial: [22861760]
