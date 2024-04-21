@@ -4896,3 +4896,24 @@
 [2024-04-21 07:59:20] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc78.post1.tar.gz]
 [2024-04-21 07:59:20] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-21 07:59:20] INFO root fetch - main [MainThread]: Store serial: [22862291]
+[2024-04-21 08:01:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862291]
+[2024-04-21 08:01:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:01:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phono3py
+[2024-04-21 08:01:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oEmbedPy
+[2024-04-21 08:01:28] INFO root fetch - processPackages [phono3py]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-21 08:01:28] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/f6/e2/f9e57395424c5afbf6689c1b30c430b7c0731371732f119f1d9963474863/phono3py-3.0.0.tar.gz
+[2024-04-21 08:01:28] INFO root fetch - processPackages [oEmbedPy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-21 08:01:29] INFO root fetch - processPackages [oEmbedPy]: Downloading https://files.pythonhosted.org/packages/0a/e3/133a7f5c76b5c5c5c93419f2f7bb3444a8558292369a40907cc949e1a555/oEmbedPy-0.4.0.tar.gz
+[2024-04-21 08:01:29] INFO root fetch - processPackages [oEmbedPy]: Downloading https://files.pythonhosted.org/packages/36/21/01e8b8c9bbe84cb65c3c3a8354c3a63f4b947357c7e0971a6f232ccc7bb5/oembedpy-0.5.0.tar.gz
+[2024-04-21 08:01:29] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/43/bd/0908583ca5de8e4a075c4aa0b2d603dc50178a25d192278bbc38b7b6c686/phono3py-3.0.1.tar.gz
+[2024-04-21 08:01:29] INFO root fetch - processPackages [oEmbedPy]: executing diffoscope
+[2024-04-21 08:01:29] INFO root fetch - processPackages [oEmbedPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oEmbedPy-0.4.0.tar.gz tmp/oembedpy-0.5.0.tar.gz --markdown 20240421/o/oEmbedPy/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-21 08:01:29] INFO root fetch - processPackages [phono3py]: executing diffoscope
+[2024-04-21 08:01:29] INFO root fetch - processPackages [phono3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phono3py-3.0.0.tar.gz tmp/phono3py-3.0.1.tar.gz --markdown 20240421/p/phono3py/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-21 08:01:30] INFO root fetch - processPackages [oEmbedPy]: Remove: archive file [/home/abi/fetcher/tmp/oEmbedPy-0.4.0.tar.gz]
+[2024-04-21 08:01:30] INFO root fetch - processPackages [oEmbedPy]: Remove: archive file [/home/abi/fetcher/tmp/oembedpy-0.5.0.tar.gz]
+[2024-04-21 08:01:30] INFO root fetch - main [MainThread]: End processing [oEmbedPy]: success
+[2024-04-21 08:01:31] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.0.tar.gz]
+[2024-04-21 08:01:31] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.1.tar.gz]
+[2024-04-21 08:01:31] INFO root fetch - main [MainThread]: End processing [phono3py]: success
+[2024-04-21 08:01:31] INFO root fetch - main [MainThread]: Store serial: [22862296]
