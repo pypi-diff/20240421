@@ -11312,3 +11312,36 @@
 [2024-04-21 16:02:22] INFO root fetch - processPackages [snapshooter]: Remove: archive file [/home/abi/fetcher/tmp/snapshooter-1.0.8.tar.gz]
 [2024-04-21 16:02:22] INFO root fetch - main [MainThread]: End processing [snapshooter]: success
 [2024-04-21 16:02:22] INFO root fetch - main [MainThread]: Store serial: [22865248]
+[2024-04-21 16:04:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865248]
+[2024-04-21 16:04:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pc-perf
+[2024-04-21 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profiles-local
+[2024-04-21 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metaffi-api
+[2024-04-21 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aa-intel-tool
+[2024-04-21 16:04:30] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.23] Old Version: [0.0.22]
+[2024-04-21 16:04:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/fe/6c/ff8189535b38c718c946da679102675e6a7a1169ca140aaacfe8f8d0e5d9/metaffi_api-0.0.22.tar.gz
+[2024-04-21 16:04:30] WARNING root fetch - processPackages [pc-perf]: Skipping, unable to determine old version
+[2024-04-21 16:04:30] INFO root fetch - main [MainThread]: End processing [pc-perf] error
+[2024-04-21 16:04:30] INFO root fetch - processPackages [profiles-local]: New version: [0.0.69] Old Version: [0.0.68]
+[2024-04-21 16:04:30] INFO root fetch - processPackages [aa-intel-tool]: New version: [2.1.0] Old Version: [2.0.0b1]
+[2024-04-21 16:04:30] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/61/c6/656298cbcb5a7f449550caf0ec5ddbb28fe374285aae1ee8b7d35a792c28/profiles_local-0.0.68.tar.gz
+[2024-04-21 16:04:30] INFO root fetch - processPackages [aa-intel-tool]: Downloading https://files.pythonhosted.org/packages/e1/b5/484f91df0dcb997e81d20a6a8c653ea099a07915eda109427de8b22fcadb/aa_intel_tool-2.0.0b1.tar.gz
+[2024-04-21 16:04:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/10/6c/7679b005077c5f529c2253594b03ca6b80a00445aabe99c7af9ee5d45eb0/metaffi_api-0.0.23.tar.gz
+[2024-04-21 16:04:31] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 16:04:31] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.22.tar.gz tmp/metaffi_api-0.0.23.tar.gz --markdown 20240421/m/metaffi-api/0.0.22-0.0.23/README.md --exclude *.pyd
+[2024-04-21 16:04:31] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/6e/e7/544a4748e420db612c5e4a402febcb4b9eda25b95b2220fa07c7858e3839/profiles_local-0.0.69.tar.gz
+[2024-04-21 16:04:31] INFO root fetch - processPackages [aa-intel-tool]: Downloading https://files.pythonhosted.org/packages/ef/3a/bdb4880cdb06191dfaa484e7c1b5efcfdfa76ec503cde074e854d5dbf0fb/aa_intel_tool-2.1.0.tar.gz
+[2024-04-21 16:04:31] INFO root fetch - processPackages [profiles-local]: executing diffoscope
+[2024-04-21 16:04:31] INFO root fetch - processPackages [profiles-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiles_local-0.0.68.tar.gz tmp/profiles_local-0.0.69.tar.gz --markdown 20240421/p/profiles-local/0.0.68-0.0.69/README.md --exclude *.pyd
+[2024-04-21 16:04:31] INFO root fetch - processPackages [aa-intel-tool]: executing diffoscope
+[2024-04-21 16:04:31] INFO root fetch - processPackages [aa-intel-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_intel_tool-2.0.0b1.tar.gz tmp/aa_intel_tool-2.1.0.tar.gz --markdown 20240421/a/aa-intel-tool/2.0.0b1-2.1.0/README.md --exclude *.pyd
+[2024-04-21 16:04:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.22.tar.gz]
+[2024-04-21 16:04:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.23.tar.gz]
+[2024-04-21 16:04:31] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 16:04:31] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.68.tar.gz]
+[2024-04-21 16:04:31] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.69.tar.gz]
+[2024-04-21 16:04:31] INFO root fetch - main [MainThread]: End processing [profiles-local]: success
+[2024-04-21 16:04:33] INFO root fetch - processPackages [aa-intel-tool]: Remove: archive file [/home/abi/fetcher/tmp/aa_intel_tool-2.0.0b1.tar.gz]
+[2024-04-21 16:04:33] INFO root fetch - processPackages [aa-intel-tool]: Remove: archive file [/home/abi/fetcher/tmp/aa_intel_tool-2.1.0.tar.gz]
+[2024-04-21 16:04:33] INFO root fetch - main [MainThread]: End processing [aa-intel-tool]: success
+[2024-04-21 16:04:33] INFO root fetch - main [MainThread]: Store serial: [22865263]
