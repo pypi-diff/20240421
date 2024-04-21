@@ -3130,3 +3130,15 @@
 [2024-04-21 04:48:22] WARNING root fetch - processPackages [PythonTestLJC341]: Skipping, unable to determine old version
 [2024-04-21 04:48:22] INFO root fetch - main [MainThread]: End processing [PythonTestLJC341] error
 [2024-04-21 04:48:22] INFO root fetch - main [MainThread]: Store serial: [22861463]
+[2024-04-21 04:50:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861463]
+[2024-04-21 04:50:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 04:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-04-21 04:50:31] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240421.99] Old Version: [0.13.20240419.98]
+[2024-04-21 04:50:31] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/9d/4f/3149d8bc71b26cfffe7094bec758b8ea3c47b234ae598d1b7261a5bfa7ff/PKDevTools-0.13.20240419.98.tar.gz
+[2024-04-21 04:50:31] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/1c/da/ed6a44ea84ec65677ce541ca04ecd2aba8b9971918f98d4a656a387aab4a/PKDevTools-0.13.20240421.99.tar.gz
+[2024-04-21 04:50:31] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-04-21 04:50:31] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240419.98.tar.gz tmp/PKDevTools-0.13.20240421.99.tar.gz --markdown 20240421/P/PKDevTools/0.13.20240419.98-0.13.20240421.99/README.md --exclude *.pyd
+[2024-04-21 04:50:32] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240419.98.tar.gz]
+[2024-04-21 04:50:32] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240421.99.tar.gz]
+[2024-04-21 04:50:32] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-04-21 04:50:32] INFO root fetch - main [MainThread]: Store serial: [22861466]
