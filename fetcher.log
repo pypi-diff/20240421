@@ -4851,3 +4851,19 @@
 [2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: Remove: archive file [/home/abi/fetcher/tmp/modguard-0.7.1.tar.gz]
 [2024-04-21 07:55:01] INFO root fetch - main [MainThread]: End processing [modguard]: success
 [2024-04-21 07:55:01] INFO root fetch - main [MainThread]: Store serial: [22862267]
+[2024-04-21 07:57:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862267]
+[2024-04-21 07:57:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 07:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shelltool
+[2024-04-21 07:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Montreal-Forced-Aligner
+[2024-04-21 07:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: femedu
+[2024-04-21 07:57:10] WARNING root fetch - processPackages [shelltool]: Skipping, unable to determine old version
+[2024-04-21 07:57:10] INFO root fetch - main [MainThread]: End processing [shelltool] error
+[2024-04-21 07:57:10] INFO root fetch - processPackages [Montreal-Forced-Aligner]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-21 07:57:10] INFO root fetch - processPackages [femedu]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 07:57:10] INFO root fetch - processPackages [Montreal-Forced-Aligner]: Downloading https://files.pythonhosted.org/packages/a1/a0/a20c29d9520011e82e12a9b5092510b1ea1805a982849b8d3711c28eebcd/Montreal_Forced_Aligner-3.0.5.tar.gz
+[2024-04-21 07:57:10] INFO root fetch - processPackages [femedu]: Downloading https://files.pythonhosted.org/packages/31/60/e156b208c869ff5d786db6e7acff66cc18d5f64353be37b1b249d6bd226e/femedu-1.0.8.tar.gz
+[2024-04-21 07:57:10] WARNING root fetch - processPackages [Montreal-Forced-Aligner]: Skipping package: exceeds size limit 19114289>=10485760
+[2024-04-21 07:57:10] INFO root fetch - main [MainThread]: End processing [Montreal-Forced-Aligner] error
+[2024-04-21 07:57:10] WARNING root fetch - processPackages [femedu]: Skipping package: exceeds size limit 11027545>=10485760
+[2024-04-21 07:57:10] INFO root fetch - main [MainThread]: End processing [femedu] error
+[2024-04-21 07:57:10] INFO root fetch - main [MainThread]: Store serial: [22862278]
