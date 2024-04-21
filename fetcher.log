@@ -6429,3 +6429,30 @@
 [2024-04-21 10:06:18] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.4.2.tar.gz]
 [2024-04-21 10:06:18] INFO root fetch - main [MainThread]: End processing [todotree]: success
 [2024-04-21 10:06:18] INFO root fetch - main [MainThread]: Store serial: [22863004]
+[2024-04-21 10:08:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863004]
+[2024-04-21 10:08:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglove
+[2024-04-21 10:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC418
+[2024-04-21 10:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-Pantry
+[2024-04-21 10:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegram-cli
+[2024-04-21 10:08:26] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240420] Old Version: [0.4.5.dev20240419]
+[2024-04-21 10:08:27] WARNING root fetch - processPackages [PythonTestLJC418]: Skipping, unable to determine old version
+[2024-04-21 10:08:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC418] error
+[2024-04-21 10:08:27] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/e5/4b/51b1aaf73cc29628c361b17b48fb673f3387196adebd717bba4081f5534a/pyglove-0.4.5.dev20240419.tar.gz
+[2024-04-21 10:08:27] WARNING root fetch - processPackages [python-Pantry]: Skipping, unable to determine old version
+[2024-04-21 10:08:27] INFO root fetch - main [MainThread]: End processing [python-Pantry] error
+[2024-04-21 10:08:27] INFO root fetch - processPackages [telegram-cli]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-21 10:08:27] INFO root fetch - processPackages [telegram-cli]: Downloading https://files.pythonhosted.org/packages/0c/95/4cc061bb4da41c2fbc419c6037f95c0ff89180dd87865a6c1b59378660db/telegram-cli-0.2.0.tar.gz
+[2024-04-21 10:08:27] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/ac/ca/66ee057ef8b03d17ed37015e4e5713a1d84c1776cc7bf1ef8a2492f68841/pyglove-0.4.5.dev20240420.tar.gz
+[2024-04-21 10:08:27] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-21 10:08:27] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240419.tar.gz tmp/pyglove-0.4.5.dev20240420.tar.gz --markdown 20240421/p/pyglove/0.4.5.dev20240419-0.4.5.dev20240420/README.md --exclude *.pyd
+[2024-04-21 10:08:27] INFO root fetch - processPackages [telegram-cli]: Downloading https://files.pythonhosted.org/packages/1f/3b/f395cd3290f328d6d955caaf147e5e90ee404d5f27e9c1e373ab64e5ac04/telegram_cli-0.3.0.tar.gz
+[2024-04-21 10:08:27] INFO root fetch - processPackages [telegram-cli]: executing diffoscope
+[2024-04-21 10:08:27] INFO root fetch - processPackages [telegram-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram-cli-0.2.0.tar.gz tmp/telegram_cli-0.3.0.tar.gz --markdown 20240421/t/telegram-cli/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-21 10:08:28] INFO root fetch - processPackages [telegram-cli]: Remove: archive file [/home/abi/fetcher/tmp/telegram-cli-0.2.0.tar.gz]
+[2024-04-21 10:08:28] INFO root fetch - processPackages [telegram-cli]: Remove: archive file [/home/abi/fetcher/tmp/telegram_cli-0.3.0.tar.gz]
+[2024-04-21 10:08:28] INFO root fetch - main [MainThread]: End processing [telegram-cli]: success
+[2024-04-21 10:08:28] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240419.tar.gz]
+[2024-04-21 10:08:28] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240420.tar.gz]
+[2024-04-21 10:08:28] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-21 10:08:28] INFO root fetch - main [MainThread]: Store serial: [22863020]
