@@ -9771,3 +9771,24 @@
 [2024-04-21 14:25:53] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.2.tar.gz]
 [2024-04-21 14:25:53] INFO root fetch - main [MainThread]: End processing [appthreat-vulnerability-db]: success
 [2024-04-21 14:25:53] INFO root fetch - main [MainThread]: Store serial: [22864450]
+[2024-04-21 14:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864450]
+[2024-04-21 14:28:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 14:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parse-emails
+[2024-04-21 14:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drawdraw
+[2024-04-21 14:28:02] INFO root fetch - processPackages [drawdraw]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-21 14:28:02] INFO root fetch - processPackages [parse-emails]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 14:28:02] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/cb/80/97ab845f91bb99472277b2fa5c7f4ed1d154f3fceeff3220e5910a4c4abc/drawdraw-0.0.9-py3-none-any.whl
+[2024-04-21 14:28:02] INFO root fetch - processPackages [parse-emails]: Downloading https://files.pythonhosted.org/packages/d0/1f/b63b82e92164441e2fbcb5f2cbb938f02674ffa9cb49df0688dfda802705/parse_emails-0.1.8.tar.gz
+[2024-04-21 14:28:02] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/56/17/c20c824cea574e3b9879aa56a07fcf8f3b6320d4432d09437728e1dcff9f/drawdraw-0.1.0-py3-none-any.whl
+[2024-04-21 14:28:02] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 14:28:02] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.9-py3-none-any.whl.zip tmp/drawdraw-0.1.0-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-21 14:28:03] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.9-py3-none-any.whl.zip]
+[2024-04-21 14:28:03] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.1.0-py3-none-any.whl.zip]
+[2024-04-21 14:28:03] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 14:28:05] INFO root fetch - processPackages [parse-emails]: Downloading https://files.pythonhosted.org/packages/86/2e/7d74e4e6e573160a15da3effd044c6ad9eac83ed0fa2a23be82b1b5002ae/parse_emails-0.1.9.tar.gz
+[2024-04-21 14:28:07] INFO root fetch - processPackages [parse-emails]: executing diffoscope
+[2024-04-21 14:28:07] INFO root fetch - processPackages [parse-emails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_emails-0.1.8.tar.gz tmp/parse_emails-0.1.9.tar.gz --markdown 20240421/p/parse-emails/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 14:28:09] INFO root fetch - processPackages [parse-emails]: Remove: archive file [/home/abi/fetcher/tmp/parse_emails-0.1.8.tar.gz]
+[2024-04-21 14:28:09] INFO root fetch - processPackages [parse-emails]: Remove: archive file [/home/abi/fetcher/tmp/parse_emails-0.1.9.tar.gz]
+[2024-04-21 14:28:09] INFO root fetch - main [MainThread]: End processing [parse-emails]: success
+[2024-04-21 14:28:09] INFO root fetch - main [MainThread]: Store serial: [22864455]
