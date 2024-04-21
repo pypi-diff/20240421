@@ -7867,3 +7867,42 @@
 [2024-04-21 12:09:18] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.7.tar.gz]
 [2024-04-21 12:09:18] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 12:09:18] INFO root fetch - main [MainThread]: Store serial: [22863589]
+[2024-04-21 12:11:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863589]
+[2024-04-21 12:11:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 12:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-keras-nightly
+[2024-04-21 12:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: generate-sequences
+[2024-04-21 12:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: storey
+[2024-04-21 12:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monopoly-sg
+[2024-04-21 12:11:27] INFO root fetch - processPackages [monopoly-sg]: New version: [0.7.6rc0] Old Version: [0.7.5]
+[2024-04-21 12:11:27] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024042009] Old Version: [2.17.0.dev2024041909]
+[2024-04-21 12:11:27] INFO root fetch - processPackages [generate-sequences]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 12:11:27] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/ca/1f/93de355e615f41a5b85e3a62beeac0729a416d6d2107b2b12b0a346b146a/monopoly_sg-0.7.5.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [storey]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-21 12:11:27] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/7f/6d/6baf06ab62f0be33ee84846d2d479cad85dd015af1470dc5a2cca48fdfbe/tf_keras_nightly-2.17.0.dev2024041909.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [storey]: Downloading https://files.pythonhosted.org/packages/ce/f2/fb725885928d8ccbbb0a7f28c52605a4972284c1100e5cca1a2523767ad3/storey-1.7.8.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [generate-sequences]: Downloading https://files.pythonhosted.org/packages/28/5f/39a8317ce68ee48bfb7e3951244e8c2d23be5ad53bde0960c5483e2f1367/generate_sequences-0.0.1.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/0c/d2/8e8477d64ae08c73ebdbdca1856d9ba0a9feaffc416500c56a3f42e20004/monopoly_sg-0.7.6rc0.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-04-21 12:11:27] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.5.tar.gz tmp/monopoly_sg-0.7.6rc0.tar.gz --markdown 20240421/m/monopoly-sg/0.7.5-0.7.6rc0/README.md --exclude *.pyd
+[2024-04-21 12:11:27] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/56/d7/615c34ebbb048c10b3ddd2185189219f9771635b1e220743826f93be99c6/tf_keras_nightly-2.17.0.dev2024042009.tar.gz
+[2024-04-21 12:11:27] INFO root fetch - processPackages [generate-sequences]: Downloading https://files.pythonhosted.org/packages/07/af/1f42f6867df06e3eda7d852febcad57f549e64dbb13097a6ac55866fad47/generate_sequences-0.0.2.tar.gz
+[2024-04-21 12:11:28] INFO root fetch - processPackages [storey]: Downloading https://files.pythonhosted.org/packages/7a/07/b7c06ed930f7729cbabcef2eff7245adf34a98245820a6dc5cc2585c3d31/storey-1.7.9.tar.gz
+[2024-04-21 12:11:28] INFO root fetch - processPackages [generate-sequences]: executing diffoscope
+[2024-04-21 12:11:28] INFO root fetch - processPackages [generate-sequences]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate_sequences-0.0.1.tar.gz tmp/generate_sequences-0.0.2.tar.gz --markdown 20240421/g/generate-sequences/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 12:11:28] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-21 12:11:28] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024041909.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024042009.tar.gz --markdown 20240421/t/tf-keras-nightly/2.17.0.dev2024041909-2.17.0.dev2024042009/README.md --exclude *.pyd
+[2024-04-21 12:11:28] INFO root fetch - processPackages [storey]: executing diffoscope
+[2024-04-21 12:11:28] INFO root fetch - processPackages [storey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/storey-1.7.8.tar.gz tmp/storey-1.7.9.tar.gz --markdown 20240421/s/storey/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-21 12:11:28] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.5.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6rc0.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-04-21 12:11:28] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.1.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.2.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - main [MainThread]: End processing [generate-sequences]: success
+[2024-04-21 12:11:28] INFO root fetch - processPackages [storey]: Remove: archive file [/home/abi/fetcher/tmp/storey-1.7.8.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - processPackages [storey]: Remove: archive file [/home/abi/fetcher/tmp/storey-1.7.9.tar.gz]
+[2024-04-21 12:11:28] INFO root fetch - main [MainThread]: End processing [storey]: success
+[2024-04-21 12:11:30] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024041909.tar.gz]
+[2024-04-21 12:11:30] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042009.tar.gz]
+[2024-04-21 12:11:30] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-21 12:11:30] INFO root fetch - main [MainThread]: Store serial: [22863602]
