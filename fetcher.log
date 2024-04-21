@@ -4521,3 +4521,30 @@
 [2024-04-21 07:14:05] INFO root fetch - processPackages [logoo]: Remove: archive file [/home/abi/fetcher/tmp/logoo-1.5.0.tar.gz]
 [2024-04-21 07:14:05] INFO root fetch - main [MainThread]: End processing [logoo]: success
 [2024-04-21 07:14:05] INFO root fetch - main [MainThread]: Store serial: [22862117]
+[2024-04-21 07:16:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862117]
+[2024-04-21 07:16:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commonmeta-py
+[2024-04-21 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: call-to-change
+[2024-04-21 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nog642-util
+[2024-04-21 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC378
+[2024-04-21 07:16:14] WARNING root fetch - processPackages [call-to-change]: Skipping, unable to determine old version
+[2024-04-21 07:16:14] INFO root fetch - main [MainThread]: End processing [call-to-change] error
+[2024-04-21 07:16:14] INFO root fetch - processPackages [nog642-util]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 07:16:14] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/d3/f8/a271cc6fc910e0b779037ee2983f503a898442681c23cdcae1df28ffc82f/nog642_util-0.2.0.tar.gz
+[2024-04-21 07:16:14] WARNING root fetch - processPackages [PythonTestLJC378]: Skipping, unable to determine old version
+[2024-04-21 07:16:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC378] error
+[2024-04-21 07:16:14] INFO root fetch - processPackages [commonmeta-py]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-21 07:16:14] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/52/c0/e7c87877f28428fc995c494cd79586152481d7b23c1e0bbb364b89a4b025/commonmeta_py-0.9.3.tar.gz
+[2024-04-21 07:16:14] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/10/a1/8914b0567759d45616659fbbe785c350de54511e8355731a619aaf590faa/nog642_util-0.2.1.tar.gz
+[2024-04-21 07:16:14] INFO root fetch - processPackages [nog642-util]: executing diffoscope
+[2024-04-21 07:16:14] INFO root fetch - processPackages [nog642-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nog642_util-0.2.0.tar.gz tmp/nog642_util-0.2.1.tar.gz --markdown 20240421/n/nog642-util/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 07:16:14] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/a7/bd/df628255dc3f849e7da2d4b39759e0fb92720cf93c1cfbfa4d9ffff22942/commonmeta_py-0.9.4.tar.gz
+[2024-04-21 07:16:15] INFO root fetch - processPackages [commonmeta-py]: executing diffoscope
+[2024-04-21 07:16:15] INFO root fetch - processPackages [commonmeta-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonmeta_py-0.9.3.tar.gz tmp/commonmeta_py-0.9.4.tar.gz --markdown 20240421/c/commonmeta-py/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-21 07:16:15] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.2.0.tar.gz]
+[2024-04-21 07:16:15] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.2.1.tar.gz]
+[2024-04-21 07:16:15] INFO root fetch - main [MainThread]: End processing [nog642-util]: success
+[2024-04-21 07:16:15] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.3.tar.gz]
+[2024-04-21 07:16:15] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.4.tar.gz]
+[2024-04-21 07:16:15] INFO root fetch - main [MainThread]: End processing [commonmeta-py]: success
+[2024-04-21 07:16:15] INFO root fetch - main [MainThread]: Store serial: [22862131]
