@@ -5454,3 +5454,27 @@
 [2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: Remove: archive file [/home/abi/fetcher/tmp/raptor_labsdk-0.3.1.tar.gz]
 [2024-04-21 08:43:12] INFO root fetch - main [MainThread]: End processing [raptor-labsdk]: success
 [2024-04-21 08:43:12] INFO root fetch - main [MainThread]: Store serial: [22862495]
+[2024-04-21 08:45:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862495]
+[2024-04-21 08:45:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 08:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SmjaAi
+[2024-04-21 08:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode2
+[2024-04-21 08:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TH-camera-calibration
+[2024-04-21 08:45:21] WARNING root fetch - processPackages [TH-camera-calibration]: Skipping, unable to determine old version
+[2024-04-21 08:45:21] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration] error
+[2024-04-21 08:45:21] INFO root fetch - processPackages [SmjaAi]: New version: [0.4] Old Version: [0.2]
+[2024-04-21 08:45:21] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/79/2a/20f714f04545ac6087c0a82f216c65f317c04d16149c87604db01ec86604/smjaai-0.2.tar.gz
+[2024-04-21 08:45:22] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/50/95/ed591ff02e1a2a8ba46c225abd2def268398c94c06b694ec1dfc77af6e66/smjaai-0.4.tar.gz
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: executing diffoscope
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smjaai-0.2.tar.gz tmp/smjaai-0.4.tar.gz --markdown 20240421/S/SmjaAi/0.2-0.4/README.md --exclude *.pyd
+[2024-04-21 08:45:22] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-04-21 08:45:22] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-21 08:45:22] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240421/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.2.tar.gz]
+[2024-04-21 08:45:22] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.4.tar.gz]
+[2024-04-21 08:45:22] INFO root fetch - main [MainThread]: End processing [SmjaAi]: success
+[2024-04-21 08:45:23] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-04-21 08:45:23] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-04-21 08:45:23] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-21 08:45:23] INFO root fetch - main [MainThread]: Store serial: [22862544]
