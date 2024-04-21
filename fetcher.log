@@ -4686,3 +4686,42 @@
 [2024-04-21 07:31:27] INFO root fetch - processPackages [lmo]: Remove: archive file [/home/abi/fetcher/tmp/lmo-0.9.0.tar.gz]
 [2024-04-21 07:31:27] INFO root fetch - main [MainThread]: End processing [lmo]: success
 [2024-04-21 07:31:27] INFO root fetch - main [MainThread]: Store serial: [22862194]
+[2024-04-21 07:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862194]
+[2024-04-21 07:33:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 07:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2024-04-21 07:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rwmapeditor-exgcdwu
+[2024-04-21 07:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emunium
+[2024-04-21 07:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: github-custom-actions
+[2024-04-21 07:33:35] INFO root fetch - processPackages [github-custom-actions]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-21 07:33:35] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240419] Old Version: [2.17.0.dev20240417]
+[2024-04-21 07:33:35] INFO root fetch - processPackages [emunium]: New version: [1.5.0] Old Version: [1.0.2]
+[2024-04-21 07:33:35] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/ff/ce/b567e827a0ede893a3385fa7d1463271afd75c7b018e72b66031e4f95f26/github_custom_actions-1.1.1.tar.gz
+[2024-04-21 07:33:35] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: New version: [1.3.0] Old Version: [1.2.8]
+[2024-04-21 07:33:35] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/a1/40/780eb4cd901d7e717ee3bb04fcb19c7e5ff3958be221ba3a27e71fd85faf/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-21 07:33:35] INFO root fetch - processPackages [emunium]: Downloading https://files.pythonhosted.org/packages/c5/3d/9571507291a75944f4b6fb2006c46ff3e9a3cb1f0a1a3c06085b82f79f81/emunium-1.0.2.tar.gz
+[2024-04-21 07:33:35] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/da/47/d3351e5bbcd4e80e83e6d480f50ac503e9da7bb3a0926b17601d9bae3cb1/rwmapeditor_exgcdwu-1.2.8.tar.gz
+[2024-04-21 07:33:35] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/a7/65/de98f1791d0b8b4afec8362924fe540fb992a12a128393f5b720528fe451/github_custom_actions-1.2.0.tar.gz
+[2024-04-21 07:33:36] INFO root fetch - processPackages [github-custom-actions]: executing diffoscope
+[2024-04-21 07:33:36] INFO root fetch - processPackages [github-custom-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_custom_actions-1.1.1.tar.gz tmp/github_custom_actions-1.2.0.tar.gz --markdown 20240421/g/github-custom-actions/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-21 07:33:36] INFO root fetch - processPackages [emunium]: Downloading https://files.pythonhosted.org/packages/f3/fc/924256c6d9fa61892342de0284bc3ab1138f7df679dc6d5b28ece3acbe25/emunium-1.5.0.tar.gz
+[2024-04-21 07:33:36] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/66/83/56de46bd544f8415edecfd1d0464eadc49618dc6365b29c60b4a5e9bbb86/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-21 07:33:36] INFO root fetch - processPackages [emunium]: executing diffoscope
+[2024-04-21 07:33:36] INFO root fetch - processPackages [emunium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emunium-1.0.2.tar.gz tmp/emunium-1.5.0.tar.gz --markdown 20240421/e/emunium/1.0.2-1.5.0/README.md --exclude *.pyd
+[2024-04-21 07:33:36] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/2a/10/d8bf56178ecc5e1f2492a1fcafc7b6b9fa540c3ed9c2c5092dae6616ef25/rwmapeditor_exgcdwu-1.3.0.tar.gz
+[2024-04-21 07:33:36] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-04-21 07:33:36] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240421/t/tflite-runtime-nightly/2.17.0.dev20240417-2.17.0.dev20240419/README.md --exclude *.pyd
+[2024-04-21 07:33:36] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: executing diffoscope
+[2024-04-21 07:33:36] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwmapeditor_exgcdwu-1.2.8.tar.gz tmp/rwmapeditor_exgcdwu-1.3.0.tar.gz --markdown 20240421/r/rwmapeditor-exgcdwu/1.2.8-1.3.0/README.md --exclude *.pyd
+[2024-04-21 07:33:36] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.1.1.tar.gz]
+[2024-04-21 07:33:36] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.2.0.tar.gz]
+[2024-04-21 07:33:36] INFO root fetch - main [MainThread]: End processing [github-custom-actions]: success
+[2024-04-21 07:33:36] INFO root fetch - processPackages [emunium]: Remove: archive file [/home/abi/fetcher/tmp/emunium-1.0.2.tar.gz]
+[2024-04-21 07:33:36] INFO root fetch - processPackages [emunium]: Remove: archive file [/home/abi/fetcher/tmp/emunium-1.5.0.tar.gz]
+[2024-04-21 07:33:36] INFO root fetch - main [MainThread]: End processing [emunium]: success
+[2024-04-21 07:33:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-21 07:33:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-21 07:33:37] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-04-21 07:33:37] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.2.8.tar.gz]
+[2024-04-21 07:33:37] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.3.0.tar.gz]
+[2024-04-21 07:33:37] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
+[2024-04-21 07:33:37] INFO root fetch - main [MainThread]: Store serial: [22862214]
