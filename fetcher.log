@@ -2813,3 +2813,54 @@
 [2024-04-21 04:17:55] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-21 04:17:55] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-21 04:17:55] INFO root fetch - main [MainThread]: Store serial: [22861324]
+[2024-04-21 04:19:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861324]
+[2024-04-21 04:20:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC331
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moyopy
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-editdistance
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-pycurl
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-waitress
+[2024-04-21 04:20:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gemini-output-wrapper
+[2024-04-21 04:20:03] INFO root fetch - processPackages [gemini-output-wrapper]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-21 04:20:03] INFO root fetch - processPackages [types-waitress]: New version: [2.1.4.9] Old Version: [2.1.4.8]
+[2024-04-21 04:20:03] INFO root fetch - processPackages [gemini-output-wrapper]: Downloading https://files.pythonhosted.org/packages/5d/d9/90caf11b4fd86cba2f9c6062ee5fde6047ead6c0c488410e4c7f125a5f7e/gemini-output-wrapper-0.2.1.tar.gz
+[2024-04-21 04:20:03] WARNING root fetch - processPackages [PythonTestLJC331]: Skipping, unable to determine old version
+[2024-04-21 04:20:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC331] error
+[2024-04-21 04:20:03] INFO root fetch - processPackages [types-pycurl]: New version: [7.45.3.20240421] Old Version: [7.45.2.5]
+[2024-04-21 04:20:03] INFO root fetch - processPackages [types-editdistance]: New version: [0.8.0.20240421] Old Version: [0.6.3.5]
+[2024-04-21 04:20:03] INFO root fetch - processPackages [moyopy]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-waitress]: Downloading https://files.pythonhosted.org/packages/49/e4/8b83b4d8cf0dc6c06487ac784fbfcd1c588ccc44abb89d94342717c2504d/types-waitress-2.1.4.8.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [moyopy]: Downloading https://files.pythonhosted.org/packages/39/a1/96eb173a6fef90fdeb1e6578a385948a149e822736b871e752bcf0668b95/moyopy-0.1.3.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-editdistance]: Downloading https://files.pythonhosted.org/packages/7b/a4/a58c687b863f19dc137165e86cde0dfb0aa6c29cccbc07ee5e219fcf78cb/types-editdistance-0.6.3.5.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-pycurl]: Downloading https://files.pythonhosted.org/packages/eb/a8/62cb3b8c6abd38f8b86a7ab90c0835b99a18c68d32d43df5e22b43c6a779/types-pycurl-7.45.2.5.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [gemini-output-wrapper]: Downloading https://files.pythonhosted.org/packages/ad/38/04ee1fc102f9f6830a4ebab7027c0b6c0b5cdba077eb3803a750f939b157/gemini-output-wrapper-0.2.2.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-waitress]: Downloading https://files.pythonhosted.org/packages/db/4c/824bd5736a98dcd6deaad34e0912e6b425ac39e63a06b03e662db091ffcf/types-waitress-2.1.4.9.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [gemini-output-wrapper]: executing diffoscope
+[2024-04-21 04:20:04] INFO root fetch - processPackages [gemini-output-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini-output-wrapper-0.2.1.tar.gz tmp/gemini-output-wrapper-0.2.2.tar.gz --markdown 20240421/g/gemini-output-wrapper/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-editdistance]: Downloading https://files.pythonhosted.org/packages/e1/79/e0f554cf0e033edab336aa93e94eec0ae3227303289e7d3fd93c9122ddb9/types-editdistance-0.8.0.20240421.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [moyopy]: Downloading https://files.pythonhosted.org/packages/7a/e9/76bf60ebcb03ab2b27c5ef12edd5af911be7d2df1ebffa5fac3d91c3b92d/moyopy-0.1.4.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-waitress]: executing diffoscope
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-waitress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-waitress-2.1.4.8.tar.gz tmp/types-waitress-2.1.4.9.tar.gz --markdown 20240421/t/types-waitress/2.1.4.8-2.1.4.9/README.md --exclude *.pyd
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-editdistance]: executing diffoscope
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-editdistance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-editdistance-0.6.3.5.tar.gz tmp/types-editdistance-0.8.0.20240421.tar.gz --markdown 20240421/t/types-editdistance/0.6.3.5-0.8.0.20240421/README.md --exclude *.pyd
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-pycurl]: Downloading https://files.pythonhosted.org/packages/6a/fd/5c8d1b3bb5d84387e13738484e095d3940763b698d4fce6d0f607b24e7c9/types-pycurl-7.45.3.20240421.tar.gz
+[2024-04-21 04:20:04] INFO root fetch - processPackages [moyopy]: executing diffoscope
+[2024-04-21 04:20:04] INFO root fetch - processPackages [moyopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moyopy-0.1.3.tar.gz tmp/moyopy-0.1.4.tar.gz --markdown 20240421/m/moyopy/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-pycurl]: executing diffoscope
+[2024-04-21 04:20:04] INFO root fetch - processPackages [types-pycurl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-pycurl-7.45.2.5.tar.gz tmp/types-pycurl-7.45.3.20240421.tar.gz --markdown 20240421/t/types-pycurl/7.45.2.5-7.45.3.20240421/README.md --exclude *.pyd
+[2024-04-21 04:20:05] INFO root fetch - processPackages [gemini-output-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/gemini-output-wrapper-0.2.1.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - processPackages [gemini-output-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/gemini-output-wrapper-0.2.2.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [gemini-output-wrapper]: success
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-editdistance]: Remove: archive file [/home/abi/fetcher/tmp/types-editdistance-0.6.3.5.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-editdistance]: Remove: archive file [/home/abi/fetcher/tmp/types-editdistance-0.8.0.20240421.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [types-editdistance]: success
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-waitress]: Remove: archive file [/home/abi/fetcher/tmp/types-waitress-2.1.4.8.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-waitress]: Remove: archive file [/home/abi/fetcher/tmp/types-waitress-2.1.4.9.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [types-waitress]: success
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-pycurl]: Remove: archive file [/home/abi/fetcher/tmp/types-pycurl-7.45.2.5.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - processPackages [types-pycurl]: Remove: archive file [/home/abi/fetcher/tmp/types-pycurl-7.45.3.20240421.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [types-pycurl]: success
+[2024-04-21 04:20:05] INFO root fetch - processPackages [moyopy]: Remove: archive file [/home/abi/fetcher/tmp/moyopy-0.1.3.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - processPackages [moyopy]: Remove: archive file [/home/abi/fetcher/tmp/moyopy-0.1.4.tar.gz]
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [moyopy]: success
+[2024-04-21 04:20:05] INFO root fetch - main [MainThread]: Store serial: [22861353]
