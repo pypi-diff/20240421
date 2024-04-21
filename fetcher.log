@@ -10854,3 +10854,36 @@
 [2024-04-21 15:40:04] INFO root fetch - processPackages [kserve]: Remove: archive file [/home/abi/fetcher/tmp/kserve-0.9.0rc0.tar.gz]
 [2024-04-21 15:40:04] INFO root fetch - main [MainThread]: End processing [kserve]: success
 [2024-04-21 15:40:04] INFO root fetch - main [MainThread]: Store serial: [22865017]
+[2024-04-21 15:42:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865017]
+[2024-04-21 15:42:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sfmanager
+[2024-04-21 15:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC473
+[2024-04-21 15:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scratchcommunication
+[2024-04-21 15:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auth-middleware
+[2024-04-21 15:42:13] INFO root fetch - processPackages [sfmanager]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 15:42:13] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:42:13] INFO root fetch - processPackages [scratchcommunication]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-04-21 15:42:13] WARNING root fetch - processPackages [PythonTestLJC473]: Skipping, unable to determine old version
+[2024-04-21 15:42:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC473] error
+[2024-04-21 15:42:13] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/44/97/4e6503f50a185e8a42b1826dfd1e6af4d7771fc581c599be5e8c9e26b7c5/sfmanager-0.1.4.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [scratchcommunication]: Downloading https://files.pythonhosted.org/packages/a5/98/ede3f65f01027d0f9a50b9384be4ba6ab57310469a341aa75a13aaae4438/scratchcommunication-2.4.3.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/82/09/803273cd28dac3a0477244fbe67e635462cb4604351a1141f5d544d12f50/auth_middleware-0.1.9.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/9c/61/48951c6eefe0829b42dfde463eab1554b4c74083d78c844735bb377acd20/sfmanager-0.1.5.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-21 15:42:13] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.8.tar.gz tmp/auth_middleware-0.1.9.tar.gz --markdown 20240421/a/auth-middleware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:42:13] INFO root fetch - processPackages [scratchcommunication]: Downloading https://files.pythonhosted.org/packages/19/95/e744aa34e0169fd48ca2d81f7d70cba7a101b74f2a6a7db911adce1a4cfd/scratchcommunication-2.4.4.tar.gz
+[2024-04-21 15:42:13] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-21 15:42:13] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.4.tar.gz tmp/sfmanager-0.1.5.tar.gz --markdown 20240421/s/sfmanager/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 15:42:14] INFO root fetch - processPackages [scratchcommunication]: executing diffoscope
+[2024-04-21 15:42:14] INFO root fetch - processPackages [scratchcommunication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchcommunication-2.4.3.tar.gz tmp/scratchcommunication-2.4.4.tar.gz --markdown 20240421/s/scratchcommunication/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-04-21 15:42:14] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-21 15:42:14] INFO root fetch - processPackages [scratchcommunication]: Remove: archive file [/home/abi/fetcher/tmp/scratchcommunication-2.4.3.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - processPackages [scratchcommunication]: Remove: archive file [/home/abi/fetcher/tmp/scratchcommunication-2.4.4.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - main [MainThread]: End processing [scratchcommunication]: success
+[2024-04-21 15:42:14] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.4.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.5.tar.gz]
+[2024-04-21 15:42:14] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-21 15:42:14] INFO root fetch - main [MainThread]: Store serial: [22865032]
