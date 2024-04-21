@@ -11708,3 +11708,30 @@
 [2024-04-21 16:17:46] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.2.0.tar.gz]
 [2024-04-21 16:17:46] INFO root fetch - main [MainThread]: End processing [open-samus-returns-rando]: success
 [2024-04-21 16:17:46] INFO root fetch - main [MainThread]: Store serial: [22865436]
+[2024-04-21 16:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865436]
+[2024-04-21 16:19:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imds
+[2024-04-21 16:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flux-local
+[2024-04-21 16:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p-template-generator
+[2024-04-21 16:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC487
+[2024-04-21 16:19:55] INFO root fetch - processPackages [flux-local]: New version: [5.0.0] Old Version: [4.3.1]
+[2024-04-21 16:19:55] WARNING root fetch - processPackages [imds]: Skipping, unable to determine old version
+[2024-04-21 16:19:55] INFO root fetch - main [MainThread]: End processing [imds] error
+[2024-04-21 16:19:55] WARNING root fetch - processPackages [PythonTestLJC487]: Skipping, unable to determine old version
+[2024-04-21 16:19:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC487] error
+[2024-04-21 16:19:55] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-21 16:19:55] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/1b/97/3ce465b227948228d54b23cce28d276cba10979414c6c89e916d7849056d/flux-local-4.3.1.tar.gz
+[2024-04-21 16:19:55] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-04-21 16:19:55] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/0a/f4/ebf6b2f324b08697493c57820c510d2d5bca9d404f2bbfbd4e551eba1732/flux_local-5.0.0.tar.gz
+[2024-04-21 16:19:55] INFO root fetch - processPackages [flux-local]: executing diffoscope
+[2024-04-21 16:19:55] INFO root fetch - processPackages [flux-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-local-4.3.1.tar.gz tmp/flux_local-5.0.0.tar.gz --markdown 20240421/f/flux-local/4.3.1-5.0.0/README.md --exclude *.pyd
+[2024-04-21 16:19:56] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux-local-4.3.1.tar.gz]
+[2024-04-21 16:19:56] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux_local-5.0.0.tar.gz]
+[2024-04-21 16:19:56] INFO root fetch - main [MainThread]: End processing [flux-local]: success
+[2024-04-21 16:19:56] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-04-21 16:19:58] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-04-21 16:19:58] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240421/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-21 16:19:59] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-04-21 16:19:59] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-04-21 16:19:59] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-04-21 16:19:59] INFO root fetch - main [MainThread]: Store serial: [22865451]
