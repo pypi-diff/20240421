@@ -7339,3 +7339,41 @@
 [2024-04-21 11:18:50] INFO root fetch - processPackages [devicesinlan]: Remove: archive file [/home/abi/fetcher/tmp/devicesinlan-2.0.0.tar.gz]
 [2024-04-21 11:18:50] INFO root fetch - main [MainThread]: End processing [devicesinlan]: success
 [2024-04-21 11:18:50] INFO root fetch - main [MainThread]: Store serial: [22863352]
+[2024-04-21 11:20:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863352]
+[2024-04-21 11:20:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 11:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-04-21 11:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quant2
+[2024-04-21 11:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crossword-puzzle
+[2024-04-21 11:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django_herobiz_dental
+[2024-04-21 11:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: x4c
+[2024-04-21 11:20:59] INFO root fetch - processPackages [quant2]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 11:21:00] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-21 11:21:00] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.49] Old Version: [1.2.48]
+[2024-04-21 11:21:00] WARNING root fetch - processPackages [django_herobiz_dental]: Skipping, unable to determine old version
+[2024-04-21 11:21:00] INFO root fetch - main [MainThread]: End processing [django_herobiz_dental] error
+[2024-04-21 11:21:00] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/8c/95b0b708a3cd61829bebc45cde551ba9b6d2873d10f8c9d96f89d6f06315/quant2-0.1.8.tar.gz
+[2024-04-21 11:21:00] INFO root fetch - processPackages [x4c]: New version: [2024.4.20] Old Version: [2024.4.16]
+[2024-04-21 11:21:00] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-21 11:21:00] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/df/45/1dab9fa0c7495c8eb27d5ad6e6535f516ecae2eca731d3ea46007839bc40/crossword_puzzle-1.2.48.tar.gz
+[2024-04-21 11:21:00] INFO root fetch - processPackages [x4c]: Downloading https://files.pythonhosted.org/packages/26/1b/cc16a4d1a7e5a69c9965ad777453ca7f1f8d4fa77d4b39f93eb7a99454a4/x4c-2024.4.16.tar.gz
+[2024-04-21 11:21:00] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/bf/1a/6ceafd7a5a862aa7b8839815a0b32442b1a768caef03ce4ee178c5125c8c/quant2-0.1.9.tar.gz
+[2024-04-21 11:21:00] WARNING root fetch - processPackages [x4c]: Skipping package: exceeds size limit 91104589>=10485760
+[2024-04-21 11:21:00] INFO root fetch - main [MainThread]: End processing [x4c] error
+[2024-04-21 11:21:00] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-21 11:21:00] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.1.8.tar.gz tmp/quant2-0.1.9.tar.gz --markdown 20240421/q/quant2/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 11:21:00] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-21 11:21:00] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-21 11:21:00] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240421/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-04-21 11:21:01] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/5c/15/ce0db56c109bf0f775bcf9ff935e2d6eacf92b2a0f553f1a1c1817739826/crossword_puzzle-1.2.49.tar.gz
+[2024-04-21 11:21:01] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.8.tar.gz]
+[2024-04-21 11:21:01] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.9.tar.gz]
+[2024-04-21 11:21:01] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-21 11:21:01] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-04-21 11:21:01] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.48.tar.gz tmp/crossword_puzzle-1.2.49.tar.gz --markdown 20240421/c/crossword-puzzle/1.2.48-1.2.49/README.md --exclude *.pyd
+[2024-04-21 11:21:02] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-21 11:21:02] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-21 11:21:02] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-21 11:21:36] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.48.tar.gz]
+[2024-04-21 11:21:36] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.49.tar.gz]
+[2024-04-21 11:21:36] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-04-21 11:21:36] INFO root fetch - main [MainThread]: Store serial: [22863368]
