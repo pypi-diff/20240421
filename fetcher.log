@@ -5625,3 +5625,42 @@
 [2024-04-21 09:00:31] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25242302>=10485760
 [2024-04-21 09:00:31] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
 [2024-04-21 09:00:31] INFO root fetch - main [MainThread]: Store serial: [22862617]
+[2024-04-21 09:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862617]
+[2024-04-21 09:02:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2024-04-21 09:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2024-04-21 09:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2024-04-21 09:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SmjaAi
+[2024-04-21 09:02:40] INFO root fetch - processPackages [SmjaAi]: New version: [0.8] Old Version: [0.6]
+[2024-04-21 09:02:40] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.33.1.dev20240419] Old Version: [1.33.1.dev20240418]
+[2024-04-21 09:02:40] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-04-21 09:02:40] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-04-21 09:02:40] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/0c/50/40020a8a879c619c706f347951f0d7ddb68d867035956e74f1eef821f8a4/smjaai-0.6.tar.gz
+[2024-04-21 09:02:40] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-04-21 09:02:40] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/d7/e9/6ab17aedc7ce34de372597b82e5bda906455040dfe020009540735db55c1/streamlit_nightly-1.33.1.dev20240418.tar.gz
+[2024-04-21 09:02:40] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-04-21 09:02:40] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-04-21 09:02:40] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/5f/f2/2e7bd0b65be7e74079aca00b2a7b64ac2deaa914373fd0347f89461950f5/smjaai-0.8.tar.gz
+[2024-04-21 09:02:41] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-04-21 09:02:41] INFO root fetch - processPackages [SmjaAi]: executing diffoscope
+[2024-04-21 09:02:41] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-04-21 09:02:41] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240421/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-04-21 09:02:41] INFO root fetch - processPackages [SmjaAi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smjaai-0.6.tar.gz tmp/smjaai-0.8.tar.gz --markdown 20240421/S/SmjaAi/0.6-0.8/README.md --exclude *.pyd
+[2024-04-21 09:02:41] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/c3/09/14e9131a4909e866ad8d0b47e95f2f585d863b7e2a16036dd37b96329456/streamlit_nightly-1.33.1.dev20240419.tar.gz
+[2024-04-21 09:02:41] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-04-21 09:02:41] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240421/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-04-21 09:02:41] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.6.tar.gz]
+[2024-04-21 09:02:41] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.8.tar.gz]
+[2024-04-21 09:02:41] INFO root fetch - main [MainThread]: End processing [SmjaAi]: success
+[2024-04-21 09:02:41] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-04-21 09:02:41] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.33.1.dev20240418.tar.gz tmp/streamlit_nightly-1.33.1.dev20240419.tar.gz --markdown 20240421/s/streamlit-nightly/1.33.1.dev20240418-1.33.1.dev20240419/README.md --exclude *.pyd
+[2024-04-21 09:02:41] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-04-21 09:02:41] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-04-21 09:02:41] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-04-21 09:02:44] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-04-21 09:02:44] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-04-21 09:02:44] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-04-21 09:03:10] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240418.tar.gz]
+[2024-04-21 09:03:10] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240419.tar.gz]
+[2024-04-21 09:03:10] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-04-21 09:03:10] INFO root fetch - main [MainThread]: Store serial: [22862631]
