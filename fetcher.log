@@ -2106,3 +2106,45 @@
 [2024-04-21 03:05:54] WARNING root fetch - processPackages [PythonTestLJC311]: Skipping, unable to determine old version
 [2024-04-21 03:05:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC311] error
 [2024-04-21 03:05:54] INFO root fetch - main [MainThread]: Store serial: [22860893]
+[2024-04-21 03:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860893]
+[2024-04-21 03:08:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 03:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transcribe-me
+[2024-04-21 03:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdpx
+[2024-04-21 03:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC312
+[2024-04-21 03:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HSS.py
+[2024-04-21 03:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autocar_automate_po
+[2024-04-21 03:08:02] INFO root fetch - processPackages [transcribe-me]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-21 03:08:02] INFO root fetch - processPackages [gdpx]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 03:08:02] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/37/04/78f23ecca74c2c2b16d56c1ba76759e1b748b3892231f5b4a211e58bc094/transcribe_me-0.1.0.tar.gz
+[2024-04-21 03:08:02] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/e1/05/2aa2754138ac670a4828eb16f8fbe508a902bee63c187f9f63eedda46a3b/gdpx-0.0.6.tar.gz
+[2024-04-21 03:08:02] WARNING root fetch - processPackages [PythonTestLJC312]: Skipping, unable to determine old version
+[2024-04-21 03:08:02] INFO root fetch - main [MainThread]: End processing [PythonTestLJC312] error
+[2024-04-21 03:08:02] INFO root fetch - processPackages [HSS.py]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-21 03:08:02] INFO root fetch - processPackages [autocar_automate_po]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 03:08:03] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/16/c4/5b6310cd2c6798b408a1bd9b0fbdf656512ea92726281473c9fcd40d64c4/transcribe_me-0.1.2.tar.gz
+[2024-04-21 03:08:03] INFO root fetch - processPackages [HSS.py]: Downloading https://files.pythonhosted.org/packages/b3/25/4d3d87794c741175c4bfef73260ba92f29588bbe1aa63228650d1baa792b/HSS.py-1.1-py3-none-any.whl
+[2024-04-21 03:08:03] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/5c/a1/b92307c5b0e3d7150a127491d6f24c8c3108eb4ba06f59abcf213b4baccc/gdpx-0.0.7.tar.gz
+[2024-04-21 03:08:03] INFO root fetch - processPackages [autocar_automate_po]: Downloading https://files.pythonhosted.org/packages/06/d1/bea448900692918417775260b31ba8e16a1a32c9c1891fe26d1855d6baef/autocar_automate_po-0.3.8.tar.gz
+[2024-04-21 03:08:03] INFO root fetch - processPackages [transcribe-me]: executing diffoscope
+[2024-04-21 03:08:03] INFO root fetch - processPackages [transcribe-me]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transcribe_me-0.1.0.tar.gz tmp/transcribe_me-0.1.2.tar.gz --markdown 20240421/t/transcribe-me/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-21 03:08:03] INFO root fetch - processPackages [gdpx]: executing diffoscope
+[2024-04-21 03:08:03] INFO root fetch - processPackages [gdpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdpx-0.0.6.tar.gz tmp/gdpx-0.0.7.tar.gz --markdown 20240421/g/gdpx/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 03:08:03] INFO root fetch - processPackages [autocar_automate_po]: Downloading https://files.pythonhosted.org/packages/71/35/9e12ec5676005ba4e446e7b2d47baf41f2c0e65cf51b2df010d67688a44d/autocar_automate_po-0.3.9.tar.gz
+[2024-04-21 03:08:03] INFO root fetch - processPackages [HSS.py]: Downloading https://files.pythonhosted.org/packages/34/91/67d9ec7a43a455be7e1796d09c812914dcdaff1bfde95d3ce1c78076991e/HSS.py-1.1.1-py3-none-any.whl
+[2024-04-21 03:08:03] INFO root fetch - processPackages [autocar_automate_po]: executing diffoscope
+[2024-04-21 03:08:03] INFO root fetch - processPackages [autocar_automate_po]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocar_automate_po-0.3.8.tar.gz tmp/autocar_automate_po-0.3.9.tar.gz --markdown 20240421/a/autocar_automate_po/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 03:08:03] INFO root fetch - processPackages [HSS.py]: executing diffoscope
+[2024-04-21 03:08:03] INFO root fetch - processPackages [HSS.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HSS.py-1.1-py3-none-any.whl.zip tmp/HSS.py-1.1.1-py3-none-any.whl.zip --markdown 20240421/H/HSS.py/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-21 03:08:03] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.0.tar.gz]
+[2024-04-21 03:08:03] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.2.tar.gz]
+[2024-04-21 03:08:03] INFO root fetch - main [MainThread]: End processing [transcribe-me]: success
+[2024-04-21 03:08:04] INFO root fetch - processPackages [autocar_automate_po]: Remove: archive file [/home/abi/fetcher/tmp/autocar_automate_po-0.3.8.tar.gz]
+[2024-04-21 03:08:04] INFO root fetch - processPackages [autocar_automate_po]: Remove: archive file [/home/abi/fetcher/tmp/autocar_automate_po-0.3.9.tar.gz]
+[2024-04-21 03:08:04] INFO root fetch - main [MainThread]: End processing [autocar_automate_po]: success
+[2024-04-21 03:08:04] INFO root fetch - processPackages [HSS.py]: Remove: archive file [/home/abi/fetcher/tmp/HSS.py-1.1-py3-none-any.whl.zip]
+[2024-04-21 03:08:04] INFO root fetch - processPackages [HSS.py]: Remove: archive file [/home/abi/fetcher/tmp/HSS.py-1.1.1-py3-none-any.whl.zip]
+[2024-04-21 03:08:04] INFO root fetch - main [MainThread]: End processing [HSS.py]: success
+[2024-04-21 03:08:04] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.6.tar.gz]
+[2024-04-21 03:08:04] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.7.tar.gz]
+[2024-04-21 03:08:04] INFO root fetch - main [MainThread]: End processing [gdpx]: success
+[2024-04-21 03:08:04] INFO root fetch - main [MainThread]: Store serial: [22860912]
