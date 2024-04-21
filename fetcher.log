@@ -9843,3 +9843,32 @@
 [2024-04-21 14:30:19] INFO root fetch - processPackages [pandas-wizard]: Remove: archive file [/home/abi/fetcher/tmp/pandas-wizard-1.1.0a0.tar.gz]
 [2024-04-21 14:30:19] INFO root fetch - main [MainThread]: End processing [pandas-wizard]: success
 [2024-04-21 14:30:19] INFO root fetch - main [MainThread]: Store serial: [22864476]
+[2024-04-21 14:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864476]
+[2024-04-21 14:32:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diive
+[2024-04-21 14:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC448
+[2024-04-21 14:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eirStru
+[2024-04-21 14:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: argeye
+[2024-04-21 14:32:28] INFO root fetch - processPackages [eirStru]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-21 14:32:28] INFO root fetch - processPackages [diive]: New version: [0.74.0] Old Version: [0.72.1]
+[2024-04-21 14:32:28] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/7b/96/cfdbd9ca89de8515c0694ad3ded81bb6b7f090748894830197eea25cb8db/eirStru-0.3.4.tar.gz
+[2024-04-21 14:32:28] WARNING root fetch - processPackages [PythonTestLJC448]: Skipping, unable to determine old version
+[2024-04-21 14:32:28] INFO root fetch - main [MainThread]: End processing [PythonTestLJC448] error
+[2024-04-21 14:32:28] INFO root fetch - processPackages [argeye]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 14:32:28] INFO root fetch - processPackages [diive]: Downloading https://files.pythonhosted.org/packages/66/72/28fadb1c2a9b3907c67181c96401a0717786597813274de9c0fd1537d279/diive-0.72.1.tar.gz
+[2024-04-21 14:32:28] INFO root fetch - processPackages [argeye]: Downloading https://files.pythonhosted.org/packages/fd/ae/508ca0f6fd496b3de9af70f68148c07b1df3841ef95157fd1c48b7bed656/argeye-0.0.1.tar.gz
+[2024-04-21 14:32:28] WARNING root fetch - processPackages [diive]: Skipping package: exceeds size limit 52420092>=10485760
+[2024-04-21 14:32:28] INFO root fetch - main [MainThread]: End processing [diive] error
+[2024-04-21 14:32:28] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/8a/f7/a1c0d6cb9f4ad2f3f0d0563730bb8c5bf190750c338dd953e8d3707e8e2c/eirStru-0.3.5.tar.gz
+[2024-04-21 14:32:28] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 14:32:28] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.4.tar.gz tmp/eirStru-0.3.5.tar.gz --markdown 20240421/e/eirStru/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-21 14:32:28] INFO root fetch - processPackages [argeye]: Downloading https://files.pythonhosted.org/packages/8c/e2/57cf06c32517800b6098f7d36f879eccf56e56a1a657970829fbd344a2b0/argeye-0.0.2.tar.gz
+[2024-04-21 14:32:28] INFO root fetch - processPackages [argeye]: executing diffoscope
+[2024-04-21 14:32:28] INFO root fetch - processPackages [argeye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argeye-0.0.1.tar.gz tmp/argeye-0.0.2.tar.gz --markdown 20240421/a/argeye/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 14:32:29] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.4.tar.gz]
+[2024-04-21 14:32:29] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.5.tar.gz]
+[2024-04-21 14:32:29] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 14:32:29] INFO root fetch - processPackages [argeye]: Remove: archive file [/home/abi/fetcher/tmp/argeye-0.0.1.tar.gz]
+[2024-04-21 14:32:29] INFO root fetch - processPackages [argeye]: Remove: archive file [/home/abi/fetcher/tmp/argeye-0.0.2.tar.gz]
+[2024-04-21 14:32:29] INFO root fetch - main [MainThread]: End processing [argeye]: success
+[2024-04-21 14:32:29] INFO root fetch - main [MainThread]: Store serial: [22864492]
