@@ -17849,3 +17849,33 @@
 [2024-04-21 22:11:37] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-04-21 22:11:37] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-04-21 22:11:37] INFO root fetch - main [MainThread]: Store serial: [22868481]
+[2024-04-21 22:13:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868481]
+[2024-04-21 22:13:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 22:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kungfupanda
+[2024-04-21 22:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradedangerous
+[2024-04-21 22:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTK-Desert
+[2024-04-21 22:13:48] INFO root fetch - processPackages [kungfupanda]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 22:13:48] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 22:13:48] INFO root fetch - processPackages [CTK-Desert]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 22:13:48] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/11/fb/fd59ec0d032da628a6fcc52ced808c72f4d541f577922bdfc358c982aaec/kungfupanda-0.7.tar.gz
+[2024-04-21 22:13:48] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 22:13:48] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/9a/73/c7239044a3b6edf571c3f5feded6aab241cff792f7acd98dd42652e44c95/CTK_Desert-0.0.8.tar.gz
+[2024-04-21 22:13:49] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/6d/b4/d3af97e7bf9ae492dceb1aad8191e260b603096af0a9755ffd707156f69f/CTK_Desert-0.0.9.tar.gz
+[2024-04-21 22:13:49] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/02/cb/b9219e37ade9ea6f620e1945533ff6c73489069eb538d791044b5f612eb4/kungfupanda-0.8.tar.gz
+[2024-04-21 22:13:49] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 22:13:49] INFO root fetch - processPackages [CTK-Desert]: executing diffoscope
+[2024-04-21 22:13:49] INFO root fetch - processPackages [CTK-Desert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTK_Desert-0.0.8.tar.gz tmp/CTK_Desert-0.0.9.tar.gz --markdown 20240421/C/CTK-Desert/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 22:13:49] INFO root fetch - processPackages [kungfupanda]: executing diffoscope
+[2024-04-21 22:13:49] INFO root fetch - processPackages [kungfupanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kungfupanda-0.7.tar.gz tmp/kungfupanda-0.8.tar.gz --markdown 20240421/k/kungfupanda/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 22:13:49] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 22:13:49] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 22:13:49] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.7.tar.gz]
+[2024-04-21 22:13:49] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.8.tar.gz]
+[2024-04-21 22:13:49] INFO root fetch - main [MainThread]: End processing [kungfupanda]: success
+[2024-04-21 22:13:49] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.8.tar.gz]
+[2024-04-21 22:13:49] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.9.tar.gz]
+[2024-04-21 22:13:49] INFO root fetch - main [MainThread]: End processing [CTK-Desert]: success
+[2024-04-21 22:13:50] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 22:13:50] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 22:13:50] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 22:13:50] INFO root fetch - main [MainThread]: Store serial: [22868492]
