@@ -7445,3 +7445,29 @@
 [2024-04-21 11:28:09] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.2.4.tar.gz]
 [2024-04-21 11:28:09] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-04-21 11:28:09] INFO root fetch - main [MainThread]: Store serial: [22863399]
+[2024-04-21 11:30:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863399]
+[2024-04-21 11:30:17] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 11:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863399]
+[2024-04-21 11:32:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 11:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygameextra
+[2024-04-21 11:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyuptech
+[2024-04-21 11:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dating
+[2024-04-21 11:32:23] WARNING root fetch - processPackages [dating]: Skipping, unable to determine old version
+[2024-04-21 11:32:23] INFO root fetch - main [MainThread]: End processing [dating] error
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pyuptech]: New version: [0.1.4a0] Old Version: [0.1.3a3]
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pygameextra]: New version: [2.0.0rc1] Old Version: [2.0.0b9]
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/5b/7b/4c5c179f8285d282fbf187bcefe9e15416d40a68c43a9e9c74c7bd367a84/pyuptech-0.1.3a3.tar.gz
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pygameextra]: Downloading https://files.pythonhosted.org/packages/15/cb/24a5d9be0275983b579bf12118e5e33ef9078ad6bbf622a6335e2f1afdb4/pygameextra-2.0.0b9.tar.gz
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/df/a8/66ce4e9f74844aff1924435d68c229501c761288901626e60025762b3e19/pyuptech-0.1.4a0.tar.gz
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-21 11:32:23] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.3a3.tar.gz tmp/pyuptech-0.1.4a0.tar.gz --markdown 20240421/p/pyuptech/0.1.3a3-0.1.4a0/README.md --exclude *.pyd
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: Downloading https://files.pythonhosted.org/packages/2b/a7/fac6c4d7d9b52934a787a48365b843d0cd5354fdf2af0bc5e0c5d843bb55/pygameextra-2.0.0rc1.tar.gz
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: executing diffoscope
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygameextra-2.0.0b9.tar.gz tmp/pygameextra-2.0.0rc1.tar.gz --markdown 20240421/p/pygameextra/2.0.0b9-2.0.0rc1/README.md --exclude *.pyd
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a3.tar.gz]
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.4a0.tar.gz]
+[2024-04-21 11:32:24] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0b9.tar.gz]
+[2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0rc1.tar.gz]
+[2024-04-21 11:32:24] INFO root fetch - main [MainThread]: End processing [pygameextra]: success
+[2024-04-21 11:32:24] INFO root fetch - main [MainThread]: Store serial: [22863411]
