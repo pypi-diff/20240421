@@ -16639,3 +16639,30 @@
 [2024-04-21 21:09:40] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.0.tar.gz]
 [2024-04-21 21:09:40] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
 [2024-04-21 21:09:40] INFO root fetch - main [MainThread]: Store serial: [22867853]
+[2024-04-21 21:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867853]
+[2024-04-21 21:11:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-iotedge
+[2024-04-21 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC592
+[2024-04-21 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lichesspy
+[2024-04-21 21:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: saadha-packages
+[2024-04-21 21:11:49] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-21 21:11:49] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev2] Old Version: [6.0.4.dev1]
+[2024-04-21 21:11:49] WARNING root fetch - processPackages [saadha-packages]: Skipping, unable to determine old version
+[2024-04-21 21:11:49] INFO root fetch - main [MainThread]: End processing [saadha-packages] error
+[2024-04-21 21:11:49] WARNING root fetch - processPackages [PythonTestLJC592]: Skipping, unable to determine old version
+[2024-04-21 21:11:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC592] error
+[2024-04-21 21:11:49] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/7a/aa/a06c627bef3d0a1c7a0cfcf978c0525896dc8a653a9e3e62eaa5440191d3/tendril_iotedge-0.4.0.tar.gz
+[2024-04-21 21:11:49] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/a0/44/fb30df174de6c6ed2df907eed1c9a8811c33c6b87fe66a1696445d178dc5/lichesspy-6.0.4.dev1.tar.gz
+[2024-04-21 21:11:49] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/54/d4/7c06f0590929413eaed6ac8afbe5ec54af204b1c28b86736e2a768f82afd/tendril_iotedge-0.4.1.tar.gz
+[2024-04-21 21:11:49] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/3c/87/a50e2efb2a7652e1fa524117217d83d10fc45b79c8c19e15a2310a3113a5/lichesspy-6.0.4.dev2.tar.gz
+[2024-04-21 21:11:49] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-21 21:11:49] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.4.0.tar.gz tmp/tendril_iotedge-0.4.1.tar.gz --markdown 20240421/t/tendril-iotedge/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-21 21:11:50] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.0.tar.gz]
+[2024-04-21 21:11:50] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.1.tar.gz]
+[2024-04-21 21:11:50] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-21 21:11:50] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 21:11:50] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.4.dev1.tar.gz tmp/lichesspy-6.0.4.dev2.tar.gz --markdown 20240421/l/lichesspy/6.0.4.dev1-6.0.4.dev2/README.md --exclude *.pyd
+[2024-04-21 21:11:51] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev1.tar.gz]
+[2024-04-21 21:11:51] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev2.tar.gz]
+[2024-04-21 21:11:51] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 21:11:51] INFO root fetch - main [MainThread]: Store serial: [22867876]
