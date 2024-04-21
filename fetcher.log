@@ -1538,3 +1538,54 @@
 [2024-04-21 02:22:25] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240421.tar.gz]
 [2024-04-21 02:22:25] INFO root fetch - main [MainThread]: End processing [lightning]: success
 [2024-04-21 02:22:25] INFO root fetch - main [MainThread]: Store serial: [22860579]
+[2024-04-21 02:24:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860579]
+[2024-04-21 02:24:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC296
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-mailbox
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-tweet-queue
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vtktonumpy
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: canvasxpress
+[2024-04-21 02:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: astabc
+[2024-04-21 02:24:35] INFO root fetch - processPackages [astabc]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 02:24:35] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-21 02:24:35] WARNING root fetch - processPackages [PythonTestLJC296]: Skipping, unable to determine old version
+[2024-04-21 02:24:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC296] error
+[2024-04-21 02:24:35] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/ae/f1/2fa2fb338d885682ba6b255e2c8dfbe1883411e418c5eb3a0d09486ce8ad/astabc-0.1.6.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [django-mailbox]: New version: [4.9.0] Old Version: [4.8.2]
+[2024-04-21 02:24:35] INFO root fetch - processPackages [vtktonumpy]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-21 02:24:35] INFO root fetch - processPackages [canvasxpress]: New version: [2024.4.7.2406] Old Version: [2024.4.21.2405]
+[2024-04-21 02:24:35] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/f2/a9/33fbe548cea174e015412108a563be3bbbdacbb6982d1ef6bf71d4abb509/cdk-tweet-queue-2.0.98.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/4d/49/7db5268e21ddc48162ef5b9765796443ada2aaed7a5ee98c11055750bf6c/canvasxpress-2024.4.21.2405.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [django-mailbox]: Downloading https://files.pythonhosted.org/packages/91/11/f8dc2a7291f2b6fe104d26bbf52de3e42d0b2e29358fa14e70419a3c72e8/django-mailbox-4.8.2.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [vtktonumpy]: Downloading https://files.pythonhosted.org/packages/71/42/258fb402ca1d715ba56500a6125093ebdfdce5e50264e222276d36c7f4d8/vtktonumpy-0.3.0.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/b9/df/ffba41b66fc7796cb2c763da82c2012cc28d0708e1dcb7775c98d3d9e491/cdk-tweet-queue-2.0.99.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/85/ed/db9fadcfdc15bbb8417cf4b16e3e1961cc1be84f89d1e88bb851c1def204/astabc-0.1.7.tar.gz
+[2024-04-21 02:24:35] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2024-04-21 02:24:35] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20240421/c/cdk-tweet-queue/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-21 02:24:35] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-21 02:24:35] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.6.tar.gz tmp/astabc-0.1.7.tar.gz --markdown 20240421/a/astabc/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 02:24:35] INFO root fetch - processPackages [vtktonumpy]: Downloading https://files.pythonhosted.org/packages/7c/2d/41920bead8f5b1bfede7820cf5d3928b4bde46c23e2711a5204c65723c79/vtktonumpy-0.3.1.tar.gz
+[2024-04-21 02:24:36] INFO root fetch - processPackages [vtktonumpy]: executing diffoscope
+[2024-04-21 02:24:36] INFO root fetch - processPackages [vtktonumpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtktonumpy-0.3.0.tar.gz tmp/vtktonumpy-0.3.1.tar.gz --markdown 20240421/v/vtktonumpy/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 02:24:36] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/9a/a9/4718ff49db620984b31b1c5070c0c97d69f6a1fea76ac5e8ff4a3df6b7a7/canvasxpress-2024.4.7.2406.tar.gz
+[2024-04-21 02:24:36] INFO root fetch - processPackages [django-mailbox]: Downloading https://files.pythonhosted.org/packages/08/5e/357bc37c88348cde2fda4b6217d1272b3b4d83682f5b73b5cdc0bd5bd288/django-mailbox-4.9.0.tar.gz
+[2024-04-21 02:24:36] INFO root fetch - processPackages [django-mailbox]: executing diffoscope
+[2024-04-21 02:24:36] INFO root fetch - processPackages [django-mailbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mailbox-4.8.2.tar.gz tmp/django-mailbox-4.9.0.tar.gz --markdown 20240421/d/django-mailbox/4.8.2-4.9.0/README.md --exclude *.pyd
+[2024-04-21 02:24:36] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.98.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.99.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2024-04-21 02:24:36] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.6.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.7.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-21 02:24:36] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2024-04-21 02:24:36] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2024.4.21.2405.tar.gz tmp/canvasxpress-2024.4.7.2406.tar.gz --markdown 20240421/c/canvasxpress/2024.4.21.2405-2024.4.7.2406/README.md --exclude *.pyd
+[2024-04-21 02:24:36] INFO root fetch - processPackages [vtktonumpy]: Remove: archive file [/home/abi/fetcher/tmp/vtktonumpy-0.3.0.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - processPackages [vtktonumpy]: Remove: archive file [/home/abi/fetcher/tmp/vtktonumpy-0.3.1.tar.gz]
+[2024-04-21 02:24:36] INFO root fetch - main [MainThread]: End processing [vtktonumpy]: success
+[2024-04-21 02:24:37] INFO root fetch - processPackages [django-mailbox]: Remove: archive file [/home/abi/fetcher/tmp/django-mailbox-4.8.2.tar.gz]
+[2024-04-21 02:24:37] INFO root fetch - processPackages [django-mailbox]: Remove: archive file [/home/abi/fetcher/tmp/django-mailbox-4.9.0.tar.gz]
+[2024-04-21 02:24:37] INFO root fetch - main [MainThread]: End processing [django-mailbox]: success
+[2024-04-21 02:25:35] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.21.2405.tar.gz]
+[2024-04-21 02:25:35] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
+[2024-04-21 02:25:35] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2024-04-21 02:25:35] INFO root fetch - main [MainThread]: Store serial: [22860597]
