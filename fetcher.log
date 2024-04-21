@@ -3671,3 +3671,9 @@
 [2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: Remove: archive file [/home/abi/fetcher/tmp/snickerdoodle-0.2.0.tar.gz]
 [2024-04-21 05:36:08] INFO root fetch - main [MainThread]: End processing [snickerdoodle]: success
 [2024-04-21 05:36:08] INFO root fetch - main [MainThread]: Store serial: [22861740]
+[2024-04-21 05:38:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861740]
+[2024-04-21 05:38:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 05:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC359
+[2024-04-21 05:38:18] WARNING root fetch - processPackages [PythonTestLJC359]: Skipping, unable to determine old version
+[2024-04-21 05:38:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC359] error
+[2024-04-21 05:38:18] INFO root fetch - main [MainThread]: Store serial: [22861745]
