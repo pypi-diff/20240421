@@ -12261,3 +12261,27 @@
 [2024-04-21 16:52:37] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.9.tar.gz]
 [2024-04-21 16:52:37] INFO root fetch - main [MainThread]: End processing [spotpython]: success
 [2024-04-21 16:52:37] INFO root fetch - main [MainThread]: Store serial: [22865675]
+[2024-04-21 16:54:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865675]
+[2024-04-21 16:54:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC499
+[2024-04-21 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zimo-web-screenshot
+[2024-04-21 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: galxiai
+[2024-04-21 16:54:45] INFO root fetch - processPackages [galxiai]: New version: [0.50.6] Old Version: [0.50.5]
+[2024-04-21 16:54:45] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/16/45/658429b69c77a54c211e6dd86192c173da4ec3ab9ba152fba046387748f8/galxiai-0.50.5.tar.gz
+[2024-04-21 16:54:45] WARNING root fetch - processPackages [PythonTestLJC499]: Skipping, unable to determine old version
+[2024-04-21 16:54:45] INFO root fetch - main [MainThread]: End processing [PythonTestLJC499] error
+[2024-04-21 16:54:45] INFO root fetch - processPackages [zimo-web-screenshot]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-04-21 16:54:45] INFO root fetch - processPackages [zimo-web-screenshot]: Downloading https://files.pythonhosted.org/packages/e0/08/444420af98edd0957c09c26d548081b29dfc8d6801b10587cb79c1dcb7e5/zimo-web-screenshot-0.1.3.tar.gz
+[2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/a9/ae/645f8749b1a010588d44159b6ee1eccac79d9d19993e49ab6e79ba4508dd/galxiai-0.50.6.tar.gz
+[2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: executing diffoscope
+[2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galxiai-0.50.5.tar.gz tmp/galxiai-0.50.6.tar.gz --markdown 20240421/g/galxiai/0.50.5-0.50.6/README.md --exclude *.pyd
+[2024-04-21 16:54:46] INFO root fetch - processPackages [zimo-web-screenshot]: Downloading https://files.pythonhosted.org/packages/ef/bf/118c5faf02c61bddb18e7fd8b24c36ec721c294f3a5c44a2735d5da9a307/zimo-web-screenshot-0.2.0.tar.gz
+[2024-04-21 16:54:46] INFO root fetch - processPackages [zimo-web-screenshot]: executing diffoscope
+[2024-04-21 16:54:46] INFO root fetch - processPackages [zimo-web-screenshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimo-web-screenshot-0.1.3.tar.gz tmp/zimo-web-screenshot-0.2.0.tar.gz --markdown 20240421/z/zimo-web-screenshot/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-04-21 16:54:46] INFO root fetch - processPackages [zimo-web-screenshot]: Remove: archive file [/home/abi/fetcher/tmp/zimo-web-screenshot-0.1.3.tar.gz]
+[2024-04-21 16:54:46] INFO root fetch - processPackages [zimo-web-screenshot]: Remove: archive file [/home/abi/fetcher/tmp/zimo-web-screenshot-0.2.0.tar.gz]
+[2024-04-21 16:54:46] INFO root fetch - main [MainThread]: End processing [zimo-web-screenshot]: success
+[2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.5.tar.gz]
+[2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.6.tar.gz]
+[2024-04-21 16:54:46] INFO root fetch - main [MainThread]: End processing [galxiai]: success
+[2024-04-21 16:54:46] INFO root fetch - main [MainThread]: Store serial: [22865688]
