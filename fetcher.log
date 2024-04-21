@@ -4032,3 +4032,15 @@
 [2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.55.tar.gz]
 [2024-04-21 06:25:46] INFO root fetch - main [MainThread]: End processing [TkEasyGUI]: success
 [2024-04-21 06:25:46] INFO root fetch - main [MainThread]: Store serial: [22861860]
+[2024-04-21 06:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861860]
+[2024-04-21 06:27:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 06:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psdb
+[2024-04-21 06:27:55] INFO root fetch - processPackages [psdb]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-21 06:27:55] INFO root fetch - processPackages [psdb]: Downloading https://files.pythonhosted.org/packages/99/b7/bbafdade6c3d661f844283280e9e7a4540d98d0f2ffe8a967fcec62cac13/psdb-1.1.3.tar.gz
+[2024-04-21 06:27:56] INFO root fetch - processPackages [psdb]: Downloading https://files.pythonhosted.org/packages/9c/88/7a9b1b441c2096c093847475d68153004f756c6db5351c7c2353bfc185c7/psdb-1.1.4.tar.gz
+[2024-04-21 06:27:56] INFO root fetch - processPackages [psdb]: executing diffoscope
+[2024-04-21 06:27:56] INFO root fetch - processPackages [psdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psdb-1.1.3.tar.gz tmp/psdb-1.1.4.tar.gz --markdown 20240421/p/psdb/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-21 06:27:57] INFO root fetch - processPackages [psdb]: Remove: archive file [/home/abi/fetcher/tmp/psdb-1.1.3.tar.gz]
+[2024-04-21 06:27:57] INFO root fetch - processPackages [psdb]: Remove: archive file [/home/abi/fetcher/tmp/psdb-1.1.4.tar.gz]
+[2024-04-21 06:27:57] INFO root fetch - main [MainThread]: End processing [psdb]: success
+[2024-04-21 06:27:57] INFO root fetch - main [MainThread]: Store serial: [22861863]
