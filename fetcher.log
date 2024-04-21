@@ -11202,3 +11202,36 @@
 [2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: Remove: archive file [/home/abi/fetcher/tmp/monacopy-0.0.2.tar.gz]
 [2024-04-21 15:55:51] INFO root fetch - main [MainThread]: End processing [monacopy]: success
 [2024-04-21 15:55:51] INFO root fetch - main [MainThread]: Store serial: [22865199]
+[2024-04-21 15:57:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865199]
+[2024-04-21 15:58:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: celi-framework
+[2024-04-21 15:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-04-21 15:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a9x-webstatistics-package
+[2024-04-21 15:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geminiwrapper
+[2024-04-21 15:58:00] INFO root fetch - processPackages [celi-framework]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-21 15:58:00] WARNING root fetch - processPackages [geminiwrapper]: Skipping, unable to determine old version
+[2024-04-21 15:58:00] INFO root fetch - main [MainThread]: End processing [geminiwrapper] error
+[2024-04-21 15:58:00] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/dd/48/0daead84781e0c0ab85920edce1431e5f429bde8582c4fdb8dd6494d6cc2/celi_framework-0.0.16.tar.gz
+[2024-04-21 15:58:00] INFO root fetch - processPackages [a9x-webstatistics-package]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 15:58:00] INFO root fetch - processPackages [sfmanager]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 15:58:00] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/d9/a8/1072b2ffeba2e1f2c8761d8e1ee48bfbc215d371160eb3e783ca71844ea8/sfmanager-0.1.6.tar.gz
+[2024-04-21 15:58:00] INFO root fetch - processPackages [a9x-webstatistics-package]: Downloading https://files.pythonhosted.org/packages/a7/23/3bd2ba960512abeebe12fe70dc532cf94b22024e0617e3f2b7a4c9f1f590/a9x_webstatistics_package-0.1.2.tar.gz
+[2024-04-21 15:58:00] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/3e/18/fd104a0da672cd0f570b43ddcd5db9d95321f8121730ddcbbe5db9d7467f/celi_framework-0.0.17.tar.gz
+[2024-04-21 15:58:01] INFO root fetch - processPackages [celi-framework]: executing diffoscope
+[2024-04-21 15:58:01] INFO root fetch - processPackages [celi-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celi_framework-0.0.16.tar.gz tmp/celi_framework-0.0.17.tar.gz --markdown 20240421/c/celi-framework/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-04-21 15:58:01] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/17/97/2b362e73c851f85069f0f678ef127c6dd52e5444d3848ed7de30f2aa41e6/sfmanager-0.1.7.tar.gz
+[2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: Downloading https://files.pythonhosted.org/packages/85/76/563faa44fcc33efed0ec4f04ab3be0edcf3029d92d94eafdca8f4c8dd8e8/a9x_webstatistics_package-0.1.3.tar.gz
+[2024-04-21 15:58:01] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-21 15:58:01] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.6.tar.gz tmp/sfmanager-0.1.7.tar.gz --markdown 20240421/s/sfmanager/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: executing diffoscope
+[2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics_package-0.1.2.tar.gz tmp/a9x_webstatistics_package-0.1.3.tar.gz --markdown 20240421/a/a9x-webstatistics-package/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 15:58:01] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.16.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.17.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - main [MainThread]: End processing [celi-framework]: success
+[2024-04-21 15:58:01] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.6.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.7.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics_package-0.1.2.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics_package-0.1.3.tar.gz]
+[2024-04-21 15:58:01] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics-package]: success
+[2024-04-21 15:58:01] INFO root fetch - main [MainThread]: Store serial: [22865219]
