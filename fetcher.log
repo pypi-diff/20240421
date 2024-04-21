@@ -5046,3 +5046,27 @@
 [2024-04-21 08:12:22] INFO root fetch - processPackages [WPEMPhase]: Remove: archive file [/home/abi/fetcher/tmp/WPEMPhase-0.1.0.tar.gz]
 [2024-04-21 08:12:22] INFO root fetch - main [MainThread]: End processing [WPEMPhase]: success
 [2024-04-21 08:12:22] INFO root fetch - main [MainThread]: Store serial: [22862341]
+[2024-04-21 08:14:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862341]
+[2024-04-21 08:14:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 08:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moss-cappa
+[2024-04-21 08:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2024-04-21 08:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-all-star
+[2024-04-21 08:14:31] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-04-21 08:14:31] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240420] Old Version: [2.6.0.dev20240419]
+[2024-04-21 08:14:31] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-04-21 08:14:31] WARNING root fetch - processPackages [moss-cappa]: Skipping, unable to determine old version
+[2024-04-21 08:14:31] INFO root fetch - main [MainThread]: End processing [moss-cappa] error
+[2024-04-21 08:14:31] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/4f/94/6d1200c86a92256bc9a801bf8cc5b8514ab0f6c092e1535afded4dfee7eb/pyg_nightly-2.6.0.dev20240419.tar.gz
+[2024-04-21 08:14:31] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-04-21 08:14:31] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-04-21 08:14:31] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240421/g/gpt-all-star/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-04-21 08:14:31] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/9f/23/f8d5eb1ecfc49ca0dcad0fd19cf51de66b380829fff79e733a746f364b22/pyg_nightly-2.6.0.dev20240420.tar.gz
+[2024-04-21 08:14:32] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-21 08:14:32] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240419.tar.gz tmp/pyg_nightly-2.6.0.dev20240420.tar.gz --markdown 20240421/p/pyg-nightly/2.6.0.dev20240419-2.6.0.dev20240420/README.md --exclude *.pyd
+[2024-04-21 08:14:32] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-04-21 08:14:32] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-04-21 08:14:32] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-04-21 08:14:34] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240419.tar.gz]
+[2024-04-21 08:14:34] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240420.tar.gz]
+[2024-04-21 08:14:34] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-21 08:14:34] INFO root fetch - main [MainThread]: Store serial: [22862351]
