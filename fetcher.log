@@ -5499,3 +5499,36 @@
 [2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.48.tar.gz]
 [2024-04-21 08:47:32] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
 [2024-04-21 08:47:32] INFO root fetch - main [MainThread]: Store serial: [22862551]
+[2024-04-21 08:49:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862551]
+[2024-04-21 08:49:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 08:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intellipandora
+[2024-04-21 08:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssort
+[2024-04-21 08:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cli-FSD
+[2024-04-21 08:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utilset
+[2024-04-21 08:49:42] INFO root fetch - processPackages [cli-FSD]: New version: [1.0.1] Old Version: [0.9.43]
+[2024-04-21 08:49:42] WARNING root fetch - processPackages [intellipandora]: Skipping, unable to determine old version
+[2024-04-21 08:49:42] INFO root fetch - main [MainThread]: End processing [intellipandora] error
+[2024-04-21 08:49:42] INFO root fetch - processPackages [ssort]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-21 08:49:42] INFO root fetch - processPackages [utilset]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 08:49:42] INFO root fetch - processPackages [cli-FSD]: Downloading https://files.pythonhosted.org/packages/3f/b6/793ab95d0ac03ed904d01e64918243e66bf49212c51f8f13fa79ac9faffb/cli-FSD-0.9.43.tar.gz
+[2024-04-21 08:49:42] INFO root fetch - processPackages [ssort]: Downloading https://files.pythonhosted.org/packages/13/3a/32948ce2e73ae2cf031a8bc0a58a3b137ddda2cce419e2a355c7f93d10ae/ssort-0.9.1.tar.gz
+[2024-04-21 08:49:42] INFO root fetch - processPackages [utilset]: Downloading https://files.pythonhosted.org/packages/39/b3/632033dc9c1d68d52bb0c07467d24abf846fde36757e95ee3d0047493ed3/utilset-0.0.3-py3-none-any.whl
+[2024-04-21 08:49:42] INFO root fetch - processPackages [cli-FSD]: Downloading https://files.pythonhosted.org/packages/b9/37/82e0a1b22a395f31c12f469478a02bc53ce9e67fbfad341e75b1c767e4f3/cli-FSD-1.0.1.tar.gz
+[2024-04-21 08:49:42] INFO root fetch - processPackages [ssort]: Downloading https://files.pythonhosted.org/packages/c9/65/aafa3d1d20080f1f8ba54ad0e31777fb6d5eadef0b2ad0c1686dd29cda0b/ssort-0.9.2.tar.gz
+[2024-04-21 08:49:42] INFO root fetch - processPackages [ssort]: executing diffoscope
+[2024-04-21 08:49:42] INFO root fetch - processPackages [ssort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssort-0.9.1.tar.gz tmp/ssort-0.9.2.tar.gz --markdown 20240421/s/ssort/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-21 08:49:42] INFO root fetch - processPackages [cli-FSD]: executing diffoscope
+[2024-04-21 08:49:42] INFO root fetch - processPackages [cli-FSD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli-FSD-0.9.43.tar.gz tmp/cli-FSD-1.0.1.tar.gz --markdown 20240421/c/cli-FSD/0.9.43-1.0.1/README.md --exclude *.pyd
+[2024-04-21 08:49:42] INFO root fetch - processPackages [utilset]: Downloading https://files.pythonhosted.org/packages/27/59/b1a532d712cf37bad10f99b37d92afe3cfb529b4de6fba16008a4a615d8f/utilset-0.0.4.tar.gz
+[2024-04-21 08:49:43] INFO root fetch - processPackages [ssort]: Remove: archive file [/home/abi/fetcher/tmp/ssort-0.9.1.tar.gz]
+[2024-04-21 08:49:43] INFO root fetch - processPackages [ssort]: Remove: archive file [/home/abi/fetcher/tmp/ssort-0.9.2.tar.gz]
+[2024-04-21 08:49:43] INFO root fetch - main [MainThread]: End processing [ssort]: success
+[2024-04-21 08:49:43] INFO root fetch - processPackages [utilset]: executing diffoscope
+[2024-04-21 08:49:43] INFO root fetch - processPackages [utilset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilset-0.0.3-py3-none-any.whl.zip tmp/utilset-0.0.4.tar.gz --markdown 20240421/u/utilset/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 08:49:43] INFO root fetch - processPackages [cli-FSD]: Remove: archive file [/home/abi/fetcher/tmp/cli-FSD-0.9.43.tar.gz]
+[2024-04-21 08:49:43] INFO root fetch - processPackages [cli-FSD]: Remove: archive file [/home/abi/fetcher/tmp/cli-FSD-1.0.1.tar.gz]
+[2024-04-21 08:49:43] INFO root fetch - main [MainThread]: End processing [cli-FSD]: success
+[2024-04-21 08:49:43] INFO root fetch - processPackages [utilset]: Remove: archive file [/home/abi/fetcher/tmp/utilset-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 08:49:43] INFO root fetch - processPackages [utilset]: Remove: archive file [/home/abi/fetcher/tmp/utilset-0.0.4.tar.gz]
+[2024-04-21 08:49:43] INFO root fetch - main [MainThread]: End processing [utilset]: success
+[2024-04-21 08:49:43] INFO root fetch - main [MainThread]: Store serial: [22862564]
