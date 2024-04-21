@@ -14288,3 +14288,30 @@
 [2024-04-21 18:47:40] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-2.0.0-py3-none-any.whl.zip]
 [2024-04-21 18:47:40] INFO root fetch - main [MainThread]: End processing [cometx]: success
 [2024-04-21 18:47:40] INFO root fetch - main [MainThread]: Store serial: [22866616]
+[2024-04-21 18:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866616]
+[2024-04-21 18:49:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gcp-pal
+[2024-04-21 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: galxiai
+[2024-04-21 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heimdall-tools
+[2024-04-21 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC541
+[2024-04-21 18:49:48] INFO root fetch - processPackages [galxiai]: New version: [0.50.8] Old Version: [0.50.7]
+[2024-04-21 18:49:49] WARNING root fetch - processPackages [gcp-pal]: Skipping, unable to determine old version
+[2024-04-21 18:49:49] INFO root fetch - main [MainThread]: End processing [gcp-pal] error
+[2024-04-21 18:49:49] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/11/f2/3e80601f5c99ae589f7a09fe1e1087414807005af3ab08256b58c9572204/galxiai-0.50.7.tar.gz
+[2024-04-21 18:49:49] WARNING root fetch - processPackages [PythonTestLJC541]: Skipping, unable to determine old version
+[2024-04-21 18:49:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC541] error
+[2024-04-21 18:49:49] INFO root fetch - processPackages [heimdall-tools]: New version: [0.1.1] Old Version: [0.0.2]
+[2024-04-21 18:49:49] INFO root fetch - processPackages [heimdall-tools]: Downloading https://files.pythonhosted.org/packages/ff/43/d3f85e28f3336a0eab0c20f554c1538bd34b177b1ddeedb769c2cbdbbacf/heimdall_tools-0.0.2.tar.gz
+[2024-04-21 18:49:49] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/ff/c5/100757284dee2cfe72f1f9e8563dfafe8bca9892aa707beaa7aa976811c9/galxiai-0.50.8.tar.gz
+[2024-04-21 18:49:49] INFO root fetch - processPackages [heimdall-tools]: Downloading https://files.pythonhosted.org/packages/48/b3/47f59506f243a0534f0906ff47761fe5fc85abdaf8b16a06ba8ad9f18790/heimdall_tools-0.1.1.tar.gz
+[2024-04-21 18:49:49] INFO root fetch - processPackages [galxiai]: executing diffoscope
+[2024-04-21 18:49:49] INFO root fetch - processPackages [galxiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galxiai-0.50.7.tar.gz tmp/galxiai-0.50.8.tar.gz --markdown 20240421/g/galxiai/0.50.7-0.50.8/README.md --exclude *.pyd
+[2024-04-21 18:49:49] INFO root fetch - processPackages [heimdall-tools]: executing diffoscope
+[2024-04-21 18:49:49] INFO root fetch - processPackages [heimdall-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heimdall_tools-0.0.2.tar.gz tmp/heimdall_tools-0.1.1.tar.gz --markdown 20240421/h/heimdall-tools/0.0.2-0.1.1/README.md --exclude *.pyd
+[2024-04-21 18:49:50] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.7.tar.gz]
+[2024-04-21 18:49:50] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.8.tar.gz]
+[2024-04-21 18:49:50] INFO root fetch - main [MainThread]: End processing [galxiai]: success
+[2024-04-21 18:49:50] INFO root fetch - processPackages [heimdall-tools]: Remove: archive file [/home/abi/fetcher/tmp/heimdall_tools-0.0.2.tar.gz]
+[2024-04-21 18:49:50] INFO root fetch - processPackages [heimdall-tools]: Remove: archive file [/home/abi/fetcher/tmp/heimdall_tools-0.1.1.tar.gz]
+[2024-04-21 18:49:50] INFO root fetch - main [MainThread]: End processing [heimdall-tools]: success
+[2024-04-21 18:49:50] INFO root fetch - main [MainThread]: Store serial: [22866640]
