@@ -3932,3 +3932,18 @@
 [2024-04-21 06:08:30] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
 [2024-04-21 06:08:30] INFO root fetch - main [MainThread]: End processing [hashcat]: success
 [2024-04-21 06:08:30] INFO root fetch - main [MainThread]: Store serial: [22861827]
+[2024-04-21 06:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861827]
+[2024-04-21 06:10:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 06:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-geoacumen
+[2024-04-21 06:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pandas-query-sql
+[2024-04-21 06:10:39] WARNING root fetch - processPackages [pandas-query-sql]: Skipping, unable to determine old version
+[2024-04-21 06:10:39] INFO root fetch - main [MainThread]: End processing [pandas-query-sql] error
+[2024-04-21 06:10:39] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.4.7] Old Version: [2024.4.21]
+[2024-04-21 06:10:39] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/c7/26/5cf24c0957b35c9f92569a1dbca75b28658966cbd9638fbef59845153ad5/python-geoacumen-2024.4.21.tar.gz
+[2024-04-21 06:10:39] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/f6/4d/d2bd3da5d4357004c515ec3a07f006b6e719414f1ed9f74e0e7d072f9f59/python-geoacumen-2024.4.7.tar.gz
+[2024-04-21 06:10:40] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-04-21 06:10:40] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.4.21.tar.gz tmp/python-geoacumen-2024.4.7.tar.gz --markdown 20240421/p/python-geoacumen/2024.4.21-2024.4.7/README.md --exclude *.pyd
+[2024-04-21 06:10:41] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.21.tar.gz]
+[2024-04-21 06:10:41] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
+[2024-04-21 06:10:41] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-04-21 06:10:41] INFO root fetch - main [MainThread]: Store serial: [22861835]
