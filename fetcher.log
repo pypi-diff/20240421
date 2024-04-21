@@ -2498,3 +2498,9 @@
 [2024-04-21 03:42:40] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-21 03:42:40] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-21 03:42:40] INFO root fetch - main [MainThread]: Store serial: [22861100]
+[2024-04-21 03:44:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861100]
+[2024-04-21 03:44:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 03:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commit-text-organizer
+[2024-04-21 03:44:50] WARNING root fetch - processPackages [commit-text-organizer]: Skipping, unable to determine old version
+[2024-04-21 03:44:50] INFO root fetch - main [MainThread]: End processing [commit-text-organizer] error
+[2024-04-21 03:44:50] INFO root fetch - main [MainThread]: Store serial: [22861105]
