@@ -9229,3 +9229,27 @@
 [2024-04-21 13:51:07] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 13:51:07] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 13:51:07] INFO root fetch - main [MainThread]: Store serial: [22864120]
+[2024-04-21 13:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864120]
+[2024-04-21 13:53:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 13:53:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovoenergy
+[2024-04-21 13:53:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-l4v1
+[2024-04-21 13:53:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geodynamic
+[2024-04-21 13:53:16] INFO root fetch - processPackages [ovoenergy]: New version: [2.0.0.dev1] Old Version: [2.0.0.dev0]
+[2024-04-21 13:53:16] INFO root fetch - processPackages [ovoenergy]: Downloading https://files.pythonhosted.org/packages/24/c5/159f4a9a8778b6ad283acd681fdaaba5ed6b8f79c68b0ea9ac077b1eb1d4/ovoenergy-2.0.0.dev0.tar.gz
+[2024-04-21 13:53:16] WARNING root fetch - processPackages [test-l4v1]: Skipping, unable to determine old version
+[2024-04-21 13:53:16] INFO root fetch - main [MainThread]: End processing [test-l4v1] error
+[2024-04-21 13:53:16] INFO root fetch - processPackages [geodynamic]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 13:53:16] INFO root fetch - processPackages [geodynamic]: Downloading https://files.pythonhosted.org/packages/0c/86/79c6c059f691a29e96f78557c3353ef48ba13850f8b0ad990ac26a9e3927/geodynamic-0.0.7.tar.gz
+[2024-04-21 13:53:16] INFO root fetch - processPackages [ovoenergy]: Downloading https://files.pythonhosted.org/packages/53/0c/62849bb522fc52752f3c5bfc97df592a1c06f2411aa3d7a9a658842c9723/ovoenergy-2.0.0.dev1.tar.gz
+[2024-04-21 13:53:16] INFO root fetch - processPackages [ovoenergy]: executing diffoscope
+[2024-04-21 13:53:16] INFO root fetch - processPackages [ovoenergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovoenergy-2.0.0.dev0.tar.gz tmp/ovoenergy-2.0.0.dev1.tar.gz --markdown 20240421/o/ovoenergy/2.0.0.dev0-2.0.0.dev1/README.md --exclude *.pyd
+[2024-04-21 13:53:16] INFO root fetch - processPackages [geodynamic]: Downloading https://files.pythonhosted.org/packages/31/b8/1ca1e99084ece69c2782d36e215b91541fc4953bf60df2329b527e052c84/geodynamic-0.0.8.tar.gz
+[2024-04-21 13:53:16] INFO root fetch - processPackages [geodynamic]: executing diffoscope
+[2024-04-21 13:53:16] INFO root fetch - processPackages [geodynamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geodynamic-0.0.7.tar.gz tmp/geodynamic-0.0.8.tar.gz --markdown 20240421/g/geodynamic/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 13:53:17] INFO root fetch - processPackages [ovoenergy]: Remove: archive file [/home/abi/fetcher/tmp/ovoenergy-2.0.0.dev0.tar.gz]
+[2024-04-21 13:53:17] INFO root fetch - processPackages [ovoenergy]: Remove: archive file [/home/abi/fetcher/tmp/ovoenergy-2.0.0.dev1.tar.gz]
+[2024-04-21 13:53:17] INFO root fetch - main [MainThread]: End processing [ovoenergy]: success
+[2024-04-21 13:53:17] INFO root fetch - processPackages [geodynamic]: Remove: archive file [/home/abi/fetcher/tmp/geodynamic-0.0.7.tar.gz]
+[2024-04-21 13:53:17] INFO root fetch - processPackages [geodynamic]: Remove: archive file [/home/abi/fetcher/tmp/geodynamic-0.0.8.tar.gz]
+[2024-04-21 13:53:17] INFO root fetch - main [MainThread]: End processing [geodynamic]: success
+[2024-04-21 13:53:17] INFO root fetch - main [MainThread]: Store serial: [22864132]
