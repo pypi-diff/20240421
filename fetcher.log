@@ -6220,3 +6220,15 @@
 [2024-04-21 09:48:47] INFO root fetch - processPackages [outlines]: Remove: archive file [/home/abi/fetcher/tmp/outlines-0.1.dev0.tar.gz]
 [2024-04-21 09:48:47] INFO root fetch - main [MainThread]: End processing [outlines]: success
 [2024-04-21 09:48:47] INFO root fetch - main [MainThread]: Store serial: [22862896]
+[2024-04-21 09:50:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862896]
+[2024-04-21 09:50:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 09:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: galxiai
+[2024-04-21 09:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: visualize-queue
+[2024-04-21 09:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC412
+[2024-04-21 09:50:55] WARNING root fetch - processPackages [visualize-queue]: Skipping, unable to determine old version
+[2024-04-21 09:50:55] WARNING root fetch - processPackages [galxiai]: Skipping, unable to determine old version
+[2024-04-21 09:50:55] INFO root fetch - main [MainThread]: End processing [visualize-queue] error
+[2024-04-21 09:50:55] WARNING root fetch - processPackages [PythonTestLJC412]: Skipping, unable to determine old version
+[2024-04-21 09:50:55] INFO root fetch - main [MainThread]: End processing [galxiai] error
+[2024-04-21 09:50:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC412] error
+[2024-04-21 09:50:55] INFO root fetch - main [MainThread]: Store serial: [22862910]
