@@ -8044,3 +8044,18 @@
 [2024-04-21 12:20:31] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
 [2024-04-21 12:20:31] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-21 12:20:31] INFO root fetch - main [MainThread]: Store serial: [22863644]
+[2024-04-21 12:22:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863644]
+[2024-04-21 12:22:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 12:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textile-metric
+[2024-04-21 12:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-transformation-yfhsi
+[2024-04-21 12:22:39] INFO root fetch - processPackages [textile-metric]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 12:22:39] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/24/bc/159ebef142757ac8a6d6dbc86eae930354d5f4a85c200730a4d01495b163/textile_metric-0.0.7.tar.gz
+[2024-04-21 12:22:39] WARNING root fetch - processPackages [data-transformation-yfhsi]: Skipping, unable to determine old version
+[2024-04-21 12:22:39] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi] error
+[2024-04-21 12:22:40] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/73/22/478ae8921149820945fb163018e1c77923019d43b6622e7c42676b780960/textile_metric-0.0.8.tar.gz
+[2024-04-21 12:22:40] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:22:40] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.7.tar.gz tmp/textile_metric-0.0.8.tar.gz --markdown 20240421/t/textile-metric/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 12:22:41] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.7.tar.gz]
+[2024-04-21 12:22:41] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.8.tar.gz]
+[2024-04-21 12:22:41] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:22:41] INFO root fetch - main [MainThread]: Store serial: [22863652]
