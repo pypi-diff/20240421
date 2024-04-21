@@ -13750,3 +13750,70 @@
 [2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: Remove: archive file [/home/abi/fetcher/tmp/hexital-1.1.0.tar.gz]
 [2024-04-21 18:19:13] INFO root fetch - main [MainThread]: End processing [hexital]: success
 [2024-04-21 18:19:13] INFO root fetch - main [MainThread]: Store serial: [22866362]
+[2024-04-21 18:21:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866362]
+[2024-04-21 18:21:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandas-query-sql
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: practical-astronomy
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: practical-astronomy
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: practical-astronomy
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: practical-astronomy
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: practical-astronomy
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: UoMConversion
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kvm-db
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stabilizer-timelime
+[2024-04-21 18:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: data-transformation-yfhsi
+[2024-04-21 18:21:22] WARNING root fetch - processPackages [pandas-query-sql]: Skipping, unable to determine old version
+[2024-04-21 18:21:22] INFO root fetch - main [MainThread]: End processing [pandas-query-sql] error
+[2024-04-21 18:21:23] WARNING root fetch - processPackages [kvm-db]: Skipping, unable to determine old version
+[2024-04-21 18:21:23] INFO root fetch - main [MainThread]: End processing [kvm-db] error
+[2024-04-21 18:21:23] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-21 18:21:23] WARNING root fetch - processPackages [UoMConversion]: Skipping, unable to determine old version
+[2024-04-21 18:21:23] INFO root fetch - main [MainThread]: End processing [UoMConversion] error
+[2024-04-21 18:21:23] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [stabilizer-timelime]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/8e/8f/6a5ffe5ec7d8c81fedfcd8dfe0939b1181f8498949173268fb48626e0897/stabilizer_timelime-0.1.6.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 18:21:23] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-21 18:21:23] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/c9/9f/f4058692384b067f3a2cf41c2578d4f79d388ab3785cf499d5944e9eb50a/stabilizer_timelime-0.1.7.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-21 18:21:23] INFO root fetch - processPackages [stabilizer-timelime]: executing diffoscope
+[2024-04-21 18:21:23] INFO root fetch - processPackages [stabilizer-timelime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stabilizer_timelime-0.1.6.tar.gz tmp/stabilizer_timelime-0.1.7.tar.gz --markdown 20240421/s/stabilizer-timelime/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-21 18:21:24] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-21 18:21:24] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240421/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240421/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240421/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240421/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-21 18:21:24] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240421/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-21 18:21:24] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.1.6.tar.gz]
+[2024-04-21 18:21:24] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.1.7.tar.gz]
+[2024-04-21 18:21:24] INFO root fetch - main [MainThread]: End processing [stabilizer-timelime]: success
+[2024-04-21 18:21:26] INFO root fetch - processPackages [practical-astronomy]: Remove: archive file [/home/abi/fetcher/tmp/practical_astronomy-0.0.4.tar.gz]
+[2024-04-21 18:21:26] INFO root fetch - processPackages [practical-astronomy]: Remove: archive file [/home/abi/fetcher/tmp/practical_astronomy-1.0.0.tar.gz]
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-21 18:21:26] INFO root fetch - main [MainThread]: Store serial: [22866396]
