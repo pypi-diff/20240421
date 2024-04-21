@@ -2399,3 +2399,27 @@
 [2024-04-21 03:29:43] INFO root fetch - processPackages [arseeding]: Remove: archive file [/home/abi/fetcher/tmp/arseeding-0.0.6.tar.gz]
 [2024-04-21 03:29:43] INFO root fetch - main [MainThread]: End processing [arseeding]: success
 [2024-04-21 03:29:43] INFO root fetch - main [MainThread]: Store serial: [22861038]
+[2024-04-21 03:31:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861038]
+[2024-04-21 03:31:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphlit-client
+[2024-04-21 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: can-weather-data
+[2024-04-21 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pg-alchemy-kit
+[2024-04-21 03:31:53] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420010] Old Version: [1.0.20240420009]
+[2024-04-21 03:31:53] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.1b0] Old Version: [0.9.13b0]
+[2024-04-21 03:31:53] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/45/b7/a580d4c197d8845474ecd03fa23e6c68d6b8c458c75efe287f85fa33eca3/graphlit_client-1.0.20240420009.tar.gz
+[2024-04-21 03:31:53] WARNING root fetch - processPackages [can-weather-data]: Skipping, unable to determine old version
+[2024-04-21 03:31:53] INFO root fetch - main [MainThread]: End processing [can-weather-data] error
+[2024-04-21 03:31:53] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/e2/b5/d3c9d11ee743567c3084651cd8251045e836a3c60373fc24ea1260852ce3/pg_alchemy_kit-0.9.13b0.tar.gz
+[2024-04-21 03:31:53] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/15/77/9606182a8ca268d744c73ee5fe74a3c2311f9ee66380afa1f220c118f43f/pg_alchemy_kit-0.9.1b0.tar.gz
+[2024-04-21 03:31:53] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/cc/b5/d80fe5facf073bde0cd43caf09016dc6a1e100a1c88f1c534e98a23f9cbf/graphlit_client-1.0.20240420010.tar.gz
+[2024-04-21 03:31:53] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-04-21 03:31:53] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.9.13b0.tar.gz tmp/pg_alchemy_kit-0.9.1b0.tar.gz --markdown 20240421/p/pg-alchemy-kit/0.9.13b0-0.9.1b0/README.md --exclude *.pyd
+[2024-04-21 03:31:53] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 03:31:53] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420009.tar.gz tmp/graphlit_client-1.0.20240420010.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420009-1.0.20240420010/README.md --exclude *.pyd
+[2024-04-21 03:31:54] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.13b0.tar.gz]
+[2024-04-21 03:31:54] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
+[2024-04-21 03:31:54] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-04-21 03:31:54] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420009.tar.gz]
+[2024-04-21 03:31:54] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420010.tar.gz]
+[2024-04-21 03:31:54] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 03:31:54] INFO root fetch - main [MainThread]: Store serial: [22861049]
