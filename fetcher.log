@@ -10324,3 +10324,54 @@
 [2024-04-21 15:11:47] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
 [2024-04-21 15:11:47] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2024-04-21 15:11:47] INFO root fetch - main [MainThread]: Store serial: [22864811]
+[2024-04-21 15:13:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864811]
+[2024-04-21 15:13:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenyx
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TkEasyGUI
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC463
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mycalc-gi
+[2024-04-21 15:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mbapy
+[2024-04-21 15:13:56] INFO root fetch - processPackages [zenyx]: New version: [2.1.0] Old Version: [1.3.2]
+[2024-04-21 15:13:56] INFO root fetch - processPackages [TkEasyGUI]: New version: [0.2.55] Old Version: [0.2.49]
+[2024-04-21 15:13:56] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.21] Old Version: [2024.4.20]
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mycalc-gi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 15:13:56] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/1a/43/5197b12ef479648c9888396b9634dec2d1b102f6fcb61edaddcc9c41e025/zenyx-1.3.2.tar.gz
+[2024-04-21 15:13:56] WARNING root fetch - processPackages [PythonTestLJC463]: Skipping, unable to determine old version
+[2024-04-21 15:13:56] INFO root fetch - main [MainThread]: End processing [PythonTestLJC463] error
+[2024-04-21 15:13:56] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/32/f7/a7d210d3355fb9efe87390ce3a33a8a53818de1bae9fc21f5aa2619b067c/tkeasygui-0.2.49.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mbapy]: New version: [0.7.2] Old Version: [0.7.1b1]
+[2024-04-21 15:13:56] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/8b/f7/7b54e93d5eb550c299b38a385cf1b14aa528d5cb734152b427f707d1ee3f/fbgemm_gpu_nightly_cpu-2024.4.20-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-21 15:13:56] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/f0/f1/cc0f3140fd14ec268cd017a4c5f7765b91d000416b3d2aacb58a981ff6ab/tkeasygui-0.2.55.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/ad/7c/e0d4861e75b0be7b6dec37d48d977a7c51c6611a173de40eafc2aeabd907/zenyx-2.1.0.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mycalc-gi]: Downloading https://files.pythonhosted.org/packages/e1/81/9f9dc7ae6c131166d5ff76322d5d3a75b241d098cff79570353b063e9670/mycalc_gi-0.0.1.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/ff/94/dc8ace43a2dd2afeb280ada6e5f83476eb6c65e414a71e547c13d3f83b8f/mbapy-0.7.1b1.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [TkEasyGUI]: executing diffoscope
+[2024-04-21 15:13:56] INFO root fetch - processPackages [zenyx]: executing diffoscope
+[2024-04-21 15:13:56] INFO root fetch - processPackages [TkEasyGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkeasygui-0.2.49.tar.gz tmp/tkeasygui-0.2.55.tar.gz --markdown 20240421/T/TkEasyGUI/0.2.49-0.2.55/README.md --exclude *.pyd
+[2024-04-21 15:13:56] INFO root fetch - processPackages [zenyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenyx-1.3.2.tar.gz tmp/zenyx-2.1.0.tar.gz --markdown 20240421/z/zenyx/1.3.2-2.1.0/README.md --exclude *.pyd
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mycalc-gi]: Downloading https://files.pythonhosted.org/packages/c2/67/3a2c9f5c1356aa73a573e33a1bb1802e3b74f5108f479ffdfac396cdc227/mycalc_gi-0.0.2.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/fa/72/6a118138cad40c84d0c9044942efedc3f1cc67039502ea8755bec6af7d89/mbapy-0.7.2.tar.gz
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mycalc-gi]: executing diffoscope
+[2024-04-21 15:13:56] INFO root fetch - processPackages [mycalc-gi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycalc_gi-0.0.1.tar.gz tmp/mycalc_gi-0.0.2.tar.gz --markdown 20240421/m/mycalc-gi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 15:13:56] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/ee/fc/a1b815ac86b5be2aaa2c3861932fb32029234e3c217f6686f55718e62a81/fbgemm_gpu_nightly_cpu-2024.4.21-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mbapy]: executing diffoscope
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mbapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbapy-0.7.1b1.tar.gz tmp/mbapy-0.7.2.tar.gz --markdown 20240421/m/mbapy/0.7.1b1-0.7.2/README.md --exclude *.pyd
+[2024-04-21 15:13:57] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-1.3.2.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.1.0.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - main [MainThread]: End processing [zenyx]: success
+[2024-04-21 15:13:57] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.49.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.55.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - main [MainThread]: End processing [TkEasyGUI]: success
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mycalc-gi]: Remove: archive file [/home/abi/fetcher/tmp/mycalc_gi-0.0.1.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mycalc-gi]: Remove: archive file [/home/abi/fetcher/tmp/mycalc_gi-0.0.2.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - main [MainThread]: End processing [mycalc-gi]: success
+[2024-04-21 15:13:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-21 15:13:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.20-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.21-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240421/f/fbgemm-gpu-nightly-cpu/2024.4.20-2024.4.21/README.md --exclude *.pyd
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mbapy]: Remove: archive file [/home/abi/fetcher/tmp/mbapy-0.7.1b1.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - processPackages [mbapy]: Remove: archive file [/home/abi/fetcher/tmp/mbapy-0.7.2.tar.gz]
+[2024-04-21 15:13:57] INFO root fetch - main [MainThread]: End processing [mbapy]: success
+[2024-04-21 15:13:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.20-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-21 15:13:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.21-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-21 15:13:58] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-21 15:13:58] INFO root fetch - main [MainThread]: Store serial: [22864833]
