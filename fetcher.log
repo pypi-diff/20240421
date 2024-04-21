@@ -7813,3 +7813,24 @@
 [2024-04-21 12:02:49] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.6.tar.gz]
 [2024-04-21 12:02:49] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 12:02:49] INFO root fetch - main [MainThread]: Store serial: [22863538]
+[2024-04-21 12:04:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863538]
+[2024-04-21 12:04:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 12:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drawdraw
+[2024-04-21 12:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaffi-api
+[2024-04-21 12:04:57] INFO root fetch - processPackages [drawdraw]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 12:04:57] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.20] Old Version: [0.0.19]
+[2024-04-21 12:04:57] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/50/c9/655864d58940a4926918af4649aade2228da24421e47e28e6b6d8c196485/drawdraw-0.0.5-py3-none-any.whl
+[2024-04-21 12:04:57] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/7f/c9/d129ba688d5cf16798b272fdc48b48731211c3370662cb142fbde9b4b767/metaffi_api-0.0.19.tar.gz
+[2024-04-21 12:04:58] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/26/1c/644e142def25ff2442169f4e13a1c03eb2c5ec0bd626bd0a8e04e2b66739/metaffi_api-0.0.20.tar.gz
+[2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/b3/f5/59ba7d0bf39223624268757a6ef4aa1376c308fd5b2f50a2a3043874f59a/drawdraw-0.0.6-py3-none-any.whl
+[2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.5-py3-none-any.whl.zip tmp/drawdraw-0.0.6-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 12:04:58] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 12:04:58] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.19.tar.gz tmp/metaffi_api-0.0.20.tar.gz --markdown 20240421/m/metaffi-api/0.0.19-0.0.20/README.md --exclude *.pyd
+[2024-04-21 12:04:58] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.19.tar.gz]
+[2024-04-21 12:04:58] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.20.tar.gz]
+[2024-04-21 12:04:58] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.6-py3-none-any.whl.zip]
+[2024-04-21 12:04:58] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 12:04:58] INFO root fetch - main [MainThread]: Store serial: [22863580]
