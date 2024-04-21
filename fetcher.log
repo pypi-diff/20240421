@@ -4092,3 +4092,47 @@
 [2024-04-21 06:34:33] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip]
 [2024-04-21 06:34:33] INFO root fetch - main [MainThread]: End processing [pyfilebrowser]: success
 [2024-04-21 06:34:33] INFO root fetch - main [MainThread]: Store serial: [22861879]
+[2024-04-21 06:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861879]
+[2024-04-21 06:36:41] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 06:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861879]
+[2024-04-21 06:38:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 06:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC364
+[2024-04-21 06:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfst
+[2024-04-21 06:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataset-creator
+[2024-04-21 06:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: updrytwist-UpDryTwist
+[2024-04-21 06:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: numpyneuron
+[2024-04-21 06:38:47] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 06:38:47] INFO root fetch - processPackages [dataset-creator]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-21 06:38:47] INFO root fetch - processPackages [sfst]: New version: [1.5.8] Old Version: [1.5.7]
+[2024-04-21 06:38:47] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-21 06:38:47] WARNING root fetch - processPackages [PythonTestLJC364]: Skipping, unable to determine old version
+[2024-04-21 06:38:47] INFO root fetch - main [MainThread]: End processing [PythonTestLJC364] error
+[2024-04-21 06:38:47] INFO root fetch - processPackages [numpyneuron]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 06:38:47] INFO root fetch - processPackages [sfst]: Downloading https://files.pythonhosted.org/packages/26/69/8cccdf6897605f9b5385b8aca02d24332287799db6791364544422bec99e/sfst-1.5.7.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [dataset-creator]: Downloading https://files.pythonhosted.org/packages/72/28/d1a3bfabb835dd3997778b9318979d959b8e84787002ae339e7781dd9690/dataset-creator-0.5.0.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/dd/23/4e96519095923ea714c900e8d78072bcbe8e3ee7a0e3b39dcd19bd18909a/numpyneuron-0.5.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-21 06:38:47] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240421/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 06:38:47] INFO root fetch - processPackages [sfst]: Downloading https://files.pythonhosted.org/packages/d7/e0/6560c8b94c7af1547b2b9b9816adab4660f08934bcd5e5a5f2daad1056df/sfst-1.5.8.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [dataset-creator]: Downloading https://files.pythonhosted.org/packages/e5/be/d705f45df066944014355daf657f790d1eb3605ec92f624cf011b1133410/dataset_creator-0.6.0.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/7e/b5/6a3b5bcf1757a691842169a9eea1411e3afb7c2043e0005d9a65643d5698/numpyneuron-0.6.tar.gz
+[2024-04-21 06:38:47] INFO root fetch - processPackages [sfst]: executing diffoscope
+[2024-04-21 06:38:47] INFO root fetch - processPackages [sfst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfst-1.5.7.tar.gz tmp/sfst-1.5.8.tar.gz --markdown 20240421/s/sfst/1.5.7-1.5.8/README.md --exclude *.pyd
+[2024-04-21 06:38:48] INFO root fetch - processPackages [dataset-creator]: executing diffoscope
+[2024-04-21 06:38:48] INFO root fetch - processPackages [dataset-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-creator-0.5.0.tar.gz tmp/dataset_creator-0.6.0.tar.gz --markdown 20240421/d/dataset-creator/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-21 06:38:48] INFO root fetch - processPackages [numpyneuron]: executing diffoscope
+[2024-04-21 06:38:48] INFO root fetch - processPackages [numpyneuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpyneuron-0.5.tar.gz tmp/numpyneuron-0.6.tar.gz --markdown 20240421/n/numpyneuron/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 06:38:48] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-21 06:38:48] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.5.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.6.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - main [MainThread]: End processing [numpyneuron]: success
+[2024-04-21 06:38:48] INFO root fetch - processPackages [sfst]: Remove: archive file [/home/abi/fetcher/tmp/sfst-1.5.7.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - processPackages [sfst]: Remove: archive file [/home/abi/fetcher/tmp/sfst-1.5.8.tar.gz]
+[2024-04-21 06:38:48] INFO root fetch - main [MainThread]: End processing [sfst]: success
+[2024-04-21 06:38:49] INFO root fetch - processPackages [dataset-creator]: Remove: archive file [/home/abi/fetcher/tmp/dataset-creator-0.5.0.tar.gz]
+[2024-04-21 06:38:49] INFO root fetch - processPackages [dataset-creator]: Remove: archive file [/home/abi/fetcher/tmp/dataset_creator-0.6.0.tar.gz]
+[2024-04-21 06:38:49] INFO root fetch - main [MainThread]: End processing [dataset-creator]: success
+[2024-04-21 06:38:49] INFO root fetch - main [MainThread]: Store serial: [22861936]
