@@ -13176,3 +13176,21 @@
 [2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.6.tar.gz]
 [2024-04-21 17:44:30] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
 [2024-04-21 17:44:30] INFO root fetch - main [MainThread]: Store serial: [22866114]
+[2024-04-21 17:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866114]
+[2024-04-21 17:46:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 17:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SushantQrscanner
+[2024-04-21 17:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC518
+[2024-04-21 17:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geminiwrapper
+[2024-04-21 17:46:39] INFO root fetch - processPackages [geminiwrapper]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 17:46:39] WARNING root fetch - processPackages [PythonTestLJC518]: Skipping, unable to determine old version
+[2024-04-21 17:46:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC518] error
+[2024-04-21 17:46:39] INFO root fetch - processPackages [geminiwrapper]: Downloading https://files.pythonhosted.org/packages/8b/2c/2ad33970b4fce28ae5c4391bc6f853fc716543bf15ebdf20ad6f2cadac7f/geminiwrapper-0.0.1.tar.gz
+[2024-04-21 17:46:39] WARNING root fetch - processPackages [SushantQrscanner]: Skipping, unable to determine old version
+[2024-04-21 17:46:39] INFO root fetch - main [MainThread]: End processing [SushantQrscanner] error
+[2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: Downloading https://files.pythonhosted.org/packages/10/0b/76a672087070f231a9d55de5720425a52cd1c178a2f1d0c1802ff954bf73/geminiwrapper-0.0.2.tar.gz
+[2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: executing diffoscope
+[2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geminiwrapper-0.0.1.tar.gz tmp/geminiwrapper-0.0.2.tar.gz --markdown 20240421/g/geminiwrapper/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: Remove: archive file [/home/abi/fetcher/tmp/geminiwrapper-0.0.1.tar.gz]
+[2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: Remove: archive file [/home/abi/fetcher/tmp/geminiwrapper-0.0.2.tar.gz]
+[2024-04-21 17:46:40] INFO root fetch - main [MainThread]: End processing [geminiwrapper]: success
+[2024-04-21 17:46:40] INFO root fetch - main [MainThread]: Store serial: [22866126]
