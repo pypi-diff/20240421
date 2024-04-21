@@ -13445,3 +13445,48 @@
 [2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.5.tar.gz]
 [2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [duckdb_engine]: success
 [2024-04-21 17:59:41] INFO root fetch - main [MainThread]: Store serial: [22866217]
+[2024-04-21 18:01:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866217]
+[2024-04-21 18:01:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: culminator
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-optimization
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kmin
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: haskellian
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ldjcourse
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ScheduleGenius
+[2024-04-21 18:01:50] INFO root fetch - processPackages [haskellian]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-21 18:01:50] INFO root fetch - processPackages [python-optimization]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 18:01:50] INFO root fetch - processPackages [culminator]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.7.1] Old Version: [0.0.6]
+[2024-04-21 18:01:50] WARNING root fetch - processPackages [ScheduleGenius]: Skipping, unable to determine old version
+[2024-04-21 18:01:50] INFO root fetch - main [MainThread]: End processing [ScheduleGenius] error
+[2024-04-21 18:01:50] WARNING root fetch - processPackages [kmin]: Skipping, unable to determine old version
+[2024-04-21 18:01:50] INFO root fetch - main [MainThread]: End processing [kmin] error
+[2024-04-21 18:01:50] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/19/2c/284130f3c3b73ff992a857316ad501e6e3f66cdff00d608844a044f09a6c/haskellian-0.3.1.tar.gz
+[2024-04-21 18:01:50] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/37/f4/e7f7cf70bdf03d223056d4eec5f49513caccf2dd8b5fe43b6a6cd763b033/culminator-0.7.tar.gz
+[2024-04-21 18:01:50] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/1b/0f/1ef66a9e04bc81021fffc0301f2b9dd145a4c92b721dd50c9b1a1dbec4b9/python_optimization-0.0.2.tar.gz
+[2024-04-21 18:01:50] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/07/c0/82325f0d75c8555f4ab76234017666e656a8e31c121867ad42a42aa2439f/ldjcourse-0.0.6.tar.gz
+[2024-04-21 18:01:51] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/20/b0/fb5753400f141516ccceeb59be597de1af3bbe4fe788e8236f76dbb0ec40/culminator-0.8-py3-none-any.whl
+[2024-04-21 18:01:51] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/4b/9e/48a3ddefecf5f84a05f1bcc5c768c6f0f7f6d4978bf832c24fe29145c110/haskellian-0.3.2.tar.gz
+[2024-04-21 18:01:51] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/86/24/d3774438bb31f8d10d56c2673b35181ed9cf2299b17b8ae2510a2f620524/ldjcourse-0.0.7.1.tar.gz
+[2024-04-21 18:01:51] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/3e/55/a3c93241af1b9c7f4d6fb6d752ea323bbed1ee1f0c2a07f3344018b52505/python_optimization-0.0.3.tar.gz
+[2024-04-21 18:01:51] INFO root fetch - processPackages [culminator]: executing diffoscope
+[2024-04-21 18:01:51] INFO root fetch - processPackages [culminator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culminator-0.7.tar.gz tmp/culminator-0.8-py3-none-any.whl.zip --markdown 20240421/c/culminator/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 18:01:51] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-04-21 18:01:51] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-21 18:01:51] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.1.tar.gz tmp/haskellian-0.3.2.tar.gz --markdown 20240421/h/haskellian/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-21 18:01:51] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.6.tar.gz tmp/ldjcourse-0.0.7.1.tar.gz --markdown 20240421/l/ldjcourse/0.0.6-0.0.7.1/README.md --exclude *.pyd
+[2024-04-21 18:01:51] INFO root fetch - processPackages [python-optimization]: executing diffoscope
+[2024-04-21 18:01:51] INFO root fetch - processPackages [python-optimization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_optimization-0.0.2.tar.gz tmp/python_optimization-0.0.3.tar.gz --markdown 20240421/p/python-optimization/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 18:01:51] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.7.tar.gz]
+[2024-04-21 18:01:51] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
+[2024-04-21 18:01:51] INFO root fetch - main [MainThread]: End processing [culminator]: success
+[2024-04-21 18:01:51] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.6.tar.gz]
+[2024-04-21 18:01:51] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.7.1.tar.gz]
+[2024-04-21 18:01:51] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-21 18:01:51] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.2.tar.gz]
+[2024-04-21 18:01:51] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.3.tar.gz]
+[2024-04-21 18:01:51] INFO root fetch - main [MainThread]: End processing [python-optimization]: success
+[2024-04-21 18:01:52] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.1.tar.gz]
+[2024-04-21 18:01:52] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.2.tar.gz]
+[2024-04-21 18:01:52] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-04-21 18:01:52] INFO root fetch - main [MainThread]: Store serial: [22866237]
