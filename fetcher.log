@@ -4563,3 +4563,18 @@
 [2024-04-21 07:18:24] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-04-21 07:18:24] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-04-21 07:18:24] INFO root fetch - main [MainThread]: Store serial: [22862137]
+[2024-04-21 07:20:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862137]
+[2024-04-21 07:20:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 07:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC379
+[2024-04-21 07:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: call-to-change
+[2024-04-21 07:20:33] INFO root fetch - processPackages [call-to-change]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-21 07:20:33] WARNING root fetch - processPackages [PythonTestLJC379]: Skipping, unable to determine old version
+[2024-04-21 07:20:33] INFO root fetch - main [MainThread]: End processing [PythonTestLJC379] error
+[2024-04-21 07:20:33] INFO root fetch - processPackages [call-to-change]: Downloading https://files.pythonhosted.org/packages/c8/4e/faf47774a1fd9fe2081c0e57fadafa2d2368b419488cec45eb81bca1babc/call_to_change-0.8.0.tar.gz
+[2024-04-21 07:20:33] INFO root fetch - processPackages [call-to-change]: Downloading https://files.pythonhosted.org/packages/8d/cb/4a24bdb3fd2ed4e90da42c5e98fda66e257b94283ea1a2ff6e35d1064499/call_to_change-0.8.1.tar.gz
+[2024-04-21 07:20:33] INFO root fetch - processPackages [call-to-change]: executing diffoscope
+[2024-04-21 07:20:33] INFO root fetch - processPackages [call-to-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/call_to_change-0.8.0.tar.gz tmp/call_to_change-0.8.1.tar.gz --markdown 20240421/c/call-to-change/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-21 07:20:34] INFO root fetch - processPackages [call-to-change]: Remove: archive file [/home/abi/fetcher/tmp/call_to_change-0.8.0.tar.gz]
+[2024-04-21 07:20:34] INFO root fetch - processPackages [call-to-change]: Remove: archive file [/home/abi/fetcher/tmp/call_to_change-0.8.1.tar.gz]
+[2024-04-21 07:20:34] INFO root fetch - main [MainThread]: End processing [call-to-change]: success
+[2024-04-21 07:20:34] INFO root fetch - main [MainThread]: Store serial: [22862146]
