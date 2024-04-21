@@ -13817,3 +13817,72 @@
 [2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
 [2024-04-21 18:21:26] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
 [2024-04-21 18:21:26] INFO root fetch - main [MainThread]: Store serial: [22866396]
+[2024-04-21 18:23:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866396]
+[2024-04-21 18:23:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: job-processing
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC531
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrotgfork
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-transformation-yfhsi
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: provisioner-runtime
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ninjabook
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stabilizer-timelime
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bastet
+[2024-04-21 18:23:35] INFO root fetch - processPackages [stabilizer-timelime]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [job-processing]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [provisioner-runtime]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/8e/8f/6a5ffe5ec7d8c81fedfcd8dfe0939b1181f8498949173268fb48626e0897/stabilizer_timelime-0.1.6.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [bastet]: New version: [0.0.20.dev8] Old Version: [0.0.20.dev7]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.23] Old Version: [2.1.22]
+[2024-04-21 18:23:35] WARNING root fetch - processPackages [PythonTestLJC531]: Skipping, unable to determine old version
+[2024-04-21 18:23:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC531] error
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ninjabook]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-21 18:23:35] INFO root fetch - processPackages [job-processing]: Downloading https://files.pythonhosted.org/packages/b4/4c/4617f92b4f0190166a3bcc088ed03a27b06432259782a91dc22f3c6f8f91/job_processing-0.0.1-py3-none-any.whl
+[2024-04-21 18:23:35] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/3c/fe/dd187ed39412f0b90c8317b548a3612bfdcb1a60b34ed3b2ff6f3aeae994/bastet-0.0.20.dev7.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/61/55/f919634a5708ad680eee727d755ca8acddc57351f859de492284a44ce71b/provisioner_runtime-0.1.8-py3-none-any.whl
+[2024-04-21 18:23:35] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/5d/01/fb86557c9d0c495dfeccda6ceee5ba71f66ec39cd71201193fdf9e5453a5/pyrotgfork-2.1.22.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [ninjabook]: Downloading https://files.pythonhosted.org/packages/5d/82/249401928a6d8ebb7c57ce29f1ee54844a50ff4035b4dc700735dfd01c13/ninjabook-0.1.5.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/c9/9f/f4058692384b067f3a2cf41c2578d4f79d388ab3785cf499d5944e9eb50a/stabilizer_timelime-0.1.7.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [stabilizer-timelime]: executing diffoscope
+[2024-04-21 18:23:35] INFO root fetch - processPackages [stabilizer-timelime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stabilizer_timelime-0.1.6.tar.gz tmp/stabilizer_timelime-0.1.7.tar.gz --markdown 20240421/s/stabilizer-timelime/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 18:23:35] INFO root fetch - processPackages [job-processing]: Downloading https://files.pythonhosted.org/packages/15/9d/779e999fd64f83926b9d4e8f9e111a6fe75e06b80cada5124d31526eb9a8/job_processing-0.0.2.tar.gz
+[2024-04-21 18:23:35] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 18:23:35] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/66/27/e41a58af9e46c09ad0deb31b7fb841d6a434f36e9d45230122caf2743c3e/bastet-0.0.20.dev8.tar.gz
+[2024-04-21 18:23:36] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/72/6e/42bd20af97ea3b3c814d52d91a2b0d3a138898b7fe294d390475d740bf38/provisioner_runtime-0.1.9-py3-none-any.whl
+[2024-04-21 18:23:36] INFO root fetch - processPackages [job-processing]: executing diffoscope
+[2024-04-21 18:23:36] INFO root fetch - processPackages [job-processing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/job_processing-0.0.1-py3-none-any.whl.zip tmp/job_processing-0.0.2.tar.gz --markdown 20240421/j/job-processing/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/4b/f5/c95b0bd62d4c3cac26fcd7c48e254666d4b8cec0c9cabcbf88fccb03a921/pyrotgfork-2.1.23.tar.gz
+[2024-04-21 18:23:36] INFO root fetch - processPackages [ninjabook]: Downloading https://files.pythonhosted.org/packages/56/af/927db2fa3b3bd4598d41293223c4e80537c9408fa5b3c198829d2e30495e/ninjabook-0.1.6.tar.gz
+[2024-04-21 18:23:36] INFO root fetch - processPackages [bastet]: executing diffoscope
+[2024-04-21 18:23:36] INFO root fetch - processPackages [bastet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bastet-0.0.20.dev7.tar.gz tmp/bastet-0.0.20.dev8.tar.gz --markdown 20240421/b/bastet/0.0.20.dev7-0.0.20.dev8/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [provisioner-runtime]: executing diffoscope
+[2024-04-21 18:23:36] INFO root fetch - processPackages [provisioner-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_runtime-0.1.8-py3-none-any.whl.zip tmp/provisioner_runtime-0.1.9-py3-none-any.whl.zip --markdown 20240421/p/provisioner-runtime/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [ninjabook]: executing diffoscope
+[2024-04-21 18:23:36] INFO root fetch - processPackages [ninjabook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninjabook-0.1.5.tar.gz tmp/ninjabook-0.1.6.tar.gz --markdown 20240421/n/ninjabook/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-04-21 18:23:36] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.22.tar.gz tmp/pyrotgfork-2.1.23.tar.gz --markdown 20240421/p/pyrotgfork/2.1.22-2.1.23/README.md --exclude *.pyd
+[2024-04-21 18:23:36] INFO root fetch - processPackages [job-processing]: Remove: archive file [/home/abi/fetcher/tmp/job_processing-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 18:23:36] INFO root fetch - processPackages [job-processing]: Remove: archive file [/home/abi/fetcher/tmp/job_processing-0.0.2.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - main [MainThread]: End processing [job-processing]: success
+[2024-04-21 18:23:36] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 18:23:36] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.1.6.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.1.7.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - main [MainThread]: End processing [stabilizer-timelime]: success
+[2024-04-21 18:23:36] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev7.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev8.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - main [MainThread]: End processing [bastet]: success
+[2024-04-21 18:23:36] INFO root fetch - processPackages [ninjabook]: Remove: archive file [/home/abi/fetcher/tmp/ninjabook-0.1.5.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - processPackages [ninjabook]: Remove: archive file [/home/abi/fetcher/tmp/ninjabook-0.1.6.tar.gz]
+[2024-04-21 18:23:36] INFO root fetch - main [MainThread]: End processing [ninjabook]: success
+[2024-04-21 18:23:37] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.8-py3-none-any.whl.zip]
+[2024-04-21 18:23:37] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.9-py3-none-any.whl.zip]
+[2024-04-21 18:23:37] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
+[2024-04-21 18:23:38] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.22.tar.gz]
+[2024-04-21 18:23:38] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.23.tar.gz]
+[2024-04-21 18:23:38] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-04-21 18:23:38] INFO root fetch - main [MainThread]: Store serial: [22866421]
