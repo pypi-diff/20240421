@@ -3791,3 +3791,26 @@
 [2024-04-21 05:46:57] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_onpremise-4.4.9.tar.gz]
 [2024-04-21 05:46:57] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-onpremise]: success
 [2024-04-21 05:46:57] INFO root fetch - main [MainThread]: Store serial: [22861792]
+[2024-04-21 05:49:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861792]
+[2024-04-21 05:49:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 05:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861792]
+[2024-04-21 05:51:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kazam
+[2024-04-21 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jarvis-orm
+[2024-04-21 05:51:13] INFO root fetch - processPackages [jarvis-orm]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 05:51:13] INFO root fetch - processPackages [kazam]: New version: [1.5.8] Old Version: [1.5.7.dev2]
+[2024-04-21 05:51:13] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/c9/76/222b6329a4418552937b6666e09d4a06f9aaddf4d45b9b72207b692adf61/jarvis_orm-0.0.3.tar.gz
+[2024-04-21 05:51:13] INFO root fetch - processPackages [kazam]: Downloading https://files.pythonhosted.org/packages/f7/cd/1c515ac25347ef8338cac4dcd80d0c24063789ad9949e80679eab78ebee8/kazam-1.5.7.dev2-py3-none-any.whl
+[2024-04-21 05:51:13] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/e1/bb/734caa8f8581e23a062fa9f121e4cbf54f4f0ece1b7af394433145c0a526/jarvis_orm-0.0.4.tar.gz
+[2024-04-21 05:51:13] INFO root fetch - processPackages [jarvis-orm]: executing diffoscope
+[2024-04-21 05:51:13] INFO root fetch - processPackages [jarvis-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_orm-0.0.3.tar.gz tmp/jarvis_orm-0.0.4.tar.gz --markdown 20240421/j/jarvis-orm/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 05:51:14] INFO root fetch - processPackages [kazam]: Downloading https://files.pythonhosted.org/packages/7e/c3/c309b3b6a8f383b7836d804fd60be043e78e84797a5b3bfc03e687aa15f4/kazam-1.5.8-py3-none-any.whl
+[2024-04-21 05:51:14] INFO root fetch - processPackages [kazam]: executing diffoscope
+[2024-04-21 05:51:14] INFO root fetch - processPackages [kazam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kazam-1.5.7.dev2-py3-none-any.whl.zip tmp/kazam-1.5.8-py3-none-any.whl.zip --markdown 20240421/k/kazam/1.5.7.dev2-1.5.8/README.md --exclude *.pyd
+[2024-04-21 05:51:14] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.3.tar.gz]
+[2024-04-21 05:51:14] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.4.tar.gz]
+[2024-04-21 05:51:14] INFO root fetch - main [MainThread]: End processing [jarvis-orm]: success
+[2024-04-21 05:51:15] INFO root fetch - processPackages [kazam]: Remove: archive file [/home/abi/fetcher/tmp/kazam-1.5.7.dev2-py3-none-any.whl.zip]
+[2024-04-21 05:51:15] INFO root fetch - processPackages [kazam]: Remove: archive file [/home/abi/fetcher/tmp/kazam-1.5.8-py3-none-any.whl.zip]
+[2024-04-21 05:51:15] INFO root fetch - main [MainThread]: End processing [kazam]: success
+[2024-04-21 05:51:15] INFO root fetch - main [MainThread]: Store serial: [22861797]
