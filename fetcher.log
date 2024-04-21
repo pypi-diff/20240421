@@ -7620,3 +7620,15 @@
 [2024-04-21 11:43:16] WARNING root fetch - processPackages [mycalc0002]: Skipping, unable to determine old version
 [2024-04-21 11:43:16] INFO root fetch - main [MainThread]: End processing [mycalc0002] error
 [2024-04-21 11:43:16] INFO root fetch - main [MainThread]: Store serial: [22863476]
+[2024-04-21 11:45:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863476]
+[2024-04-21 11:45:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 11:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akshare
+[2024-04-21 11:45:24] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-21 11:45:24] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-21 11:45:25] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-21 11:45:25] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-21 11:45:25] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240421/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-04-21 11:45:27] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-21 11:45:27] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-21 11:45:27] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-21 11:45:27] INFO root fetch - main [MainThread]: Store serial: [22863479]
