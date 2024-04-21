@@ -4334,3 +4334,33 @@
 [2024-04-21 06:54:01] INFO root fetch - processPackages [longling]: Remove: archive file [/home/abi/fetcher/tmp/longling-1.3.9.tar.gz]
 [2024-04-21 06:54:01] INFO root fetch - main [MainThread]: End processing [longling]: success
 [2024-04-21 06:54:01] INFO root fetch - main [MainThread]: Store serial: [22862026]
+[2024-04-21 06:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862026]
+[2024-04-21 06:56:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 06:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retell-sdk
+[2024-04-21 06:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2024-04-21 06:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bedrock-bot
+[2024-04-21 06:56:10] INFO root fetch - processPackages [retell-sdk]: New version: [3.8.0] Old Version: [3.7.0]
+[2024-04-21 06:56:10] INFO root fetch - processPackages [bedrock-bot]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-21 06:56:10] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/12/c5/46e2607eb01710e636d29565e49efd918386512b00d0593fc7d7ae1b1775/retell_sdk-3.7.0.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/c0/f2/7a891fe4492a550659051cc38bef19ffe9d6f2ad74d06fc5922fbdab3820/bedrock_bot-1.0.0.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/e1/53/f375ee017875b3c24fc03d377dc5f55fc4f3759c3ecd37e3c7fcb29192ff/retell_sdk-3.8.0.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240421/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-04-21 06:56:10] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/49/ee/1a13a985737fbde80f301ffefbea8391a27db1b10af0b41f01a8d65bd760/bedrock_bot-1.0.1.tar.gz
+[2024-04-21 06:56:10] INFO root fetch - processPackages [retell-sdk]: executing diffoscope
+[2024-04-21 06:56:10] INFO root fetch - processPackages [retell-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retell_sdk-3.7.0.tar.gz tmp/retell_sdk-3.8.0.tar.gz --markdown 20240421/r/retell-sdk/3.7.0-3.8.0/README.md --exclude *.pyd
+[2024-04-21 06:56:10] INFO root fetch - processPackages [bedrock-bot]: executing diffoscope
+[2024-04-21 06:56:10] INFO root fetch - processPackages [bedrock-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrock_bot-1.0.0.tar.gz tmp/bedrock_bot-1.0.1.tar.gz --markdown 20240421/b/bedrock-bot/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-21 06:56:10] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-21 06:56:10] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-21 06:56:11] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.0.tar.gz]
+[2024-04-21 06:56:11] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.1.tar.gz]
+[2024-04-21 06:56:11] INFO root fetch - main [MainThread]: End processing [bedrock-bot]: success
+[2024-04-21 06:56:11] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.7.0.tar.gz]
+[2024-04-21 06:56:11] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.8.0.tar.gz]
+[2024-04-21 06:56:11] INFO root fetch - main [MainThread]: End processing [retell-sdk]: success
+[2024-04-21 06:56:11] INFO root fetch - main [MainThread]: Store serial: [22862034]
