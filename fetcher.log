@@ -6486,3 +6486,38 @@
 [2024-04-21 10:10:43] INFO root fetch - processPackages [libregf-python]: Remove: archive file [/home/abi/fetcher/tmp/libregf-python-20240421.tar.gz]
 [2024-04-21 10:10:43] INFO root fetch - main [MainThread]: End processing [libregf-python]: success
 [2024-04-21 10:10:43] INFO root fetch - main [MainThread]: Store serial: [22863035]
+[2024-04-21 10:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863035]
+[2024-04-21 10:12:52] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 10:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863035]
+[2024-04-21 10:14:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC420
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magictk
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: routrs-rs
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC421
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: visualize-queue
+[2024-04-21 10:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Signix
+[2024-04-21 10:14:58] WARNING root fetch - processPackages [visualize-queue]: Skipping, unable to determine old version
+[2024-04-21 10:14:58] INFO root fetch - main [MainThread]: End processing [visualize-queue] error
+[2024-04-21 10:14:58] INFO root fetch - processPackages [Signix]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 10:14:58] INFO root fetch - processPackages [magictk]: New version: [0.0.2.44] Old Version: [0.0.2.43]
+[2024-04-21 10:14:58] WARNING root fetch - processPackages [PythonTestLJC420]: Skipping, unable to determine old version
+[2024-04-21 10:14:58] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/1b/42/23d01a314bf70e8bf04e75b635b092b74a84db2599f6bd64758c9ffffa98/magictk-0.0.2.43.tar.gz
+[2024-04-21 10:14:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC420] error
+[2024-04-21 10:14:58] WARNING root fetch - processPackages [routrs-rs]: Skipping, unable to determine old version
+[2024-04-21 10:14:58] INFO root fetch - main [MainThread]: End processing [routrs-rs] error
+[2024-04-21 10:14:58] WARNING root fetch - processPackages [PythonTestLJC421]: Skipping, unable to determine old version
+[2024-04-21 10:14:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC421] error
+[2024-04-21 10:14:58] INFO root fetch - processPackages [Signix]: Downloading https://files.pythonhosted.org/packages/be/e0/1c7eb75af5a3c6edc7a7ddf51156f6498f9a54d79f41a13f2f8a3b02d29c/Signix-0.0.1-py3-none-any.whl
+[2024-04-21 10:14:58] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/4b/f6/774215289612bddcb7a295a594f4add85d3790ff51954c7173e854a69b32/magictk-0.0.2.44.tar.gz
+[2024-04-21 10:14:58] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-21 10:14:58] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-0.0.2.43.tar.gz tmp/magictk-0.0.2.44.tar.gz --markdown 20240421/m/magictk/0.0.2.43-0.0.2.44/README.md --exclude *.pyd
+[2024-04-21 10:14:58] INFO root fetch - processPackages [Signix]: Downloading https://files.pythonhosted.org/packages/63/f1/e8134033b9190549bdb831b2ca5816718b9be3785e7f09eacfc98d6050bd/Signix-0.0.2-py3-none-any.whl
+[2024-04-21 10:14:59] INFO root fetch - processPackages [Signix]: executing diffoscope
+[2024-04-21 10:14:59] INFO root fetch - processPackages [Signix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Signix-0.0.1-py3-none-any.whl.zip tmp/Signix-0.0.2-py3-none-any.whl.zip --markdown 20240421/S/Signix/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 10:14:59] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.43.tar.gz]
+[2024-04-21 10:14:59] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.44.tar.gz]
+[2024-04-21 10:14:59] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-21 10:14:59] INFO root fetch - processPackages [Signix]: Remove: archive file [/home/abi/fetcher/tmp/Signix-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 10:14:59] INFO root fetch - processPackages [Signix]: Remove: archive file [/home/abi/fetcher/tmp/Signix-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 10:14:59] INFO root fetch - main [MainThread]: End processing [Signix]: success
+[2024-04-21 10:14:59] INFO root fetch - main [MainThread]: Store serial: [22863057]
