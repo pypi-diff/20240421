@@ -14350,3 +14350,26 @@
 [2024-04-21 18:52:00] INFO root fetch - processPackages [sparkx]: Remove: archive file [/home/abi/fetcher/tmp/sparkx-1.2.0.tar.gz]
 [2024-04-21 18:52:00] INFO root fetch - main [MainThread]: End processing [sparkx]: success
 [2024-04-21 18:52:00] INFO root fetch - main [MainThread]: Store serial: [22866658]
+[2024-04-21 18:54:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866658]
+[2024-04-21 18:54:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 18:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC542
+[2024-04-21 18:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moss-cappa
+[2024-04-21 18:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zoink
+[2024-04-21 18:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autowsgr
+[2024-04-21 18:54:10] INFO root fetch - processPackages [moss-cappa]: New version: [0.2] Old Version: [0.1.2]
+[2024-04-21 18:54:10] INFO root fetch - processPackages [autowsgr]: New version: [0.2.2.9] Old Version: [0.2.2.8]
+[2024-04-21 18:54:10] WARNING root fetch - processPackages [PythonTestLJC542]: Skipping, unable to determine old version
+[2024-04-21 18:54:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC542] error
+[2024-04-21 18:54:10] WARNING root fetch - processPackages [zoink]: Skipping, unable to determine old version
+[2024-04-21 18:54:10] INFO root fetch - main [MainThread]: End processing [zoink] error
+[2024-04-21 18:54:10] INFO root fetch - processPackages [autowsgr]: Downloading https://files.pythonhosted.org/packages/20/db/bb4942509a54b1f01fa10e10e3dca250f9cf92488729f8292657988ac8e2/autowsgr-0.2.2.8.tar.gz
+[2024-04-21 18:54:10] INFO root fetch - processPackages [moss-cappa]: Downloading https://files.pythonhosted.org/packages/9b/63/86191a12e13cf1acdff08574f3bd8b421d2993c69188738c27553d24a016/moss_cappa-0.1.2.tar.gz
+[2024-04-21 18:54:10] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
+[2024-04-21 18:54:10] INFO root fetch - main [MainThread]: End processing [autowsgr] error
+[2024-04-21 18:54:11] INFO root fetch - processPackages [moss-cappa]: Downloading https://files.pythonhosted.org/packages/f3/18/12146d38e0b3f972358210f5c5365ae97ab7d432055207f0dc0e9b54d43b/moss_cappa-0.2.tar.gz
+[2024-04-21 18:54:11] INFO root fetch - processPackages [moss-cappa]: executing diffoscope
+[2024-04-21 18:54:11] INFO root fetch - processPackages [moss-cappa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moss_cappa-0.1.2.tar.gz tmp/moss_cappa-0.2.tar.gz --markdown 20240421/m/moss-cappa/0.1.2-0.2/README.md --exclude *.pyd
+[2024-04-21 18:54:11] INFO root fetch - processPackages [moss-cappa]: Remove: archive file [/home/abi/fetcher/tmp/moss_cappa-0.1.2.tar.gz]
+[2024-04-21 18:54:11] INFO root fetch - processPackages [moss-cappa]: Remove: archive file [/home/abi/fetcher/tmp/moss_cappa-0.2.tar.gz]
+[2024-04-21 18:54:11] INFO root fetch - main [MainThread]: End processing [moss-cappa]: success
+[2024-04-21 18:54:11] INFO root fetch - main [MainThread]: Store serial: [22866678]
