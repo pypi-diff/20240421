@@ -3906,3 +3906,15 @@
 [2024-04-21 06:01:56] INFO root fetch - processPackages [ahk]: Remove: archive file [/home/abi/fetcher/tmp/ahk-1.7.0.tar.gz]
 [2024-04-21 06:01:56] INFO root fetch - main [MainThread]: End processing [ahk]: success
 [2024-04-21 06:01:56] INFO root fetch - main [MainThread]: Store serial: [22861821]
+[2024-04-21 06:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861821]
+[2024-04-21 06:04:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 06:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-21 06:04:06] INFO root fetch - processPackages [cerbogen]: New version: [0.0.46] Old Version: [0.0.45]
+[2024-04-21 06:04:06] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/66/fa/185bbc07ad6541c895d68fd42147d2780c5c578d96e03164f3a2f79570e3/cerbogen-0.0.45.tar.gz
+[2024-04-21 06:04:07] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/6e/a0/52b9bf60162fc626328dd3c70704b2f7ca5e688befe6eb759990dc576031/cerbogen-0.0.46.tar.gz
+[2024-04-21 06:04:07] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 06:04:07] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.45.tar.gz tmp/cerbogen-0.0.46.tar.gz --markdown 20240421/c/cerbogen/0.0.45-0.0.46/README.md --exclude *.pyd
+[2024-04-21 06:04:07] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.45.tar.gz]
+[2024-04-21 06:04:07] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.46.tar.gz]
+[2024-04-21 06:04:07] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 06:04:07] INFO root fetch - main [MainThread]: Store serial: [22861824]
