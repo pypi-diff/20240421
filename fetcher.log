@@ -4379,3 +4379,34 @@
 [2024-04-21 06:58:23] INFO root fetch - processPackages [gs2]: Remove: archive file [/home/abi/fetcher/tmp/gs2-1.1.99.tar.gz]
 [2024-04-21 06:58:23] INFO root fetch - main [MainThread]: End processing [gs2]: success
 [2024-04-21 06:58:23] INFO root fetch - main [MainThread]: Store serial: [22862041]
+[2024-04-21 07:00:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862041]
+[2024-04-21 07:00:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 07:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JianYingDraft.PY
+[2024-04-21 07:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC372
+[2024-04-21 07:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-file-share
+[2024-04-21 07:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flask-file-share
+[2024-04-21 07:00:32] INFO root fetch - processPackages [flask-file-share]: New version: [0.1.1a0] Old Version: [0.1.0]
+[2024-04-21 07:00:32] INFO root fetch - processPackages [flask-file-share]: New version: [0.1.1a0] Old Version: [0.1.0]
+[2024-04-21 07:00:32] INFO root fetch - processPackages [JianYingDraft.PY]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 07:00:32] WARNING root fetch - processPackages [PythonTestLJC372]: Skipping, unable to determine old version
+[2024-04-21 07:00:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC372] error
+[2024-04-21 07:00:32] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/d0/f5/aa120808a52e4cb9a1a55be04528c064d235f2dc0dd6b7d060e4ece12df5/flask_file_share-0.1.0.tar.gz
+[2024-04-21 07:00:32] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/d0/f5/aa120808a52e4cb9a1a55be04528c064d235f2dc0dd6b7d060e4ece12df5/flask_file_share-0.1.0.tar.gz
+[2024-04-21 07:00:32] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/82/b8/cdb310b0c9a9f52618cd1476cda2795b72b4d3db1838e9d84d9e0ce536cf/jianyingdraft_py-1.0.1.tar.gz
+[2024-04-21 07:00:33] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/5a/f5/d314ccf4639b3234f4b94f54ee84bdb8e4e9496f62b29e90083a884bcafb/jianyingdraft_py-1.0.2.tar.gz
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/ba/43/9688bb9f36fb56b59506309894b6e89fe94e6ee88df1e7d459dce1f2e9ae/flask_file_share-0.1.1a0.tar.gz
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/ba/43/9688bb9f36fb56b59506309894b6e89fe94e6ee88df1e7d459dce1f2e9ae/flask_file_share-0.1.1a0.tar.gz
+[2024-04-21 07:00:33] INFO root fetch - processPackages [JianYingDraft.PY]: executing diffoscope
+[2024-04-21 07:00:33] INFO root fetch - processPackages [JianYingDraft.PY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianyingdraft_py-1.0.1.tar.gz tmp/jianyingdraft_py-1.0.2.tar.gz --markdown 20240421/J/JianYingDraft.PY/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: executing diffoscope
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_file_share-0.1.0.tar.gz tmp/flask_file_share-0.1.1a0.tar.gz --markdown 20240421/f/flask-file-share/0.1.0-0.1.1a0/README.md --exclude *.pyd
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: executing diffoscope
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_file_share-0.1.0.tar.gz tmp/flask_file_share-0.1.1a0.tar.gz --markdown 20240421/f/flask-file-share/0.1.0-0.1.1a0/README.md --exclude *.pyd
+[2024-04-21 07:00:33] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.1.tar.gz]
+[2024-04-21 07:00:33] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.2.tar.gz]
+[2024-04-21 07:00:33] INFO root fetch - main [MainThread]: End processing [JianYingDraft.PY]: success
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: Remove: archive file [/home/abi/fetcher/tmp/flask_file_share-0.1.0.tar.gz]
+[2024-04-21 07:00:33] INFO root fetch - processPackages [flask-file-share]: Remove: archive file [/home/abi/fetcher/tmp/flask_file_share-0.1.1a0.tar.gz]
+[2024-04-21 07:00:33] INFO root fetch - main [MainThread]: End processing [flask-file-share]: success
+[2024-04-21 07:00:33] INFO root fetch - main [MainThread]: End processing [flask-file-share]: success
+[2024-04-21 07:00:33] INFO root fetch - main [MainThread]: Store serial: [22862057]
