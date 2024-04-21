@@ -7234,3 +7234,87 @@
 [2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: Remove: archive file [/home/abi/fetcher/tmp/polars_candle-0.1.1.tar.gz]
 [2024-04-21 11:12:12] INFO root fetch - main [MainThread]: End processing [polars-candle]: success
 [2024-04-21 11:12:12] INFO root fetch - main [MainThread]: Store serial: [22863326]
+[2024-04-21 11:14:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863326]
+[2024-04-21 11:14:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 11:16:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863326]
+[2024-04-21 11:16:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simpleworkspace
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: player-performance-ratings
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nvfuser-cu121
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libevt-python
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nvfuser-cu118
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zhDateTime
+[2024-04-21 11:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: glook
+[2024-04-21 11:16:28] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.187] Old Version: [1.2.186]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [glook]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [zhDateTime]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [libevt-python]: New version: [20240421] Old Version: [20240203]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [player-performance-ratings]: New version: [5.6.9] Old Version: [5.6.8]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/5b/9f/1f1e892b54d1d956b5aa942cfabcb9bf22ef1605f9985068589f195d7064/simpleworkspace-1.2.186.tar.gz
+[2024-04-21 11:16:28] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/a0/19/27670ddf476bf418231f7b3139eeff6008c0dd1846e9e3a6d794dabbe481/glook-0.1.2-py3-none-any.whl
+[2024-04-21 11:16:28] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.2.dev20240421] Old Version: [0.2.2.dev20240419]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.2.dev20240421] Old Version: [0.2.2.dev20240419]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-21 11:16:28] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/aa/cd/3215b606cc3bf97ef9fcc1c2573b3ee1a1cf5e3fb7f389312886929e2419/nvfuser_cu118-0.2.2.dev20240419.tar.gz
+[2024-04-21 11:16:28] INFO root fetch - processPackages [player-performance-ratings]: Downloading https://files.pythonhosted.org/packages/50/12/5df7ab795276a35dcaf883609b584eab2d77d64f443cc6721899931ad99e/player-performance-ratings-5.6.8.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [libevt-python]: Downloading https://files.pythonhosted.org/packages/9e/35/f6b89126d186b96bb5eecdfbcad422df98eb3e22a51e6520d465ecc3fc8a/libevt-python-20240203.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [zhDateTime]: Downloading https://files.pythonhosted.org/packages/97/8f/efaf86b8d8a28a818ce841c21aef468ff89ca440f6401e461bdfa14edb2b/zhdatetime-1.0.0.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/d3/97/d81efb3d29e476365262de453ceb3b4b309e85374ac820cb0dbcc5af171e/nvfuser_cu121-0.2.2.dev20240419.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/97/12/ffb14eb9ca2263ff17ee555253aebe9b08533ce8eda811d2821e10299454/glook-0.1.3-py3-none-any.whl
+[2024-04-21 11:16:29] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/7a/d4/dd3ce65f20165ecfcfc5060627c1a642395937b60bb46d7d2f372646d82c/simpleworkspace-1.2.187.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/40/5c/3eee0d9e91ff9d156d572a4acd8cb2e440868c1e270765f47dd8cc822698/nvfuser_cu118-0.2.2.dev20240421.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [player-performance-ratings]: Downloading https://files.pythonhosted.org/packages/72/d9/bcc5d5ff6328e7ec4f8e1ccb11287738671a5d96d3f521ff8cfa05e06679/player-performance-ratings-5.6.9.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [zhDateTime]: Downloading https://files.pythonhosted.org/packages/0d/1b/8cfb8a9db157b3a2146958ae3ca29c768f642742ac91832e4afef01997a4/zhdatetime-1.0.1.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-0.1.2-py3-none-any.whl.zip tmp/glook-0.1.3-py3-none-any.whl.zip --markdown 20240421/g/glook/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.186.tar.gz tmp/simpleworkspace-1.2.187.tar.gz --markdown 20240421/s/simpleworkspace/1.2.186-1.2.187/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/8c/4b/83f27ea3aaf193b1f24e832d2bad232ba4d86cd868675f6c44fd90d690f4/nvfuser_cu121-0.2.2.dev20240421.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [libevt-python]: Downloading https://files.pythonhosted.org/packages/00/91/f97767b6d8733b6c9fcc85536a9dceb3999f9e32645fe69a159a4dc16333/libevt-python-20240421.tar.gz
+[2024-04-21 11:16:29] INFO root fetch - processPackages [player-performance-ratings]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [player-performance-ratings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/player-performance-ratings-5.6.8.tar.gz tmp/player-performance-ratings-5.6.9.tar.gz --markdown 20240421/p/player-performance-ratings/5.6.8-5.6.9/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.2.dev20240419.tar.gz tmp/nvfuser_cu118-0.2.2.dev20240421.tar.gz --markdown 20240421/n/nvfuser-cu118/0.2.2.dev20240419-0.2.2.dev20240421/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240421/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.2.dev20240419.tar.gz tmp/nvfuser_cu121-0.2.2.dev20240421.tar.gz --markdown 20240421/n/nvfuser-cu121/0.2.2.dev20240419-0.2.2.dev20240421/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [zhDateTime]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [zhDateTime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhdatetime-1.0.0.tar.gz tmp/zhdatetime-1.0.1.tar.gz --markdown 20240421/z/zhDateTime/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240421/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-21 11:16:29] INFO root fetch - processPackages [libevt-python]: executing diffoscope
+[2024-04-21 11:16:29] INFO root fetch - processPackages [libevt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libevt-python-20240203.tar.gz tmp/libevt-python-20240421.tar.gz --markdown 20240421/l/libevt-python/20240203-20240421/README.md --exclude *.pyd
+[2024-04-21 11:16:30] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.1.2-py3-none-any.whl.zip]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.1.3-py3-none-any.whl.zip]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-04-21 11:16:30] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.2.dev20240419.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.2.dev20240421.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-21 11:16:30] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-21 11:16:30] INFO root fetch - processPackages [zhDateTime]: Remove: archive file [/home/abi/fetcher/tmp/zhdatetime-1.0.0.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [zhDateTime]: Remove: archive file [/home/abi/fetcher/tmp/zhdatetime-1.0.1.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [zhDateTime]: success
+[2024-04-21 11:16:30] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.2.dev20240419.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.186.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.2.dev20240421.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.187.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-04-21 11:16:30] INFO root fetch - processPackages [player-performance-ratings]: Remove: archive file [/home/abi/fetcher/tmp/player-performance-ratings-5.6.8.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - processPackages [player-performance-ratings]: Remove: archive file [/home/abi/fetcher/tmp/player-performance-ratings-5.6.9.tar.gz]
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [player-performance-ratings]: success
+[2024-04-21 11:16:30] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-21 11:16:38] INFO root fetch - processPackages [libevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libevt-python-20240203.tar.gz]
+[2024-04-21 11:16:38] INFO root fetch - processPackages [libevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libevt-python-20240421.tar.gz]
+[2024-04-21 11:16:38] INFO root fetch - main [MainThread]: End processing [libevt-python]: success
+[2024-04-21 11:16:38] INFO root fetch - main [MainThread]: Store serial: [22863346]
