@@ -15044,3 +15044,42 @@
 [2024-04-21 19:40:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
 [2024-04-21 19:40:00] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
 [2024-04-21 19:40:00] INFO root fetch - main [MainThread]: Store serial: [22867013]
+[2024-04-21 19:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867013]
+[2024-04-21 19:42:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 19:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifton
+[2024-04-21 19:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-sqlite
+[2024-04-21 19:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensorsequence
+[2024-04-21 19:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: async-VKsher
+[2024-04-21 19:42:09] INFO root fetch - processPackages [lifton]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 19:42:09] INFO root fetch - processPackages [tensorsequence]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-21 19:42:09] INFO root fetch - processPackages [async-VKsher]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-21 19:42:09] INFO root fetch - processPackages [dbt-sqlite]: New version: [1.5.0] Old Version: [1.4.0a1]
+[2024-04-21 19:42:09] INFO root fetch - processPackages [lifton]: Downloading https://files.pythonhosted.org/packages/5f/c3/7f80480c767aa1e9d89a50bfbc3614e0c6b87bf09b4de7a0d613e95ae323/lifton-0.0.2.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [dbt-sqlite]: Downloading https://files.pythonhosted.org/packages/cf/c5/536fe67ce3be4392d7e5a101cf88dfcf4dacdad30de686386b65a124fce9/dbt-sqlite-1.4.0a1.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [tensorsequence]: Downloading https://files.pythonhosted.org/packages/0f/48/eaeab12c5d1dd2981f81c80bebe6fcdee2d095316b7b45b8b1d7e015d855/tensorsequence-0.1.0.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/c7/ff/0cb46a0a1001bcdeff911588edcb1dcf11eb6dada1efd8f84ed8bf94321b/async_VKsher-1.7.1.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [lifton]: Downloading https://files.pythonhosted.org/packages/9d/4e/d5381bac5a6e00627cc252144df07b6ca20601e297d96acd3ac78556369b/lifton-0.0.3.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [dbt-sqlite]: Downloading https://files.pythonhosted.org/packages/56/a0/ee40e065653ecdd2aaa6e30cf37b635b734cde0a8ef801420a1c5b25bf8d/dbt_sqlite-1.5.0.tar.gz
+[2024-04-21 19:42:09] INFO root fetch - processPackages [tensorsequence]: Downloading https://files.pythonhosted.org/packages/51/86/40aa226d61df307931c3c000c458ca37042a622f58f777eb7691eb36ac9c/tensorsequence-0.2.0.tar.gz
+[2024-04-21 19:42:10] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/7e/a3/dd61af7b804ed86cd292b8b7a3ec0ef77224fb623a2bb508e0b3db81cbdb/async_VKsher-1.7.2.tar.gz
+[2024-04-21 19:42:10] INFO root fetch - processPackages [lifton]: executing diffoscope
+[2024-04-21 19:42:10] INFO root fetch - processPackages [lifton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifton-0.0.2.tar.gz tmp/lifton-0.0.3.tar.gz --markdown 20240421/l/lifton/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 19:42:10] INFO root fetch - processPackages [tensorsequence]: executing diffoscope
+[2024-04-21 19:42:10] INFO root fetch - processPackages [tensorsequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorsequence-0.1.0.tar.gz tmp/tensorsequence-0.2.0.tar.gz --markdown 20240421/t/tensorsequence/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-21 19:42:10] INFO root fetch - processPackages [dbt-sqlite]: executing diffoscope
+[2024-04-21 19:42:10] INFO root fetch - processPackages [dbt-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-sqlite-1.4.0a1.tar.gz tmp/dbt_sqlite-1.5.0.tar.gz --markdown 20240421/d/dbt-sqlite/1.4.0a1-1.5.0/README.md --exclude *.pyd
+[2024-04-21 19:42:10] INFO root fetch - processPackages [async-VKsher]: executing diffoscope
+[2024-04-21 19:42:10] INFO root fetch - processPackages [async-VKsher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_VKsher-1.7.1.tar.gz tmp/async_VKsher-1.7.2.tar.gz --markdown 20240421/a/async-VKsher/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-04-21 19:42:10] INFO root fetch - processPackages [tensorsequence]: Remove: archive file [/home/abi/fetcher/tmp/tensorsequence-0.1.0.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - processPackages [tensorsequence]: Remove: archive file [/home/abi/fetcher/tmp/tensorsequence-0.2.0.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - main [MainThread]: End processing [tensorsequence]: success
+[2024-04-21 19:42:10] INFO root fetch - processPackages [async-VKsher]: Remove: archive file [/home/abi/fetcher/tmp/async_VKsher-1.7.1.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - processPackages [async-VKsher]: Remove: archive file [/home/abi/fetcher/tmp/async_VKsher-1.7.2.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - main [MainThread]: End processing [async-VKsher]: success
+[2024-04-21 19:42:10] INFO root fetch - processPackages [lifton]: Remove: archive file [/home/abi/fetcher/tmp/lifton-0.0.2.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - processPackages [lifton]: Remove: archive file [/home/abi/fetcher/tmp/lifton-0.0.3.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - main [MainThread]: End processing [lifton]: success
+[2024-04-21 19:42:10] INFO root fetch - processPackages [dbt-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/dbt-sqlite-1.4.0a1.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - processPackages [dbt-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/dbt_sqlite-1.5.0.tar.gz]
+[2024-04-21 19:42:10] INFO root fetch - main [MainThread]: End processing [dbt-sqlite]: success
+[2024-04-21 19:42:10] INFO root fetch - main [MainThread]: Store serial: [22867029]
