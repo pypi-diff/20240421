@@ -11636,3 +11636,75 @@
 [2024-04-21 16:15:31] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-21 16:15:31] INFO root fetch - main [MainThread]: End processing [composabl-cli-dev]: success
 [2024-04-21 16:15:31] INFO root fetch - main [MainThread]: Store serial: [22865405]
+[2024-04-21 16:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865405]
+[2024-04-21 16:17:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kappaschedules
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paicrypto
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqwe
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC486
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aa-fleetpings
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: leejPack
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: open-samus-returns-rando
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pysqa
+[2024-04-21 16:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: smtpdfix
+[2024-04-21 16:17:42] INFO root fetch - processPackages [paicrypto]: New version: [5.0] Old Version: [3.0]
+[2024-04-21 16:17:42] INFO root fetch - processPackages [kappaschedules]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 16:17:42] INFO root fetch - processPackages [aa-fleetpings]: New version: [3.1.0] Old Version: [3.0.2]
+[2024-04-21 16:17:42] INFO root fetch - processPackages [pysqa]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 16:17:42] WARNING root fetch - processPackages [leejPack]: Skipping, unable to determine old version
+[2024-04-21 16:17:42] INFO root fetch - main [MainThread]: End processing [leejPack] error
+[2024-04-21 16:17:42] INFO root fetch - processPackages [pyqwe]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-04-21 16:17:42] INFO root fetch - processPackages [open-samus-returns-rando]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-21 16:17:42] WARNING root fetch - processPackages [PythonTestLJC486]: Skipping, unable to determine old version
+[2024-04-21 16:17:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC486] error
+[2024-04-21 16:17:42] INFO root fetch - processPackages [paicrypto]: Downloading https://files.pythonhosted.org/packages/ce/88/1cc84b7937ea7a401221fc5c410022250b576678714013ec79085009bba4/paicrypto-3.0.tar.gz
+[2024-04-21 16:17:42] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/80/d3/59917bee87db2d991ac28ee5406bce08f6bd5fb9607f27c6adf8e1104bb5/kappaschedules-0.0.8.tar.gz
+[2024-04-21 16:17:42] INFO root fetch - processPackages [smtpdfix]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pyqwe]: Downloading https://files.pythonhosted.org/packages/05/09/4bb4977f7fade589fce727b5daf1b50c95bf73280e8240f268274aa5a896/pyqwe-1.4.1.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pysqa]: Downloading https://files.pythonhosted.org/packages/cb/9f/30e07cda63616b67c720bac2e44d9a53f5663753ff0a594cc964f802f8a7/pysqa-0.1.8.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/7b/41/513982be525e8aa2c5a997a05f8bf0eae8d701da90991330ffdc4411a65c/open_samus_returns_rando-1.1.1.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/23/c2/e9e2653e206134d160cab76dea124544a616ea8484276c686372afdd7bb6/kappaschedules-0.0.9.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [paicrypto]: Downloading https://files.pythonhosted.org/packages/66/46/59e5b4fc6a3ecc1fe75ad42ff24b5c33892502adabebcd968113d5a479f0/paicrypto-5.0.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [aa-fleetpings]: Downloading https://files.pythonhosted.org/packages/28/0b/62f10f870ddf319665e78d701c3e68133ea062d01b2666e850cd6d6912b5/aa_fleetpings-3.0.2.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [smtpdfix]: Downloading https://files.pythonhosted.org/packages/4e/27/b0d1183521de8b0db46b84fb5a23c6c09e1181351ea7e3c869b15db14aac/smtpdfix-0.5.1.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [paicrypto]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [paicrypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paicrypto-3.0.tar.gz tmp/paicrypto-5.0.tar.gz --markdown 20240421/p/paicrypto/3.0-5.0/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [kappaschedules]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [kappaschedules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappaschedules-0.0.8.tar.gz tmp/kappaschedules-0.0.9.tar.gz --markdown 20240421/k/kappaschedules/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pyqwe]: Downloading https://files.pythonhosted.org/packages/54/91/66958df0de8f34e89592bc996375ee9019b2d379ccf4dfd14228bb9f1716/pyqwe-1.5.0.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pysqa]: Downloading https://files.pythonhosted.org/packages/47/9c/66bef32ad9b9f2e8f332a1e7fe30b26f1fc550b146bbe13dd8d30ecb3235/pysqa-0.1.9.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [smtpdfix]: Downloading https://files.pythonhosted.org/packages/db/4a/561500fd9db689746449888045758a74d19f7a9a739e595fd6e3b2d92078/smtpdfix-0.5.2.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pyqwe]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pyqwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqwe-1.4.1.tar.gz tmp/pyqwe-1.5.0.tar.gz --markdown 20240421/p/pyqwe/1.4.1-1.5.0/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/92/13/95f5228261b749675e934be530e025bdfc5670faf789e82db1f5f109f370/open_samus_returns_rando-1.2.0.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [aa-fleetpings]: Downloading https://files.pythonhosted.org/packages/3a/73/f314d39ffec599bcbc17a5381904302ec3c4efc6c4f199d37e61e8131be9/aa_fleetpings-3.1.0.tar.gz
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pysqa]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [pysqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqa-0.1.8.tar.gz tmp/pysqa-0.1.9.tar.gz --markdown 20240421/p/pysqa/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [smtpdfix]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [smtpdfix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smtpdfix-0.5.1.tar.gz tmp/smtpdfix-0.5.2.tar.gz --markdown 20240421/s/smtpdfix/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [aa-fleetpings]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [aa-fleetpings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_fleetpings-3.0.2.tar.gz tmp/aa_fleetpings-3.1.0.tar.gz --markdown 20240421/a/aa-fleetpings/3.0.2-3.1.0/README.md --exclude *.pyd
+[2024-04-21 16:17:43] INFO root fetch - processPackages [open-samus-returns-rando]: executing diffoscope
+[2024-04-21 16:17:43] INFO root fetch - processPackages [open-samus-returns-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_samus_returns_rando-1.1.1.tar.gz tmp/open_samus_returns_rando-1.2.0.tar.gz --markdown 20240421/o/open-samus-returns-rando/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-21 16:17:44] INFO root fetch - processPackages [paicrypto]: Remove: archive file [/home/abi/fetcher/tmp/paicrypto-3.0.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [paicrypto]: Remove: archive file [/home/abi/fetcher/tmp/paicrypto-5.0.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [paicrypto]: success
+[2024-04-21 16:17:44] INFO root fetch - processPackages [kappaschedules]: Remove: archive file [/home/abi/fetcher/tmp/kappaschedules-0.0.8.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [kappaschedules]: Remove: archive file [/home/abi/fetcher/tmp/kappaschedules-0.0.9.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [kappaschedules]: success
+[2024-04-21 16:17:44] INFO root fetch - processPackages [pyqwe]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe-1.4.1.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [pyqwe]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe-1.5.0.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [pyqwe]: success
+[2024-04-21 16:17:44] INFO root fetch - processPackages [pysqa]: Remove: archive file [/home/abi/fetcher/tmp/pysqa-0.1.8.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [pysqa]: Remove: archive file [/home/abi/fetcher/tmp/pysqa-0.1.9.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [pysqa]: success
+[2024-04-21 16:17:44] INFO root fetch - processPackages [smtpdfix]: Remove: archive file [/home/abi/fetcher/tmp/smtpdfix-0.5.1.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [smtpdfix]: Remove: archive file [/home/abi/fetcher/tmp/smtpdfix-0.5.2.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [smtpdfix]: success
+[2024-04-21 16:17:44] INFO root fetch - processPackages [aa-fleetpings]: Remove: archive file [/home/abi/fetcher/tmp/aa_fleetpings-3.0.2.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - processPackages [aa-fleetpings]: Remove: archive file [/home/abi/fetcher/tmp/aa_fleetpings-3.1.0.tar.gz]
+[2024-04-21 16:17:44] INFO root fetch - main [MainThread]: End processing [aa-fleetpings]: success
+[2024-04-21 16:17:46] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.1.1.tar.gz]
+[2024-04-21 16:17:46] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.2.0.tar.gz]
+[2024-04-21 16:17:46] INFO root fetch - main [MainThread]: End processing [open-samus-returns-rando]: success
+[2024-04-21 16:17:46] INFO root fetch - main [MainThread]: Store serial: [22865436]
