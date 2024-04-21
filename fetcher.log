@@ -10737,3 +10737,60 @@
 [2024-04-21 15:35:42] INFO root fetch - processPackages [pyfr]: Remove: archive file [/home/abi/fetcher/tmp/pyfr-2.0.1.tar.gz]
 [2024-04-21 15:35:42] INFO root fetch - main [MainThread]: End processing [pyfr]: success
 [2024-04-21 15:35:42] INFO root fetch - main [MainThread]: Store serial: [22864975]
+[2024-04-21 15:37:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864975]
+[2024-04-21 15:37:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylammpsmpi
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mercury-engine-data-structures
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astabc
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rooms-shared-services
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tasksflow
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-connector-test
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dcicutils
+[2024-04-21 15:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC472
+[2024-04-21 15:37:51] INFO root fetch - processPackages [astabc]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:37:51] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-21 15:37:51] ERROR root fetch - processPackages [python-connector-test]: Unable to get metadata: No such project 'python-connector-test'
+[2024-04-21 15:37:51] INFO root fetch - main [MainThread]: End processing [python-connector-test] error
+[2024-04-21 15:37:51] WARNING root fetch - processPackages [tasksflow]: Skipping, unable to determine old version
+[2024-04-21 15:37:51] INFO root fetch - main [MainThread]: End processing [tasksflow] error
+[2024-04-21 15:37:51] INFO root fetch - processPackages [mercury-engine-data-structures]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-21 15:37:51] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/1e/f2/1d4d43c331adaeeee0bfee3114e9d19aaf9e9d2fe6dc0e7d8486fbfc197b/astabc-0.1.8.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b9] Old Version: [8.8.3.1b8]
+[2024-04-21 15:37:51] INFO root fetch - processPackages [pylammpsmpi]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 15:37:51] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-21 15:37:51] WARNING root fetch - processPackages [PythonTestLJC472]: Skipping, unable to determine old version
+[2024-04-21 15:37:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC472] error
+[2024-04-21 15:37:51] INFO root fetch - processPackages [mercury-engine-data-structures]: Downloading https://files.pythonhosted.org/packages/39/e0/fc744921b150b00c8ddb23acc3afb33cffac60d0ba7554589364c746e51a/mercury-engine-data-structures-0.9.5.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [pylammpsmpi]: Downloading https://files.pythonhosted.org/packages/6b/d8/048364c4269c319b2ce84829a0a33e223ee7913c87d337e6ca7869cefbdf/pylammpsmpi-0.2.8.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/55/29/62f5a247f04b2bf0f9da53bf75c80ebc4731638e110560a1b0c2b690b9e1/dcicutils-8.8.3.1b8.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-21 15:37:51] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240421/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-21 15:37:51] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/20/b6/fc8c192705d2493ea558b2c7dfe4d4b24f9fa2f78e6b0abb6698dfb5b4f8/astabc-0.1.9.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [pylammpsmpi]: Downloading https://files.pythonhosted.org/packages/f0/45/6333dbb3fcfbe5d5b3882949362b75013c948ca67ce73a6694f716845d50/pylammpsmpi-0.2.9.tar.gz
+[2024-04-21 15:37:51] INFO root fetch - processPackages [pylammpsmpi]: executing diffoscope
+[2024-04-21 15:37:51] INFO root fetch - processPackages [pylammpsmpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylammpsmpi-0.2.8.tar.gz tmp/pylammpsmpi-0.2.9.tar.gz --markdown 20240421/p/pylammpsmpi/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 15:37:51] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-21 15:37:51] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.8.tar.gz tmp/astabc-0.1.9.tar.gz --markdown 20240421/a/astabc/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:37:51] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/b0/95/6db1d9193aaea7ab397457bf7e746f08cfefd565b4982b943b44ba844a74/dcicutils-8.8.3.1b9.tar.gz
+[2024-04-21 15:37:52] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-21 15:37:52] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b8.tar.gz tmp/dcicutils-8.8.3.1b9.tar.gz --markdown 20240421/d/dcicutils/8.8.3.1b8-8.8.3.1b9/README.md --exclude *.pyd
+[2024-04-21 15:37:52] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-21 15:37:52] INFO root fetch - processPackages [mercury-engine-data-structures]: Downloading https://files.pythonhosted.org/packages/ea/9a/111001b9a671be0e6b9e31841e0e275f2d5098f85da2d1421181c36e046a/mercury-engine-data-structures-0.9.6.tar.gz
+[2024-04-21 15:37:52] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.8.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - processPackages [pylammpsmpi]: Remove: archive file [/home/abi/fetcher/tmp/pylammpsmpi-0.2.8.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.9.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - processPackages [pylammpsmpi]: Remove: archive file [/home/abi/fetcher/tmp/pylammpsmpi-0.2.9.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-21 15:37:52] INFO root fetch - main [MainThread]: End processing [pylammpsmpi]: success
+[2024-04-21 15:37:52] INFO root fetch - processPackages [mercury-engine-data-structures]: executing diffoscope
+[2024-04-21 15:37:52] INFO root fetch - processPackages [mercury-engine-data-structures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercury-engine-data-structures-0.9.5.tar.gz tmp/mercury-engine-data-structures-0.9.6.tar.gz --markdown 20240421/m/mercury-engine-data-structures/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-21 15:37:52] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b8.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b9.tar.gz]
+[2024-04-21 15:37:52] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-21 15:37:53] INFO root fetch - processPackages [mercury-engine-data-structures]: Remove: archive file [/home/abi/fetcher/tmp/mercury-engine-data-structures-0.9.5.tar.gz]
+[2024-04-21 15:37:53] INFO root fetch - processPackages [mercury-engine-data-structures]: Remove: archive file [/home/abi/fetcher/tmp/mercury-engine-data-structures-0.9.6.tar.gz]
+[2024-04-21 15:37:53] INFO root fetch - main [MainThread]: End processing [mercury-engine-data-structures]: success
+[2024-04-21 15:37:53] INFO root fetch - main [MainThread]: Store serial: [22864999]
