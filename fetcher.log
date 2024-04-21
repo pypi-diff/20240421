@@ -9872,3 +9872,39 @@
 [2024-04-21 14:32:29] INFO root fetch - processPackages [argeye]: Remove: archive file [/home/abi/fetcher/tmp/argeye-0.0.2.tar.gz]
 [2024-04-21 14:32:29] INFO root fetch - main [MainThread]: End processing [argeye]: success
 [2024-04-21 14:32:29] INFO root fetch - main [MainThread]: Store serial: [22864492]
+[2024-04-21 14:34:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864492]
+[2024-04-21 14:34:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 14:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuroflow-yalab
+[2024-04-21 14:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rolo
+[2024-04-21 14:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhdl-if
+[2024-04-21 14:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC449
+[2024-04-21 14:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xunter
+[2024-04-21 14:34:38] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.8769147235] Old Version: [0.0.1.8731571349]
+[2024-04-21 14:34:38] WARNING root fetch - processPackages [neuroflow-yalab]: Skipping, unable to determine old version
+[2024-04-21 14:34:38] INFO root fetch - main [MainThread]: End processing [neuroflow-yalab] error
+[2024-04-21 14:34:38] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/89/64/49e1af624c276be0c4032cf97ddacdf5dfba0f89e2cf1ebe7593b957c67a/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 14:34:38] INFO root fetch - processPackages [rolo]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-21 14:34:38] WARNING root fetch - processPackages [PythonTestLJC449]: Skipping, unable to determine old version
+[2024-04-21 14:34:38] INFO root fetch - main [MainThread]: End processing [PythonTestLJC449] error
+[2024-04-21 14:34:38] INFO root fetch - processPackages [xunter]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 14:34:38] INFO root fetch - processPackages [rolo]: Downloading https://files.pythonhosted.org/packages/bc/59/c8048bf8029b489f869b707eef3587dfe37d347c6866d094bcdd0d9d7f5c/rolo-0.4.0.tar.gz
+[2024-04-21 14:34:38] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/db/4d/920dd537575066ecab784b0f2d0a13b00352fcb893cbb62103e24cacb363/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 14:34:38] INFO root fetch - processPackages [xunter]: Downloading https://files.pythonhosted.org/packages/06/0e/e641aea833793897574afcd6fcc1b9f5ae0744a2e3212ae03382c8ba8cc3/xunter-0.2.0.tar.gz
+[2024-04-21 14:34:38] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-04-21 14:34:38] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240421/p/pyhdl-if/0.0.1.8731571349-0.0.1.8769147235/README.md --exclude *.pyd
+[2024-04-21 14:34:38] INFO root fetch - processPackages [rolo]: Downloading https://files.pythonhosted.org/packages/f8/bb/5400f014c1fb95bb9646d212e84bf2334b5933485f42786b13d95dca20f3/rolo-0.5.0.tar.gz
+[2024-04-21 14:34:38] INFO root fetch - processPackages [xunter]: Downloading https://files.pythonhosted.org/packages/dc/aa/7bc9d021cfdbc1614ab35175911c7f4397495b0a70aa4876be8cd0ac31e7/xunter-0.2.1.tar.gz
+[2024-04-21 14:34:38] INFO root fetch - processPackages [rolo]: executing diffoscope
+[2024-04-21 14:34:38] INFO root fetch - processPackages [rolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rolo-0.4.0.tar.gz tmp/rolo-0.5.0.tar.gz --markdown 20240421/r/rolo/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-21 14:34:38] INFO root fetch - processPackages [xunter]: executing diffoscope
+[2024-04-21 14:34:38] INFO root fetch - processPackages [xunter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xunter-0.2.0.tar.gz tmp/xunter-0.2.1.tar.gz --markdown 20240421/x/xunter/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 14:34:39] INFO root fetch - processPackages [xunter]: Remove: archive file [/home/abi/fetcher/tmp/xunter-0.2.0.tar.gz]
+[2024-04-21 14:34:39] INFO root fetch - processPackages [xunter]: Remove: archive file [/home/abi/fetcher/tmp/xunter-0.2.1.tar.gz]
+[2024-04-21 14:34:39] INFO root fetch - main [MainThread]: End processing [xunter]: success
+[2024-04-21 14:34:39] INFO root fetch - processPackages [rolo]: Remove: archive file [/home/abi/fetcher/tmp/rolo-0.4.0.tar.gz]
+[2024-04-21 14:34:39] INFO root fetch - processPackages [rolo]: Remove: archive file [/home/abi/fetcher/tmp/rolo-0.5.0.tar.gz]
+[2024-04-21 14:34:39] INFO root fetch - main [MainThread]: End processing [rolo]: success
+[2024-04-21 14:34:39] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 14:34:39] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 14:34:39] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-04-21 14:34:39] INFO root fetch - main [MainThread]: Store serial: [22864513]
