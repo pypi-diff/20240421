@@ -6376,3 +6376,36 @@
 [2024-04-21 10:01:56] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
 [2024-04-21 10:01:56] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
 [2024-04-21 10:01:56] INFO root fetch - main [MainThread]: Store serial: [22862978]
+[2024-04-21 10:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862978]
+[2024-04-21 10:04:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC416
+[2024-04-21 10:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-flex-report
+[2024-04-21 10:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simpleworkspace
+[2024-04-21 10:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langfun
+[2024-04-21 10:04:06] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240420] Old Version: [0.0.2.dev20240419]
+[2024-04-21 10:04:06] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.187] Old Version: [1.2.186]
+[2024-04-21 10:04:06] WARNING root fetch - processPackages [PythonTestLJC416]: Skipping, unable to determine old version
+[2024-04-21 10:04:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC416] error
+[2024-04-21 10:04:06] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/18/46/639f13285068dae3269202b3d366f73d3ec280c8a72628050ae6839e228f/langfun-0.0.2.dev20240419.tar.gz
+[2024-04-21 10:04:06] INFO root fetch - processPackages [django-flex-report]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-21 10:04:07] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/5b/9f/1f1e892b54d1d956b5aa942cfabcb9bf22ef1605f9985068589f195d7064/simpleworkspace-1.2.186.tar.gz
+[2024-04-21 10:04:07] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/76/f6/a322d1bc92974e97a45ff99a11e42c29494184b2fb48f433c337a703691e/django-flex-report-0.7.6.tar.gz
+[2024-04-21 10:04:07] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/86/b0/979b9195da0797aa9240ba2ccf9ec1ad1c8d93e8fe026c311e3d418096e5/langfun-0.0.2.dev20240420.tar.gz
+[2024-04-21 10:04:07] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-21 10:04:07] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240419.tar.gz tmp/langfun-0.0.2.dev20240420.tar.gz --markdown 20240421/l/langfun/0.0.2.dev20240419-0.0.2.dev20240420/README.md --exclude *.pyd
+[2024-04-21 10:04:07] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/65/16/9ea6d0ae926a42c58f26879990e80494447360ddd5cd319b2b28400d69b4/django-flex-report-0.7.7.tar.gz
+[2024-04-21 10:04:07] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/7a/d4/dd3ce65f20165ecfcfc5060627c1a642395937b60bb46d7d2f372646d82c/simpleworkspace-1.2.187.tar.gz
+[2024-04-21 10:04:07] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-04-21 10:04:07] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-flex-report-0.7.6.tar.gz tmp/django-flex-report-0.7.7.tar.gz --markdown 20240421/d/django-flex-report/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-21 10:04:07] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-04-21 10:04:07] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.186.tar.gz tmp/simpleworkspace-1.2.187.tar.gz --markdown 20240421/s/simpleworkspace/1.2.186-1.2.187/README.md --exclude *.pyd
+[2024-04-21 10:04:08] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.6.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.7.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-04-21 10:04:08] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240419.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240420.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-21 10:04:08] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.186.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.187.tar.gz]
+[2024-04-21 10:04:08] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-04-21 10:04:08] INFO root fetch - main [MainThread]: Store serial: [22862993]
