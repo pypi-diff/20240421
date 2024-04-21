@@ -10580,3 +10580,33 @@
 [2024-04-21 15:24:50] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.2.tar.gz]
 [2024-04-21 15:24:50] INFO root fetch - main [MainThread]: End processing [feature-space]: success
 [2024-04-21 15:24:50] INFO root fetch - main [MainThread]: Store serial: [22864907]
+[2024-04-21 15:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864907]
+[2024-04-21 15:26:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 15:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astabc
+[2024-04-21 15:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuralnetlib
+[2024-04-21 15:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metaffi-api
+[2024-04-21 15:26:59] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.22] Old Version: [0.0.21]
+[2024-04-21 15:26:59] INFO root fetch - processPackages [astabc]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:26:59] INFO root fetch - processPackages [neuralnetlib]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-21 15:26:59] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/40/e8/ea7fb87e5f92ed49274590c94088000198942bacc73ade4618c1ed35e52a/metaffi_api-0.0.21.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/1e/f2/1d4d43c331adaeeee0bfee3114e9d19aaf9e9d2fe6dc0e7d8486fbfc197b/astabc-0.1.8.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/8a/06/e97fa0aaa89cabae58e07f6a5b6e240af1cf7e5f64ab4915f027abffbe9f/neuralnetlib-2.1.0.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/20/b6/fc8c192705d2493ea558b2c7dfe4d4b24f9fa2f78e6b0abb6698dfb5b4f8/astabc-0.1.9.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/fe/6c/ff8189535b38c718c946da679102675e6a7a1169ca140aaacfe8f8d0e5d9/metaffi_api-0.0.22.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-21 15:26:59] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.8.tar.gz tmp/astabc-0.1.9.tar.gz --markdown 20240421/a/astabc/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:26:59] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 15:26:59] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.21.tar.gz tmp/metaffi_api-0.0.22.tar.gz --markdown 20240421/m/metaffi-api/0.0.21-0.0.22/README.md --exclude *.pyd
+[2024-04-21 15:26:59] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/84/6d/92d5d901b7fc3e5bf2db3df4989f38f8ba2deb7e723ac23bd075e0098d4b/neuralnetlib-2.2.0.tar.gz
+[2024-04-21 15:26:59] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-04-21 15:26:59] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-2.1.0.tar.gz tmp/neuralnetlib-2.2.0.tar.gz --markdown 20240421/n/neuralnetlib/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-21 15:27:00] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.8.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.9.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-21 15:27:00] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.21.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.22.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 15:27:00] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.1.0.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.2.0.tar.gz]
+[2024-04-21 15:27:00] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-04-21 15:27:00] INFO root fetch - main [MainThread]: Store serial: [22864916]
