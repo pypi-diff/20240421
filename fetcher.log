@@ -2885,3 +2885,15 @@
 [2024-04-21 04:24:28] WARNING root fetch - processPackages [PythonTestLJC333]: Skipping, unable to determine old version
 [2024-04-21 04:24:28] INFO root fetch - main [MainThread]: End processing [PythonTestLJC333] error
 [2024-04-21 04:24:28] INFO root fetch - main [MainThread]: Store serial: [22861366]
+[2024-04-21 04:26:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861366]
+[2024-04-21 04:26:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 04:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openmc-geometry-plot
+[2024-04-21 04:26:36] INFO root fetch - processPackages [openmc-geometry-plot]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-21 04:26:37] INFO root fetch - processPackages [openmc-geometry-plot]: Downloading https://files.pythonhosted.org/packages/fc/e0/80f20790b2b026878dcf24a35f754fe872436dbde622e5c91255776ca870/openmc_geometry_plot-0.4.2.tar.gz
+[2024-04-21 04:26:37] INFO root fetch - processPackages [openmc-geometry-plot]: Downloading https://files.pythonhosted.org/packages/70/5e/be95ace828461350147dc83b54322af6c216a5670bb3a147e59cd77bfa86/openmc_geometry_plot-0.4.3.tar.gz
+[2024-04-21 04:26:37] INFO root fetch - processPackages [openmc-geometry-plot]: executing diffoscope
+[2024-04-21 04:26:37] INFO root fetch - processPackages [openmc-geometry-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmc_geometry_plot-0.4.2.tar.gz tmp/openmc_geometry_plot-0.4.3.tar.gz --markdown 20240421/o/openmc-geometry-plot/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-21 04:26:38] INFO root fetch - processPackages [openmc-geometry-plot]: Remove: archive file [/home/abi/fetcher/tmp/openmc_geometry_plot-0.4.2.tar.gz]
+[2024-04-21 04:26:38] INFO root fetch - processPackages [openmc-geometry-plot]: Remove: archive file [/home/abi/fetcher/tmp/openmc_geometry_plot-0.4.3.tar.gz]
+[2024-04-21 04:26:38] INFO root fetch - main [MainThread]: End processing [openmc-geometry-plot]: success
+[2024-04-21 04:26:38] INFO root fetch - main [MainThread]: Store serial: [22861369]
