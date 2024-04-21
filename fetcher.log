@@ -2035,3 +2035,45 @@
 [2024-04-21 02:57:16] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-04-21 02:57:16] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-04-21 02:57:16] INFO root fetch - main [MainThread]: Store serial: [22860854]
+[2024-04-21 02:59:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860854]
+[2024-04-21 02:59:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: michi
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transcribe-me
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flux-local
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lionagi
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC309
+[2024-04-21 02:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycde
+[2024-04-21 02:59:24] WARNING root fetch - processPackages [michi]: Skipping, unable to determine old version
+[2024-04-21 02:59:24] INFO root fetch - main [MainThread]: End processing [michi] error
+[2024-04-21 02:59:24] INFO root fetch - processPackages [transcribe-me]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-21 02:59:24] INFO root fetch - processPackages [flux-local]: New version: [5.0.0] Old Version: [4.3.1]
+[2024-04-21 02:59:24] WARNING root fetch - processPackages [PythonTestLJC309]: Skipping, unable to determine old version
+[2024-04-21 02:59:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC309] error
+[2024-04-21 02:59:24] INFO root fetch - processPackages [lionagi]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 02:59:25] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev884] Old Version: [0.3.1.dev880]
+[2024-04-21 02:59:25] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/37/04/78f23ecca74c2c2b16d56c1ba76759e1b748b3892231f5b4a211e58bc094/transcribe_me-0.1.0.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [lionagi]: Downloading https://files.pythonhosted.org/packages/e7/42/260dd9b3aef143269cc031567bf0e67f4da13781f4ba20a5393129c6636f/lionagi-0.1.0.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/1b/97/3ce465b227948228d54b23cce28d276cba10979414c6c89e916d7849056d/flux-local-4.3.1.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/e7/2d/575e5d545eecf1292e9536fe77266c92b4dd26df3793df52164a160c267e/pycde-0.3.1.dev880-cp39-cp39-win_amd64.whl
+[2024-04-21 02:59:25] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/16/c4/5b6310cd2c6798b408a1bd9b0fbdf656512ea92726281473c9fcd40d64c4/transcribe_me-0.1.2.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [lionagi]: Downloading https://files.pythonhosted.org/packages/55/43/88d32916baab695335a7e1d5cf5f5119cf87375ad70757f42fd1b0bfe95c/lionagi-0.1.1.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [transcribe-me]: executing diffoscope
+[2024-04-21 02:59:25] INFO root fetch - processPackages [transcribe-me]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transcribe_me-0.1.0.tar.gz tmp/transcribe_me-0.1.2.tar.gz --markdown 20240421/t/transcribe-me/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-21 02:59:25] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/0a/f4/ebf6b2f324b08697493c57820c510d2d5bca9d404f2bbfbd4e551eba1732/flux_local-5.0.0.tar.gz
+[2024-04-21 02:59:25] INFO root fetch - processPackages [lionagi]: executing diffoscope
+[2024-04-21 02:59:25] INFO root fetch - processPackages [lionagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lionagi-0.1.0.tar.gz tmp/lionagi-0.1.1.tar.gz --markdown 20240421/l/lionagi/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 02:59:25] INFO root fetch - processPackages [flux-local]: executing diffoscope
+[2024-04-21 02:59:25] INFO root fetch - processPackages [flux-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-local-4.3.1.tar.gz tmp/flux_local-5.0.0.tar.gz --markdown 20240421/f/flux-local/4.3.1-5.0.0/README.md --exclude *.pyd
+[2024-04-21 02:59:26] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.0.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.2.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - main [MainThread]: End processing [transcribe-me]: success
+[2024-04-21 02:59:26] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux-local-4.3.1.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux_local-5.0.0.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - main [MainThread]: End processing [flux-local]: success
+[2024-04-21 02:59:26] INFO root fetch - processPackages [lionagi]: Remove: archive file [/home/abi/fetcher/tmp/lionagi-0.1.0.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - processPackages [lionagi]: Remove: archive file [/home/abi/fetcher/tmp/lionagi-0.1.1.tar.gz]
+[2024-04-21 02:59:26] INFO root fetch - main [MainThread]: End processing [lionagi]: success
+[2024-04-21 02:59:27] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/38/b1/bd764bcd971be08984859a8fa1a149565affbff6ff78ec3b3b0d28244be6/pycde-0.3.1.dev884-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 02:59:27] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21366526>=10485760
+[2024-04-21 02:59:27] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-04-21 02:59:27] INFO root fetch - main [MainThread]: Store serial: [22860876]
