@@ -3124,3 +3124,9 @@
 [2024-04-21 04:46:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
 [2024-04-21 04:46:14] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2024-04-21 04:46:14] INFO root fetch - main [MainThread]: Store serial: [22861458]
+[2024-04-21 04:48:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861458]
+[2024-04-21 04:48:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 04:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC341
+[2024-04-21 04:48:22] WARNING root fetch - processPackages [PythonTestLJC341]: Skipping, unable to determine old version
+[2024-04-21 04:48:22] INFO root fetch - main [MainThread]: End processing [PythonTestLJC341] error
+[2024-04-21 04:48:22] INFO root fetch - main [MainThread]: Store serial: [22861463]
