@@ -13194,3 +13194,41 @@
 [2024-04-21 17:46:40] INFO root fetch - processPackages [geminiwrapper]: Remove: archive file [/home/abi/fetcher/tmp/geminiwrapper-0.0.2.tar.gz]
 [2024-04-21 17:46:40] INFO root fetch - main [MainThread]: End processing [geminiwrapper]: success
 [2024-04-21 17:46:40] INFO root fetch - main [MainThread]: Store serial: [22866126]
+[2024-04-21 17:48:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866126]
+[2024-04-21 17:48:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradysim
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziptimezone
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geminiwrapper
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC519
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: culminator
+[2024-04-21 17:48:49] INFO root fetch - processPackages [geminiwrapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 17:48:49] INFO root fetch - processPackages [gradysim]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.9] Old Version: [0.10.8]
+[2024-04-21 17:48:49] INFO root fetch - processPackages [geminiwrapper]: Downloading https://files.pythonhosted.org/packages/10/0b/76a672087070f231a9d55de5720425a52cd1c178a2f1d0c1802ff954bf73/geminiwrapper-0.0.2.tar.gz
+[2024-04-21 17:48:49] WARNING root fetch - processPackages [PythonTestLJC519]: Skipping, unable to determine old version
+[2024-04-21 17:48:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC519] error
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/3f/d8/cec168ca5a4565430e2c5f107439bd7dcb47e0257b71d3baa3f99a36a704/ziptimezone-0.10.8.tar.gz
+[2024-04-21 17:48:49] INFO root fetch - processPackages [culminator]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 17:48:49] INFO root fetch - processPackages [gradysim]: Downloading https://files.pythonhosted.org/packages/67/3b/6b2cd5cfa7b01f35b9967a0a5695808ab821de5ec1924325b95b59418dca/gradysim-0.6.0.tar.gz
+[2024-04-21 17:48:49] WARNING root fetch - processPackages [gradysim]: Skipping package: exceeds size limit 14277056>=10485760
+[2024-04-21 17:48:49] INFO root fetch - main [MainThread]: End processing [gradysim] error
+[2024-04-21 17:48:49] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/37/f4/e7f7cf70bdf03d223056d4eec5f49513caccf2dd8b5fe43b6a6cd763b033/culminator-0.7.tar.gz
+[2024-04-21 17:48:49] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/bf/21/e5b3da6eca2ad05e0174b86e5e3e4f7e036ba1aeef5692c1dad9d4f645a7/ziptimezone-0.10.9.tar.gz
+[2024-04-21 17:48:50] INFO root fetch - processPackages [geminiwrapper]: Downloading https://files.pythonhosted.org/packages/d3/b8/b6c9a4983f746259c6836f87fa54ad3e0f9ad9008912758d85ae064e3860/geminiwrapper-0.0.3.tar.gz
+[2024-04-21 17:48:50] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-21 17:48:50] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.8.tar.gz tmp/ziptimezone-0.10.9.tar.gz --markdown 20240421/z/ziptimezone/0.10.8-0.10.9/README.md --exclude *.pyd
+[2024-04-21 17:48:50] INFO root fetch - processPackages [geminiwrapper]: executing diffoscope
+[2024-04-21 17:48:50] INFO root fetch - processPackages [geminiwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geminiwrapper-0.0.2.tar.gz tmp/geminiwrapper-0.0.3.tar.gz --markdown 20240421/g/geminiwrapper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/20/b0/fb5753400f141516ccceeb59be597de1af3bbe4fe788e8236f76dbb0ec40/culminator-0.8-py3-none-any.whl
+[2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: executing diffoscope
+[2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culminator-0.7.tar.gz tmp/culminator-0.8-py3-none-any.whl.zip --markdown 20240421/c/culminator/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 17:48:50] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.8.tar.gz]
+[2024-04-21 17:48:50] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.9.tar.gz]
+[2024-04-21 17:48:50] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-21 17:48:50] INFO root fetch - processPackages [geminiwrapper]: Remove: archive file [/home/abi/fetcher/tmp/geminiwrapper-0.0.2.tar.gz]
+[2024-04-21 17:48:50] INFO root fetch - processPackages [geminiwrapper]: Remove: archive file [/home/abi/fetcher/tmp/geminiwrapper-0.0.3.tar.gz]
+[2024-04-21 17:48:50] INFO root fetch - main [MainThread]: End processing [geminiwrapper]: success
+[2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.7.tar.gz]
+[2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
+[2024-04-21 17:48:50] INFO root fetch - main [MainThread]: End processing [culminator]: success
+[2024-04-21 17:48:50] INFO root fetch - main [MainThread]: Store serial: [22866142]
