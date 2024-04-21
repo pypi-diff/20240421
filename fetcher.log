@@ -3046,3 +3046,36 @@
 [2024-04-21 04:37:32] INFO root fetch - processPackages [odoo-addon-account-multicurrency-revaluation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_multicurrency_revaluation-16.0.1.0.1.6-py3-none-any.whl.zip]
 [2024-04-21 04:37:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-multicurrency-revaluation]: success
 [2024-04-21 04:37:32] INFO root fetch - main [MainThread]: Store serial: [22861422]
+[2024-04-21 04:39:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861422]
+[2024-04-21 04:39:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 04:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC338
+[2024-04-21 04:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplebox
+[2024-04-21 04:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyload-ng
+[2024-04-21 04:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-financial-report
+[2024-04-21 04:39:41] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [17.0.1.0.0.12] Old Version: [17.0.1.0.0.11]
+[2024-04-21 04:39:41] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/97/a2/4f894a338f62e2d8bb891a25aa6fe6d351643311ed83fac6d7e6235a52fe/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl
+[2024-04-21 04:39:41] INFO root fetch - processPackages [pyload-ng]: New version: [0.5.0b3.dev82] Old Version: [0.5.0b3.dev81]
+[2024-04-21 04:39:41] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a197] Old Version: [0.0.1a196]
+[2024-04-21 04:39:41] WARNING root fetch - processPackages [PythonTestLJC338]: Skipping, unable to determine old version
+[2024-04-21 04:39:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC338] error
+[2024-04-21 04:39:41] INFO root fetch - processPackages [pyload-ng]: Downloading https://files.pythonhosted.org/packages/56/80/e1b15101e0a1c0d3fa4feb8b6b4490f27746094c6a919149b3c4fd7f8a96/pyload-ng-0.5.0b3.dev81.tar.gz
+[2024-04-21 04:39:42] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/ba/8b/95ac1b68208b46abb23443e4c5615315c2cbbf234a81fe82b7ab79503a8a/simplebox-0.0.1a196-py3-none-any.whl
+[2024-04-21 04:39:42] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/7f/10/cb32fb883a2d6e6371882fd5b4415ab865e3088e23f14335ee8822b8de70/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl
+[2024-04-21 04:39:42] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2024-04-21 04:39:42] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl.zip --markdown 20240421/o/odoo-addon-account-financial-report/17.0.1.0.0.11-17.0.1.0.0.12/README.md --exclude *.pyd
+[2024-04-21 04:39:42] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/f6/96/60ea7560e13d9bbdb9397bba60e1d517ec43c67a09e6c71ddf800d19ac0b/simplebox-0.0.1a197-py3-none-any.whl
+[2024-04-21 04:39:42] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-21 04:39:42] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a196-py3-none-any.whl.zip tmp/simplebox-0.0.1a197-py3-none-any.whl.zip --markdown 20240421/s/simplebox/0.0.1a196-0.0.1a197/README.md --exclude *.pyd
+[2024-04-21 04:39:43] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl.zip]
+[2024-04-21 04:39:43] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl.zip]
+[2024-04-21 04:39:43] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2024-04-21 04:39:43] INFO root fetch - processPackages [pyload-ng]: Downloading https://files.pythonhosted.org/packages/b3/3f/0cc92eabb8f6939c66dce213e3f33f55b2e010e09b60285893d2c96f6584/pyload_ng-0.5.0b3.dev82.tar.gz
+[2024-04-21 04:39:43] INFO root fetch - processPackages [pyload-ng]: executing diffoscope
+[2024-04-21 04:39:43] INFO root fetch - processPackages [pyload-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyload-ng-0.5.0b3.dev81.tar.gz tmp/pyload_ng-0.5.0b3.dev82.tar.gz --markdown 20240421/p/pyload-ng/0.5.0b3.dev81-0.5.0b3.dev82/README.md --exclude *.pyd
+[2024-04-21 04:39:43] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a196-py3-none-any.whl.zip]
+[2024-04-21 04:39:43] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a197-py3-none-any.whl.zip]
+[2024-04-21 04:39:43] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-21 04:39:46] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload-ng-0.5.0b3.dev81.tar.gz]
+[2024-04-21 04:39:46] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload_ng-0.5.0b3.dev82.tar.gz]
+[2024-04-21 04:39:46] INFO root fetch - main [MainThread]: End processing [pyload-ng]: success
+[2024-04-21 04:39:46] INFO root fetch - main [MainThread]: Store serial: [22861434]
