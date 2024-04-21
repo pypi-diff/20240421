@@ -8149,3 +8149,45 @@
 [2024-04-21 12:31:30] INFO root fetch - processPackages [sosin]: Remove: archive file [/home/abi/fetcher/tmp/sosin-1.2.4.tar.gz]
 [2024-04-21 12:31:30] INFO root fetch - main [MainThread]: End processing [sosin]: success
 [2024-04-21 12:31:30] INFO root fetch - main [MainThread]: Store serial: [22863682]
+[2024-04-21 12:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863682]
+[2024-04-21 12:33:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 12:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fuo-qqmusic
+[2024-04-21 12:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ossStudy
+[2024-04-21 12:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagrid
+[2024-04-21 12:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-log-inspector
+[2024-04-21 12:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rttm-manager
+[2024-04-21 12:33:38] INFO root fetch - processPackages [rttm-manager]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 12:33:38] INFO root fetch - processPackages [rttm-manager]: Downloading https://files.pythonhosted.org/packages/6e/ec/c1f645cee8f86cf4a5fe710511f87344f99c8ff23fc44a955dc76e929585/rttm_manager-0.1.6-py3-none-any.whl
+[2024-04-21 12:33:38] INFO root fetch - processPackages [django-log-inspector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 12:33:38] INFO root fetch - processPackages [fuo-qqmusic]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-21 12:33:38] WARNING root fetch - processPackages [ossStudy]: Skipping, unable to determine old version
+[2024-04-21 12:33:38] INFO root fetch - main [MainThread]: End processing [ossStudy] error
+[2024-04-21 12:33:38] INFO root fetch - processPackages [hagrid]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-21 12:33:38] INFO root fetch - processPackages [fuo-qqmusic]: Downloading https://files.pythonhosted.org/packages/54/08/2ac0a875a8ad150cbe1e8cd2bd047ae75f3dfabcb5569a208afa8bfcc5e0/fuo_qqmusic-1.0.2.tar.gz
+[2024-04-21 12:33:38] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/cb/5b/84d74c782124afff9d7adf03b9d6ee4bec895fac487769f8a8e806200a3a/django_log_inspector-0.0.5.tar.gz
+[2024-04-21 12:33:38] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/71/5c/7118f88cf946d0a75ccbfe7faf329364c6aa329c75e795f5321774437057/hagrid-0.3.98.tar.gz
+[2024-04-21 12:33:38] INFO root fetch - processPackages [rttm-manager]: Downloading https://files.pythonhosted.org/packages/08/dd/040202aa0ee25f097d900b16df637362467f70268a1147cf081d0f84b914/rttm_manager-0.1.7-py3-none-any.whl
+[2024-04-21 12:33:38] INFO root fetch - processPackages [rttm-manager]: executing diffoscope
+[2024-04-21 12:33:38] INFO root fetch - processPackages [rttm-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rttm_manager-0.1.6-py3-none-any.whl.zip tmp/rttm_manager-0.1.7-py3-none-any.whl.zip --markdown 20240421/r/rttm-manager/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 12:33:38] INFO root fetch - processPackages [fuo-qqmusic]: Downloading https://files.pythonhosted.org/packages/eb/ee/cb74a39fc14c4eb7bd70d6844044884d2cee5d73789815df52e1b706656e/fuo_qqmusic-1.0.3.tar.gz
+[2024-04-21 12:33:38] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/2b/1a/53c49e15bee77d9ddd0dadbf71e9c52587f1c9f5ed8480afa0d337e04a10/django_log_inspector-0.0.6.tar.gz
+[2024-04-21 12:33:39] INFO root fetch - processPackages [fuo-qqmusic]: executing diffoscope
+[2024-04-21 12:33:39] INFO root fetch - processPackages [fuo-qqmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuo_qqmusic-1.0.2.tar.gz tmp/fuo_qqmusic-1.0.3.tar.gz --markdown 20240421/f/fuo-qqmusic/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-21 12:33:39] INFO root fetch - processPackages [django-log-inspector]: executing diffoscope
+[2024-04-21 12:33:39] INFO root fetch - processPackages [django-log-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_log_inspector-0.0.5.tar.gz tmp/django_log_inspector-0.0.6.tar.gz --markdown 20240421/d/django-log-inspector/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 12:33:39] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/cd/59/f6d437913eeba7d4d9bb51ed14ede91b80dcb983f21bbafb63e54e220055/hagrid-0.3.99.tar.gz
+[2024-04-21 12:33:39] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2024-04-21 12:33:39] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.98.tar.gz tmp/hagrid-0.3.99.tar.gz --markdown 20240421/h/hagrid/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-21 12:33:39] INFO root fetch - processPackages [rttm-manager]: Remove: archive file [/home/abi/fetcher/tmp/rttm_manager-0.1.6-py3-none-any.whl.zip]
+[2024-04-21 12:33:39] INFO root fetch - processPackages [rttm-manager]: Remove: archive file [/home/abi/fetcher/tmp/rttm_manager-0.1.7-py3-none-any.whl.zip]
+[2024-04-21 12:33:39] INFO root fetch - main [MainThread]: End processing [rttm-manager]: success
+[2024-04-21 12:33:39] INFO root fetch - processPackages [fuo-qqmusic]: Remove: archive file [/home/abi/fetcher/tmp/fuo_qqmusic-1.0.2.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - processPackages [fuo-qqmusic]: Remove: archive file [/home/abi/fetcher/tmp/fuo_qqmusic-1.0.3.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - main [MainThread]: End processing [fuo-qqmusic]: success
+[2024-04-21 12:33:39] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.5.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.6.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - main [MainThread]: End processing [django-log-inspector]: success
+[2024-04-21 12:33:39] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.98.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.99.tar.gz]
+[2024-04-21 12:33:39] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2024-04-21 12:33:39] INFO root fetch - main [MainThread]: Store serial: [22863694]
