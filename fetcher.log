@@ -3212,3 +3212,30 @@
 [2024-04-21 04:57:00] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.75.tar.gz]
 [2024-04-21 04:57:00] INFO root fetch - main [MainThread]: End processing [bttc]: success
 [2024-04-21 04:57:00] INFO root fetch - main [MainThread]: Store serial: [22861494]
+[2024-04-21 04:59:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861494]
+[2024-04-21 04:59:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 04:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonPagination
+[2024-04-21 04:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC345
+[2024-04-21 04:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-common
+[2024-04-21 04:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uhelp
+[2024-04-21 04:59:09] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.5.2] Old Version: [1.0.7.5.1]
+[2024-04-21 04:59:09] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/7e/ef/6d1ba1329173417ced71080739326b86c51104328059ca82514d02657df7/mns_common-1.0.7.5.1.tar.gz
+[2024-04-21 04:59:09] ERROR root fetch - processPackages [uhelp]: Unable to get metadata: No such project 'uhelp'
+[2024-04-21 04:59:09] INFO root fetch - main [MainThread]: End processing [uhelp] error
+[2024-04-21 04:59:09] WARNING root fetch - processPackages [PythonTestLJC345]: Skipping, unable to determine old version
+[2024-04-21 04:59:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC345] error
+[2024-04-21 04:59:09] INFO root fetch - processPackages [jsonPagination]: New version: [0.3.0] Old Version: [0.2.5]
+[2024-04-21 04:59:09] INFO root fetch - processPackages [jsonPagination]: Downloading https://files.pythonhosted.org/packages/10/fa/1c8b4e2e281890804e9a4fb78d796f6c67c11734ff6b4ae452ba2f7bc21d/jsonpagination-0.2.5.tar.gz
+[2024-04-21 04:59:09] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/18/dc/f7003c70c36614261d3fd8946a1967931c1e13f0067dc6f0f10037c04e58/mns_common-1.0.7.5.2.tar.gz
+[2024-04-21 04:59:09] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-21 04:59:09] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.5.1.tar.gz tmp/mns_common-1.0.7.5.2.tar.gz --markdown 20240421/m/mns-common/1.0.7.5.1-1.0.7.5.2/README.md --exclude *.pyd
+[2024-04-21 04:59:09] INFO root fetch - processPackages [jsonPagination]: Downloading https://files.pythonhosted.org/packages/1e/f5/48c4b64fb6bac4c02ddb7b4d3a21044bb6ab9df9f6f8f3c3ed26b234e3da/jsonpagination-0.3.0.tar.gz
+[2024-04-21 04:59:09] INFO root fetch - processPackages [jsonPagination]: executing diffoscope
+[2024-04-21 04:59:09] INFO root fetch - processPackages [jsonPagination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonpagination-0.2.5.tar.gz tmp/jsonpagination-0.3.0.tar.gz --markdown 20240421/j/jsonPagination/0.2.5-0.3.0/README.md --exclude *.pyd
+[2024-04-21 04:59:10] INFO root fetch - processPackages [jsonPagination]: Remove: archive file [/home/abi/fetcher/tmp/jsonpagination-0.2.5.tar.gz]
+[2024-04-21 04:59:10] INFO root fetch - processPackages [jsonPagination]: Remove: archive file [/home/abi/fetcher/tmp/jsonpagination-0.3.0.tar.gz]
+[2024-04-21 04:59:10] INFO root fetch - main [MainThread]: End processing [jsonPagination]: success
+[2024-04-21 04:59:10] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.1.tar.gz]
+[2024-04-21 04:59:10] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.2.tar.gz]
+[2024-04-21 04:59:10] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-21 04:59:10] INFO root fetch - main [MainThread]: Store serial: [22861510]
