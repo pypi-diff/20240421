@@ -1100,3 +1100,41 @@
 [2024-04-21 02:02:39] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-04-21 02:02:39] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-04-21 02:02:39] INFO root fetch - main [MainThread]: Store serial: [22860387]
+[2024-04-21 02:04:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860387]
+[2024-04-21 02:04:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 02:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuon
+[2024-04-21 02:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asyncpraw-stubs
+[2024-04-21 02:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hashtray
+[2024-04-21 02:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC289
+[2024-04-21 02:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onnxscript
+[2024-04-21 02:04:49] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240420] Old Version: [0.1.0.dev20240419]
+[2024-04-21 02:04:49] INFO root fetch - processPackages [asyncpraw-stubs]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 02:04:49] WARNING root fetch - processPackages [PythonTestLJC289]: Skipping, unable to determine old version
+[2024-04-21 02:04:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC289] error
+[2024-04-21 02:04:49] INFO root fetch - processPackages [hashtray]: New version: [0.0.1b4] Old Version: [0.0.1b3]
+[2024-04-21 02:04:49] INFO root fetch - processPackages [nuon]: New version: [0.19.99] Old Version: [0.19.98]
+[2024-04-21 02:04:49] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/50/5c/eb997a376bb71746f1a0b095fd30b27a727f9c529683ee2213e9d58b1ade/onnxscript-0.1.0.dev20240419.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [asyncpraw-stubs]: Downloading https://files.pythonhosted.org/packages/5e/6c/88a9c743be2cca21383cebea24e0691da1b7680e561e9592b2c843ae0209/asyncpraw_stubs-0.0.1.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [hashtray]: Downloading https://files.pythonhosted.org/packages/f6/4c/7778d5b397213d42ec936d741411d518e6eb2b761e3ce05dfc5979b1a59b/hashtray-0.0.1b3.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/8d/82/73a4a9564f53819f1d2ce0052786b8fbaac8797092a6e5b9ad8368807e5a/nuon-0.19.98.tar.gz
+[2024-04-21 02:04:49] WARNING root fetch - processPackages [hashtray]: Skipping package: exceeds size limit 14806709>=10485760
+[2024-04-21 02:04:49] INFO root fetch - main [MainThread]: End processing [hashtray] error
+[2024-04-21 02:04:49] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/e3/7e/d42cd80e2b5eefdeb81402d72244052b8c82ff76af91b4665b88d2b40799/onnxscript-0.1.0.dev20240420.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/2e/32/73fde17d65f51538c324ffecb418e1d8709cd44e594ad86a351bb39fa67f/nuon-0.19.99.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [asyncpraw-stubs]: Downloading https://files.pythonhosted.org/packages/4d/95/89c8543b24556abb92dec0768ce5fd91206c6aa448347d42032404f04727/asyncpraw_stubs-0.0.2.tar.gz
+[2024-04-21 02:04:49] INFO root fetch - processPackages [asyncpraw-stubs]: executing diffoscope
+[2024-04-21 02:04:49] INFO root fetch - processPackages [asyncpraw-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncpraw_stubs-0.0.1.tar.gz tmp/asyncpraw_stubs-0.0.2.tar.gz --markdown 20240421/a/asyncpraw-stubs/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 02:04:49] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-04-21 02:04:49] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.98.tar.gz tmp/nuon-0.19.99.tar.gz --markdown 20240421/n/nuon/0.19.98-0.19.99/README.md --exclude *.pyd
+[2024-04-21 02:04:49] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-21 02:04:49] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240419.tar.gz tmp/onnxscript-0.1.0.dev20240420.tar.gz --markdown 20240421/o/onnxscript/0.1.0.dev20240419-0.1.0.dev20240420/README.md --exclude *.pyd
+[2024-04-21 02:04:50] INFO root fetch - processPackages [asyncpraw-stubs]: Remove: archive file [/home/abi/fetcher/tmp/asyncpraw_stubs-0.0.1.tar.gz]
+[2024-04-21 02:04:50] INFO root fetch - processPackages [asyncpraw-stubs]: Remove: archive file [/home/abi/fetcher/tmp/asyncpraw_stubs-0.0.2.tar.gz]
+[2024-04-21 02:04:50] INFO root fetch - main [MainThread]: End processing [asyncpraw-stubs]: success
+[2024-04-21 02:04:51] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240419.tar.gz]
+[2024-04-21 02:04:51] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240420.tar.gz]
+[2024-04-21 02:04:51] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-21 02:04:51] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
+[2024-04-21 02:04:51] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
+[2024-04-21 02:04:51] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-04-21 02:04:51] INFO root fetch - main [MainThread]: Store serial: [22860404]
