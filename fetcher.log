@@ -2659,3 +2659,12 @@
 [2024-04-21 04:06:43] WARNING root fetch - processPackages [Election-Vote]: Skipping, unable to determine old version
 [2024-04-21 04:06:43] INFO root fetch - main [MainThread]: End processing [Election-Vote] error
 [2024-04-21 04:06:43] INFO root fetch - main [MainThread]: Store serial: [22861264]
+[2024-04-21 04:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861264]
+[2024-04-21 04:08:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC327
+[2024-04-21 04:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wifitest
+[2024-04-21 04:08:51] WARNING root fetch - processPackages [PythonTestLJC327]: Skipping, unable to determine old version
+[2024-04-21 04:08:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC327] error
+[2024-04-21 04:08:51] WARNING root fetch - processPackages [wifitest]: Skipping, unable to determine old version
+[2024-04-21 04:08:51] INFO root fetch - main [MainThread]: End processing [wifitest] error
+[2024-04-21 04:08:51] INFO root fetch - main [MainThread]: Store serial: [22861274]
