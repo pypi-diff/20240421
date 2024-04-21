@@ -8275,3 +8275,45 @@
 [2024-04-21 12:40:20] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240421.tar.gz]
 [2024-04-21 12:40:20] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-04-21 12:40:20] INFO root fetch - main [MainThread]: Store serial: [22863729]
+[2024-04-21 12:42:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863729]
+[2024-04-21 12:42:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 12:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclonedx-bom
+[2024-04-21 12:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drawdraw
+[2024-04-21 12:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotgui
+[2024-04-21 12:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simple-rpc-protocol
+[2024-04-21 12:42:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baselib
+[2024-04-21 12:42:29] INFO root fetch - processPackages [drawdraw]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 12:42:29] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.3a1] Old Version: [4.3.2a1]
+[2024-04-21 12:42:29] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/ff/b2/aa41764cb2a4d073b72ea65c47774a5086d2fca64c324988c08000bb5185/drawdraw-0.0.8-py3-none-any.whl
+[2024-04-21 12:42:29] WARNING root fetch - processPackages [simple-rpc-protocol]: Skipping, unable to determine old version
+[2024-04-21 12:42:29] INFO root fetch - main [MainThread]: End processing [simple-rpc-protocol] error
+[2024-04-21 12:42:30] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/ee/a6/d206aff5f6b713f6ace6f754b7c594708c970b5f40f88b0e7b7852ff85f6/cyclonedx_bom-4.3.2a1.tar.gz
+[2024-04-21 12:42:30] INFO root fetch - processPackages [spotgui]: New version: [0.5.6] Old Version: [0.5.2]
+[2024-04-21 12:42:30] INFO root fetch - processPackages [baselib]: New version: [1.1.0.2] Old Version: [1.1.0.1b0]
+[2024-04-21 12:42:30] INFO root fetch - processPackages [spotgui]: Downloading https://files.pythonhosted.org/packages/cb/0f/b5b78b7be14978343c5b9d771f8110ea87bf7d1fb0584f7cddb2e0892f88/spotgui-0.5.2.tar.gz
+[2024-04-21 12:42:30] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/03/ef/23535a1849f9177aca607a5588fc964c0fa58978be31220f77731bfcde2f/baselib-1.1.0.1b0.tar.gz
+[2024-04-21 12:42:30] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/cb/80/97ab845f91bb99472277b2fa5c7f4ed1d154f3fceeff3220e5910a4c4abc/drawdraw-0.0.9-py3-none-any.whl
+[2024-04-21 12:42:30] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 12:42:30] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.8-py3-none-any.whl.zip tmp/drawdraw-0.0.9-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 12:42:30] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/c2/53/82bfd39f4f96364fc34918bdc53cd63383b1a3d873269edaec8cac438b8b/cyclonedx_bom-4.3.3a1.tar.gz
+[2024-04-21 12:42:30] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/50/a6/bd37c880b39d9ffab7cab3768989e31565d3ccc449b1187abcf3b661dee5/baselib-1.1.0.2.tar.gz
+[2024-04-21 12:42:30] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 12:42:30] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.2a1.tar.gz tmp/cyclonedx_bom-4.3.3a1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.2a1-4.3.3a1/README.md --exclude *.pyd
+[2024-04-21 12:42:30] INFO root fetch - processPackages [spotgui]: Downloading https://files.pythonhosted.org/packages/5d/40/1c357121eb1a149c57ab9709039d12fad5771a4ca7a10dd3636b02910eca/spotgui-0.5.6.tar.gz
+[2024-04-21 12:42:31] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.8-py3-none-any.whl.zip]
+[2024-04-21 12:42:31] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.9-py3-none-any.whl.zip]
+[2024-04-21 12:42:31] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 12:42:31] INFO root fetch - processPackages [spotgui]: executing diffoscope
+[2024-04-21 12:42:31] INFO root fetch - processPackages [spotgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotgui-0.5.2.tar.gz tmp/spotgui-0.5.6.tar.gz --markdown 20240421/s/spotgui/0.5.2-0.5.6/README.md --exclude *.pyd
+[2024-04-21 12:42:31] INFO root fetch - processPackages [baselib]: executing diffoscope
+[2024-04-21 12:42:31] INFO root fetch - processPackages [baselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baselib-1.1.0.1b0.tar.gz tmp/baselib-1.1.0.2.tar.gz --markdown 20240421/b/baselib/1.1.0.1b0-1.1.0.2/README.md --exclude *.pyd
+[2024-04-21 12:42:31] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.1b0.tar.gz]
+[2024-04-21 12:42:31] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.2.tar.gz]
+[2024-04-21 12:42:31] INFO root fetch - main [MainThread]: End processing [baselib]: success
+[2024-04-21 12:42:36] INFO root fetch - processPackages [spotgui]: Remove: archive file [/home/abi/fetcher/tmp/spotgui-0.5.2.tar.gz]
+[2024-04-21 12:42:36] INFO root fetch - processPackages [spotgui]: Remove: archive file [/home/abi/fetcher/tmp/spotgui-0.5.6.tar.gz]
+[2024-04-21 12:42:36] INFO root fetch - main [MainThread]: End processing [spotgui]: success
+[2024-04-21 12:42:39] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.2a1.tar.gz]
+[2024-04-21 12:42:39] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.3a1.tar.gz]
+[2024-04-21 12:42:39] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 12:42:39] INFO root fetch - main [MainThread]: Store serial: [22863741]
