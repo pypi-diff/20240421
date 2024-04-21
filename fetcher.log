@@ -6790,3 +6790,27 @@
 [2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.1.1-py3-none-any.whl.zip]
 [2024-04-21 10:45:18] INFO root fetch - main [MainThread]: End processing [stackNqueue]: success
 [2024-04-21 10:45:18] INFO root fetch - main [MainThread]: Store serial: [22863184]
+[2024-04-21 10:47:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863184]
+[2024-04-21 10:47:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:47:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-21 10:47:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mychef
+[2024-04-21 10:47:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywxdump
+[2024-04-21 10:47:28] WARNING root fetch - processPackages [mychef]: Skipping, unable to determine old version
+[2024-04-21 10:47:28] INFO root fetch - main [MainThread]: End processing [mychef] error
+[2024-04-21 10:47:28] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-21 10:47:28] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-04-21 10:47:28] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-21 10:47:28] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-04-21 10:47:28] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-21 10:47:29] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-04-21 10:47:29] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-21 10:47:29] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240421/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-21 10:47:29] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-04-21 10:47:29] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240421/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-04-21 10:47:32] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-21 10:47:32] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-21 10:47:32] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-21 10:47:44] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-04-21 10:47:44] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-04-21 10:47:44] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-04-21 10:47:44] INFO root fetch - main [MainThread]: Store serial: [22863192]
