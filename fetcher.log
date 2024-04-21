@@ -7644,3 +7644,30 @@
 [2024-04-21 11:47:37] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.2.tar.gz]
 [2024-04-21 11:47:37] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 11:47:37] INFO root fetch - main [MainThread]: Store serial: [22863482]
+[2024-04-21 11:49:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863482]
+[2024-04-21 11:49:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 11:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drawdraw
+[2024-04-21 11:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-21 11:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GirardProxy
+[2024-04-21 11:49:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: copy-spotter
+[2024-04-21 11:49:46] INFO root fetch - processPackages [drawdraw]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 11:49:46] WARNING root fetch - processPackages [GirardProxy]: Skipping, unable to determine old version
+[2024-04-21 11:49:46] WARNING root fetch - processPackages [copy-spotter]: Skipping, unable to determine old version
+[2024-04-21 11:49:46] INFO root fetch - main [MainThread]: End processing [GirardProxy] error
+[2024-04-21 11:49:46] INFO root fetch - main [MainThread]: End processing [copy-spotter] error
+[2024-04-21 11:49:46] INFO root fetch - processPackages [bellek]: New version: [0.95.0] Old Version: [0.94.1]
+[2024-04-21 11:49:46] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/51/d0/ac10d75469512624bc7863b7635edc79cbf8ba05571a8e2124e02abb6965/drawdraw-0.0.4-py3-none-any.whl
+[2024-04-21 11:49:46] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/8f/0e/7a8ae7c691eb57b88da0d1b7b04ff8bdbb8b33db961beec4a9f8629b0915/bellek-0.94.1.tar.gz
+[2024-04-21 11:49:46] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/50/c9/655864d58940a4926918af4649aade2228da24421e47e28e6b6d8c196485/drawdraw-0.0.5-py3-none-any.whl
+[2024-04-21 11:49:46] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/18/58/a3c3ddff89361cefc5c88ae8f97e62b022c4d7afefa71265c915061e2f49/bellek-0.95.0.tar.gz
+[2024-04-21 11:49:46] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 11:49:46] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.4-py3-none-any.whl.zip tmp/drawdraw-0.0.5-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 11:49:46] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-21 11:49:46] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.94.1.tar.gz tmp/bellek-0.95.0.tar.gz --markdown 20240421/b/bellek/0.94.1-0.95.0/README.md --exclude *.pyd
+[2024-04-21 11:49:47] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.4-py3-none-any.whl.zip]
+[2024-04-21 11:49:47] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 11:49:47] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 11:49:47] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.94.1.tar.gz]
+[2024-04-21 11:49:47] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.95.0.tar.gz]
+[2024-04-21 11:49:47] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-21 11:49:47] INFO root fetch - main [MainThread]: Store serial: [22863492]
