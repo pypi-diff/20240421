@@ -9636,3 +9636,102 @@
 [2024-04-21 14:21:31] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
 [2024-04-21 14:21:31] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-04-21 14:21:31] INFO root fetch - main [MainThread]: Store serial: [22864392]
+[2024-04-21 14:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864392]
+[2024-04-21 14:23:40] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-transformation-yfhsi
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-artefacts
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kimchima
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iinfer
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SymLinkDB
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: celi-framework
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bambooai
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shrinkcircle
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC445
+[2024-04-21 14:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: um982-driver
+[2024-04-21 14:23:40] INFO root fetch - processPackages [kimchima]: New version: [0.5.0] Old Version: [0.4.8]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.6.1a0] Old Version: [0.5.1a0]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [bambooai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/2c/78/050ee5e190ebc03f434d7017ef6b15882eedbae631127177d3ee64810298/data_transformation_yfhsi-0.5.1a0.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [tendril-artefacts]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 14:23:40] WARNING root fetch - processPackages [PythonTestLJC445]: Skipping, unable to determine old version
+[2024-04-21 14:23:40] INFO root fetch - processPackages [PythonTestLJC445]: Start processing: pyneople
+[2024-04-21 14:23:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC445] error
+[2024-04-21 14:23:40] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/e9/f1/f02839cff6103108d0b23c448c80c71976a56d0a0d0006ad04e4f7d88a26/kimchima-0.4.8.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [um982-driver]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 14:23:40] WARNING root fetch - processPackages [shrinkcircle]: Skipping, unable to determine old version
+[2024-04-21 14:23:40] INFO root fetch - processPackages [shrinkcircle]: Start processing: data-transformation-yfhsi
+[2024-04-21 14:23:40] INFO root fetch - main [MainThread]: End processing [shrinkcircle] error
+[2024-04-21 14:23:40] INFO root fetch - processPackages [iinfer]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [celi-framework]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [SymLinkDB]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/32/81/667ba343ba60a295254f89b642987cfea30c5f5389f53750ed5c6b6865c2/bambooai-0.3.8.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [pyneople]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.8.1a0] Old Version: [0.7.1a0]
+[2024-04-21 14:23:40] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/5a/9f/5904e20076198ead0a71758e9340ae8ff0ba0974eab2c6a02a57cff2fab3/pyneople-0.1.8.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [tendril-artefacts]: Downloading https://files.pythonhosted.org/packages/3f/8b/1bc72f14129a0d9513eef0f34d49a9f34c5d0ba7de32349ae26e676f65e4/tendril-artefacts-0.1.7.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [um982-driver]: Downloading https://files.pythonhosted.org/packages/2c/42/ec9b96279c32bebf6bb092a0fb628e0e5911fccc781e0f297cbe493b63f5/um982-driver-0.1.3.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/b8/62/0114f3fedc08cf3f13fa4deeffbfd5975e85cfed7a88ad276c2d75a5a464/iinfer-0.6.8.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [SymLinkDB]: Downloading https://files.pythonhosted.org/packages/ad/0d/7755cf4d5dc7309deab0b263b89cc351a566249a1a8b1ce7b40eb4d2ac27/SymLinkDB-0.4.8.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/dd/48/0daead84781e0c0ab85920edce1431e5f429bde8582c4fdb8dd6494d6cc2/celi_framework-0.0.16.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/8f/da/b531be417e8c06e2410611dea63f34514e3ab52ae74dd602eb71582e8639/kimchima-0.5.0.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/ea/a0/d05c4cc2cbb7dcb2bdaea0ccdee9f888f37edeb6b0a643084744079f4939/bambooai-0.3.9.tar.gz
+[2024-04-21 14:23:40] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/31/a8/0d97d672ec950e017a1760d2bd45e13ece4b882e3d0f0fb457af782d3cfd/data_transformation_yfhsi-0.7.1a0.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/08/a421cccd0dd475c387d4c4467e7c4929989b4de42847c4f6f72df8b84ba1/data_transformation_yfhsi-0.6.1a0.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [kimchima]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [kimchima]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kimchima-0.4.8.tar.gz tmp/kimchima-0.5.0.tar.gz --markdown 20240421/k/kimchima/0.4.8-0.5.0/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/87/99/4e9a2204b4ad654be7d4ce6a8469303aa979f8496c11c294b2da3d19b0cb/pyneople-0.2.0.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.3.8.tar.gz tmp/bambooai-0.3.9.tar.gz --markdown 20240421/b/bambooai/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.5.1a0.tar.gz tmp/data_transformation_yfhsi-0.6.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.5.1a0-0.6.1a0/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [um982-driver]: Downloading https://files.pythonhosted.org/packages/ba/e7/542978d98f0453528daf9e311e6b83473eed9b957c412cdf9fb331367a09/um982-driver-0.1.4.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [pyneople]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [pyneople]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyneople-0.1.8.tar.gz tmp/pyneople-0.2.0.tar.gz --markdown 20240421/p/pyneople/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [tendril-artefacts]: Downloading https://files.pythonhosted.org/packages/de/f8/2a5a75f193e3111eff24325de0dce39c8e1d9ecb34694145ea5df723d145/tendril_artefacts-0.1.8.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [SymLinkDB]: Downloading https://files.pythonhosted.org/packages/b0/75/46ceb319a19fc44644a06bd6dab78b1aa871d3905b382f43d337d2ad4f7b/SymLinkDB-0.4.9.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/3e/18/fd104a0da672cd0f570b43ddcd5db9d95321f8121730ddcbbe5db9d7467f/celi_framework-0.0.17.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/60/dd/ad20da60d16c59146a74028f31fcf00984be0ec991bc67f57c631cfed7af/iinfer-0.6.9.tar.gz
+[2024-04-21 14:23:41] INFO root fetch - processPackages [um982-driver]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [um982-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/um982-driver-0.1.3.tar.gz tmp/um982-driver-0.1.4.tar.gz --markdown 20240421/u/um982-driver/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [tendril-artefacts]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [tendril-artefacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-artefacts-0.1.7.tar.gz tmp/tendril_artefacts-0.1.8.tar.gz --markdown 20240421/t/tendril-artefacts/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [SymLinkDB]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [SymLinkDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SymLinkDB-0.4.8.tar.gz tmp/SymLinkDB-0.4.9.tar.gz --markdown 20240421/S/SymLinkDB/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [celi-framework]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [celi-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celi_framework-0.0.16.tar.gz tmp/celi_framework-0.0.17.tar.gz --markdown 20240421/c/celi-framework/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [iinfer]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [iinfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iinfer-0.6.8.tar.gz tmp/iinfer-0.6.9.tar.gz --markdown 20240421/i/iinfer/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 14:23:41] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.7.1a0.tar.gz tmp/data_transformation_yfhsi-0.8.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.7.1a0-0.8.1a0/README.md --exclude *.pyd
+[2024-04-21 14:23:42] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.5.1a0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.6.1a0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.4.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.5.0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [kimchima]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.1.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.2.0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [pyneople]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.9.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [um982-driver]: Remove: archive file [/home/abi/fetcher/tmp/um982-driver-0.1.3.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [um982-driver]: Remove: archive file [/home/abi/fetcher/tmp/um982-driver-0.1.4.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [um982-driver]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [SymLinkDB]: Remove: archive file [/home/abi/fetcher/tmp/SymLinkDB-0.4.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [SymLinkDB]: Remove: archive file [/home/abi/fetcher/tmp/SymLinkDB-0.4.9.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [SymLinkDB]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.7.1a0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [tendril-artefacts]: Remove: archive file [/home/abi/fetcher/tmp/tendril-artefacts-0.1.7.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [tendril-artefacts]: Remove: archive file [/home/abi/fetcher/tmp/tendril_artefacts-0.1.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [tendril-artefacts]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.16.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.17.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [celi-framework]: success
+[2024-04-21 14:23:42] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.6.8.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.6.9.tar.gz]
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [iinfer]: success
+[2024-04-21 14:23:42] INFO root fetch - main [MainThread]: Store serial: [22864432]
