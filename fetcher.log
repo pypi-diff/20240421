@@ -6844,3 +6844,36 @@
 [2024-04-21 10:49:58] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz]
 [2024-04-21 10:49:58] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr22]: success
 [2024-04-21 10:49:58] INFO root fetch - main [MainThread]: Store serial: [22863203]
+[2024-04-21 10:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863203]
+[2024-04-21 10:52:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commonmeta-py
+[2024-04-21 10:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prime-qwer
+[2024-04-21 10:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2024-04-21 10:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func_adl_servicex_xaodr21
+[2024-04-21 10:52:06] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-21 10:52:06] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-21 10:52:06] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: New version: [2.0.0.21.2.231a9] Old Version: [2.0.0.21.2.231a11]
+[2024-04-21 10:52:06] WARNING root fetch - processPackages [prime-qwer]: Skipping, unable to determine old version
+[2024-04-21 10:52:06] INFO root fetch - main [MainThread]: End processing [prime-qwer] error
+[2024-04-21 10:52:06] INFO root fetch - processPackages [commonmeta-py]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-21 10:52:06] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Downloading https://files.pythonhosted.org/packages/f2/e9/4909d669e670aced2053de6c2af5c75a01f8652039f030d85da981a9b637/func_adl_servicex_xaodr21-2.0.0.21.2.231a11.tar.gz
+[2024-04-21 10:52:06] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/52/c0/e7c87877f28428fc995c494cd79586152481d7b23c1e0bbb364b89a4b025/commonmeta_py-0.9.3.tar.gz
+[2024-04-21 10:52:06] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-21 10:52:07] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-21 10:52:07] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240421/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-21 10:52:07] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/a7/bd/df628255dc3f849e7da2d4b39759e0fb92720cf93c1cfbfa4d9ffff22942/commonmeta_py-0.9.4.tar.gz
+[2024-04-21 10:52:07] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Downloading https://files.pythonhosted.org/packages/cd/73/777a0d99a9f817b5cebdea22f1edafa22b5d506f9b5fc22227be775b112b/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz
+[2024-04-21 10:52:07] INFO root fetch - processPackages [commonmeta-py]: executing diffoscope
+[2024-04-21 10:52:07] INFO root fetch - processPackages [commonmeta-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonmeta_py-0.9.3.tar.gz tmp/commonmeta_py-0.9.4.tar.gz --markdown 20240421/c/commonmeta-py/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-21 10:52:07] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: executing diffoscope
+[2024-04-21 10:52:07] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a11.tar.gz tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz --markdown 20240421/f/func_adl_servicex_xaodr21/2.0.0.21.2.231a11-2.0.0.21.2.231a9/README.md --exclude *.pyd
+[2024-04-21 10:52:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-21 10:52:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-21 10:52:07] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-21 10:52:08] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.3.tar.gz]
+[2024-04-21 10:52:08] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.4.tar.gz]
+[2024-04-21 10:52:08] INFO root fetch - main [MainThread]: End processing [commonmeta-py]: success
+[2024-04-21 10:52:08] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a11.tar.gz]
+[2024-04-21 10:52:08] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz]
+[2024-04-21 10:52:08] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr21]: success
+[2024-04-21 10:52:08] INFO root fetch - main [MainThread]: Store serial: [22863216]
