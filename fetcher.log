@@ -16384,3 +16384,78 @@
 [2024-04-21 21:00:33] INFO root fetch - processPackages [wood-nano]: Remove: archive file [/home/abi/fetcher/tmp/wood_nano-0.0.7-cp39-cp39-manylinux_2_35_x86_64.whl.zip]
 [2024-04-21 21:00:33] INFO root fetch - main [MainThread]: End processing [wood-nano]: success
 [2024-04-21 21:00:33] INFO root fetch - main [MainThread]: Store serial: [22867708]
+[2024-04-21 21:02:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867708]
+[2024-04-21 21:02:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mult-flow
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmdbapis
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqint
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arrapi
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dtps-http
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openapi-service-client
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nr-vocabularies
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kedro-pandera
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dyne
+[2024-04-21 21:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ricciardi
+[2024-04-21 21:02:42] INFO root fetch - processPackages [dtps-http]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [arrapi]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-21 21:02:42] WARNING root fetch - processPackages [ricciardi]: Skipping, unable to determine old version
+[2024-04-21 21:02:42] INFO root fetch - main [MainThread]: End processing [ricciardi] error
+[2024-04-21 21:02:42] WARNING root fetch - processPackages [dyne]: Skipping, unable to determine old version
+[2024-04-21 21:02:42] INFO root fetch - main [MainThread]: End processing [dyne] error
+[2024-04-21 21:02:42] INFO root fetch - processPackages [tmdbapis]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/51/9f/9254705a30243d739fc9aab9b9cd855c7c4da67116bc7598a9de8fbd8ee2/dtps_http-1.3.1-py3-none-any.whl
+[2024-04-21 21:02:42] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/82/75/502ee58116644d44aec18bcb2803e5f097c4f437170867c28da2105cd61b/arrapi-1.4.8.tar.gz
+[2024-04-21 21:02:42] WARNING root fetch - processPackages [mult-flow]: Skipping, unable to determine old version
+[2024-04-21 21:02:42] INFO root fetch - main [MainThread]: End processing [mult-flow] error
+[2024-04-21 21:02:42] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/cb/b1/9ef1c2ae10e178aaaca57e943572bec7770a8e9935279738498792c6a7a0/tmdbapis-1.2.7.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [pyqint]: New version: [0.9.7.2] Old Version: [0.9.7.1]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [kedro-pandera]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [nr-vocabularies]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [openapi-service-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 21:02:42] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/e1/6f/f0baaa4fc34d51a75654547ad912cdf525f93b34ef1a95f1294cd34dadbc/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 21:02:42] INFO root fetch - processPackages [nr-vocabularies]: Downloading https://files.pythonhosted.org/packages/79/86/0893257c2db0d1183f9a27bba608907691627a0d6875a834aa92a30d97f9/nr-vocabularies-2.0.8.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/6a/27/50e4953ce5ea5bed911f6b876bc462e17de9fc3cc3a5f44e903cc4e88176/tmdbapis-1.2.9.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [openapi-service-client]: Downloading https://files.pythonhosted.org/packages/36/c3/3d415ee4be970874ccdb8a4660144fd64a1a2b4d4a1211017310179bbd82/openapi_service_client-0.0.8.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [kedro-pandera]: Downloading https://files.pythonhosted.org/packages/a8/64/259f959fb286767d1bdf7d15bb1021432c758e855a272f77efc85bdba2b9/kedro_pandera-0.1.0.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/77/4e/b49fdccd5bcbfdbf2bada853ad1e04960b1c02461dfb5fde309a55131cb6/dtps_http-1.3.2-py3-none-any.whl
+[2024-04-21 21:02:42] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/fb/42/26254ff2cd16101f4e5c86aaabb0e44aa2c12fe6e2119f1eadfed874ddcf/arrapi-1.4.9.tar.gz
+[2024-04-21 21:02:42] INFO root fetch - processPackages [tmdbapis]: executing diffoscope
+[2024-04-21 21:02:42] INFO root fetch - processPackages [tmdbapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmdbapis-1.2.7.tar.gz tmp/tmdbapis-1.2.9.tar.gz --markdown 20240421/t/tmdbapis/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-04-21 21:02:42] INFO root fetch - processPackages [arrapi]: executing diffoscope
+[2024-04-21 21:02:42] INFO root fetch - processPackages [arrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrapi-1.4.8.tar.gz tmp/arrapi-1.4.9.tar.gz --markdown 20240421/a/arrapi/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-21 21:02:42] INFO root fetch - processPackages [dtps-http]: executing diffoscope
+[2024-04-21 21:02:42] INFO root fetch - processPackages [dtps-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtps_http-1.3.1-py3-none-any.whl.zip tmp/dtps_http-1.3.2-py3-none-any.whl.zip --markdown 20240421/d/dtps-http/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-04-21 21:02:42] INFO root fetch - processPackages [nr-vocabularies]: Downloading https://files.pythonhosted.org/packages/13/29/6a88adba82e7b567941798febcde21a15b8201f988ae9b7accdfa75a69fc/nr-vocabularies-2.0.9.tar.gz
+[2024-04-21 21:02:43] INFO root fetch - processPackages [openapi-service-client]: Downloading https://files.pythonhosted.org/packages/f1/f0/df28857eacfb65d000e0e68df6716a36fcc7ccca1c578b260309e4cc9e75/openapi_service_client-0.0.9.tar.gz
+[2024-04-21 21:02:43] INFO root fetch - processPackages [kedro-pandera]: Downloading https://files.pythonhosted.org/packages/d7/17/e44edcdb60cc646b141337299788f0930dbe2f1204172a629fc1ebe60815/kedro_pandera-0.2.0.tar.gz
+[2024-04-21 21:02:43] INFO root fetch - processPackages [openapi-service-client]: executing diffoscope
+[2024-04-21 21:02:43] INFO root fetch - processPackages [openapi-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_service_client-0.0.8.tar.gz tmp/openapi_service_client-0.0.9.tar.gz --markdown 20240421/o/openapi-service-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 21:02:43] INFO root fetch - processPackages [nr-vocabularies]: executing diffoscope
+[2024-04-21 21:02:43] INFO root fetch - processPackages [nr-vocabularies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nr-vocabularies-2.0.8.tar.gz tmp/nr-vocabularies-2.0.9.tar.gz --markdown 20240421/n/nr-vocabularies/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-21 21:02:43] INFO root fetch - processPackages [kedro-pandera]: executing diffoscope
+[2024-04-21 21:02:43] INFO root fetch - processPackages [kedro-pandera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kedro_pandera-0.1.0.tar.gz tmp/kedro_pandera-0.2.0.tar.gz --markdown 20240421/k/kedro-pandera/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-21 21:02:43] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.7.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.9.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - main [MainThread]: End processing [tmdbapis]: success
+[2024-04-21 21:02:43] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.8.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.9.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - main [MainThread]: End processing [arrapi]: success
+[2024-04-21 21:02:43] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/c6/91/7907d7a29f5c26c031da3175916525427e9150b5a9ab871b7734076bbf41/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 21:02:43] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.1-py3-none-any.whl.zip]
+[2024-04-21 21:02:43] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.2-py3-none-any.whl.zip]
+[2024-04-21 21:02:43] INFO root fetch - main [MainThread]: End processing [dtps-http]: success
+[2024-04-21 21:02:43] INFO root fetch - processPackages [nr-vocabularies]: Remove: archive file [/home/abi/fetcher/tmp/nr-vocabularies-2.0.8.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - processPackages [nr-vocabularies]: Remove: archive file [/home/abi/fetcher/tmp/nr-vocabularies-2.0.9.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - main [MainThread]: End processing [nr-vocabularies]: success
+[2024-04-21 21:02:43] INFO root fetch - processPackages [openapi-service-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi_service_client-0.0.8.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - processPackages [openapi-service-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi_service_client-0.0.9.tar.gz]
+[2024-04-21 21:02:43] INFO root fetch - main [MainThread]: End processing [openapi-service-client]: success
+[2024-04-21 21:02:44] INFO root fetch - processPackages [kedro-pandera]: Remove: archive file [/home/abi/fetcher/tmp/kedro_pandera-0.1.0.tar.gz]
+[2024-04-21 21:02:44] INFO root fetch - processPackages [kedro-pandera]: Remove: archive file [/home/abi/fetcher/tmp/kedro_pandera-0.2.0.tar.gz]
+[2024-04-21 21:02:44] INFO root fetch - main [MainThread]: End processing [kedro-pandera]: success
+[2024-04-21 21:02:44] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2024-04-21 21:02:44] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240421/p/pyqint/0.9.7.1-0.9.7.2/README.md --exclude *.pyd
+[2024-04-21 21:03:04] INFO root fetch - processPackages [pyqint]: Remove: archive file [/home/abi/fetcher/tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 21:03:04] INFO root fetch - processPackages [pyqint]: Remove: archive file [/home/abi/fetcher/tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 21:03:04] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2024-04-21 21:03:04] INFO root fetch - main [MainThread]: Store serial: [22867756]
