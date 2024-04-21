@@ -7783,3 +7783,33 @@
 [2024-04-21 12:00:36] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.5.tar.gz]
 [2024-04-21 12:00:36] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 12:00:36] INFO root fetch - main [MainThread]: Store serial: [22863528]
+[2024-04-21 12:02:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863528]
+[2024-04-21 12:02:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 12:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textile-metric
+[2024-04-21 12:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oarepo-ui
+[2024-04-21 12:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rooms-shared-services
+[2024-04-21 12:02:46] INFO root fetch - processPackages [textile-metric]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 12:02:46] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-21 12:02:46] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/9f/8f/dd64bfb51aa9de7353791d5f22600c278174e0db04dc41cd96d8f3ec3066/textile_metric-0.0.5.tar.gz
+[2024-04-21 12:02:46] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-21 12:02:46] INFO root fetch - processPackages [oarepo-ui]: New version: [5.1.9] Old Version: [5.1.8]
+[2024-04-21 12:02:47] INFO root fetch - processPackages [oarepo-ui]: Downloading https://files.pythonhosted.org/packages/87/64/10c65b547fcd49c12a5c9a954426830269b57a4115a7070da01f33307313/oarepo-ui-5.1.8.tar.gz
+[2024-04-21 12:02:47] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-21 12:02:47] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-21 12:02:47] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240421/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-21 12:02:47] INFO root fetch - processPackages [oarepo-ui]: Downloading https://files.pythonhosted.org/packages/79/8e/95316366f4c35e7329fa617d319a0c6b5a7beb26fcd76a93638415957d69/oarepo-ui-5.1.9.tar.gz
+[2024-04-21 12:02:47] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/63/09/dfd97ab8efbc09206ac0c9646b8d3028cc2492692db45c19868530d3f222/textile_metric-0.0.6.tar.gz
+[2024-04-21 12:02:47] INFO root fetch - processPackages [oarepo-ui]: executing diffoscope
+[2024-04-21 12:02:47] INFO root fetch - processPackages [oarepo-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-ui-5.1.8.tar.gz tmp/oarepo-ui-5.1.9.tar.gz --markdown 20240421/o/oarepo-ui/5.1.8-5.1.9/README.md --exclude *.pyd
+[2024-04-21 12:02:47] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-21 12:02:47] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-21 12:02:47] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-21 12:02:48] INFO root fetch - processPackages [oarepo-ui]: Remove: archive file [/home/abi/fetcher/tmp/oarepo-ui-5.1.8.tar.gz]
+[2024-04-21 12:02:48] INFO root fetch - processPackages [oarepo-ui]: Remove: archive file [/home/abi/fetcher/tmp/oarepo-ui-5.1.9.tar.gz]
+[2024-04-21 12:02:48] INFO root fetch - main [MainThread]: End processing [oarepo-ui]: success
+[2024-04-21 12:02:48] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:02:48] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.5.tar.gz tmp/textile_metric-0.0.6.tar.gz --markdown 20240421/t/textile-metric/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 12:02:49] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.5.tar.gz]
+[2024-04-21 12:02:49] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.6.tar.gz]
+[2024-04-21 12:02:49] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:02:49] INFO root fetch - main [MainThread]: Store serial: [22863538]
