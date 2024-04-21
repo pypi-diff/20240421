@@ -11357,3 +11357,26 @@
 [2024-04-21 16:06:44] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.94.0-py3-none-any.whl.zip]
 [2024-04-21 16:06:44] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
 [2024-04-21 16:06:44] INFO root fetch - main [MainThread]: Store serial: [22865275]
+[2024-04-21 16:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865275]
+[2024-04-21 16:08:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libpss
+[2024-04-21 16:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myPackageleeij
+[2024-04-21 16:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC479
+[2024-04-21 16:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infinity-sdk
+[2024-04-21 16:08:53] INFO root fetch - processPackages [libpss]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 16:08:53] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/c3/25024206e3d32063c6db11c299263371aeca50fe56e8095220fedb9d91a0/libpss-0.1.8.tar.gz
+[2024-04-21 16:08:53] WARNING root fetch - processPackages [PythonTestLJC479]: Skipping, unable to determine old version
+[2024-04-21 16:08:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC479] error
+[2024-04-21 16:08:53] WARNING root fetch - processPackages [myPackageleeij]: Skipping, unable to determine old version
+[2024-04-21 16:08:53] INFO root fetch - main [MainThread]: End processing [myPackageleeij] error
+[2024-04-21 16:08:53] INFO root fetch - processPackages [infinity-sdk]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-04-21 16:08:53] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12679379>=10485760
+[2024-04-21 16:08:53] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 16:08:53] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/10/6f/998e45a82e123f8aa87e36c5064d7b28ee0af112c1ae873c7f8968a0374c/infinity_sdk-0.1.0.dev8-py3-none-any.whl
+[2024-04-21 16:08:53] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/5f/23/609dbf3b9cce37544c49a6f700daf67907a9ddd4838b098e8417fd57597d/infinity_sdk-0.1.0.dev9-py3-none-any.whl
+[2024-04-21 16:08:54] INFO root fetch - processPackages [infinity-sdk]: executing diffoscope
+[2024-04-21 16:08:54] INFO root fetch - processPackages [infinity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip --markdown 20240421/i/infinity-sdk/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-04-21 16:08:54] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip]
+[2024-04-21 16:08:54] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip]
+[2024-04-21 16:08:54] INFO root fetch - main [MainThread]: End processing [infinity-sdk]: success
+[2024-04-21 16:08:54] INFO root fetch - main [MainThread]: Store serial: [22865293]
