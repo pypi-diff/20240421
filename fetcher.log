@@ -12285,3 +12285,36 @@
 [2024-04-21 16:54:46] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.6.tar.gz]
 [2024-04-21 16:54:46] INFO root fetch - main [MainThread]: End processing [galxiai]: success
 [2024-04-21 16:54:46] INFO root fetch - main [MainThread]: Store serial: [22865688]
+[2024-04-21 16:56:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865688]
+[2024-04-21 16:56:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ado_wrapper
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC500
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-dynamic-raw-id
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matplotlib-visual
+[2024-04-21 16:56:55] INFO root fetch - processPackages [matplotlib-visual]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-21 16:56:55] INFO root fetch - processPackages [django-dynamic-raw-id]: New version: [3.0] Old Version: [2.8]
+[2024-04-21 16:56:55] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/cd/07/5c6e6d7624c072a4681a8571d9aea21849fe005b0e539e9c3f3d7c63c941/matplotlib_visual-0.9.4.tar.gz
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ado_wrapper]: New version: [1.2.5] Old Version: [1.2.3]
+[2024-04-21 16:56:55] WARNING root fetch - processPackages [PythonTestLJC500]: Skipping, unable to determine old version
+[2024-04-21 16:56:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC500] error
+[2024-04-21 16:56:55] INFO root fetch - processPackages [django-dynamic-raw-id]: Downloading https://files.pythonhosted.org/packages/ac/08/ce9f7a457ecb5b4e4b66b08ba17eef6ca4b64b5d1129c549534e94e5e4bb/django-dynamic-raw-id-2.8.tar.gz
+[2024-04-21 16:56:55] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/6b/1c/d4bce3090984219112542ac580ba46ef751b8c6fce54afa44ecc02968627/ado_wrapper-1.2.3.tar.gz
+[2024-04-21 16:56:55] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/34/28/43a83a0969ccec7fa499282512942b6ec27f7fcf55a807dd488c47990a10/matplotlib_visual-0.9.5.tar.gz
+[2024-04-21 16:56:55] INFO root fetch - processPackages [matplotlib-visual]: executing diffoscope
+[2024-04-21 16:56:55] INFO root fetch - processPackages [matplotlib-visual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matplotlib_visual-0.9.4.tar.gz tmp/matplotlib_visual-0.9.5.tar.gz --markdown 20240421/m/matplotlib-visual/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-21 16:56:56] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/37/b1/c5568ae0c65431a0bc6c8d78a31a4844cfa0e1119f40a1a99a32a250ac14/ado_wrapper-1.2.5.tar.gz
+[2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: Downloading https://files.pythonhosted.org/packages/58/62/7d83ba42eabc6576bcee38c4c1f217b542d0e5894ab0aaba8aef1af71fe9/django-dynamic-raw-id-3.0.tar.gz
+[2024-04-21 16:56:56] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-04-21 16:56:56] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-1.2.3.tar.gz tmp/ado_wrapper-1.2.5.tar.gz --markdown 20240421/a/ado_wrapper/1.2.3-1.2.5/README.md --exclude *.pyd
+[2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: executing diffoscope
+[2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dynamic-raw-id-2.8.tar.gz tmp/django-dynamic-raw-id-3.0.tar.gz --markdown 20240421/d/django-dynamic-raw-id/2.8-3.0/README.md --exclude *.pyd
+[2024-04-21 16:56:56] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.9.4.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.9.5.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
+[2024-04-21 16:56:56] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.2.3.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.2.5.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: Remove: archive file [/home/abi/fetcher/tmp/django-dynamic-raw-id-2.8.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: Remove: archive file [/home/abi/fetcher/tmp/django-dynamic-raw-id-3.0.tar.gz]
+[2024-04-21 16:56:56] INFO root fetch - main [MainThread]: End processing [django-dynamic-raw-id]: success
+[2024-04-21 16:56:56] INFO root fetch - main [MainThread]: Store serial: [22865703]
