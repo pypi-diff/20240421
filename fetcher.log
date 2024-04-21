@@ -12993,3 +12993,39 @@
 [2024-04-21 17:27:09] INFO root fetch - processPackages [dukes]: Remove: archive file [/home/abi/fetcher/tmp/dukes-1.4.0.tar.gz]
 [2024-04-21 17:27:09] INFO root fetch - main [MainThread]: End processing [dukes]: success
 [2024-04-21 17:27:09] INFO root fetch - main [MainThread]: Store serial: [22866029]
+[2024-04-21 17:29:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866029]
+[2024-04-21 17:29:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 17:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pc-perf
+[2024-04-21 17:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bodysnatcher
+[2024-04-21 17:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gravithon
+[2024-04-21 17:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mkdocs-publisher
+[2024-04-21 17:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autalac_de2v2
+[2024-04-21 17:29:18] INFO root fetch - processPackages [bodysnatcher]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 17:29:18] WARNING root fetch - processPackages [autalac_de2v2]: Skipping, unable to determine old version
+[2024-04-21 17:29:18] INFO root fetch - main [MainThread]: End processing [autalac_de2v2] error
+[2024-04-21 17:29:18] INFO root fetch - processPackages [gravithon]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 17:29:18] INFO root fetch - processPackages [mkdocs-publisher]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-21 17:29:18] WARNING root fetch - processPackages [pc-perf]: Skipping, unable to determine old version
+[2024-04-21 17:29:18] INFO root fetch - main [MainThread]: End processing [pc-perf] error
+[2024-04-21 17:29:18] INFO root fetch - processPackages [bodysnatcher]: Downloading https://files.pythonhosted.org/packages/dd/d2/23544c23da9491976c297abe646bc7b2de2f532e3fbb5b3545993af08e66/bodysnatcher-0.1.0.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [gravithon]: Downloading https://files.pythonhosted.org/packages/81/cd/b9750092444aea7505b01e06851d8d1c57fc6af8f1f2993b5adef5f1c5cc/gravithon-0.0.4.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [mkdocs-publisher]: Downloading https://files.pythonhosted.org/packages/df/18/83330c0f6e38fb52893c68953ac13db6762bcabd76768b0f04d89c71c80f/mkdocs_publisher-1.3.0.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [gravithon]: Downloading https://files.pythonhosted.org/packages/34/b9/255f90c677702b924929af0e5d35f2f7a0d12047913d5bc36b8908f1f6fe/gravithon-0.0.5.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [bodysnatcher]: Downloading https://files.pythonhosted.org/packages/73/d9/cbd28c46f6dea6c4bf393994af2d6837d4cc616e65216cbdf8b86a8ce32d/bodysnatcher-0.1.1.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [mkdocs-publisher]: Downloading https://files.pythonhosted.org/packages/4d/64/932204e0d49653ea3b0c199b25b64bc405065d3c5026099a49cfd590349b/mkdocs_publisher-1.3.1.tar.gz
+[2024-04-21 17:29:18] INFO root fetch - processPackages [gravithon]: executing diffoscope
+[2024-04-21 17:29:18] INFO root fetch - processPackages [gravithon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravithon-0.0.4.tar.gz tmp/gravithon-0.0.5.tar.gz --markdown 20240421/g/gravithon/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 17:29:18] INFO root fetch - processPackages [mkdocs-publisher]: executing diffoscope
+[2024-04-21 17:29:18] INFO root fetch - processPackages [mkdocs-publisher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_publisher-1.3.0.tar.gz tmp/mkdocs_publisher-1.3.1.tar.gz --markdown 20240421/m/mkdocs-publisher/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-21 17:29:18] INFO root fetch - processPackages [bodysnatcher]: executing diffoscope
+[2024-04-21 17:29:18] INFO root fetch - processPackages [bodysnatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodysnatcher-0.1.0.tar.gz tmp/bodysnatcher-0.1.1.tar.gz --markdown 20240421/b/bodysnatcher/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 17:29:19] INFO root fetch - processPackages [gravithon]: Remove: archive file [/home/abi/fetcher/tmp/gravithon-0.0.4.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - processPackages [gravithon]: Remove: archive file [/home/abi/fetcher/tmp/gravithon-0.0.5.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - main [MainThread]: End processing [gravithon]: success
+[2024-04-21 17:29:19] INFO root fetch - processPackages [bodysnatcher]: Remove: archive file [/home/abi/fetcher/tmp/bodysnatcher-0.1.0.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - processPackages [bodysnatcher]: Remove: archive file [/home/abi/fetcher/tmp/bodysnatcher-0.1.1.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - main [MainThread]: End processing [bodysnatcher]: success
+[2024-04-21 17:29:19] INFO root fetch - processPackages [mkdocs-publisher]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_publisher-1.3.0.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - processPackages [mkdocs-publisher]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_publisher-1.3.1.tar.gz]
+[2024-04-21 17:29:19] INFO root fetch - main [MainThread]: End processing [mkdocs-publisher]: success
+[2024-04-21 17:29:19] INFO root fetch - main [MainThread]: Store serial: [22866048]
