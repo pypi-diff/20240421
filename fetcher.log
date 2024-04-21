@@ -15721,3 +15721,48 @@
 [2024-04-21 20:25:39] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.2.2.tar.gz]
 [2024-04-21 20:25:39] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: success
 [2024-04-21 20:25:39] INFO root fetch - main [MainThread]: Store serial: [22867360]
+[2024-04-21 20:27:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867360]
+[2024-04-21 20:27:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: student-vote-electionn
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC576
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-spectacular-websocket
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pokerengine
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gammarer.aws-secure-cloudfront-origin-bucket
+[2024-04-21 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: altimate-datapilot-cli
+[2024-04-21 20:27:49] INFO root fetch - processPackages [student-vote-electionn]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 20:27:49] INFO root fetch - processPackages [pokerengine]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-21 20:27:49] WARNING root fetch - processPackages [PythonTestLJC576]: Skipping, unable to determine old version
+[2024-04-21 20:27:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC576] error
+[2024-04-21 20:27:49] INFO root fetch - processPackages [altimate-datapilot-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 20:27:49] WARNING root fetch - processPackages [drf-spectacular-websocket]: Skipping, unable to determine old version
+[2024-04-21 20:27:49] INFO root fetch - main [MainThread]: End processing [drf-spectacular-websocket] error
+[2024-04-21 20:27:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-04-21 20:27:49] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/1f/8f/455305d741fe8fe0a78d38f270adaa57d9823692726f4debc95f228c785c/pokerengine-1.1.5.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [student-vote-electionn]: Downloading https://files.pythonhosted.org/packages/68/0a/2162a0164c9f9413bf6346f21f176f0b5f1e376ba7928ab296568dee24fc/student_vote_electionn-0.0.1.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/d6/34/8a5c4b49b17e617f9f4a3258ff0a32a4a45102381af9fcb97f387a07a4e7/gammarer.aws-secure-cloudfront-origin-bucket-1.4.3.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [altimate-datapilot-cli]: Downloading https://files.pythonhosted.org/packages/ea/bb/48a59c7c829175eb3149c6adf5c2f503ca84ad79625a14efb4056185387c/altimate-datapilot-cli-0.0.8.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/ba/9e/b08886fb283741d456207134e81617fce5a8b9781a0d98a0549f06c3bf15/pokerengine-1.1.6.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [student-vote-electionn]: Downloading https://files.pythonhosted.org/packages/d5/a3/42cf76050be7bd02afe87afadf10038a2ef752e0e917076c1961c1170f13/student_vote_electionn-0.0.2.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [pokerengine]: executing diffoscope
+[2024-04-21 20:27:49] INFO root fetch - processPackages [pokerengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerengine-1.1.5.tar.gz tmp/pokerengine-1.1.6.tar.gz --markdown 20240421/p/pokerengine/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-21 20:27:49] INFO root fetch - processPackages [student-vote-electionn]: executing diffoscope
+[2024-04-21 20:27:49] INFO root fetch - processPackages [student-vote-electionn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/student_vote_electionn-0.0.1.tar.gz tmp/student_vote_electionn-0.0.2.tar.gz --markdown 20240421/s/student-vote-electionn/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 20:27:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/f5/64/d41f10fafe1685d8a57a77120faf84b28cb347cb63762994f16ba50dfb53/gammarer.aws-secure-cloudfront-origin-bucket-1.4.4.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [altimate-datapilot-cli]: Downloading https://files.pythonhosted.org/packages/ed/cc/5c354145ec1a88da4b65f3eb99b322fed53860f9d6c58b57fef26dc08a34/altimate-datapilot-cli-0.0.9.tar.gz
+[2024-04-21 20:27:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: executing diffoscope
+[2024-04-21 20:27:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.3.tar.gz tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.4.tar.gz --markdown 20240421/g/gammarer.aws-secure-cloudfront-origin-bucket/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-04-21 20:27:49] INFO root fetch - processPackages [altimate-datapilot-cli]: executing diffoscope
+[2024-04-21 20:27:49] INFO root fetch - processPackages [altimate-datapilot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altimate-datapilot-cli-0.0.8.tar.gz tmp/altimate-datapilot-cli-0.0.9.tar.gz --markdown 20240421/a/altimate-datapilot-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 20:27:50] INFO root fetch - processPackages [student-vote-electionn]: Remove: archive file [/home/abi/fetcher/tmp/student_vote_electionn-0.0.1.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - processPackages [student-vote-electionn]: Remove: archive file [/home/abi/fetcher/tmp/student_vote_electionn-0.0.2.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - main [MainThread]: End processing [student-vote-electionn]: success
+[2024-04-21 20:27:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.3.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.4.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-cloudfront-origin-bucket]: success
+[2024-04-21 20:27:50] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.5.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.6.tar.gz]
+[2024-04-21 20:27:50] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
+[2024-04-21 20:27:51] INFO root fetch - processPackages [altimate-datapilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/altimate-datapilot-cli-0.0.8.tar.gz]
+[2024-04-21 20:27:51] INFO root fetch - processPackages [altimate-datapilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/altimate-datapilot-cli-0.0.9.tar.gz]
+[2024-04-21 20:27:51] INFO root fetch - main [MainThread]: End processing [altimate-datapilot-cli]: success
+[2024-04-21 20:27:51] INFO root fetch - main [MainThread]: Store serial: [22867383]
