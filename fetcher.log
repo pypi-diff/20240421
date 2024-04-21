@@ -9926,3 +9926,16 @@
 [2024-04-21 14:36:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.2.tar.gz]
 [2024-04-21 14:36:49] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
 [2024-04-21 14:36:49] INFO root fetch - main [MainThread]: Store serial: [22864525]
+[2024-04-21 14:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864525]
+[2024-04-21 14:38:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-21 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grooveshop-django-api
+[2024-04-21 14:38:57] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-21 14:38:57] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-21 14:38:58] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-21 14:38:58] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-21 14:38:58] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-21 14:38:58] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-21 14:38:58] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-21 14:38:58] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-21 14:38:58] INFO root fetch - main [MainThread]: Store serial: [22864530]
