@@ -6181,3 +6181,18 @@
 [2024-04-21 09:44:27] INFO root fetch - processPackages [drf-easily-auth]: Remove: archive file [/home/abi/fetcher/tmp/drf_easily_auth-0.1.6.tar.gz]
 [2024-04-21 09:44:27] INFO root fetch - main [MainThread]: End processing [drf-easily-auth]: success
 [2024-04-21 09:44:27] INFO root fetch - main [MainThread]: Store serial: [22862877]
+[2024-04-21 09:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862877]
+[2024-04-21 09:46:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 09:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC410
+[2024-04-21 09:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shelltool
+[2024-04-21 09:46:35] INFO root fetch - processPackages [shelltool]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 09:46:35] WARNING root fetch - processPackages [PythonTestLJC410]: Skipping, unable to determine old version
+[2024-04-21 09:46:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC410] error
+[2024-04-21 09:46:35] INFO root fetch - processPackages [shelltool]: Downloading https://files.pythonhosted.org/packages/3f/1b/fb794669b79d4115e2229efa201fd606dbefb1c3ca528b7f5a215a93cf45/shelltool-0.1.0.tar.gz
+[2024-04-21 09:46:35] INFO root fetch - processPackages [shelltool]: Downloading https://files.pythonhosted.org/packages/21/a2/ec6e689907e4d3b29f61a5add467563898d1c4929c2553826bd41b2254df/shelltool-0.1.1.tar.gz
+[2024-04-21 09:46:35] INFO root fetch - processPackages [shelltool]: executing diffoscope
+[2024-04-21 09:46:35] INFO root fetch - processPackages [shelltool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelltool-0.1.0.tar.gz tmp/shelltool-0.1.1.tar.gz --markdown 20240421/s/shelltool/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 09:46:36] INFO root fetch - processPackages [shelltool]: Remove: archive file [/home/abi/fetcher/tmp/shelltool-0.1.0.tar.gz]
+[2024-04-21 09:46:36] INFO root fetch - processPackages [shelltool]: Remove: archive file [/home/abi/fetcher/tmp/shelltool-0.1.1.tar.gz]
+[2024-04-21 09:46:36] INFO root fetch - main [MainThread]: End processing [shelltool]: success
+[2024-04-21 09:46:36] INFO root fetch - main [MainThread]: Store serial: [22862885]
