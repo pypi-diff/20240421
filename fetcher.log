@@ -4247,3 +4247,24 @@
 [2024-04-21 06:45:21] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
 [2024-04-21 06:45:21] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2024-04-21 06:45:21] INFO root fetch - main [MainThread]: Store serial: [22861981]
+[2024-04-21 06:47:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861981]
+[2024-04-21 06:47:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 06:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC367
+[2024-04-21 06:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terncy
+[2024-04-21 06:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: replace-pip-with-uv-pip
+[2024-04-21 06:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bedrock-bot
+[2024-04-21 06:47:29] WARNING root fetch - processPackages [PythonTestLJC367]: Skipping, unable to determine old version
+[2024-04-21 06:47:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC367] error
+[2024-04-21 06:47:29] WARNING root fetch - processPackages [bedrock-bot]: Skipping, unable to determine old version
+[2024-04-21 06:47:29] INFO root fetch - main [MainThread]: End processing [bedrock-bot] error
+[2024-04-21 06:47:29] WARNING root fetch - processPackages [replace-pip-with-uv-pip]: Skipping, unable to determine old version
+[2024-04-21 06:47:29] INFO root fetch - main [MainThread]: End processing [replace-pip-with-uv-pip] error
+[2024-04-21 06:47:29] INFO root fetch - processPackages [terncy]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-21 06:47:29] INFO root fetch - processPackages [terncy]: Downloading https://files.pythonhosted.org/packages/c9/52/677d672521cad2bf2c8219491e7c91d8c96d5ff887be6a968eae0f9969f2/terncy-0.3.9.tar.gz
+[2024-04-21 06:47:30] INFO root fetch - processPackages [terncy]: Downloading https://files.pythonhosted.org/packages/bc/98/39846ec1241ce952d7fc7a9b39ee87c438a4975d40b209feda00cc5238f6/terncy-0.4.0.tar.gz
+[2024-04-21 06:47:30] INFO root fetch - processPackages [terncy]: executing diffoscope
+[2024-04-21 06:47:30] INFO root fetch - processPackages [terncy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terncy-0.3.9.tar.gz tmp/terncy-0.4.0.tar.gz --markdown 20240421/t/terncy/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-21 06:47:30] INFO root fetch - processPackages [terncy]: Remove: archive file [/home/abi/fetcher/tmp/terncy-0.3.9.tar.gz]
+[2024-04-21 06:47:30] INFO root fetch - processPackages [terncy]: Remove: archive file [/home/abi/fetcher/tmp/terncy-0.4.0.tar.gz]
+[2024-04-21 06:47:30] INFO root fetch - main [MainThread]: End processing [terncy]: success
+[2024-04-21 06:47:30] INFO root fetch - main [MainThread]: Store serial: [22861997]
