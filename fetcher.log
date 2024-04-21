@@ -9370,3 +9370,47 @@
 [2024-04-21 14:01:57] INFO root fetch - processPackages [cityscapesScripts]: Remove: archive file [/home/abi/fetcher/tmp/cityscapesscripts-2.2.3.tar.gz]
 [2024-04-21 14:01:57] INFO root fetch - main [MainThread]: End processing [cityscapesScripts]: success
 [2024-04-21 14:01:57] INFO root fetch - main [MainThread]: Store serial: [22864182]
+[2024-04-21 14:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864182]
+[2024-04-21 14:04:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmuxp
+[2024-04-21 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rp
+[2024-04-21 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: throttle-client
+[2024-04-21 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stonefish-license-manager
+[2024-04-21 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GirardProxy
+[2024-04-21 14:04:06] INFO root fetch - processPackages [GirardProxy]: New version: [0.9.41] Old Version: [0.9.4]
+[2024-04-21 14:04:06] INFO root fetch - processPackages [throttle-client]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 14:04:06] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-21 14:04:06] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/60/d5/1cfe36de181c1b47b0a595f2701318e1d401e1f76454d9e7b4378a7cd2e4/girardproxy-0.9.4.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [stonefish-license-manager]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-21 14:04:06] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/9d/5a/bf159da346a848cada34b5c146174df7b8a33a411c998ccfbac55b85fceb/throttle_client-0.5.0.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [tmuxp]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-04-21 14:04:06] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-21 14:04:06] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-21 14:04:06] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/35/d3/b8fe5cb0bc52abf33f8d5846a48bbca0ea35a3e1a3ebff99a8cb3dc1692b/tmuxp-1.9.3.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [stonefish-license-manager]: Downloading https://files.pythonhosted.org/packages/f0/ad/d3b5caaabd5ba7980f74302ca088a8e3bd1014597f27058b0440408ca15f/stonefish_license_manager-0.4.5-py3-none-any.whl
+[2024-04-21 14:04:06] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/10/af/8eac24895138177a148df0cf0a656598ff529b29aa4aa01d6aa32c199072/girardproxy-0.9.41.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/e9/26/1886b4891f9e4b26b79368dd550eff7027df656beadca3a71fc7c3c56d7d/throttle_client-0.5.1.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [GirardProxy]: executing diffoscope
+[2024-04-21 14:04:06] INFO root fetch - processPackages [GirardProxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girardproxy-0.9.4.tar.gz tmp/girardproxy-0.9.41.tar.gz --markdown 20240421/G/GirardProxy/0.9.4-0.9.41/README.md --exclude *.pyd
+[2024-04-21 14:04:06] INFO root fetch - processPackages [throttle-client]: executing diffoscope
+[2024-04-21 14:04:06] INFO root fetch - processPackages [throttle-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/throttle_client-0.5.0.tar.gz tmp/throttle_client-0.5.1.tar.gz --markdown 20240421/t/throttle-client/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 14:04:06] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/7a/ae/56b8199f9768f276e8c08f1ac45f7a1125582700d3cf66210c6dc09c4412/tmuxp-1.9.4.tar.gz
+[2024-04-21 14:04:06] INFO root fetch - processPackages [stonefish-license-manager]: Downloading https://files.pythonhosted.org/packages/52/60/120a8b9413c34abb8beb2874a6015624a5ca8ff2fb1d01ba40834d1bc780/stonefish_license_manager-0.4.6-py3-none-any.whl
+[2024-04-21 14:04:06] INFO root fetch - processPackages [stonefish-license-manager]: executing diffoscope
+[2024-04-21 14:04:06] INFO root fetch - processPackages [stonefish-license-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stonefish_license_manager-0.4.5-py3-none-any.whl.zip tmp/stonefish_license_manager-0.4.6-py3-none-any.whl.zip --markdown 20240421/s/stonefish-license-manager/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-04-21 14:04:07] INFO root fetch - processPackages [tmuxp]: executing diffoscope
+[2024-04-21 14:04:07] INFO root fetch - processPackages [tmuxp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmuxp-1.9.3.tar.gz tmp/tmuxp-1.9.4.tar.gz --markdown 20240421/t/tmuxp/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-04-21 14:04:07] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.4.tar.gz]
+[2024-04-21 14:04:07] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.41.tar.gz]
+[2024-04-21 14:04:07] INFO root fetch - main [MainThread]: End processing [GirardProxy]: success
+[2024-04-21 14:04:07] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.5.0.tar.gz]
+[2024-04-21 14:04:07] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.5.1.tar.gz]
+[2024-04-21 14:04:07] INFO root fetch - main [MainThread]: End processing [throttle-client]: success
+[2024-04-21 14:04:07] INFO root fetch - processPackages [stonefish-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/stonefish_license_manager-0.4.5-py3-none-any.whl.zip]
+[2024-04-21 14:04:07] INFO root fetch - processPackages [stonefish-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/stonefish_license_manager-0.4.6-py3-none-any.whl.zip]
+[2024-04-21 14:04:07] INFO root fetch - main [MainThread]: End processing [stonefish-license-manager]: success
+[2024-04-21 14:04:08] INFO root fetch - processPackages [tmuxp]: Remove: archive file [/home/abi/fetcher/tmp/tmuxp-1.9.3.tar.gz]
+[2024-04-21 14:04:08] INFO root fetch - processPackages [tmuxp]: Remove: archive file [/home/abi/fetcher/tmp/tmuxp-1.9.4.tar.gz]
+[2024-04-21 14:04:08] INFO root fetch - main [MainThread]: End processing [tmuxp]: success
+[2024-04-21 14:04:08] INFO root fetch - main [MainThread]: Store serial: [22864195]
