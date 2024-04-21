@@ -4917,3 +4917,45 @@
 [2024-04-21 08:01:31] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.1.tar.gz]
 [2024-04-21 08:01:31] INFO root fetch - main [MainThread]: End processing [phono3py]: success
 [2024-04-21 08:01:31] INFO root fetch - main [MainThread]: Store serial: [22862296]
+[2024-04-21 08:03:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862296]
+[2024-04-21 08:03:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panpdf
+[2024-04-21 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octodb
+[2024-04-21 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-crypto-dot-com-sdk
+[2024-04-21 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vcorelib
+[2024-04-21 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rnaseqc
+[2024-04-21 08:03:40] INFO root fetch - processPackages [panpdf]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-21 08:03:40] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/2c/b7/7a9139b93a08a8eea3b82116a6e8b28acc4810b45c2c84fd1845b5ab176a/panpdf-0.2.1.tar.gz
+[2024-04-21 08:03:40] INFO root fetch - processPackages [octodb]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-04-21 08:03:40] WARNING root fetch - processPackages [python-crypto-dot-com-sdk]: Skipping, unable to determine old version
+[2024-04-21 08:03:40] INFO root fetch - processPackages [rnaseqc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 08:03:40] INFO root fetch - main [MainThread]: End processing [python-crypto-dot-com-sdk] error
+[2024-04-21 08:03:40] INFO root fetch - processPackages [vcorelib]: New version: [3.2.4] Old Version: [3.2.3]
+[2024-04-21 08:03:40] INFO root fetch - processPackages [octodb]: Downloading https://files.pythonhosted.org/packages/c6/3e/7994e3b165fec3231c14c401ea9efed01b33cf9b1a82f437154caa0ecf16/octodb-0.4.9.tar.gz
+[2024-04-21 08:03:40] INFO root fetch - processPackages [rnaseqc]: Downloading https://files.pythonhosted.org/packages/f3/89/b939b756031a14db23314ea800ff15605fa82e2ccf2ea8740d95afdbf1ec/rnaseqc-0.0.2.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/dd/df/969bd1dda42a876f41375f65c57438da5db959b90094cb7939ec471a0134/vcorelib-3.2.3.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/22/f8/bef6d8ef78f65443a1f1d10fbf991d3e310fecc311a40c1dc28e33cf37d1/panpdf-0.2.2.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [panpdf]: executing diffoscope
+[2024-04-21 08:03:41] INFO root fetch - processPackages [panpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpdf-0.2.1.tar.gz tmp/panpdf-0.2.2.tar.gz --markdown 20240421/p/panpdf/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-21 08:03:41] INFO root fetch - processPackages [octodb]: Downloading https://files.pythonhosted.org/packages/3b/9a/f2b5446e62d14f31e81ee7fe55283575c3c0d75c874ffacfced79475de6e/octodb-0.5.0.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/51/87/8f5b95f289f662e4b839da704df99c88a579c439763ae5ac01ce5b51a260/vcorelib-3.2.4.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [octodb]: executing diffoscope
+[2024-04-21 08:03:41] INFO root fetch - processPackages [octodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octodb-0.4.9.tar.gz tmp/octodb-0.5.0.tar.gz --markdown 20240421/o/octodb/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-04-21 08:03:41] INFO root fetch - processPackages [rnaseqc]: Downloading https://files.pythonhosted.org/packages/b2/4b/d2414d1a699d726c8d8e9e573e42b53ae583401a23a67f9214b247dd59da/rnaseqc-0.0.3.tar.gz
+[2024-04-21 08:03:41] INFO root fetch - processPackages [vcorelib]: executing diffoscope
+[2024-04-21 08:03:41] INFO root fetch - processPackages [vcorelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcorelib-3.2.3.tar.gz tmp/vcorelib-3.2.4.tar.gz --markdown 20240421/v/vcorelib/3.2.3-3.2.4/README.md --exclude *.pyd
+[2024-04-21 08:03:41] INFO root fetch - processPackages [rnaseqc]: executing diffoscope
+[2024-04-21 08:03:41] INFO root fetch - processPackages [rnaseqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnaseqc-0.0.2.tar.gz tmp/rnaseqc-0.0.3.tar.gz --markdown 20240421/r/rnaseqc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 08:03:42] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.1.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.2.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - main [MainThread]: End processing [panpdf]: success
+[2024-04-21 08:03:42] INFO root fetch - processPackages [octodb]: Remove: archive file [/home/abi/fetcher/tmp/octodb-0.4.9.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - processPackages [octodb]: Remove: archive file [/home/abi/fetcher/tmp/octodb-0.5.0.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - main [MainThread]: End processing [octodb]: success
+[2024-04-21 08:03:42] INFO root fetch - processPackages [rnaseqc]: Remove: archive file [/home/abi/fetcher/tmp/rnaseqc-0.0.2.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - processPackages [rnaseqc]: Remove: archive file [/home/abi/fetcher/tmp/rnaseqc-0.0.3.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - main [MainThread]: End processing [rnaseqc]: success
+[2024-04-21 08:03:42] INFO root fetch - processPackages [vcorelib]: Remove: archive file [/home/abi/fetcher/tmp/vcorelib-3.2.3.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - processPackages [vcorelib]: Remove: archive file [/home/abi/fetcher/tmp/vcorelib-3.2.4.tar.gz]
+[2024-04-21 08:03:42] INFO root fetch - main [MainThread]: End processing [vcorelib]: success
+[2024-04-21 08:03:42] INFO root fetch - main [MainThread]: Store serial: [22862313]
