@@ -2912,3 +2912,24 @@
 [2024-04-21 04:28:47] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc6.tar.gz]
 [2024-04-21 04:28:47] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-21 04:28:47] INFO root fetch - main [MainThread]: Store serial: [22861376]
+[2024-04-21 04:30:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861376]
+[2024-04-21 04:30:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PerplexiPy
+[2024-04-21 04:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wall-e-models
+[2024-04-21 04:30:57] INFO root fetch - processPackages [wall-e-models]: New version: [0.9] Old Version: [0.8]
+[2024-04-21 04:30:57] INFO root fetch - processPackages [PerplexiPy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 04:30:57] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/ec/3f/e3f909f8320005c37a54eeafd49c97e3103f5dcd331c3df629bcc751debe/PerplexiPy-1.0.1-py3-none-any.whl
+[2024-04-21 04:30:57] INFO root fetch - processPackages [wall-e-models]: Downloading https://files.pythonhosted.org/packages/ef/85/0f246583897a99e93f456be91c7994881839fe03b1f66852ad5fae684bf0/wall_e_models-0.8.tar.gz
+[2024-04-21 04:30:57] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/07/1b/fa55a2223a34d014a9d56a692d2fe71a096a326311c999eacbf6429fd9b7/PerplexiPy-1.0.2-py3-none-any.whl
+[2024-04-21 04:30:57] INFO root fetch - processPackages [PerplexiPy]: executing diffoscope
+[2024-04-21 04:30:57] INFO root fetch - processPackages [PerplexiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PerplexiPy-1.0.1-py3-none-any.whl.zip tmp/PerplexiPy-1.0.2-py3-none-any.whl.zip --markdown 20240421/P/PerplexiPy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 04:30:57] INFO root fetch - processPackages [wall-e-models]: Downloading https://files.pythonhosted.org/packages/54/64/f36e97012db2422760ff50e82f6e8a65fe71df501fad5d607600321ed5d9/wall_e_models-0.9.tar.gz
+[2024-04-21 04:30:58] INFO root fetch - processPackages [wall-e-models]: executing diffoscope
+[2024-04-21 04:30:58] INFO root fetch - processPackages [wall-e-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wall_e_models-0.8.tar.gz tmp/wall_e_models-0.9.tar.gz --markdown 20240421/w/wall-e-models/0.8-0.9/README.md --exclude *.pyd
+[2024-04-21 04:30:58] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.1-py3-none-any.whl.zip]
+[2024-04-21 04:30:58] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.2-py3-none-any.whl.zip]
+[2024-04-21 04:30:58] INFO root fetch - main [MainThread]: End processing [PerplexiPy]: success
+[2024-04-21 04:30:58] INFO root fetch - processPackages [wall-e-models]: Remove: archive file [/home/abi/fetcher/tmp/wall_e_models-0.8.tar.gz]
+[2024-04-21 04:30:58] INFO root fetch - processPackages [wall-e-models]: Remove: archive file [/home/abi/fetcher/tmp/wall_e_models-0.9.tar.gz]
+[2024-04-21 04:30:58] INFO root fetch - main [MainThread]: End processing [wall-e-models]: success
+[2024-04-21 04:30:58] INFO root fetch - main [MainThread]: Store serial: [22861380]
