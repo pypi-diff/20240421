@@ -1043,3 +1043,31 @@
 [2024-04-21 01:58:16] INFO root fetch - processPackages [RMCgp]: Remove: archive file [/home/abi/fetcher/tmp/RMCgp-0.0.22.tar.gz]
 [2024-04-21 01:58:16] INFO root fetch - main [MainThread]: End processing [RMCgp]: success
 [2024-04-21 01:58:16] INFO root fetch - main [MainThread]: Store serial: [22860362]
+[2024-04-21 02:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860362]
+[2024-04-21 02:00:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mytestpkgfranktcao
+[2024-04-21 02:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mytestpkgfranktcao
+[2024-04-21 02:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invariant-client
+[2024-04-21 02:00:25] INFO root fetch - processPackages [invariant-client]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/71/32/8cf025ffef69e43d3a1ed854ebdf9d351208912284b1fdaa54d5f197a7da/mytestpkgfranktcao-0.1.0.tar.gz
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/71/32/8cf025ffef69e43d3a1ed854ebdf9d351208912284b1fdaa54d5f197a7da/mytestpkgfranktcao-0.1.0.tar.gz
+[2024-04-21 02:00:25] INFO root fetch - processPackages [invariant-client]: Downloading https://files.pythonhosted.org/packages/65/76/63dd7fcb87f34bef966da5c00138dbb823b4b104c9ba29db62ef587c3473/invariant_client-1.1.1.tar.gz
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/9d/a2/7a1f542fbdc834af779e919cfb49544981b05f6e3b1e649de220c3d95c43/mytestpkgfranktcao-0.1.1.tar.gz
+[2024-04-21 02:00:25] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/9d/a2/7a1f542fbdc834af779e919cfb49544981b05f6e3b1e649de220c3d95c43/mytestpkgfranktcao-0.1.1.tar.gz
+[2024-04-21 02:00:25] INFO root fetch - processPackages [invariant-client]: Downloading https://files.pythonhosted.org/packages/a2/90/f0c1ac1882ae7522f2222a25d52d6e8bf0cb736a12826fd60a02338f4953/invariant_client-1.1.2.tar.gz
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: executing diffoscope
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytestpkgfranktcao-0.1.0.tar.gz tmp/mytestpkgfranktcao-0.1.1.tar.gz --markdown 20240421/m/mytestpkgfranktcao/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: executing diffoscope
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytestpkgfranktcao-0.1.0.tar.gz tmp/mytestpkgfranktcao-0.1.1.tar.gz --markdown 20240421/m/mytestpkgfranktcao/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 02:00:26] INFO root fetch - processPackages [invariant-client]: executing diffoscope
+[2024-04-21 02:00:26] INFO root fetch - processPackages [invariant-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invariant_client-1.1.1.tar.gz tmp/invariant_client-1.1.2.tar.gz --markdown 20240421/i/invariant-client/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.0.tar.gz]
+[2024-04-21 02:00:26] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.1.tar.gz]
+[2024-04-21 02:00:26] INFO root fetch - main [MainThread]: End processing [mytestpkgfranktcao]: success
+[2024-04-21 02:00:26] INFO root fetch - main [MainThread]: End processing [mytestpkgfranktcao]: success
+[2024-04-21 02:00:26] INFO root fetch - processPackages [invariant-client]: Remove: archive file [/home/abi/fetcher/tmp/invariant_client-1.1.1.tar.gz]
+[2024-04-21 02:00:26] INFO root fetch - processPackages [invariant-client]: Remove: archive file [/home/abi/fetcher/tmp/invariant_client-1.1.2.tar.gz]
+[2024-04-21 02:00:26] INFO root fetch - main [MainThread]: End processing [invariant-client]: success
+[2024-04-21 02:00:26] INFO root fetch - main [MainThread]: Store serial: [22860373]
