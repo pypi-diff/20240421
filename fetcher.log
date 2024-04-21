@@ -15221,3 +15221,30 @@
 [2024-04-21 19:50:53] INFO root fetch - processPackages [PyMieSim]: Remove: archive file [/home/abi/fetcher/tmp/PyMieSim-1.8.3-cp312-cp312-win_amd64.whl.zip]
 [2024-04-21 19:50:53] INFO root fetch - main [MainThread]: End processing [PyMieSim]: success
 [2024-04-21 19:50:53] INFO root fetch - main [MainThread]: Store serial: [22867106]
+[2024-04-21 19:52:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867106]
+[2024-04-21 19:53:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 19:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainhashing
+[2024-04-21 19:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: map-with-stats
+[2024-04-21 19:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-sanyao
+[2024-04-21 19:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fuconv
+[2024-04-21 19:53:02] INFO root fetch - processPackages [nonebot-plugin-sanyao]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-21 19:53:02] WARNING root fetch - processPackages [fuconv]: Skipping, unable to determine old version
+[2024-04-21 19:53:02] INFO root fetch - main [MainThread]: End processing [fuconv] error
+[2024-04-21 19:53:02] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/55/57/726ee2ccede465f8cc6c44871f804ddd89fcab2ef23e221c348c00771255/nonebot_plugin_sanyao-0.1.9.tar.gz
+[2024-04-21 19:53:02] WARNING root fetch - processPackages [chainhashing]: Skipping, unable to determine old version
+[2024-04-21 19:53:02] INFO root fetch - main [MainThread]: End processing [chainhashing] error
+[2024-04-21 19:53:02] INFO root fetch - processPackages [map-with-stats]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-21 19:53:02] INFO root fetch - processPackages [map-with-stats]: Downloading https://files.pythonhosted.org/packages/64/51/d984a2987d15ca1a653a60325e6f95ce9b054f40946a6383f55948fc1aaf/map_with_stats-0.1.2.tar.gz
+[2024-04-21 19:53:02] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/69/89/0daff58ad801312ad1b1ea673be3ad087f5a9e2094d529d35ce3f935152a/nonebot_plugin_sanyao-0.2.0.tar.gz
+[2024-04-21 19:53:03] INFO root fetch - processPackages [nonebot-plugin-sanyao]: executing diffoscope
+[2024-04-21 19:53:03] INFO root fetch - processPackages [nonebot-plugin-sanyao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sanyao-0.1.9.tar.gz tmp/nonebot_plugin_sanyao-0.2.0.tar.gz --markdown 20240421/n/nonebot-plugin-sanyao/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-21 19:53:03] INFO root fetch - processPackages [map-with-stats]: Downloading https://files.pythonhosted.org/packages/00/cc/71ff130f5155419592322a2a085ba35217050581fd0ada36a903e0b418cb/map_with_stats-0.2.0.tar.gz
+[2024-04-21 19:53:03] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.1.9.tar.gz]
+[2024-04-21 19:53:03] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.2.0.tar.gz]
+[2024-04-21 19:53:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao]: success
+[2024-04-21 19:53:03] INFO root fetch - processPackages [map-with-stats]: executing diffoscope
+[2024-04-21 19:53:03] INFO root fetch - processPackages [map-with-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/map_with_stats-0.1.2.tar.gz tmp/map_with_stats-0.2.0.tar.gz --markdown 20240421/m/map-with-stats/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-21 19:53:04] INFO root fetch - processPackages [map-with-stats]: Remove: archive file [/home/abi/fetcher/tmp/map_with_stats-0.1.2.tar.gz]
+[2024-04-21 19:53:04] INFO root fetch - processPackages [map-with-stats]: Remove: archive file [/home/abi/fetcher/tmp/map_with_stats-0.2.0.tar.gz]
+[2024-04-21 19:53:04] INFO root fetch - main [MainThread]: End processing [map-with-stats]: success
+[2024-04-21 19:53:04] INFO root fetch - main [MainThread]: Store serial: [22867123]
