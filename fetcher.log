@@ -10480,3 +10480,70 @@
 [2024-04-21 15:20:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.8.tar.gz]
 [2024-04-21 15:20:29] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
 [2024-04-21 15:20:29] INFO root fetch - main [MainThread]: Store serial: [22864873]
+[2024-04-21 15:22:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864873]
+[2024-04-21 15:22:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprit
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-testing
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecs_composex_msk_cluster
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libpss
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyPtt
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cycling-nestedls
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: data-transformation-yfhsi
+[2024-04-21 15:22:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: caliber
+[2024-04-21 15:22:37] INFO root fetch - processPackages [sprit]: New version: [0.1.9] Old Version: [0.1.75.dev0]
+[2024-04-21 15:22:37] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-21 15:22:37] INFO root fetch - processPackages [PyPtt]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-21 15:22:37] INFO root fetch - processPackages [libpss]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:22:37] INFO root fetch - processPackages [mo-testing]: New version: [8.590.24111] Old Version: [8.589.24111]
+[2024-04-21 15:22:38] INFO root fetch - processPackages [ecs_composex_msk_cluster]: New version: [1.0.0] Old Version: [0.3.3]
+[2024-04-21 15:22:38] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/71/03/88c3735747a54857443d0a9d39c7bf57fedca41e61a11299a1b326e4ba5c/mo_testing-8.589.24111.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [cycling-nestedls]: New version: [1.2.0] Old Version: [1.0.2]
+[2024-04-21 15:22:38] INFO root fetch - processPackages [caliber]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:22:38] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/2f/28/062c6deecde1b48eb7a8a7f0575dd97614781e169a90f73ed4fbd61c5cc5/PyPtt-1.2.5.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/c3/25024206e3d32063c6db11c299263371aeca50fe56e8095220fedb9d91a0/libpss-0.1.8.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [sprit]: Downloading https://files.pythonhosted.org/packages/57/27/d5f331dcc12ab00c0c0fff3a39c09876100c92608046ffcce4f16865408f/sprit-0.1.75.dev0.tar.gz
+[2024-04-21 15:22:38] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12679379>=10485760
+[2024-04-21 15:22:38] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 15:22:38] WARNING root fetch - processPackages [sprit]: Skipping package: exceeds size limit 13887598>=10485760
+[2024-04-21 15:22:38] INFO root fetch - main [MainThread]: End processing [sprit] error
+[2024-04-21 15:22:38] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/e9/7a/0db0b9c9e14eb4cfd31511ed21dfe3b5b76cd8607afa03b3761b071d66e8/cycling_nestedls-1.0.2.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [caliber]: Downloading https://files.pythonhosted.org/packages/36/ad/7d8521257a5b99c97acf9fb1128749820a9615ad342ba2c433351ed26463/caliber-0.1.8.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Downloading https://files.pythonhosted.org/packages/31/52/49268286192d8593fd7f4fb0991f17d36cf26edaaabc84165d4389770316/ecs_composex_msk_cluster-0.3.3.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/0b/03/904bd48905abf621df151621b2357e91520d3b05cffd2771ac0093ef4cb2/pyptt-1.2.6.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/26/25/958a925285cf3034f052ffe4ae10ea737a84faeeca8d56a88efd7987b477/mo_testing-8.590.24111.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [PyPtt]: executing diffoscope
+[2024-04-21 15:22:38] INFO root fetch - processPackages [PyPtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPtt-1.2.5.tar.gz tmp/pyptt-1.2.6.tar.gz --markdown 20240421/P/PyPtt/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-21 15:22:38] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 15:22:38] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-21 15:22:38] INFO root fetch - processPackages [mo-testing]: executing diffoscope
+[2024-04-21 15:22:38] INFO root fetch - processPackages [mo-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_testing-8.589.24111.tar.gz tmp/mo_testing-8.590.24111.tar.gz --markdown 20240421/m/mo-testing/8.589.24111-8.590.24111/README.md --exclude *.pyd
+[2024-04-21 15:22:38] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Downloading https://files.pythonhosted.org/packages/d1/fa/06ad24ef73cada2432f7bf205404385d0998c11bc72ae7f7dd0263835d56/ecs_composex_msk_cluster-1.0.0.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/99/69/8584070786b59ca258ad7f439682a7a062cb0fafd8046c35f42cc74ebdd4/cycling_nestedls-1.2.0.tar.gz
+[2024-04-21 15:22:38] INFO root fetch - processPackages [ecs_composex_msk_cluster]: executing diffoscope
+[2024-04-21 15:22:38] INFO root fetch - processPackages [ecs_composex_msk_cluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_composex_msk_cluster-0.3.3.tar.gz tmp/ecs_composex_msk_cluster-1.0.0.tar.gz --markdown 20240421/e/ecs_composex_msk_cluster/0.3.3-1.0.0/README.md --exclude *.pyd
+[2024-04-21 15:22:38] INFO root fetch - processPackages [cycling-nestedls]: executing diffoscope
+[2024-04-21 15:22:38] INFO root fetch - processPackages [cycling-nestedls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_nestedls-1.0.2.tar.gz tmp/cycling_nestedls-1.2.0.tar.gz --markdown 20240421/c/cycling-nestedls/1.0.2-1.2.0/README.md --exclude *.pyd
+[2024-04-21 15:22:38] INFO root fetch - processPackages [caliber]: Downloading https://files.pythonhosted.org/packages/de/09/e790860a3d6622784ee44ce40dd0be2a21770be22f5f2966ad115b3c8ece/caliber-0.1.9.tar.gz
+[2024-04-21 15:22:39] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.589.24111.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.590.24111.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
+[2024-04-21 15:22:39] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 15:22:39] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/PyPtt-1.2.5.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/pyptt-1.2.6.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - main [MainThread]: End processing [PyPtt]: success
+[2024-04-21 15:22:39] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Remove: archive file [/home/abi/fetcher/tmp/ecs_composex_msk_cluster-0.3.3.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - processPackages [ecs_composex_msk_cluster]: Remove: archive file [/home/abi/fetcher/tmp/ecs_composex_msk_cluster-1.0.0.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - main [MainThread]: End processing [ecs_composex_msk_cluster]: success
+[2024-04-21 15:22:39] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.0.2.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.0.tar.gz]
+[2024-04-21 15:22:39] INFO root fetch - main [MainThread]: End processing [cycling-nestedls]: success
+[2024-04-21 15:22:39] INFO root fetch - processPackages [caliber]: executing diffoscope
+[2024-04-21 15:22:39] INFO root fetch - processPackages [caliber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caliber-0.1.8.tar.gz tmp/caliber-0.1.9.tar.gz --markdown 20240421/c/caliber/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:22:40] INFO root fetch - processPackages [caliber]: Remove: archive file [/home/abi/fetcher/tmp/caliber-0.1.8.tar.gz]
+[2024-04-21 15:22:40] INFO root fetch - processPackages [caliber]: Remove: archive file [/home/abi/fetcher/tmp/caliber-0.1.9.tar.gz]
+[2024-04-21 15:22:40] INFO root fetch - main [MainThread]: End processing [caliber]: success
+[2024-04-21 15:22:40] INFO root fetch - main [MainThread]: Store serial: [22864897]
