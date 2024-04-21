@@ -2966,3 +2966,21 @@
 [2024-04-21 04:33:11] INFO root fetch - processPackages [django_herobiz_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_ds-2.1.0.tar.gz]
 [2024-04-21 04:33:11] INFO root fetch - main [MainThread]: End processing [django_herobiz_ds]: success
 [2024-04-21 04:33:11] INFO root fetch - main [MainThread]: Store serial: [22861394]
+[2024-04-21 04:35:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861394]
+[2024-04-21 04:35:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 04:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sed-scores-eval
+[2024-04-21 04:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: misophonia-data-analysis
+[2024-04-21 04:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC337
+[2024-04-21 04:35:20] WARNING root fetch - processPackages [misophonia-data-analysis]: Skipping, unable to determine old version
+[2024-04-21 04:35:20] INFO root fetch - main [MainThread]: End processing [misophonia-data-analysis] error
+[2024-04-21 04:35:20] WARNING root fetch - processPackages [PythonTestLJC337]: Skipping, unable to determine old version
+[2024-04-21 04:35:20] INFO root fetch - processPackages [sed-scores-eval]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 04:35:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC337] error
+[2024-04-21 04:35:20] INFO root fetch - processPackages [sed-scores-eval]: Downloading https://files.pythonhosted.org/packages/86/cf/92a85b6732f78a7104d1d37927d9b8d710554cda230704b1516474a0b694/sed_scores_eval-0.0.2.tar.gz
+[2024-04-21 04:35:20] INFO root fetch - processPackages [sed-scores-eval]: Downloading https://files.pythonhosted.org/packages/e4/bb/f29b94c8f0f0a1c15cca426865e3e13fea54ac0d6747fb58f8c0dca9a6b0/sed_scores_eval-0.0.3.tar.gz
+[2024-04-21 04:35:20] INFO root fetch - processPackages [sed-scores-eval]: executing diffoscope
+[2024-04-21 04:35:20] INFO root fetch - processPackages [sed-scores-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sed_scores_eval-0.0.2.tar.gz tmp/sed_scores_eval-0.0.3.tar.gz --markdown 20240421/s/sed-scores-eval/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 04:35:22] INFO root fetch - processPackages [sed-scores-eval]: Remove: archive file [/home/abi/fetcher/tmp/sed_scores_eval-0.0.2.tar.gz]
+[2024-04-21 04:35:22] INFO root fetch - processPackages [sed-scores-eval]: Remove: archive file [/home/abi/fetcher/tmp/sed_scores_eval-0.0.3.tar.gz]
+[2024-04-21 04:35:22] INFO root fetch - main [MainThread]: End processing [sed-scores-eval]: success
+[2024-04-21 04:35:22] INFO root fetch - main [MainThread]: Store serial: [22861406]
