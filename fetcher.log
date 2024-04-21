@@ -3874,3 +3874,35 @@
 [2024-04-21 05:55:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-21 05:55:35] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-21 05:55:35] INFO root fetch - main [MainThread]: Store serial: [22861815]
+[2024-04-21 05:57:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861815]
+[2024-04-21 05:57:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 05:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861815]
+[2024-04-21 05:59:49] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 06:01:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861815]
+[2024-04-21 06:01:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ahk
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cerbogen
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: New version: [0.0.44] Old Version: [0.0.43]
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: New version: [0.0.44] Old Version: [0.0.43]
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/2b/d9/9387652500718d99e15474845532e3881564d3f569b0e1286319c5601925/cerbogen-0.0.43.tar.gz
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/2b/d9/9387652500718d99e15474845532e3881564d3f569b0e1286319c5601925/cerbogen-0.0.43.tar.gz
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ahk]: New version: [1.7.0] Old Version: [1.6.3]
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ahk]: Downloading https://files.pythonhosted.org/packages/b9/bd/907e7d2f413ec2342c0177dc64396721c675489179dae6bd94b94e9e04e0/ahk-1.6.3.tar.gz
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/a0/6a/0b02980aadfa935475040511bd5172e96f6b532ea2f661324ba5604f1442/cerbogen-0.0.44.tar.gz
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/a0/6a/0b02980aadfa935475040511bd5172e96f6b532ea2f661324ba5604f1442/cerbogen-0.0.44.tar.gz
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.43.tar.gz tmp/cerbogen-0.0.44.tar.gz --markdown 20240421/c/cerbogen/0.0.43-0.0.44/README.md --exclude *.pyd
+[2024-04-21 06:01:55] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.43.tar.gz tmp/cerbogen-0.0.44.tar.gz --markdown 20240421/c/cerbogen/0.0.43-0.0.44/README.md --exclude *.pyd
+[2024-04-21 06:01:55] INFO root fetch - processPackages [ahk]: Downloading https://files.pythonhosted.org/packages/36/f0/de2dc787f3170da40d5e86ca93e8adb539887a5d479073fac407ea30cfdd/ahk-1.7.0.tar.gz
+[2024-04-21 06:01:56] INFO root fetch - processPackages [ahk]: executing diffoscope
+[2024-04-21 06:01:56] INFO root fetch - processPackages [ahk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ahk-1.6.3.tar.gz tmp/ahk-1.7.0.tar.gz --markdown 20240421/a/ahk/1.6.3-1.7.0/README.md --exclude *.pyd
+[2024-04-21 06:01:56] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.43.tar.gz]
+[2024-04-21 06:01:56] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.44.tar.gz]
+[2024-04-21 06:01:56] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 06:01:56] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 06:01:56] INFO root fetch - processPackages [ahk]: Remove: archive file [/home/abi/fetcher/tmp/ahk-1.6.3.tar.gz]
+[2024-04-21 06:01:56] INFO root fetch - processPackages [ahk]: Remove: archive file [/home/abi/fetcher/tmp/ahk-1.7.0.tar.gz]
+[2024-04-21 06:01:56] INFO root fetch - main [MainThread]: End processing [ahk]: success
+[2024-04-21 06:01:56] INFO root fetch - main [MainThread]: Store serial: [22861821]
