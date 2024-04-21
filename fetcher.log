@@ -9432,3 +9432,36 @@
 [2024-04-21 14:06:18] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.1.0.tar.gz]
 [2024-04-21 14:06:18] INFO root fetch - main [MainThread]: End processing [zenyx]: success
 [2024-04-21 14:06:18] INFO root fetch - main [MainThread]: Store serial: [22864206]
+[2024-04-21 14:08:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864206]
+[2024-04-21 14:08:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-flights-scraper
+[2024-04-21 14:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aplr
+[2024-04-21 14:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: japanese-address-parser-py
+[2024-04-21 14:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: UtilsRL
+[2024-04-21 14:08:27] WARNING root fetch - processPackages [google-flights-scraper]: Skipping, unable to determine old version
+[2024-04-21 14:08:27] INFO root fetch - main [MainThread]: End processing [google-flights-scraper] error
+[2024-04-21 14:08:27] INFO root fetch - processPackages [japanese-address-parser-py]: New version: [0.1.0b15] Old Version: [0.1.0b14]
+[2024-04-21 14:08:27] INFO root fetch - processPackages [aplr]: New version: [9.6.0] Old Version: [9.5.0]
+[2024-04-21 14:08:27] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/9f/9d/e21195c38e2ce47c14eacc29f4cd3013b71bf8e5402c9da31ba436ec3f0c/japanese_address_parser_py-0.1.0b14.tar.gz
+[2024-04-21 14:08:27] INFO root fetch - processPackages [UtilsRL]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-04-21 14:08:27] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/d2/e9/208c6c0749187a546334bf9488ea6d564a4f8bf35f441dade79b56821207/aplr-9.5.0.tar.gz
+[2024-04-21 14:08:27] INFO root fetch - processPackages [UtilsRL]: Downloading https://files.pythonhosted.org/packages/4f/06/cb4f83b2403de9e4e48c44a20726f1f72c62d8e4ab7ae134185d18eec69c/UtilsRL-0.6.7.tar.gz
+[2024-04-21 14:08:27] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/3d/18/28526cef1b0c5db7f240b837d0848677abbc6cd2e117521600eb25b6ec67/japanese_address_parser_py-0.1.0b15.tar.gz
+[2024-04-21 14:08:28] INFO root fetch - processPackages [japanese-address-parser-py]: executing diffoscope
+[2024-04-21 14:08:28] INFO root fetch - processPackages [japanese-address-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanese_address_parser_py-0.1.0b14.tar.gz tmp/japanese_address_parser_py-0.1.0b15.tar.gz --markdown 20240421/j/japanese-address-parser-py/0.1.0b14-0.1.0b15/README.md --exclude *.pyd
+[2024-04-21 14:08:28] INFO root fetch - processPackages [UtilsRL]: Downloading https://files.pythonhosted.org/packages/44/c3/e9ba32c730d0938ccfd153fab5d81e8c2d4fbb530089fb9f59af3d9540a5/UtilsRL-0.6.8-cp38-cp38-musllinux_1_1_i686.whl
+[2024-04-21 14:08:28] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b14.tar.gz]
+[2024-04-21 14:08:28] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b15.tar.gz]
+[2024-04-21 14:08:28] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
+[2024-04-21 14:08:28] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/54/83/2701ba7e6b1a86371a4b3131f671c1629a6da6d7509a2e98b7ec4467e6d7/aplr-9.6.0.tar.gz
+[2024-04-21 14:08:29] INFO root fetch - processPackages [UtilsRL]: executing diffoscope
+[2024-04-21 14:08:29] INFO root fetch - processPackages [UtilsRL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UtilsRL-0.6.7.tar.gz tmp/UtilsRL-0.6.8-cp38-cp38-musllinux_1_1_i686.whl.zip --markdown 20240421/U/UtilsRL/0.6.7-0.6.8/README.md --exclude *.pyd
+[2024-04-21 14:08:29] INFO root fetch - processPackages [aplr]: executing diffoscope
+[2024-04-21 14:08:29] INFO root fetch - processPackages [aplr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplr-9.5.0.tar.gz tmp/aplr-9.6.0.tar.gz --markdown 20240421/a/aplr/9.5.0-9.6.0/README.md --exclude *.pyd
+[2024-04-21 14:08:29] INFO root fetch - processPackages [UtilsRL]: Remove: archive file [/home/abi/fetcher/tmp/UtilsRL-0.6.7.tar.gz]
+[2024-04-21 14:08:29] INFO root fetch - processPackages [UtilsRL]: Remove: archive file [/home/abi/fetcher/tmp/UtilsRL-0.6.8-cp38-cp38-musllinux_1_1_i686.whl.zip]
+[2024-04-21 14:08:29] INFO root fetch - main [MainThread]: End processing [UtilsRL]: success
+[2024-04-21 14:08:36] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.5.0.tar.gz]
+[2024-04-21 14:08:36] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.6.0.tar.gz]
+[2024-04-21 14:08:36] INFO root fetch - main [MainThread]: End processing [aplr]: success
+[2024-04-21 14:08:36] INFO root fetch - main [MainThread]: Store serial: [22864279]
