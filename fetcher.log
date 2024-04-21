@@ -17294,3 +17294,42 @@
 [2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.98-py3-none-any.whl.zip]
 [2024-04-21 21:42:39] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2024-04-21 21:42:39] INFO root fetch - main [MainThread]: Store serial: [22868184]
+[2024-04-21 21:44:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868184]
+[2024-04-21 21:44:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 21:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-ph
+[2024-04-21 21:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: searcharray
+[2024-04-21 21:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-04-21 21:44:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kometautils
+[2024-04-21 21:44:49] INFO root fetch - processPackages [kometautils]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-21 21:44:49] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/7b/4d/243e47934622dae9e43f2e44a948a2405f866e3c825eb4bc6d9907ae607d/kometautils-0.3.1.tar.gz
+[2024-04-21 21:44:49] INFO root fetch - processPackages [searcharray]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 21:44:49] INFO root fetch - processPackages [honeybee-ph]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-21 21:44:49] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.62] Old Version: [0.4.61]
+[2024-04-21 21:44:49] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/40/7a/0e29201429eb68c5119af3e47efc226ddb5b002c7d44f85cb59694120162/kometautils-0.3.2.tar.gz
+[2024-04-21 21:44:49] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/13/d2/42d0e0a5f78c59eb2f5d56c1dbde5dcbee81b46d8390cedf9988344b3e45/searcharray-0.0.8.tar.gz
+[2024-04-21 21:44:49] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/df/b8/fda4cf01d94f48d6d3083d5708571ff82cc12c33ab31021c75eae52fddf7/honeybee-ph-1.9.0.tar.gz
+[2024-04-21 21:44:50] INFO root fetch - processPackages [kometautils]: executing diffoscope
+[2024-04-21 21:44:50] INFO root fetch - processPackages [kometautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kometautils-0.3.1.tar.gz tmp/kometautils-0.3.2.tar.gz --markdown 20240421/k/kometautils/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-21 21:44:50] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/ba/00/f35647546f410d5d577f4cc9f27abfe97035ec1ac5d0b9e2d42476beed96/MobileInventoryCLI-0.4.61.tar.gz
+[2024-04-21 21:44:50] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/ac/3b/94670944c4a0e9844a88bedad8d71fd687fa1d4179f07d807acb90be0100/honeybee-ph-1.9.1.tar.gz
+[2024-04-21 21:44:50] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/2b/85/78c9e4e0be0965b7456ca73905cad36da7857d89af8ff16b2844e6628cee/searcharray-0.0.9.tar.gz
+[2024-04-21 21:44:50] INFO root fetch - processPackages [searcharray]: executing diffoscope
+[2024-04-21 21:44:50] INFO root fetch - processPackages [searcharray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searcharray-0.0.8.tar.gz tmp/searcharray-0.0.9.tar.gz --markdown 20240421/s/searcharray/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 21:44:50] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/6f/f3/6c15c58f54eae26b1028f4738035874fd34e0039adf203d180e378555de1/MobileInventoryCLI-0.4.62.tar.gz
+[2024-04-21 21:44:50] INFO root fetch - processPackages [honeybee-ph]: executing diffoscope
+[2024-04-21 21:44:50] INFO root fetch - processPackages [honeybee-ph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ph-1.9.0.tar.gz tmp/honeybee-ph-1.9.1.tar.gz --markdown 20240421/h/honeybee-ph/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-21 21:44:50] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.1.tar.gz]
+[2024-04-21 21:44:50] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.2.tar.gz]
+[2024-04-21 21:44:50] INFO root fetch - main [MainThread]: End processing [kometautils]: success
+[2024-04-21 21:44:50] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-21 21:44:50] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.61.tar.gz tmp/MobileInventoryCLI-0.4.62.tar.gz --markdown 20240421/M/MobileInventoryCLI/0.4.61-0.4.62/README.md --exclude *.pyd
+[2024-04-21 21:44:51] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.8.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.9.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - main [MainThread]: End processing [searcharray]: success
+[2024-04-21 21:44:51] INFO root fetch - processPackages [honeybee-ph]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-ph-1.9.0.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - processPackages [honeybee-ph]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-ph-1.9.1.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - main [MainThread]: End processing [honeybee-ph]: success
+[2024-04-21 21:44:51] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.61.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.62.tar.gz]
+[2024-04-21 21:44:51] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-21 21:44:51] INFO root fetch - main [MainThread]: Store serial: [22868204]
