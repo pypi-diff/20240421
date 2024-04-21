@@ -10794,3 +10794,63 @@
 [2024-04-21 15:37:53] INFO root fetch - processPackages [mercury-engine-data-structures]: Remove: archive file [/home/abi/fetcher/tmp/mercury-engine-data-structures-0.9.6.tar.gz]
 [2024-04-21 15:37:53] INFO root fetch - main [MainThread]: End processing [mercury-engine-data-structures]: success
 [2024-04-21 15:37:53] INFO root fetch - main [MainThread]: Store serial: [22864999]
+[2024-04-21 15:39:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864999]
+[2024-04-21 15:40:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC472
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyguiadapter
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kserve
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-connector-test
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simc-support
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mytot
+[2024-04-21 15:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sfmanager
+[2024-04-21 15:40:02] INFO root fetch - processPackages [sfmanager]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 15:40:02] WARNING root fetch - processPackages [PythonTestLJC472]: Skipping, unable to determine old version
+[2024-04-21 15:40:02] INFO root fetch - main [MainThread]: End processing [PythonTestLJC472] error
+[2024-04-21 15:40:02] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2024-04-21 15:40:02] INFO root fetch - processPackages [pyguiadapter]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-21 15:40:02] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/ed/a4/8e8a4969159fbdda914bc60418b2c1c308f6fa5511d7d5c3c8a991746b2c/sfmanager-0.1.3.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [mytot]: New version: [2024.4.21.213952] Old Version: [2024.4.20.174642]
+[2024-04-21 15:40:02] INFO root fetch - processPackages [python-connector-test]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 15:40:02] INFO root fetch - processPackages [kserve]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2024-04-21 15:40:02] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/c9/28/2a19d797a0cf78d8527a470eb74a4cdac778bbba649aaec99078d4a45002/pyguiadapter-0.3.2.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [python-connector-test]: Downloading https://files.pythonhosted.org/packages/8e/f9/2a975de7d349efc0027de15d3305bcd2297afeb7334efb1bc02e3e47ba70/python_connector_test-1.0.0.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/a6/d9/b09b9634b6513cb0a6d6a96b0f3c8e972d1ba3027912e504386e6d8f0884/mytot-2024.4.20.174642-py3-none-any.whl
+[2024-04-21 15:40:02] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/44/97/4e6503f50a185e8a42b1826dfd1e6af4d7771fc581c599be5e8c9e26b7c5/sfmanager-0.1.4.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [kserve]: Downloading https://files.pythonhosted.org/packages/cd/9d/18d0d09ed43c55f8028b5e56156fe8230b5cd752c769b6a55b2549ff0a96/kserve-0.9.0.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/55/dd/22c03dfe0e03626b3e588b698cf1726cbcf5fa73f1728ab227deb054b8f1/pyguiadapter-0.3.3.tar.gz
+[2024-04-21 15:40:02] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/2b/5a/f57baef6e271a52318fdb885fef282a8728227d573d4df84e56caa510e04/mytot-2024.4.21.213952-py3-none-any.whl
+[2024-04-21 15:40:02] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2024-04-21 15:40:02] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20240421/s/simc-support/9.2.5.2-9.2.5.3/README.md --exclude *.pyd
+[2024-04-21 15:40:02] INFO root fetch - processPackages [pyguiadapter]: executing diffoscope
+[2024-04-21 15:40:02] INFO root fetch - processPackages [pyguiadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyguiadapter-0.3.2.tar.gz tmp/pyguiadapter-0.3.3.tar.gz --markdown 20240421/p/pyguiadapter/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-21 15:40:02] INFO root fetch - processPackages [python-connector-test]: Downloading https://files.pythonhosted.org/packages/a5/3d/82a7456c47acaf8444108e9c4d941ca102620f3a64d09b8f5fe970191552/python-connector-test-1.0.1.tar.gz
+[2024-04-21 15:40:03] INFO root fetch - processPackages [mytot]: executing diffoscope
+[2024-04-21 15:40:03] INFO root fetch - processPackages [mytot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytot-2024.4.20.174642-py3-none-any.whl.zip tmp/mytot-2024.4.21.213952-py3-none-any.whl.zip --markdown 20240421/m/mytot/2024.4.20.174642-2024.4.21.213952/README.md --exclude *.pyd
+[2024-04-21 15:40:03] INFO root fetch - processPackages [kserve]: Downloading https://files.pythonhosted.org/packages/4b/c5/9aee0855711e0c852e47edfa1c3a5c26db52f9f2e8e07d9a6681cc1a5451/kserve-0.9.0rc0.tar.gz
+[2024-04-21 15:40:03] INFO root fetch - processPackages [python-connector-test]: executing diffoscope
+[2024-04-21 15:40:03] INFO root fetch - processPackages [python-connector-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_connector_test-1.0.0.tar.gz tmp/python-connector-test-1.0.1.tar.gz --markdown 20240421/p/python-connector-test/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 15:40:03] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-21 15:40:03] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.3.tar.gz tmp/sfmanager-0.1.4.tar.gz --markdown 20240421/s/sfmanager/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 15:40:03] INFO root fetch - processPackages [kserve]: executing diffoscope
+[2024-04-21 15:40:03] INFO root fetch - processPackages [kserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kserve-0.9.0.tar.gz tmp/kserve-0.9.0rc0.tar.gz --markdown 20240421/k/kserve/0.9.0-0.9.0rc0/README.md --exclude *.pyd
+[2024-04-21 15:40:03] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.174642-py3-none-any.whl.zip]
+[2024-04-21 15:40:03] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.21.213952-py3-none-any.whl.zip]
+[2024-04-21 15:40:03] INFO root fetch - main [MainThread]: End processing [mytot]: success
+[2024-04-21 15:40:03] INFO root fetch - processPackages [python-connector-test]: Remove: archive file [/home/abi/fetcher/tmp/python_connector_test-1.0.0.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - processPackages [python-connector-test]: Remove: archive file [/home/abi/fetcher/tmp/python-connector-test-1.0.1.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - main [MainThread]: End processing [python-connector-test]: success
+[2024-04-21 15:40:03] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.3.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.4.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-21 15:40:03] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.2.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
+[2024-04-21 15:40:03] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2024-04-21 15:40:04] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.2.tar.gz]
+[2024-04-21 15:40:04] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.3.tar.gz]
+[2024-04-21 15:40:04] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
+[2024-04-21 15:40:04] INFO root fetch - processPackages [kserve]: Remove: archive file [/home/abi/fetcher/tmp/kserve-0.9.0.tar.gz]
+[2024-04-21 15:40:04] INFO root fetch - processPackages [kserve]: Remove: archive file [/home/abi/fetcher/tmp/kserve-0.9.0rc0.tar.gz]
+[2024-04-21 15:40:04] INFO root fetch - main [MainThread]: End processing [kserve]: success
+[2024-04-21 15:40:04] INFO root fetch - main [MainThread]: Store serial: [22865017]
