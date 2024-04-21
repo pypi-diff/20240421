@@ -8830,3 +8830,18 @@
 [2024-04-21 13:19:56] INFO root fetch - processPackages [python-signal-edges]: Remove: archive file [/home/abi/fetcher/tmp/python_signal_edges-1.0.5-py3-none-any.whl.zip]
 [2024-04-21 13:19:56] INFO root fetch - main [MainThread]: End processing [python-signal-edges]: success
 [2024-04-21 13:19:56] INFO root fetch - main [MainThread]: Store serial: [22863930]
+[2024-04-21 13:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863930]
+[2024-04-21 13:22:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-signal-edges
+[2024-04-21 13:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC430
+[2024-04-21 13:22:05] INFO root fetch - processPackages [python-signal-edges]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-21 13:22:05] INFO root fetch - processPackages [python-signal-edges]: Downloading https://files.pythonhosted.org/packages/31/83/fd2009601b1c07115758063bbb6b505b710bb0fef537f1f35fb424496e3b/python_signal_edges-1.0.4-py3-none-any.whl
+[2024-04-21 13:22:05] WARNING root fetch - processPackages [PythonTestLJC430]: Skipping, unable to determine old version
+[2024-04-21 13:22:05] INFO root fetch - main [MainThread]: End processing [PythonTestLJC430] error
+[2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: Downloading https://files.pythonhosted.org/packages/c1/73/3bc9533d726b35722b76bdbbe3b6d785816196e7ce43be1190978727b4c1/python_signal_edges-1.0.5-py3-none-any.whl
+[2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: executing diffoscope
+[2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_signal_edges-1.0.4-py3-none-any.whl.zip tmp/python_signal_edges-1.0.5-py3-none-any.whl.zip --markdown 20240421/p/python-signal-edges/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: Remove: archive file [/home/abi/fetcher/tmp/python_signal_edges-1.0.4-py3-none-any.whl.zip]
+[2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: Remove: archive file [/home/abi/fetcher/tmp/python_signal_edges-1.0.5-py3-none-any.whl.zip]
+[2024-04-21 13:22:06] INFO root fetch - main [MainThread]: End processing [python-signal-edges]: success
+[2024-04-21 13:22:06] INFO root fetch - main [MainThread]: Store serial: [22863937]
