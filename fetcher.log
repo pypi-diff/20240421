@@ -5999,3 +5999,9 @@
 [2024-04-21 09:27:08] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.3.tar.gz]
 [2024-04-21 09:27:08] INFO root fetch - main [MainThread]: End processing [zrb]: success
 [2024-04-21 09:27:08] INFO root fetch - main [MainThread]: Store serial: [22862761]
+[2024-04-21 09:29:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862761]
+[2024-04-21 09:29:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 09:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC400
+[2024-04-21 09:29:16] WARNING root fetch - processPackages [PythonTestLJC400]: Skipping, unable to determine old version
+[2024-04-21 09:29:16] INFO root fetch - main [MainThread]: End processing [PythonTestLJC400] error
+[2024-04-21 09:29:16] INFO root fetch - main [MainThread]: Store serial: [22862766]
