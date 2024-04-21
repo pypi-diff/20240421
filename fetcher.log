@@ -1796,3 +1796,33 @@
 [2024-04-21 02:34:18] INFO root fetch - processPackages [django-clite]: Remove: archive file [/home/abi/fetcher/tmp/django-clite-0.3.0.tar.gz]
 [2024-04-21 02:34:18] INFO root fetch - main [MainThread]: End processing [django-clite]: success
 [2024-04-21 02:34:18] INFO root fetch - main [MainThread]: Store serial: [22860683]
+[2024-04-21 02:36:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860683]
+[2024-04-21 02:36:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astabc
+[2024-04-21 02:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphlit-client
+[2024-04-21 02:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-fedit
+[2024-04-21 02:36:27] INFO root fetch - processPackages [astabc]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 02:36:27] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420009] Old Version: [1.0.20240420008]
+[2024-04-21 02:36:27] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.5.2] Old Version: [1.5.1a3]
+[2024-04-21 02:36:27] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/85/ed/db9fadcfdc15bbb8417cf4b16e3e1961cc1be84f89d1e88bb851c1def204/astabc-0.1.7.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/8f/7f/6a168e3d60b0248f0f5a9ab7de6156dc47a3f1cdcc4ce70cb51e8728332b/wagtail_fedit-1.5.1a3.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/9c/da/d62ba8cefae8673f6d09a25dabac3cf618c642f1eda0a90777f621776d12/graphlit_client-1.0.20240420008.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/1e/f2/1d4d43c331adaeeee0bfee3114e9d19aaf9e9d2fe6dc0e7d8486fbfc197b/astabc-0.1.8.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/32/f3/6477801d967766b4a620c1ba502ef111f93f262de434c1e597d94bfc08ef/wagtail_fedit-1.5.2.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/45/b7/a580d4c197d8845474ecd03fa23e6c68d6b8c458c75efe287f85fa33eca3/graphlit_client-1.0.20240420009.tar.gz
+[2024-04-21 02:36:27] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-21 02:36:27] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.7.tar.gz tmp/astabc-0.1.8.tar.gz --markdown 20240421/a/astabc/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 02:36:28] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-21 02:36:28] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.5.1a3.tar.gz tmp/wagtail_fedit-1.5.2.tar.gz --markdown 20240421/w/wagtail-fedit/1.5.1a3-1.5.2/README.md --exclude *.pyd
+[2024-04-21 02:36:28] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 02:36:28] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420008.tar.gz tmp/graphlit_client-1.0.20240420009.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420008-1.0.20240420009/README.md --exclude *.pyd
+[2024-04-21 02:36:28] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.7.tar.gz]
+[2024-04-21 02:36:28] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.8.tar.gz]
+[2024-04-21 02:36:28] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-21 02:36:28] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420008.tar.gz]
+[2024-04-21 02:36:28] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420009.tar.gz]
+[2024-04-21 02:36:28] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 02:36:29] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.1a3.tar.gz]
+[2024-04-21 02:36:29] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.2.tar.gz]
+[2024-04-21 02:36:29] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-21 02:36:29] INFO root fetch - main [MainThread]: Store serial: [22860691]
