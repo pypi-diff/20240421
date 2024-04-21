@@ -6456,3 +6456,33 @@
 [2024-04-21 10:08:28] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240420.tar.gz]
 [2024-04-21 10:08:28] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-04-21 10:08:28] INFO root fetch - main [MainThread]: Store serial: [22863020]
+[2024-04-21 10:10:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863020]
+[2024-04-21 10:10:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 10:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Signix
+[2024-04-21 10:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libregf-python
+[2024-04-21 10:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-Pantry
+[2024-04-21 10:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC419
+[2024-04-21 10:10:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-dbchat
+[2024-04-21 10:10:37] WARNING root fetch - processPackages [python-Pantry]: Skipping, unable to determine old version
+[2024-04-21 10:10:37] INFO root fetch - main [MainThread]: End processing [python-Pantry] error
+[2024-04-21 10:10:37] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc80.post1] Old Version: [0.0.2rc79.post1]
+[2024-04-21 10:10:37] WARNING root fetch - processPackages [Signix]: Skipping, unable to determine old version
+[2024-04-21 10:10:37] INFO root fetch - main [MainThread]: End processing [Signix] error
+[2024-04-21 10:10:37] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/89/03/b413d42f67f310b158145240ea776c799128fd71c14634deb99e10f6d18e/py_dbchat-0.0.2rc79.post1.tar.gz
+[2024-04-21 10:10:37] INFO root fetch - processPackages [libregf-python]: New version: [20240421] Old Version: [20240303]
+[2024-04-21 10:10:37] WARNING root fetch - processPackages [PythonTestLJC419]: Skipping, unable to determine old version
+[2024-04-21 10:10:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC419] error
+[2024-04-21 10:10:37] INFO root fetch - processPackages [libregf-python]: Downloading https://files.pythonhosted.org/packages/d5/82/3228e573c36a636c3799964cb6869d72e24eccf99c653af448e20cd6d4dd/libregf-python-20240303.tar.gz
+[2024-04-21 10:10:38] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/34/09/3e73b36341d7d55f2db4f814bb2084496b0666c603f6419518696fde2b5d/py_dbchat-0.0.2rc80.post1.tar.gz
+[2024-04-21 10:10:38] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-21 10:10:38] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc79.post1.tar.gz tmp/py_dbchat-0.0.2rc80.post1.tar.gz --markdown 20240421/p/py-dbchat/0.0.2rc79.post1-0.0.2rc80.post1/README.md --exclude *.pyd
+[2024-04-21 10:10:38] INFO root fetch - processPackages [libregf-python]: Downloading https://files.pythonhosted.org/packages/31/af/4e23e30f2d24923b00bc1e1a980a8c4d262ac65e33de22741374a1a791d2/libregf-python-20240421.tar.gz
+[2024-04-21 10:10:38] INFO root fetch - processPackages [libregf-python]: executing diffoscope
+[2024-04-21 10:10:38] INFO root fetch - processPackages [libregf-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libregf-python-20240303.tar.gz tmp/libregf-python-20240421.tar.gz --markdown 20240421/l/libregf-python/20240303-20240421/README.md --exclude *.pyd
+[2024-04-21 10:10:38] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc79.post1.tar.gz]
+[2024-04-21 10:10:38] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc80.post1.tar.gz]
+[2024-04-21 10:10:38] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-21 10:10:43] INFO root fetch - processPackages [libregf-python]: Remove: archive file [/home/abi/fetcher/tmp/libregf-python-20240303.tar.gz]
+[2024-04-21 10:10:43] INFO root fetch - processPackages [libregf-python]: Remove: archive file [/home/abi/fetcher/tmp/libregf-python-20240421.tar.gz]
+[2024-04-21 10:10:43] INFO root fetch - main [MainThread]: End processing [libregf-python]: success
+[2024-04-21 10:10:43] INFO root fetch - main [MainThread]: Store serial: [22863035]
