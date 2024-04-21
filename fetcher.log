@@ -14490,3 +14490,33 @@
 [2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: Remove: archive file [/home/abi/fetcher/tmp/spotify2ytmusic-0.9.9.tar.gz]
 [2024-04-21 19:00:42] INFO root fetch - main [MainThread]: End processing [spotify2ytmusic]: success
 [2024-04-21 19:00:42] INFO root fetch - main [MainThread]: Store serial: [22866746]
+[2024-04-21 19:02:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866746]
+[2024-04-21 19:02:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:02:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-04-21 19:02:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql-django
+[2024-04-21 19:02:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-gen
+[2024-04-21 19:02:51] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-04-21 19:02:51] INFO root fetch - processPackages [fastapi-gen]: New version: [0.5.1] Old Version: [0.4.0]
+[2024-04-21 19:02:51] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-04-21 19:02:51] INFO root fetch - processPackages [strawberry-graphql-django]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-21 19:02:51] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/84/8d/02584438b57b9d8c0141a779dd091b2f10126fe1f369ea1852d45afa3eec/strawberry_graphql_django-0.9.4.tar.gz
+[2024-04-21 19:02:51] INFO root fetch - processPackages [fastapi-gen]: Downloading https://files.pythonhosted.org/packages/d6/00/5240fc9af20d79398a6348b0dd9d6400f13bf85494450e44dd5959e4028b/fastapi_gen-0.4.0.tar.gz
+[2024-04-21 19:02:51] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-04-21 19:02:51] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-04-21 19:02:51] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240421/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-04-21 19:02:51] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/34/c7/6761d3816f5a7cf02928b5d035b4ed20b4e6d2a12ec6a4cf9400ce4d7cbb/strawberry_graphql_django-0.9.5.tar.gz
+[2024-04-21 19:02:51] INFO root fetch - processPackages [strawberry-graphql-django]: executing diffoscope
+[2024-04-21 19:02:51] INFO root fetch - processPackages [strawberry-graphql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_graphql_django-0.9.4.tar.gz tmp/strawberry_graphql_django-0.9.5.tar.gz --markdown 20240421/s/strawberry-graphql-django/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: Downloading https://files.pythonhosted.org/packages/ff/fa/1e0adf58137bf4b5c7f8145440552ea8f39e801999ae9c7c6abef04c54eb/fastapi_gen-0.5.1.tar.gz
+[2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: executing diffoscope
+[2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_gen-0.4.0.tar.gz tmp/fastapi_gen-0.5.1.tar.gz --markdown 20240421/f/fastapi-gen/0.4.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 19:02:52] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.4.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
+[2024-04-21 19:02:52] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_gen-0.4.0.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_gen-0.5.1.tar.gz]
+[2024-04-21 19:02:52] INFO root fetch - main [MainThread]: End processing [fastapi-gen]: success
+[2024-04-21 19:02:52] INFO root fetch - main [MainThread]: Store serial: [22866755]
