@@ -3344,3 +3344,54 @@
 [2024-04-21 05:10:02] INFO root fetch - processPackages [flask-openapi3]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3-3.1.1.tar.gz]
 [2024-04-21 05:10:02] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
 [2024-04-21 05:10:02] INFO root fetch - main [MainThread]: Store serial: [22861563]
+[2024-04-21 05:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861563]
+[2024-04-21 05:12:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-template
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agentkit-llm
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ical
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC350
+[2024-04-21 05:12:10] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 05:12:10] WARNING root fetch - processPackages [PythonTestLJC350]: Skipping, unable to determine old version
+[2024-04-21 05:12:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC350] error
+[2024-04-21 05:12:10] INFO root fetch - processPackages [ical]: New version: [8.0.0] Old Version: [7.0.3]
+[2024-04-21 05:12:10] INFO root fetch - processPackages [agentkit-llm]: New version: [0.1.4] Old Version: [0.1.3.post1]
+[2024-04-21 05:12:10] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-21 05:12:10] INFO root fetch - processPackages [lightning-template]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-21 05:12:11] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-21 05:12:11] INFO root fetch - processPackages [ical]: Downloading https://files.pythonhosted.org/packages/40/66/e9e628988e3b9cfb1327e9471843668354909b2eed170935bb06398c5159/ical-7.0.3.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/fa/82/328c153c3cef3a0ada6222c40fa83b5ee818320650480328dd587f9e4f86/lightning-template-1.8.1.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [agentkit-llm]: Downloading https://files.pythonhosted.org/packages/5c/88/08047fa436119d9b6827edc3b0215dd03bb6f1f67b1b0860854ec925f295/agentkit-llm-0.1.3.post1.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-21 05:12:11] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240421/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 05:12:11] INFO root fetch - processPackages [ical]: Downloading https://files.pythonhosted.org/packages/79/a4/7170b1c3144833e2168e412cac5bc9c88882551d3a9052d8641b8259eb10/ical-8.0.0.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/ff/41/87c6ba8561d19aeec49fa0fbbd99b05f100ec898ff58f8d9d271912f646a/lightning-template-1.9.0.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [agentkit-llm]: Downloading https://files.pythonhosted.org/packages/11/ea/0ba02b4e18ef7bdeb392ef5f033e445ffbbcfa6138ef5bbd4bdd9c8feb86/agentkit-llm-0.1.4.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [ical]: executing diffoscope
+[2024-04-21 05:12:11] INFO root fetch - processPackages [ical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ical-7.0.3.tar.gz tmp/ical-8.0.0.tar.gz --markdown 20240421/i/ical/7.0.3-8.0.0/README.md --exclude *.pyd
+[2024-04-21 05:12:11] INFO root fetch - processPackages [agentkit-llm]: executing diffoscope
+[2024-04-21 05:12:11] INFO root fetch - processPackages [agentkit-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentkit-llm-0.1.3.post1.tar.gz tmp/agentkit-llm-0.1.4.tar.gz --markdown 20240421/a/agentkit-llm/0.1.3.post1-0.1.4/README.md --exclude *.pyd
+[2024-04-21 05:12:11] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-21 05:12:11] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2024-04-21 05:12:11] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.8.1.tar.gz tmp/lightning-template-1.9.0.tar.gz --markdown 20240421/l/lightning-template/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-21 05:12:11] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-21 05:12:11] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240421/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-04-21 05:12:11] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-21 05:12:11] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-21 05:12:11] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-21 05:12:12] INFO root fetch - processPackages [agentkit-llm]: Remove: archive file [/home/abi/fetcher/tmp/agentkit-llm-0.1.3.post1.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - processPackages [agentkit-llm]: Remove: archive file [/home/abi/fetcher/tmp/agentkit-llm-0.1.4.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - main [MainThread]: End processing [agentkit-llm]: success
+[2024-04-21 05:12:12] INFO root fetch - processPackages [ical]: Remove: archive file [/home/abi/fetcher/tmp/ical-7.0.3.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - processPackages [ical]: Remove: archive file [/home/abi/fetcher/tmp/ical-8.0.0.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - main [MainThread]: End processing [ical]: success
+[2024-04-21 05:12:12] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.8.1.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.9.0.tar.gz]
+[2024-04-21 05:12:12] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2024-04-21 05:12:14] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-21 05:12:14] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-21 05:12:14] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-21 05:12:14] INFO root fetch - main [MainThread]: Store serial: [22861584]
