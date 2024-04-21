@@ -6976,3 +6976,63 @@
 [2024-04-21 10:58:41] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.5.tar.gz]
 [2024-04-21 10:58:41] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
 [2024-04-21 10:58:41] INFO root fetch - main [MainThread]: Store serial: [22863241]
+[2024-04-21 11:00:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863241]
+[2024-04-21 11:00:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdf2john
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaffi-api
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TPE-Bot
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spelunker
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osu.py
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotdl-rockbox
+[2024-04-21 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funix
+[2024-04-21 11:00:50] WARNING root fetch - processPackages [spotdl-rockbox]: Skipping, unable to determine old version
+[2024-04-21 11:00:50] INFO root fetch - main [MainThread]: End processing [spotdl-rockbox] error
+[2024-04-21 11:00:50] INFO root fetch - processPackages [osu.py]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [spelunker]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.6] Old Version: [6.8.5]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [osu.py]: Downloading https://files.pythonhosted.org/packages/07/39/daf4b9d60187d3d536805dcecab13fdcccaf00402d47a6508acb9391feba/osu.py-1.2.0.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [pdf2john]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/a2/d5/dd4cfd691a507f9ca31e248e0a08f594b2355709a48febb335b3365347ee/TPE-Bot-6.8.5.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [funix]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-21 11:00:50] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/9a/06/d3a697846a1ccd3da8261a34abd0ad7c4549c3fd588e1b0a7444f38e4742/metaffi_api-0.0.17.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/4d/21/f8aa576ec6a9d8a532ecc104e5c1e4045c40fbd7ccbb8f9ebd439a9eff37/spelunker-1.1.8.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [pdf2john]: Downloading https://files.pythonhosted.org/packages/c3/34/0bb1525a70c6ef07c9589bf6f85cf4780bb595ceb1fd51b7bba738d1b94a/pdf2john-0.1.8.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/09/93/c70a0efa5947045e93dbf9beec546f6b7f32ce6b95073fcc265c3499bbf0/metaffi_api-0.0.18.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [osu.py]: Downloading https://files.pythonhosted.org/packages/32/30/a42d7288829af67fad28735f3655625acb2e38bb198461f221d917314cce/osu_py-2.0.0.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/7d/62/574227f9dbe7598bcf5b443ffc335dce87383e422c490c1fc968e1476154/spelunker-1.1.9.tar.gz
+[2024-04-21 11:00:50] INFO root fetch - processPackages [funix]: Downloading https://files.pythonhosted.org/packages/95/50/5a13ec4ee2f852afd2b4db57f4789745ec361f2bf9974e3e67175131cc97/funix-0.5.5.tar.gz
+[2024-04-21 11:00:51] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/3a/14/6ec058d54fac8db60ea9f6d7810901078e0ea1729f58a1971b214dd6011b/TPE-Bot-6.8.6.tar.gz
+[2024-04-21 11:00:51] INFO root fetch - processPackages [osu.py]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [osu.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osu.py-1.2.0.tar.gz tmp/osu_py-2.0.0.tar.gz --markdown 20240421/o/osu.py/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.17.tar.gz tmp/metaffi_api-0.0.18.tar.gz --markdown 20240421/m/metaffi-api/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [spelunker]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [spelunker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spelunker-1.1.8.tar.gz tmp/spelunker-1.1.9.tar.gz --markdown 20240421/s/spelunker/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [pdf2john]: Downloading https://files.pythonhosted.org/packages/d6/1b/f4c81177b5dc6b9cbe86e44bb46d18958fd3565fd6e89dd50944ab63c9f1/pdf2john-0.2.0.tar.gz
+[2024-04-21 11:00:51] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.5.tar.gz tmp/TPE-Bot-6.8.6.tar.gz --markdown 20240421/T/TPE-Bot/6.8.5-6.8.6/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [pdf2john]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [pdf2john]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf2john-0.1.8.tar.gz tmp/pdf2john-0.2.0.tar.gz --markdown 20240421/p/pdf2john/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [funix]: Downloading https://files.pythonhosted.org/packages/1d/cd/9e4837a681cba3e19781801a3140e917cd51689b34c5dc4239628fb45127/funix-0.5.6.tar.gz
+[2024-04-21 11:00:51] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.17.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.18.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 11:00:51] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.8.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.9.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - main [MainThread]: End processing [spelunker]: success
+[2024-04-21 11:00:51] INFO root fetch - processPackages [pdf2john]: Remove: archive file [/home/abi/fetcher/tmp/pdf2john-0.1.8.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - processPackages [pdf2john]: Remove: archive file [/home/abi/fetcher/tmp/pdf2john-0.2.0.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - main [MainThread]: End processing [pdf2john]: success
+[2024-04-21 11:00:51] INFO root fetch - processPackages [funix]: executing diffoscope
+[2024-04-21 11:00:51] INFO root fetch - processPackages [funix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funix-0.5.5.tar.gz tmp/funix-0.5.6.tar.gz --markdown 20240421/f/funix/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-21 11:00:51] INFO root fetch - processPackages [osu.py]: Remove: archive file [/home/abi/fetcher/tmp/osu.py-1.2.0.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - processPackages [osu.py]: Remove: archive file [/home/abi/fetcher/tmp/osu_py-2.0.0.tar.gz]
+[2024-04-21 11:00:51] INFO root fetch - main [MainThread]: End processing [osu.py]: success
+[2024-04-21 11:00:52] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.5.tar.gz]
+[2024-04-21 11:00:52] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.6.tar.gz]
+[2024-04-21 11:00:52] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-21 11:01:17] INFO root fetch - processPackages [funix]: Remove: archive file [/home/abi/fetcher/tmp/funix-0.5.5.tar.gz]
+[2024-04-21 11:01:17] INFO root fetch - processPackages [funix]: Remove: archive file [/home/abi/fetcher/tmp/funix-0.5.6.tar.gz]
+[2024-04-21 11:01:17] INFO root fetch - main [MainThread]: End processing [funix]: success
+[2024-04-21 11:01:17] INFO root fetch - main [MainThread]: Store serial: [22863261]
