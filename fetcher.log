@@ -6196,3 +6196,27 @@
 [2024-04-21 09:46:36] INFO root fetch - processPackages [shelltool]: Remove: archive file [/home/abi/fetcher/tmp/shelltool-0.1.1.tar.gz]
 [2024-04-21 09:46:36] INFO root fetch - main [MainThread]: End processing [shelltool]: success
 [2024-04-21 09:46:36] INFO root fetch - main [MainThread]: Store serial: [22862885]
+[2024-04-21 09:48:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862885]
+[2024-04-21 09:48:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 09:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outlines
+[2024-04-21 09:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC411
+[2024-04-21 09:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DragonLog
+[2024-04-21 09:48:45] INFO root fetch - processPackages [DragonLog]: New version: [1.1] Old Version: [1.0]
+[2024-04-21 09:48:45] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/db/b7/a7f02b0e1b75084f2973c928f6e1105291b10820baec80b0457a3f2a63ef/DragonLog-1.0.tar.gz
+[2024-04-21 09:48:45] WARNING root fetch - processPackages [PythonTestLJC411]: Skipping, unable to determine old version
+[2024-04-21 09:48:45] INFO root fetch - main [MainThread]: End processing [PythonTestLJC411] error
+[2024-04-21 09:48:45] INFO root fetch - processPackages [outlines]: New version: [0.1.dev0] Old Version: [0.0.9]
+[2024-04-21 09:48:46] INFO root fetch - processPackages [outlines]: Downloading https://files.pythonhosted.org/packages/bf/04/a3ed21e2c7a24284e1662709a8e5a01e749a20d6295f9acb93cc601ca064/outlines-0.0.9.tar.gz
+[2024-04-21 09:48:46] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/53/4b/b39ab718cabbfd02d8fc1e5267aa39e019a78875ee424be04669996ee375/dragonlog-1.1.tar.gz
+[2024-04-21 09:48:46] INFO root fetch - processPackages [DragonLog]: executing diffoscope
+[2024-04-21 09:48:46] INFO root fetch - processPackages [DragonLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DragonLog-1.0.tar.gz tmp/dragonlog-1.1.tar.gz --markdown 20240421/D/DragonLog/1.0-1.1/README.md --exclude *.pyd
+[2024-04-21 09:48:46] INFO root fetch - processPackages [outlines]: Downloading https://files.pythonhosted.org/packages/3d/3e/193c40a8341100112fa91f6252f05e70b1cb0946ccad9863e64b17831234/outlines-0.1.dev0.tar.gz
+[2024-04-21 09:48:46] INFO root fetch - processPackages [outlines]: executing diffoscope
+[2024-04-21 09:48:46] INFO root fetch - processPackages [outlines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outlines-0.0.9.tar.gz tmp/outlines-0.1.dev0.tar.gz --markdown 20240421/o/outlines/0.0.9-0.1.dev0/README.md --exclude *.pyd
+[2024-04-21 09:48:47] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/DragonLog-1.0.tar.gz]
+[2024-04-21 09:48:47] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/dragonlog-1.1.tar.gz]
+[2024-04-21 09:48:47] INFO root fetch - main [MainThread]: End processing [DragonLog]: success
+[2024-04-21 09:48:47] INFO root fetch - processPackages [outlines]: Remove: archive file [/home/abi/fetcher/tmp/outlines-0.0.9.tar.gz]
+[2024-04-21 09:48:47] INFO root fetch - processPackages [outlines]: Remove: archive file [/home/abi/fetcher/tmp/outlines-0.1.dev0.tar.gz]
+[2024-04-21 09:48:47] INFO root fetch - main [MainThread]: End processing [outlines]: success
+[2024-04-21 09:48:47] INFO root fetch - main [MainThread]: Store serial: [22862896]
