@@ -12585,3 +12585,63 @@
 [2024-04-21 17:07:51] INFO root fetch - processPackages [PyLTSpice]: Remove: archive file [/home/abi/fetcher/tmp/pyltspice-5.3.0.tar.gz]
 [2024-04-21 17:07:51] INFO root fetch - main [MainThread]: End processing [PyLTSpice]: success
 [2024-04-21 17:07:51] INFO root fetch - main [MainThread]: Store serial: [22865845]
+[2024-04-21 17:09:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865845]
+[2024-04-21 17:09:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CI-CD-SergiCastillo
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysiml
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hotsos
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC505
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: haskellian
+[2024-04-21 17:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rconnet
+[2024-04-21 17:10:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.3.0] Old Version: [0.2.8]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [haskellian]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [rconnet]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/b9/49/c31df1a2a9a88154045efc4146fb6c3ef5a2e425da2f7f58a080f497716d/CI-CD-SergiCastillo-0.2.8.tar.gz
+[2024-04-21 17:10:00] WARNING root fetch - processPackages [PythonTestLJC505]: Skipping, unable to determine old version
+[2024-04-21 17:10:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC505] error
+[2024-04-21 17:10:00] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/23/48/80d9b4288e171840da1b2e17206c5e0847781c7885554647b57c54656caf/haskellian-0.2.3.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240421] Old Version: [2.1.0b20240420]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [pysiml]: New version: [0.2.9.dev202309190559] Old Version: [0.2.9.dev202309140346]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [rconnet]: Downloading https://files.pythonhosted.org/packages/c2/a2/ecaeba4f766b4b246ad5a0ba6b0e2b454ccb3321391a31f6991d57f5de8d/rconnet-0.0.1.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-21 17:10:00] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/9c/85/f7a8137d19e658ef020c6819c3840a37281999a2bfe3ce66308dfdc436d3/ipex_llm-2.1.0b20240420-py3-none-win_amd64.whl
+[2024-04-21 17:10:00] INFO root fetch - processPackages [pysiml]: Downloading https://files.pythonhosted.org/packages/e7/35/e42bfc502a1f1f442f675bcb0d24f0d50852dd029190db3d2ccfb5c1c7b4/pysiml-0.2.9.dev202309140346-py3-none-any.whl
+[2024-04-21 17:10:00] INFO root fetch - processPackages [rconnet]: Downloading https://files.pythonhosted.org/packages/b0/83/b85496e0072efcb14c8f9ef18b9f93e215f45ae8aa6daa9a292313f55199/rconnet-0.0.2.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/9d/19/4028767c4e3129d8747e6c0da4f0c4fed05693bdfac924c82fbec138bfe0/haskellian-0.3.0.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/3c/1d/b0350e96914b9c5145b4bfdaa0fffa82c704a0ce9228a293381621ac91ff/CI-CD-SergiCastillo-0.3.0.tar.gz
+[2024-04-21 17:10:00] INFO root fetch - processPackages [rconnet]: executing diffoscope
+[2024-04-21 17:10:00] INFO root fetch - processPackages [rconnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rconnet-0.0.1.tar.gz tmp/rconnet-0.0.2.tar.gz --markdown 20240421/r/rconnet/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:10:00] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-04-21 17:10:00] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.2.3.tar.gz tmp/haskellian-0.3.0.tar.gz --markdown 20240421/h/haskellian/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-04-21 17:10:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-21 17:10:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.2.8.tar.gz tmp/CI-CD-SergiCastillo-0.3.0.tar.gz --markdown 20240421/C/CI-CD-SergiCastillo/0.2.8-0.3.0/README.md --exclude *.pyd
+[2024-04-21 17:10:00] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-21 17:10:01] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/29/29/83cb1853960b790ab1109eb9bcd5ddbc9fa4650450e3306126b15cd07fae/ipex_llm-2.1.0b20240421-py3-none-win_amd64.whl
+[2024-04-21 17:10:01] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-21 17:10:01] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240421/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-21 17:10:01] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.2.3.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.0.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-04-21 17:10:01] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.8.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.3.0.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-21 17:10:01] INFO root fetch - processPackages [rconnet]: Remove: archive file [/home/abi/fetcher/tmp/rconnet-0.0.1.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - processPackages [rconnet]: Remove: archive file [/home/abi/fetcher/tmp/rconnet-0.0.2.tar.gz]
+[2024-04-21 17:10:01] INFO root fetch - main [MainThread]: End processing [rconnet]: success
+[2024-04-21 17:10:01] INFO root fetch - processPackages [pysiml]: Downloading https://files.pythonhosted.org/packages/7c/cb/562cc49503a9cfac96f2b622e76959e31d41199d5ce76b716d7acedeb7ed/pysiml-0.2.9.dev202309190559-py3-none-any.whl
+[2024-04-21 17:10:01] INFO root fetch - processPackages [pysiml]: executing diffoscope
+[2024-04-21 17:10:01] INFO root fetch - processPackages [pysiml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysiml-0.2.9.dev202309140346-py3-none-any.whl.zip tmp/pysiml-0.2.9.dev202309190559-py3-none-any.whl.zip --markdown 20240421/p/pysiml/0.2.9.dev202309140346-0.2.9.dev202309190559/README.md --exclude *.pyd
+[2024-04-21 17:10:02] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-04-21 17:10:02] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240420-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240421-py3-none-win_amd64.whl.zip --markdown 20240421/i/ipex-llm/2.1.0b20240420-2.1.0b20240421/README.md --exclude *.pyd
+[2024-04-21 17:10:02] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-04-21 17:10:02] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-04-21 17:10:02] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-21 17:10:02] INFO root fetch - processPackages [pysiml]: Remove: archive file [/home/abi/fetcher/tmp/pysiml-0.2.9.dev202309140346-py3-none-any.whl.zip]
+[2024-04-21 17:10:02] INFO root fetch - processPackages [pysiml]: Remove: archive file [/home/abi/fetcher/tmp/pysiml-0.2.9.dev202309190559-py3-none-any.whl.zip]
+[2024-04-21 17:10:02] INFO root fetch - main [MainThread]: End processing [pysiml]: success
+[2024-04-21 17:10:29] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240420-py3-none-win_amd64.whl.zip]
+[2024-04-21 17:10:29] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240421-py3-none-win_amd64.whl.zip]
+[2024-04-21 17:10:29] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-04-21 17:10:29] INFO root fetch - main [MainThread]: Store serial: [22865871]
