@@ -3968,3 +3968,18 @@
 [2024-04-21 06:12:53] INFO root fetch - processPackages [unstructured]: Remove: archive file [/home/abi/fetcher/tmp/unstructured-0.9.3.tar.gz]
 [2024-04-21 06:12:53] INFO root fetch - main [MainThread]: End processing [unstructured]: success
 [2024-04-21 06:12:53] INFO root fetch - main [MainThread]: Store serial: [22861841]
+[2024-04-21 06:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861841]
+[2024-04-21 06:15:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 06:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeargument-python-version2
+[2024-04-21 06:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carbon-python-sdk
+[2024-04-21 06:15:02] WARNING root fetch - processPackages [codeargument-python-version2]: Skipping, unable to determine old version
+[2024-04-21 06:15:02] INFO root fetch - main [MainThread]: End processing [codeargument-python-version2] error
+[2024-04-21 06:15:02] INFO root fetch - processPackages [carbon-python-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 06:15:03] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/26/57/15366437f225c4db33f10eefc2dcaaeb5785566711f4dad3fdfdad41d1c5/carbon_python_sdk-0.1.8.tar.gz
+[2024-04-21 06:15:03] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/e1/f5/2a5b19b30b427b767c9d7c7a83eccb5295f3370ba53da57b38913bff315c/carbon_python_sdk-0.1.9.tar.gz
+[2024-04-21 06:15:03] INFO root fetch - processPackages [carbon-python-sdk]: executing diffoscope
+[2024-04-21 06:15:03] INFO root fetch - processPackages [carbon-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon_python_sdk-0.1.8.tar.gz tmp/carbon_python_sdk-0.1.9.tar.gz --markdown 20240421/c/carbon-python-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 06:15:06] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.8.tar.gz]
+[2024-04-21 06:15:06] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.9.tar.gz]
+[2024-04-21 06:15:06] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
+[2024-04-21 06:15:06] INFO root fetch - main [MainThread]: Store serial: [22861847]
