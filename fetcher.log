@@ -3245,3 +3245,27 @@
 [2024-04-21 05:01:18] WARNING root fetch - processPackages [PythonTestLJC346]: Skipping, unable to determine old version
 [2024-04-21 05:01:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC346] error
 [2024-04-21 05:01:18] INFO root fetch - main [MainThread]: Store serial: [22861516]
+[2024-04-21 05:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861516]
+[2024-04-21 05:03:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 05:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainzpy
+[2024-04-21 05:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shinylive-auth
+[2024-04-21 05:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC347
+[2024-04-21 05:03:27] INFO root fetch - processPackages [shinylive-auth]: New version: [2024.4.21] Old Version: [2024.4.20]
+[2024-04-21 05:03:27] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/0c/92/b77f648974bfeb41cccd67ff2715e57e90b9d5a1e7aa412460486fdf642b/shinylive_auth-2024.4.20.tar.gz
+[2024-04-21 05:03:27] INFO root fetch - processPackages [chainzpy]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 05:03:27] WARNING root fetch - processPackages [PythonTestLJC347]: Skipping, unable to determine old version
+[2024-04-21 05:03:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC347] error
+[2024-04-21 05:03:27] INFO root fetch - processPackages [chainzpy]: Downloading https://files.pythonhosted.org/packages/bf/79/497a412890f5013d12ee692e44aa0f30877b0ecb3f20ac576893513d7cdd/chainzpy-0.5.tar.gz
+[2024-04-21 05:03:28] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/dc/c8/f30aaeb34d4841705632cca800adbf2dd1a76bdcb4e290dbc4b999c8e179/shinylive_auth-2024.4.21.tar.gz
+[2024-04-21 05:03:28] INFO root fetch - processPackages [shinylive-auth]: executing diffoscope
+[2024-04-21 05:03:28] INFO root fetch - processPackages [shinylive-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinylive_auth-2024.4.20.tar.gz tmp/shinylive_auth-2024.4.21.tar.gz --markdown 20240421/s/shinylive-auth/2024.4.20-2024.4.21/README.md --exclude *.pyd
+[2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: Downloading https://files.pythonhosted.org/packages/b7/8d/180d3a9129d7a7104a3efba85aecd604e18dcd585e7201a7a3e9f55b579b/chainzpy-0.6.tar.gz
+[2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: executing diffoscope
+[2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainzpy-0.5.tar.gz tmp/chainzpy-0.6.tar.gz --markdown 20240421/c/chainzpy/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 05:03:28] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-2024.4.20.tar.gz]
+[2024-04-21 05:03:28] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-2024.4.21.tar.gz]
+[2024-04-21 05:03:28] INFO root fetch - main [MainThread]: End processing [shinylive-auth]: success
+[2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: Remove: archive file [/home/abi/fetcher/tmp/chainzpy-0.5.tar.gz]
+[2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: Remove: archive file [/home/abi/fetcher/tmp/chainzpy-0.6.tar.gz]
+[2024-04-21 05:03:28] INFO root fetch - main [MainThread]: End processing [chainzpy]: success
+[2024-04-21 05:03:28] INFO root fetch - main [MainThread]: Store serial: [22861527]
