@@ -6717,3 +6717,17 @@
 [2024-04-21 10:34:32] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.1.tar.gz]
 [2024-04-21 10:34:32] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
 [2024-04-21 10:34:32] INFO root fetch - main [MainThread]: Store serial: [22863126]
+[2024-04-21 10:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863126]
+[2024-04-21 10:36:41] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 10:38:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863126]
+[2024-04-21 10:38:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AstroScript
+[2024-04-21 10:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: randomNicknameSeo2
+[2024-04-21 10:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotdl-rockbox
+[2024-04-21 10:38:47] WARNING root fetch - processPackages [spotdl-rockbox]: Skipping, unable to determine old version
+[2024-04-21 10:38:47] INFO root fetch - main [MainThread]: End processing [spotdl-rockbox] error
+[2024-04-21 10:38:47] WARNING root fetch - processPackages [AstroScript]: Skipping, unable to determine old version
+[2024-04-21 10:38:47] INFO root fetch - main [MainThread]: End processing [AstroScript] error
+[2024-04-21 10:38:47] WARNING root fetch - processPackages [randomNicknameSeo2]: Skipping, unable to determine old version
+[2024-04-21 10:38:47] INFO root fetch - main [MainThread]: End processing [randomNicknameSeo2] error
+[2024-04-21 10:38:47] INFO root fetch - main [MainThread]: Store serial: [22863140]
