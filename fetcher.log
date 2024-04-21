@@ -3557,3 +3557,54 @@
 [2024-04-21 05:27:27] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.9.tar.gz]
 [2024-04-21 05:27:27] INFO root fetch - main [MainThread]: End processing [agt-server]: success
 [2024-04-21 05:27:27] INFO root fetch - main [MainThread]: Store serial: [22861668]
+[2024-04-21 05:29:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861668]
+[2024-04-21 05:29:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-zsmeme
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC356
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gmaps-avoid-swiss
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: StringDataDeque
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2024-04-21 05:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: keras-nlp-nightly
+[2024-04-21 05:29:36] INFO root fetch - processPackages [StringDataDeque]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 05:29:36] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 05:29:36] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 05:29:36] WARNING root fetch - processPackages [PythonTestLJC356]: Skipping, unable to determine old version
+[2024-04-21 05:29:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC356] error
+[2024-04-21 05:29:36] INFO root fetch - processPackages [gmaps-avoid-swiss]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 05:29:36] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/bd/3e/64b6f879d75a41c0e9938de7c6560ca0687f4bd5fd1625628ba844417035/StringDataDeque-1.0.1.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-04-21 05:29:36] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: Downloading https://files.pythonhosted.org/packages/14/09/be81696578a4548179ca9bec9f1f20e2f6dd73b532cc5be1b2b8a9eab813/nonebot_plugin_zsmeme-0.0.1.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [gmaps-avoid-swiss]: Downloading https://files.pythonhosted.org/packages/79/4d/41b3b5cdfaceb5955043969950c5423e766ddbd4cfa2b759d08116bc2bea/gmaps_avoid_swiss-0.1.4.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/0c/59/c723bef16daa95ae2e00008cbe7744cfa1d90cc5333981688c3c421c74ad/stringdatadeque-1.0.2.tar.gz
+[2024-04-21 05:29:36] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-21 05:29:37] INFO root fetch - processPackages [StringDataDeque]: executing diffoscope
+[2024-04-21 05:29:37] INFO root fetch - processPackages [StringDataDeque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringDataDeque-1.0.1.tar.gz tmp/stringdatadeque-1.0.2.tar.gz --markdown 20240421/S/StringDataDeque/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 05:29:37] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-21 05:29:37] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240421/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 05:29:37] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: Downloading https://files.pythonhosted.org/packages/f6/b6/71ef98d5ffe49901641ec701bc50988a12fd932d7dedab0b865293d509ac/nonebot_plugin_zsmeme-0.0.2.tar.gz
+[2024-04-21 05:29:37] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-04-21 05:29:37] INFO root fetch - processPackages [gmaps-avoid-swiss]: Downloading https://files.pythonhosted.org/packages/8d/5f/465f980e6c1410d62f164c9708436c976d85ce452d11df4e8337c3a6bbf1/gmaps_avoid_swiss-0.1.5.tar.gz
+[2024-04-21 05:29:37] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: executing diffoscope
+[2024-04-21 05:29:37] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_zsmeme-0.0.1.tar.gz tmp/nonebot_plugin_zsmeme-0.0.2.tar.gz --markdown 20240421/n/nonebot-plugin-zsmeme/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 05:29:37] INFO root fetch - processPackages [gmaps-avoid-swiss]: executing diffoscope
+[2024-04-21 05:29:37] INFO root fetch - processPackages [gmaps-avoid-swiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmaps_avoid_swiss-0.1.4.tar.gz tmp/gmaps_avoid_swiss-0.1.5.tar.gz --markdown 20240421/g/gmaps-avoid-swiss/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 05:29:37] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-21 05:29:37] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240421/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-04-21 05:29:37] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-21 05:29:37] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_zsmeme-0.0.1.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - processPackages [nonebot-plugin-zsmeme]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_zsmeme-0.0.2.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-zsmeme]: success
+[2024-04-21 05:29:37] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/StringDataDeque-1.0.1.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.0.2.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
+[2024-04-21 05:29:37] INFO root fetch - processPackages [gmaps-avoid-swiss]: Remove: archive file [/home/abi/fetcher/tmp/gmaps_avoid_swiss-0.1.4.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - processPackages [gmaps-avoid-swiss]: Remove: archive file [/home/abi/fetcher/tmp/gmaps_avoid_swiss-0.1.5.tar.gz]
+[2024-04-21 05:29:37] INFO root fetch - main [MainThread]: End processing [gmaps-avoid-swiss]: success
+[2024-04-21 05:29:38] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-04-21 05:29:38] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-04-21 05:29:38] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-21 05:29:38] INFO root fetch - main [MainThread]: Store serial: [22861688]
