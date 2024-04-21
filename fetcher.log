@@ -4980,3 +4980,15 @@
 [2024-04-21 08:05:53] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
 [2024-04-21 08:05:53] INFO root fetch - main [MainThread]: End processing [nuon]: success
 [2024-04-21 08:05:53] INFO root fetch - main [MainThread]: Store serial: [22862319]
+[2024-04-21 08:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862319]
+[2024-04-21 08:08:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 08:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arch-flow
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/72/31/adb1d35c8d5457fc7ead325204fb76bf56098132b1fcda86dc0741578148/arch_flow-0.1.1.tar.gz
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/40/fb/31c05749550f2985ad7c3709e08d7162fe0e9c967421caaab73b88d0777e/arch_flow-0.1.2.tar.gz
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: executing diffoscope
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch_flow-0.1.1.tar.gz tmp/arch_flow-0.1.2.tar.gz --markdown 20240421/a/arch-flow/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.1.tar.gz]
+[2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.2.tar.gz]
+[2024-04-21 08:08:02] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
+[2024-04-21 08:08:02] INFO root fetch - main [MainThread]: Store serial: [22862321]
