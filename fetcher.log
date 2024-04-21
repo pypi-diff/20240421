@@ -5806,3 +5806,52 @@
 [2024-04-21 09:14:04] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-21 09:14:04] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-21 09:14:04] INFO root fetch - main [MainThread]: Store serial: [22862689]
+[2024-04-21 09:16:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862689]
+[2024-04-21 09:16:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TH-camera-calibration
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC399
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-utilsds
+[2024-04-21 09:16:12] INFO root fetch - processPackages [TH-camera-calibration]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-21 09:16:12] INFO root fetch - processPackages [cerbogen]: New version: [0.0.50] Old Version: [0.0.48]
+[2024-04-21 09:16:12] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713682896] Old Version: [0.0.19a1713682878]
+[2024-04-21 09:16:12] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713682896] Old Version: [0.0.19a1713682878]
+[2024-04-21 09:16:12] INFO root fetch - processPackages [django-utilsds]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-21 09:16:12] WARNING root fetch - processPackages [PythonTestLJC399]: Skipping, unable to determine old version
+[2024-04-21 09:16:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC399] error
+[2024-04-21 09:16:12] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/27/d9/39820f9d23c0bec4c52644e7b32036fa3aef4cf58dbed5d55fcf3196e96f/cerbogen-0.0.48.tar.gz
+[2024-04-21 09:16:12] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/ea/ff/a99a9a52565ea1d332fb4450aaaa137b4cc38e4c14ad8bc98fbc2aff4d44/TH_camera_calibration-0.4.3.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/e5/16/e8eab6fbef31775a0796af062a410c50c54fc1bce20a19638e2148141b2e/pulumi_kubernetes_the_hard_way-0.0.19a1713682878.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/e5/16/e8eab6fbef31775a0796af062a410c50c54fc1bce20a19638e2148141b2e/pulumi_kubernetes_the_hard_way-0.0.19a1713682878.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [django-utilsds]: Downloading https://files.pythonhosted.org/packages/3c/65/ea39f6f5d71c7bea8c4be77fa281cb9c2e499e0609eb585296dcd6ab5488/django_utilsds-0.4.0.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/c0/76/11dad4642a4d0a883cb4eeb77ed6e59801f616507fdb2b02908b8b0dc202/TH_camera_calibration-0.4.4.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/ff/b3/0e848b36a2daa5237bc11968607b745a400342326ebc56d79aaa654649e7/cerbogen-0.0.50.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [TH-camera-calibration]: executing diffoscope
+[2024-04-21 09:16:13] INFO root fetch - processPackages [TH-camera-calibration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TH_camera_calibration-0.4.3.tar.gz tmp/TH_camera_calibration-0.4.4.tar.gz --markdown 20240421/T/TH-camera-calibration/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-21 09:16:13] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 09:16:13] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.48.tar.gz tmp/cerbogen-0.0.50.tar.gz --markdown 20240421/c/cerbogen/0.0.48-0.0.50/README.md --exclude *.pyd
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a5/8e/977bea31bc97b20365c7464b286694f2cc7497056899d26c9f2287f37211/pulumi_kubernetes_the_hard_way-0.0.19a1713682896.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a5/8e/977bea31bc97b20365c7464b286694f2cc7497056899d26c9f2287f37211/pulumi_kubernetes_the_hard_way-0.0.19a1713682896.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [django-utilsds]: Downloading https://files.pythonhosted.org/packages/98/f4/75e525a9b81eaba746f82e763253328f06e2de7ac9e4f4e1e9b6fbcb0578/django_utilsds-0.5.0.tar.gz
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682878.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682896.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.19a1713682878-0.0.19a1713682896/README.md --exclude *.pyd
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 09:16:13] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682878.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682896.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.19a1713682878-0.0.19a1713682896/README.md --exclude *.pyd
+[2024-04-21 09:16:13] INFO root fetch - processPackages [django-utilsds]: executing diffoscope
+[2024-04-21 09:16:13] INFO root fetch - processPackages [django-utilsds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_utilsds-0.4.0.tar.gz tmp/django_utilsds-0.5.0.tar.gz --markdown 20240421/d/django-utilsds/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-21 09:16:13] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.3.tar.gz]
+[2024-04-21 09:16:13] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.4.tar.gz]
+[2024-04-21 09:16:13] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration]: success
+[2024-04-21 09:16:14] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.48.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.50.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 09:16:14] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682878.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682896.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 09:16:14] INFO root fetch - processPackages [django-utilsds]: Remove: archive file [/home/abi/fetcher/tmp/django_utilsds-0.4.0.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - processPackages [django-utilsds]: Remove: archive file [/home/abi/fetcher/tmp/django_utilsds-0.5.0.tar.gz]
+[2024-04-21 09:16:14] INFO root fetch - main [MainThread]: End processing [django-utilsds]: success
+[2024-04-21 09:16:14] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 09:16:14] INFO root fetch - main [MainThread]: Store serial: [22862709]
