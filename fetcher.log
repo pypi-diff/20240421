@@ -10713,3 +10713,27 @@
 [2024-04-21 15:33:30] INFO root fetch - processPackages [drxtract]: Remove: archive file [/home/abi/fetcher/tmp/drxtract-0.1.4-py3-none-any.whl.zip]
 [2024-04-21 15:33:30] INFO root fetch - main [MainThread]: End processing [drxtract]: success
 [2024-04-21 15:33:30] INFO root fetch - main [MainThread]: Store serial: [22864963]
+[2024-04-21 15:35:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864963]
+[2024-04-21 15:35:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 15:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfr
+[2024-04-21 15:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC471
+[2024-04-21 15:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reviser
+[2024-04-21 15:35:39] INFO root fetch - processPackages [pyfr]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-21 15:35:39] WARNING root fetch - processPackages [PythonTestLJC471]: Skipping, unable to determine old version
+[2024-04-21 15:35:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC471] error
+[2024-04-21 15:35:39] INFO root fetch - processPackages [reviser]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-21 15:35:39] INFO root fetch - processPackages [pyfr]: Downloading https://files.pythonhosted.org/packages/ff/71/84d8fee22686bd48bb7a61f8534b9bb177589b2a5879aefec2ca49e9c0cf/pyfr-2.0.0.tar.gz
+[2024-04-21 15:35:39] INFO root fetch - processPackages [reviser]: Downloading https://files.pythonhosted.org/packages/ec/cb/7439c211c012e33b9e3bb4d5e2ed9eafe5631660f3d2044a8f552222bd4e/reviser-0.4.1.tar.gz
+[2024-04-21 15:35:39] INFO root fetch - processPackages [pyfr]: Downloading https://files.pythonhosted.org/packages/c5/cd/8f9e7c8ee23e8d0ae144ffac308062236b6afbe3edcebab772606935e6c2/pyfr-2.0.1.tar.gz
+[2024-04-21 15:35:39] INFO root fetch - processPackages [reviser]: Downloading https://files.pythonhosted.org/packages/e1/e4/8b89c1f2ef800577cf16f729753ff4b369e548d128d5568b7b067c8996ec/reviser-0.4.2.tar.gz
+[2024-04-21 15:35:39] INFO root fetch - processPackages [pyfr]: executing diffoscope
+[2024-04-21 15:35:39] INFO root fetch - processPackages [pyfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfr-2.0.0.tar.gz tmp/pyfr-2.0.1.tar.gz --markdown 20240421/p/pyfr/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-21 15:35:39] INFO root fetch - processPackages [reviser]: executing diffoscope
+[2024-04-21 15:35:39] INFO root fetch - processPackages [reviser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reviser-0.4.1.tar.gz tmp/reviser-0.4.2.tar.gz --markdown 20240421/r/reviser/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-21 15:35:40] INFO root fetch - processPackages [reviser]: Remove: archive file [/home/abi/fetcher/tmp/reviser-0.4.1.tar.gz]
+[2024-04-21 15:35:40] INFO root fetch - processPackages [reviser]: Remove: archive file [/home/abi/fetcher/tmp/reviser-0.4.2.tar.gz]
+[2024-04-21 15:35:40] INFO root fetch - main [MainThread]: End processing [reviser]: success
+[2024-04-21 15:35:42] INFO root fetch - processPackages [pyfr]: Remove: archive file [/home/abi/fetcher/tmp/pyfr-2.0.0.tar.gz]
+[2024-04-21 15:35:42] INFO root fetch - processPackages [pyfr]: Remove: archive file [/home/abi/fetcher/tmp/pyfr-2.0.1.tar.gz]
+[2024-04-21 15:35:42] INFO root fetch - main [MainThread]: End processing [pyfr]: success
+[2024-04-21 15:35:42] INFO root fetch - main [MainThread]: Store serial: [22864975]
