@@ -5567,3 +5567,21 @@
 [2024-04-21 08:51:54] INFO root fetch - main [MainThread]: End processing [docsig]: success
 [2024-04-21 08:51:54] INFO root fetch - main [MainThread]: End processing [utilset]: success
 [2024-04-21 08:51:54] INFO root fetch - main [MainThread]: Store serial: [22862577]
+[2024-04-21 08:53:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862577]
+[2024-04-21 08:54:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 08:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fixerclient
+[2024-04-21 08:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stackNqueue
+[2024-04-21 08:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC388
+[2024-04-21 08:54:02] INFO root fetch - processPackages [stackNqueue]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 08:54:02] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/b6/fe/b0fb6ba891913a43f5a7b433855b3b116fb847ef4bb29d26862ba19f810d/stackNqueue-0.0.2-py3-none-any.whl
+[2024-04-21 08:54:02] WARNING root fetch - processPackages [PythonTestLJC388]: Skipping, unable to determine old version
+[2024-04-21 08:54:02] ERROR root fetch - processPackages [fixerclient]: Unable to get metadata: No such project 'fixerclient'
+[2024-04-21 08:54:02] INFO root fetch - main [MainThread]: End processing [PythonTestLJC388] error
+[2024-04-21 08:54:02] INFO root fetch - main [MainThread]: End processing [fixerclient] error
+[2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/b2/86/4965c8deafa17fc42acffa1c00e3189dd52fd861137cd5540ebc02fa74a3/stackNqueue-0.0.3-py3-none-any.whl
+[2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: executing diffoscope
+[2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackNqueue-0.0.2-py3-none-any.whl.zip tmp/stackNqueue-0.0.3-py3-none-any.whl.zip --markdown 20240421/s/stackNqueue/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 08:54:03] INFO root fetch - main [MainThread]: End processing [stackNqueue]: success
+[2024-04-21 08:54:03] INFO root fetch - main [MainThread]: Store serial: [22862590]
