@@ -7377,3 +7377,48 @@
 [2024-04-21 11:21:36] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.49.tar.gz]
 [2024-04-21 11:21:36] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-04-21 11:21:36] INFO root fetch - main [MainThread]: Store serial: [22863368]
+[2024-04-21 11:23:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863368]
+[2024-04-21 11:23:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: galxiai
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AstroScript
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drawdraw
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotdl-rockbox
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: castepinput
+[2024-04-21 11:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: orix
+[2024-04-21 11:23:52] WARNING root fetch - processPackages [AstroScript]: Skipping, unable to determine old version
+[2024-04-21 11:23:52] INFO root fetch - main [MainThread]: End processing [AstroScript] error
+[2024-04-21 11:23:52] INFO root fetch - processPackages [drawdraw]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 11:23:52] INFO root fetch - processPackages [spotdl-rockbox]: New version: [4.2.7] Old Version: [4.2.6]
+[2024-04-21 11:23:52] WARNING root fetch - processPackages [galxiai]: Skipping, unable to determine old version
+[2024-04-21 11:23:52] INFO root fetch - main [MainThread]: End processing [galxiai] error
+[2024-04-21 11:23:52] INFO root fetch - processPackages [castepinput]: New version: [0.1.8] Old Version: [0.1.6]
+[2024-04-21 11:23:52] INFO root fetch - processPackages [orix]: New version: [0.9.0rc2] Old Version: [0.9.0.post0]
+[2024-04-21 11:23:52] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/9c/6e/3c73f707ad50b0424934b5877079eacef7d1482d7af7dd0957ee3b48e5f1/drawdraw-0.0.3-py3-none-any.whl
+[2024-04-21 11:23:52] INFO root fetch - processPackages [spotdl-rockbox]: Downloading https://files.pythonhosted.org/packages/24/ad/d9264b3ad19e3e887fce65d4cbc4eb89610bc6a8a790bdc54e144a160556/spotdl_rockbox-4.2.6.tar.gz
+[2024-04-21 11:23:52] INFO root fetch - processPackages [castepinput]: Downloading https://files.pythonhosted.org/packages/ba/f1/413acc4f3e16030053a8d35b02456f94c9dbaca08993065c33adc158b512/castepinput-0.1.6.tar.gz
+[2024-04-21 11:23:52] INFO root fetch - processPackages [orix]: Downloading https://files.pythonhosted.org/packages/e2/a3/ac91f52f30742ab9c62047b4918cace2790f1690029e396365c52ea9c706/orix-0.9.0.post0.tar.gz
+[2024-04-21 11:23:52] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/51/d0/ac10d75469512624bc7863b7635edc79cbf8ba05571a8e2124e02abb6965/drawdraw-0.0.4-py3-none-any.whl
+[2024-04-21 11:23:52] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 11:23:52] INFO root fetch - processPackages [spotdl-rockbox]: Downloading https://files.pythonhosted.org/packages/9d/4f/64904068d273fc4a9841a0377b19d5f13c823c5a1b7b70d7ffdaf9119ab1/spotdl_rockbox-4.2.7.tar.gz
+[2024-04-21 11:23:52] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.3-py3-none-any.whl.zip tmp/drawdraw-0.0.4-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 11:23:52] INFO root fetch - processPackages [castepinput]: Downloading https://files.pythonhosted.org/packages/68/8a/3931934ffc7dd3db58a97610b142d02751b0e3d34fe022d8d9b5a39a9e97/castepinput-0.1.8.tar.gz
+[2024-04-21 11:23:52] INFO root fetch - processPackages [spotdl-rockbox]: executing diffoscope
+[2024-04-21 11:23:52] INFO root fetch - processPackages [spotdl-rockbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotdl_rockbox-4.2.6.tar.gz tmp/spotdl_rockbox-4.2.7.tar.gz --markdown 20240421/s/spotdl-rockbox/4.2.6-4.2.7/README.md --exclude *.pyd
+[2024-04-21 11:23:53] INFO root fetch - processPackages [orix]: Downloading https://files.pythonhosted.org/packages/b7/81/adf990bb879de1d8d7b683f79a3e51cfec97c7b2dbdfbd00754b99590381/orix-0.9.0rc2.tar.gz
+[2024-04-21 11:23:53] INFO root fetch - processPackages [castepinput]: executing diffoscope
+[2024-04-21 11:23:53] INFO root fetch - processPackages [castepinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/castepinput-0.1.6.tar.gz tmp/castepinput-0.1.8.tar.gz --markdown 20240421/c/castepinput/0.1.6-0.1.8/README.md --exclude *.pyd
+[2024-04-21 11:23:53] INFO root fetch - processPackages [orix]: executing diffoscope
+[2024-04-21 11:23:53] INFO root fetch - processPackages [orix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orix-0.9.0.post0.tar.gz tmp/orix-0.9.0rc2.tar.gz --markdown 20240421/o/orix/0.9.0.post0-0.9.0rc2/README.md --exclude *.pyd
+[2024-04-21 11:23:53] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 11:23:53] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.4-py3-none-any.whl.zip]
+[2024-04-21 11:23:53] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 11:23:53] INFO root fetch - processPackages [castepinput]: Remove: archive file [/home/abi/fetcher/tmp/castepinput-0.1.6.tar.gz]
+[2024-04-21 11:23:53] INFO root fetch - processPackages [castepinput]: Remove: archive file [/home/abi/fetcher/tmp/castepinput-0.1.8.tar.gz]
+[2024-04-21 11:23:53] INFO root fetch - main [MainThread]: End processing [castepinput]: success
+[2024-04-21 11:23:53] INFO root fetch - processPackages [spotdl-rockbox]: Remove: archive file [/home/abi/fetcher/tmp/spotdl_rockbox-4.2.6.tar.gz]
+[2024-04-21 11:23:53] INFO root fetch - processPackages [spotdl-rockbox]: Remove: archive file [/home/abi/fetcher/tmp/spotdl_rockbox-4.2.7.tar.gz]
+[2024-04-21 11:23:53] INFO root fetch - main [MainThread]: End processing [spotdl-rockbox]: success
+[2024-04-21 11:23:54] INFO root fetch - processPackages [orix]: Remove: archive file [/home/abi/fetcher/tmp/orix-0.9.0.post0.tar.gz]
+[2024-04-21 11:23:54] INFO root fetch - processPackages [orix]: Remove: archive file [/home/abi/fetcher/tmp/orix-0.9.0rc2.tar.gz]
+[2024-04-21 11:23:54] INFO root fetch - main [MainThread]: End processing [orix]: success
+[2024-04-21 11:23:54] INFO root fetch - main [MainThread]: Store serial: [22863391]
