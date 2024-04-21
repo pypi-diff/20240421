@@ -6289,3 +6289,45 @@
 [2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_cncf_kubernetes-8.1.1rc1.tar.gz]
 [2024-04-21 09:55:16] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-cncf-kubernetes]: success
 [2024-04-21 09:55:16] INFO root fetch - main [MainThread]: Store serial: [22862938]
+[2024-04-21 09:57:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862938]
+[2024-04-21 09:57:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 09:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC414
+[2024-04-21 09:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eirStru
+[2024-04-21 09:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-fedit
+[2024-04-21 09:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly
+[2024-04-21 09:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plum-dispatch
+[2024-04-21 09:57:24] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.5.3rc7] Old Version: [1.5.3rc6]
+[2024-04-21 09:57:24] WARNING root fetch - processPackages [PythonTestLJC414]: Skipping, unable to determine old version
+[2024-04-21 09:57:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC414] error
+[2024-04-21 09:57:24] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/a1/82/fdb440f76db526bb21addeb9875020388b8fbac7c8d702ab13fa6511e002/wagtail_fedit-1.5.3rc6.tar.gz
+[2024-04-21 09:57:24] INFO root fetch - processPackages [eirStru]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-21 09:57:24] INFO root fetch - processPackages [plum-dispatch]: New version: [2.3.4] Old Version: [2.3.3]
+[2024-04-21 09:57:24] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240421] Old Version: [2.17.0.dev20240420]
+[2024-04-21 09:57:25] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/fb/2b/0b43e857faf19e8e6a350624528799c46e9cf816485dd707d14d19da16ad/eirStru-0.3.2.tar.gz
+[2024-04-21 09:57:25] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/ea/d3/a8ad532816528292e1dfbe7f761da24481aab5db9b5b4538f7818b2f1f77/plum_dispatch-2.3.3.tar.gz
+[2024-04-21 09:57:25] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/c3/e4/fc545a95cee0af46765b4588c468ea4c5202aa16464d2004f06755594d15/wagtail_fedit-1.5.3rc7.tar.gz
+[2024-04-21 09:57:25] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/fd/3a/be633a584115e58dbcb5fcb68bfeed5ffb44afdcd0ba6966f16358b1f791/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl
+[2024-04-21 09:57:25] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-21 09:57:25] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.5.3rc6.tar.gz tmp/wagtail_fedit-1.5.3rc7.tar.gz --markdown 20240421/w/wagtail-fedit/1.5.3rc6-1.5.3rc7/README.md --exclude *.pyd
+[2024-04-21 09:57:25] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/cd/99/351dc57ee8b2f06004f80702500689e5271323379dc3dbe4dbad60672926/eirStru-0.3.3.tar.gz
+[2024-04-21 09:57:25] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/fc/5a/1f59a50c2b2385e6ec573e224da9f72aa03201d39741a3456b1974935fb5/plum_dispatch-2.3.4.tar.gz
+[2024-04-21 09:57:25] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 09:57:25] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.2.tar.gz tmp/eirStru-0.3.3.tar.gz --markdown 20240421/e/eirStru/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-21 09:57:25] INFO root fetch - processPackages [plum-dispatch]: executing diffoscope
+[2024-04-21 09:57:25] INFO root fetch - processPackages [plum-dispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plum_dispatch-2.3.3.tar.gz tmp/plum_dispatch-2.3.4.tar.gz --markdown 20240421/p/plum-dispatch/2.3.3-2.3.4/README.md --exclude *.pyd
+[2024-04-21 09:57:25] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/4b/58/1afcb49cf85459cd4ec51e12c8eb339e6b6051bbe6f6366f414956bf7743/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl
+[2024-04-21 09:57:26] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.3.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.4.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - main [MainThread]: End processing [plum-dispatch]: success
+[2024-04-21 09:57:26] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.2.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.3.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 09:57:26] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-21 09:57:26] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip --markdown 20240421/t/tf-nightly/2.17.0.dev20240420-2.17.0.dev20240421/README.md --exclude *.pyd
+[2024-04-21 09:57:26] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc6.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc7.tar.gz]
+[2024-04-21 09:57:26] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-21 09:57:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip]
+[2024-04-21 09:57:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip]
+[2024-04-21 09:57:26] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-21 09:57:26] INFO root fetch - main [MainThread]: Store serial: [22862955]
