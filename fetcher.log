@@ -5897,3 +5897,42 @@
 [2024-04-21 09:20:33] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.52.tar.gz]
 [2024-04-21 09:20:33] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
 [2024-04-21 09:20:33] INFO root fetch - main [MainThread]: Store serial: [22862718]
+[2024-04-21 09:22:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862718]
+[2024-04-21 09:22:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-utilsds
+[2024-04-21 09:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-21 09:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ds20kdb-avt
+[2024-04-21 09:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-easily-auth
+[2024-04-21 09:22:42] INFO root fetch - processPackages [django-utilsds]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 09:22:42] INFO root fetch - processPackages [drf-easily-auth]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 09:22:42] INFO root fetch - processPackages [cerbogen]: New version: [0.0.53] Old Version: [0.0.52]
+[2024-04-21 09:22:42] INFO root fetch - processPackages [django-utilsds]: Downloading https://files.pythonhosted.org/packages/98/f4/75e525a9b81eaba746f82e763253328f06e2de7ac9e4f4e1e9b6fbcb0578/django_utilsds-0.5.0.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 09:22:42] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/78/92/f70fbdcfb1b8d31cd54d7d49b73472988b03450b72d82556bc98242b7ede/cerbogen-0.0.52.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [drf-easily-auth]: Downloading https://files.pythonhosted.org/packages/7a/02/fe6883f707db1deb17dbd33eba3251b760a20d40a6103e6b2e8d2d141805/drf_easily_auth-0.1.1.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/54/fc/d6eb13c3159fe18627b8d7e0c76dfc177e657a384ee411738c5950b0ff8f/ds20kdb_avt-1.0.8.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [drf-easily-auth]: Downloading https://files.pythonhosted.org/packages/bd/00/e8aa44729f188a6ae4d3b560f6e87fd64bc284cfeb57c0f8ad7351322cbd/drf_easily_auth-0.1.2.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [django-utilsds]: Downloading https://files.pythonhosted.org/packages/10/7f/094b9581d360268de2214fd2247e539b6071105134e20409b7489eaed29b/django_utilsds-0.5.1.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/47/18/fff0ac4a5f85f0f8a7fcfb15c9e77c4f3045e56c3b2c806914fbb1015ea7/cerbogen-0.0.53.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [drf-easily-auth]: executing diffoscope
+[2024-04-21 09:22:42] INFO root fetch - processPackages [drf-easily-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_easily_auth-0.1.1.tar.gz tmp/drf_easily_auth-0.1.2.tar.gz --markdown 20240421/d/drf-easily-auth/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 09:22:42] INFO root fetch - processPackages [django-utilsds]: executing diffoscope
+[2024-04-21 09:22:42] INFO root fetch - processPackages [django-utilsds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_utilsds-0.5.0.tar.gz tmp/django_utilsds-0.5.1.tar.gz --markdown 20240421/d/django-utilsds/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 09:22:42] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 09:22:42] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.52.tar.gz tmp/cerbogen-0.0.53.tar.gz --markdown 20240421/c/cerbogen/0.0.52-0.0.53/README.md --exclude *.pyd
+[2024-04-21 09:22:42] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/83/28/16e823ee489c38fd36674be8fd026fb3db3cfcad54433558f118ad2bfbdc/ds20kdb_avt-1.0.9.tar.gz
+[2024-04-21 09:22:42] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-21 09:22:42] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb_avt-1.0.8.tar.gz tmp/ds20kdb_avt-1.0.9.tar.gz --markdown 20240421/d/ds20kdb-avt/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 09:22:43] INFO root fetch - processPackages [drf-easily-auth]: Remove: archive file [/home/abi/fetcher/tmp/drf_easily_auth-0.1.1.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - processPackages [drf-easily-auth]: Remove: archive file [/home/abi/fetcher/tmp/drf_easily_auth-0.1.2.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - main [MainThread]: End processing [drf-easily-auth]: success
+[2024-04-21 09:22:43] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.52.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.53.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 09:22:43] INFO root fetch - processPackages [django-utilsds]: Remove: archive file [/home/abi/fetcher/tmp/django_utilsds-0.5.0.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - processPackages [django-utilsds]: Remove: archive file [/home/abi/fetcher/tmp/django_utilsds-0.5.1.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - main [MainThread]: End processing [django-utilsds]: success
+[2024-04-21 09:22:43] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.8.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.9.tar.gz]
+[2024-04-21 09:22:43] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-21 09:22:43] INFO root fetch - main [MainThread]: Store serial: [22862731]
