@@ -3100,3 +3100,27 @@
 [2024-04-21 04:44:04] WARNING root fetch - processPackages [PythonTestLJC340]: Skipping, unable to determine old version
 [2024-04-21 04:44:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC340] error
 [2024-04-21 04:44:04] INFO root fetch - main [MainThread]: Store serial: [22861447]
+[2024-04-21 04:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861447]
+[2024-04-21 04:46:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 04:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gettake
+[2024-04-21 04:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dycw-utilities
+[2024-04-21 04:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shinylive-auth
+[2024-04-21 04:46:12] INFO root fetch - processPackages [shinylive-auth]: New version: [2024.4.20] Old Version: [0.0.1]
+[2024-04-21 04:46:12] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-04-21 04:46:12] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/a9/4d/f26c3841853cd80c39a436ef819ce3385ab65208113e7944c3abcc127f0c/shinylive_auth-0.0.1.tar.gz
+[2024-04-21 04:46:13] WARNING root fetch - processPackages [gettake]: Skipping, unable to determine old version
+[2024-04-21 04:46:13] INFO root fetch - main [MainThread]: End processing [gettake] error
+[2024-04-21 04:46:13] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-04-21 04:46:13] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/0c/92/b77f648974bfeb41cccd67ff2715e57e90b9d5a1e7aa412460486fdf642b/shinylive_auth-2024.4.20.tar.gz
+[2024-04-21 04:46:13] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-04-21 04:46:13] INFO root fetch - processPackages [shinylive-auth]: executing diffoscope
+[2024-04-21 04:46:13] INFO root fetch - processPackages [shinylive-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinylive_auth-0.0.1.tar.gz tmp/shinylive_auth-2024.4.20.tar.gz --markdown 20240421/s/shinylive-auth/0.0.1-2024.4.20/README.md --exclude *.pyd
+[2024-04-21 04:46:13] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-04-21 04:46:13] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240421/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-04-21 04:46:13] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-0.0.1.tar.gz]
+[2024-04-21 04:46:13] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-2024.4.20.tar.gz]
+[2024-04-21 04:46:13] INFO root fetch - main [MainThread]: End processing [shinylive-auth]: success
+[2024-04-21 04:46:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-04-21 04:46:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-04-21 04:46:14] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-04-21 04:46:14] INFO root fetch - main [MainThread]: Store serial: [22861458]
