@@ -7575,3 +7575,39 @@
 [2024-04-21 11:38:52] INFO root fetch - processPackages [OmniGenome]: Remove: archive file [/home/abi/fetcher/tmp/OmniGenome-0.0.1b1-py3-none-any.whl.zip]
 [2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [OmniGenome]: success
 [2024-04-21 11:38:52] INFO root fetch - main [MainThread]: Store serial: [22863449]
+[2024-04-21 11:40:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863449]
+[2024-04-21 11:41:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redflag
+[2024-04-21 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: misleep
+[2024-04-21 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Red-Web-Dashboard
+[2024-04-21 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightningtoolkit
+[2024-04-21 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: textile-metric
+[2024-04-21 11:41:02] WARNING root fetch - processPackages [textile-metric]: Skipping, unable to determine old version
+[2024-04-21 11:41:02] INFO root fetch - main [MainThread]: End processing [textile-metric] error
+[2024-04-21 11:41:02] INFO root fetch - processPackages [misleep]: New version: [0.2.3b0] Old Version: [0.2.2b0]
+[2024-04-21 11:41:02] INFO root fetch - processPackages [redflag]: New version: [0.5.0rc1] Old Version: [0.4.2rc1]
+[2024-04-21 11:41:02] INFO root fetch - processPackages [Red-Web-Dashboard]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-04-21 11:41:02] INFO root fetch - processPackages [misleep]: Downloading https://files.pythonhosted.org/packages/b4/34/85ab36d21a9a2b62e79d29bec12838c27b723227eabd499127564583e49d/misleep-0.2.2b0.tar.gz
+[2024-04-21 11:41:02] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/97/55/12ba69e1fe4c5eab6b7d1e7afc357b6f2d1bdb670b99c5a61e284ceafadf/red_web_dashboard-1.4.0.tar.gz
+[2024-04-21 11:41:02] WARNING root fetch - processPackages [lightningtoolkit]: Skipping, unable to determine old version
+[2024-04-21 11:41:02] INFO root fetch - main [MainThread]: End processing [lightningtoolkit] error
+[2024-04-21 11:41:02] INFO root fetch - processPackages [redflag]: Downloading https://files.pythonhosted.org/packages/43/8b/f2a69a4b28101f4129b981f31c50638957a376485c67ecae8252585ef969/redflag-0.4.2rc1.tar.gz
+[2024-04-21 11:41:03] INFO root fetch - processPackages [misleep]: Downloading https://files.pythonhosted.org/packages/d5/91/9701bd977c08a0c6fd6e85834df6dc3f4f64bec3c662630f3996ab074507/misleep-0.2.3b0.tar.gz
+[2024-04-21 11:41:03] INFO root fetch - processPackages [redflag]: Downloading https://files.pythonhosted.org/packages/0c/2a/c7e44352091d28c316b8d15248bb133c392b1385e0bebf6bf8d219cdc319/redflag-0.5.0rc1.tar.gz
+[2024-04-21 11:41:03] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/8b/38/3e91abd6032a17812f99ee09c7b693cb21fb309641289e0c469646b339cb/red_web_dashboard-1.5.0.tar.gz
+[2024-04-21 11:41:03] INFO root fetch - processPackages [misleep]: executing diffoscope
+[2024-04-21 11:41:03] INFO root fetch - processPackages [misleep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misleep-0.2.2b0.tar.gz tmp/misleep-0.2.3b0.tar.gz --markdown 20240421/m/misleep/0.2.2b0-0.2.3b0/README.md --exclude *.pyd
+[2024-04-21 11:41:03] INFO root fetch - processPackages [redflag]: executing diffoscope
+[2024-04-21 11:41:03] INFO root fetch - processPackages [redflag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redflag-0.4.2rc1.tar.gz tmp/redflag-0.5.0rc1.tar.gz --markdown 20240421/r/redflag/0.4.2rc1-0.5.0rc1/README.md --exclude *.pyd
+[2024-04-21 11:41:04] INFO root fetch - processPackages [Red-Web-Dashboard]: executing diffoscope
+[2024-04-21 11:41:04] INFO root fetch - processPackages [Red-Web-Dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_web_dashboard-1.4.0.tar.gz tmp/red_web_dashboard-1.5.0.tar.gz --markdown 20240421/R/Red-Web-Dashboard/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-04-21 11:41:04] INFO root fetch - processPackages [misleep]: Remove: archive file [/home/abi/fetcher/tmp/misleep-0.2.2b0.tar.gz]
+[2024-04-21 11:41:04] INFO root fetch - processPackages [misleep]: Remove: archive file [/home/abi/fetcher/tmp/misleep-0.2.3b0.tar.gz]
+[2024-04-21 11:41:04] INFO root fetch - main [MainThread]: End processing [misleep]: success
+[2024-04-21 11:41:05] INFO root fetch - processPackages [redflag]: Remove: archive file [/home/abi/fetcher/tmp/redflag-0.4.2rc1.tar.gz]
+[2024-04-21 11:41:05] INFO root fetch - processPackages [redflag]: Remove: archive file [/home/abi/fetcher/tmp/redflag-0.5.0rc1.tar.gz]
+[2024-04-21 11:41:05] INFO root fetch - main [MainThread]: End processing [redflag]: success
+[2024-04-21 11:41:05] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.4.0.tar.gz]
+[2024-04-21 11:41:05] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.5.0.tar.gz]
+[2024-04-21 11:41:05] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
+[2024-04-21 11:41:05] INFO root fetch - main [MainThread]: Store serial: [22863466]
