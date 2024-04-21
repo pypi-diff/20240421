@@ -1180,3 +1180,45 @@
 [2024-04-21 02:07:04] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240421.444.tar.gz]
 [2024-04-21 02:07:04] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-04-21 02:07:04] INFO root fetch - main [MainThread]: Store serial: [22860421]
+[2024-04-21 02:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860421]
+[2024-04-21 02:09:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharktank
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shortfin
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: receptors
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fitdown
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-common
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC291
+[2024-04-21 02:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mytestpkgfranktcao
+[2024-04-21 02:09:12] WARNING root fetch - processPackages [shortfin]: Skipping, unable to determine old version
+[2024-04-21 02:09:12] INFO root fetch - main [MainThread]: End processing [shortfin] error
+[2024-04-21 02:09:12] INFO root fetch - processPackages [mytestpkgfranktcao]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 02:09:12] INFO root fetch - processPackages [sharktank]: New version: [0.1.dev2] Old Version: [0.1.dev1]
+[2024-04-21 02:09:12] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-21 02:09:12] WARNING root fetch - processPackages [PythonTestLJC291]: Skipping, unable to determine old version
+[2024-04-21 02:09:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC291] error
+[2024-04-21 02:09:12] WARNING root fetch - processPackages [receptors]: Skipping, unable to determine old version
+[2024-04-21 02:09:12] INFO root fetch - main [MainThread]: End processing [receptors] error
+[2024-04-21 02:09:12] WARNING root fetch - processPackages [fitdown]: Skipping, unable to determine old version
+[2024-04-21 02:09:12] INFO root fetch - main [MainThread]: End processing [fitdown] error
+[2024-04-21 02:09:12] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/9d/a2/7a1f542fbdc834af779e919cfb49544981b05f6e3b1e649de220c3d95c43/mytestpkgfranktcao-0.1.1.tar.gz
+[2024-04-21 02:09:12] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-21 02:09:12] INFO root fetch - processPackages [sharktank]: Downloading https://files.pythonhosted.org/packages/8d/1b/7bab68a17f51c512fcd4169ebb7bc1cd629881eef02e2c129ba7999c3307/sharktank-0.1.dev1-py3-none-any.whl
+[2024-04-21 02:09:13] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/35/6a/7a0ae7d9d583ebd65c4652e57b91577d71bfafd78c84b765452d3da85fe8/mytestpkgfranktcao-0.1.2.tar.gz
+[2024-04-21 02:09:13] INFO root fetch - processPackages [sharktank]: Downloading https://files.pythonhosted.org/packages/74/cc/ecb89f6dbbafad0338a33c9197212adf03774743d5838dca0cb85ff81beb/sharktank-0.1.dev2-py3-none-any.whl
+[2024-04-21 02:09:13] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-21 02:09:13] INFO root fetch - processPackages [mytestpkgfranktcao]: executing diffoscope
+[2024-04-21 02:09:13] INFO root fetch - processPackages [mytestpkgfranktcao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytestpkgfranktcao-0.1.1.tar.gz tmp/mytestpkgfranktcao-0.1.2.tar.gz --markdown 20240421/m/mytestpkgfranktcao/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 02:09:13] INFO root fetch - processPackages [sharktank]: executing diffoscope
+[2024-04-21 02:09:13] INFO root fetch - processPackages [sharktank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharktank-0.1.dev1-py3-none-any.whl.zip tmp/sharktank-0.1.dev2-py3-none-any.whl.zip --markdown 20240421/s/sharktank/0.1.dev1-0.1.dev2/README.md --exclude *.pyd
+[2024-04-21 02:09:13] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-21 02:09:13] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240421/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-21 02:09:13] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.1.tar.gz]
+[2024-04-21 02:09:13] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.2.tar.gz]
+[2024-04-21 02:09:13] INFO root fetch - main [MainThread]: End processing [mytestpkgfranktcao]: success
+[2024-04-21 02:09:13] INFO root fetch - processPackages [sharktank]: Remove: archive file [/home/abi/fetcher/tmp/sharktank-0.1.dev1-py3-none-any.whl.zip]
+[2024-04-21 02:09:13] INFO root fetch - processPackages [sharktank]: Remove: archive file [/home/abi/fetcher/tmp/sharktank-0.1.dev2-py3-none-any.whl.zip]
+[2024-04-21 02:09:13] INFO root fetch - main [MainThread]: End processing [sharktank]: success
+[2024-04-21 02:09:14] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-21 02:09:14] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-21 02:09:14] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-21 02:09:14] INFO root fetch - main [MainThread]: Store serial: [22860451]
