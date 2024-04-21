@@ -14433,3 +14433,42 @@
 [2024-04-21 18:56:22] INFO root fetch - processPackages [geranslator]: Remove: archive file [/home/abi/fetcher/tmp/geranslator-1.4.0-py3-none-any.whl.zip]
 [2024-04-21 18:56:22] INFO root fetch - main [MainThread]: End processing [geranslator]: success
 [2024-04-21 18:56:22] INFO root fetch - main [MainThread]: Store serial: [22866712]
+[2024-04-21 18:58:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866712]
+[2024-04-21 18:58:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html-invoice-sender
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nmbrs
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyobs-flipro
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC544
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chamco-ragbot
+[2024-04-21 18:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ricciardi
+[2024-04-21 18:58:31] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:58:31] INFO root fetch - processPackages [pyobs-flipro]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-21 18:58:31] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/75/fd/dbe0b409dbb7f301e9c9613b2c9c523437aa7e4c82329fba23880cf69360/pyobs_flipro-1.0.2.tar.gz
+[2024-04-21 18:58:31] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 18:58:31] WARNING root fetch - processPackages [PythonTestLJC544]: Skipping, unable to determine old version
+[2024-04-21 18:58:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC544] error
+[2024-04-21 18:58:31] INFO root fetch - processPackages [nmbrs]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 18:58:31] WARNING root fetch - processPackages [html-invoice-sender]: Skipping, unable to determine old version
+[2024-04-21 18:58:31] INFO root fetch - main [MainThread]: End processing [html-invoice-sender] error
+[2024-04-21 18:58:31] WARNING root fetch - processPackages [ricciardi]: Skipping, unable to determine old version
+[2024-04-21 18:58:31] INFO root fetch - main [MainThread]: End processing [ricciardi] error
+[2024-04-21 18:58:31] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 18:58:31] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/d0/1f/fc2236140beb1071a557e32e3a7b00d515edc4422bbe46cb379c12529913/nmbrs-0.1.4.tar.gz
+[2024-04-21 18:58:31] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 18:58:31] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:58:31] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/43/b4/8187f2de4f21348f4b6bb7bd3b1f74fe1453efff947d2163f56c199a8917/pyobs_flipro-1.0.3.tar.gz
+[2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/9c/20/dca773c309db89acb5f279cde221e5979a0645fcc81227a72edffd48c25a/nmbrs-0.1.5.tar.gz
+[2024-04-21 18:58:32] INFO root fetch - processPackages [pyobs-flipro]: executing diffoscope
+[2024-04-21 18:58:32] INFO root fetch - processPackages [pyobs-flipro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobs_flipro-1.0.2.tar.gz tmp/pyobs_flipro-1.0.3.tar.gz --markdown 20240421/p/pyobs-flipro/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: executing diffoscope
+[2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmbrs-0.1.4.tar.gz tmp/nmbrs-0.1.5.tar.gz --markdown 20240421/n/nmbrs/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 18:58:32] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 18:58:32] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.2.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.3.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - main [MainThread]: End processing [pyobs-flipro]: success
+[2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.4.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.5.tar.gz]
+[2024-04-21 18:58:32] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
+[2024-04-21 18:58:32] INFO root fetch - main [MainThread]: Store serial: [22866733]
