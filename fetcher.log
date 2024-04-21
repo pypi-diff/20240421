@@ -16049,3 +16049,58 @@
 [2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
 [2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
 [2024-04-21 20:40:55] INFO root fetch - main [MainThread]: Store serial: [22867495]
+[2024-04-21 20:42:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867495]
+[2024-04-21 20:43:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kungfupanda
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: standard-asynchat
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: standard-asynchat
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: standard-asynchat
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-asyncore
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: standard-asyncore
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: standard-asyncore
+[2024-04-21 20:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paper-lib-collective
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: New version: [3.6.15] Old Version: [3.5.10]
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: New version: [3.6.15] Old Version: [3.5.10]
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: New version: [3.6.15] Old Version: [3.5.10]
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:43:04] WARNING root fetch - processPackages [paper-lib-collective]: Skipping, unable to determine old version
+[2024-04-21 20:43:04] INFO root fetch - main [MainThread]: End processing [paper-lib-collective] error
+[2024-04-21 20:43:04] WARNING root fetch - processPackages [kungfupanda]: Skipping, unable to determine old version
+[2024-04-21 20:43:04] INFO root fetch - main [MainThread]: End processing [kungfupanda] error
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/ef/a2/b5686ec63f83389c4783a5849ead15310be484b5755e9904034b8074a9fd/standard_asyncore-3.5.10.tar.gz
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/ef/a2/b5686ec63f83389c4783a5849ead15310be484b5755e9904034b8074a9fd/standard_asyncore-3.5.10.tar.gz
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/ef/a2/b5686ec63f83389c4783a5849ead15310be484b5755e9904034b8074a9fd/standard_asyncore-3.5.10.tar.gz
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/80/e5/6d47cd2acfe45e8d068fe5202471cfce14193ad179c903eae4e5b2b7c115/standard_asynchat-3.8.19.tar.gz
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/80/e5/6d47cd2acfe45e8d068fe5202471cfce14193ad179c903eae4e5b2b7c115/standard_asynchat-3.8.19.tar.gz
+[2024-04-21 20:43:04] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/80/e5/6d47cd2acfe45e8d068fe5202471cfce14193ad179c903eae4e5b2b7c115/standard_asynchat-3.8.19.tar.gz
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/e9/70/02c3566aafac5acb99005a146942bd3ce07a156041287efaa7cfa90c24d9/standard_asyncore-3.6.15.tar.gz
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/e9/70/02c3566aafac5acb99005a146942bd3ce07a156041287efaa7cfa90c24d9/standard_asyncore-3.6.15.tar.gz
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/e9/70/02c3566aafac5acb99005a146942bd3ce07a156041287efaa7cfa90c24d9/standard_asyncore-3.6.15.tar.gz
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asyncore-3.5.10.tar.gz tmp/standard_asyncore-3.6.15.tar.gz --markdown 20240421/s/standard-asyncore/3.5.10-3.6.15/README.md --exclude *.pyd
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asyncore-3.5.10.tar.gz tmp/standard_asyncore-3.6.15.tar.gz --markdown 20240421/s/standard-asyncore/3.5.10-3.6.15/README.md --exclude *.pyd
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asyncore-3.5.10.tar.gz tmp/standard_asyncore-3.6.15.tar.gz --markdown 20240421/s/standard-asyncore/3.5.10-3.6.15/README.md --exclude *.pyd
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/24/c8/0cd0336784cbb408eb6d52c3bdc4233f8b9afdf5e3b8d6423516307d2f42/standard_asynchat-3.9.19-py3-none-any.whl
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/24/c8/0cd0336784cbb408eb6d52c3bdc4233f8b9afdf5e3b8d6423516307d2f42/standard_asynchat-3.9.19-py3-none-any.whl
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/24/c8/0cd0336784cbb408eb6d52c3bdc4233f8b9afdf5e3b8d6423516307d2f42/standard_asynchat-3.9.19-py3-none-any.whl
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asynchat-3.8.19.tar.gz tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip --markdown 20240421/s/standard-asynchat/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asynchat-3.8.19.tar.gz tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip --markdown 20240421/s/standard-asynchat/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: executing diffoscope
+[2024-04-21 20:43:05] INFO root fetch - processPackages [standard-asynchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asynchat-3.8.19.tar.gz tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip --markdown 20240421/s/standard-asynchat/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:43:06] INFO root fetch - processPackages [standard-asyncore]: Remove: archive file [/home/abi/fetcher/tmp/standard_asyncore-3.5.10.tar.gz]
+[2024-04-21 20:43:06] INFO root fetch - processPackages [standard-asyncore]: Remove: archive file [/home/abi/fetcher/tmp/standard_asyncore-3.6.15.tar.gz]
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asyncore]: success
+[2024-04-21 20:43:06] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.8.19.tar.gz]
+[2024-04-21 20:43:06] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip]
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asyncore]: success
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asyncore]: success
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
+[2024-04-21 20:43:06] INFO root fetch - main [MainThread]: Store serial: [22867520]
