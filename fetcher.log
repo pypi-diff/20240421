@@ -11175,3 +11175,30 @@
 [2024-04-21 15:53:42] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
 [2024-04-21 15:53:42] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-04-21 15:53:42] INFO root fetch - main [MainThread]: Store serial: [22865183]
+[2024-04-21 15:55:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865183]
+[2024-04-21 15:55:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CVE-2023-29489
+[2024-04-21 15:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC478
+[2024-04-21 15:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monacopy
+[2024-04-21 15:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clickbait-commit-messages
+[2024-04-21 15:55:50] INFO root fetch - processPackages [clickbait-commit-messages]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:55:50] WARNING root fetch - processPackages [CVE-2023-29489]: Skipping, unable to determine old version
+[2024-04-21 15:55:50] INFO root fetch - main [MainThread]: End processing [CVE-2023-29489] error
+[2024-04-21 15:55:50] WARNING root fetch - processPackages [PythonTestLJC478]: Skipping, unable to determine old version
+[2024-04-21 15:55:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC478] error
+[2024-04-21 15:55:50] INFO root fetch - processPackages [monacopy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 15:55:50] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/e0/ff/7c2d276aab1a6b0660ac9934c8c32f3c7fb5057aa4aff3a165cc5791e189/clickbait_commit_messages-0.1.8.tar.gz
+[2024-04-21 15:55:50] INFO root fetch - processPackages [monacopy]: Downloading https://files.pythonhosted.org/packages/c8/a5/df09fbf8a29671df97833c3fe69ee9e8ddf0ff0ce478d0f6096a78cdc4ca/monacopy-0.0.1.tar.gz
+[2024-04-21 15:55:51] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/ba/0e/ab4e6a4fea4748d06d6732a606007adba79ccc4c26f9ee0b73896b7907a3/clickbait_commit_messages-0.1.9.tar.gz
+[2024-04-21 15:55:51] INFO root fetch - processPackages [clickbait-commit-messages]: executing diffoscope
+[2024-04-21 15:55:51] INFO root fetch - processPackages [clickbait-commit-messages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickbait_commit_messages-0.1.8.tar.gz tmp/clickbait_commit_messages-0.1.9.tar.gz --markdown 20240421/c/clickbait-commit-messages/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: Downloading https://files.pythonhosted.org/packages/08/0c/5a2bacc56207dedf412f83769bbe37455edfc1e1aa6ade2335bdab994101/monacopy-0.0.2.tar.gz
+[2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: executing diffoscope
+[2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monacopy-0.0.1.tar.gz tmp/monacopy-0.0.2.tar.gz --markdown 20240421/m/monacopy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 15:55:51] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.8.tar.gz]
+[2024-04-21 15:55:51] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.9.tar.gz]
+[2024-04-21 15:55:51] INFO root fetch - main [MainThread]: End processing [clickbait-commit-messages]: success
+[2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: Remove: archive file [/home/abi/fetcher/tmp/monacopy-0.0.1.tar.gz]
+[2024-04-21 15:55:51] INFO root fetch - processPackages [monacopy]: Remove: archive file [/home/abi/fetcher/tmp/monacopy-0.0.2.tar.gz]
+[2024-04-21 15:55:51] INFO root fetch - main [MainThread]: End processing [monacopy]: success
+[2024-04-21 15:55:51] INFO root fetch - main [MainThread]: Store serial: [22865199]
