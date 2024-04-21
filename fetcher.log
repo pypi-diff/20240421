@@ -9310,3 +9310,63 @@
 [2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.5.1.tar.gz]
 [2024-04-21 13:59:46] INFO root fetch - main [MainThread]: End processing [piraye]: success
 [2024-04-21 13:59:46] INFO root fetch - main [MainThread]: Store serial: [22864163]
+[2024-04-21 14:01:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864163]
+[2024-04-21 14:01:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cityscapesScripts
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FoxDotEditor
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: renardo
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: renardo-lib
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: echoai-transformer-block
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mycalculator-report
+[2024-04-21 14:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tga-data-analysis
+[2024-04-21 14:01:55] WARNING root fetch - processPackages [echoai-transformer-block]: Skipping, unable to determine old version
+[2024-04-21 14:01:55] INFO root fetch - main [MainThread]: End processing [echoai-transformer-block] error
+[2024-04-21 14:01:55] INFO root fetch - processPackages [cityscapesScripts]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [tga-data-analysis]: New version: [2.0.6] Old Version: [2.0.4]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [FoxDotEditor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [mycalculator-report]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo-lib]: New version: [0.9.dev9] Old Version: [0.9.9]
+[2024-04-21 14:01:55] INFO root fetch - processPackages [cityscapesScripts]: Downloading https://files.pythonhosted.org/packages/c9/9b/1ef033dac66e705f963d4b5f814ea7157c21d232d275c7cf0e3c114b78e6/cityscapesScripts-2.2.2.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/fb/49/617bba266be61b48df4660d09ae00679c712d277c60e48046d33be54c138/renardo-0.9.8.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/8f/ed/6f4f42bab25dd239482fa57ab5bdf863e679762950ac55b63f832dbc43e9/FoxDotEditor-0.9.8.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [mycalculator-report]: Downloading https://files.pythonhosted.org/packages/15/e9/cf6e54e004bff471b7fabd5fd033527f15cc7cbb757a88e88e2abb19e62c/mycalculator_report-0.0.2-py3-none-any.whl
+[2024-04-21 14:01:55] INFO root fetch - processPackages [tga-data-analysis]: Downloading https://files.pythonhosted.org/packages/3a/3f/da88e55309d72a71967864194b24cca511237580dc8debc613615db592f8/tga_data_analysis-2.0.4.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/e4/5a/07a1f6f3ea9c38f61d36fd05bf9b70411c6b40887e5171585a2e941112bc/renardo_lib-0.9.9.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [tga-data-analysis]: Downloading https://files.pythonhosted.org/packages/b5/24/5adc6e406fdb420fb7578e94cdf9a6705b9ef848045f0f40c700e3745902/tga_data_analysis-2.0.6.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [mycalculator-report]: Downloading https://files.pythonhosted.org/packages/df/b8/a999136c7d88179fae8f532b2ae8ed25ea25a8042769e40aa359be290b6b/mycalculator_report-0.0.3-py3-none-any.whl
+[2024-04-21 14:01:55] INFO root fetch - processPackages [cityscapesScripts]: Downloading https://files.pythonhosted.org/packages/d5/e3/64b609117f17a2fcecf3631173a899d2c1a8743258b48269d369d50699c6/cityscapesscripts-2.2.3.tar.gz
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-21 14:01:55] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.8.tar.gz tmp/renardo-0.9.9.tar.gz --markdown 20240421/r/renardo/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-21 14:01:56] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FoxDotEditor-0.9.8.tar.gz tmp/foxdoteditor-0.9.9.tar.gz --markdown 20240421/F/FoxDotEditor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.9.tar.gz tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip --markdown 20240421/r/renardo-lib/0.9.9-0.9.dev9/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [cityscapesScripts]: executing diffoscope
+[2024-04-21 14:01:56] INFO root fetch - processPackages [cityscapesScripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cityscapesScripts-2.2.2.tar.gz tmp/cityscapesscripts-2.2.3.tar.gz --markdown 20240421/c/cityscapesScripts/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [mycalculator-report]: executing diffoscope
+[2024-04-21 14:01:56] INFO root fetch - processPackages [mycalculator-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycalculator_report-0.0.2-py3-none-any.whl.zip tmp/mycalculator_report-0.0.3-py3-none-any.whl.zip --markdown 20240421/m/mycalculator-report/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [tga-data-analysis]: executing diffoscope
+[2024-04-21 14:01:56] INFO root fetch - processPackages [tga-data-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tga_data_analysis-2.0.4.tar.gz tmp/tga_data_analysis-2.0.6.tar.gz --markdown 20240421/t/tga-data-analysis/2.0.4-2.0.6/README.md --exclude *.pyd
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.8.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.9.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-21 14:01:56] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-21 14:01:56] INFO root fetch - processPackages [tga-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tga_data_analysis-2.0.4.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - processPackages [tga-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tga_data_analysis-2.0.6.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - main [MainThread]: End processing [tga-data-analysis]: success
+[2024-04-21 14:01:56] INFO root fetch - processPackages [mycalculator-report]: Remove: archive file [/home/abi/fetcher/tmp/mycalculator_report-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 14:01:56] INFO root fetch - processPackages [mycalculator-report]: Remove: archive file [/home/abi/fetcher/tmp/mycalculator_report-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 14:01:56] INFO root fetch - main [MainThread]: End processing [mycalculator-report]: success
+[2024-04-21 14:01:56] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/FoxDotEditor-0.9.8.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-21 14:01:56] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-21 14:01:57] INFO root fetch - processPackages [cityscapesScripts]: Remove: archive file [/home/abi/fetcher/tmp/cityscapesScripts-2.2.2.tar.gz]
+[2024-04-21 14:01:57] INFO root fetch - processPackages [cityscapesScripts]: Remove: archive file [/home/abi/fetcher/tmp/cityscapesscripts-2.2.3.tar.gz]
+[2024-04-21 14:01:57] INFO root fetch - main [MainThread]: End processing [cityscapesScripts]: success
+[2024-04-21 14:01:57] INFO root fetch - main [MainThread]: Store serial: [22864182]
