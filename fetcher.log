@@ -15655,3 +15655,33 @@
 [2024-04-21 20:21:19] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.5.tar.gz]
 [2024-04-21 20:21:19] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
 [2024-04-21 20:21:19] INFO root fetch - main [MainThread]: Store serial: [22867324]
+[2024-04-21 20:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867324]
+[2024-04-21 20:23:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: student-vote-electionn
+[2024-04-21 20:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chocho
+[2024-04-21 20:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-04-21 20:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capture-db-queries
+[2024-04-21 20:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gammarer.aws-secure-vpc-bucket
+[2024-04-21 20:23:27] WARNING root fetch - processPackages [student-vote-electionn]: Skipping, unable to determine old version
+[2024-04-21 20:23:27] INFO root fetch - main [MainThread]: End processing [student-vote-electionn] error
+[2024-04-21 20:23:27] INFO root fetch - processPackages [scrapegraphai]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-21 20:23:27] WARNING root fetch - processPackages [chocho]: Skipping, unable to determine old version
+[2024-04-21 20:23:27] INFO root fetch - main [MainThread]: End processing [chocho] error
+[2024-04-21 20:23:27] WARNING root fetch - processPackages [capture-db-queries]: Skipping, unable to determine old version
+[2024-04-21 20:23:27] INFO root fetch - main [MainThread]: End processing [capture-db-queries] error
+[2024-04-21 20:23:27] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-21 20:23:27] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/f9/81/622cc61627a325997a231156287d343fd0bc26e36043a1401147639386c7/scrapegraphai-0.2.4.tar.gz
+[2024-04-21 20:23:27] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/f3/18/aaaeb88f0d3be30d503d66788c35fd4a85d4b0755862be25a695ef844046/gammarer.aws-secure-vpc-bucket-1.2.5.tar.gz
+[2024-04-21 20:23:28] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/22/32/be7d6961f1a167d115f1f3772fde1a1b8bbecf0720a6e2ff2ef8812283dd/scrapegraphai-0.2.5.tar.gz
+[2024-04-21 20:23:28] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-21 20:23:28] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.2.4.tar.gz tmp/scrapegraphai-0.2.5.tar.gz --markdown 20240421/s/scrapegraphai/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-21 20:23:28] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/0f/fa/7c7b452f56a384ebd65cea489de2d8c442994b99b14b4db381b072bde87d/gammarer.aws-secure-vpc-bucket-1.2.6.tar.gz
+[2024-04-21 20:23:28] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: executing diffoscope
+[2024-04-21 20:23:28] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-vpc-bucket-1.2.5.tar.gz tmp/gammarer.aws-secure-vpc-bucket-1.2.6.tar.gz --markdown 20240421/g/gammarer.aws-secure-vpc-bucket/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-21 20:23:28] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.2.4.tar.gz]
+[2024-04-21 20:23:28] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.2.5.tar.gz]
+[2024-04-21 20:23:28] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-21 20:23:28] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-vpc-bucket-1.2.5.tar.gz]
+[2024-04-21 20:23:28] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-vpc-bucket-1.2.6.tar.gz]
+[2024-04-21 20:23:28] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-vpc-bucket]: success
+[2024-04-21 20:23:28] INFO root fetch - main [MainThread]: Store serial: [22867342]
