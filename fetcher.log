@@ -2635,3 +2635,18 @@
 [2024-04-21 04:02:15] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.3.6a0.tar.gz]
 [2024-04-21 04:02:15] INFO root fetch - main [MainThread]: End processing [nacos-sdk-rust-binding-py]: success
 [2024-04-21 04:02:15] INFO root fetch - main [MainThread]: Store serial: [22861220]
+[2024-04-21 04:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861220]
+[2024-04-21 04:04:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gemini-output-wrapper
+[2024-04-21 04:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mns-common
+[2024-04-21 04:04:33] WARNING root fetch - processPackages [gemini-output-wrapper]: Skipping, unable to determine old version
+[2024-04-21 04:04:33] INFO root fetch - main [MainThread]: End processing [gemini-output-wrapper] error
+[2024-04-21 04:04:33] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.5.1] Old Version: [1.0.7.5.0]
+[2024-04-21 04:04:33] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/b8/e2/4f936511248a0bf80045c2642c95853a31f51e62e5b534712043b3b6a6ca/mns_common-1.0.7.5.0.tar.gz
+[2024-04-21 04:04:34] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/7e/ef/6d1ba1329173417ced71080739326b86c51104328059ca82514d02657df7/mns_common-1.0.7.5.1.tar.gz
+[2024-04-21 04:04:34] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-21 04:04:34] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.5.0.tar.gz tmp/mns_common-1.0.7.5.1.tar.gz --markdown 20240421/m/mns-common/1.0.7.5.0-1.0.7.5.1/README.md --exclude *.pyd
+[2024-04-21 04:04:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.0.tar.gz]
+[2024-04-21 04:04:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.1.tar.gz]
+[2024-04-21 04:04:35] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-21 04:04:35] INFO root fetch - main [MainThread]: Store serial: [22861255]
