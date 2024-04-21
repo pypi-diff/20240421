@@ -12969,3 +12969,27 @@
 [2024-04-21 17:24:58] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.0.9.tar.gz]
 [2024-04-21 17:24:58] INFO root fetch - main [MainThread]: End processing [recs-searcher]: success
 [2024-04-21 17:24:58] INFO root fetch - main [MainThread]: Store serial: [22866018]
+[2024-04-21 17:27:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866018]
+[2024-04-21 17:27:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 17:27:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dukes
+[2024-04-21 17:27:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC511
+[2024-04-21 17:27:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py3d
+[2024-04-21 17:27:07] INFO root fetch - processPackages [py3d]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 17:27:07] WARNING root fetch - processPackages [PythonTestLJC511]: Skipping, unable to determine old version
+[2024-04-21 17:27:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC511] error
+[2024-04-21 17:27:07] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/ed/a9/a05c44c1c9aa694e130c9d19cdc9859cfe777d1cd54002e7af34b37a840d/py3d-0.1.8.tar.gz
+[2024-04-21 17:27:07] INFO root fetch - processPackages [dukes]: New version: [1.4.0] Old Version: [1.3.1]
+[2024-04-21 17:27:08] INFO root fetch - processPackages [dukes]: Downloading https://files.pythonhosted.org/packages/bb/e9/a9545b9f6662144b8ed2710c5e27a8268daf06e65a7474fc1fb97fdb3fff/dukes-1.3.1.tar.gz
+[2024-04-21 17:27:08] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/6f/e8/f37aed7244bfb8dde96399a57b78193b3257dc10559f13dfea723db768d4/py3d-0.1.9.tar.gz
+[2024-04-21 17:27:08] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2024-04-21 17:27:08] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.1.8.tar.gz tmp/py3d-0.1.9.tar.gz --markdown 20240421/p/py3d/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 17:27:08] INFO root fetch - processPackages [dukes]: Downloading https://files.pythonhosted.org/packages/74/a9/584b32c9e277d3841cd99ffbd647e02c86953cd4e4faf50252fdb7345765/dukes-1.4.0.tar.gz
+[2024-04-21 17:27:08] INFO root fetch - processPackages [dukes]: executing diffoscope
+[2024-04-21 17:27:08] INFO root fetch - processPackages [dukes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dukes-1.3.1.tar.gz tmp/dukes-1.4.0.tar.gz --markdown 20240421/d/dukes/1.3.1-1.4.0/README.md --exclude *.pyd
+[2024-04-21 17:27:08] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.8.tar.gz]
+[2024-04-21 17:27:08] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
+[2024-04-21 17:27:08] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2024-04-21 17:27:09] INFO root fetch - processPackages [dukes]: Remove: archive file [/home/abi/fetcher/tmp/dukes-1.3.1.tar.gz]
+[2024-04-21 17:27:09] INFO root fetch - processPackages [dukes]: Remove: archive file [/home/abi/fetcher/tmp/dukes-1.4.0.tar.gz]
+[2024-04-21 17:27:09] INFO root fetch - main [MainThread]: End processing [dukes]: success
+[2024-04-21 17:27:09] INFO root fetch - main [MainThread]: Store serial: [22866029]
