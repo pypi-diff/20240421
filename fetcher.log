@@ -7753,3 +7753,33 @@
 [2024-04-21 11:58:24] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.3.tar.gz]
 [2024-04-21 11:58:24] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-21 11:58:24] INFO root fetch - main [MainThread]: Store serial: [22863522]
+[2024-04-21 12:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863522]
+[2024-04-21 12:00:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitreporter
+[2024-04-21 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reset-tolkien
+[2024-04-21 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textile-metric
+[2024-04-21 12:00:34] INFO root fetch - processPackages [textile-metric]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 12:00:34] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/f0/c7/e45e1ffaebc38a277fbb6ee5ea2517876f70dd1e9b1aec944e9de97ab89e/textile_metric-0.0.4.tar.gz
+[2024-04-21 12:00:34] INFO root fetch - processPackages [gitreporter]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-21 12:00:34] INFO root fetch - processPackages [reset-tolkien]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-21 12:00:34] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/12/b3/dbe5ff161127766db5d61bef0492bccfe5f2d64f46078db5589ba073f674/gitreporter-0.2.3.tar.gz
+[2024-04-21 12:00:35] INFO root fetch - processPackages [reset-tolkien]: Downloading https://files.pythonhosted.org/packages/0d/04/7a0756cb8ce6bdcd574214b6c48d4a69c50c749947bbf032a820943058d9/reset-tolkien-1.1.0.tar.gz
+[2024-04-21 12:00:35] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/01/4d/5195decf6975b48d2cb8f58e8164445a9ad319732d2872fc810d50ae0fef/gitreporter-0.2.4.tar.gz
+[2024-04-21 12:00:35] INFO root fetch - processPackages [reset-tolkien]: Downloading https://files.pythonhosted.org/packages/05/02/a1a48a6f2c575c7e497170f535aed5f7821de43b8de40df1d6b5390acc65/reset_tolkien-1.1.1.tar.gz
+[2024-04-21 12:00:35] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/9f/8f/dd64bfb51aa9de7353791d5f22600c278174e0db04dc41cd96d8f3ec3066/textile_metric-0.0.5.tar.gz
+[2024-04-21 12:00:35] INFO root fetch - processPackages [gitreporter]: executing diffoscope
+[2024-04-21 12:00:35] INFO root fetch - processPackages [gitreporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitreporter-0.2.3.tar.gz tmp/gitreporter-0.2.4.tar.gz --markdown 20240421/g/gitreporter/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-21 12:00:35] INFO root fetch - processPackages [reset-tolkien]: executing diffoscope
+[2024-04-21 12:00:35] INFO root fetch - processPackages [reset-tolkien]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reset-tolkien-1.1.0.tar.gz tmp/reset_tolkien-1.1.1.tar.gz --markdown 20240421/r/reset-tolkien/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-21 12:00:35] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:00:35] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.4.tar.gz tmp/textile_metric-0.0.5.tar.gz --markdown 20240421/t/textile-metric/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 12:00:36] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.3.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.4.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - main [MainThread]: End processing [gitreporter]: success
+[2024-04-21 12:00:36] INFO root fetch - processPackages [reset-tolkien]: Remove: archive file [/home/abi/fetcher/tmp/reset-tolkien-1.1.0.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - processPackages [reset-tolkien]: Remove: archive file [/home/abi/fetcher/tmp/reset_tolkien-1.1.1.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - main [MainThread]: End processing [reset-tolkien]: success
+[2024-04-21 12:00:36] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.4.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.5.tar.gz]
+[2024-04-21 12:00:36] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:00:36] INFO root fetch - main [MainThread]: Store serial: [22863528]
