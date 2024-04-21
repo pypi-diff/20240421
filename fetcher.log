@@ -17561,3 +17561,54 @@
 [2024-04-21 21:55:56] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.9.0.tar.gz]
 [2024-04-21 21:55:56] INFO root fetch - main [MainThread]: End processing [PHX]: success
 [2024-04-21 21:55:56] INFO root fetch - main [MainThread]: Store serial: [22868354]
+[2024-04-21 21:58:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868354]
+[2024-04-21 21:58:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rooms-shared-services
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dublib
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multillm
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: x23203137
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygpt-net
+[2024-04-21 21:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: probe-design
+[2024-04-21 21:58:05] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-21 21:58:05] INFO root fetch - processPackages [dublib]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 21:58:05] INFO root fetch - processPackages [probe-design]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 21:58:05] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-21 21:58:05] WARNING root fetch - processPackages [x23203137]: Skipping, unable to determine old version
+[2024-04-21 21:58:05] INFO root fetch - main [MainThread]: End processing [x23203137] error
+[2024-04-21 21:58:05] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/df/97/1b4cb85f7d713f68b3235d453017a3c917022b9fd77284f04dbc1febe773/dublib-0.5.0.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [probe-design]: Downloading https://files.pythonhosted.org/packages/e4/de/217073b59e430d72d25a28f92c27d4dcfed602224c5db64977da9995539e/probe_design-0.2.8.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/70/25/aed7b31b73effe7b05e17e663da39af801141ec349bafc1840f5a72133ff/dublib-0.5.1.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [probe-design]: Downloading https://files.pythonhosted.org/packages/56/10/4d2bc3f41506a6a5373b6d321509f939ebc56944086733654075c23adbba/probe_design-0.2.9.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-21 21:58:05] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240421/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-21 21:58:05] INFO root fetch - processPackages [dublib]: executing diffoscope
+[2024-04-21 21:58:05] INFO root fetch - processPackages [dublib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dublib-0.5.0.tar.gz tmp/dublib-0.5.1.tar.gz --markdown 20240421/d/dublib/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 21:58:05] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-21 21:58:05] INFO root fetch - processPackages [probe-design]: executing diffoscope
+[2024-04-21 21:58:05] INFO root fetch - processPackages [probe-design]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probe_design-0.2.8.tar.gz tmp/probe_design-0.2.9.tar.gz --markdown 20240421/p/probe-design/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 21:58:05] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-21 21:58:05] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240421/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-21 21:58:06] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.5.0.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.5.1.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - main [MainThread]: End processing [dublib]: success
+[2024-04-21 21:58:06] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-21 21:58:06] INFO root fetch - processPackages [multillm]: New version: [0.993] Old Version: [0.992]
+[2024-04-21 21:58:06] INFO root fetch - processPackages [probe-design]: Remove: archive file [/home/abi/fetcher/tmp/probe_design-0.2.8.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - processPackages [probe-design]: Remove: archive file [/home/abi/fetcher/tmp/probe_design-0.2.9.tar.gz]
+[2024-04-21 21:58:06] INFO root fetch - main [MainThread]: End processing [probe-design]: success
+[2024-04-21 21:58:06] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/d6/42/e6b0f6a503e0d58193d9d31e0b96ba5df9dd78530fa9eddfbcd92f3b0e4a/multillm-0.992.tar.gz
+[2024-04-21 21:58:06] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/52/bd/ecaf9bc45fa6d4b6b7968f50db71ba85d813c65dc61b4bd7fdfc2515c52f/multillm-0.993.tar.gz
+[2024-04-21 21:58:07] INFO root fetch - processPackages [multillm]: executing diffoscope
+[2024-04-21 21:58:07] INFO root fetch - processPackages [multillm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multillm-0.992.tar.gz tmp/multillm-0.993.tar.gz --markdown 20240421/m/multillm/0.992-0.993/README.md --exclude *.pyd
+[2024-04-21 21:58:07] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.992.tar.gz]
+[2024-04-21 21:58:07] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.993.tar.gz]
+[2024-04-21 21:58:07] INFO root fetch - main [MainThread]: End processing [multillm]: success
+[2024-04-21 21:58:08] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-21 21:58:08] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-21 21:58:08] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-21 21:58:08] INFO root fetch - main [MainThread]: Store serial: [22868388]
