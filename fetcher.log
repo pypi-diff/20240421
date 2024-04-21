@@ -1766,3 +1766,33 @@
 [2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [hockey-scraper]: success
 [2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
 [2024-04-21 02:32:08] INFO root fetch - main [MainThread]: Store serial: [22860675]
+[2024-04-21 02:34:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860675]
+[2024-04-21 02:34:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-04-21 02:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2024-04-21 02:34:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-clite
+[2024-04-21 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240420] Old Version: [0.1.5.dev20240419]
+[2024-04-21 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/44/ba/d111c683039fbc63cd90d9f1cda1da21aad686b51716a726df7efd8addf9/aeppl_nightly-0.1.5.dev20240419.tar.gz
+[2024-04-21 02:34:17] INFO root fetch - processPackages [django-clite]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-21 02:34:17] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240421.99] Old Version: [0.13.20240419.98]
+[2024-04-21 02:34:17] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/9d/4f/3149d8bc71b26cfffe7094bec758b8ea3c47b234ae598d1b7261a5bfa7ff/PKDevTools-0.13.20240419.98.tar.gz
+[2024-04-21 02:34:17] INFO root fetch - processPackages [django-clite]: Downloading https://files.pythonhosted.org/packages/52/2d/4954385f0268108f060622aa2b9a063c5ba4af9d4204622a8d629fef5e36/django-clite-0.2.9.tar.gz
+[2024-04-21 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/11/e5/1d28b18d2ac80cc11f36402ff402b3c531d45848df5eb5c80fe075ca278a/aeppl_nightly-0.1.5.dev20240420.tar.gz
+[2024-04-21 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-21 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240419.tar.gz tmp/aeppl_nightly-0.1.5.dev20240420.tar.gz --markdown 20240421/a/aeppl-nightly/0.1.5.dev20240419-0.1.5.dev20240420/README.md --exclude *.pyd
+[2024-04-21 02:34:17] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/1c/da/ed6a44ea84ec65677ce541ca04ecd2aba8b9971918f98d4a656a387aab4a/PKDevTools-0.13.20240421.99.tar.gz
+[2024-04-21 02:34:17] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-04-21 02:34:17] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240419.98.tar.gz tmp/PKDevTools-0.13.20240421.99.tar.gz --markdown 20240421/P/PKDevTools/0.13.20240419.98-0.13.20240421.99/README.md --exclude *.pyd
+[2024-04-21 02:34:17] INFO root fetch - processPackages [django-clite]: Downloading https://files.pythonhosted.org/packages/78/f3/813ea339f26f09444fa12f8e1f1093120494b457df22018a6b1bbc449591/django-clite-0.3.0.tar.gz
+[2024-04-21 02:34:18] INFO root fetch - processPackages [django-clite]: executing diffoscope
+[2024-04-21 02:34:18] INFO root fetch - processPackages [django-clite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-clite-0.2.9.tar.gz tmp/django-clite-0.3.0.tar.gz --markdown 20240421/d/django-clite/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-21 02:34:18] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240419.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240420.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-21 02:34:18] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240419.98.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240421.99.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-04-21 02:34:18] INFO root fetch - processPackages [django-clite]: Remove: archive file [/home/abi/fetcher/tmp/django-clite-0.2.9.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - processPackages [django-clite]: Remove: archive file [/home/abi/fetcher/tmp/django-clite-0.3.0.tar.gz]
+[2024-04-21 02:34:18] INFO root fetch - main [MainThread]: End processing [django-clite]: success
+[2024-04-21 02:34:18] INFO root fetch - main [MainThread]: Store serial: [22860683]
