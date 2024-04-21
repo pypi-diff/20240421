@@ -13065,3 +13065,9 @@
 [2024-04-21 17:33:40] INFO root fetch - processPackages [prophyle]: Remove: archive file [/home/abi/fetcher/tmp/prophyle-0.3.3.2.tar.gz]
 [2024-04-21 17:33:40] INFO root fetch - main [MainThread]: End processing [prophyle]: success
 [2024-04-21 17:33:40] INFO root fetch - main [MainThread]: Store serial: [22866066]
+[2024-04-21 17:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866066]
+[2024-04-21 17:35:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 17:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iter_collect
+[2024-04-21 17:35:49] WARNING root fetch - processPackages [iter_collect]: Skipping, unable to determine old version
+[2024-04-21 17:35:49] INFO root fetch - main [MainThread]: End processing [iter_collect] error
+[2024-04-21 17:35:49] INFO root fetch - main [MainThread]: Store serial: [22866073]
