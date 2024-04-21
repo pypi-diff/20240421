@@ -2504,3 +2504,26 @@
 [2024-04-21 03:44:50] WARNING root fetch - processPackages [commit-text-organizer]: Skipping, unable to determine old version
 [2024-04-21 03:44:50] INFO root fetch - main [MainThread]: End processing [commit-text-organizer] error
 [2024-04-21 03:44:50] INFO root fetch - main [MainThread]: Store serial: [22861105]
+[2024-04-21 03:46:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861105]
+[2024-04-21 03:46:58] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 03:48:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861108]
+[2024-04-21 03:49:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:49:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scriptime
+[2024-04-21 03:49:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-api-client
+[2024-04-21 03:49:04] INFO root fetch - processPackages [scriptime]: New version: [1.0.0] Old Version: [0.1.6]
+[2024-04-21 03:49:04] INFO root fetch - processPackages [jupyter-api-client]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 03:49:04] INFO root fetch - processPackages [scriptime]: Downloading https://files.pythonhosted.org/packages/9e/df/4b83a3fabe0c996ee8331655d92c34eaa3a7ae0c77ef0bd6f93865b4a82b/scriptime-0.1.6.tar.gz
+[2024-04-21 03:49:04] INFO root fetch - processPackages [jupyter-api-client]: Downloading https://files.pythonhosted.org/packages/5a/bd/9435ac5e041152bf4a134ff54237b786e8210a7cad7ec7e0c1a8b46941b1/jupyter-api-client-0.0.2.tar.gz
+[2024-04-21 03:49:04] INFO root fetch - processPackages [jupyter-api-client]: Downloading https://files.pythonhosted.org/packages/bc/48/0b963728440aa9bd3b97c1d05bf3e748b2e3951c09ee4ea85ff54130db43/jupyter-api-client-0.0.3.tar.gz
+[2024-04-21 03:49:04] INFO root fetch - processPackages [scriptime]: Downloading https://files.pythonhosted.org/packages/c3/a1/d8a212ebec98429e9db6ce76d90a04c975c37fdf096e1d9e61f26bdce037/scriptime-1.0.0.tar.gz
+[2024-04-21 03:49:04] INFO root fetch - processPackages [scriptime]: executing diffoscope
+[2024-04-21 03:49:04] INFO root fetch - processPackages [scriptime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scriptime-0.1.6.tar.gz tmp/scriptime-1.0.0.tar.gz --markdown 20240421/s/scriptime/0.1.6-1.0.0/README.md --exclude *.pyd
+[2024-04-21 03:49:04] INFO root fetch - processPackages [jupyter-api-client]: executing diffoscope
+[2024-04-21 03:49:04] INFO root fetch - processPackages [jupyter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-api-client-0.0.2.tar.gz tmp/jupyter-api-client-0.0.3.tar.gz --markdown 20240421/j/jupyter-api-client/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 03:49:05] INFO root fetch - processPackages [jupyter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/jupyter-api-client-0.0.2.tar.gz]
+[2024-04-21 03:49:05] INFO root fetch - processPackages [jupyter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/jupyter-api-client-0.0.3.tar.gz]
+[2024-04-21 03:49:05] INFO root fetch - main [MainThread]: End processing [jupyter-api-client]: success
+[2024-04-21 03:49:05] INFO root fetch - processPackages [scriptime]: Remove: archive file [/home/abi/fetcher/tmp/scriptime-0.1.6.tar.gz]
+[2024-04-21 03:49:05] INFO root fetch - processPackages [scriptime]: Remove: archive file [/home/abi/fetcher/tmp/scriptime-1.0.0.tar.gz]
+[2024-04-21 03:49:05] INFO root fetch - main [MainThread]: End processing [scriptime]: success
+[2024-04-21 03:49:05] INFO root fetch - main [MainThread]: Store serial: [22861119]
