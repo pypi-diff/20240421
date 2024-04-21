@@ -6086,3 +6086,18 @@
 [2024-04-21 09:35:47] WARNING root fetch - processPackages [odoo-addon-pos-receipt-replace-user-by-trigram-hr]: Skipping, unable to determine old version
 [2024-04-21 09:35:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-receipt-replace-user-by-trigram-hr] error
 [2024-04-21 09:35:47] INFO root fetch - main [MainThread]: Store serial: [22862814]
+[2024-04-21 09:37:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862814]
+[2024-04-21 09:37:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 09:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Pruning-Engine-SFSU-MICLab
+[2024-04-21 09:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mailme-py
+[2024-04-21 09:37:56] WARNING root fetch - processPackages [Pruning-Engine-SFSU-MICLab]: Skipping, unable to determine old version
+[2024-04-21 09:37:56] INFO root fetch - main [MainThread]: End processing [Pruning-Engine-SFSU-MICLab] error
+[2024-04-21 09:37:56] INFO root fetch - processPackages [mailme-py]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 09:37:56] INFO root fetch - processPackages [mailme-py]: Downloading https://files.pythonhosted.org/packages/3d/29/b14ba66f4a74ff641432153e2c857ed6e325e87ca3cb888486cddc7d4c25/mailme-py-0.1.3.tar.gz
+[2024-04-21 09:37:56] INFO root fetch - processPackages [mailme-py]: Downloading https://files.pythonhosted.org/packages/d3/21/d831ab0e4d8cf551229d2f4aa8a8945779054635fa83923e9882041a959f/mailme-py-0.1.4.tar.gz
+[2024-04-21 09:37:56] INFO root fetch - processPackages [mailme-py]: executing diffoscope
+[2024-04-21 09:37:56] INFO root fetch - processPackages [mailme-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailme-py-0.1.3.tar.gz tmp/mailme-py-0.1.4.tar.gz --markdown 20240421/m/mailme-py/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 09:37:57] INFO root fetch - processPackages [mailme-py]: Remove: archive file [/home/abi/fetcher/tmp/mailme-py-0.1.3.tar.gz]
+[2024-04-21 09:37:57] INFO root fetch - processPackages [mailme-py]: Remove: archive file [/home/abi/fetcher/tmp/mailme-py-0.1.4.tar.gz]
+[2024-04-21 09:37:57] INFO root fetch - main [MainThread]: End processing [mailme-py]: success
+[2024-04-21 09:37:57] INFO root fetch - main [MainThread]: Store serial: [22862820]
