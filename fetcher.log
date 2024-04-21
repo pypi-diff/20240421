@@ -3608,3 +3608,18 @@
 [2024-04-21 05:29:38] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-21 05:29:38] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-21 05:29:38] INFO root fetch - main [MainThread]: Store serial: [22861688]
+[2024-04-21 05:31:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861688]
+[2024-04-21 05:31:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC357
+[2024-04-21 05:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-contract-sale
+[2024-04-21 05:31:48] INFO root fetch - processPackages [odoo-addon-contract-sale]: New version: [17.0.1.0.0.1] Old Version: [16.0.1.2.0]
+[2024-04-21 05:31:48] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/cd/5a/685c1f306810341ae03411aa846eb15c9a6d0bd70be2b5b882cdf6241273/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl
+[2024-04-21 05:31:48] WARNING root fetch - processPackages [PythonTestLJC357]: Skipping, unable to determine old version
+[2024-04-21 05:31:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC357] error
+[2024-04-21 05:31:48] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/3a/3e/7a50caa6cbb7137188e3775d8c3eba982d3cbd4f98b46c8736aac1bbfa1b/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl
+[2024-04-21 05:31:48] INFO root fetch - processPackages [odoo-addon-contract-sale]: executing diffoscope
+[2024-04-21 05:31:48] INFO root fetch - processPackages [odoo-addon-contract-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl.zip --markdown 20240421/o/odoo-addon-contract-sale/16.0.1.2.0-17.0.1.0.0.1/README.md --exclude *.pyd
+[2024-04-21 05:31:49] INFO root fetch - processPackages [odoo-addon-contract-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_contract_sale-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-21 05:31:49] INFO root fetch - processPackages [odoo-addon-contract-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl.zip]
+[2024-04-21 05:31:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-sale]: success
+[2024-04-21 05:31:49] INFO root fetch - main [MainThread]: Store serial: [22861696]
