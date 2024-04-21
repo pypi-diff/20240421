@@ -2154,3 +2154,24 @@
 [2024-04-21 03:10:13] WARNING root fetch - processPackages [PythonTestLJC313]: Skipping, unable to determine old version
 [2024-04-21 03:10:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC313] error
 [2024-04-21 03:10:13] INFO root fetch - main [MainThread]: Store serial: [22860918]
+[2024-04-21 03:12:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860918]
+[2024-04-21 03:12:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-seeding
+[2024-04-21 03:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pwiki
+[2024-04-21 03:12:22] INFO root fetch - processPackages [django-seeding]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 03:12:22] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/96/6e/81da3e9f00c6f7ff7025c03b2b136cf967b1d6365e452ce9575946a29a48/django-seeding-1.0.8.tar.gz
+[2024-04-21 03:12:22] INFO root fetch - processPackages [pwiki]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-21 03:12:22] INFO root fetch - processPackages [pwiki]: Downloading https://files.pythonhosted.org/packages/f4/21/23c1b65e1fc69dfad1193c21aa581fb759d248d38e405167c720da89b6af/pwiki-1.3.0.tar.gz
+[2024-04-21 03:12:22] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/66/04/a6d071aef8bf32477e28db6e942510a0d2557b43291fe2887b6de6706c75/django-seeding-1.0.9.tar.gz
+[2024-04-21 03:12:22] INFO root fetch - processPackages [django-seeding]: executing diffoscope
+[2024-04-21 03:12:22] INFO root fetch - processPackages [django-seeding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-seeding-1.0.8.tar.gz tmp/django-seeding-1.0.9.tar.gz --markdown 20240421/d/django-seeding/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 03:12:22] INFO root fetch - processPackages [pwiki]: Downloading https://files.pythonhosted.org/packages/25/bd/c6cd0c1ec40d711149ebae35193fa11ae93cde1667ad1d595052f1d3ca0f/pwiki-1.3.1.tar.gz
+[2024-04-21 03:12:23] INFO root fetch - processPackages [pwiki]: executing diffoscope
+[2024-04-21 03:12:23] INFO root fetch - processPackages [pwiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwiki-1.3.0.tar.gz tmp/pwiki-1.3.1.tar.gz --markdown 20240421/p/pwiki/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-21 03:12:23] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django-seeding-1.0.8.tar.gz]
+[2024-04-21 03:12:23] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django-seeding-1.0.9.tar.gz]
+[2024-04-21 03:12:23] INFO root fetch - main [MainThread]: End processing [django-seeding]: success
+[2024-04-21 03:12:23] INFO root fetch - processPackages [pwiki]: Remove: archive file [/home/abi/fetcher/tmp/pwiki-1.3.0.tar.gz]
+[2024-04-21 03:12:23] INFO root fetch - processPackages [pwiki]: Remove: archive file [/home/abi/fetcher/tmp/pwiki-1.3.1.tar.gz]
+[2024-04-21 03:12:23] INFO root fetch - main [MainThread]: End processing [pwiki]: success
+[2024-04-21 03:12:23] INFO root fetch - main [MainThread]: Store serial: [22860926]
