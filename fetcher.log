@@ -7183,3 +7183,24 @@
 [2024-04-21 11:07:52] INFO root fetch - processPackages [zrb-ollama]: Remove: archive file [/home/abi/fetcher/tmp/zrb_ollama-0.0.9.tar.gz]
 [2024-04-21 11:07:52] INFO root fetch - main [MainThread]: End processing [zrb-ollama]: success
 [2024-04-21 11:07:52] INFO root fetch - main [MainThread]: Store serial: [22863311]
+[2024-04-21 11:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863311]
+[2024-04-21 11:10:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 11:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monopoly-sg
+[2024-04-21 11:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-learning-nlp
+[2024-04-21 11:10:01] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 11:10:01] INFO root fetch - processPackages [monopoly-sg]: New version: [0.7.6rc0] Old Version: [0.7.5]
+[2024-04-21 11:10:01] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-21 11:10:01] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/ca/1f/93de355e615f41a5b85e3a62beeac0729a416d6d2107b2b12b0a346b146a/monopoly_sg-0.7.5.tar.gz
+[2024-04-21 11:10:01] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-21 11:10:01] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-21 11:10:01] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240421/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/0c/d2/8e8477d64ae08c73ebdbdca1856d9ba0a9feaffc416500c56a3f42e20004/monopoly_sg-0.7.6rc0.tar.gz
+[2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.5.tar.gz tmp/monopoly_sg-0.7.6rc0.tar.gz --markdown 20240421/m/monopoly-sg/0.7.5-0.7.6rc0/README.md --exclude *.pyd
+[2024-04-21 11:10:02] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-21 11:10:02] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-21 11:10:02] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.5.tar.gz]
+[2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6rc0.tar.gz]
+[2024-04-21 11:10:02] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-04-21 11:10:02] INFO root fetch - main [MainThread]: Store serial: [22863317]
