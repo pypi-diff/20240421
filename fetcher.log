@@ -10203,3 +10203,12 @@
 [2024-04-21 14:58:46] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12678786>=10485760
 [2024-04-21 14:58:46] INFO root fetch - main [MainThread]: End processing [libpss] error
 [2024-04-21 14:58:46] INFO root fetch - main [MainThread]: Store serial: [22864726]
+[2024-04-21 15:00:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864726]
+[2024-04-21 15:00:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 15:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC458
+[2024-04-21 15:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplyrpc
+[2024-04-21 15:00:55] WARNING root fetch - processPackages [simplyrpc]: Skipping, unable to determine old version
+[2024-04-21 15:00:55] INFO root fetch - main [MainThread]: End processing [simplyrpc] error
+[2024-04-21 15:00:55] WARNING root fetch - processPackages [PythonTestLJC458]: Skipping, unable to determine old version
+[2024-04-21 15:00:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC458] error
+[2024-04-21 15:00:55] INFO root fetch - main [MainThread]: Store serial: [22864738]
