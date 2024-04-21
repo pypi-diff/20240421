@@ -2668,3 +2668,18 @@
 [2024-04-21 04:08:51] WARNING root fetch - processPackages [wifitest]: Skipping, unable to determine old version
 [2024-04-21 04:08:51] INFO root fetch - main [MainThread]: End processing [wifitest] error
 [2024-04-21 04:08:51] INFO root fetch - main [MainThread]: Store serial: [22861274]
+[2024-04-21 04:10:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861274]
+[2024-04-21 04:11:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC328
+[2024-04-21 04:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Red-DiscordBot
+[2024-04-21 04:11:00] INFO root fetch - processPackages [Red-DiscordBot]: New version: [3.5.8] Old Version: [3.5.7]
+[2024-04-21 04:11:00] WARNING root fetch - processPackages [PythonTestLJC328]: Skipping, unable to determine old version
+[2024-04-21 04:11:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC328] error
+[2024-04-21 04:11:00] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/8c/00/c2ea3358652b6fae569fbcb4ad73c5393438aeaedbc7f040fc3c94c5f82b/Red-DiscordBot-3.5.7.tar.gz
+[2024-04-21 04:11:01] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/74/83/770ed41e4445b39941fc65b17ef3ba9bc4c3fd45c7fcec723c65b8828926/Red-DiscordBot-3.5.8.tar.gz
+[2024-04-21 04:11:01] INFO root fetch - processPackages [Red-DiscordBot]: executing diffoscope
+[2024-04-21 04:11:01] INFO root fetch - processPackages [Red-DiscordBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Red-DiscordBot-3.5.7.tar.gz tmp/Red-DiscordBot-3.5.8.tar.gz --markdown 20240421/R/Red-DiscordBot/3.5.7-3.5.8/README.md --exclude *.pyd
+[2024-04-21 04:11:11] INFO root fetch - processPackages [Red-DiscordBot]: Remove: archive file [/home/abi/fetcher/tmp/Red-DiscordBot-3.5.7.tar.gz]
+[2024-04-21 04:11:11] INFO root fetch - processPackages [Red-DiscordBot]: Remove: archive file [/home/abi/fetcher/tmp/Red-DiscordBot-3.5.8.tar.gz]
+[2024-04-21 04:11:11] INFO root fetch - main [MainThread]: End processing [Red-DiscordBot]: success
+[2024-04-21 04:11:11] INFO root fetch - main [MainThread]: Store serial: [22861279]
