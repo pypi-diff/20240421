@@ -14900,3 +14900,24 @@
 [2024-04-21 19:31:17] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
 [2024-04-21 19:31:17] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-21 19:31:17] INFO root fetch - main [MainThread]: Store serial: [22866942]
+[2024-04-21 19:33:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866942]
+[2024-04-21 19:33:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 19:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bolero-process
+[2024-04-21 19:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srai
+[2024-04-21 19:33:26] INFO root fetch - processPackages [bolero-process]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 19:33:26] INFO root fetch - processPackages [srai]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-21 19:33:26] INFO root fetch - processPackages [bolero-process]: Downloading https://files.pythonhosted.org/packages/47/e8/96489ee26d13552be54daaf5d73a032293c71bdcc73567137dba2de3a161/bolero_process-0.0.8.tar.gz
+[2024-04-21 19:33:26] INFO root fetch - processPackages [srai]: Downloading https://files.pythonhosted.org/packages/d5/84/954706db49e948cc3e4dfa01aa79163f5109d0f10d160071769346de6e38/srai-0.7.2.tar.gz
+[2024-04-21 19:33:26] INFO root fetch - processPackages [bolero-process]: Downloading https://files.pythonhosted.org/packages/97/b6/0298a4d258e313cc6fbfc2c55063dc862e2835d80a7e4edd341b698226ab/bolero_process-0.0.9.tar.gz
+[2024-04-21 19:33:26] INFO root fetch - processPackages [bolero-process]: executing diffoscope
+[2024-04-21 19:33:26] INFO root fetch - processPackages [bolero-process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bolero_process-0.0.8.tar.gz tmp/bolero_process-0.0.9.tar.gz --markdown 20240421/b/bolero-process/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 19:33:26] INFO root fetch - processPackages [srai]: Downloading https://files.pythonhosted.org/packages/84/8e/9e7024ad27b9c9c51736afb2b863373a33bf0ece5a4b365281f5fd50c100/srai-0.7.3.tar.gz
+[2024-04-21 19:33:27] INFO root fetch - processPackages [srai]: executing diffoscope
+[2024-04-21 19:33:27] INFO root fetch - processPackages [srai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srai-0.7.2.tar.gz tmp/srai-0.7.3.tar.gz --markdown 20240421/s/srai/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-04-21 19:33:27] INFO root fetch - processPackages [bolero-process]: Remove: archive file [/home/abi/fetcher/tmp/bolero_process-0.0.8.tar.gz]
+[2024-04-21 19:33:27] INFO root fetch - processPackages [bolero-process]: Remove: archive file [/home/abi/fetcher/tmp/bolero_process-0.0.9.tar.gz]
+[2024-04-21 19:33:27] INFO root fetch - main [MainThread]: End processing [bolero-process]: success
+[2024-04-21 19:33:28] INFO root fetch - processPackages [srai]: Remove: archive file [/home/abi/fetcher/tmp/srai-0.7.2.tar.gz]
+[2024-04-21 19:33:28] INFO root fetch - processPackages [srai]: Remove: archive file [/home/abi/fetcher/tmp/srai-0.7.3.tar.gz]
+[2024-04-21 19:33:28] INFO root fetch - main [MainThread]: End processing [srai]: success
+[2024-04-21 19:33:28] INFO root fetch - main [MainThread]: Store serial: [22866952]
