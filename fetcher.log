@@ -17345,3 +17345,43 @@
 [2024-04-21 21:47:02] INFO root fetch - processPackages [gologin]: Remove: archive file [/home/abi/fetcher/tmp/gologin-2024.4.4122950.tar.gz]
 [2024-04-21 21:47:02] INFO root fetch - main [MainThread]: End processing [gologin]: success
 [2024-04-21 21:47:02] INFO root fetch - main [MainThread]: Store serial: [22868207]
+[2024-04-21 21:49:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868207]
+[2024-04-21 21:49:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 21:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fundus
+[2024-04-21 21:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-ph
+[2024-04-21 21:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litespi
+[2024-04-21 21:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyl402
+[2024-04-21 21:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: litespi
+[2024-04-21 21:49:13] WARNING root fetch - processPackages [pyl402]: Skipping, unable to determine old version
+[2024-04-21 21:49:13] INFO root fetch - main [MainThread]: End processing [pyl402] error
+[2024-04-21 21:49:13] INFO root fetch - processPackages [honeybee-ph]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-21 21:49:13] INFO root fetch - processPackages [fundus]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-04-21 21:49:13] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/df/b8/fda4cf01d94f48d6d3083d5708571ff82cc12c33ab31021c75eae52fddf7/honeybee-ph-1.9.0.tar.gz
+[2024-04-21 21:49:13] INFO root fetch - processPackages [litespi]: New version: [2023.8] Old Version: [2023.12]
+[2024-04-21 21:49:13] INFO root fetch - processPackages [litespi]: New version: [2023.8] Old Version: [2023.12]
+[2024-04-21 21:49:14] INFO root fetch - processPackages [fundus]: Downloading https://files.pythonhosted.org/packages/77/bf/414cde2f5682068f6069626358862e5c4e881eebd37aa8df4b5f74c8c1b8/fundus-0.2.2.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [litespi]: Downloading https://files.pythonhosted.org/packages/5e/6e/c86510e76acbe18ac9a94286ee03f27450e2f0e1e468a0012eb7ca25df3b/litespi-2023.12.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [litespi]: Downloading https://files.pythonhosted.org/packages/5e/6e/c86510e76acbe18ac9a94286ee03f27450e2f0e1e468a0012eb7ca25df3b/litespi-2023.12.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/ac/3b/94670944c4a0e9844a88bedad8d71fd687fa1d4179f07d807acb90be0100/honeybee-ph-1.9.1.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [honeybee-ph]: executing diffoscope
+[2024-04-21 21:49:14] INFO root fetch - processPackages [honeybee-ph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ph-1.9.0.tar.gz tmp/honeybee-ph-1.9.1.tar.gz --markdown 20240421/h/honeybee-ph/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-21 21:49:14] INFO root fetch - processPackages [fundus]: Downloading https://files.pythonhosted.org/packages/2a/50/2b4437f92c3a4b70672b9772bfe2c7e7bf40c78acddbec7579f66fea0a08/fundus-0.3.0.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [litespi]: Downloading https://files.pythonhosted.org/packages/4f/12/e3d223a89c8f480528e59c0d140f7f8d892854fac6ea3fe44558c7c161d5/litespi-2023.8.tar.gz
+[2024-04-21 21:49:14] INFO root fetch - processPackages [litespi]: Downloading https://files.pythonhosted.org/packages/4f/12/e3d223a89c8f480528e59c0d140f7f8d892854fac6ea3fe44558c7c161d5/litespi-2023.8.tar.gz
+[2024-04-21 21:49:15] INFO root fetch - processPackages [fundus]: executing diffoscope
+[2024-04-21 21:49:15] INFO root fetch - processPackages [fundus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fundus-0.2.2.tar.gz tmp/fundus-0.3.0.tar.gz --markdown 20240421/f/fundus/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: executing diffoscope
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litespi-2023.12.tar.gz tmp/litespi-2023.8.tar.gz --markdown 20240421/l/litespi/2023.12-2023.8/README.md --exclude *.pyd
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: executing diffoscope
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litespi-2023.12.tar.gz tmp/litespi-2023.8.tar.gz --markdown 20240421/l/litespi/2023.12-2023.8/README.md --exclude *.pyd
+[2024-04-21 21:49:15] INFO root fetch - processPackages [honeybee-ph]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-ph-1.9.0.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - processPackages [honeybee-ph]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-ph-1.9.1.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - main [MainThread]: End processing [honeybee-ph]: success
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: Remove: archive file [/home/abi/fetcher/tmp/litespi-2023.12.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - processPackages [litespi]: Remove: archive file [/home/abi/fetcher/tmp/litespi-2023.8.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - main [MainThread]: End processing [litespi]: success
+[2024-04-21 21:49:15] INFO root fetch - main [MainThread]: End processing [litespi]: success
+[2024-04-21 21:49:15] INFO root fetch - processPackages [fundus]: Remove: archive file [/home/abi/fetcher/tmp/fundus-0.2.2.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - processPackages [fundus]: Remove: archive file [/home/abi/fetcher/tmp/fundus-0.3.0.tar.gz]
+[2024-04-21 21:49:15] INFO root fetch - main [MainThread]: End processing [fundus]: success
+[2024-04-21 21:49:15] INFO root fetch - main [MainThread]: Store serial: [22868222]
