@@ -2481,3 +2481,20 @@
 [2024-04-21 03:40:27] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b9.tar.gz]
 [2024-04-21 03:40:27] INFO root fetch - main [MainThread]: End processing [pyaarlo]: success
 [2024-04-21 03:40:27] INFO root fetch - main [MainThread]: Store serial: [22861095]
+[2024-04-21 03:42:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861095]
+[2024-04-21 03:42:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scanbot
+[2024-04-21 03:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-04-21 03:42:37] INFO root fetch - processPackages [scanbot]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-04-21 03:42:37] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-21 03:42:37] INFO root fetch - processPackages [scanbot]: Downloading https://files.pythonhosted.org/packages/2d/05/dfd5165dcfb5e6c0b02cd253666ad697fd92ce3a62f9e8b57448a3fb09de/scanbot-4.2.0.tar.gz
+[2024-04-21 03:42:37] WARNING root fetch - processPackages [scanbot]: Skipping package: exceeds size limit 89799845>=10485760
+[2024-04-21 03:42:37] INFO root fetch - main [MainThread]: End processing [scanbot] error
+[2024-04-21 03:42:37] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-21 03:42:37] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-21 03:42:38] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-21 03:42:38] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240421/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-21 03:42:40] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-21 03:42:40] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-21 03:42:40] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-21 03:42:40] INFO root fetch - main [MainThread]: Store serial: [22861100]
