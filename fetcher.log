@@ -8461,3 +8461,47 @@
 [2024-04-21 12:51:29] WARNING root fetch - processPackages [simplerpcprotocol]: Skipping, unable to determine old version
 [2024-04-21 12:51:29] INFO root fetch - main [MainThread]: End processing [simplerpcprotocol] error
 [2024-04-21 12:51:29] INFO root fetch - main [MainThread]: Store serial: [22863790]
+[2024-04-21 12:53:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863790]
+[2024-04-21 12:53:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 12:55:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863790]
+[2024-04-21 12:55:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: courieruuid
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gymnax
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ossStudy
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cyclonedx-bom
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edge-tts
+[2024-04-21 12:55:43] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.4a1] Old Version: [4.3.3a1]
+[2024-04-21 12:55:43] INFO root fetch - processPackages [edge-tts]: New version: [6.1.9] Old Version: [6.1.8]
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ossStudy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 12:55:43] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/c2/53/82bfd39f4f96364fc34918bdc53cd63383b1a3d873269edaec8cac438b8b/cyclonedx_bom-4.3.3a1.tar.gz
+[2024-04-21 12:55:43] WARNING root fetch - processPackages [courieruuid]: Skipping, unable to determine old version
+[2024-04-21 12:55:43] INFO root fetch - main [MainThread]: End processing [courieruuid] error
+[2024-04-21 12:55:43] INFO root fetch - processPackages [gymnax]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 12:55:43] INFO root fetch - processPackages [edge-tts]: Downloading https://files.pythonhosted.org/packages/3c/1f/20912146577b8d7376d1ce1252b23dc7aeff93b9ae4fca0bcac18d0d7dce/edge-tts-6.1.8.tar.gz
+[2024-04-21 12:55:43] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/b6/d3/d3c9c31630492f4ff89b78987a3ccb396420f811f674f07f0dda75f71efb/ossStudy-0.0.1-py3-none-any.whl
+[2024-04-21 12:55:43] INFO root fetch - processPackages [gymnax]: Downloading https://files.pythonhosted.org/packages/0e/15/e417232439a3323f4e32401bf230b01a079b1b7d201ecb7c35d294a8299b/gymnax-0.0.7.tar.gz
+[2024-04-21 12:55:43] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/ee/6f/7dcc61832350159d19dfe5c881e4ff0d1abc82c810cfe13bb13ea0de9785/cyclonedx_bom-4.3.4a1.tar.gz
+[2024-04-21 12:55:44] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/0d/53/0df14f2346eea728edf5e5dbe5aab841756760f65347e9e395a609d7d144/ossStudy-0.0.2-py3-none-any.whl
+[2024-04-21 12:55:44] INFO root fetch - processPackages [gymnax]: Downloading https://files.pythonhosted.org/packages/11/de/185e7eaa36d3292dd294a0f73c7454e29b9aa666289fea1680b026ebb0e1/gymnax-0.0.8.tar.gz
+[2024-04-21 12:55:44] INFO root fetch - processPackages [ossStudy]: executing diffoscope
+[2024-04-21 12:55:44] INFO root fetch - processPackages [ossStudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossStudy-0.0.1-py3-none-any.whl.zip tmp/ossStudy-0.0.2-py3-none-any.whl.zip --markdown 20240421/o/ossStudy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 12:55:44] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 12:55:44] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.3a1.tar.gz tmp/cyclonedx_bom-4.3.4a1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.3a1-4.3.4a1/README.md --exclude *.pyd
+[2024-04-21 12:55:44] INFO root fetch - processPackages [edge-tts]: Downloading https://files.pythonhosted.org/packages/36/b4/5308be645ae5d5952c6ac169ec07e1e34a2de69d9f19ed5cfeef5f71b6cd/edge-tts-6.1.9.tar.gz
+[2024-04-21 12:55:44] INFO root fetch - processPackages [gymnax]: executing diffoscope
+[2024-04-21 12:55:44] INFO root fetch - processPackages [gymnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gymnax-0.0.7.tar.gz tmp/gymnax-0.0.8.tar.gz --markdown 20240421/g/gymnax/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 12:55:44] INFO root fetch - processPackages [edge-tts]: executing diffoscope
+[2024-04-21 12:55:44] INFO root fetch - processPackages [edge-tts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge-tts-6.1.8.tar.gz tmp/edge-tts-6.1.9.tar.gz --markdown 20240421/e/edge-tts/6.1.8-6.1.9/README.md --exclude *.pyd
+[2024-04-21 12:55:44] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 12:55:44] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 12:55:44] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
+[2024-04-21 12:55:44] INFO root fetch - processPackages [edge-tts]: Remove: archive file [/home/abi/fetcher/tmp/edge-tts-6.1.8.tar.gz]
+[2024-04-21 12:55:44] INFO root fetch - processPackages [edge-tts]: Remove: archive file [/home/abi/fetcher/tmp/edge-tts-6.1.9.tar.gz]
+[2024-04-21 12:55:44] INFO root fetch - main [MainThread]: End processing [edge-tts]: success
+[2024-04-21 12:55:44] INFO root fetch - processPackages [gymnax]: Remove: archive file [/home/abi/fetcher/tmp/gymnax-0.0.7.tar.gz]
+[2024-04-21 12:55:44] INFO root fetch - processPackages [gymnax]: Remove: archive file [/home/abi/fetcher/tmp/gymnax-0.0.8.tar.gz]
+[2024-04-21 12:55:44] INFO root fetch - main [MainThread]: End processing [gymnax]: success
+[2024-04-21 12:55:53] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.3a1.tar.gz]
+[2024-04-21 12:55:53] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.4a1.tar.gz]
+[2024-04-21 12:55:53] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 12:55:53] INFO root fetch - main [MainThread]: Store serial: [22863806]
