@@ -11380,3 +11380,78 @@
 [2024-04-21 16:08:54] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip]
 [2024-04-21 16:08:54] INFO root fetch - main [MainThread]: End processing [infinity-sdk]: success
 [2024-04-21 16:08:54] INFO root fetch - main [MainThread]: Store serial: [22865293]
+[2024-04-21 16:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865293]
+[2024-04-21 16:11:03] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-code-samples
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edstem-assignment-tracker
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redhat-qe-cloud-tools
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parsee-core
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: github-webhook-server
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pnzxefene
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openshift-cli-installer
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openshift-cluster-management-python-wrapper
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: simpleworkspace
+[2024-04-21 16:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: routrs
+[2024-04-21 16:11:03] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [simpleworkspace]: New version: [1.2.188] Old Version: [1.2.187]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [github-webhook-server]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 16:11:03] WARNING root fetch - processPackages [pnzxefene]: Skipping, unable to determine old version
+[2024-04-21 16:11:03] INFO root fetch - main [MainThread]: End processing [pnzxefene] error
+[2024-04-21 16:11:03] WARNING root fetch - processPackages [fastapi-code-samples]: Skipping, unable to determine old version
+[2024-04-21 16:11:03] INFO root fetch - main [MainThread]: End processing [fastapi-code-samples] error
+[2024-04-21 16:11:03] INFO root fetch - processPackages [parsee-core]: New version: [0.1.4.9] Old Version: [0.1.4.8]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [openshift-cli-installer]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-21 16:11:03] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-21 16:11:03] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/7a/d4/dd3ce65f20165ecfcfc5060627c1a642395937b60bb46d7d2f372646d82c/simpleworkspace-1.2.187.tar.gz
+[2024-04-21 16:11:03] WARNING root fetch - processPackages [routrs]: Skipping, unable to determine old version
+[2024-04-21 16:11:03] INFO root fetch - main [MainThread]: End processing [routrs] error
+[2024-04-21 16:11:03] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Downloading https://files.pythonhosted.org/packages/c0/59/4a411cf32353a4aa27ed7df897022dba7186efabe6440e073e02e93578c7/openshift_cluster_management_python_wrapper-1.0.98.tar.gz
+[2024-04-21 16:11:03] INFO root fetch - processPackages [github-webhook-server]: Downloading https://files.pythonhosted.org/packages/c0/56/cbab23c1ea2749d68d60c632e7929ca52c454aa52c5dc3fb32ac65b94db9/github_webhook_server-1.0.8.tar.gz
+[2024-04-21 16:11:03] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/bb/ba/b006d094180ea2c9d36260eb23821d2bdf0bc3e11192b77282a510ac39ee/redhat_qe_cloud_tools-1.0.8.tar.gz
+[2024-04-21 16:11:03] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/7a/50/254187550fba83da8e34776ce7e4c5844d1785b705b16a1ee835f8b7f74e/parsee_core-0.1.4.8.tar.gz
+[2024-04-21 16:11:03] INFO root fetch - processPackages [openshift-cli-installer]: Downloading https://files.pythonhosted.org/packages/93/ea/081916b4f7f911ee0b4d2373be0df43c7c020915e4dc0daddae9d0c85d23/openshift_cli_installer-2.0.8.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240421/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [github-webhook-server]: Downloading https://files.pythonhosted.org/packages/d8/e5/6af680dbe8cc52383de6fd1b59cc6f4255b6801fe51655bd031999867ecf/github_webhook_server-1.0.9.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [simpleworkspace]: Downloading https://files.pythonhosted.org/packages/16/4e/37dc96ae8062a6b7754ecd52d08bb43667ce657a87d2d3716a836031ef21/simpleworkspace-1.2.188.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/73/ee/78f15b2144832b2da8cfd67c1d7f49253a5bbeabe351e94adf1af190017c/redhat_qe_cloud_tools-1.0.9.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Downloading https://files.pythonhosted.org/packages/11/56/6990be30b6f5fcf73a2731cd41504a76f9454ec027047d669aeb3f238561/openshift_cluster_management_python_wrapper-1.0.99.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/87/4f/31752247b806b1f52883033ecb4efbcec34d8a58a18a3a051c733dd38686/parsee_core-0.1.4.9.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.8.tar.gz tmp/redhat_qe_cloud_tools-1.0.9.tar.gz --markdown 20240421/r/redhat-qe-cloud-tools/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cli-installer]: Downloading https://files.pythonhosted.org/packages/2e/36/23bd27005a72d5bc87d2d81bd55477f2c4cbdee088189ef184dea2fb149c/openshift_cli_installer-2.0.9.tar.gz
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift_cluster_management_python_wrapper-1.0.98.tar.gz tmp/openshift_cluster_management_python_wrapper-1.0.99.tar.gz --markdown 20240421/o/openshift-cluster-management-python-wrapper/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworkspace-1.2.187.tar.gz tmp/simpleworkspace-1.2.188.tar.gz --markdown 20240421/s/simpleworkspace/1.2.187-1.2.188/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [parsee-core]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [parsee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsee_core-0.1.4.8.tar.gz tmp/parsee_core-0.1.4.9.tar.gz --markdown 20240421/p/parsee-core/0.1.4.8-0.1.4.9/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [github-webhook-server]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [github-webhook-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_webhook_server-1.0.8.tar.gz tmp/github_webhook_server-1.0.9.tar.gz --markdown 20240421/g/github-webhook-server/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cli-installer]: executing diffoscope
+[2024-04-21 16:11:04] INFO root fetch - processPackages [openshift-cli-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift_cli_installer-2.0.8.tar.gz tmp/openshift_cli_installer-2.0.9.tar.gz --markdown 20240421/o/openshift-cli-installer/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-21 16:11:04] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-21 16:11:04] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-21 16:11:04] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.8.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.9.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cluster_management_python_wrapper-1.0.98.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cluster_management_python_wrapper-1.0.99.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [openshift-cluster-management-python-wrapper]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [github-webhook-server]: Remove: archive file [/home/abi/fetcher/tmp/github_webhook_server-1.0.8.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [github-webhook-server]: Remove: archive file [/home/abi/fetcher/tmp/github_webhook_server-1.0.9.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [github-webhook-server]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [openshift-cli-installer]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cli_installer-2.0.8.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [openshift-cli-installer]: Remove: archive file [/home/abi/fetcher/tmp/openshift_cli_installer-2.0.9.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [openshift-cli-installer]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.8.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.9.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
+[2024-04-21 16:11:05] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.187.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.188.tar.gz]
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2024-04-21 16:11:05] INFO root fetch - main [MainThread]: Store serial: [22865318]
