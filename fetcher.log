@@ -7906,3 +7906,33 @@
 [2024-04-21 12:11:30] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042009.tar.gz]
 [2024-04-21 12:11:30] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-21 12:11:30] INFO root fetch - main [MainThread]: Store serial: [22863602]
+[2024-04-21 12:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863602]
+[2024-04-21 12:13:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monopoly-sg
+[2024-04-21 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textile-metric
+[2024-04-21 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyclonedx-bom
+[2024-04-21 12:13:38] INFO root fetch - processPackages [monopoly-sg]: New version: [0.7.6rc0] Old Version: [0.7.6]
+[2024-04-21 12:13:38] INFO root fetch - processPackages [textile-metric]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 12:13:38] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.1a1] Old Version: [4.3.0]
+[2024-04-21 12:13:39] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/63/09/dfd97ab8efbc09206ac0c9646b8d3028cc2492692db45c19868530d3f222/textile_metric-0.0.6.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/11/91/381b3c5c56eb47e38223c4be83ca1bdf670d638ad4e818670784b48d2f24/cyclonedx_bom-4.3.0.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/68/8f/a4acc9f15818be2ddf12ace1764c7456b6ffc59e121947065cdcee44e237/monopoly_sg-0.7.6.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/0c/d2/8e8477d64ae08c73ebdbdca1856d9ba0a9feaffc416500c56a3f42e20004/monopoly_sg-0.7.6rc0.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-04-21 12:13:39] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.6.tar.gz tmp/monopoly_sg-0.7.6rc0.tar.gz --markdown 20240421/m/monopoly-sg/0.7.6-0.7.6rc0/README.md --exclude *.pyd
+[2024-04-21 12:13:39] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/24/bc/159ebef142757ac8a6d6dbc86eae930354d5f4a85c200730a4d01495b163/textile_metric-0.0.7.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/a7/46/b73ae35e9649ddb982f09af49c352d9aa159e0e1ee40bd63f965d36a4464/cyclonedx_bom-4.3.1a1.tar.gz
+[2024-04-21 12:13:39] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 12:13:39] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.0.tar.gz tmp/cyclonedx_bom-4.3.1a1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.0-4.3.1a1/README.md --exclude *.pyd
+[2024-04-21 12:13:39] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:13:39] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.6.tar.gz tmp/textile_metric-0.0.7.tar.gz --markdown 20240421/t/textile-metric/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 12:13:40] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6.tar.gz]
+[2024-04-21 12:13:40] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6rc0.tar.gz]
+[2024-04-21 12:13:40] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-04-21 12:13:40] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.6.tar.gz]
+[2024-04-21 12:13:40] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.7.tar.gz]
+[2024-04-21 12:13:40] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:13:48] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.0.tar.gz]
+[2024-04-21 12:13:48] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.1a1.tar.gz]
+[2024-04-21 12:13:48] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 12:13:48] INFO root fetch - main [MainThread]: Store serial: [22863609]
