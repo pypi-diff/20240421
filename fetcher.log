@@ -17005,3 +17005,36 @@
 [2024-04-21 21:27:08] INFO root fetch - processPackages [muxtools]: Remove: archive file [/home/abi/fetcher/tmp/muxtools-0.1.0.tar.gz]
 [2024-04-21 21:27:08] INFO root fetch - main [MainThread]: End processing [muxtools]: success
 [2024-04-21 21:27:08] INFO root fetch - main [MainThread]: Store serial: [22868030]
+[2024-04-21 21:29:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868030]
+[2024-04-21 21:29:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: darkgraylib
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC598
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitch-dota-layerth
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyl402
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dem-roughness-calculator
+[2024-04-21 21:29:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: updrytwist-UpDryTwist
+[2024-04-21 21:29:18] WARNING root fetch - processPackages [dem-roughness-calculator]: Skipping, unable to determine old version
+[2024-04-21 21:29:18] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator] error
+[2024-04-21 21:29:18] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 21:29:18] WARNING root fetch - processPackages [pyl402]: Skipping, unable to determine old version
+[2024-04-21 21:29:18] INFO root fetch - main [MainThread]: End processing [pyl402] error
+[2024-04-21 21:29:18] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-21 21:29:18] WARNING root fetch - processPackages [twitch-dota-layerth]: Skipping, unable to determine old version
+[2024-04-21 21:29:18] INFO root fetch - main [MainThread]: End processing [twitch-dota-layerth] error
+[2024-04-21 21:29:18] INFO root fetch - processPackages [darkgraylib]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-21 21:29:18] WARNING root fetch - processPackages [PythonTestLJC598]: Skipping, unable to determine old version
+[2024-04-21 21:29:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC598] error
+[2024-04-21 21:29:18] INFO root fetch - processPackages [darkgraylib]: Downloading https://files.pythonhosted.org/packages/78/a8/9be8653ef02f671d81ba423efe295401898a9f66e1565fd29a6310554a13/darkgraylib-1.2.0.tar.gz
+[2024-04-21 21:29:18] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-21 21:29:18] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-21 21:29:18] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240421/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 21:29:18] INFO root fetch - processPackages [darkgraylib]: Downloading https://files.pythonhosted.org/packages/31/4c/827aea826942688db68773a02b9bacce26521b83503d4f3e613ad71fac6b/darkgraylib-1.2.1.tar.gz
+[2024-04-21 21:29:19] INFO root fetch - processPackages [darkgraylib]: executing diffoscope
+[2024-04-21 21:29:19] INFO root fetch - processPackages [darkgraylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/darkgraylib-1.2.0.tar.gz tmp/darkgraylib-1.2.1.tar.gz --markdown 20240421/d/darkgraylib/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-21 21:29:19] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-21 21:29:19] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-21 21:29:19] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-21 21:29:19] INFO root fetch - processPackages [darkgraylib]: Remove: archive file [/home/abi/fetcher/tmp/darkgraylib-1.2.0.tar.gz]
+[2024-04-21 21:29:19] INFO root fetch - processPackages [darkgraylib]: Remove: archive file [/home/abi/fetcher/tmp/darkgraylib-1.2.1.tar.gz]
+[2024-04-21 21:29:19] INFO root fetch - main [MainThread]: End processing [darkgraylib]: success
+[2024-04-21 21:29:19] INFO root fetch - main [MainThread]: Store serial: [22868054]
