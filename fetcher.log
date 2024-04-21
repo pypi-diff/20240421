@@ -16720,3 +16720,57 @@
 [2024-04-21 21:16:13] INFO root fetch - processPackages [teaspoon]: Remove: archive file [/home/abi/fetcher/tmp/teaspoon-1.5.2.tar.gz]
 [2024-04-21 21:16:13] INFO root fetch - main [MainThread]: End processing [teaspoon]: success
 [2024-04-21 21:16:13] INFO root fetch - main [MainThread]: Store serial: [22867902]
+[2024-04-21 21:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867902]
+[2024-04-21 21:18:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filemac
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC594
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hatch-gradle-version
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: throttle-client
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybts
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ansi-string
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: haskellian
+[2024-04-21 21:18:23] INFO root fetch - processPackages [throttle-client]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-21 21:18:23] WARNING root fetch - processPackages [filemac]: Skipping, unable to determine old version
+[2024-04-21 21:18:23] INFO root fetch - main [MainThread]: End processing [filemac] error
+[2024-04-21 21:18:23] INFO root fetch - processPackages [pybts]: New version: [1.8.2] Old Version: [1.8.0]
+[2024-04-21 21:18:23] INFO root fetch - processPackages [haskellian]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-21 21:18:23] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/e9/26/1886b4891f9e4b26b79368dd550eff7027df656beadca3a71fc7c3c56d7d/throttle_client-0.5.1.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ansi-string]: New version: [1.0.0] Old Version: [0.1.3]
+[2024-04-21 21:18:23] INFO root fetch - processPackages [hatch-gradle-version]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-21 21:18:23] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/63/af/597d4489922c44d5ac322b3602abcae538567b444a491df0b896257d079c/pybts-1.8.0.tar.gz
+[2024-04-21 21:18:23] WARNING root fetch - processPackages [PythonTestLJC594]: Skipping, unable to determine old version
+[2024-04-21 21:18:23] INFO root fetch - main [MainThread]: End processing [PythonTestLJC594] error
+[2024-04-21 21:18:23] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/f4/a8/bebacaf688e5be9ec92af320474400e0208689852fcba3ad2ec598c0290e/haskellian-0.3.3.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/fe/15/07d7ff16fd5711c5b909e1b4c08be9a4194d79ed97ceb37530a44fa59812/hatch_gradle_version-0.9.5.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/e0/42/7d9658ce7ddc6050d39f3ac7c348b7db45cd9997e23f02c7d8b2108dbed7/ansi-string-0.1.3.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/19/a6/74ef0427d09e8de63afd6dcc043938700f30df3bb8f088f1c7fdf18d3a2b/throttle_client-0.5.2.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/7a/0d/c86ec488afb925dabbafdd974c0f9955a8d597497d6a8a0244191014ab1d/haskellian-0.3.4.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [throttle-client]: executing diffoscope
+[2024-04-21 21:18:23] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/50/97/81d70466775d38c8b815ed2afc7efab0acb9bcbaea457d4f009b40ea9311/pybts-1.8.2.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [throttle-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/throttle_client-0.5.1.tar.gz tmp/throttle_client-0.5.2.tar.gz --markdown 20240421/t/throttle-client/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-21 21:18:23] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-04-21 21:18:23] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.3.tar.gz tmp/haskellian-0.3.4.tar.gz --markdown 20240421/h/haskellian/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-21 21:18:23] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/17/a4/29e37182fc4dd1e804beae8db89f14cc76d5520140508fa09d0514cbeb60/ansi-string-1.0.0.tar.gz
+[2024-04-21 21:18:23] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/94/11/bfe5fdaf1d8a2f6f65da40bc82a57f268b5b3ae55a1708b49fb2e065d347/hatch_gradle_version-0.9.6.tar.gz
+[2024-04-21 21:18:24] INFO root fetch - processPackages [pybts]: executing diffoscope
+[2024-04-21 21:18:24] INFO root fetch - processPackages [pybts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybts-1.8.0.tar.gz tmp/pybts-1.8.2.tar.gz --markdown 20240421/p/pybts/1.8.0-1.8.2/README.md --exclude *.pyd
+[2024-04-21 21:18:24] INFO root fetch - processPackages [hatch-gradle-version]: executing diffoscope
+[2024-04-21 21:18:24] INFO root fetch - processPackages [hatch-gradle-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_gradle_version-0.9.5.tar.gz tmp/hatch_gradle_version-0.9.6.tar.gz --markdown 20240421/h/hatch-gradle-version/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-21 21:18:24] INFO root fetch - processPackages [ansi-string]: executing diffoscope
+[2024-04-21 21:18:24] INFO root fetch - processPackages [ansi-string]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansi-string-0.1.3.tar.gz tmp/ansi-string-1.0.0.tar.gz --markdown 20240421/a/ansi-string/0.1.3-1.0.0/README.md --exclude *.pyd
+[2024-04-21 21:18:24] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.5.1.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.5.2.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [throttle-client]: success
+[2024-04-21 21:18:24] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.3.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.4.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-04-21 21:18:24] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-0.1.3.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-1.0.0.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [ansi-string]: success
+[2024-04-21 21:18:24] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.5.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.6.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [hatch-gradle-version]: success
+[2024-04-21 21:18:24] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.0.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.2.tar.gz]
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [pybts]: success
+[2024-04-21 21:18:24] INFO root fetch - main [MainThread]: Store serial: [22867928]
