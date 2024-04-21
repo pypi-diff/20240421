@@ -4455,3 +4455,27 @@
 [2024-04-21 07:07:01] INFO root fetch - processPackages [salinic]: Remove: archive file [/home/abi/fetcher/tmp/salinic-0.3.9.tar.gz]
 [2024-04-21 07:07:01] INFO root fetch - main [MainThread]: End processing [salinic]: success
 [2024-04-21 07:07:01] INFO root fetch - main [MainThread]: Store serial: [22862081]
+[2024-04-21 07:09:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862081]
+[2024-04-21 07:09:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 07:09:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rate-control
+[2024-04-21 07:09:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC375
+[2024-04-21 07:09:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mayan-edms
+[2024-04-21 07:09:10] INFO root fetch - processPackages [rate-control]: New version: [3.0.0] Old Version: [2.0.0]
+[2024-04-21 07:09:10] WARNING root fetch - processPackages [PythonTestLJC375]: Skipping, unable to determine old version
+[2024-04-21 07:09:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC375] error
+[2024-04-21 07:09:10] INFO root fetch - processPackages [mayan-edms]: New version: [4.6.3] Old Version: [4.6.2]
+[2024-04-21 07:09:10] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/57/79/67608e0ae3401eb501991d000da85e4711fae4136771771ca76d96f4c155/rate_control-2.0.0.tar.gz
+[2024-04-21 07:09:10] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/2f/65/c80da48be4c004fe2b17073f8c515c7c8edfb2039dfd09bf87dcd446070b/mayan-edms-4.6.2.tar.gz
+[2024-04-21 07:09:10] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/53/b1/141a34afe85c556003d2abb8ceafb2ce1a3f03991e33b67b35108847c16b/rate_control-3.0.0.tar.gz
+[2024-04-21 07:09:10] INFO root fetch - processPackages [rate-control]: executing diffoscope
+[2024-04-21 07:09:10] INFO root fetch - processPackages [rate-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rate_control-2.0.0.tar.gz tmp/rate_control-3.0.0.tar.gz --markdown 20240421/r/rate-control/2.0.0-3.0.0/README.md --exclude *.pyd
+[2024-04-21 07:09:10] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/c8/7c/92390e4539bed05d2f60e00e4298b8d6c847935fc67a0285e5ddd18122df/mayan-edms-4.6.3.tar.gz
+[2024-04-21 07:09:11] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2024-04-21 07:09:11] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.6.2.tar.gz tmp/mayan-edms-4.6.3.tar.gz --markdown 20240421/m/mayan-edms/4.6.2-4.6.3/README.md --exclude *.pyd
+[2024-04-21 07:09:11] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-2.0.0.tar.gz]
+[2024-04-21 07:09:11] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-3.0.0.tar.gz]
+[2024-04-21 07:09:11] INFO root fetch - main [MainThread]: End processing [rate-control]: success
+[2024-04-21 07:09:44] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.6.2.tar.gz]
+[2024-04-21 07:09:44] INFO root fetch - processPackages [mayan-edms]: Remove: archive file [/home/abi/fetcher/tmp/mayan-edms-4.6.3.tar.gz]
+[2024-04-21 07:09:44] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2024-04-21 07:09:44] INFO root fetch - main [MainThread]: Store serial: [22862092]
