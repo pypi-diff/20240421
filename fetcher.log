@@ -3623,3 +3623,39 @@
 [2024-04-21 05:31:49] INFO root fetch - processPackages [odoo-addon-contract-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_contract_sale-17.0.1.0.0.1-py3-none-any.whl.zip]
 [2024-04-21 05:31:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-sale]: success
 [2024-04-21 05:31:49] INFO root fetch - main [MainThread]: Store serial: [22861696]
+[2024-04-21 05:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861696]
+[2024-04-21 05:33:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 05:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeargument-python-version2
+[2024-04-21 05:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightning-template
+[2024-04-21 05:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gmaps-avoid-swiss
+[2024-04-21 05:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: litesync
+[2024-04-21 05:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC358
+[2024-04-21 05:33:57] INFO root fetch - processPackages [gmaps-avoid-swiss]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 05:33:57] INFO root fetch - processPackages [lightning-template]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-21 05:33:57] INFO root fetch - processPackages [gmaps-avoid-swiss]: Downloading https://files.pythonhosted.org/packages/79/4d/41b3b5cdfaceb5955043969950c5423e766ddbd4cfa2b759d08116bc2bea/gmaps_avoid_swiss-0.1.4.tar.gz
+[2024-04-21 05:33:57] WARNING root fetch - processPackages [codeargument-python-version2]: Skipping, unable to determine old version
+[2024-04-21 05:33:57] INFO root fetch - main [MainThread]: End processing [codeargument-python-version2] error
+[2024-04-21 05:33:57] WARNING root fetch - processPackages [PythonTestLJC358]: Skipping, unable to determine old version
+[2024-04-21 05:33:57] INFO root fetch - main [MainThread]: End processing [PythonTestLJC358] error
+[2024-04-21 05:33:57] INFO root fetch - processPackages [litesync]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 05:33:57] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/fa/82/328c153c3cef3a0ada6222c40fa83b5ee818320650480328dd587f9e4f86/lightning-template-1.8.1.tar.gz
+[2024-04-21 05:33:57] INFO root fetch - processPackages [gmaps-avoid-swiss]: Downloading https://files.pythonhosted.org/packages/8d/5f/465f980e6c1410d62f164c9708436c976d85ce452d11df4e8337c3a6bbf1/gmaps_avoid_swiss-0.1.5.tar.gz
+[2024-04-21 05:33:58] INFO root fetch - processPackages [litesync]: Downloading https://files.pythonhosted.org/packages/bd/bd/184d834e9f70bde35dcd6ba5d7d7ca52e137c5b99bd5656ef5e1cbd9d166/litesync-0.5.0.tar.gz
+[2024-04-21 05:33:58] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/ff/41/87c6ba8561d19aeec49fa0fbbd99b05f100ec898ff58f8d9d271912f646a/lightning-template-1.9.0.tar.gz
+[2024-04-21 05:33:58] INFO root fetch - processPackages [gmaps-avoid-swiss]: executing diffoscope
+[2024-04-21 05:33:58] INFO root fetch - processPackages [gmaps-avoid-swiss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmaps_avoid_swiss-0.1.4.tar.gz tmp/gmaps_avoid_swiss-0.1.5.tar.gz --markdown 20240421/g/gmaps-avoid-swiss/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 05:33:58] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2024-04-21 05:33:58] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.8.1.tar.gz tmp/lightning-template-1.9.0.tar.gz --markdown 20240421/l/lightning-template/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-21 05:33:58] INFO root fetch - processPackages [litesync]: Downloading https://files.pythonhosted.org/packages/f0/7d/80839a657150d57d48b8fec87e8f604eed3a37d2ef5a4bb40f2b78d855ae/litesync-0.5.1.tar.gz
+[2024-04-21 05:33:58] INFO root fetch - processPackages [litesync]: executing diffoscope
+[2024-04-21 05:33:58] INFO root fetch - processPackages [litesync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litesync-0.5.0.tar.gz tmp/litesync-0.5.1.tar.gz --markdown 20240421/l/litesync/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 05:33:58] INFO root fetch - processPackages [gmaps-avoid-swiss]: Remove: archive file [/home/abi/fetcher/tmp/gmaps_avoid_swiss-0.1.4.tar.gz]
+[2024-04-21 05:33:58] INFO root fetch - processPackages [gmaps-avoid-swiss]: Remove: archive file [/home/abi/fetcher/tmp/gmaps_avoid_swiss-0.1.5.tar.gz]
+[2024-04-21 05:33:58] INFO root fetch - main [MainThread]: End processing [gmaps-avoid-swiss]: success
+[2024-04-21 05:33:58] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.8.1.tar.gz]
+[2024-04-21 05:33:58] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.9.0.tar.gz]
+[2024-04-21 05:33:58] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2024-04-21 05:33:59] INFO root fetch - processPackages [litesync]: Remove: archive file [/home/abi/fetcher/tmp/litesync-0.5.0.tar.gz]
+[2024-04-21 05:33:59] INFO root fetch - processPackages [litesync]: Remove: archive file [/home/abi/fetcher/tmp/litesync-0.5.1.tar.gz]
+[2024-04-21 05:33:59] INFO root fetch - main [MainThread]: End processing [litesync]: success
+[2024-04-21 05:33:59] INFO root fetch - main [MainThread]: Store serial: [22861737]
