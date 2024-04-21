@@ -3500,3 +3500,33 @@
 [2024-04-21 05:20:53] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.6.tar.gz]
 [2024-04-21 05:20:53] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-21 05:20:53] INFO root fetch - main [MainThread]: Store serial: [22861648]
+[2024-04-21 05:22:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861648]
+[2024-04-21 05:23:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 05:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: restcraft
+[2024-04-21 05:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vanna
+[2024-04-21 05:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nightly
+[2024-04-21 05:23:01] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.0.dev2024042003] Old Version: [3.3.0.dev2024041903]
+[2024-04-21 05:23:01] INFO root fetch - processPackages [restcraft]: New version: [0.0.14] Old Version: [0.0.12]
+[2024-04-21 05:23:01] INFO root fetch - processPackages [vanna]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-21 05:23:01] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/72/88/c7fb6dc9edbeb53e717ffe6c7d68b6d3581b503f2e67b93a419a97d26e62/keras_nightly-3.3.0.dev2024041903.tar.gz
+[2024-04-21 05:23:01] INFO root fetch - processPackages [restcraft]: Downloading https://files.pythonhosted.org/packages/47/9b/2a5086d40080cf538175d55325ab6bd5fed3be05a855204a38101240428e/restcraft-0.0.12.tar.gz
+[2024-04-21 05:23:01] INFO root fetch - processPackages [vanna]: Downloading https://files.pythonhosted.org/packages/5c/83/5495c5505a2261aa2940e7a852b10175ed6fdadfee36b72f4dc5e09faf36/vanna-0.4.1.tar.gz
+[2024-04-21 05:23:02] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/ba/2e/dffa04b0bffc2468135f1546972a31efdefdcc678ca6dfb9585d73a72d61/keras_nightly-3.3.0.dev2024042003.tar.gz
+[2024-04-21 05:23:02] INFO root fetch - processPackages [restcraft]: Downloading https://files.pythonhosted.org/packages/8d/18/8c532bd95483cf078e98350d3761c31e0f1ea08710b23720bdbc5731a159/restcraft-0.0.14.tar.gz
+[2024-04-21 05:23:02] INFO root fetch - processPackages [vanna]: Downloading https://files.pythonhosted.org/packages/b5/cf/5714ae83480a8b3aa98cba0e4626ea45900db4b612252c2eb96be01f99ec/vanna-0.4.2.tar.gz
+[2024-04-21 05:23:02] INFO root fetch - processPackages [restcraft]: executing diffoscope
+[2024-04-21 05:23:02] INFO root fetch - processPackages [restcraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restcraft-0.0.12.tar.gz tmp/restcraft-0.0.14.tar.gz --markdown 20240421/r/restcraft/0.0.12-0.0.14/README.md --exclude *.pyd
+[2024-04-21 05:23:02] INFO root fetch - processPackages [vanna]: executing diffoscope
+[2024-04-21 05:23:02] INFO root fetch - processPackages [vanna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanna-0.4.1.tar.gz tmp/vanna-0.4.2.tar.gz --markdown 20240421/v/vanna/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-21 05:23:02] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-21 05:23:02] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.0.dev2024041903.tar.gz tmp/keras_nightly-3.3.0.dev2024042003.tar.gz --markdown 20240421/k/keras-nightly/3.3.0.dev2024041903-3.3.0.dev2024042003/README.md --exclude *.pyd
+[2024-04-21 05:23:02] INFO root fetch - processPackages [restcraft]: Remove: archive file [/home/abi/fetcher/tmp/restcraft-0.0.12.tar.gz]
+[2024-04-21 05:23:02] INFO root fetch - processPackages [restcraft]: Remove: archive file [/home/abi/fetcher/tmp/restcraft-0.0.14.tar.gz]
+[2024-04-21 05:23:02] INFO root fetch - main [MainThread]: End processing [restcraft]: success
+[2024-04-21 05:23:02] INFO root fetch - processPackages [vanna]: Remove: archive file [/home/abi/fetcher/tmp/vanna-0.4.1.tar.gz]
+[2024-04-21 05:23:02] INFO root fetch - processPackages [vanna]: Remove: archive file [/home/abi/fetcher/tmp/vanna-0.4.2.tar.gz]
+[2024-04-21 05:23:02] INFO root fetch - main [MainThread]: End processing [vanna]: success
+[2024-04-21 05:23:05] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024041903.tar.gz]
+[2024-04-21 05:23:05] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024042003.tar.gz]
+[2024-04-21 05:23:05] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-21 05:23:05] INFO root fetch - main [MainThread]: Store serial: [22861657]
