@@ -14634,3 +14634,27 @@
 [2024-04-21 19:11:41] INFO root fetch - processPackages [django-click]: Remove: archive file [/home/abi/fetcher/tmp/django_click-2.4.0.tar.gz]
 [2024-04-21 19:11:41] INFO root fetch - main [MainThread]: End processing [django-click]: success
 [2024-04-21 19:11:41] INFO root fetch - main [MainThread]: Store serial: [22866807]
+[2024-04-21 19:13:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866807]
+[2024-04-21 19:13:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC549
+[2024-04-21 19:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databased
+[2024-04-21 19:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chamco-ragbot
+[2024-04-21 19:13:49] WARNING root fetch - processPackages [PythonTestLJC549]: Skipping, unable to determine old version
+[2024-04-21 19:13:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC549] error
+[2024-04-21 19:13:49] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 19:13:49] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 19:13:49] INFO root fetch - processPackages [databased]: New version: [4.3.5] Old Version: [4.3.4]
+[2024-04-21 19:13:49] INFO root fetch - processPackages [databased]: Downloading https://files.pythonhosted.org/packages/3e/ef/80006b4abd2531c3842f1ebc9ecaf656b6e7675f641440e9e2e229a60d64/databased-4.3.4.tar.gz
+[2024-04-21 19:13:49] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 19:13:50] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 19:13:50] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 19:13:50] INFO root fetch - processPackages [databased]: Downloading https://files.pythonhosted.org/packages/03/0e/d1cdcce49b037867e3f59fbb825d652aa66ba6d4e77878076cf0dd7e6c62/databased-4.3.5.tar.gz
+[2024-04-21 19:13:50] INFO root fetch - processPackages [databased]: executing diffoscope
+[2024-04-21 19:13:50] INFO root fetch - processPackages [databased]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databased-4.3.4.tar.gz tmp/databased-4.3.5.tar.gz --markdown 20240421/d/databased/4.3.4-4.3.5/README.md --exclude *.pyd
+[2024-04-21 19:13:50] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 19:13:50] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 19:13:50] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 19:13:50] INFO root fetch - processPackages [databased]: Remove: archive file [/home/abi/fetcher/tmp/databased-4.3.4.tar.gz]
+[2024-04-21 19:13:50] INFO root fetch - processPackages [databased]: Remove: archive file [/home/abi/fetcher/tmp/databased-4.3.5.tar.gz]
+[2024-04-21 19:13:50] INFO root fetch - main [MainThread]: End processing [databased]: success
+[2024-04-21 19:13:50] INFO root fetch - main [MainThread]: Store serial: [22866817]
