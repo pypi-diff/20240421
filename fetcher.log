@@ -3094,3 +3094,9 @@
 [2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/gemini-output-wrapper-0.2.3.tar.gz]
 [2024-04-21 04:41:55] INFO root fetch - main [MainThread]: End processing [gemini-output-wrapper]: success
 [2024-04-21 04:41:55] INFO root fetch - main [MainThread]: Store serial: [22861442]
+[2024-04-21 04:43:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861442]
+[2024-04-21 04:44:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 04:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC340
+[2024-04-21 04:44:04] WARNING root fetch - processPackages [PythonTestLJC340]: Skipping, unable to determine old version
+[2024-04-21 04:44:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC340] error
+[2024-04-21 04:44:04] INFO root fetch - main [MainThread]: Store serial: [22861447]
