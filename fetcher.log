@@ -7513,3 +7513,65 @@
 [2024-04-21 11:34:36] INFO root fetch - processPackages [text-fabric]: Remove: archive file [/home/abi/fetcher/tmp/text_fabric-9.5.2-py3-none-any.whl.zip]
 [2024-04-21 11:34:36] INFO root fetch - main [MainThread]: End processing [text-fabric]: success
 [2024-04-21 11:34:36] INFO root fetch - main [MainThread]: Store serial: [22863428]
+[2024-04-21 11:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863428]
+[2024-04-21 11:36:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 11:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863428]
+[2024-04-21 11:38:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OmniGenome
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textile-metric
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-analytic-tag
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FoxDotEditor
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: renardo
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: renardo-lib
+[2024-04-21 11:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: galxiai
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo-lib]: New version: [0.9.dev9] Old Version: [0.9.9]
+[2024-04-21 11:38:51] INFO root fetch - processPackages [FoxDotEditor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 11:38:51] INFO root fetch - processPackages [galxiai]: New version: [0.50.4] Old Version: [0.50.3]
+[2024-04-21 11:38:51] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.7]
+[2024-04-21 11:38:51] WARNING root fetch - processPackages [textile-metric]: Skipping, unable to determine old version
+[2024-04-21 11:38:51] INFO root fetch - main [MainThread]: End processing [textile-metric] error
+[2024-04-21 11:38:51] INFO root fetch - processPackages [OmniGenome]: New version: [0.0.1b1] Old Version: [0.0.1a0]
+[2024-04-21 11:38:51] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/8f/ed/6f4f42bab25dd239482fa57ab5bdf863e679762950ac55b63f832dbc43e9/FoxDotEditor-0.9.8.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/e4/5a/07a1f6f3ea9c38f61d36fd05bf9b70411c6b40887e5171585a2e941112bc/renardo_lib-0.9.9.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/fb/49/617bba266be61b48df4660d09ae00679c712d277c60e48046d33be54c138/renardo-0.9.8.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/f7/96/58ddc3ede0b996971b4bf15cff82d9ae4ab405d78ea2ca338728dbc246c7/galxiai-0.50.3.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: Downloading https://files.pythonhosted.org/packages/60/5f/a186e1df55b66ee8dd9d0d3093b7692aee2cfc68c07579688f26f066e956/odoo_addon_account_analytic_tag-16.0.1.0.0.7-py3-none-any.whl
+[2024-04-21 11:38:51] INFO root fetch - processPackages [OmniGenome]: Downloading https://files.pythonhosted.org/packages/ec/52/8c92805a7126d25b19576785cb748eeb6bf68ee7fcb4a60fc6f58e99ebe2/OmniGenome-0.0.1a0-py3-none-any.whl
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-21 11:38:51] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.8.tar.gz tmp/renardo-0.9.9.tar.gz --markdown 20240421/r/renardo/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 11:38:51] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FoxDotEditor-0.9.8.tar.gz tmp/foxdoteditor-0.9.9.tar.gz --markdown 20240421/F/FoxDotEditor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.9.tar.gz tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip --markdown 20240421/r/renardo-lib/0.9.9-0.9.dev9/README.md --exclude *.pyd
+[2024-04-21 11:38:51] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/67/70/61b05fc6678937bd7bc3630818650f53826cf3e948faf69543facc589698/galxiai-0.50.4.tar.gz
+[2024-04-21 11:38:51] INFO root fetch - processPackages [OmniGenome]: Downloading https://files.pythonhosted.org/packages/0b/ea/b5ec0ab4672a2f0447b0a16e7691ef079c602396396b20450eeb1a289720/OmniGenome-0.0.1b1-py3-none-any.whl
+[2024-04-21 11:38:51] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: Downloading https://files.pythonhosted.org/packages/dc/65/511048e893bbb8578c34d8d94c702c5a689ccb6d04894a505d95617fc2b5/odoo_addon_account_analytic_tag-16.0.1.0.1-py3-none-any.whl
+[2024-04-21 11:38:51] INFO root fetch - processPackages [galxiai]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [galxiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galxiai-0.50.3.tar.gz tmp/galxiai-0.50.4.tar.gz --markdown 20240421/g/galxiai/0.50.3-0.50.4/README.md --exclude *.pyd
+[2024-04-21 11:38:51] INFO root fetch - processPackages [OmniGenome]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [OmniGenome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniGenome-0.0.1a0-py3-none-any.whl.zip tmp/OmniGenome-0.0.1b1-py3-none-any.whl.zip --markdown 20240421/O/OmniGenome/0.0.1a0-0.0.1b1/README.md --exclude *.pyd
+[2024-04-21 11:38:51] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: executing diffoscope
+[2024-04-21 11:38:51] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_analytic_tag-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_account_analytic_tag-16.0.1.0.1-py3-none-any.whl.zip --markdown 20240421/o/odoo-addon-account-analytic-tag/16.0.1.0.0.7-16.0.1.0.1/README.md --exclude *.pyd
+[2024-04-21 11:38:52] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.8.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-21 11:38:52] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/FoxDotEditor-0.9.8.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-21 11:38:52] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.9.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-21 11:38:52] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.3.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.4.tar.gz]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [galxiai]: success
+[2024-04-21 11:38:52] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_analytic_tag-16.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [odoo-addon-account-analytic-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_analytic_tag-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-analytic-tag]: success
+[2024-04-21 11:38:52] INFO root fetch - processPackages [OmniGenome]: Remove: archive file [/home/abi/fetcher/tmp/OmniGenome-0.0.1a0-py3-none-any.whl.zip]
+[2024-04-21 11:38:52] INFO root fetch - processPackages [OmniGenome]: Remove: archive file [/home/abi/fetcher/tmp/OmniGenome-0.0.1b1-py3-none-any.whl.zip]
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: End processing [OmniGenome]: success
+[2024-04-21 11:38:52] INFO root fetch - main [MainThread]: Store serial: [22863449]
