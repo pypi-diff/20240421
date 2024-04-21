@@ -13664,3 +13664,36 @@
 [2024-04-21 18:12:43] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
 [2024-04-21 18:12:43] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
 [2024-04-21 18:12:43] INFO root fetch - main [MainThread]: Store serial: [22866313]
+[2024-04-21 18:14:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866313]
+[2024-04-21 18:14:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 18:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networke
+[2024-04-21 18:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC528
+[2024-04-21 18:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikari-yuyo
+[2024-04-21 18:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chamco-ragbot
+[2024-04-21 18:14:52] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:14:52] INFO root fetch - processPackages [networke]: New version: [4.0] Old Version: [3.0]
+[2024-04-21 18:14:52] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 18:14:52] INFO root fetch - processPackages [networke]: Downloading https://files.pythonhosted.org/packages/5c/f4/8ad8161e345ac8eb08ede3d97ce590bcabfe76b5d30f343d45603a4d61e8/networke-3.0.tar.gz
+[2024-04-21 18:14:52] WARNING root fetch - processPackages [PythonTestLJC528]: Skipping, unable to determine old version
+[2024-04-21 18:14:52] INFO root fetch - main [MainThread]: End processing [PythonTestLJC528] error
+[2024-04-21 18:14:52] INFO root fetch - processPackages [hikari-yuyo]: New version: [1.9.1a1] Old Version: [1.9.0a1]
+[2024-04-21 18:14:52] INFO root fetch - processPackages [hikari-yuyo]: Downloading https://files.pythonhosted.org/packages/1c/73/32fc9673b8d6caca075ddb668365e3aa1106cc59f6f654a108dd3cbcd8d2/hikari-yuyo-1.9.0a1.tar.gz
+[2024-04-21 18:14:52] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 18:14:52] INFO root fetch - processPackages [networke]: Downloading https://files.pythonhosted.org/packages/2e/81/0e59b5353c48a2176d311a2a4e67a5be8d1e6d96bbe81c26971cd6e708d1/networke-4.0.tar.gz
+[2024-04-21 18:14:52] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 18:14:52] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:14:52] INFO root fetch - processPackages [networke]: executing diffoscope
+[2024-04-21 18:14:52] INFO root fetch - processPackages [networke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networke-3.0.tar.gz tmp/networke-4.0.tar.gz --markdown 20240421/n/networke/3.0-4.0/README.md --exclude *.pyd
+[2024-04-21 18:14:53] INFO root fetch - processPackages [hikari-yuyo]: Downloading https://files.pythonhosted.org/packages/38/c1/0564a1baefa3a6c0538e4b894416ec1ea5e8ea0f5acd37bcfe6185089477/hikari-yuyo-1.9.1a1.tar.gz
+[2024-04-21 18:14:53] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 18:14:53] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 18:14:53] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 18:14:53] INFO root fetch - processPackages [networke]: Remove: archive file [/home/abi/fetcher/tmp/networke-3.0.tar.gz]
+[2024-04-21 18:14:53] INFO root fetch - processPackages [networke]: Remove: archive file [/home/abi/fetcher/tmp/networke-4.0.tar.gz]
+[2024-04-21 18:14:53] INFO root fetch - main [MainThread]: End processing [networke]: success
+[2024-04-21 18:14:53] INFO root fetch - processPackages [hikari-yuyo]: executing diffoscope
+[2024-04-21 18:14:53] INFO root fetch - processPackages [hikari-yuyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-yuyo-1.9.0a1.tar.gz tmp/hikari-yuyo-1.9.1a1.tar.gz --markdown 20240421/h/hikari-yuyo/1.9.0a1-1.9.1a1/README.md --exclude *.pyd
+[2024-04-21 18:14:54] INFO root fetch - processPackages [hikari-yuyo]: Remove: archive file [/home/abi/fetcher/tmp/hikari-yuyo-1.9.0a1.tar.gz]
+[2024-04-21 18:14:54] INFO root fetch - processPackages [hikari-yuyo]: Remove: archive file [/home/abi/fetcher/tmp/hikari-yuyo-1.9.1a1.tar.gz]
+[2024-04-21 18:14:54] INFO root fetch - main [MainThread]: End processing [hikari-yuyo]: success
+[2024-04-21 18:14:54] INFO root fetch - main [MainThread]: Store serial: [22866326]
