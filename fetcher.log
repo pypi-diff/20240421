@@ -2252,3 +2252,42 @@
 [2024-04-21 03:21:02] WARNING root fetch - processPackages [FlipCache]: Skipping, unable to determine old version
 [2024-04-21 03:21:02] INFO root fetch - main [MainThread]: End processing [FlipCache] error
 [2024-04-21 03:21:02] INFO root fetch - main [MainThread]: Store serial: [22860975]
+[2024-04-21 03:23:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860975]
+[2024-04-21 03:23:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 03:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-alchemy-kit
+[2024-04-21 03:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parametrize-from-file
+[2024-04-21 03:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-wordpress
+[2024-04-21 03:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: updrytwist-UpDryTwist
+[2024-04-21 03:23:11] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.1b0] Old Version: [0.9.11b0]
+[2024-04-21 03:23:11] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-21 03:23:11] INFO root fetch - processPackages [parametrize-from-file]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-21 03:23:11] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 03:23:11] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/95/5a/46730445b7c8db7cad33c0b319cbd75004ba42b6cbe2f00628d2191c5516/cdk-wordpress-0.0.98.tar.gz
+[2024-04-21 03:23:11] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/dd/e5/429870eb36d3a1884e618b03c3510b1c96fc948dfd0bd85ce7681da56654/pg_alchemy_kit-0.9.11b0.tar.gz
+[2024-04-21 03:23:11] INFO root fetch - processPackages [parametrize-from-file]: Downloading https://files.pythonhosted.org/packages/04/05/5d9fcd8ed3854d7f0f786ba207abcfbd80492c54507b39472053c00a1dff/parametrize_from_file-0.9.0.tar.gz
+[2024-04-21 03:23:11] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-21 03:23:12] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/f5/33/8bc435266e926cea52eb7df452e54c2c0657beef07580a86eae44236d88b/cdk-wordpress-0.0.99.tar.gz
+[2024-04-21 03:23:12] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/15/77/9606182a8ca268d744c73ee5fe74a3c2311f9ee66380afa1f220c118f43f/pg_alchemy_kit-0.9.1b0.tar.gz
+[2024-04-21 03:23:12] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2024-04-21 03:23:12] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20240421/c/cdk-wordpress/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-21 03:23:12] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-04-21 03:23:12] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.9.11b0.tar.gz tmp/pg_alchemy_kit-0.9.1b0.tar.gz --markdown 20240421/p/pg-alchemy-kit/0.9.11b0-0.9.1b0/README.md --exclude *.pyd
+[2024-04-21 03:23:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-21 03:23:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-21 03:23:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240421/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 03:23:12] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.98.tar.gz]
+[2024-04-21 03:23:12] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.99.tar.gz]
+[2024-04-21 03:23:12] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2024-04-21 03:23:12] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.11b0.tar.gz]
+[2024-04-21 03:23:12] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
+[2024-04-21 03:23:12] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-04-21 03:23:12] INFO root fetch - processPackages [parametrize-from-file]: Downloading https://files.pythonhosted.org/packages/c8/33/d6ff7de9e7b516ae0c5c2c87445e81bb3a254a8f32b91260b91e632e8b4b/parametrize_from_file-0.9.1.tar.gz
+[2024-04-21 03:23:12] INFO root fetch - processPackages [parametrize-from-file]: executing diffoscope
+[2024-04-21 03:23:12] INFO root fetch - processPackages [parametrize-from-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parametrize_from_file-0.9.0.tar.gz tmp/parametrize_from_file-0.9.1.tar.gz --markdown 20240421/p/parametrize-from-file/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-21 03:23:13] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-21 03:23:13] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-21 03:23:13] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-21 03:23:13] INFO root fetch - processPackages [parametrize-from-file]: Remove: archive file [/home/abi/fetcher/tmp/parametrize_from_file-0.9.0.tar.gz]
+[2024-04-21 03:23:13] INFO root fetch - processPackages [parametrize-from-file]: Remove: archive file [/home/abi/fetcher/tmp/parametrize_from_file-0.9.1.tar.gz]
+[2024-04-21 03:23:13] INFO root fetch - main [MainThread]: End processing [parametrize-from-file]: success
+[2024-04-21 03:23:13] INFO root fetch - main [MainThread]: Store serial: [22860988]
