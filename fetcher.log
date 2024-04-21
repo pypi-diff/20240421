@@ -2650,3 +2650,12 @@
 [2024-04-21 04:04:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.1.tar.gz]
 [2024-04-21 04:04:35] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-04-21 04:04:35] INFO root fetch - main [MainThread]: Store serial: [22861255]
+[2024-04-21 04:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861255]
+[2024-04-21 04:06:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC326
+[2024-04-21 04:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Election-Vote
+[2024-04-21 04:06:43] WARNING root fetch - processPackages [PythonTestLJC326]: Skipping, unable to determine old version
+[2024-04-21 04:06:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC326] error
+[2024-04-21 04:06:43] WARNING root fetch - processPackages [Election-Vote]: Skipping, unable to determine old version
+[2024-04-21 04:06:43] INFO root fetch - main [MainThread]: End processing [Election-Vote] error
+[2024-04-21 04:06:43] INFO root fetch - main [MainThread]: Store serial: [22861264]
