@@ -2100,3 +2100,9 @@
 [2024-04-21 03:03:45] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.0b0.tar.gz]
 [2024-04-21 03:03:45] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
 [2024-04-21 03:03:45] INFO root fetch - main [MainThread]: Store serial: [22860888]
+[2024-04-21 03:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860888]
+[2024-04-21 03:05:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 03:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC311
+[2024-04-21 03:05:54] WARNING root fetch - processPackages [PythonTestLJC311]: Skipping, unable to determine old version
+[2024-04-21 03:05:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC311] error
+[2024-04-21 03:05:54] INFO root fetch - main [MainThread]: Store serial: [22860893]
