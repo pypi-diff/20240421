@@ -12852,3 +12852,60 @@
 [2024-04-21 17:20:37] INFO root fetch - processPackages [bioviper]: Remove: archive file [/home/abi/fetcher/tmp/bioviper-0.2.1.tar.gz]
 [2024-04-21 17:20:37] INFO root fetch - main [MainThread]: End processing [bioviper]: success
 [2024-04-21 17:20:37] INFO root fetch - main [MainThread]: Store serial: [22865971]
+[2024-04-21 17:22:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865971]
+[2024-04-21 17:22:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: met-annot-unifier
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simc-support
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: min1129
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdf-tools-sdk
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datek_app_utils
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jx3apifun
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: syncloud-lib
+[2024-04-21 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: caca
+[2024-04-21 17:22:46] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2024-04-21 17:22:46] INFO root fetch - processPackages [min1129]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2024-04-21 17:22:46] WARNING root fetch - processPackages [pdf-tools-sdk]: Skipping, unable to determine old version
+[2024-04-21 17:22:46] INFO root fetch - processPackages [met-annot-unifier]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 17:22:46] INFO root fetch - main [MainThread]: End processing [pdf-tools-sdk] error
+[2024-04-21 17:22:46] WARNING root fetch - processPackages [jx3apifun]: Skipping, unable to determine old version
+[2024-04-21 17:22:46] INFO root fetch - main [MainThread]: End processing [jx3apifun] error
+[2024-04-21 17:22:46] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-04-21 17:22:46] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2024-04-21 17:22:46] INFO root fetch - processPackages [datek_app_utils]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-21 17:22:46] WARNING root fetch - processPackages [caca]: Skipping, unable to determine old version
+[2024-04-21 17:22:46] INFO root fetch - main [MainThread]: End processing [caca] error
+[2024-04-21 17:22:46] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-04-21 17:22:46] INFO root fetch - processPackages [min1129]: Downloading https://files.pythonhosted.org/packages/38/c3/d2cf1028491ef5ce50e77c5c399dbcbdd8fe7097bb42dc9faef4d4857a43/min1129-0.0.0.1-py3-none-any.whl
+[2024-04-21 17:22:46] INFO root fetch - processPackages [met-annot-unifier]: Downloading https://files.pythonhosted.org/packages/9f/38/4c0e1427654e27cb3d0b026dd04d965606effd0863eab8a2aa792d4502a7/met_annot_unifier-0.0.1.tar.gz
+[2024-04-21 17:22:46] INFO root fetch - processPackages [datek_app_utils]: Downloading https://files.pythonhosted.org/packages/f8/bd/46f7dee324e4807bc5f61726380029ecd68163b58cb70515f984049ae20b/datek_app_utils-0.3.5.tar.gz
+[2024-04-21 17:22:46] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-04-21 17:22:46] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2024-04-21 17:22:47] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-04-21 17:22:47] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240421/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-04-21 17:22:47] INFO root fetch - processPackages [met-annot-unifier]: Downloading https://files.pythonhosted.org/packages/f2/da/2614b36e13a66c9189d083f3ea10f6c4f84ca460e73d05fc768ea4326e4f/met_annot_unifier-0.0.2.tar.gz
+[2024-04-21 17:22:47] INFO root fetch - processPackages [min1129]: Downloading https://files.pythonhosted.org/packages/d6/e9/8c8b498f1fb9ca2f18c2c5e09841cf564654da59f091401befdcf78ef3e9/min1129-0.0.0.2-py3-none-any.whl
+[2024-04-21 17:22:47] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2024-04-21 17:22:47] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20240421/s/simc-support/9.2.5.2-9.2.5.3/README.md --exclude *.pyd
+[2024-04-21 17:22:47] INFO root fetch - processPackages [met-annot-unifier]: executing diffoscope
+[2024-04-21 17:22:47] INFO root fetch - processPackages [met-annot-unifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/met_annot_unifier-0.0.1.tar.gz tmp/met_annot_unifier-0.0.2.tar.gz --markdown 20240421/m/met-annot-unifier/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:22:47] INFO root fetch - processPackages [min1129]: executing diffoscope
+[2024-04-21 17:22:47] INFO root fetch - processPackages [min1129]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/min1129-0.0.0.1-py3-none-any.whl.zip tmp/min1129-0.0.0.2-py3-none-any.whl.zip --markdown 20240421/m/min1129/0.0.0.1-0.0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:22:47] INFO root fetch - processPackages [datek_app_utils]: Downloading https://files.pythonhosted.org/packages/88/9b/df0661a3a6f4901b22fb638e5aa7b70afc2654fc78be25db4d0e6cb76e6f/datek_app_utils-0.3.6.tar.gz
+[2024-04-21 17:22:47] INFO root fetch - processPackages [datek_app_utils]: executing diffoscope
+[2024-04-21 17:22:47] INFO root fetch - processPackages [datek_app_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datek_app_utils-0.3.5.tar.gz tmp/datek_app_utils-0.3.6.tar.gz --markdown 20240421/d/datek_app_utils/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-21 17:22:47] INFO root fetch - processPackages [met-annot-unifier]: Remove: archive file [/home/abi/fetcher/tmp/met_annot_unifier-0.0.1.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - processPackages [met-annot-unifier]: Remove: archive file [/home/abi/fetcher/tmp/met_annot_unifier-0.0.2.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [met-annot-unifier]: success
+[2024-04-21 17:22:47] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-04-21 17:22:47] INFO root fetch - processPackages [min1129]: Remove: archive file [/home/abi/fetcher/tmp/min1129-0.0.0.1-py3-none-any.whl.zip]
+[2024-04-21 17:22:47] INFO root fetch - processPackages [min1129]: Remove: archive file [/home/abi/fetcher/tmp/min1129-0.0.0.2-py3-none-any.whl.zip]
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [min1129]: success
+[2024-04-21 17:22:47] INFO root fetch - processPackages [datek_app_utils]: Remove: archive file [/home/abi/fetcher/tmp/datek_app_utils-0.3.5.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - processPackages [datek_app_utils]: Remove: archive file [/home/abi/fetcher/tmp/datek_app_utils-0.3.6.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [datek_app_utils]: success
+[2024-04-21 17:22:47] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.2.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2024-04-21 17:22:47] INFO root fetch - main [MainThread]: Store serial: [22865995]
