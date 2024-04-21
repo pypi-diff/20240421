@@ -14273,3 +14273,18 @@
 [2024-04-21 18:45:30] INFO root fetch - processPackages [robust-extraction]: Remove: archive file [/home/abi/fetcher/tmp/robust_extraction-0.1.6.tar.gz]
 [2024-04-21 18:45:30] INFO root fetch - main [MainThread]: End processing [robust-extraction]: success
 [2024-04-21 18:45:30] INFO root fetch - main [MainThread]: Store serial: [22866602]
+[2024-04-21 18:47:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866602]
+[2024-04-21 18:47:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 18:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC540
+[2024-04-21 18:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cometx
+[2024-04-21 18:47:38] INFO root fetch - processPackages [cometx]: New version: [2.0.0] Old Version: [1.4.3]
+[2024-04-21 18:47:39] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/08/45/2503ac55571a0dd2537082ce6835d0f0d879bf42ad27be1de3b60a2fce1c/cometx-1.4.3-py3-none-any.whl
+[2024-04-21 18:47:39] WARNING root fetch - processPackages [PythonTestLJC540]: Skipping, unable to determine old version
+[2024-04-21 18:47:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC540] error
+[2024-04-21 18:47:39] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/8f/97/7b81b142f11d30481caba88ea2fb923509c02ff226c89c44e5e919e3047c/cometx-2.0.0-py3-none-any.whl
+[2024-04-21 18:47:39] INFO root fetch - processPackages [cometx]: executing diffoscope
+[2024-04-21 18:47:39] INFO root fetch - processPackages [cometx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cometx-1.4.3-py3-none-any.whl.zip tmp/cometx-2.0.0-py3-none-any.whl.zip --markdown 20240421/c/cometx/1.4.3-2.0.0/README.md --exclude *.pyd
+[2024-04-21 18:47:40] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-1.4.3-py3-none-any.whl.zip]
+[2024-04-21 18:47:40] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-2.0.0-py3-none-any.whl.zip]
+[2024-04-21 18:47:40] INFO root fetch - main [MainThread]: End processing [cometx]: success
+[2024-04-21 18:47:40] INFO root fetch - main [MainThread]: Store serial: [22866616]
