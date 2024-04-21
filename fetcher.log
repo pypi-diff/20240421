@@ -10008,3 +10008,27 @@
 [2024-04-21 14:41:12] INFO root fetch - processPackages [lightrun]: Remove: archive file [/home/abi/fetcher/tmp/lightrun-1.9.0-cp39-cp39-win_amd64.whl.zip]
 [2024-04-21 14:41:12] INFO root fetch - main [MainThread]: End processing [lightrun]: success
 [2024-04-21 14:41:12] INFO root fetch - main [MainThread]: Store serial: [22864568]
+[2024-04-21 14:43:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864568]
+[2024-04-21 14:43:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 14:43:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC452
+[2024-04-21 14:43:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: optionresult
+[2024-04-21 14:43:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libsrg
+[2024-04-21 14:43:25] INFO root fetch - processPackages [optionresult]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 14:43:25] WARNING root fetch - processPackages [PythonTestLJC452]: Skipping, unable to determine old version
+[2024-04-21 14:43:25] INFO root fetch - main [MainThread]: End processing [PythonTestLJC452] error
+[2024-04-21 14:43:25] INFO root fetch - processPackages [libsrg]: New version: [4.2.3] Old Version: [4.2.2]
+[2024-04-21 14:43:25] INFO root fetch - processPackages [optionresult]: Downloading https://files.pythonhosted.org/packages/86/5a/3a55cae6a9a38a1f7dd750f7accfb8828c45453efccfb81ce5bd3628380b/optionresult-0.1.1.tar.gz
+[2024-04-21 14:43:26] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/f3/e5/8236b61820b075b8b58c83cb8b6f2927f1d84b83806a1b754b3fec71f7ca/libsrg-4.2.2-py3-none-any.whl
+[2024-04-21 14:43:26] INFO root fetch - processPackages [optionresult]: Downloading https://files.pythonhosted.org/packages/25/d9/f1427c68a401b3f610757c0b3b26a9c3a1774fe2ca569b258030f148d180/optionresult-0.1.2.tar.gz
+[2024-04-21 14:43:26] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/df/43/1938c12eca919c212c8d630c9f5b6d3bb0ae54f1c3b2e428a9fc4f7e0b9b/libsrg-4.2.3-py3-none-any.whl
+[2024-04-21 14:43:26] INFO root fetch - processPackages [optionresult]: executing diffoscope
+[2024-04-21 14:43:26] INFO root fetch - processPackages [optionresult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optionresult-0.1.1.tar.gz tmp/optionresult-0.1.2.tar.gz --markdown 20240421/o/optionresult/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 14:43:26] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-04-21 14:43:26] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-4.2.2-py3-none-any.whl.zip tmp/libsrg-4.2.3-py3-none-any.whl.zip --markdown 20240421/l/libsrg/4.2.2-4.2.3/README.md --exclude *.pyd
+[2024-04-21 14:43:26] INFO root fetch - processPackages [optionresult]: Remove: archive file [/home/abi/fetcher/tmp/optionresult-0.1.1.tar.gz]
+[2024-04-21 14:43:26] INFO root fetch - processPackages [optionresult]: Remove: archive file [/home/abi/fetcher/tmp/optionresult-0.1.2.tar.gz]
+[2024-04-21 14:43:26] INFO root fetch - main [MainThread]: End processing [optionresult]: success
+[2024-04-21 14:43:27] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.2.2-py3-none-any.whl.zip]
+[2024-04-21 14:43:27] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.2.3-py3-none-any.whl.zip]
+[2024-04-21 14:43:27] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-04-21 14:43:27] INFO root fetch - main [MainThread]: Store serial: [22864579]
