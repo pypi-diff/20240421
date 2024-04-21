@@ -6545,3 +6545,15 @@
 [2024-04-21 10:17:10] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.1.3-py3-none-any.whl.zip]
 [2024-04-21 10:17:10] INFO root fetch - main [MainThread]: End processing [glook]: success
 [2024-04-21 10:17:10] INFO root fetch - main [MainThread]: Store serial: [22863066]
+[2024-04-21 10:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863066]
+[2024-04-21 10:19:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 10:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spelunker
+[2024-04-21 10:19:20] INFO root fetch - processPackages [spelunker]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 10:19:20] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/4d/21/f8aa576ec6a9d8a532ecc104e5c1e4045c40fbd7ccbb8f9ebd439a9eff37/spelunker-1.1.8.tar.gz
+[2024-04-21 10:19:20] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/7d/62/574227f9dbe7598bcf5b443ffc335dce87383e422c490c1fc968e1476154/spelunker-1.1.9.tar.gz
+[2024-04-21 10:19:20] INFO root fetch - processPackages [spelunker]: executing diffoscope
+[2024-04-21 10:19:20] INFO root fetch - processPackages [spelunker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spelunker-1.1.8.tar.gz tmp/spelunker-1.1.9.tar.gz --markdown 20240421/s/spelunker/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 10:19:21] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.8.tar.gz]
+[2024-04-21 10:19:21] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.9.tar.gz]
+[2024-04-21 10:19:21] INFO root fetch - main [MainThread]: End processing [spelunker]: success
+[2024-04-21 10:19:21] INFO root fetch - main [MainThread]: Store serial: [22863069]
