@@ -17714,3 +17714,51 @@
 [2024-04-21 22:04:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
 [2024-04-21 22:04:39] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
 [2024-04-21 22:04:39] INFO root fetch - main [MainThread]: Store serial: [22868422]
+[2024-04-21 22:06:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868422]
+[2024-04-21 22:06:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aider-chat
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: risque
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Encryptionsuite
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coapcpv
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pythermo
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spiderwebai-py
+[2024-04-21 22:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moat-mqtt
+[2024-04-21 22:06:48] INFO root fetch - processPackages [moat-mqtt]: New version: [0.40.2] Old Version: [0.40.1]
+[2024-04-21 22:06:48] INFO root fetch - processPackages [pythermo]: New version: [0.1.3] Old Version: [0.0.0]
+[2024-04-21 22:06:48] WARNING root fetch - processPackages [Encryptionsuite]: Skipping, unable to determine old version
+[2024-04-21 22:06:48] INFO root fetch - processPackages [aider-chat]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-21 22:06:48] INFO root fetch - main [MainThread]: End processing [Encryptionsuite] error
+[2024-04-21 22:06:48] WARNING root fetch - processPackages [coapcpv]: Skipping, unable to determine old version
+[2024-04-21 22:06:48] INFO root fetch - main [MainThread]: End processing [coapcpv] error
+[2024-04-21 22:06:48] INFO root fetch - processPackages [spiderwebai-py]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-21 22:06:48] WARNING root fetch - processPackages [risque]: Skipping, unable to determine old version
+[2024-04-21 22:06:48] INFO root fetch - main [MainThread]: End processing [risque] error
+[2024-04-21 22:06:48] INFO root fetch - processPackages [moat-mqtt]: Downloading https://files.pythonhosted.org/packages/e6/51/7b4c5c65866ab677f27800beb25b6efa4ce17471965fa42f768493ef8cc9/moat-mqtt-0.40.1.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [aider-chat]: Downloading https://files.pythonhosted.org/packages/97/6d/6e7b681204d0890d7a1d07928f1168e3e15b16856958c5b3934aa123f438/aider-chat-0.8.3.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [spiderwebai-py]: Downloading https://files.pythonhosted.org/packages/82/9a/e74baed11c1e47ac5eb2f351b4d76c864ef3e2f16c087ff5806e7499d924/spiderwebai_py-0.1.0-py3-none-any.whl
+[2024-04-21 22:06:48] INFO root fetch - processPackages [pythermo]: Downloading https://files.pythonhosted.org/packages/e9/10/f16be74753fef650faa2e67d80e6542dba0a4a311c9d3c3785d39d0738ad/pythermo-0.0.0.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [spiderwebai-py]: Downloading https://files.pythonhosted.org/packages/12/8b/990f160cd35c5e6966f7713da1c2d6327f9d05c37790f4deea5130fd764c/spiderwebai-py-0.1.2.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [moat-mqtt]: Downloading https://files.pythonhosted.org/packages/05/17/68ccfef8245e71a00fee30fb5505a5305435740c9b28cb521ce289c0eb59/moat-mqtt-0.40.2.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [pythermo]: Downloading https://files.pythonhosted.org/packages/30/36/e8c1ffd74583dc8760e936a887baca7f81e6c10f5b01772d294cc4068fde/pythermo-0.1.3.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [aider-chat]: Downloading https://files.pythonhosted.org/packages/27/f3/89e2047247691d2f850711b47e321bccb308fdcd459ee406fc6fd652d143/aider-chat-0.9.0.tar.gz
+[2024-04-21 22:06:48] INFO root fetch - processPackages [spiderwebai-py]: executing diffoscope
+[2024-04-21 22:06:48] INFO root fetch - processPackages [spiderwebai-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderwebai_py-0.1.0-py3-none-any.whl.zip tmp/spiderwebai-py-0.1.2.tar.gz --markdown 20240421/s/spiderwebai-py/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-21 22:06:48] INFO root fetch - processPackages [moat-mqtt]: executing diffoscope
+[2024-04-21 22:06:48] INFO root fetch - processPackages [moat-mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moat-mqtt-0.40.1.tar.gz tmp/moat-mqtt-0.40.2.tar.gz --markdown 20240421/m/moat-mqtt/0.40.1-0.40.2/README.md --exclude *.pyd
+[2024-04-21 22:06:48] INFO root fetch - processPackages [aider-chat]: executing diffoscope
+[2024-04-21 22:06:48] INFO root fetch - processPackages [aider-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aider-chat-0.8.3.tar.gz tmp/aider-chat-0.9.0.tar.gz --markdown 20240421/a/aider-chat/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-04-21 22:06:48] INFO root fetch - processPackages [pythermo]: executing diffoscope
+[2024-04-21 22:06:48] INFO root fetch - processPackages [pythermo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythermo-0.0.0.tar.gz tmp/pythermo-0.1.3.tar.gz --markdown 20240421/p/pythermo/0.0.0-0.1.3/README.md --exclude *.pyd
+[2024-04-21 22:06:49] INFO root fetch - processPackages [spiderwebai-py]: Remove: archive file [/home/abi/fetcher/tmp/spiderwebai_py-0.1.0-py3-none-any.whl.zip]
+[2024-04-21 22:06:49] INFO root fetch - processPackages [spiderwebai-py]: Remove: archive file [/home/abi/fetcher/tmp/spiderwebai-py-0.1.2.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - main [MainThread]: End processing [spiderwebai-py]: success
+[2024-04-21 22:06:49] INFO root fetch - processPackages [pythermo]: Remove: archive file [/home/abi/fetcher/tmp/pythermo-0.0.0.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - processPackages [pythermo]: Remove: archive file [/home/abi/fetcher/tmp/pythermo-0.1.3.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - main [MainThread]: End processing [pythermo]: success
+[2024-04-21 22:06:49] INFO root fetch - processPackages [aider-chat]: Remove: archive file [/home/abi/fetcher/tmp/aider-chat-0.8.3.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - processPackages [aider-chat]: Remove: archive file [/home/abi/fetcher/tmp/aider-chat-0.9.0.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - main [MainThread]: End processing [aider-chat]: success
+[2024-04-21 22:06:49] INFO root fetch - processPackages [moat-mqtt]: Remove: archive file [/home/abi/fetcher/tmp/moat-mqtt-0.40.1.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - processPackages [moat-mqtt]: Remove: archive file [/home/abi/fetcher/tmp/moat-mqtt-0.40.2.tar.gz]
+[2024-04-21 22:06:49] INFO root fetch - main [MainThread]: End processing [moat-mqtt]: success
+[2024-04-21 22:06:49] INFO root fetch - main [MainThread]: Store serial: [22868450]
