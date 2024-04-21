@@ -10192,3 +10192,14 @@
 [2024-04-21 14:56:37] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.9.0.tar.gz]
 [2024-04-21 14:56:37] INFO root fetch - main [MainThread]: End processing [deaotpy]: success
 [2024-04-21 14:56:37] INFO root fetch - main [MainThread]: Store serial: [22864720]
+[2024-04-21 14:58:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864720]
+[2024-04-21 14:58:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 14:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libpss
+[2024-04-21 14:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: met-annot-unifier
+[2024-04-21 14:58:46] INFO root fetch - processPackages [libpss]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 14:58:46] WARNING root fetch - processPackages [met-annot-unifier]: Skipping, unable to determine old version
+[2024-04-21 14:58:46] INFO root fetch - main [MainThread]: End processing [met-annot-unifier] error
+[2024-04-21 14:58:46] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/47/f9/1bbda264f4984f38a93142c74015df6935981a8ac703c408658d604a7ab0/libpss-0.1.7.tar.gz
+[2024-04-21 14:58:46] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12678786>=10485760
+[2024-04-21 14:58:46] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 14:58:46] INFO root fetch - main [MainThread]: Store serial: [22864726]
