@@ -9563,3 +9563,34 @@
 [2024-04-21 14:15:05] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.2.0.tar.gz]
 [2024-04-21 14:15:05] INFO root fetch - main [MainThread]: End processing [pyneople]: success
 [2024-04-21 14:15:05] INFO root fetch - main [MainThread]: Store serial: [22864361]
+[2024-04-21 14:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864361]
+[2024-04-21 14:17:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 14:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864362]
+[2024-04-21 14:19:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC443
+[2024-04-21 14:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-21 14:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-transformation-yfhsi
+[2024-04-21 14:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rtmf6
+[2024-04-21 14:19:19] INFO root fetch - processPackages [rtmf6]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-21 14:19:19] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.4.1a0] Old Version: [0.3.1a0]
+[2024-04-21 14:19:19] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc83.post1] Old Version: [0.0.2rc82.post1]
+[2024-04-21 14:19:19] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/8c/db/9ed3b76e4e4a270185df8b1bd51ef82f83892f40046dbf0d042576818885/data_transformation_yfhsi-0.3.1a0.tar.gz
+[2024-04-21 14:19:19] WARNING root fetch - processPackages [PythonTestLJC443]: Skipping, unable to determine old version
+[2024-04-21 14:19:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC443] error
+[2024-04-21 14:19:19] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/ac/d1/f2d3cc8ffcce8066a388837c2c76ba35f85585adac9b9ea6dd100e0c2436/py_dbchat-0.0.2rc82.post1.tar.gz
+[2024-04-21 14:19:19] INFO root fetch - processPackages [rtmf6]: Downloading https://files.pythonhosted.org/packages/50/43/dbbb59b9591a9e94260069fe15f3828fc8b19234025b5e2eef9f0f04b2b5/rtmf6-0.0.0-py3-none-any.whl
+[2024-04-21 14:19:19] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/14/ee/7352da00d10956e22af89a8f774d80695e743662a1f251e36eefe5ae9362/data_transformation_yfhsi-0.4.1a0.tar.gz
+[2024-04-21 14:19:19] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/57/03/da577cd3d329bc04e88e6d8455f26f75765b905d86daff9148ca879b0aef/py_dbchat-0.0.2rc83.post1.tar.gz
+[2024-04-21 14:19:20] ERROR root fetch - processPackages [rtmf6]: Unable to fetch info: No such project/version 'rtmf6' 0.0.1
+[2024-04-21 14:19:20] INFO root fetch - main [MainThread]: End processing [rtmf6] error
+[2024-04-21 14:19:20] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 14:19:20] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.3.1a0.tar.gz tmp/data_transformation_yfhsi-0.4.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.3.1a0-0.4.1a0/README.md --exclude *.pyd
+[2024-04-21 14:19:20] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-21 14:19:20] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc82.post1.tar.gz tmp/py_dbchat-0.0.2rc83.post1.tar.gz --markdown 20240421/p/py-dbchat/0.0.2rc82.post1-0.0.2rc83.post1/README.md --exclude *.pyd
+[2024-04-21 14:19:20] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.3.1a0.tar.gz]
+[2024-04-21 14:19:20] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.4.1a0.tar.gz]
+[2024-04-21 14:19:20] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 14:19:20] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc82.post1.tar.gz]
+[2024-04-21 14:19:20] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc83.post1.tar.gz]
+[2024-04-21 14:19:20] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-21 14:19:20] INFO root fetch - main [MainThread]: Store serial: [22864377]
