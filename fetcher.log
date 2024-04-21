@@ -11084,3 +11084,45 @@
 [2024-04-21 15:49:06] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.9.tar.gz]
 [2024-04-21 15:49:06] INFO root fetch - main [MainThread]: End processing [polars]: success
 [2024-04-21 15:49:06] INFO root fetch - main [MainThread]: Store serial: [22865129]
+[2024-04-21 15:51:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865129]
+[2024-04-21 15:51:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 15:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polars-lts-cpu
+[2024-04-21 15:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poxy
+[2024-04-21 15:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polars-u64-idx
+[2024-04-21 15:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: minyeop
+[2024-04-21 15:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlx-exec
+[2024-04-21 15:51:15] INFO root fetch - processPackages [sqlx-exec]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-04-21 15:51:15] INFO root fetch - processPackages [sqlx-exec]: Downloading https://files.pythonhosted.org/packages/22/e6/5da505c4108953224ae34fd82814ff661178b9425ce2d1507838ad0c9e53/sqlx-exec-2.3.4.tar.gz
+[2024-04-21 15:51:15] WARNING root fetch - processPackages [minyeop]: Skipping, unable to determine old version
+[2024-04-21 15:51:15] INFO root fetch - main [MainThread]: End processing [minyeop] error
+[2024-04-21 15:51:15] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-04-21 15:51:15] INFO root fetch - processPackages [poxy]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-21 15:51:15] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-04-21 15:51:15] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/5c/9e/da38f2488beaaddc2cb54403b8c016e3e1ba7a4c8fc870e9010ec1197aef/polars_u64_idx-0.20.8.tar.gz
+[2024-04-21 15:51:15] INFO root fetch - processPackages [poxy]: Downloading https://files.pythonhosted.org/packages/dc/29/90051aacc14dfbeceb287b763143ffd65599d8f148340799c3e6453e40d5/poxy-0.9.0.tar.gz
+[2024-04-21 15:51:15] INFO root fetch - processPackages [sqlx-exec]: Downloading https://files.pythonhosted.org/packages/9f/96/f4ebf0ab6486507a640df429ee2603942f294a13e1e7b78b7349e7f741e0/sqlx-exec-2.3.5.tar.gz
+[2024-04-21 15:51:15] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/22/c0/7c8fcfe8d4d7376848e02a8a3975268cbd0ec0f863fbf3338068ff73c90f/polars_lts_cpu-0.20.8.tar.gz
+[2024-04-21 15:51:15] INFO root fetch - processPackages [sqlx-exec]: executing diffoscope
+[2024-04-21 15:51:15] INFO root fetch - processPackages [sqlx-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlx-exec-2.3.4.tar.gz tmp/sqlx-exec-2.3.5.tar.gz --markdown 20240421/s/sqlx-exec/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-04-21 15:51:16] INFO root fetch - processPackages [poxy]: Downloading https://files.pythonhosted.org/packages/2a/cd/8efe8291d94f43149c6217dff50dbe93a987fd984d03c903f46a7d47f7e4/poxy-0.9.1.tar.gz
+[2024-04-21 15:51:16] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/33/5e/df508475e1d147ef4c8bc6849d8274906574714b6f551b1e6674c7b94c3a/polars_lts_cpu-0.20.9.tar.gz
+[2024-04-21 15:51:16] INFO root fetch - processPackages [sqlx-exec]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-exec-2.3.4.tar.gz]
+[2024-04-21 15:51:16] INFO root fetch - processPackages [sqlx-exec]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-exec-2.3.5.tar.gz]
+[2024-04-21 15:51:16] INFO root fetch - main [MainThread]: End processing [sqlx-exec]: success
+[2024-04-21 15:51:16] INFO root fetch - processPackages [poxy]: executing diffoscope
+[2024-04-21 15:51:16] INFO root fetch - processPackages [poxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poxy-0.9.0.tar.gz tmp/poxy-0.9.1.tar.gz --markdown 20240421/p/poxy/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-21 15:51:17] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/bf/d5/35ea31387b107a09be335c63708294033b3cc0d21fa1fe68eae967ae3855/polars_u64_idx-0.20.9.tar.gz
+[2024-04-21 15:51:17] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2024-04-21 15:51:17] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.20.8.tar.gz tmp/polars_u64_idx-0.20.9.tar.gz --markdown 20240421/p/polars-u64-idx/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-04-21 15:51:17] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2024-04-21 15:51:17] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.20.8.tar.gz tmp/polars_lts_cpu-0.20.9.tar.gz --markdown 20240421/p/polars-lts-cpu/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-04-21 15:51:19] INFO root fetch - processPackages [poxy]: Remove: archive file [/home/abi/fetcher/tmp/poxy-0.9.0.tar.gz]
+[2024-04-21 15:51:19] INFO root fetch - processPackages [poxy]: Remove: archive file [/home/abi/fetcher/tmp/poxy-0.9.1.tar.gz]
+[2024-04-21 15:51:19] INFO root fetch - main [MainThread]: End processing [poxy]: success
+[2024-04-21 15:51:30] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.8.tar.gz]
+[2024-04-21 15:51:30] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.9.tar.gz]
+[2024-04-21 15:51:30] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2024-04-21 15:51:30] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.8.tar.gz]
+[2024-04-21 15:51:30] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
+[2024-04-21 15:51:30] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2024-04-21 15:51:30] INFO root fetch - main [MainThread]: Store serial: [22865155]
