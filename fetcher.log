@@ -16348,3 +16348,39 @@
 [2024-04-21 20:58:22] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.0.tar.gz]
 [2024-04-21 20:58:22] INFO root fetch - main [MainThread]: End processing [pybts]: success
 [2024-04-21 20:58:22] INFO root fetch - main [MainThread]: Store serial: [22867693]
+[2024-04-21 21:00:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867693]
+[2024-04-21 21:00:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kungfupanda
+[2024-04-21 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chamco-ragbot
+[2024-04-21 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-21 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wood-nano
+[2024-04-21 21:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC588
+[2024-04-21 21:00:31] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 21:00:31] WARNING root fetch - processPackages [kungfupanda]: Skipping, unable to determine old version
+[2024-04-21 21:00:31] INFO root fetch - main [MainThread]: End processing [kungfupanda] error
+[2024-04-21 21:00:31] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-21 21:00:31] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 21:00:31] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/0d/21/e5a567ed5f219e5045bafe39e074d9fa2815a25ed28ef7ec8b5348ad0d6e/dune_rivals-0.5.5.tar.gz
+[2024-04-21 21:00:31] WARNING root fetch - processPackages [PythonTestLJC588]: Skipping, unable to determine old version
+[2024-04-21 21:00:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC588] error
+[2024-04-21 21:00:31] INFO root fetch - processPackages [wood-nano]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 21:00:31] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 21:00:31] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/99/ea/5126619e105019c0130af3aec86df87cfb2a96ce7a5018656e1ff0e26567/dune_rivals-0.5.6.tar.gz
+[2024-04-21 21:00:31] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 21:00:31] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 21:00:31] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 21:00:31] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.5.tar.gz tmp/dune_rivals-0.5.6.tar.gz --markdown 20240421/d/dune-rivals/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-21 21:00:31] INFO root fetch - processPackages [wood-nano]: Downloading https://files.pythonhosted.org/packages/63/39/0782dfc898abe97b4e999efc315df7dbcb915fa75da153abd0eff4ad6a12/wood_nano-0.0.6-cp39-cp39-manylinux_2_35_x86_64.whl
+[2024-04-21 21:00:32] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 21:00:32] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 21:00:32] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 21:00:32] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.5.tar.gz]
+[2024-04-21 21:00:32] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.6.tar.gz]
+[2024-04-21 21:00:32] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 21:00:32] INFO root fetch - processPackages [wood-nano]: Downloading https://files.pythonhosted.org/packages/cd/be/a5b8d6974ec281ab6e8de1c347bf5a5c0d30e1c1403bdd152cc21ee30751/wood_nano-0.0.7-cp39-cp39-manylinux_2_35_x86_64.whl
+[2024-04-21 21:00:32] INFO root fetch - processPackages [wood-nano]: executing diffoscope
+[2024-04-21 21:00:32] INFO root fetch - processPackages [wood-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wood_nano-0.0.6-cp39-cp39-manylinux_2_35_x86_64.whl.zip tmp/wood_nano-0.0.7-cp39-cp39-manylinux_2_35_x86_64.whl.zip --markdown 20240421/w/wood-nano/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 21:00:33] INFO root fetch - processPackages [wood-nano]: Remove: archive file [/home/abi/fetcher/tmp/wood_nano-0.0.6-cp39-cp39-manylinux_2_35_x86_64.whl.zip]
+[2024-04-21 21:00:33] INFO root fetch - processPackages [wood-nano]: Remove: archive file [/home/abi/fetcher/tmp/wood_nano-0.0.7-cp39-cp39-manylinux_2_35_x86_64.whl.zip]
+[2024-04-21 21:00:33] INFO root fetch - main [MainThread]: End processing [wood-nano]: success
+[2024-04-21 21:00:33] INFO root fetch - main [MainThread]: Store serial: [22867708]
