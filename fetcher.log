@@ -17406,3 +17406,125 @@
 [2024-04-21 21:51:25] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
 [2024-04-21 21:51:25] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
 [2024-04-21 21:51:25] INFO root fetch - main [MainThread]: Store serial: [22868228]
+[2024-04-21 21:53:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868228]
+[2024-04-21 21:53:34] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: renardo
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: renardo-lib
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FoxDotEditor
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: essential-packages
+[2024-04-21 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gcp-pal
+[2024-04-21 21:53:34] INFO root fetch - processPackages [gcp-pal]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 21:53:34] INFO root fetch - processPackages [renardo]: New version: [1.0.0.dev0] Old Version: [0.9.9]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/7e/f3/ee5b53b9b27f14143269f4a1d2a9eab0c0cc38e28f6a37a09eac484ee2a9/gcp_pal-0.1.2.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [FoxDotEditor]: New version: [1.0.0.dev0] Old Version: [0.9.9]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo-lib]: New version: [1.0.0.dev0] Old Version: [0.9.dev9]
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/cb/53/ba9692ed0169b195ec9c197c37b07bb9ad83196c94a767c047bf49e91a9b/renardo-1.0.0.dev0.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/2b/42/14f189938624b1008a54c034e52ea0f5dc864b63c1c4456a82b1e4be27cc/essential_packages-0.5.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.9.tar.gz tmp/renardo-1.0.0.dev0.tar.gz --markdown 20240421/r/renardo/0.9.9-1.0.0.dev0/README.md --exclude *.pyd
+[2024-04-21 21:53:35] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-21 21:53:35] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/bc/fb/6363cf7806abd8194b676b34495c0ce8e1059b54ed759780e00efeb1cd2f/gcp_pal-0.1.3.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [gcp-pal]: executing diffoscope
+[2024-04-21 21:53:35] INFO root fetch - processPackages [gcp-pal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pal-0.1.2.tar.gz tmp/gcp_pal-0.1.3.tar.gz --markdown 20240421/g/gcp-pal/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [essential-packages]: Downloading https://files.pythonhosted.org/packages/4c/83/930bbe483aa557168970f94d2a3e2cce99418f4f3ee4c0dc2b868775d8c1/essential_packages-0.6.tar.gz
+[2024-04-21 21:53:35] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/0d/6a/86418935320a8a4a4639303bd074473354dd80d08a59f886cf6f2540afdb/foxdoteditor-1.0.0.dev0.tar.gz
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [essential-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essential_packages-0.5.tar.gz tmp/essential_packages-0.6.tar.gz --markdown 20240421/e/essential-packages/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foxdoteditor-0.9.9.tar.gz tmp/foxdoteditor-1.0.0.dev0.tar.gz --markdown 20240421/F/FoxDotEditor/0.9.9-1.0.0.dev0/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/d7/53/f0fbea31ba1b19244de69bd084b7abe6184be25b003680e2c00819e5794d/renardo_lib-1.0.0.dev0.tar.gz
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip tmp/renardo_lib-1.0.0.dev0.tar.gz --markdown 20240421/r/renardo-lib/0.9.dev9-1.0.0.dev0/README.md --exclude *.pyd
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-1.0.0.dev0.tar.gz]
+[2024-04-21 21:53:36] INFO root fetch - processPackages [renardo]: Start processing: tradedangerous
+[2024-04-21 21:53:36] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-21 21:53:36] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 21:53:36] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 21:53:36] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-0.1.2.tar.gz]
+[2024-04-21 21:53:36] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-0.1.3.tar.gz]
+[2024-04-21 21:53:36] INFO root fetch - processPackages [gcp-pal]: Start processing: smartmoneyconcepts
+[2024-04-21 21:53:36] INFO root fetch - main [MainThread]: End processing [gcp-pal]: success
+[2024-04-21 21:53:36] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 21:53:36] INFO root fetch - processPackages [smartmoneyconcepts]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [essential-packages]: Remove: archive file [/home/abi/fetcher/tmp/essential_packages-0.5.tar.gz]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [essential-packages]: Remove: archive file [/home/abi/fetcher/tmp/essential_packages-0.6.tar.gz]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [essential-packages]: Start processing: chainhashing
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] WARNING root fetch - processPackages [chainhashing]: Skipping, unable to determine old version
+[2024-04-21 21:53:37] INFO root fetch - processPackages [chainhashing]: Start processing: righor
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [chainhashing] error
+[2024-04-21 21:53:37] INFO root fetch - processPackages [essential-packages]: Start processing: lichesspy
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev4] Old Version: [6.0.4.dev3]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/f1/78/6c9b6e5371a0fb7e36f58bdb10614bb8b7bb315cbb8ab3c6ea49d7e529dd/smartmoneyconcepts-0.0.8.tar.gz
+[2024-04-21 21:53:37] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/d7/fa/cc43c19f6390ba1dbe580c0797e37c85b7f779185c28a1bc8c8664b93a1a/lichesspy-6.0.4.dev3.tar.gz
+[2024-04-21 21:53:37] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-1.0.0.dev0.tar.gz]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [FoxDotEditor]: Start processing: techmax-energiez-x23176458
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-21 21:53:37] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 21:53:37] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] INFO root fetch - processPackages [righor]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [essential-packages]: success
+[2024-04-21 21:53:37] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-21 21:53:37] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-1.0.0.dev0.tar.gz]
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-21 21:53:37] WARNING root fetch - processPackages [techmax-energiez-x23176458]: Skipping, unable to determine old version
+[2024-04-21 21:53:37] INFO root fetch - main [MainThread]: End processing [techmax-energiez-x23176458] error
+[2024-04-21 21:53:37] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/3e/3a/6fbe8ae2e70531c6cc84ee0b2ab73fefeabb01453d7ba374185fee6508fb/smartmoneyconcepts-0.0.9.tar.gz
+[2024-04-21 21:53:37] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/e3/b3/2037dd5487d28e04c01a03c3bd4b2865dc53beb2c5af08802f58723cea73/lichesspy-6.0.4.dev4.tar.gz
+[2024-04-21 21:53:37] INFO root fetch - processPackages [smartmoneyconcepts]: executing diffoscope
+[2024-04-21 21:53:37] INFO root fetch - processPackages [smartmoneyconcepts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartmoneyconcepts-0.0.8.tar.gz tmp/smartmoneyconcepts-0.0.9.tar.gz --markdown 20240421/s/smartmoneyconcepts/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 21:53:37] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 21:53:37] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.4.dev3.tar.gz tmp/lichesspy-6.0.4.dev4.tar.gz --markdown 20240421/l/lichesspy/6.0.4.dev3-6.0.4.dev4/README.md --exclude *.pyd
+[2024-04-21 21:53:38] INFO root fetch - processPackages [righor]: Downloading https://files.pythonhosted.org/packages/27/24/01e9dea4c82e2a38ac9bd34c1f24a5d68a2cfe888af119b006031ea57bab/righor-0.2.6.tar.gz
+[2024-04-21 21:53:38] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.8.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.9.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - main [MainThread]: End processing [smartmoneyconcepts]: success
+[2024-04-21 21:53:38] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev3.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev4.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 21:53:38] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 21:53:38] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 21:53:38] INFO root fetch - processPackages [righor]: Downloading https://files.pythonhosted.org/packages/81/e6/6fca38b11e2d8eda8b8ab6b58c1fe0581aaef9133547c3e78a7591a80949/righor-0.2.7-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl
+[2024-04-21 21:53:42] WARNING root fetch - processPackages [righor]: Skipping package: exceeds size limit 11871922>=10485760
+[2024-04-21 21:53:42] INFO root fetch - main [MainThread]: End processing [righor] error
+[2024-04-21 21:53:42] INFO root fetch - main [MainThread]: Store serial: [22868286]
