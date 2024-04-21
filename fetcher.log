@@ -12318,3 +12318,45 @@
 [2024-04-21 16:56:56] INFO root fetch - processPackages [django-dynamic-raw-id]: Remove: archive file [/home/abi/fetcher/tmp/django-dynamic-raw-id-3.0.tar.gz]
 [2024-04-21 16:56:56] INFO root fetch - main [MainThread]: End processing [django-dynamic-raw-id]: success
 [2024-04-21 16:56:56] INFO root fetch - main [MainThread]: Store serial: [22865703]
+[2024-04-21 16:59:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865703]
+[2024-04-21 16:59:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 16:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-04-21 16:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC501
+[2024-04-21 16:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spicelib
+[2024-04-21 16:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arclet-alconna
+[2024-04-21 16:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: solver-multiRPC
+[2024-04-21 16:59:06] INFO root fetch - processPackages [moval]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-21 16:59:06] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/a8/5d/f384086a2cb175a97da0f25f1a33bf21875b7e2ce12ac53192dbc9b1a372/moval-0.3.2.tar.gz
+[2024-04-21 16:59:06] WARNING root fetch - processPackages [PythonTestLJC501]: Skipping, unable to determine old version
+[2024-04-21 16:59:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC501] error
+[2024-04-21 16:59:06] INFO root fetch - processPackages [arclet-alconna]: New version: [2.0.0a1] Old Version: [1.8.9]
+[2024-04-21 16:59:06] INFO root fetch - processPackages [spicelib]: New version: [1.1.1] Old Version: [1.0.4]
+[2024-04-21 16:59:06] INFO root fetch - processPackages [solver-multiRPC]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-21 16:59:06] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/49/3e/fa42fa8e6e7dc02ce4287b5bb107c714f457f3a927732333a56bea864ecf/moval-0.3.3.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/39/d4/dac9fe4b3d8464614fd090809b888d792a000aca204ec30d3cee3c8d5266/arclet_alconna-1.8.9.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/50/83/23a73d3143d2bc3fa45695decc638d626c36b27f9bf597789a3ac807462a/solver-multiRPC-2.0.0.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [spicelib]: Downloading https://files.pythonhosted.org/packages/2d/9b/af8a1c3574060dc4eec2e6b85056c0f7238a241148d951292e441ac5c8aa/spicelib-1.0.4.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-04-21 16:59:06] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.2.tar.gz tmp/moval-0.3.3.tar.gz --markdown 20240421/m/moval/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-21 16:59:06] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/cc/8b/374f3e2a4ecaa3cedc4ded88c2aa96d79af0faa693d262e24f1d54e4b49b/solver-multiRPC-2.0.1.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/9d/94/a67b387eb6a314713f326f7f2b4c55fe6146638814b2db843e0a477dd310/arclet_alconna-2.0.0a1.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [spicelib]: Downloading https://files.pythonhosted.org/packages/56/e6/25e81e6873b0b115277598e090b9966404992b4c027f2d7dd264c2b4e5a8/spicelib-1.1.1.tar.gz
+[2024-04-21 16:59:06] INFO root fetch - processPackages [arclet-alconna]: executing diffoscope
+[2024-04-21 16:59:06] INFO root fetch - processPackages [arclet-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet_alconna-1.8.9.tar.gz tmp/arclet_alconna-2.0.0a1.tar.gz --markdown 20240421/a/arclet-alconna/1.8.9-2.0.0a1/README.md --exclude *.pyd
+[2024-04-21 16:59:06] INFO root fetch - processPackages [solver-multiRPC]: executing diffoscope
+[2024-04-21 16:59:06] INFO root fetch - processPackages [solver-multiRPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solver-multiRPC-2.0.0.tar.gz tmp/solver-multiRPC-2.0.1.tar.gz --markdown 20240421/s/solver-multiRPC/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-21 16:59:07] INFO root fetch - processPackages [spicelib]: executing diffoscope
+[2024-04-21 16:59:07] INFO root fetch - processPackages [spicelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spicelib-1.0.4.tar.gz tmp/spicelib-1.1.1.tar.gz --markdown 20240421/s/spicelib/1.0.4-1.1.1/README.md --exclude *.pyd
+[2024-04-21 16:59:07] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.2.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.3.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-04-21 16:59:07] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.0.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.1.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - main [MainThread]: End processing [solver-multiRPC]: success
+[2024-04-21 16:59:07] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-1.8.9.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - processPackages [arclet-alconna]: Remove: archive file [/home/abi/fetcher/tmp/arclet_alconna-2.0.0a1.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
+[2024-04-21 16:59:07] INFO root fetch - processPackages [spicelib]: Remove: archive file [/home/abi/fetcher/tmp/spicelib-1.0.4.tar.gz]
+[2024-04-21 16:59:07] INFO root fetch - processPackages [spicelib]: Remove: archive file [/home/abi/fetcher/tmp/spicelib-1.1.1.tar.gz]
+[2024-04-21 16:59:08] INFO root fetch - main [MainThread]: End processing [spicelib]: success
+[2024-04-21 16:59:08] INFO root fetch - main [MainThread]: Store serial: [22865719]
