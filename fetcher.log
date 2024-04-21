@@ -3814,3 +3814,42 @@
 [2024-04-21 05:51:15] INFO root fetch - processPackages [kazam]: Remove: archive file [/home/abi/fetcher/tmp/kazam-1.5.8-py3-none-any.whl.zip]
 [2024-04-21 05:51:15] INFO root fetch - main [MainThread]: End processing [kazam]: success
 [2024-04-21 05:51:15] INFO root fetch - main [MainThread]: Store serial: [22861797]
+[2024-04-21 05:53:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861797]
+[2024-04-21 05:53:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 05:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwdtm
+[2024-04-21 05:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monterey
+[2024-04-21 05:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 05:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lichesspy
+[2024-04-21 05:53:23] INFO root fetch - processPackages [lichesspy]: New version: [6.0.2] Old Version: [6.0.1]
+[2024-04-21 05:53:23] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/34/01/fc09713cb1d441f47a1cc3c793ba87cf50d40b4e5c855a321584c14d4cc5/lichesspy-6.0.1.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [wwdtm]: New version: [2.9.0] Old Version: [2.8.2]
+[2024-04-21 05:53:23] INFO root fetch - processPackages [monterey]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 05:53:23] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.18a1713670785] Old Version: [0.0.18a1713567560]
+[2024-04-21 05:53:23] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/7c/b4/e6cc7e7f21354ba16d848eb4108483f933df09a938c0c951dbb2986d30e2/wwdtm-2.8.2.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [monterey]: Downloading https://files.pythonhosted.org/packages/ee/76/e38c1bed9d0d00523c2f48bc75104ce4da9567a13556044770197218c203/monterey-0.0.8.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/33/44/94911120c9ba21be8f4c16853b44a1afcab6634ce8aacac044e6a2432944/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/21/98/1997f1a8d7953f3f65693780c0f11e7e92f2344bf76eb15860d8497c692b/lichesspy-6.0.2.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 05:53:23] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.1.tar.gz tmp/lichesspy-6.0.2.tar.gz --markdown 20240421/l/lichesspy/6.0.1-6.0.2/README.md --exclude *.pyd
+[2024-04-21 05:53:23] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/4a/97/932c29ba40f01d50f24cde324db56ec4b06f9dc923eb6012ca9c95684e5f/wwdtm-2.9.0.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [monterey]: Downloading https://files.pythonhosted.org/packages/fe/43/94d0f8e948200a9edb3ed9daf80b7fe8568fbbe462c5c15be98777c3b71c/monterey-0.0.9.tar.gz
+[2024-04-21 05:53:23] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/1b/ee/f980a81c26badf9fae895a82249273846ba8c7249a28ff3cea7e29a5bae2/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz
+[2024-04-21 05:53:24] INFO root fetch - processPackages [monterey]: executing diffoscope
+[2024-04-21 05:53:24] INFO root fetch - processPackages [monterey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monterey-0.0.8.tar.gz tmp/monterey-0.0.9.tar.gz --markdown 20240421/m/monterey/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 05:53:24] INFO root fetch - processPackages [wwdtm]: executing diffoscope
+[2024-04-21 05:53:24] INFO root fetch - processPackages [wwdtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwdtm-2.8.2.tar.gz tmp/wwdtm-2.9.0.tar.gz --markdown 20240421/w/wwdtm/2.8.2-2.9.0/README.md --exclude *.pyd
+[2024-04-21 05:53:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 05:53:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.18a1713567560-0.0.18a1713670785/README.md --exclude *.pyd
+[2024-04-21 05:53:24] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.1.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.2.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 05:53:24] INFO root fetch - processPackages [monterey]: Remove: archive file [/home/abi/fetcher/tmp/monterey-0.0.8.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - processPackages [monterey]: Remove: archive file [/home/abi/fetcher/tmp/monterey-0.0.9.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - main [MainThread]: End processing [monterey]: success
+[2024-04-21 05:53:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 05:53:24] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.8.2.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.9.0.tar.gz]
+[2024-04-21 05:53:24] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
+[2024-04-21 05:53:24] INFO root fetch - main [MainThread]: Store serial: [22861809]
