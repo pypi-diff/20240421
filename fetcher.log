@@ -17693,3 +17693,24 @@
 [2024-04-21 22:02:29] INFO root fetch - processPackages [samgis_core]: Remove: archive file [/home/abi/fetcher/tmp/samgis_core-1.2.0.tar.gz]
 [2024-04-21 22:02:29] INFO root fetch - main [MainThread]: End processing [samgis_core]: success
 [2024-04-21 22:02:29] INFO root fetch - main [MainThread]: Store serial: [22868414]
+[2024-04-21 22:04:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868414]
+[2024-04-21 22:04:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 22:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs2-battle-bot-api-client
+[2024-04-21 22:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-21 22:04:37] INFO root fetch - processPackages [bellek]: New version: [0.96.1] Old Version: [0.96.0]
+[2024-04-21 22:04:37] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 22:04:37] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/bf/c8/69b31d9d5513ab7a8b0cc41a2c383664ecca3a2ef1fa2e55ac356cd2a7f1/bellek-0.96.0.tar.gz
+[2024-04-21 22:04:37] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-21 22:04:37] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-21 22:04:38] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-21 22:04:38] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240421/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 22:04:38] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/d7/34/dd440c5a51e7453c1b4f47c535263b7e122b5990776d6509e668cc861df0/bellek-0.96.1.tar.gz
+[2024-04-21 22:04:38] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-21 22:04:38] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.96.0.tar.gz tmp/bellek-0.96.1.tar.gz --markdown 20240421/b/bellek/0.96.0-0.96.1/README.md --exclude *.pyd
+[2024-04-21 22:04:38] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.96.0.tar.gz]
+[2024-04-21 22:04:38] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.96.1.tar.gz]
+[2024-04-21 22:04:38] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-21 22:04:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-21 22:04:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-21 22:04:39] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-21 22:04:39] INFO root fetch - main [MainThread]: Store serial: [22868422]
