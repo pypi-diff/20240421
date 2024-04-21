@@ -16618,3 +16618,24 @@
 [2024-04-21 21:07:29] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
 [2024-04-21 21:07:29] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-04-21 21:07:29] INFO root fetch - main [MainThread]: Store serial: [22867846]
+[2024-04-21 21:09:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867846]
+[2024-04-21 21:09:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfilebrowser
+[2024-04-21 21:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-iotedge
+[2024-04-21 21:09:39] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-21 21:09:39] INFO root fetch - processPackages [pyfilebrowser]: New version: [0.0.9b0] Old Version: [0.0.9a0]
+[2024-04-21 21:09:39] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/79/f3/ca65b24e4a948fe84a4f71aeb0579763026eae9c4733a06f51c864624857/tendril_iotedge-0.3.9.tar.gz
+[2024-04-21 21:09:39] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/2f/eb/10b988a7590f89409d807e02c017d767dd502674e53d5bdba3ea5a365981/pyfilebrowser-0.0.9a0-py3-none-any.whl
+[2024-04-21 21:09:39] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/57/a9/7d7bcb29de7ad354a2f7bfdf7ed9105991a9ba058bba47bb85aa4020554e/pyfilebrowser-0.0.9b0-py3-none-any.whl
+[2024-04-21 21:09:39] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/7a/aa/a06c627bef3d0a1c7a0cfcf978c0525896dc8a653a9e3e62eaa5440191d3/tendril_iotedge-0.4.0.tar.gz
+[2024-04-21 21:09:39] INFO root fetch - processPackages [pyfilebrowser]: executing diffoscope
+[2024-04-21 21:09:39] INFO root fetch - processPackages [pyfilebrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip --markdown 20240421/p/pyfilebrowser/0.0.9a0-0.0.9b0/README.md --exclude *.pyd
+[2024-04-21 21:09:39] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-21 21:09:39] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.9.tar.gz tmp/tendril_iotedge-0.4.0.tar.gz --markdown 20240421/t/tendril-iotedge/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-21 21:09:40] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip]
+[2024-04-21 21:09:40] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip]
+[2024-04-21 21:09:40] INFO root fetch - main [MainThread]: End processing [pyfilebrowser]: success
+[2024-04-21 21:09:40] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.9.tar.gz]
+[2024-04-21 21:09:40] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.0.tar.gz]
+[2024-04-21 21:09:40] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-21 21:09:40] INFO root fetch - main [MainThread]: Store serial: [22867853]
