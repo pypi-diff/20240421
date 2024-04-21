@@ -5736,3 +5736,42 @@
 [2024-04-21 09:09:41] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/dragonlog-1.1.tar.gz]
 [2024-04-21 09:09:41] INFO root fetch - main [MainThread]: End processing [DragonLog]: success
 [2024-04-21 09:09:41] INFO root fetch - main [MainThread]: Store serial: [22862664]
+[2024-04-21 09:11:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862664]
+[2024-04-21 09:11:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TH-camera-calibration
+[2024-04-21 09:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: JianYingDraft.PY
+[2024-04-21 09:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-04-21 09:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-hub-nightly
+[2024-04-21 09:11:49] INFO root fetch - processPackages [TH-camera-calibration]: New version: [0.4.3] Old Version: [0.4.1]
+[2024-04-21 09:11:49] INFO root fetch - processPackages [JianYingDraft.PY]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 09:11:49] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-21 09:11:49] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-21 09:11:50] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/fe/e7/be2f9b19019826364830c5ff2ebe0ba13dd3fe1895bf713f5b939b341c5e/TH_camera_calibration-0.4.1.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/82/b8/cdb310b0c9a9f52618cd1476cda2795b72b4d3db1838e9d84d9e0ce536cf/jianyingdraft_py-1.0.1.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-21 09:11:50] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/5a/f5/d314ccf4639b3234f4b94f54ee84bdb8e4e9496f62b29e90083a884bcafb/jianyingdraft_py-1.0.2.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-21 09:11:50] INFO root fetch - processPackages [TH-camera-calibration]: Downloading https://files.pythonhosted.org/packages/ea/ff/a99a9a52565ea1d332fb4450aaaa137b4cc38e4c14ad8bc98fbc2aff4d44/TH_camera_calibration-0.4.3.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-21 09:11:50] INFO root fetch - processPackages [JianYingDraft.PY]: executing diffoscope
+[2024-04-21 09:11:50] INFO root fetch - processPackages [JianYingDraft.PY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianyingdraft_py-1.0.1.tar.gz tmp/jianyingdraft_py-1.0.2.tar.gz --markdown 20240421/J/JianYingDraft.PY/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 09:11:50] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-21 09:11:50] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240421/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-21 09:11:50] INFO root fetch - processPackages [TH-camera-calibration]: executing diffoscope
+[2024-04-21 09:11:50] INFO root fetch - processPackages [TH-camera-calibration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TH_camera_calibration-0.4.1.tar.gz tmp/TH_camera_calibration-0.4.3.tar.gz --markdown 20240421/T/TH-camera-calibration/0.4.1-0.4.3/README.md --exclude *.pyd
+[2024-04-21 09:11:50] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-21 09:11:50] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240421/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-04-21 09:11:51] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.1.tar.gz]
+[2024-04-21 09:11:51] INFO root fetch - processPackages [TH-camera-calibration]: Remove: archive file [/home/abi/fetcher/tmp/TH_camera_calibration-0.4.3.tar.gz]
+[2024-04-21 09:11:51] INFO root fetch - main [MainThread]: End processing [TH-camera-calibration]: success
+[2024-04-21 09:11:51] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.1.tar.gz]
+[2024-04-21 09:11:51] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.2.tar.gz]
+[2024-04-21 09:11:51] INFO root fetch - main [MainThread]: End processing [JianYingDraft.PY]: success
+[2024-04-21 09:11:51] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-21 09:11:51] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-21 09:11:51] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-21 09:11:53] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-21 09:11:53] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-21 09:11:53] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-21 09:11:53] INFO root fetch - main [MainThread]: Store serial: [22862675]
