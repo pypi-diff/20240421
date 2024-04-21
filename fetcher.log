@@ -4044,3 +4044,15 @@
 [2024-04-21 06:27:57] INFO root fetch - processPackages [psdb]: Remove: archive file [/home/abi/fetcher/tmp/psdb-1.1.4.tar.gz]
 [2024-04-21 06:27:57] INFO root fetch - main [MainThread]: End processing [psdb]: success
 [2024-04-21 06:27:57] INFO root fetch - main [MainThread]: Store serial: [22861863]
+[2024-04-21 06:30:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861863]
+[2024-04-21 06:30:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 06:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-confluentcloud
+[2024-04-21 06:30:05] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2024-04-21 06:30:06] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ee/5c/83ab7b1cf2467d8b22165c469862d15e131885dbf277da0d1bb686af03fe/pulumi_confluentcloud-1.9.0.tar.gz
+[2024-04-21 06:30:06] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ec/f6/4c3900e97797a3f84c4c58458a6334035e702bd96d9ed3ec48d8e6e20f4e/pulumi_confluentcloud-1.9.0a1675887560.tar.gz
+[2024-04-21 06:30:06] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2024-04-21 06:30:06] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20240421/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/README.md --exclude *.pyd
+[2024-04-21 06:30:07] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0.tar.gz]
+[2024-04-21 06:30:07] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
+[2024-04-21 06:30:07] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2024-04-21 06:30:07] INFO root fetch - main [MainThread]: Store serial: [22861866]
