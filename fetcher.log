@@ -4671,3 +4671,18 @@
 [2024-04-21 07:29:15] INFO root fetch - processPackages [ssttkkl-nonebot-utils]: Remove: archive file [/home/abi/fetcher/tmp/ssttkkl_nonebot_utils-0.1.9.tar.gz]
 [2024-04-21 07:29:15] INFO root fetch - main [MainThread]: End processing [ssttkkl-nonebot-utils]: success
 [2024-04-21 07:29:15] INFO root fetch - main [MainThread]: Store serial: [22862186]
+[2024-04-21 07:31:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862186]
+[2024-04-21 07:31:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 07:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackNqueue
+[2024-04-21 07:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmo
+[2024-04-21 07:31:26] WARNING root fetch - processPackages [stackNqueue]: Skipping, unable to determine old version
+[2024-04-21 07:31:26] INFO root fetch - main [MainThread]: End processing [stackNqueue] error
+[2024-04-21 07:31:26] INFO root fetch - processPackages [lmo]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-21 07:31:26] INFO root fetch - processPackages [lmo]: Downloading https://files.pythonhosted.org/packages/d6/e2/5bc8d7628be56a90ebc787a2a1c6abcb70cfe44c72d3d9994f37605a3ee4/lmo-0.8.0.tar.gz
+[2024-04-21 07:31:26] INFO root fetch - processPackages [lmo]: Downloading https://files.pythonhosted.org/packages/c2/4a/98a3d3c554bd23ffc2f4925cf7fae10b27787a307d494a598a574c81d953/lmo-0.9.0.tar.gz
+[2024-04-21 07:31:26] INFO root fetch - processPackages [lmo]: executing diffoscope
+[2024-04-21 07:31:26] INFO root fetch - processPackages [lmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmo-0.8.0.tar.gz tmp/lmo-0.9.0.tar.gz --markdown 20240421/l/lmo/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-21 07:31:27] INFO root fetch - processPackages [lmo]: Remove: archive file [/home/abi/fetcher/tmp/lmo-0.8.0.tar.gz]
+[2024-04-21 07:31:27] INFO root fetch - processPackages [lmo]: Remove: archive file [/home/abi/fetcher/tmp/lmo-0.9.0.tar.gz]
+[2024-04-21 07:31:27] INFO root fetch - main [MainThread]: End processing [lmo]: success
+[2024-04-21 07:31:27] INFO root fetch - main [MainThread]: Store serial: [22862194]
