@@ -13514,3 +13514,48 @@
 [2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
 [2024-04-21 18:04:01] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
 [2024-04-21 18:04:01] INFO root fetch - main [MainThread]: Store serial: [22866247]
+[2024-04-21 18:06:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866247]
+[2024-04-21 18:06:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torrent_tool
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naluconfigs
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtps-http
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embyclient
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdappendunits
+[2024-04-21 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: x23186925
+[2024-04-21 18:06:10] INFO root fetch - processPackages [dtps-http]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-21 18:06:10] INFO root fetch - processPackages [torrent_tool]: New version: [0.0.4] Old Version: [0.0.3.2]
+[2024-04-21 18:06:10] WARNING root fetch - processPackages [x23186925]: Skipping, unable to determine old version
+[2024-04-21 18:06:10] INFO root fetch - processPackages [embyclient]: New version: [4.8.5.0] Old Version: [4.8.4.0]
+[2024-04-21 18:06:10] INFO root fetch - main [MainThread]: End processing [x23186925] error
+[2024-04-21 18:06:10] WARNING root fetch - processPackages [pdappendunits]: Skipping, unable to determine old version
+[2024-04-21 18:06:10] INFO root fetch - main [MainThread]: End processing [pdappendunits] error
+[2024-04-21 18:06:10] INFO root fetch - processPackages [naluconfigs]: New version: [13.8.1] Old Version: [13.8.0]
+[2024-04-21 18:06:11] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/0e/15/57c255f45d26d824d7223218449cc295ad7514e6687e7ebea2a2ffacaa58/dtps_http-1.2.1-py3-none-any.whl
+[2024-04-21 18:06:11] INFO root fetch - processPackages [embyclient]: Downloading https://files.pythonhosted.org/packages/ad/53/f1ff85a492341009b9ad941cd74f4b9985f4f59a38d7527b19a4ffb17aeb/embyclient-4.8.4.0.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [torrent_tool]: Downloading https://files.pythonhosted.org/packages/ff/62/8c25d61a31467dde735851a1164bacc377a539285cc80de89c194ee8bad2/torrent_tool-0.0.3.2.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/f7/24/8a481c435c0b18fb60c370763d848206ed877773f4a6e2f1857879032ff7/naluconfigs-13.8.0.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/87/8c/9cac397d24d7bb7f993b1aaeb015d20ecc6eb557ea2169521e2d3d6673eb/dtps_http-1.3.0-py3-none-any.whl
+[2024-04-21 18:06:11] INFO root fetch - processPackages [torrent_tool]: Downloading https://files.pythonhosted.org/packages/6f/6b/7f026a9f5bd6f66b796ebc1433a9faaabad01baa564e19ff3086ca148e48/torrent_tool-0.0.4.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/a2/bc/633a57dae959c77bfa8be769853333ce8290c505772ba5eeaf905c28b8b8/naluconfigs-13.8.1.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [embyclient]: Downloading https://files.pythonhosted.org/packages/d4/d4/72b73725553f3e575dc1d4043ab60297278e27144955cc8cebb097830cfd/embyclient-4.8.5.0.tar.gz
+[2024-04-21 18:06:11] INFO root fetch - processPackages [torrent_tool]: executing diffoscope
+[2024-04-21 18:06:11] INFO root fetch - processPackages [torrent_tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torrent_tool-0.0.3.2.tar.gz tmp/torrent_tool-0.0.4.tar.gz --markdown 20240421/t/torrent_tool/0.0.3.2-0.0.4/README.md --exclude *.pyd
+[2024-04-21 18:06:11] INFO root fetch - processPackages [naluconfigs]: executing diffoscope
+[2024-04-21 18:06:11] INFO root fetch - processPackages [naluconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naluconfigs-13.8.0.tar.gz tmp/naluconfigs-13.8.1.tar.gz --markdown 20240421/n/naluconfigs/13.8.0-13.8.1/README.md --exclude *.pyd
+[2024-04-21 18:06:11] INFO root fetch - processPackages [dtps-http]: executing diffoscope
+[2024-04-21 18:06:11] INFO root fetch - processPackages [dtps-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtps_http-1.2.1-py3-none-any.whl.zip tmp/dtps_http-1.3.0-py3-none-any.whl.zip --markdown 20240421/d/dtps-http/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-21 18:06:11] INFO root fetch - processPackages [embyclient]: executing diffoscope
+[2024-04-21 18:06:11] INFO root fetch - processPackages [embyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embyclient-4.8.4.0.tar.gz tmp/embyclient-4.8.5.0.tar.gz --markdown 20240421/e/embyclient/4.8.4.0-4.8.5.0/README.md --exclude *.pyd
+[2024-04-21 18:06:12] INFO root fetch - processPackages [torrent_tool]: Remove: archive file [/home/abi/fetcher/tmp/torrent_tool-0.0.3.2.tar.gz]
+[2024-04-21 18:06:12] INFO root fetch - processPackages [torrent_tool]: Remove: archive file [/home/abi/fetcher/tmp/torrent_tool-0.0.4.tar.gz]
+[2024-04-21 18:06:12] INFO root fetch - main [MainThread]: End processing [torrent_tool]: success
+[2024-04-21 18:06:12] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.2.1-py3-none-any.whl.zip]
+[2024-04-21 18:06:12] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.0-py3-none-any.whl.zip]
+[2024-04-21 18:06:12] INFO root fetch - main [MainThread]: End processing [dtps-http]: success
+[2024-04-21 18:06:12] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.0.tar.gz]
+[2024-04-21 18:06:12] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.1.tar.gz]
+[2024-04-21 18:06:12] INFO root fetch - main [MainThread]: End processing [naluconfigs]: success
+[2024-04-21 18:06:13] INFO root fetch - processPackages [embyclient]: Remove: archive file [/home/abi/fetcher/tmp/embyclient-4.8.4.0.tar.gz]
+[2024-04-21 18:06:13] INFO root fetch - processPackages [embyclient]: Remove: archive file [/home/abi/fetcher/tmp/embyclient-4.8.5.0.tar.gz]
+[2024-04-21 18:06:13] INFO root fetch - main [MainThread]: End processing [embyclient]: success
+[2024-04-21 18:06:13] INFO root fetch - main [MainThread]: Store serial: [22866267]
