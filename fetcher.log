@@ -10102,3 +10102,53 @@
 [2024-04-21 14:49:57] INFO root fetch - processPackages [sampa]: Remove: archive file [/home/abi/fetcher/tmp/sampa-1.0.0.43.tar.gz]
 [2024-04-21 14:49:57] INFO root fetch - main [MainThread]: End processing [sampa]: success
 [2024-04-21 14:49:57] INFO root fetch - main [MainThread]: Store serial: [22864607]
+[2024-04-21 14:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864607]
+[2024-04-21 14:52:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC455
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: galxiai
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapegraphaisub
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syft
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gridkit
+[2024-04-21 14:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: GirardProxy
+[2024-04-21 14:52:06] INFO root fetch - processPackages [GirardProxy]: New version: [0.9.45] Old Version: [0.9.41]
+[2024-04-21 14:52:06] INFO root fetch - processPackages [galxiai]: New version: [0.50.5] Old Version: [0.50.4]
+[2024-04-21 14:52:06] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-21 14:52:06] WARNING root fetch - processPackages [PythonTestLJC455]: Skipping, unable to determine old version
+[2024-04-21 14:52:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC455] error
+[2024-04-21 14:52:06] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/10/af/8eac24895138177a148df0cf0a656598ff529b29aa4aa01d6aa32c199072/girardproxy-0.9.41.tar.gz
+[2024-04-21 14:52:06] WARNING root fetch - processPackages [scrapegraphaisub]: Skipping, unable to determine old version
+[2024-04-21 14:52:06] INFO root fetch - main [MainThread]: End processing [scrapegraphaisub] error
+[2024-04-21 14:52:06] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/67/70/61b05fc6678937bd7bc3630818650f53826cf3e948faf69543facc589698/galxiai-0.50.4.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [syft]: New version: [0.8.7b2] Old Version: [0.8.7b1]
+[2024-04-21 14:52:06] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [gridkit]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-21 14:52:06] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/82/55/de6005ce40cbbffe567ff1498c1dde77828b7d09b169ce3f66698461e08f/syft-0.8.7b1.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [galxiai]: Downloading https://files.pythonhosted.org/packages/16/45/658429b69c77a54c211e6dd86192c173da4ec3ab9ba152fba046387748f8/galxiai-0.50.5.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/8f/5b/d92c973f559d4ca16d04027439f6cb24a8c5eda0a72beb66273f496c3e4b/girardproxy-0.9.45.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [gridkit]: Downloading https://files.pythonhosted.org/packages/2f/00/1977a0d529f85548d99594ca94aaab507c722bce23a66cd43086e901a6eb/gridkit-0.9.1.tar.gz
+[2024-04-21 14:52:06] WARNING root fetch - processPackages [gridkit]: Skipping package: exceeds size limit 13801221>=10485760
+[2024-04-21 14:52:06] INFO root fetch - main [MainThread]: End processing [gridkit] error
+[2024-04-21 14:52:06] INFO root fetch - processPackages [galxiai]: executing diffoscope
+[2024-04-21 14:52:06] INFO root fetch - processPackages [galxiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galxiai-0.50.4.tar.gz tmp/galxiai-0.50.5.tar.gz --markdown 20240421/g/galxiai/0.50.4-0.50.5/README.md --exclude *.pyd
+[2024-04-21 14:52:06] INFO root fetch - processPackages [GirardProxy]: executing diffoscope
+[2024-04-21 14:52:06] INFO root fetch - processPackages [GirardProxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girardproxy-0.9.41.tar.gz tmp/girardproxy-0.9.45.tar.gz --markdown 20240421/G/GirardProxy/0.9.41-0.9.45/README.md --exclude *.pyd
+[2024-04-21 14:52:06] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/d2/87/0bf3e3491b3fb93256297bdde3524f8a30e8d8b6a7ef15a42951e9c8e653/syft-0.8.7b2.tar.gz
+[2024-04-21 14:52:06] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-21 14:52:06] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240421/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-21 14:52:07] INFO root fetch - processPackages [syft]: executing diffoscope
+[2024-04-21 14:52:07] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.7b1.tar.gz tmp/syft-0.8.7b2.tar.gz --markdown 20240421/s/syft/0.8.7b1-0.8.7b2/README.md --exclude *.pyd
+[2024-04-21 14:52:07] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.41.tar.gz]
+[2024-04-21 14:52:07] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.45.tar.gz]
+[2024-04-21 14:52:07] INFO root fetch - main [MainThread]: End processing [GirardProxy]: success
+[2024-04-21 14:52:07] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.4.tar.gz]
+[2024-04-21 14:52:07] INFO root fetch - processPackages [galxiai]: Remove: archive file [/home/abi/fetcher/tmp/galxiai-0.50.5.tar.gz]
+[2024-04-21 14:52:07] INFO root fetch - main [MainThread]: End processing [galxiai]: success
+[2024-04-21 14:52:08] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b1.tar.gz]
+[2024-04-21 14:52:08] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b2.tar.gz]
+[2024-04-21 14:52:08] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2024-04-21 14:52:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-21 14:52:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-21 14:52:17] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-21 14:52:17] INFO root fetch - main [MainThread]: Store serial: [22864651]
