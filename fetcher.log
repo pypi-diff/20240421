@@ -3329,3 +3329,18 @@
 [2024-04-21 05:07:52] INFO root fetch - processPackages [taskio]: Remove: archive file [/home/abi/fetcher/tmp/taskio-0.0.7.tar.gz]
 [2024-04-21 05:07:52] INFO root fetch - main [MainThread]: End processing [taskio]: success
 [2024-04-21 05:07:52] INFO root fetch - main [MainThread]: Store serial: [22861554]
+[2024-04-21 05:09:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861554]
+[2024-04-21 05:10:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-openapi3
+[2024-04-21 05:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC349
+[2024-04-21 05:10:00] WARNING root fetch - processPackages [PythonTestLJC349]: Skipping, unable to determine old version
+[2024-04-21 05:10:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC349] error
+[2024-04-21 05:10:00] INFO root fetch - processPackages [flask-openapi3]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-04-21 05:10:01] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/83/d7/fb1ef49bea511b83544333dd3a2639212e199ea81b809e1304d4d6a8a85d/flask_openapi3-3.1.0.tar.gz
+[2024-04-21 05:10:01] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/ec/d3/c09719c389086de7a9754be9dde0e6178ec0390b2e20fe7c5645963d3d6f/flask_openapi3-3.1.1.tar.gz
+[2024-04-21 05:10:01] INFO root fetch - processPackages [flask-openapi3]: executing diffoscope
+[2024-04-21 05:10:01] INFO root fetch - processPackages [flask-openapi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_openapi3-3.1.0.tar.gz tmp/flask_openapi3-3.1.1.tar.gz --markdown 20240421/f/flask-openapi3/3.1.0-3.1.1/README.md --exclude *.pyd
+[2024-04-21 05:10:02] INFO root fetch - processPackages [flask-openapi3]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3-3.1.0.tar.gz]
+[2024-04-21 05:10:02] INFO root fetch - processPackages [flask-openapi3]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3-3.1.1.tar.gz]
+[2024-04-21 05:10:02] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
+[2024-04-21 05:10:02] INFO root fetch - main [MainThread]: Store serial: [22861563]
