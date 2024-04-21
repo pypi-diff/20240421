@@ -8911,3 +8911,45 @@
 [2024-04-21 13:30:44] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.8.tar.gz]
 [2024-04-21 13:30:44] INFO root fetch - main [MainThread]: End processing [notfunny]: success
 [2024-04-21 13:30:44] INFO root fetch - main [MainThread]: Store serial: [22863983]
+[2024-04-21 13:32:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863983]
+[2024-04-21 13:32:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 13:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-21 13:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CVE-2021-20323
+[2024-04-21 13:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optionresult
+[2024-04-21 13:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdf-watermark
+[2024-04-21 13:32:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nestpython
+[2024-04-21 13:32:53] INFO root fetch - processPackages [notfunny]: New version: [0.6.8] Old Version: [0.6.6]
+[2024-04-21 13:32:53] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 13:32:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/42/ba/a8e5305128295bd72afad59fca9a15e0c9c664d0b166049354c2348ed749/notfunny-0.6.6.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [CVE-2021-20323]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 13:32:53] WARNING root fetch - processPackages [optionresult]: Skipping, unable to determine old version
+[2024-04-21 13:32:53] INFO root fetch - main [MainThread]: End processing [optionresult] error
+[2024-04-21 13:32:53] INFO root fetch - processPackages [pdf-watermark]: New version: [2.2.0] Old Version: [2.1.2]
+[2024-04-21 13:32:53] INFO root fetch - processPackages [CVE-2021-20323]: Downloading https://files.pythonhosted.org/packages/53/b9/a06ed228825c179eed53e8c205610a76cf45c67993d90ca77ca299622a2c/CVE-2021-20323-0.0.1.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/cc/66eca7e3b8d00484f417ca9ff757e83dd28de6a13b0b385cc28d6231a599/notfunny-0.6.8.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [pdf-watermark]: Downloading https://files.pythonhosted.org/packages/e9/06/480f49401119e475652d69fb63ceb4c8e795adc3defbff392eba7695c3d9/pdf-watermark-2.1.2.tar.gz
+[2024-04-21 13:32:53] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-21 13:32:53] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.6.tar.gz tmp/notfunny-0.6.8.tar.gz --markdown 20240421/n/notfunny/0.6.6-0.6.8/README.md --exclude *.pyd
+[2024-04-21 13:32:53] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-21 13:32:53] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240421/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 13:32:54] INFO root fetch - processPackages [CVE-2021-20323]: Downloading https://files.pythonhosted.org/packages/f2/7b/229a85f8d8b009c4115b169d4da7d272f3d8eb5a21e4f31188443bfd0880/CVE-2021-20323-0.0.2.tar.gz
+[2024-04-21 13:32:54] INFO root fetch - processPackages [CVE-2021-20323]: executing diffoscope
+[2024-04-21 13:32:54] INFO root fetch - processPackages [CVE-2021-20323]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CVE-2021-20323-0.0.1.tar.gz tmp/CVE-2021-20323-0.0.2.tar.gz --markdown 20240421/C/CVE-2021-20323/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 13:32:54] INFO root fetch - processPackages [pdf-watermark]: Downloading https://files.pythonhosted.org/packages/af/88/9a73d221674d8513f1061c437d87a59af3c601b73d96db908c082e697c76/pdf_watermark-2.2.0.tar.gz
+[2024-04-21 13:32:54] INFO root fetch - processPackages [pdf-watermark]: executing diffoscope
+[2024-04-21 13:32:54] INFO root fetch - processPackages [pdf-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf-watermark-2.1.2.tar.gz tmp/pdf_watermark-2.2.0.tar.gz --markdown 20240421/p/pdf-watermark/2.1.2-2.2.0/README.md --exclude *.pyd
+[2024-04-21 13:32:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.6.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.8.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-21 13:32:54] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-21 13:32:54] INFO root fetch - processPackages [CVE-2021-20323]: Remove: archive file [/home/abi/fetcher/tmp/CVE-2021-20323-0.0.1.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - processPackages [CVE-2021-20323]: Remove: archive file [/home/abi/fetcher/tmp/CVE-2021-20323-0.0.2.tar.gz]
+[2024-04-21 13:32:54] INFO root fetch - main [MainThread]: End processing [CVE-2021-20323]: success
+[2024-04-21 13:32:55] INFO root fetch - processPackages [pdf-watermark]: Remove: archive file [/home/abi/fetcher/tmp/pdf-watermark-2.1.2.tar.gz]
+[2024-04-21 13:32:55] INFO root fetch - processPackages [pdf-watermark]: Remove: archive file [/home/abi/fetcher/tmp/pdf_watermark-2.2.0.tar.gz]
+[2024-04-21 13:32:55] INFO root fetch - main [MainThread]: End processing [pdf-watermark]: success
+[2024-04-21 13:32:55] INFO root fetch - main [MainThread]: Store serial: [22863999]
