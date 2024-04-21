@@ -11777,3 +11777,36 @@
 [2024-04-21 16:22:09] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.9.tar.gz]
 [2024-04-21 16:22:09] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
 [2024-04-21 16:22:09] INFO root fetch - main [MainThread]: Store serial: [22865466]
+[2024-04-21 16:24:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865466]
+[2024-04-21 16:24:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC488
+[2024-04-21 16:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feature-space
+[2024-04-21 16:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magictk
+[2024-04-21 16:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jy_lib
+[2024-04-21 16:24:18] INFO root fetch - processPackages [magictk]: New version: [0.0.2.46] Old Version: [0.0.2.45]
+[2024-04-21 16:24:18] INFO root fetch - processPackages [feature-space]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 16:24:18] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/f4/f9/a820cadfe7f2c422e457da9d916ec81fc8b1058ec92a29f5f5dd1fab8dac/magictk-0.0.2.45.tar.gz
+[2024-04-21 16:24:18] WARNING root fetch - processPackages [PythonTestLJC488]: Skipping, unable to determine old version
+[2024-04-21 16:24:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC488] error
+[2024-04-21 16:24:18] INFO root fetch - processPackages [jy_lib]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-21 16:24:18] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/cb/bc/b384c4b91c430fa5a410e383bf0d0182ede8b392d6915d248a31cca49729/feature_space-0.0.3.tar.gz
+[2024-04-21 16:24:18] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/b3/f4/fe46ee6e1da6127ac7fb75fc5716c8e918a848930b1b729a60b7ad331974/jy_lib-0.6.2.tar.gz
+[2024-04-21 16:24:18] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/72/2b/5d27fbabc1d5b1cfcf7b34ad485781b04ffa3311fa4ea6ebcb010c9deaa6/magictk-0.0.2.46.tar.gz
+[2024-04-21 16:24:18] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/4e/6b/e6137f28d213eb4f5cc28614c72445ae7c3537a28fe51fe7c7d6b9aefb96/feature_space-0.0.4.tar.gz
+[2024-04-21 16:24:18] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-21 16:24:18] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-0.0.2.45.tar.gz tmp/magictk-0.0.2.46.tar.gz --markdown 20240421/m/magictk/0.0.2.45-0.0.2.46/README.md --exclude *.pyd
+[2024-04-21 16:24:18] INFO root fetch - processPackages [feature-space]: executing diffoscope
+[2024-04-21 16:24:18] INFO root fetch - processPackages [feature-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_space-0.0.3.tar.gz tmp/feature_space-0.0.4.tar.gz --markdown 20240421/f/feature-space/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 16:24:18] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/72/10/66b4a38cb59ad2f9fc7be20088f6225f4383c1d1217040aea6deba496dbd/jy_lib-0.6.3.tar.gz
+[2024-04-21 16:24:18] INFO root fetch - processPackages [jy_lib]: executing diffoscope
+[2024-04-21 16:24:18] INFO root fetch - processPackages [jy_lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_lib-0.6.2.tar.gz tmp/jy_lib-0.6.3.tar.gz --markdown 20240421/j/jy_lib/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-21 16:24:19] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.3.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.4.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - main [MainThread]: End processing [feature-space]: success
+[2024-04-21 16:24:19] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.45.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.46.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-21 16:24:19] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.2.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.3.tar.gz]
+[2024-04-21 16:24:19] INFO root fetch - main [MainThread]: End processing [jy_lib]: success
+[2024-04-21 16:24:19] INFO root fetch - main [MainThread]: Store serial: [22865479]
