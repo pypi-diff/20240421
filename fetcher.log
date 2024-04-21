@@ -8455,3 +8455,9 @@
 [2024-04-21 12:49:20] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-21 12:49:20] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-21 12:49:20] INFO root fetch - main [MainThread]: Store serial: [22863785]
+[2024-04-21 12:51:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863785]
+[2024-04-21 12:51:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 12:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simplerpcprotocol
+[2024-04-21 12:51:29] WARNING root fetch - processPackages [simplerpcprotocol]: Skipping, unable to determine old version
+[2024-04-21 12:51:29] INFO root fetch - main [MainThread]: End processing [simplerpcprotocol] error
+[2024-04-21 12:51:29] INFO root fetch - main [MainThread]: Store serial: [22863790]
