@@ -4214,3 +4214,36 @@
 [2024-04-21 06:43:10] INFO root fetch - processPackages [hspylib]: Remove: archive file [/home/abi/fetcher/tmp/hspylib-1.12.36.tar.gz]
 [2024-04-21 06:43:10] INFO root fetch - main [MainThread]: End processing [hspylib]: success
 [2024-04-21 06:43:10] INFO root fetch - main [MainThread]: Store serial: [22861972]
+[2024-04-21 06:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861972]
+[2024-04-21 06:45:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 06:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-tls
+[2024-04-21 06:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-04-21 06:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-spotinst
+[2024-04-21 06:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC367
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240420.281] Old Version: [0.44.20240419.280]
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1713673599] Old Version: [5.1.0a1713561435]
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/68/1a/64b556892f9672a4d44031b59100c3927df60f300667550147a0bece5276/pkscreener-0.44.20240419.280.tar.gz
+[2024-04-21 06:45:19] WARNING root fetch - processPackages [PythonTestLJC367]: Skipping, unable to determine old version
+[2024-04-21 06:45:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC367] error
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/f0/b7/5094cbebee52be28f84d4d4713b13fdc87850eb4b0312fc40c86cda45831/pulumi_tls-5.1.0a1713561435.tar.gz
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/e0/9f/6d2c1a705d6b6019bea4cba0aa49eceea4eb2d84cfdcb18f45db81e06fb5/pulumi_spotinst-3.9.0.tar.gz
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a0/f6/0c5a46a48465e163c93ca5d6d0bca34304d8a5a673aae86f94c383e96294/pkscreener-0.44.20240420.281.tar.gz
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/c5/d4/fc8548c53b14f25920bf4740c9d59daa8543f610724ce8a0cdc6bf115dbe/pulumi_tls-5.1.0a1713673599.tar.gz
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-21 06:45:19] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240419.280.tar.gz tmp/pkscreener-0.44.20240420.281.tar.gz --markdown 20240421/p/pkscreener/0.44.20240419.280-0.44.20240420.281/README.md --exclude *.pyd
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1713561435.tar.gz tmp/pulumi_tls-5.1.0a1713673599.tar.gz --markdown 20240421/p/pulumi-tls/5.1.0a1713561435-5.1.0a1713673599/README.md --exclude *.pyd
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/b4/06/83d6eb3763a877d39e3d2a09063ba3fd6542fa6a214e6c3d5240414d041d/pulumi_spotinst-3.9.0a1633346805.tar.gz
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20240421/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/README.md --exclude *.pyd
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1713561435.tar.gz]
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1713673599.tar.gz]
+[2024-04-21 06:45:20] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240419.280.tar.gz]
+[2024-04-21 06:45:20] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240420.281.tar.gz]
+[2024-04-21 06:45:20] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-21 06:45:21] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0.tar.gz]
+[2024-04-21 06:45:21] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
+[2024-04-21 06:45:21] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2024-04-21 06:45:21] INFO root fetch - main [MainThread]: Store serial: [22861981]
