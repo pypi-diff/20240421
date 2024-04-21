@@ -8568,3 +8568,60 @@
 [2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: Remove: archive file [/home/abi/fetcher/tmp/aiopioneer-0.6.0rc1.tar.gz]
 [2024-04-21 13:00:14] INFO root fetch - main [MainThread]: End processing [aiopioneer]: success
 [2024-04-21 13:00:14] INFO root fetch - main [MainThread]: Store serial: [22863838]
+[2024-04-21 13:02:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863838]
+[2024-04-21 13:02:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strictdoc
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradedangerous
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Tooldelta
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sosin
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libtmux
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ossStudy
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ossStudy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [Tooldelta]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [sosin]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [libtmux]: New version: [0.9.0] Old Version: [0.8.5]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/0d/53/0df14f2346eea728edf5e5dbe5aab841756760f65347e9e395a609d7d144/ossStudy-0.0.2-py3-none-any.whl
+[2024-04-21 13:02:23] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 13:02:23] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/cc/aa/c3229b3ff6858204e84f37e963adbe3d344fa0ee1ae9cd78312a928f962e/tooldelta-0.5.8.tar.gz
+[2024-04-21 13:02:23] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 13:02:23] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/48/3c/e569a0ace28a66a83a7c86f32d4721a2db643a777831ccdd628a38c4d0c0/sosin-1.2.3.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [libtmux]: Downloading https://files.pythonhosted.org/packages/b0/43/4b66181475cb78be02e69a121e4f69d72aef7d2eb5855b23fa4ff13e055c/libtmux-0.8.5.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/00/b9/de3ac99c34c578ebc27774bd8b6d8f93998c458de190883b7889c4514319/sosin-1.2.4.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/e1/11/c50f2ee24d502a125d09f509013222be273073e73cb56e5592108e8a8ea6/tooldelta-0.5.9.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/2c/fa/27c75d6de011ba7052e3d56b4ab78afb42dff3dfe73562e53032fc36d6ff/ossStudy-0.0.3-py3-none-any.whl
+[2024-04-21 13:02:24] INFO root fetch - processPackages [sosin]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [sosin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosin-1.2.3.tar.gz tmp/sosin-1.2.4.tar.gz --markdown 20240421/s/sosin/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-21 13:02:24] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [ossStudy]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [ossStudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossStudy-0.0.2-py3-none-any.whl.zip tmp/ossStudy-0.0.3-py3-none-any.whl.zip --markdown 20240421/o/ossStudy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 13:02:24] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.5.8.tar.gz tmp/tooldelta-0.5.9.tar.gz --markdown 20240421/T/Tooldelta/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-21 13:02:24] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 13:02:24] INFO root fetch - processPackages [libtmux]: Downloading https://files.pythonhosted.org/packages/c4/90/a6df68839365ecb1b85b683f008830814deb87dd152acfab5652703d6a5f/libtmux-0.9.0.tar.gz
+[2024-04-21 13:02:24] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20240421/s/strictdoc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 13:02:24] INFO root fetch - processPackages [libtmux]: executing diffoscope
+[2024-04-21 13:02:24] INFO root fetch - processPackages [libtmux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtmux-0.8.5.tar.gz tmp/libtmux-0.9.0.tar.gz --markdown 20240421/l/libtmux/0.8.5-0.9.0/README.md --exclude *.pyd
+[2024-04-21 13:02:25] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.8.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.9.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-04-21 13:02:25] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
+[2024-04-21 13:02:25] INFO root fetch - processPackages [sosin]: Remove: archive file [/home/abi/fetcher/tmp/sosin-1.2.3.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [sosin]: Remove: archive file [/home/abi/fetcher/tmp/sosin-1.2.4.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [sosin]: success
+[2024-04-21 13:02:25] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.8.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.9.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2024-04-21 13:02:25] INFO root fetch - processPackages [libtmux]: Remove: archive file [/home/abi/fetcher/tmp/libtmux-0.8.5.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [libtmux]: Remove: archive file [/home/abi/fetcher/tmp/libtmux-0.9.0.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [libtmux]: success
+[2024-04-21 13:02:25] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 13:02:25] INFO root fetch - main [MainThread]: Store serial: [22863852]
