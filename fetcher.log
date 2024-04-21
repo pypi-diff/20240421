@@ -6877,3 +6877,33 @@
 [2024-04-21 10:52:08] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz]
 [2024-04-21 10:52:08] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr21]: success
 [2024-04-21 10:52:08] INFO root fetch - main [MainThread]: Store serial: [22863216]
+[2024-04-21 10:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863216]
+[2024-04-21 10:54:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bowtie-json-schema
+[2024-04-21 10:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stackNqueue
+[2024-04-21 10:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TPE-Bot
+[2024-04-21 10:54:18] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.4] Old Version: [6.8.3]
+[2024-04-21 10:54:18] INFO root fetch - processPackages [stackNqueue]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 10:54:18] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/23/e3/a9bac5d8a33630ba31844c4a2d37ce91fce5e4ae502e64e65510fe4dfbe9/TPE-Bot-6.8.3.tar.gz
+[2024-04-21 10:54:18] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/d0/61/f0640a9b1456dad0d4b6f460d97a2a5ab3f2353e0f90185180e8ba7ad4e5/stackNqueue-0.1.1-py3-none-any.whl
+[2024-04-21 10:54:18] INFO root fetch - processPackages [bowtie-json-schema]: New version: [2024.4.4] Old Version: [2024.4.3]
+[2024-04-21 10:54:19] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/d4/79/e7ac9414f34ecdb23ba09b66fdcfcddadcfb87cb4fd75526f1a7e71564b1/bowtie_json_schema-2024.4.3.tar.gz
+[2024-04-21 10:54:19] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/2f/1e/6d2c34ecb0448035f18c7216338fa3162ab4d2c894a66fca30075bb1e621/stackNqueue-0.1.2-py3-none-any.whl
+[2024-04-21 10:54:19] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/1f/15/05de0d546261c2100074fb0a5fa28ad30ae39eba06aeb6e6825f69b8d2a1/TPE-Bot-6.8.4.tar.gz
+[2024-04-21 10:54:19] INFO root fetch - processPackages [stackNqueue]: executing diffoscope
+[2024-04-21 10:54:19] INFO root fetch - processPackages [stackNqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackNqueue-0.1.1-py3-none-any.whl.zip tmp/stackNqueue-0.1.2-py3-none-any.whl.zip --markdown 20240421/s/stackNqueue/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 10:54:19] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-21 10:54:19] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.3.tar.gz tmp/TPE-Bot-6.8.4.tar.gz --markdown 20240421/T/TPE-Bot/6.8.3-6.8.4/README.md --exclude *.pyd
+[2024-04-21 10:54:19] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/51/c7/2fe255d262df7612c5412231b74e1b64df9ea2cacc90fe121919264ec52c/bowtie_json_schema-2024.4.4.tar.gz
+[2024-04-21 10:54:19] INFO root fetch - processPackages [bowtie-json-schema]: executing diffoscope
+[2024-04-21 10:54:19] INFO root fetch - processPackages [bowtie-json-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bowtie_json_schema-2024.4.3.tar.gz tmp/bowtie_json_schema-2024.4.4.tar.gz --markdown 20240421/b/bowtie-json-schema/2024.4.3-2024.4.4/README.md --exclude *.pyd
+[2024-04-21 10:54:19] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.1.1-py3-none-any.whl.zip]
+[2024-04-21 10:54:19] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.1.2-py3-none-any.whl.zip]
+[2024-04-21 10:54:19] INFO root fetch - main [MainThread]: End processing [stackNqueue]: success
+[2024-04-21 10:54:20] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.3.tar.gz]
+[2024-04-21 10:54:20] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.4.tar.gz]
+[2024-04-21 10:54:20] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-21 10:54:20] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.4.3.tar.gz]
+[2024-04-21 10:54:20] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.4.4.tar.gz]
+[2024-04-21 10:54:20] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
+[2024-04-21 10:54:20] INFO root fetch - main [MainThread]: Store serial: [22863223]
