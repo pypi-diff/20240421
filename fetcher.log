@@ -10168,3 +10168,27 @@
 [2024-04-21 14:54:27] WARNING root fetch - processPackages [mediapipe-nightly]: Skipping package: exceeds size limit 49978923>=10485760
 [2024-04-21 14:54:27] INFO root fetch - main [MainThread]: End processing [mediapipe-nightly] error
 [2024-04-21 14:54:27] INFO root fetch - main [MainThread]: Store serial: [22864708]
+[2024-04-21 14:56:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864708]
+[2024-04-21 14:56:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 14:56:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deaotpy
+[2024-04-21 14:56:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trubrics-beta
+[2024-04-21 14:56:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC457
+[2024-04-21 14:56:36] INFO root fetch - processPackages [trubrics-beta]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-21 14:56:36] INFO root fetch - processPackages [deaotpy]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-21 14:56:36] WARNING root fetch - processPackages [PythonTestLJC457]: Skipping, unable to determine old version
+[2024-04-21 14:56:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC457] error
+[2024-04-21 14:56:36] INFO root fetch - processPackages [trubrics-beta]: Downloading https://files.pythonhosted.org/packages/6e/b0/f9ba83cea815beddce262544fc1516822179423c9fe1cc1d901a76c87deb/trubrics_beta-0.1.1.tar.gz
+[2024-04-21 14:56:36] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/b9/a5/02e25a971c0787b2c6421197a115461f68f3cd01a2f6c8a6b26774f38c2b/deaotpy-1.8.0.tar.gz
+[2024-04-21 14:56:36] INFO root fetch - processPackages [trubrics-beta]: Downloading https://files.pythonhosted.org/packages/96/1d/b7de64bdfb9f991b3ea730df3041ecae37d1f58340c4068dab73f10c8f20/trubrics_beta-0.2.0.tar.gz
+[2024-04-21 14:56:36] INFO root fetch - processPackages [trubrics-beta]: executing diffoscope
+[2024-04-21 14:56:36] INFO root fetch - processPackages [trubrics-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trubrics_beta-0.1.1.tar.gz tmp/trubrics_beta-0.2.0.tar.gz --markdown 20240421/t/trubrics-beta/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-21 14:56:36] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/19/d4/823d02342147ede680ec4994b98d08497f8da9dd5dff11746effa35bfc82/deaotpy-1.9.0.tar.gz
+[2024-04-21 14:56:37] INFO root fetch - processPackages [deaotpy]: executing diffoscope
+[2024-04-21 14:56:37] INFO root fetch - processPackages [deaotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deaotpy-1.8.0.tar.gz tmp/deaotpy-1.9.0.tar.gz --markdown 20240421/d/deaotpy/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-21 14:56:37] INFO root fetch - processPackages [trubrics-beta]: Remove: archive file [/home/abi/fetcher/tmp/trubrics_beta-0.1.1.tar.gz]
+[2024-04-21 14:56:37] INFO root fetch - processPackages [trubrics-beta]: Remove: archive file [/home/abi/fetcher/tmp/trubrics_beta-0.2.0.tar.gz]
+[2024-04-21 14:56:37] INFO root fetch - main [MainThread]: End processing [trubrics-beta]: success
+[2024-04-21 14:56:37] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.8.0.tar.gz]
+[2024-04-21 14:56:37] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.9.0.tar.gz]
+[2024-04-21 14:56:37] INFO root fetch - main [MainThread]: End processing [deaotpy]: success
+[2024-04-21 14:56:37] INFO root fetch - main [MainThread]: Store serial: [22864720]
