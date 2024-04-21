@@ -12024,3 +12024,24 @@
 [2024-04-21 16:37:23] INFO root fetch - processPackages [hublot]: Remove: archive file [/home/abi/fetcher/tmp/hublot-2.0.0.tar.gz]
 [2024-04-21 16:37:23] INFO root fetch - main [MainThread]: End processing [hublot]: success
 [2024-04-21 16:37:23] INFO root fetch - main [MainThread]: Store serial: [22865562]
+[2024-04-21 16:39:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865562]
+[2024-04-21 16:39:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 16:39:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matplotlib-visual
+[2024-04-21 16:39:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mosaicperm
+[2024-04-21 16:39:32] INFO root fetch - processPackages [matplotlib-visual]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-21 16:39:32] INFO root fetch - processPackages [mosaicperm]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 16:39:33] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/cd/07/5c6e6d7624c072a4681a8571d9aea21849fe005b0e539e9c3f3d7c63c941/matplotlib_visual-0.9.4.tar.gz
+[2024-04-21 16:39:33] INFO root fetch - processPackages [mosaicperm]: Downloading https://files.pythonhosted.org/packages/e5/70/de1b07428be7f385beac62fbc6bd57c4f420e758972039103d1ea051cd89/mosaicperm-0.1.0.tar.gz
+[2024-04-21 16:39:33] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/34/28/43a83a0969ccec7fa499282512942b6ec27f7fcf55a807dd488c47990a10/matplotlib_visual-0.9.5.tar.gz
+[2024-04-21 16:39:33] INFO root fetch - processPackages [mosaicperm]: Downloading https://files.pythonhosted.org/packages/bc/08/46bef9aab4ba139ba538cf3029dc460ee9732d4694158cacc9af1d0dc661/mosaicperm-0.1.1.tar.gz
+[2024-04-21 16:39:33] INFO root fetch - processPackages [matplotlib-visual]: executing diffoscope
+[2024-04-21 16:39:33] INFO root fetch - processPackages [matplotlib-visual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matplotlib_visual-0.9.4.tar.gz tmp/matplotlib_visual-0.9.5.tar.gz --markdown 20240421/m/matplotlib-visual/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-21 16:39:33] INFO root fetch - processPackages [mosaicperm]: executing diffoscope
+[2024-04-21 16:39:33] INFO root fetch - processPackages [mosaicperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaicperm-0.1.0.tar.gz tmp/mosaicperm-0.1.1.tar.gz --markdown 20240421/m/mosaicperm/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 16:39:34] INFO root fetch - processPackages [mosaicperm]: Remove: archive file [/home/abi/fetcher/tmp/mosaicperm-0.1.0.tar.gz]
+[2024-04-21 16:39:34] INFO root fetch - processPackages [mosaicperm]: Remove: archive file [/home/abi/fetcher/tmp/mosaicperm-0.1.1.tar.gz]
+[2024-04-21 16:39:34] INFO root fetch - main [MainThread]: End processing [mosaicperm]: success
+[2024-04-21 16:39:34] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.9.4.tar.gz]
+[2024-04-21 16:39:34] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.9.5.tar.gz]
+[2024-04-21 16:39:34] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
+[2024-04-21 16:39:34] INFO root fetch - main [MainThread]: Store serial: [22865568]
