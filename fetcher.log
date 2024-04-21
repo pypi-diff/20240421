@@ -6778,3 +6778,15 @@
 [2024-04-21 10:43:08] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
 [2024-04-21 10:43:08] INFO root fetch - main [MainThread]: End processing [simc-support]: success
 [2024-04-21 10:43:08] INFO root fetch - main [MainThread]: Store serial: [22863181]
+[2024-04-21 10:45:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863181]
+[2024-04-21 10:45:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 10:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackNqueue
+[2024-04-21 10:45:17] INFO root fetch - processPackages [stackNqueue]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/46/8f/30c0b125ecb0a652c0d95c8f72cb55cb70c37d6b08ce28f67556663e3712/stackNqueue-0.1-py3-none-any.whl
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: Downloading https://files.pythonhosted.org/packages/d0/61/f0640a9b1456dad0d4b6f460d97a2a5ab3f2353e0f90185180e8ba7ad4e5/stackNqueue-0.1.1-py3-none-any.whl
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: executing diffoscope
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackNqueue-0.1-py3-none-any.whl.zip tmp/stackNqueue-0.1.1-py3-none-any.whl.zip --markdown 20240421/s/stackNqueue/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.1-py3-none-any.whl.zip]
+[2024-04-21 10:45:18] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.1.1-py3-none-any.whl.zip]
+[2024-04-21 10:45:18] INFO root fetch - main [MainThread]: End processing [stackNqueue]: success
+[2024-04-21 10:45:18] INFO root fetch - main [MainThread]: Store serial: [22863184]
