@@ -3542,3 +3542,18 @@
 [2024-04-21 05:25:17] INFO root fetch - processPackages [vrchatapi]: Remove: archive file [/home/abi/fetcher/tmp/vrchatapi-1.9.1.tar.gz]
 [2024-04-21 05:25:17] INFO root fetch - main [MainThread]: End processing [vrchatapi]: success
 [2024-04-21 05:25:17] INFO root fetch - main [MainThread]: Store serial: [22861660]
+[2024-04-21 05:27:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861660]
+[2024-04-21 05:27:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: texplot
+[2024-04-21 05:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agt-server
+[2024-04-21 05:27:25] WARNING root fetch - processPackages [texplot]: Skipping, unable to determine old version
+[2024-04-21 05:27:25] INFO root fetch - main [MainThread]: End processing [texplot] error
+[2024-04-21 05:27:25] INFO root fetch - processPackages [agt-server]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-21 05:27:25] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/36/9f/5eb178ea7ad13e83f760619a9c19e59976238c354dc8b1536e70f0000e28/agt_server-1.2.8.tar.gz
+[2024-04-21 05:27:26] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/35/f7/291ed498714891b733e79ea12cb87b8e56760f5dee7cef35e85ab05f26b1/agt_server-1.2.9.tar.gz
+[2024-04-21 05:27:26] INFO root fetch - processPackages [agt-server]: executing diffoscope
+[2024-04-21 05:27:26] INFO root fetch - processPackages [agt-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agt_server-1.2.8.tar.gz tmp/agt_server-1.2.9.tar.gz --markdown 20240421/a/agt-server/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-21 05:27:27] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.8.tar.gz]
+[2024-04-21 05:27:27] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.9.tar.gz]
+[2024-04-21 05:27:27] INFO root fetch - main [MainThread]: End processing [agt-server]: success
+[2024-04-21 05:27:27] INFO root fetch - main [MainThread]: Store serial: [22861668]
