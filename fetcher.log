@@ -14610,3 +14610,27 @@
 [2024-04-21 19:09:30] INFO root fetch - processPackages [propertree]: Remove: archive file [/home/abi/fetcher/tmp/propertree-1.1.0.post4.tar.gz]
 [2024-04-21 19:09:30] INFO root fetch - main [MainThread]: End processing [propertree]: success
 [2024-04-21 19:09:30] INFO root fetch - main [MainThread]: Store serial: [22866801]
+[2024-04-21 19:11:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866801]
+[2024-04-21 19:11:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emergingtrajectories
+[2024-04-21 19:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-click
+[2024-04-21 19:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC549
+[2024-04-21 19:11:39] INFO root fetch - processPackages [emergingtrajectories]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 19:11:39] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/1f/3e/3229d6759c17920a1ecd3722791f03aed62c9a3f9ef850794188474c7fb5/emergingtrajectories-0.2.8.tar.gz
+[2024-04-21 19:11:39] INFO root fetch - processPackages [django-click]: New version: [2.4.0] Old Version: [2.3.0]
+[2024-04-21 19:11:39] WARNING root fetch - processPackages [PythonTestLJC549]: Skipping, unable to determine old version
+[2024-04-21 19:11:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC549] error
+[2024-04-21 19:11:39] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/44/2f/dc231c0377b6642a32797154e1fd951c910f0b0cd2dbf06a9b7ef5c3c3cc/emergingtrajectories-0.2.9.tar.gz
+[2024-04-21 19:11:39] INFO root fetch - processPackages [django-click]: Downloading https://files.pythonhosted.org/packages/47/01/c9aa5749e018c890fe7c2ac429a276d445e693c7be85b8ee9005c0b4b1c6/django-click-2.3.0.tar.gz
+[2024-04-21 19:11:39] INFO root fetch - processPackages [emergingtrajectories]: executing diffoscope
+[2024-04-21 19:11:39] INFO root fetch - processPackages [emergingtrajectories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emergingtrajectories-0.2.8.tar.gz tmp/emergingtrajectories-0.2.9.tar.gz --markdown 20240421/e/emergingtrajectories/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 19:11:40] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.8.tar.gz]
+[2024-04-21 19:11:40] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
+[2024-04-21 19:11:40] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
+[2024-04-21 19:11:40] INFO root fetch - processPackages [django-click]: Downloading https://files.pythonhosted.org/packages/c3/22/6197a48b9facca10ecdb95a9341721cd7a89548b7464ed06d6c527348a35/django_click-2.4.0.tar.gz
+[2024-04-21 19:11:40] INFO root fetch - processPackages [django-click]: executing diffoscope
+[2024-04-21 19:11:40] INFO root fetch - processPackages [django-click]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-click-2.3.0.tar.gz tmp/django_click-2.4.0.tar.gz --markdown 20240421/d/django-click/2.3.0-2.4.0/README.md --exclude *.pyd
+[2024-04-21 19:11:41] INFO root fetch - processPackages [django-click]: Remove: archive file [/home/abi/fetcher/tmp/django-click-2.3.0.tar.gz]
+[2024-04-21 19:11:41] INFO root fetch - processPackages [django-click]: Remove: archive file [/home/abi/fetcher/tmp/django_click-2.4.0.tar.gz]
+[2024-04-21 19:11:41] INFO root fetch - main [MainThread]: End processing [django-click]: success
+[2024-04-21 19:11:41] INFO root fetch - main [MainThread]: Store serial: [22866807]
