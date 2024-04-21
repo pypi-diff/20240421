@@ -2933,3 +2933,36 @@
 [2024-04-21 04:30:58] INFO root fetch - processPackages [wall-e-models]: Remove: archive file [/home/abi/fetcher/tmp/wall_e_models-0.9.tar.gz]
 [2024-04-21 04:30:58] INFO root fetch - main [MainThread]: End processing [wall-e-models]: success
 [2024-04-21 04:30:58] INFO root fetch - main [MainThread]: Store serial: [22861380]
+[2024-04-21 04:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861380]
+[2024-04-21 04:33:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 04:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django_herobiz_ds
+[2024-04-21 04:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shinylive-auth
+[2024-04-21 04:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC336
+[2024-04-21 04:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: afeng-py-tools
+[2024-04-21 04:33:08] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-21 04:33:08] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-21 04:33:08] INFO root fetch - processPackages [django_herobiz_ds]: New version: [2.1.0] Old Version: [2.0.3]
+[2024-04-21 04:33:08] INFO root fetch - processPackages [shinylive-auth]: New version: [2024.4.20] Old Version: [0.0.1]
+[2024-04-21 04:33:08] WARNING root fetch - processPackages [PythonTestLJC336]: Skipping, unable to determine old version
+[2024-04-21 04:33:08] INFO root fetch - main [MainThread]: End processing [PythonTestLJC336] error
+[2024-04-21 04:33:08] INFO root fetch - processPackages [django_herobiz_ds]: Downloading https://files.pythonhosted.org/packages/7f/52/4f7565381e3d808490c1f57641d7a1789c9d6f21efeb687a2190fe2cf72a/django_herobiz_ds-2.0.3.tar.gz
+[2024-04-21 04:33:08] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/a9/4d/f26c3841853cd80c39a436ef819ce3385ab65208113e7944c3abcc127f0c/shinylive_auth-0.0.1.tar.gz
+[2024-04-21 04:33:08] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-21 04:33:08] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-21 04:33:08] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240421/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-21 04:33:08] INFO root fetch - processPackages [shinylive-auth]: Downloading https://files.pythonhosted.org/packages/0c/92/b77f648974bfeb41cccd67ff2715e57e90b9d5a1e7aa412460486fdf642b/shinylive_auth-2024.4.20.tar.gz
+[2024-04-21 04:33:09] INFO root fetch - processPackages [shinylive-auth]: executing diffoscope
+[2024-04-21 04:33:09] INFO root fetch - processPackages [shinylive-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinylive_auth-0.0.1.tar.gz tmp/shinylive_auth-2024.4.20.tar.gz --markdown 20240421/s/shinylive-auth/0.0.1-2024.4.20/README.md --exclude *.pyd
+[2024-04-21 04:33:09] INFO root fetch - processPackages [django_herobiz_ds]: Downloading https://files.pythonhosted.org/packages/fc/21/9409161b621aab19e3fc5ebd0063aeae7ecd5f70e802a48243e0ddb410f8/django_herobiz_ds-2.1.0.tar.gz
+[2024-04-21 04:33:09] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-0.0.1.tar.gz]
+[2024-04-21 04:33:09] INFO root fetch - processPackages [shinylive-auth]: Remove: archive file [/home/abi/fetcher/tmp/shinylive_auth-2024.4.20.tar.gz]
+[2024-04-21 04:33:09] INFO root fetch - main [MainThread]: End processing [shinylive-auth]: success
+[2024-04-21 04:33:09] INFO root fetch - processPackages [django_herobiz_ds]: executing diffoscope
+[2024-04-21 04:33:09] INFO root fetch - processPackages [django_herobiz_ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_herobiz_ds-2.0.3.tar.gz tmp/django_herobiz_ds-2.1.0.tar.gz --markdown 20240421/d/django_herobiz_ds/2.0.3-2.1.0/README.md --exclude *.pyd
+[2024-04-21 04:33:10] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-21 04:33:10] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-21 04:33:10] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-21 04:33:11] INFO root fetch - processPackages [django_herobiz_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_ds-2.0.3.tar.gz]
+[2024-04-21 04:33:11] INFO root fetch - processPackages [django_herobiz_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_ds-2.1.0.tar.gz]
+[2024-04-21 04:33:11] INFO root fetch - main [MainThread]: End processing [django_herobiz_ds]: success
+[2024-04-21 04:33:11] INFO root fetch - main [MainThread]: Store serial: [22861394]
