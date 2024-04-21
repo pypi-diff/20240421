@@ -17134,3 +17134,78 @@
 [2024-04-21 21:33:54] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.6.tar.gz]
 [2024-04-21 21:33:54] INFO root fetch - main [MainThread]: End processing [hepai]: success
 [2024-04-21 21:33:54] INFO root fetch - main [MainThread]: Store serial: [22868095]
+[2024-04-21 21:35:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868095]
+[2024-04-21 21:36:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlton
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pjrpc
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-common
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zer1t0-aze
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: parea-ai
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: schem
+[2024-04-21 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kungfupanda
+[2024-04-21 21:36:02] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-21 21:36:02] INFO root fetch - processPackages [kungfupanda]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 21:36:02] INFO root fetch - processPackages [parea-ai]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-21 21:36:02] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-21 21:36:02] INFO root fetch - processPackages [sqlton]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 21:36:02] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/29/cc/934b8e38e67a43a3756e093a2a83ee4fdce1e5d543806e1699d3367cb8d8/dune_rivals-0.5.8.tar.gz
+[2024-04-21 21:36:02] INFO root fetch - processPackages [zer1t0-aze]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 21:36:03] INFO root fetch - processPackages [pjrpc]: New version: [1.9.0] Old Version: [1.8.3]
+[2024-04-21 21:36:03] INFO root fetch - processPackages [schem]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-21 21:36:03] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/cd/80/fcef2226405a0fb8e3a9a7fbda2b47a712f63d9294eac7e3fc336bbf5b0f/parea_ai-0.2.98.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/e3/75/b21faca04dae2c143d813b606e169f60d993d905e10e8ec9e4885476a763/kungfupanda-0.5.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [sqlton]: Downloading https://files.pythonhosted.org/packages/fc/d3/7b177393c9f048b3c8b6f7a2d4c4ba26b7206cff9474ba63a84c0e90ef5e/sqlton-0.1.8.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [zer1t0-aze]: Downloading https://files.pythonhosted.org/packages/16/d2/6de13922f421ea3e53b5f4b5bfeb313943cf2dc4496dd42b3e1fe192bd6c/zer1t0_aze-0.0.2.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [pjrpc]: Downloading https://files.pythonhosted.org/packages/0e/ad/d9fc00b6fb516fb8c8375466955388925a82005d39b2506d38900750f5c0/pjrpc-1.8.3.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/da/69/0832a915b6b75f98484a730feff4b2bc138b4717c97aab8ce24168747ce8/dune_rivals-0.5.9.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/42/66/1f4d8683198245612ee7a5e2a5765967f8071b00874015ec0001a1923ae1/schem-0.9.6.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/9d/1c/c389e28a1a12c54ff1c8111a2f00058e77ba07333943eb06d3592659a691/parea_ai-0.2.99.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.8.tar.gz tmp/dune_rivals-0.5.9.tar.gz --markdown 20240421/d/dune-rivals/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/12/b8/5257d01b842a36ccd7f5b8b327617e239461bdfa6a2755c99670a8292e63/kungfupanda-0.6.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240421/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [sqlton]: Downloading https://files.pythonhosted.org/packages/de/4e/05d6c84558e3a91b5be919d735a615105ff44d2abc2b0acd46cdc5c769cb/sqlton-0.1.9.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [zer1t0-aze]: Downloading https://files.pythonhosted.org/packages/d0/5b/f37f410c31454b94c0cfd4f376b5ef778c18ad31628eae9a37f3eaf3e2fc/zer1t0_aze-0.0.3.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [kungfupanda]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [kungfupanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kungfupanda-0.5.tar.gz tmp/kungfupanda-0.6.tar.gz --markdown 20240421/k/kungfupanda/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [sqlton]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [sqlton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlton-0.1.8.tar.gz tmp/sqlton-0.1.9.tar.gz --markdown 20240421/s/sqlton/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [pjrpc]: Downloading https://files.pythonhosted.org/packages/ec/36/eefa80150440aa730315bb5f23072383199085e45c7b6f98d8947e3059c7/pjrpc-1.9.0.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/f9/61/b544fd79215110646193a4202e32076a3acdc4c3eb43e51932fc774a93a5/schem-0.9.7.tar.gz
+[2024-04-21 21:36:03] INFO root fetch - processPackages [zer1t0-aze]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [zer1t0-aze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zer1t0_aze-0.0.2.tar.gz tmp/zer1t0_aze-0.0.3.tar.gz --markdown 20240421/z/zer1t0-aze/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [pjrpc]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [pjrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pjrpc-1.8.3.tar.gz tmp/pjrpc-1.9.0.tar.gz --markdown 20240421/p/pjrpc/1.8.3-1.9.0/README.md --exclude *.pyd
+[2024-04-21 21:36:03] INFO root fetch - processPackages [schem]: executing diffoscope
+[2024-04-21 21:36:03] INFO root fetch - processPackages [schem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schem-0.9.6.tar.gz tmp/schem-0.9.7.tar.gz --markdown 20240421/s/schem/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-21 21:36:04] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.8.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.9.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.5.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.6.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [sqlton]: Remove: archive file [/home/abi/fetcher/tmp/sqlton-0.1.8.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [kungfupanda]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [sqlton]: Remove: archive file [/home/abi/fetcher/tmp/sqlton-0.1.9.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [sqlton]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [zer1t0-aze]: Remove: archive file [/home/abi/fetcher/tmp/zer1t0_aze-0.0.2.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [zer1t0-aze]: Remove: archive file [/home/abi/fetcher/tmp/zer1t0_aze-0.0.3.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [zer1t0-aze]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [pjrpc]: Remove: archive file [/home/abi/fetcher/tmp/pjrpc-1.8.3.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [pjrpc]: Remove: archive file [/home/abi/fetcher/tmp/pjrpc-1.9.0.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [pjrpc]: success
+[2024-04-21 21:36:04] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.6.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.7.tar.gz]
+[2024-04-21 21:36:04] INFO root fetch - main [MainThread]: End processing [schem]: success
+[2024-04-21 21:36:05] INFO root fetch - processPackages [parea-ai]: executing diffoscope
+[2024-04-21 21:36:05] INFO root fetch - processPackages [parea-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parea_ai-0.2.98.tar.gz tmp/parea_ai-0.2.99.tar.gz --markdown 20240421/p/parea-ai/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-21 21:36:06] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.98.tar.gz]
+[2024-04-21 21:36:06] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.99.tar.gz]
+[2024-04-21 21:36:06] INFO root fetch - main [MainThread]: End processing [parea-ai]: success
+[2024-04-21 21:36:06] INFO root fetch - main [MainThread]: Store serial: [22868118]
