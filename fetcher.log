@@ -12135,3 +12135,42 @@
 [2024-04-21 16:43:55] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-0.6.0.tar.gz]
 [2024-04-21 16:43:55] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
 [2024-04-21 16:43:55] INFO root fetch - main [MainThread]: Store serial: [22865606]
+[2024-04-21 16:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865606]
+[2024-04-21 16:46:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clickbait-commit-messages
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdf-tools-sdk
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jal
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC496
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nepattern
+[2024-04-21 16:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: LogGuard
+[2024-04-21 16:46:03] INFO root fetch - processPackages [clickbait-commit-messages]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 16:46:03] WARNING root fetch - processPackages [LogGuard]: Skipping, unable to determine old version
+[2024-04-21 16:46:03] INFO root fetch - main [MainThread]: End processing [LogGuard] error
+[2024-04-21 16:46:03] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/e0/ff/7c2d276aab1a6b0660ac9934c8c32f3c7fb5057aa4aff3a165cc5791e189/clickbait_commit_messages-0.1.8.tar.gz
+[2024-04-21 16:46:03] WARNING root fetch - processPackages [pdf-tools-sdk]: Skipping, unable to determine old version
+[2024-04-21 16:46:03] INFO root fetch - processPackages [nepattern]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-21 16:46:03] INFO root fetch - main [MainThread]: End processing [pdf-tools-sdk] error
+[2024-04-21 16:46:03] INFO root fetch - processPackages [jal]: New version: [2024.4.2] Old Version: [2024.4.1]
+[2024-04-21 16:46:03] WARNING root fetch - processPackages [PythonTestLJC496]: Skipping, unable to determine old version
+[2024-04-21 16:46:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC496] error
+[2024-04-21 16:46:04] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/aa/b4/2bb971712cb8e8398adeeab0e9eab272be0a9f259e769c5bc8918d8566cd/nepattern-0.6.5.tar.gz
+[2024-04-21 16:46:04] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/dd/21/bfbb841f00a6da66b149ab55b324c8b52f4e2c460ed76afe2d23b1bf9a7d/jal-2024.4.1.tar.gz
+[2024-04-21 16:46:04] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/ba/0e/ab4e6a4fea4748d06d6732a606007adba79ccc4c26f9ee0b73896b7907a3/clickbait_commit_messages-0.1.9.tar.gz
+[2024-04-21 16:46:04] INFO root fetch - processPackages [clickbait-commit-messages]: executing diffoscope
+[2024-04-21 16:46:04] INFO root fetch - processPackages [clickbait-commit-messages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickbait_commit_messages-0.1.8.tar.gz tmp/clickbait_commit_messages-0.1.9.tar.gz --markdown 20240421/c/clickbait-commit-messages/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 16:46:04] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/f8/9f/66652ac6dbaf20a7271de9230f08f10436fc0f605688430e4d498d038292/jal-2024.4.2.tar.gz
+[2024-04-21 16:46:04] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/49/39/8a0fc7cf89168f3aa53202730b024f1d79c36384efafd1e6ccaef7ebc008/nepattern-0.7.0.tar.gz
+[2024-04-21 16:46:04] INFO root fetch - processPackages [jal]: executing diffoscope
+[2024-04-21 16:46:04] INFO root fetch - processPackages [jal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jal-2024.4.1.tar.gz tmp/jal-2024.4.2.tar.gz --markdown 20240421/j/jal/2024.4.1-2024.4.2/README.md --exclude *.pyd
+[2024-04-21 16:46:04] INFO root fetch - processPackages [nepattern]: executing diffoscope
+[2024-04-21 16:46:04] INFO root fetch - processPackages [nepattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nepattern-0.6.5.tar.gz tmp/nepattern-0.7.0.tar.gz --markdown 20240421/n/nepattern/0.6.5-0.7.0/README.md --exclude *.pyd
+[2024-04-21 16:46:04] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.8.tar.gz]
+[2024-04-21 16:46:04] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.9.tar.gz]
+[2024-04-21 16:46:04] INFO root fetch - main [MainThread]: End processing [clickbait-commit-messages]: success
+[2024-04-21 16:46:05] INFO root fetch - processPackages [nepattern]: Remove: archive file [/home/abi/fetcher/tmp/nepattern-0.6.5.tar.gz]
+[2024-04-21 16:46:05] INFO root fetch - processPackages [nepattern]: Remove: archive file [/home/abi/fetcher/tmp/nepattern-0.7.0.tar.gz]
+[2024-04-21 16:46:05] INFO root fetch - main [MainThread]: End processing [nepattern]: success
+[2024-04-21 16:46:05] INFO root fetch - processPackages [jal]: Remove: archive file [/home/abi/fetcher/tmp/jal-2024.4.1.tar.gz]
+[2024-04-21 16:46:05] INFO root fetch - processPackages [jal]: Remove: archive file [/home/abi/fetcher/tmp/jal-2024.4.2.tar.gz]
+[2024-04-21 16:46:05] INFO root fetch - main [MainThread]: End processing [jal]: success
+[2024-04-21 16:46:05] INFO root fetch - main [MainThread]: Store serial: [22865624]
