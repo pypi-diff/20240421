@@ -9289,3 +9289,24 @@
 [2024-04-21 13:57:37] INFO root fetch - processPackages [msscrawler]: Remove: archive file [/home/abi/fetcher/tmp/msscrawler-1.3.5.tar.gz]
 [2024-04-21 13:57:37] INFO root fetch - main [MainThread]: End processing [msscrawler]: success
 [2024-04-21 13:57:37] INFO root fetch - main [MainThread]: Store serial: [22864157]
+[2024-04-21 13:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864157]
+[2024-04-21 13:59:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NeutroWater
+[2024-04-21 13:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piraye
+[2024-04-21 13:59:45] INFO root fetch - processPackages [NeutroWater]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 13:59:45] INFO root fetch - processPackages [NeutroWater]: Downloading https://files.pythonhosted.org/packages/b4/e3/cb34e67f54f85b8c53e6364f18e312ceba26ac7f4c85acb047b420a93e87/neutrowater-0.0.1.tar.gz
+[2024-04-21 13:59:45] INFO root fetch - processPackages [piraye]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 13:59:45] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/93/56/99aa67b8fe3bfe33b9791f9ef81da23b56573e402002d7e28cfbe0e601ee/piraye-0.5.0.tar.gz
+[2024-04-21 13:59:45] INFO root fetch - processPackages [NeutroWater]: Downloading https://files.pythonhosted.org/packages/dc/dd/4d3fe04bc701141b4e03598e5f70c6c8d5a92849d736b48a703ac89972a7/neutrowater-0.0.2.tar.gz
+[2024-04-21 13:59:45] INFO root fetch - processPackages [NeutroWater]: executing diffoscope
+[2024-04-21 13:59:45] INFO root fetch - processPackages [NeutroWater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neutrowater-0.0.1.tar.gz tmp/neutrowater-0.0.2.tar.gz --markdown 20240421/N/NeutroWater/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/47/2a/12d6f6fc93dcf36276c36fa5589a90480612aa77d56f3982801cdee542e4/piraye-0.5.1.tar.gz
+[2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: executing diffoscope
+[2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piraye-0.5.0.tar.gz tmp/piraye-0.5.1.tar.gz --markdown 20240421/p/piraye/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 13:59:46] INFO root fetch - processPackages [NeutroWater]: Remove: archive file [/home/abi/fetcher/tmp/neutrowater-0.0.1.tar.gz]
+[2024-04-21 13:59:46] INFO root fetch - processPackages [NeutroWater]: Remove: archive file [/home/abi/fetcher/tmp/neutrowater-0.0.2.tar.gz]
+[2024-04-21 13:59:46] INFO root fetch - main [MainThread]: End processing [NeutroWater]: success
+[2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.5.0.tar.gz]
+[2024-04-21 13:59:46] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.5.1.tar.gz]
+[2024-04-21 13:59:46] INFO root fetch - main [MainThread]: End processing [piraye]: success
+[2024-04-21 13:59:46] INFO root fetch - main [MainThread]: Store serial: [22864163]
