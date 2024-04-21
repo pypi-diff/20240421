@@ -7471,3 +7471,45 @@
 [2024-04-21 11:32:24] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0rc1.tar.gz]
 [2024-04-21 11:32:24] INFO root fetch - main [MainThread]: End processing [pygameextra]: success
 [2024-04-21 11:32:24] INFO root fetch - main [MainThread]: Store serial: [22863411]
+[2024-04-21 11:34:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863411]
+[2024-04-21 11:34:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 11:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhgf
+[2024-04-21 11:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AstroScript
+[2024-04-21 11:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GirardProxy
+[2024-04-21 11:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: text-fabric
+[2024-04-21 11:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybts
+[2024-04-21 11:34:34] INFO root fetch - processPackages [AstroScript]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 11:34:34] WARNING root fetch - processPackages [GirardProxy]: Skipping, unable to determine old version
+[2024-04-21 11:34:34] INFO root fetch - main [MainThread]: End processing [GirardProxy] error
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pybts]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pyhgf]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 11:34:34] INFO root fetch - processPackages [text-fabric]: New version: [9.5.2] Old Version: [9.4.4]
+[2024-04-21 11:34:34] INFO root fetch - processPackages [AstroScript]: Downloading https://files.pythonhosted.org/packages/ba/de/2d66f1facedd3430b69308649e095d7c5a04bb60445cb8c88d2445bec906/AstroScript-1.0.1.tar.gz
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/a8/07/a075b125143ff20c37c03e5866d99d99fcd974e9bd2afb455520ea00ba99/pybts-1.7.1.tar.gz
+[2024-04-21 11:34:34] INFO root fetch - processPackages [text-fabric]: Downloading https://files.pythonhosted.org/packages/bb/80/b9db47ad2d39859a5c2276e27c56daae0db451a130db8305340dfe7dd7ee/text_fabric-9.4.4-py3-none-any.whl
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pyhgf]: Downloading https://files.pythonhosted.org/packages/af/fb/767ae25763e5ed074c0be580260cbc2af344a56cad9655e7ffdbc639dc06/pyhgf-0.0.8.tar.gz
+[2024-04-21 11:34:34] INFO root fetch - processPackages [AstroScript]: Downloading https://files.pythonhosted.org/packages/27/c4/aeb6f712ae5e917b18e325c5cbb20749315ddcc4072877ed9f1db9635d23/astroscript-1.0.2.tar.gz
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pyhgf]: Downloading https://files.pythonhosted.org/packages/83/e9/4a8af7a5494f5236cbbee43a28a1d1813143196ad9af38897c3d277fd76a/pyhgf-0.0.9.tar.gz
+[2024-04-21 11:34:34] INFO root fetch - processPackages [AstroScript]: executing diffoscope
+[2024-04-21 11:34:34] INFO root fetch - processPackages [AstroScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AstroScript-1.0.1.tar.gz tmp/astroscript-1.0.2.tar.gz --markdown 20240421/A/AstroScript/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pyhgf]: executing diffoscope
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pyhgf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhgf-0.0.8.tar.gz tmp/pyhgf-0.0.9.tar.gz --markdown 20240421/p/pyhgf/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 11:34:34] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/63/af/597d4489922c44d5ac322b3602abcae538567b444a491df0b896257d079c/pybts-1.8.0.tar.gz
+[2024-04-21 11:34:35] INFO root fetch - processPackages [text-fabric]: Downloading https://files.pythonhosted.org/packages/5a/68/601e800ea7b082fabb89c3c0c122fd9fa13b4da75c0bdfbafa945139092a/text_fabric-9.5.2-py3-none-any.whl
+[2024-04-21 11:34:35] INFO root fetch - processPackages [pybts]: executing diffoscope
+[2024-04-21 11:34:35] INFO root fetch - processPackages [pybts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybts-1.7.1.tar.gz tmp/pybts-1.8.0.tar.gz --markdown 20240421/p/pybts/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-04-21 11:34:35] INFO root fetch - processPackages [pyhgf]: Remove: archive file [/home/abi/fetcher/tmp/pyhgf-0.0.8.tar.gz]
+[2024-04-21 11:34:35] INFO root fetch - processPackages [pyhgf]: Remove: archive file [/home/abi/fetcher/tmp/pyhgf-0.0.9.tar.gz]
+[2024-04-21 11:34:35] INFO root fetch - main [MainThread]: End processing [pyhgf]: success
+[2024-04-21 11:34:35] INFO root fetch - processPackages [text-fabric]: executing diffoscope
+[2024-04-21 11:34:35] INFO root fetch - processPackages [text-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_fabric-9.4.4-py3-none-any.whl.zip tmp/text_fabric-9.5.2-py3-none-any.whl.zip --markdown 20240421/t/text-fabric/9.4.4-9.5.2/README.md --exclude *.pyd
+[2024-04-21 11:34:35] INFO root fetch - processPackages [AstroScript]: Remove: archive file [/home/abi/fetcher/tmp/AstroScript-1.0.1.tar.gz]
+[2024-04-21 11:34:35] INFO root fetch - processPackages [AstroScript]: Remove: archive file [/home/abi/fetcher/tmp/astroscript-1.0.2.tar.gz]
+[2024-04-21 11:34:35] INFO root fetch - main [MainThread]: End processing [AstroScript]: success
+[2024-04-21 11:34:36] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.7.1.tar.gz]
+[2024-04-21 11:34:36] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.0.tar.gz]
+[2024-04-21 11:34:36] INFO root fetch - main [MainThread]: End processing [pybts]: success
+[2024-04-21 11:34:36] INFO root fetch - processPackages [text-fabric]: Remove: archive file [/home/abi/fetcher/tmp/text_fabric-9.4.4-py3-none-any.whl.zip]
+[2024-04-21 11:34:36] INFO root fetch - processPackages [text-fabric]: Remove: archive file [/home/abi/fetcher/tmp/text_fabric-9.5.2-py3-none-any.whl.zip]
+[2024-04-21 11:34:36] INFO root fetch - main [MainThread]: End processing [text-fabric]: success
+[2024-04-21 11:34:36] INFO root fetch - main [MainThread]: Store serial: [22863428]
