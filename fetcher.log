@@ -5679,3 +5679,27 @@
 [2024-04-21 09:05:20] INFO root fetch - processPackages [osu.py]: Remove: archive file [/home/abi/fetcher/tmp/osu_py-2.0.0.tar.gz]
 [2024-04-21 09:05:20] INFO root fetch - main [MainThread]: End processing [osu.py]: success
 [2024-04-21 09:05:20] INFO root fetch - main [MainThread]: Store serial: [22862640]
+[2024-04-21 09:07:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862640]
+[2024-04-21 09:07:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 09:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scipplan
+[2024-04-21 09:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 09:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC393
+[2024-04-21 09:07:29] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.18a1713670785] Old Version: [0.0.18a1713567560]
+[2024-04-21 09:07:29] INFO root fetch - processPackages [scipplan]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2024-04-21 09:07:29] WARNING root fetch - processPackages [PythonTestLJC393]: Skipping, unable to determine old version
+[2024-04-21 09:07:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC393] error
+[2024-04-21 09:07:29] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/33/44/94911120c9ba21be8f4c16853b44a1afcab6634ce8aacac044e6a2432944/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz
+[2024-04-21 09:07:30] INFO root fetch - processPackages [scipplan]: Downloading https://files.pythonhosted.org/packages/9b/6d/920ffa6d0f064f9308f6cac41e8000a8924fdfa11cec60b7884f7de28770/scipplan-0.1.0a1.tar.gz
+[2024-04-21 09:07:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/1b/ee/f980a81c26badf9fae895a82249273846ba8c7249a28ff3cea7e29a5bae2/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz
+[2024-04-21 09:07:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 09:07:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.18a1713567560-0.0.18a1713670785/README.md --exclude *.pyd
+[2024-04-21 09:07:30] INFO root fetch - processPackages [scipplan]: Downloading https://files.pythonhosted.org/packages/6b/39/5b42786e26c89df68f5d50f0f730cd5e9c8054440d15dfdd4222360d15a9/scipplan-0.1.0a2-py2.py3-none-any.whl
+[2024-04-21 09:07:30] INFO root fetch - processPackages [scipplan]: executing diffoscope
+[2024-04-21 09:07:30] INFO root fetch - processPackages [scipplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipplan-0.1.0a1.tar.gz tmp/scipplan-0.1.0a2-py2.py3-none-any.whl.zip --markdown 20240421/s/scipplan/0.1.0a1-0.1.0a2/README.md --exclude *.pyd
+[2024-04-21 09:07:31] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567560.tar.gz]
+[2024-04-21 09:07:31] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz]
+[2024-04-21 09:07:31] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 09:07:31] INFO root fetch - processPackages [scipplan]: Remove: archive file [/home/abi/fetcher/tmp/scipplan-0.1.0a1.tar.gz]
+[2024-04-21 09:07:31] INFO root fetch - processPackages [scipplan]: Remove: archive file [/home/abi/fetcher/tmp/scipplan-0.1.0a2-py2.py3-none-any.whl.zip]
+[2024-04-21 09:07:31] INFO root fetch - main [MainThread]: End processing [scipplan]: success
+[2024-04-21 09:07:31] INFO root fetch - main [MainThread]: Store serial: [22862650]
