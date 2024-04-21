@@ -2306,3 +2306,36 @@
 [2024-04-21 03:25:23] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-04-21 03:25:23] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-04-21 03:25:23] INFO root fetch - main [MainThread]: Store serial: [22860997]
+[2024-04-21 03:27:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860997]
+[2024-04-21 03:27:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 03:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-alchemy-kit
+[2024-04-21 03:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC319
+[2024-04-21 03:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greyhorse-sqla
+[2024-04-21 03:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhdl-if
+[2024-04-21 03:27:31] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.1b0] Old Version: [0.9.12b0]
+[2024-04-21 03:27:31] INFO root fetch - processPackages [greyhorse-sqla]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-21 03:27:31] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.8769147235] Old Version: [0.0.1.8731571349]
+[2024-04-21 03:27:31] WARNING root fetch - processPackages [PythonTestLJC319]: Skipping, unable to determine old version
+[2024-04-21 03:27:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC319] error
+[2024-04-21 03:27:31] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/01/ed/cf3b57b1141db93e21b778e7ba03577166b084cd1f2f2bbd379f5ad48057/pg_alchemy_kit-0.9.12b0.tar.gz
+[2024-04-21 03:27:31] INFO root fetch - processPackages [greyhorse-sqla]: Downloading https://files.pythonhosted.org/packages/85/f9/6dfba71e058033028bddef8ce560201acc512ee599b060febe43f57734b2/greyhorse_sqla-0.3.1.tar.gz
+[2024-04-21 03:27:31] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/89/64/49e1af624c276be0c4032cf97ddacdf5dfba0f89e2cf1ebe7593b957c67a/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/15/77/9606182a8ca268d744c73ee5fe74a3c2311f9ee66380afa1f220c118f43f/pg_alchemy_kit-0.9.1b0.tar.gz
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.9.12b0.tar.gz tmp/pg_alchemy_kit-0.9.1b0.tar.gz --markdown 20240421/p/pg-alchemy-kit/0.9.12b0-0.9.1b0/README.md --exclude *.pyd
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/db/4d/920dd537575066ecab784b0f2d0a13b00352fcb893cbb62103e24cacb363/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 03:27:32] INFO root fetch - processPackages [greyhorse-sqla]: Downloading https://files.pythonhosted.org/packages/cc/f8/df3b36acde7d07c88da01a278d5b6a553ff2e50633963dccd6b9f37ae2fd/greyhorse_sqla-0.4.0.tar.gz
+[2024-04-21 03:27:32] INFO root fetch - processPackages [greyhorse-sqla]: executing diffoscope
+[2024-04-21 03:27:32] INFO root fetch - processPackages [greyhorse-sqla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greyhorse_sqla-0.3.1.tar.gz tmp/greyhorse_sqla-0.4.0.tar.gz --markdown 20240421/g/greyhorse-sqla/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240421/p/pyhdl-if/0.0.1.8731571349-0.0.1.8769147235/README.md --exclude *.pyd
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.12b0.tar.gz]
+[2024-04-21 03:27:32] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
+[2024-04-21 03:27:32] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-04-21 03:27:32] INFO root fetch - processPackages [greyhorse-sqla]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_sqla-0.3.1.tar.gz]
+[2024-04-21 03:27:32] INFO root fetch - processPackages [greyhorse-sqla]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_sqla-0.4.0.tar.gz]
+[2024-04-21 03:27:32] INFO root fetch - main [MainThread]: End processing [greyhorse-sqla]: success
+[2024-04-21 03:27:33] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8731571349-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 03:27:33] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 03:27:33] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-04-21 03:27:33] INFO root fetch - main [MainThread]: Store serial: [22861015]
