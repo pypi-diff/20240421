@@ -14052,3 +14052,39 @@
 [2024-04-21 18:32:26] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
 [2024-04-21 18:32:26] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
 [2024-04-21 18:32:26] INFO root fetch - main [MainThread]: Store serial: [22866497]
+[2024-04-21 18:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866497]
+[2024-04-21 18:34:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 18:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC535
+[2024-04-21 18:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swmmio
+[2024-04-21 18:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nlp-tir
+[2024-04-21 18:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-kwargs
+[2024-04-21 18:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: provisioner-installers-plugin
+[2024-04-21 18:34:35] INFO root fetch - processPackages [mo-kwargs]: New version: [7.594.24112] Old Version: [7.593.24112]
+[2024-04-21 18:34:35] INFO root fetch - processPackages [provisioner-installers-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 18:34:35] WARNING root fetch - processPackages [nlp-tir]: Skipping, unable to determine old version
+[2024-04-21 18:34:35] INFO root fetch - main [MainThread]: End processing [nlp-tir] error
+[2024-04-21 18:34:35] WARNING root fetch - processPackages [PythonTestLJC535]: Skipping, unable to determine old version
+[2024-04-21 18:34:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC535] error
+[2024-04-21 18:34:35] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/f2/08/df1368d24b54d342441414adc7df21c1bbfe69e284833543505543642b4c/mo_kwargs-7.593.24112.tar.gz
+[2024-04-21 18:34:35] INFO root fetch - processPackages [swmmio]: New version: [0.7.0] Old Version: [0.6.9]
+[2024-04-21 18:34:35] INFO root fetch - processPackages [provisioner-installers-plugin]: Downloading https://files.pythonhosted.org/packages/c2/43/bffcae23eb28051cc9b6e365cbf96dd21942076b9b97fd3badfb6c04a8da/provisioner_installers_plugin-0.1.1-py3-none-any.whl
+[2024-04-21 18:34:35] INFO root fetch - processPackages [swmmio]: Downloading https://files.pythonhosted.org/packages/aa/7e/765e4a51567bddd4010b4a7dc226a9b48362a91e74e86364f210f781270a/swmmio-0.6.9-py3-none-any.whl
+[2024-04-21 18:34:35] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/bf/3e/d134edde494611551ce07bb45c4fdbd2537bc1bcf0909c024e789e5b3a65/mo_kwargs-7.594.24112.tar.gz
+[2024-04-21 18:34:35] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-04-21 18:34:35] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.593.24112.tar.gz tmp/mo_kwargs-7.594.24112.tar.gz --markdown 20240421/m/mo-kwargs/7.593.24112-7.594.24112/README.md --exclude *.pyd
+[2024-04-21 18:34:35] INFO root fetch - processPackages [provisioner-installers-plugin]: Downloading https://files.pythonhosted.org/packages/c3/72/790ed46e9b4486a88a33d1892ccd7f26815fe704aedda43bc16b2da6f014/provisioner_installers_plugin-0.1.2-py3-none-any.whl
+[2024-04-21 18:34:35] INFO root fetch - processPackages [swmmio]: Downloading https://files.pythonhosted.org/packages/81/02/98b59042eb84826d6a35fd9247196606d03e280d31852bd1cd65ce4ea5e3/swmmio-0.7.0-py3-none-any.whl
+[2024-04-21 18:34:35] INFO root fetch - processPackages [provisioner-installers-plugin]: executing diffoscope
+[2024-04-21 18:34:35] INFO root fetch - processPackages [provisioner-installers-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_installers_plugin-0.1.1-py3-none-any.whl.zip tmp/provisioner_installers_plugin-0.1.2-py3-none-any.whl.zip --markdown 20240421/p/provisioner-installers-plugin/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 18:34:36] INFO root fetch - processPackages [swmmio]: executing diffoscope
+[2024-04-21 18:34:36] INFO root fetch - processPackages [swmmio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swmmio-0.6.9-py3-none-any.whl.zip tmp/swmmio-0.7.0-py3-none-any.whl.zip --markdown 20240421/s/swmmio/0.6.9-0.7.0/README.md --exclude *.pyd
+[2024-04-21 18:34:36] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.593.24112.tar.gz]
+[2024-04-21 18:34:36] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.594.24112.tar.gz]
+[2024-04-21 18:34:36] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-04-21 18:34:36] INFO root fetch - processPackages [provisioner-installers-plugin]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_installers_plugin-0.1.1-py3-none-any.whl.zip]
+[2024-04-21 18:34:36] INFO root fetch - processPackages [provisioner-installers-plugin]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_installers_plugin-0.1.2-py3-none-any.whl.zip]
+[2024-04-21 18:34:36] INFO root fetch - main [MainThread]: End processing [provisioner-installers-plugin]: success
+[2024-04-21 18:34:37] INFO root fetch - processPackages [swmmio]: Remove: archive file [/home/abi/fetcher/tmp/swmmio-0.6.9-py3-none-any.whl.zip]
+[2024-04-21 18:34:37] INFO root fetch - processPackages [swmmio]: Remove: archive file [/home/abi/fetcher/tmp/swmmio-0.7.0-py3-none-any.whl.zip]
+[2024-04-21 18:34:37] INFO root fetch - main [MainThread]: End processing [swmmio]: success
+[2024-04-21 18:34:37] INFO root fetch - main [MainThread]: Store serial: [22866517]
