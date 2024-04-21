@@ -6743,3 +6743,38 @@
 [2024-04-21 10:40:56] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.3.tar.gz]
 [2024-04-21 10:40:56] INFO root fetch - main [MainThread]: End processing [data-prep-lab-kfp]: success
 [2024-04-21 10:40:56] INFO root fetch - main [MainThread]: Store serial: [22863143]
+[2024-04-21 10:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863143]
+[2024-04-21 10:43:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TPE-Bot
+[2024-04-21 10:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuzu
+[2024-04-21 10:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datamana
+[2024-04-21 10:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simc-support
+[2024-04-21 10:43:06] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev41] Old Version: [0.3.3.dev40]
+[2024-04-21 10:43:06] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.4] Old Version: [6.8.3]
+[2024-04-21 10:43:06] INFO root fetch - processPackages [datamana]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 10:43:06] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2024-04-21 10:43:06] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/17/be/8f2b47f8f5c6a75c7aa56db8429d5c3d8a07d38b6bd361e22a8d0c8d59fc/kuzu-0.3.3.dev40.tar.gz
+[2024-04-21 10:43:06] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/23/e3/a9bac5d8a33630ba31844c4a2d37ce91fce5e4ae502e64e65510fe4dfbe9/TPE-Bot-6.8.3.tar.gz
+[2024-04-21 10:43:06] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/81/bf/b48b7381cc4415644ecf5429932bf936ede3539884fe3a631da662ede393/datamana-0.0.7.tar.gz
+[2024-04-21 10:43:06] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2024-04-21 10:43:06] WARNING root fetch - processPackages [kuzu]: Skipping package: exceeds size limit 15430868>=10485760
+[2024-04-21 10:43:06] INFO root fetch - main [MainThread]: End processing [kuzu] error
+[2024-04-21 10:43:06] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/7e/4f/1e08e5d074217d2d65408795c7b7bae40db1f469ceffbb943f4762b28466/datamana-0.0.8.tar.gz
+[2024-04-21 10:43:06] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/1f/15/05de0d546261c2100074fb0a5fa28ad30ae39eba06aeb6e6825f69b8d2a1/TPE-Bot-6.8.4.tar.gz
+[2024-04-21 10:43:06] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2024-04-21 10:43:07] INFO root fetch - processPackages [datamana]: executing diffoscope
+[2024-04-21 10:43:07] INFO root fetch - processPackages [datamana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamana-0.0.7.tar.gz tmp/datamana-0.0.8.tar.gz --markdown 20240421/d/datamana/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 10:43:07] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-21 10:43:07] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.3.tar.gz tmp/TPE-Bot-6.8.4.tar.gz --markdown 20240421/T/TPE-Bot/6.8.3-6.8.4/README.md --exclude *.pyd
+[2024-04-21 10:43:07] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2024-04-21 10:43:07] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20240421/s/simc-support/9.2.5.2-9.2.5.3/README.md --exclude *.pyd
+[2024-04-21 10:43:07] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.7.tar.gz]
+[2024-04-21 10:43:07] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.8.tar.gz]
+[2024-04-21 10:43:07] INFO root fetch - main [MainThread]: End processing [datamana]: success
+[2024-04-21 10:43:07] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.3.tar.gz]
+[2024-04-21 10:43:07] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.4.tar.gz]
+[2024-04-21 10:43:07] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-21 10:43:08] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.2.tar.gz]
+[2024-04-21 10:43:08] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
+[2024-04-21 10:43:08] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2024-04-21 10:43:08] INFO root fetch - main [MainThread]: Store serial: [22863181]
