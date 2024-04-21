@@ -5112,3 +5112,9 @@
 [2024-04-21 08:16:52] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240420.tar.gz]
 [2024-04-21 08:16:52] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
 [2024-04-21 08:16:52] INFO root fetch - main [MainThread]: Store serial: [22862368]
+[2024-04-21 08:19:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862368]
+[2024-04-21 08:19:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 08:19:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Remote-Sensing-Analysis
+[2024-04-21 08:19:08] WARNING root fetch - processPackages [Remote-Sensing-Analysis]: Skipping, unable to determine old version
+[2024-04-21 08:19:08] INFO root fetch - main [MainThread]: End processing [Remote-Sensing-Analysis] error
+[2024-04-21 08:19:08] INFO root fetch - main [MainThread]: Store serial: [22862372]
