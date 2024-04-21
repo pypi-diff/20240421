@@ -12801,3 +12801,54 @@
 [2024-04-21 17:18:11] INFO root fetch - processPackages [qat]: Remove: archive file [/home/abi/fetcher/tmp/qat-1.0.0.tar.gz]
 [2024-04-21 17:18:11] INFO root fetch - main [MainThread]: End processing [qat]: success
 [2024-04-21 17:18:11] INFO root fetch - main [MainThread]: Store serial: [22865942]
+[2024-04-21 17:20:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865942]
+[2024-04-21 17:20:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC508
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sae-vis
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioviper
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: backends
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pc-perf
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: factorial-testin
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rooms-shared-services
+[2024-04-21 17:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC509
+[2024-04-21 17:20:36] INFO root fetch - processPackages [backends]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-21 17:20:36] INFO root fetch - processPackages [sae-vis]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 17:20:36] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-21 17:20:36] WARNING root fetch - processPackages [pc-perf]: Skipping, unable to determine old version
+[2024-04-21 17:20:36] INFO root fetch - main [MainThread]: End processing [pc-perf] error
+[2024-04-21 17:20:36] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/3a/b7/7e4332d33fbc05a0608efb82c620385365072ffe712fccf17cbfc94e4241/backends-1.6.1.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [bioviper]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 17:20:36] WARNING root fetch - processPackages [PythonTestLJC508]: Skipping, unable to determine old version
+[2024-04-21 17:20:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC508] error
+[2024-04-21 17:20:36] WARNING root fetch - processPackages [factorial-testin]: Skipping, unable to determine old version
+[2024-04-21 17:20:36] INFO root fetch - main [MainThread]: End processing [factorial-testin] error
+[2024-04-21 17:20:36] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/41/60/b7fdf368aed9c8dd61c0db677bd692930cc6ea73b861fd2925fab6460c71/sae-vis-0.2.8.tar.gz
+[2024-04-21 17:20:36] WARNING root fetch - processPackages [PythonTestLJC509]: Skipping, unable to determine old version
+[2024-04-21 17:20:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC509] error
+[2024-04-21 17:20:36] INFO root fetch - processPackages [bioviper]: Downloading https://files.pythonhosted.org/packages/2e/11/088e56ee6937f9039ea50b88ebc1d7671ae93b40a880650a307c0b1f2f7d/bioviper-0.2.0.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/20/ea/496b60fb4117f73d129ccba4022dd54da5de32d31d3f8f89652a1741ec66/backends-1.6.2.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/7f/ab/3d421c7c8ad6574d57aec3c2ae9cf540fd37978ef92c9492e7a82839af9d/sae-vis-0.2.9.tar.gz
+[2024-04-21 17:20:36] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-21 17:20:36] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240421/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-21 17:20:36] INFO root fetch - processPackages [backends]: executing diffoscope
+[2024-04-21 17:20:36] INFO root fetch - processPackages [backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backends-1.6.1.tar.gz tmp/backends-1.6.2.tar.gz --markdown 20240421/b/backends/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-21 17:20:36] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-21 17:20:36] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.8.tar.gz tmp/sae-vis-0.2.9.tar.gz --markdown 20240421/s/sae-vis/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 17:20:36] INFO root fetch - processPackages [bioviper]: Downloading https://files.pythonhosted.org/packages/d3/33/c7f58c855b82c6cd8786f5b7cba243da883bdfd03610d41ac9ee80c3ca7d/bioviper-0.2.1.tar.gz
+[2024-04-21 17:20:37] INFO root fetch - processPackages [bioviper]: executing diffoscope
+[2024-04-21 17:20:37] INFO root fetch - processPackages [bioviper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioviper-0.2.0.tar.gz tmp/bioviper-0.2.1.tar.gz --markdown 20240421/b/bioviper/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 17:20:37] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-21 17:20:37] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.8.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.9.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-21 17:20:37] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.1.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.2.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - main [MainThread]: End processing [backends]: success
+[2024-04-21 17:20:37] INFO root fetch - processPackages [bioviper]: Remove: archive file [/home/abi/fetcher/tmp/bioviper-0.2.0.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - processPackages [bioviper]: Remove: archive file [/home/abi/fetcher/tmp/bioviper-0.2.1.tar.gz]
+[2024-04-21 17:20:37] INFO root fetch - main [MainThread]: End processing [bioviper]: success
+[2024-04-21 17:20:37] INFO root fetch - main [MainThread]: Store serial: [22865971]
