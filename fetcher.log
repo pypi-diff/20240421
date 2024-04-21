@@ -7036,3 +7036,42 @@
 [2024-04-21 11:01:17] INFO root fetch - processPackages [funix]: Remove: archive file [/home/abi/fetcher/tmp/funix-0.5.6.tar.gz]
 [2024-04-21 11:01:17] INFO root fetch - main [MainThread]: End processing [funix]: success
 [2024-04-21 11:01:17] INFO root fetch - main [MainThread]: Store serial: [22863261]
+[2024-04-21 11:03:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863261]
+[2024-04-21 11:03:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 11:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: serial_toolbox
+[2024-04-21 11:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TPE-Bot
+[2024-04-21 11:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyDNARepeatFinder
+[2024-04-21 11:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talos
+[2024-04-21 11:03:29] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.7] Old Version: [6.8.6]
+[2024-04-21 11:03:29] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/3a/14/6ec058d54fac8db60ea9f6d7810901078e0ea1729f58a1971b214dd6011b/TPE-Bot-6.8.6.tar.gz
+[2024-04-21 11:03:29] INFO root fetch - processPackages [PyDNARepeatFinder]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-04-21 11:03:29] INFO root fetch - processPackages [talos]: New version: [1.4] Old Version: [1.3]
+[2024-04-21 11:03:29] INFO root fetch - processPackages [serial_toolbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 11:03:29] INFO root fetch - processPackages [PyDNARepeatFinder]: Downloading https://files.pythonhosted.org/packages/c4/75/ddc3d8b575106d9b69cc03640b9c6d70470356b38f03d2a672b258508094/pydnarepeatfinder-0.1.0.tar.gz
+[2024-04-21 11:03:29] INFO root fetch - processPackages [talos]: Downloading https://files.pythonhosted.org/packages/4a/ef/88a52757058d4211e905756a7ac185848f554fe516d9e2ceeb475376c318/talos-1.3.tar.gz
+[2024-04-21 11:03:29] INFO root fetch - processPackages [serial_toolbox]: Downloading https://files.pythonhosted.org/packages/6d/cc/5cb35e0c271b3e9098616edafbb2148c8afa9a15d4eeeb1739617c2a147b/serial_toolbox-0.1.2.tar.gz
+[2024-04-21 11:03:30] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/a7/dd/de9da6ec6bdddc724aaf395f9254fab35135ee86d672ea606cf46a1909e7/TPE-Bot-6.8.7.tar.gz
+[2024-04-21 11:03:30] INFO root fetch - processPackages [PyDNARepeatFinder]: Downloading https://files.pythonhosted.org/packages/ba/35/b8061b7173860e2a089b2026b6bc779afbeb2d4acd61682f03b8922bcb0d/pydnarepeatfinder-0.2.1.tar.gz
+[2024-04-21 11:03:30] INFO root fetch - processPackages [talos]: Downloading https://files.pythonhosted.org/packages/85/b1/1183dd6fe3bf068ba21a7cacea1d5b2c72cd8be83cf0d8ab9a90ec2b2530/talos-1.4.tar.gz
+[2024-04-21 11:03:30] INFO root fetch - processPackages [serial_toolbox]: Downloading https://files.pythonhosted.org/packages/a7/63/b60b8b5b40afd74b21f7a3c495c42744bffde154213bccb4fce505dcea59/serial_toolbox-0.1.3.tar.gz
+[2024-04-21 11:03:30] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-21 11:03:30] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.6.tar.gz tmp/TPE-Bot-6.8.7.tar.gz --markdown 20240421/T/TPE-Bot/6.8.6-6.8.7/README.md --exclude *.pyd
+[2024-04-21 11:03:30] INFO root fetch - processPackages [PyDNARepeatFinder]: executing diffoscope
+[2024-04-21 11:03:30] INFO root fetch - processPackages [PyDNARepeatFinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydnarepeatfinder-0.1.0.tar.gz tmp/pydnarepeatfinder-0.2.1.tar.gz --markdown 20240421/P/PyDNARepeatFinder/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 11:03:30] INFO root fetch - processPackages [serial_toolbox]: executing diffoscope
+[2024-04-21 11:03:30] INFO root fetch - processPackages [serial_toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial_toolbox-0.1.2.tar.gz tmp/serial_toolbox-0.1.3.tar.gz --markdown 20240421/s/serial_toolbox/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 11:03:30] INFO root fetch - processPackages [talos]: executing diffoscope
+[2024-04-21 11:03:30] INFO root fetch - processPackages [talos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talos-1.3.tar.gz tmp/talos-1.4.tar.gz --markdown 20240421/t/talos/1.3-1.4/README.md --exclude *.pyd
+[2024-04-21 11:03:30] INFO root fetch - processPackages [PyDNARepeatFinder]: Remove: archive file [/home/abi/fetcher/tmp/pydnarepeatfinder-0.1.0.tar.gz]
+[2024-04-21 11:03:30] INFO root fetch - processPackages [PyDNARepeatFinder]: Remove: archive file [/home/abi/fetcher/tmp/pydnarepeatfinder-0.2.1.tar.gz]
+[2024-04-21 11:03:30] INFO root fetch - main [MainThread]: End processing [PyDNARepeatFinder]: success
+[2024-04-21 11:03:31] INFO root fetch - processPackages [serial_toolbox]: Remove: archive file [/home/abi/fetcher/tmp/serial_toolbox-0.1.2.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - processPackages [serial_toolbox]: Remove: archive file [/home/abi/fetcher/tmp/serial_toolbox-0.1.3.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - main [MainThread]: End processing [serial_toolbox]: success
+[2024-04-21 11:03:31] INFO root fetch - processPackages [talos]: Remove: archive file [/home/abi/fetcher/tmp/talos-1.3.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - processPackages [talos]: Remove: archive file [/home/abi/fetcher/tmp/talos-1.4.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - main [MainThread]: End processing [talos]: success
+[2024-04-21 11:03:31] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.6.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.7.tar.gz]
+[2024-04-21 11:03:31] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-21 11:03:31] INFO root fetch - main [MainThread]: Store serial: [22863272]
