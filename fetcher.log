@@ -5433,3 +5433,24 @@
 [2024-04-21 08:41:02] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.1.tar.gz]
 [2024-04-21 08:41:02] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-21 08:41:02] INFO root fetch - main [MainThread]: Store serial: [22862489]
+[2024-04-21 08:43:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862489]
+[2024-04-21 08:43:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symply
+[2024-04-21 08:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raptor-labsdk
+[2024-04-21 08:43:11] INFO root fetch - processPackages [symply]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 08:43:11] INFO root fetch - processPackages [raptor-labsdk]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-21 08:43:11] INFO root fetch - processPackages [raptor-labsdk]: Downloading https://files.pythonhosted.org/packages/08/17/e667197596bf6cf056b9d0c3845b81be80d511457970301a1178bd441c9f/raptor-labsdk-0.3.0.tar.gz
+[2024-04-21 08:43:11] INFO root fetch - processPackages [symply]: Downloading https://files.pythonhosted.org/packages/5b/f7/fe9306264a4bdbd7941562c9c9812c498209a78092dfcca1ca6a03cf00b2/symply-0.1.0.tar.gz
+[2024-04-21 08:43:12] INFO root fetch - processPackages [symply]: Downloading https://files.pythonhosted.org/packages/44/a0/c820e60661221ff493e70abdd5d14ea34a9db77db7cea6a3089418cbb307/symply-0.1.1.tar.gz
+[2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: Downloading https://files.pythonhosted.org/packages/6c/0c/3a4a127229ff0f33decf4ddef121f6270fea09416bdfd87f86d2dc7a83bc/raptor_labsdk-0.3.1.tar.gz
+[2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: executing diffoscope
+[2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raptor-labsdk-0.3.0.tar.gz tmp/raptor_labsdk-0.3.1.tar.gz --markdown 20240421/r/raptor-labsdk/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 08:43:12] INFO root fetch - processPackages [symply]: executing diffoscope
+[2024-04-21 08:43:12] INFO root fetch - processPackages [symply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symply-0.1.0.tar.gz tmp/symply-0.1.1.tar.gz --markdown 20240421/s/symply/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 08:43:12] INFO root fetch - processPackages [symply]: Remove: archive file [/home/abi/fetcher/tmp/symply-0.1.0.tar.gz]
+[2024-04-21 08:43:12] INFO root fetch - processPackages [symply]: Remove: archive file [/home/abi/fetcher/tmp/symply-0.1.1.tar.gz]
+[2024-04-21 08:43:12] INFO root fetch - main [MainThread]: End processing [symply]: success
+[2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: Remove: archive file [/home/abi/fetcher/tmp/raptor-labsdk-0.3.0.tar.gz]
+[2024-04-21 08:43:12] INFO root fetch - processPackages [raptor-labsdk]: Remove: archive file [/home/abi/fetcher/tmp/raptor_labsdk-0.3.1.tar.gz]
+[2024-04-21 08:43:12] INFO root fetch - main [MainThread]: End processing [raptor-labsdk]: success
+[2024-04-21 08:43:12] INFO root fetch - main [MainThread]: Store serial: [22862495]
