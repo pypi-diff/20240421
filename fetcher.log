@@ -10285,3 +10285,27 @@
 [2024-04-21 15:07:26] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b2.tar.gz]
 [2024-04-21 15:07:26] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
 [2024-04-21 15:07:26] INFO root fetch - main [MainThread]: Store serial: [22864793]
+[2024-04-21 15:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864793]
+[2024-04-21 15:09:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 15:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonagent
+[2024-04-21 15:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyper-sdk
+[2024-04-21 15:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cometx
+[2024-04-21 15:09:35] INFO root fetch - processPackages [cometx]: New version: [2.0.0] Old Version: [1.4.3]
+[2024-04-21 15:09:35] WARNING root fetch - processPackages [hyper-sdk]: Skipping, unable to determine old version
+[2024-04-21 15:09:35] INFO root fetch - main [MainThread]: End processing [hyper-sdk] error
+[2024-04-21 15:09:35] INFO root fetch - processPackages [sonagent]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 15:09:35] INFO root fetch - processPackages [sonagent]: Downloading https://files.pythonhosted.org/packages/40/42/39183b1ec8a43fa7af0d174fa4d7003c43b4dabe4cbcd29016ed9a75671c/sonagent-1.0.8.tar.gz
+[2024-04-21 15:09:35] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/08/45/2503ac55571a0dd2537082ce6835d0f0d879bf42ad27be1de3b60a2fce1c/cometx-1.4.3-py3-none-any.whl
+[2024-04-21 15:09:36] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/8f/97/7b81b142f11d30481caba88ea2fb923509c02ff226c89c44e5e919e3047c/cometx-2.0.0-py3-none-any.whl
+[2024-04-21 15:09:36] INFO root fetch - processPackages [sonagent]: Downloading https://files.pythonhosted.org/packages/c5/4c/d851cf03a258d697ed2006b358815e3e7e9bd9ed7c00c22e9c762e2108ea/sonagent-1.0.9.tar.gz
+[2024-04-21 15:09:36] INFO root fetch - processPackages [cometx]: executing diffoscope
+[2024-04-21 15:09:36] INFO root fetch - processPackages [cometx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cometx-1.4.3-py3-none-any.whl.zip tmp/cometx-2.0.0-py3-none-any.whl.zip --markdown 20240421/c/cometx/1.4.3-2.0.0/README.md --exclude *.pyd
+[2024-04-21 15:09:36] INFO root fetch - processPackages [sonagent]: executing diffoscope
+[2024-04-21 15:09:36] INFO root fetch - processPackages [sonagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonagent-1.0.8.tar.gz tmp/sonagent-1.0.9.tar.gz --markdown 20240421/s/sonagent/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 15:09:36] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-1.4.3-py3-none-any.whl.zip]
+[2024-04-21 15:09:36] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-2.0.0-py3-none-any.whl.zip]
+[2024-04-21 15:09:36] INFO root fetch - main [MainThread]: End processing [cometx]: success
+[2024-04-21 15:09:37] INFO root fetch - processPackages [sonagent]: Remove: archive file [/home/abi/fetcher/tmp/sonagent-1.0.8.tar.gz]
+[2024-04-21 15:09:37] INFO root fetch - processPackages [sonagent]: Remove: archive file [/home/abi/fetcher/tmp/sonagent-1.0.9.tar.gz]
+[2024-04-21 15:09:37] INFO root fetch - main [MainThread]: End processing [sonagent]: success
+[2024-04-21 15:09:37] INFO root fetch - main [MainThread]: Store serial: [22864803]
