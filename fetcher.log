@@ -6557,3 +6557,15 @@
 [2024-04-21 10:19:21] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.9.tar.gz]
 [2024-04-21 10:19:21] INFO root fetch - main [MainThread]: End processing [spelunker]: success
 [2024-04-21 10:19:21] INFO root fetch - main [MainThread]: Store serial: [22863069]
+[2024-04-21 10:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863069]
+[2024-04-21 10:21:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 10:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inmanta-module-files
+[2024-04-21 10:21:29] INFO root fetch - processPackages [inmanta-module-files]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 10:21:29] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/99/fe/45316aded86cda51d0eeae722737f14852a0778ec7ee0ff901ad53cea59f/inmanta_module_files-0.2.0-py3-none-any.whl
+[2024-04-21 10:21:30] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/fb/95/5ad0840ec8bc872d010ac5136db25d798fc6907d433c10bcfd3950b47058/inmanta_module_files-0.2.1-py3-none-any.whl
+[2024-04-21 10:21:30] INFO root fetch - processPackages [inmanta-module-files]: executing diffoscope
+[2024-04-21 10:21:30] INFO root fetch - processPackages [inmanta-module-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_files-0.2.0-py3-none-any.whl.zip tmp/inmanta_module_files-0.2.1-py3-none-any.whl.zip --markdown 20240421/i/inmanta-module-files/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 10:21:31] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.2.0-py3-none-any.whl.zip]
+[2024-04-21 10:21:31] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.2.1-py3-none-any.whl.zip]
+[2024-04-21 10:21:31] INFO root fetch - main [MainThread]: End processing [inmanta-module-files]: success
+[2024-04-21 10:21:31] INFO root fetch - main [MainThread]: Store serial: [22863071]
