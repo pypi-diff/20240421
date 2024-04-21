@@ -10926,3 +10926,75 @@
 [2024-04-21 15:44:32] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.4.1.tar.gz]
 [2024-04-21 15:44:32] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-21 15:44:32] INFO root fetch - main [MainThread]: Store serial: [22865060]
+[2024-04-21 15:46:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865060]
+[2024-04-21 15:46:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonagent
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: klon
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NeuralProcesses
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: connectortestpython
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synth-mapping-helper
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sfmanager
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moto
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bitmat-tl
+[2024-04-21 15:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC475
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sonagent]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 15:46:42] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sfmanager]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 15:46:42] WARNING root fetch - processPackages [connectortestpython]: Skipping, unable to determine old version
+[2024-04-21 15:46:42] INFO root fetch - main [MainThread]: End processing [connectortestpython] error
+[2024-04-21 15:46:42] INFO root fetch - processPackages [NeuralProcesses]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sonagent]: Downloading https://files.pythonhosted.org/packages/40/42/39183b1ec8a43fa7af0d174fa4d7003c43b4dabe4cbcd29016ed9a75671c/sonagent-1.0.8.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [bitmat-tl]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-21 15:46:42] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/44/97/4e6503f50a185e8a42b1826dfd1e6af4d7771fc581c599be5e8c9e26b7c5/sfmanager-0.1.4.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [klon]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-04-21 15:46:42] INFO root fetch - processPackages [synth-mapping-helper]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-21 15:46:42] WARNING root fetch - processPackages [PythonTestLJC475]: Skipping, unable to determine old version
+[2024-04-21 15:46:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC475] error
+[2024-04-21 15:46:42] INFO root fetch - processPackages [NeuralProcesses]: Downloading https://files.pythonhosted.org/packages/c2/db/c3ed68b970a6c1739c1db66df47a54a2d439d70859561ad38c1bb4ee3cdb/neuralprocesses-0.2.4.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [klon]: Downloading https://files.pythonhosted.org/packages/f9/da/8a5c3534996dafa5482470be778269a61659c99f3d8a1ec39325a8640cab/klon-2.2.0.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/f6/c0/5892a84c61c6788a7c5e29ba2546c2ad52f88f252d5c409bf56e02356598/synth_mapping_helper-1.4.0.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [bitmat-tl]: Downloading https://files.pythonhosted.org/packages/4c/fe/069dda4e0f0a81a37be27e4d2bbe6cf0c19ac51d78b368cfd9877b8eb88a/bitmat_tl-0.3.6.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sonagent]: Downloading https://files.pythonhosted.org/packages/c5/4c/d851cf03a258d697ed2006b358815e3e7e9bd9ed7c00c22e9c762e2108ea/sonagent-1.0.9.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/9c/61/48951c6eefe0829b42dfde463eab1554b4c74083d78c844735bb377acd20/sfmanager-0.1.5.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sonagent]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sonagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonagent-1.0.8.tar.gz tmp/sonagent-1.0.9.tar.gz --markdown 20240421/s/sonagent/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.4.tar.gz tmp/sfmanager-0.1.5.tar.gz --markdown 20240421/s/sfmanager/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 15:46:42] INFO root fetch - processPackages [NeuralProcesses]: Downloading https://files.pythonhosted.org/packages/ea/1b/6601721ad351346aed5a7a13e1178f8c65c855a45289d674cd18062b3e5e/neuralprocesses-0.2.5.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/dc/3b/81589015ccaefa6bdb586f85bae651c735e3f4a0a4e3f5aa86389ae248b4/synth_mapping_helper-1.4.1.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [klon]: Downloading https://files.pythonhosted.org/packages/7d/96/001111e9dfdc87a3755f2e160c6687843f244899dde6ad56c719a075f210/klon-2.3.0.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [bitmat-tl]: Downloading https://files.pythonhosted.org/packages/26/0c/7cebf1cd2a37df461fdd5ca0d5730fb5d01c2a7935ecce02522eb9a192df/bitmat_tl-0.3.7.tar.gz
+[2024-04-21 15:46:42] INFO root fetch - processPackages [NeuralProcesses]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [NeuralProcesses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralprocesses-0.2.4.tar.gz tmp/neuralprocesses-0.2.5.tar.gz --markdown 20240421/N/NeuralProcesses/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-21 15:46:42] INFO root fetch - processPackages [synth-mapping-helper]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [synth-mapping-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synth_mapping_helper-1.4.0.tar.gz tmp/synth_mapping_helper-1.4.1.tar.gz --markdown 20240421/s/synth-mapping-helper/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-21 15:46:42] INFO root fetch - processPackages [klon]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [klon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klon-2.2.0.tar.gz tmp/klon-2.3.0.tar.gz --markdown 20240421/k/klon/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-04-21 15:46:42] INFO root fetch - processPackages [bitmat-tl]: executing diffoscope
+[2024-04-21 15:46:42] INFO root fetch - processPackages [bitmat-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitmat_tl-0.3.6.tar.gz tmp/bitmat_tl-0.3.7.tar.gz --markdown 20240421/b/bitmat-tl/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-21 15:46:43] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-21 15:46:43] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240421/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-21 15:46:43] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.4.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.5.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-21 15:46:43] INFO root fetch - processPackages [sonagent]: Remove: archive file [/home/abi/fetcher/tmp/sonagent-1.0.8.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [sonagent]: Remove: archive file [/home/abi/fetcher/tmp/sonagent-1.0.9.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [sonagent]: success
+[2024-04-21 15:46:43] INFO root fetch - processPackages [klon]: Remove: archive file [/home/abi/fetcher/tmp/klon-2.2.0.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [klon]: Remove: archive file [/home/abi/fetcher/tmp/klon-2.3.0.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [klon]: success
+[2024-04-21 15:46:43] INFO root fetch - processPackages [synth-mapping-helper]: Remove: archive file [/home/abi/fetcher/tmp/synth_mapping_helper-1.4.0.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [synth-mapping-helper]: Remove: archive file [/home/abi/fetcher/tmp/synth_mapping_helper-1.4.1.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [synth-mapping-helper]: success
+[2024-04-21 15:46:43] INFO root fetch - processPackages [NeuralProcesses]: Remove: archive file [/home/abi/fetcher/tmp/neuralprocesses-0.2.4.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [NeuralProcesses]: Remove: archive file [/home/abi/fetcher/tmp/neuralprocesses-0.2.5.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [NeuralProcesses]: success
+[2024-04-21 15:46:43] INFO root fetch - processPackages [bitmat-tl]: Remove: archive file [/home/abi/fetcher/tmp/bitmat_tl-0.3.6.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - processPackages [bitmat-tl]: Remove: archive file [/home/abi/fetcher/tmp/bitmat_tl-0.3.7.tar.gz]
+[2024-04-21 15:46:43] INFO root fetch - main [MainThread]: End processing [bitmat-tl]: success
+[2024-04-21 15:46:54] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-21 15:46:54] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-21 15:46:54] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-21 15:46:54] INFO root fetch - main [MainThread]: Store serial: [22865092]
