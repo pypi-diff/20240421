@@ -10087,3 +10087,18 @@
 [2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: Remove: archive file [/home/abi/fetcher/tmp/sedrila-1.0.0.tar.gz]
 [2024-04-21 14:47:46] INFO root fetch - main [MainThread]: End processing [sedrila]: success
 [2024-04-21 14:47:46] INFO root fetch - main [MainThread]: Store serial: [22864600]
+[2024-04-21 14:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864600]
+[2024-04-21 14:49:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 14:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC454
+[2024-04-21 14:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sampa
+[2024-04-21 14:49:55] WARNING root fetch - processPackages [PythonTestLJC454]: Skipping, unable to determine old version
+[2024-04-21 14:49:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC454] error
+[2024-04-21 14:49:55] INFO root fetch - processPackages [sampa]: New version: [1.0.0.43] Old Version: [1.0.0.42]
+[2024-04-21 14:49:56] INFO root fetch - processPackages [sampa]: Downloading https://files.pythonhosted.org/packages/e7/32/9fc0610004a7d2baeb54ea8b59856dae7c1b0c67b1400da417c49968c932/sampa-1.0.0.42.tar.gz
+[2024-04-21 14:49:56] INFO root fetch - processPackages [sampa]: Downloading https://files.pythonhosted.org/packages/84/01/6d92267ade7152ae46b719686fa3f522a959b997055684c0f6a89e75373e/sampa-1.0.0.43.tar.gz
+[2024-04-21 14:49:56] INFO root fetch - processPackages [sampa]: executing diffoscope
+[2024-04-21 14:49:56] INFO root fetch - processPackages [sampa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampa-1.0.0.42.tar.gz tmp/sampa-1.0.0.43.tar.gz --markdown 20240421/s/sampa/1.0.0.42-1.0.0.43/README.md --exclude *.pyd
+[2024-04-21 14:49:57] INFO root fetch - processPackages [sampa]: Remove: archive file [/home/abi/fetcher/tmp/sampa-1.0.0.42.tar.gz]
+[2024-04-21 14:49:57] INFO root fetch - processPackages [sampa]: Remove: archive file [/home/abi/fetcher/tmp/sampa-1.0.0.43.tar.gz]
+[2024-04-21 14:49:57] INFO root fetch - main [MainThread]: End processing [sampa]: success
+[2024-04-21 14:49:57] INFO root fetch - main [MainThread]: Store serial: [22864607]
