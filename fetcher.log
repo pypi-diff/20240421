@@ -8644,3 +8644,15 @@
 [2024-04-21 13:04:35] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
 [2024-04-21 13:04:35] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
 [2024-04-21 13:04:35] INFO root fetch - main [MainThread]: Store serial: [22863856]
+[2024-04-21 13:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863856]
+[2024-04-21 13:06:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ossStudy
+[2024-04-21 13:06:43] INFO root fetch - processPackages [ossStudy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/77/4e/c54862164fe30f54d1e154504712a8ac5444b2046347c1bde2ee274c733e/ossStudy-0.0.4-py3-none-any.whl
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/05/1a/164a3c1c3b48746abeaca103d0aa766e82f47e8b715a8bf3be40923889b0/ossStudy-0.0.5-py3-none-any.whl
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: executing diffoscope
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossStudy-0.0.4-py3-none-any.whl.zip tmp/ossStudy-0.0.5-py3-none-any.whl.zip --markdown 20240421/o/ossStudy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.4-py3-none-any.whl.zip]
+[2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 13:06:44] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
+[2024-04-21 13:06:44] INFO root fetch - main [MainThread]: Store serial: [22863858]
