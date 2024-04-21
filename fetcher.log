@@ -3239,3 +3239,9 @@
 [2024-04-21 04:59:10] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.2.tar.gz]
 [2024-04-21 04:59:10] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-04-21 04:59:10] INFO root fetch - main [MainThread]: Store serial: [22861510]
+[2024-04-21 05:01:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861510]
+[2024-04-21 05:01:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 05:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC346
+[2024-04-21 05:01:18] WARNING root fetch - processPackages [PythonTestLJC346]: Skipping, unable to determine old version
+[2024-04-21 05:01:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC346] error
+[2024-04-21 05:01:18] INFO root fetch - main [MainThread]: Store serial: [22861516]
