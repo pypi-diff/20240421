@@ -6646,3 +6646,41 @@
 [2024-04-21 10:28:01] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-1.0-py3-none-any.whl.zip]
 [2024-04-21 10:28:01] INFO root fetch - main [MainThread]: End processing [sharepoint-utils]: success
 [2024-04-21 10:28:01] INFO root fetch - main [MainThread]: Store serial: [22863099]
+[2024-04-21 10:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863099]
+[2024-04-21 10:30:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visualize-queue
+[2024-04-21 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-21 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: intel-extension-for-transformers
+[2024-04-21 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BJSCP
+[2024-04-21 10:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stackNqueue
+[2024-04-21 10:30:10] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-21 10:30:10] WARNING root fetch - processPackages [stackNqueue]: Skipping, unable to determine old version
+[2024-04-21 10:30:10] INFO root fetch - main [MainThread]: End processing [stackNqueue] error
+[2024-04-21 10:30:10] INFO root fetch - processPackages [visualize-queue]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2024-04-21 10:30:10] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-21 10:30:10] INFO root fetch - processPackages [BJSCP]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 10:30:10] INFO root fetch - processPackages [intel-extension-for-transformers]: New version: [1.4.1] Old Version: [1.4]
+[2024-04-21 10:30:10] INFO root fetch - processPackages [visualize-queue]: Downloading https://files.pythonhosted.org/packages/b0/87/f18d22ccdcba20fad8618911c0962f9b8a58b2ba50c012265ab3a8b25c7d/visualize_queue-0.0.1-py3-none-any.whl
+[2024-04-21 10:30:10] INFO root fetch - processPackages [BJSCP]: Downloading https://files.pythonhosted.org/packages/13/52/cff69ae2f974a8db271106f86f27e1faca3cec7aace6dd5325007c6a51ff/BJSCP-0.0.2-py3-none-any.whl
+[2024-04-21 10:30:10] INFO root fetch - processPackages [intel-extension-for-transformers]: Downloading https://files.pythonhosted.org/packages/da/5b/90bef741b7c3c85285b5ed40b22d61a26358fa09b69efb07cad3e983c4d3/intel-extension-for-transformers-1.4.tar.gz
+[2024-04-21 10:30:10] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-21 10:30:10] WARNING root fetch - processPackages [intel-extension-for-transformers]: Skipping package: exceeds size limit 105970199>=10485760
+[2024-04-21 10:30:10] INFO root fetch - main [MainThread]: End processing [intel-extension-for-transformers] error
+[2024-04-21 10:30:10] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-21 10:30:10] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240421/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-21 10:30:10] INFO root fetch - processPackages [visualize-queue]: Downloading https://files.pythonhosted.org/packages/62/a3/283259eacddf9e0bdc0ccb406ccc6d20012f3f16be1bb103b04a5a1654c2/visualize_queue-0.0.1.1-py3-none-any.whl
+[2024-04-21 10:30:10] INFO root fetch - processPackages [BJSCP]: Downloading https://files.pythonhosted.org/packages/01/7d/b9f143a931b27118b8afc365cf5236fcce2bbead22da171752dc3a28f6b2/BJSCP-0.0.3-py3-none-any.whl
+[2024-04-21 10:30:10] INFO root fetch - processPackages [visualize-queue]: executing diffoscope
+[2024-04-21 10:30:10] INFO root fetch - processPackages [visualize-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualize_queue-0.0.1-py3-none-any.whl.zip tmp/visualize_queue-0.0.1.1-py3-none-any.whl.zip --markdown 20240421/v/visualize-queue/0.0.1-0.0.1.1/README.md --exclude *.pyd
+[2024-04-21 10:30:11] INFO root fetch - processPackages [BJSCP]: executing diffoscope
+[2024-04-21 10:30:11] INFO root fetch - processPackages [BJSCP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BJSCP-0.0.2-py3-none-any.whl.zip tmp/BJSCP-0.0.3-py3-none-any.whl.zip --markdown 20240421/B/BJSCP/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 10:30:11] INFO root fetch - processPackages [visualize-queue]: Remove: archive file [/home/abi/fetcher/tmp/visualize_queue-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 10:30:11] INFO root fetch - processPackages [visualize-queue]: Remove: archive file [/home/abi/fetcher/tmp/visualize_queue-0.0.1.1-py3-none-any.whl.zip]
+[2024-04-21 10:30:11] INFO root fetch - main [MainThread]: End processing [visualize-queue]: success
+[2024-04-21 10:30:11] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-21 10:30:11] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-21 10:30:11] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-21 10:30:11] INFO root fetch - processPackages [BJSCP]: Remove: archive file [/home/abi/fetcher/tmp/BJSCP-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 10:30:11] INFO root fetch - processPackages [BJSCP]: Remove: archive file [/home/abi/fetcher/tmp/BJSCP-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 10:30:11] INFO root fetch - main [MainThread]: End processing [BJSCP]: success
+[2024-04-21 10:30:11] INFO root fetch - main [MainThread]: Store serial: [22863118]
