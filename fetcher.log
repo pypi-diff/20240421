@@ -10429,3 +10429,54 @@
 [2024-04-21 15:18:18] INFO root fetch - processPackages [qutip-qip]: Remove: archive file [/home/abi/fetcher/tmp/qutip-qip-0.3.0.tar.gz]
 [2024-04-21 15:18:18] INFO root fetch - main [MainThread]: End processing [qutip-qip]: success
 [2024-04-21 15:18:18] INFO root fetch - main [MainThread]: Store serial: [22864851]
+[2024-04-21 15:20:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864851]
+[2024-04-21 15:20:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlx-orm
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Xdcheckin
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-connector-test
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: renardo
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: renardo-lib
+[2024-04-21 15:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FoxDotEditor
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo-lib]: New version: [0.9.dev9] Old Version: [0.9.9]
+[2024-04-21 15:20:27] INFO root fetch - processPackages [FoxDotEditor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 15:20:27] INFO root fetch - processPackages [sqlx-orm]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/fb/49/617bba266be61b48df4660d09ae00679c712d277c60e48046d33be54c138/renardo-0.9.8.tar.gz
+[2024-04-21 15:20:27] WARNING root fetch - processPackages [python-connector-test]: Skipping, unable to determine old version
+[2024-04-21 15:20:27] INFO root fetch - main [MainThread]: End processing [python-connector-test] error
+[2024-04-21 15:20:27] INFO root fetch - processPackages [Xdcheckin]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-21 15:20:27] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/8f/ed/6f4f42bab25dd239482fa57ab5bdf863e679762950ac55b63f832dbc43e9/FoxDotEditor-0.9.8.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/e4/5a/07a1f6f3ea9c38f61d36fd05bf9b70411c6b40887e5171585a2e941112bc/renardo_lib-0.9.9.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [sqlx-orm]: Downloading https://files.pythonhosted.org/packages/d5/be/23726251bc86a97a73d7f7c817e6abab6df01de38d0b62de0b84fdb93e85/sqlx-orm-0.0.3.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/22/0d/48bc5e116ba3d1e02ce0799c4c3b8606aede66ad504ed7d18edc45052f48/xdcheckin-2.0.7.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.8.tar.gz tmp/renardo-0.9.9.tar.gz --markdown 20240421/r/renardo/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 15:20:27] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-21 15:20:27] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FoxDotEditor-0.9.8.tar.gz tmp/foxdoteditor-0.9.9.tar.gz --markdown 20240421/F/FoxDotEditor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-21 15:20:27] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.9.tar.gz tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip --markdown 20240421/r/renardo-lib/0.9.9-0.9.dev9/README.md --exclude *.pyd
+[2024-04-21 15:20:27] INFO root fetch - processPackages [sqlx-orm]: Downloading https://files.pythonhosted.org/packages/27/65/84f16f6405d5f6e685328e861bed353eebb5ec030a73ef3731488e507c95/sqlx-orm-0.0.5.tar.gz
+[2024-04-21 15:20:27] INFO root fetch - processPackages [sqlx-orm]: executing diffoscope
+[2024-04-21 15:20:27] INFO root fetch - processPackages [sqlx-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlx-orm-0.0.3.tar.gz tmp/sqlx-orm-0.0.5.tar.gz --markdown 20240421/s/sqlx-orm/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-21 15:20:28] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/e9/31/aaa9fbdae70fd69f0d831d29e9e5079298abb34ef7c566b7d523b220a0cf/xdcheckin-2.0.8.tar.gz
+[2024-04-21 15:20:28] INFO root fetch - processPackages [Xdcheckin]: executing diffoscope
+[2024-04-21 15:20:28] INFO root fetch - processPackages [Xdcheckin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdcheckin-2.0.7.tar.gz tmp/xdcheckin-2.0.8.tar.gz --markdown 20240421/X/Xdcheckin/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-04-21 15:20:28] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.8.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-21 15:20:28] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/FoxDotEditor-0.9.8.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-21 15:20:28] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.9.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-21 15:20:28] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-21 15:20:28] INFO root fetch - processPackages [sqlx-orm]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-orm-0.0.3.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - processPackages [sqlx-orm]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-orm-0.0.5.tar.gz]
+[2024-04-21 15:20:28] INFO root fetch - main [MainThread]: End processing [sqlx-orm]: success
+[2024-04-21 15:20:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.7.tar.gz]
+[2024-04-21 15:20:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.8.tar.gz]
+[2024-04-21 15:20:29] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
+[2024-04-21 15:20:29] INFO root fetch - main [MainThread]: Store serial: [22864873]
