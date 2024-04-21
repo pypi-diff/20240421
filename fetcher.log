@@ -12045,3 +12045,69 @@
 [2024-04-21 16:39:34] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.9.5.tar.gz]
 [2024-04-21 16:39:34] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
 [2024-04-21 16:39:34] INFO root fetch - main [MainThread]: Store serial: [22865568]
+[2024-04-21 16:41:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865568]
+[2024-04-21 16:41:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profiles-local
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TextAnalyzerPy
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bertopic
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: min1129
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: batcharray
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: telegram-wallet-pay
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rconnet
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: clickbait-commit-messages
+[2024-04-21 16:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC491
+[2024-04-21 16:41:43] INFO root fetch - processPackages [profiles-local]: New version: [0.0.70] Old Version: [0.0.69]
+[2024-04-21 16:41:43] INFO root fetch - processPackages [batcharray]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2024-04-21 16:41:43] INFO root fetch - processPackages [clickbait-commit-messages]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 16:41:43] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/6e/e7/544a4748e420db612c5e4a402febcb4b9eda25b95b2220fa07c7858e3839/profiles_local-0.0.69.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [telegram-wallet-pay]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-21 16:41:43] INFO root fetch - processPackages [bertopic]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-21 16:41:43] INFO root fetch - processPackages [batcharray]: Downloading https://files.pythonhosted.org/packages/47/ec/42094f3091c598e046fe51ad368b20b98140810a55b7a1893a9c6cbf66d3/batcharray-0.0.1.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/e0/ff/7c2d276aab1a6b0660ac9934c8c32f3c7fb5057aa4aff3a165cc5791e189/clickbait_commit_messages-0.1.8.tar.gz
+[2024-04-21 16:41:43] WARNING root fetch - processPackages [TextAnalyzerPy]: Skipping, unable to determine old version
+[2024-04-21 16:41:43] INFO root fetch - main [MainThread]: End processing [TextAnalyzerPy] error
+[2024-04-21 16:41:43] WARNING root fetch - processPackages [min1129]: Skipping, unable to determine old version
+[2024-04-21 16:41:43] INFO root fetch - main [MainThread]: End processing [min1129] error
+[2024-04-21 16:41:43] INFO root fetch - processPackages [rconnet]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 16:41:43] WARNING root fetch - processPackages [PythonTestLJC491]: Skipping, unable to determine old version
+[2024-04-21 16:41:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC491] error
+[2024-04-21 16:41:43] INFO root fetch - processPackages [telegram-wallet-pay]: Downloading https://files.pythonhosted.org/packages/2f/44/640fc887b81919ba66c60dceff18786eb590739cb9ebb73d3c544d8fad3a/telegram_wallet_pay-0.3.1.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [bertopic]: Downloading https://files.pythonhosted.org/packages/38/33/d2e53c116a1e7ec74a22ddfc9da03648b6f5b755c55ba5db0079424cce95/bertopic-0.9.3.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [rconnet]: Downloading https://files.pythonhosted.org/packages/c2/a2/ecaeba4f766b4b246ad5a0ba6b0e2b454ccb3321391a31f6991d57f5de8d/rconnet-0.0.1.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [clickbait-commit-messages]: Downloading https://files.pythonhosted.org/packages/ba/0e/ab4e6a4fea4748d06d6732a606007adba79ccc4c26f9ee0b73896b7907a3/clickbait_commit_messages-0.1.9.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [batcharray]: Downloading https://files.pythonhosted.org/packages/fc/d2/24313b60cbb310c2ff8c3801cc5891b63231f590c60d8fc6effd2f81518b/batcharray-0.0.1a0.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/db/3a/d49cabb3edc384071672c17a1857a0c5f6e3456fc2f4442cde5c0c5f1d3c/profiles_local-0.0.70.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [clickbait-commit-messages]: executing diffoscope
+[2024-04-21 16:41:43] INFO root fetch - processPackages [clickbait-commit-messages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickbait_commit_messages-0.1.8.tar.gz tmp/clickbait_commit_messages-0.1.9.tar.gz --markdown 20240421/c/clickbait-commit-messages/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 16:41:43] INFO root fetch - processPackages [batcharray]: executing diffoscope
+[2024-04-21 16:41:43] INFO root fetch - processPackages [batcharray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batcharray-0.0.1.tar.gz tmp/batcharray-0.0.1a0.tar.gz --markdown 20240421/b/batcharray/0.0.1-0.0.1a0/README.md --exclude *.pyd
+[2024-04-21 16:41:43] INFO root fetch - processPackages [profiles-local]: executing diffoscope
+[2024-04-21 16:41:43] INFO root fetch - processPackages [profiles-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiles_local-0.0.69.tar.gz tmp/profiles_local-0.0.70.tar.gz --markdown 20240421/p/profiles-local/0.0.69-0.0.70/README.md --exclude *.pyd
+[2024-04-21 16:41:43] INFO root fetch - processPackages [rconnet]: Downloading https://files.pythonhosted.org/packages/b0/83/b85496e0072efcb14c8f9ef18b9f93e215f45ae8aa6daa9a292313f55199/rconnet-0.0.2.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [telegram-wallet-pay]: Downloading https://files.pythonhosted.org/packages/d6/90/6ef67001bfd987c72f977eea29e8db7223e32a1a6d4a603050062196c092/telegram_wallet_pay-0.3.2.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [rconnet]: executing diffoscope
+[2024-04-21 16:41:43] INFO root fetch - processPackages [rconnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rconnet-0.0.1.tar.gz tmp/rconnet-0.0.2.tar.gz --markdown 20240421/r/rconnet/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 16:41:43] INFO root fetch - processPackages [bertopic]: Downloading https://files.pythonhosted.org/packages/fc/5e/ad4add5089b1fa85c3c1ad2db2cd665b23a0c765cc72529cde366f3840da/bertopic-0.9.4.tar.gz
+[2024-04-21 16:41:43] INFO root fetch - processPackages [telegram-wallet-pay]: executing diffoscope
+[2024-04-21 16:41:43] INFO root fetch - processPackages [telegram-wallet-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_wallet_pay-0.3.1.tar.gz tmp/telegram_wallet_pay-0.3.2.tar.gz --markdown 20240421/t/telegram-wallet-pay/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-21 16:41:44] INFO root fetch - processPackages [bertopic]: executing diffoscope
+[2024-04-21 16:41:44] INFO root fetch - processPackages [bertopic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bertopic-0.9.3.tar.gz tmp/bertopic-0.9.4.tar.gz --markdown 20240421/b/bertopic/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-21 16:41:44] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.69.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.70.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [profiles-local]: success
+[2024-04-21 16:41:44] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.8.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [clickbait-commit-messages]: Remove: archive file [/home/abi/fetcher/tmp/clickbait_commit_messages-0.1.9.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [clickbait-commit-messages]: success
+[2024-04-21 16:41:44] INFO root fetch - processPackages [batcharray]: Remove: archive file [/home/abi/fetcher/tmp/batcharray-0.0.1.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [batcharray]: Remove: archive file [/home/abi/fetcher/tmp/batcharray-0.0.1a0.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [batcharray]: success
+[2024-04-21 16:41:44] INFO root fetch - processPackages [rconnet]: Remove: archive file [/home/abi/fetcher/tmp/rconnet-0.0.1.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [rconnet]: Remove: archive file [/home/abi/fetcher/tmp/rconnet-0.0.2.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [rconnet]: success
+[2024-04-21 16:41:44] INFO root fetch - processPackages [telegram-wallet-pay]: Remove: archive file [/home/abi/fetcher/tmp/telegram_wallet_pay-0.3.1.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [telegram-wallet-pay]: Remove: archive file [/home/abi/fetcher/tmp/telegram_wallet_pay-0.3.2.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [telegram-wallet-pay]: success
+[2024-04-21 16:41:44] INFO root fetch - processPackages [bertopic]: Remove: archive file [/home/abi/fetcher/tmp/bertopic-0.9.3.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - processPackages [bertopic]: Remove: archive file [/home/abi/fetcher/tmp/bertopic-0.9.4.tar.gz]
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: End processing [bertopic]: success
+[2024-04-21 16:41:44] INFO root fetch - main [MainThread]: Store serial: [22865595]
