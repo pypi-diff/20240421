@@ -4578,3 +4578,36 @@
 [2024-04-21 07:20:34] INFO root fetch - processPackages [call-to-change]: Remove: archive file [/home/abi/fetcher/tmp/call_to_change-0.8.1.tar.gz]
 [2024-04-21 07:20:34] INFO root fetch - main [MainThread]: End processing [call-to-change]: success
 [2024-04-21 07:20:34] INFO root fetch - main [MainThread]: Store serial: [22862146]
+[2024-04-21 07:22:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862146]
+[2024-04-21 07:22:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: call-to-change
+[2024-04-21 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC380
+[2024-04-21 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psp-liquids-daq-parser
+[2024-04-21 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tiny-data-warehouse
+[2024-04-21 07:22:44] INFO root fetch - processPackages [call-to-change]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-21 07:22:44] INFO root fetch - processPackages [tiny-data-warehouse]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 07:22:44] WARNING root fetch - processPackages [PythonTestLJC380]: Skipping, unable to determine old version
+[2024-04-21 07:22:44] INFO root fetch - main [MainThread]: End processing [PythonTestLJC380] error
+[2024-04-21 07:22:44] INFO root fetch - processPackages [call-to-change]: Downloading https://files.pythonhosted.org/packages/8d/cb/4a24bdb3fd2ed4e90da42c5e98fda66e257b94283ea1a2ff6e35d1064499/call_to_change-0.8.1.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 07:22:44] INFO root fetch - processPackages [tiny-data-warehouse]: Downloading https://files.pythonhosted.org/packages/44/82/0e28ac3f1d602c6a22fa545a3ae4aab99f1b4c6d3152335d55fda8d71a69/tiny_data_warehouse-0.1.1.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/6a/3a/1ba581e119fb83ee956e08fa18067a1e2f1fc21c33e23fa5a58fe9c48628/psp_liquids_daq_parser-0.0.6.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [call-to-change]: Downloading https://files.pythonhosted.org/packages/bb/99/af64b463689421c8f0c34de2ccc20ca214206c368badf29c026adcfedc49/call_to_change-0.8.2.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [call-to-change]: executing diffoscope
+[2024-04-21 07:22:44] INFO root fetch - processPackages [call-to-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/call_to_change-0.8.1.tar.gz tmp/call_to_change-0.8.2.tar.gz --markdown 20240421/c/call-to-change/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-21 07:22:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/af/cb/344c74cd9f4cbc83bb58e66bfaed9045669a3d0b8f09680889344f7ac8e9/psp_liquids_daq_parser-0.0.7.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [tiny-data-warehouse]: Downloading https://files.pythonhosted.org/packages/bb/b6/4d464dff8f259a8ba654c1441407f805fa268d31d093805c93bd7025d2b6/tiny_data_warehouse-0.1.2.tar.gz
+[2024-04-21 07:22:44] INFO root fetch - processPackages [tiny-data-warehouse]: executing diffoscope
+[2024-04-21 07:22:44] INFO root fetch - processPackages [tiny-data-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny_data_warehouse-0.1.1.tar.gz tmp/tiny_data_warehouse-0.1.2.tar.gz --markdown 20240421/t/tiny-data-warehouse/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 07:22:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: executing diffoscope
+[2024-04-21 07:22:44] INFO root fetch - processPackages [psp-liquids-daq-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psp_liquids_daq_parser-0.0.6.tar.gz tmp/psp_liquids_daq_parser-0.0.7.tar.gz --markdown 20240421/p/psp-liquids-daq-parser/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 07:22:45] INFO root fetch - processPackages [tiny-data-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/tiny_data_warehouse-0.1.1.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - processPackages [tiny-data-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/tiny_data_warehouse-0.1.2.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - main [MainThread]: End processing [tiny-data-warehouse]: success
+[2024-04-21 07:22:45] INFO root fetch - processPackages [call-to-change]: Remove: archive file [/home/abi/fetcher/tmp/call_to_change-0.8.1.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - processPackages [call-to-change]: Remove: archive file [/home/abi/fetcher/tmp/call_to_change-0.8.2.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - main [MainThread]: End processing [call-to-change]: success
+[2024-04-21 07:22:45] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.6.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.7.tar.gz]
+[2024-04-21 07:22:45] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
+[2024-04-21 07:22:45] INFO root fetch - main [MainThread]: Store serial: [22862157]
