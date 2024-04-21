@@ -13697,3 +13697,12 @@
 [2024-04-21 18:14:54] INFO root fetch - processPackages [hikari-yuyo]: Remove: archive file [/home/abi/fetcher/tmp/hikari-yuyo-1.9.1a1.tar.gz]
 [2024-04-21 18:14:54] INFO root fetch - main [MainThread]: End processing [hikari-yuyo]: success
 [2024-04-21 18:14:54] INFO root fetch - main [MainThread]: Store serial: [22866326]
+[2024-04-21 18:16:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866326]
+[2024-04-21 18:17:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC529
+[2024-04-21 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geometric_kernels
+[2024-04-21 18:17:03] WARNING root fetch - processPackages [PythonTestLJC529]: Skipping, unable to determine old version
+[2024-04-21 18:17:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC529] error
+[2024-04-21 18:17:03] WARNING root fetch - processPackages [geometric_kernels]: Skipping, unable to determine old version
+[2024-04-21 18:17:03] INFO root fetch - main [MainThread]: End processing [geometric_kernels] error
+[2024-04-21 18:17:03] INFO root fetch - main [MainThread]: Store serial: [22866336]
