@@ -6331,3 +6331,21 @@
 [2024-04-21 09:57:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip]
 [2024-04-21 09:57:26] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-04-21 09:57:26] INFO root fetch - main [MainThread]: Store serial: [22862955]
+[2024-04-21 09:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862955]
+[2024-04-21 09:59:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 09:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackNqueue
+[2024-04-21 09:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emoji
+[2024-04-21 09:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC415
+[2024-04-21 09:59:37] WARNING root fetch - processPackages [PythonTestLJC415]: Skipping, unable to determine old version
+[2024-04-21 09:59:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC415] error
+[2024-04-21 09:59:37] INFO root fetch - processPackages [emoji]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-21 09:59:37] WARNING root fetch - processPackages [stackNqueue]: Skipping, unable to determine old version
+[2024-04-21 09:59:37] INFO root fetch - main [MainThread]: End processing [stackNqueue] error
+[2024-04-21 09:59:37] INFO root fetch - processPackages [emoji]: Downloading https://files.pythonhosted.org/packages/73/eb/335ac266110ecc112c28d0360012c863fe3781c5555be52eb69790037751/emoji-2.8.0.tar.gz
+[2024-04-21 09:59:37] INFO root fetch - processPackages [emoji]: Downloading https://files.pythonhosted.org/packages/3e/29/8a183335d6a4bad794aaf6d0ea9116a751c6df471a6b8e8f1e9bb9f00aae/emoji-2.9.0.tar.gz
+[2024-04-21 09:59:37] INFO root fetch - processPackages [emoji]: executing diffoscope
+[2024-04-21 09:59:37] INFO root fetch - processPackages [emoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emoji-2.8.0.tar.gz tmp/emoji-2.9.0.tar.gz --markdown 20240421/e/emoji/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-21 09:59:39] INFO root fetch - processPackages [emoji]: Remove: archive file [/home/abi/fetcher/tmp/emoji-2.8.0.tar.gz]
+[2024-04-21 09:59:39] INFO root fetch - processPackages [emoji]: Remove: archive file [/home/abi/fetcher/tmp/emoji-2.9.0.tar.gz]
+[2024-04-21 09:59:39] INFO root fetch - main [MainThread]: End processing [emoji]: success
+[2024-04-21 09:59:39] INFO root fetch - main [MainThread]: Store serial: [22862965]
