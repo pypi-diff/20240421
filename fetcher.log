@@ -6731,3 +6731,15 @@
 [2024-04-21 10:38:47] WARNING root fetch - processPackages [randomNicknameSeo2]: Skipping, unable to determine old version
 [2024-04-21 10:38:47] INFO root fetch - main [MainThread]: End processing [randomNicknameSeo2] error
 [2024-04-21 10:38:47] INFO root fetch - main [MainThread]: Store serial: [22863140]
+[2024-04-21 10:40:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863140]
+[2024-04-21 10:40:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 10:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-prep-lab-kfp
+[2024-04-21 10:40:55] INFO root fetch - processPackages [data-prep-lab-kfp]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 10:40:55] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/95/62/4679653340c41984c44cb0e841054058e10d599261e9b6ccf14d8afb225a/data_prep_lab_kfp-0.1.2.tar.gz
+[2024-04-21 10:40:55] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/f9/d1/cb7ddbc7d4373c00867e16df665107e06317a2a5d1bb9ac585074a8c956b/data_prep_lab_kfp-0.1.3.tar.gz
+[2024-04-21 10:40:55] INFO root fetch - processPackages [data-prep-lab-kfp]: executing diffoscope
+[2024-04-21 10:40:55] INFO root fetch - processPackages [data-prep-lab-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab_kfp-0.1.2.tar.gz tmp/data_prep_lab_kfp-0.1.3.tar.gz --markdown 20240421/d/data-prep-lab-kfp/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 10:40:56] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.2.tar.gz]
+[2024-04-21 10:40:56] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.3.tar.gz]
+[2024-04-21 10:40:56] INFO root fetch - main [MainThread]: End processing [data-prep-lab-kfp]: success
+[2024-04-21 10:40:56] INFO root fetch - main [MainThread]: Store serial: [22863143]
