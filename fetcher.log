@@ -8005,3 +8005,42 @@
 [2024-04-21 12:18:20] INFO root fetch - processPackages [AstroScript]: Remove: archive file [/home/abi/fetcher/tmp/astroscript-1.0.3.tar.gz]
 [2024-04-21 12:18:20] INFO root fetch - main [MainThread]: End processing [AstroScript]: success
 [2024-04-21 12:18:20] INFO root fetch - main [MainThread]: Store serial: [22863634]
+[2024-04-21 12:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863634]
+[2024-04-21 12:20:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 12:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradedangerous
+[2024-04-21 12:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drawdraw
+[2024-04-21 12:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oak-cli
+[2024-04-21 12:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dolibarrpy
+[2024-04-21 12:20:29] INFO root fetch - processPackages [drawdraw]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 12:20:29] INFO root fetch - processPackages [dolibarrpy]: New version: [0.3.2] Old Version: [0.3.0]
+[2024-04-21 12:20:29] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/b3/f5/59ba7d0bf39223624268757a6ef4aa1376c308fd5b2f50a2a3043874f59a/drawdraw-0.0.6-py3-none-any.whl
+[2024-04-21 12:20:29] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/3b/a7/da9e890b78c6da52993ab964cc96840c56cac370f7aed6805309bdbadadb/dolibarrpy-0.3.0.tar.gz
+[2024-04-21 12:20:29] INFO root fetch - processPackages [oak-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 12:20:29] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 12:20:29] INFO root fetch - processPackages [oak-cli]: Downloading https://files.pythonhosted.org/packages/9e/0d/e37026f18cf367450c250e1956a2d4127d963f39477755adaedb79f714ba/oak_cli-0.2.8.tar.gz
+[2024-04-21 12:20:29] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 12:20:29] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/30/a1/37bb6eadd3730203c368486ab13764a045ceb27bd76050869c0300c79353/dolibarrpy-0.3.2.tar.gz
+[2024-04-21 12:20:29] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/1f/e0/657d933c429b489d5d27ad08ba00a842046146ee3102c1bd46c9b47f2442/drawdraw-0.0.7-py3-none-any.whl
+[2024-04-21 12:20:29] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 12:20:29] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.6-py3-none-any.whl.zip tmp/drawdraw-0.0.7-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 12:20:29] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-21 12:20:29] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.3.0.tar.gz tmp/dolibarrpy-0.3.2.tar.gz --markdown 20240421/d/dolibarrpy/0.3.0-0.3.2/README.md --exclude *.pyd
+[2024-04-21 12:20:29] INFO root fetch - processPackages [oak-cli]: Downloading https://files.pythonhosted.org/packages/eb/6e/674a33f829e9f23884dfb224370141ca67b5d30590ca381326fb8fd42675/oak_cli-0.2.9.tar.gz
+[2024-04-21 12:20:29] INFO root fetch - processPackages [oak-cli]: executing diffoscope
+[2024-04-21 12:20:29] INFO root fetch - processPackages [oak-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oak_cli-0.2.8.tar.gz tmp/oak_cli-0.2.9.tar.gz --markdown 20240421/o/oak-cli/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 12:20:29] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 12:20:30] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 12:20:30] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 12:20:30] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.6-py3-none-any.whl.zip]
+[2024-04-21 12:20:30] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.7-py3-none-any.whl.zip]
+[2024-04-21 12:20:30] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 12:20:30] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.3.0.tar.gz]
+[2024-04-21 12:20:30] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.3.2.tar.gz]
+[2024-04-21 12:20:30] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-21 12:20:30] INFO root fetch - processPackages [oak-cli]: Remove: archive file [/home/abi/fetcher/tmp/oak_cli-0.2.8.tar.gz]
+[2024-04-21 12:20:30] INFO root fetch - processPackages [oak-cli]: Remove: archive file [/home/abi/fetcher/tmp/oak_cli-0.2.9.tar.gz]
+[2024-04-21 12:20:30] INFO root fetch - main [MainThread]: End processing [oak-cli]: success
+[2024-04-21 12:20:31] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 12:20:31] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 12:20:31] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 12:20:31] INFO root fetch - main [MainThread]: Store serial: [22863644]
