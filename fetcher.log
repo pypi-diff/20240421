@@ -12729,3 +12729,39 @@
 [2024-04-21 17:12:51] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 17:12:51] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 17:12:51] INFO root fetch - main [MainThread]: Store serial: [22865907]
+[2024-04-21 17:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865907]
+[2024-04-21 17:14:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 17:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs2-battle-bot-api-client
+[2024-04-21 17:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cccc
+[2024-04-21 17:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmtuner
+[2024-04-21 17:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ObjectToString
+[2024-04-21 17:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nacos-gevent-config
+[2024-04-21 17:14:59] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 17:14:59] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-21 17:15:00] WARNING root fetch - processPackages [nacos-gevent-config]: Skipping, unable to determine old version
+[2024-04-21 17:15:00] INFO root fetch - main [MainThread]: End processing [nacos-gevent-config] error
+[2024-04-21 17:15:00] WARNING root fetch - processPackages [cccc]: Skipping, unable to determine old version
+[2024-04-21 17:15:00] INFO root fetch - processPackages [ObjectToString]: New version: [0.2.70] Old Version: [0.2.68]
+[2024-04-21 17:15:00] INFO root fetch - main [MainThread]: End processing [cccc] error
+[2024-04-21 17:15:00] INFO root fetch - processPackages [llmtuner]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-21 17:15:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-21 17:15:00] INFO root fetch - processPackages [llmtuner]: Downloading https://files.pythonhosted.org/packages/e3/06/5155c86284f7a5d645b65a60e1f77d185e28704f6e3236af363f8a4b4fcd/llmtuner-0.6.2.tar.gz
+[2024-04-21 17:15:00] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/3f/8f/ac01493eec21aa6c5118d3f9cb70eb1414ba4aa8e0197aee6e550a6fef07/ObjectToString-0.2.68.tar.gz
+[2024-04-21 17:15:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-21 17:15:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240421/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 17:15:00] INFO root fetch - processPackages [llmtuner]: Downloading https://files.pythonhosted.org/packages/04/50/60f442ebb324e6ee3672b26bb8baa3aa899a9933427bc7ddaf780f4faed3/llmtuner-0.6.3.tar.gz
+[2024-04-21 17:15:00] INFO root fetch - processPackages [llmtuner]: executing diffoscope
+[2024-04-21 17:15:00] INFO root fetch - processPackages [llmtuner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmtuner-0.6.2.tar.gz tmp/llmtuner-0.6.3.tar.gz --markdown 20240421/l/llmtuner/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-21 17:15:00] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/da/b5/b19c1688921be6085bf974644d2f7e6f139fb15a77bf521cd801ffe4842e/ObjectToString-0.2.70.tar.gz
+[2024-04-21 17:15:01] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-21 17:15:01] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-21 17:15:01] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-21 17:15:01] INFO root fetch - processPackages [ObjectToString]: executing diffoscope
+[2024-04-21 17:15:01] INFO root fetch - processPackages [ObjectToString]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ObjectToString-0.2.68.tar.gz tmp/ObjectToString-0.2.70.tar.gz --markdown 20240421/O/ObjectToString/0.2.68-0.2.70/README.md --exclude *.pyd
+[2024-04-21 17:15:01] INFO root fetch - processPackages [llmtuner]: Remove: archive file [/home/abi/fetcher/tmp/llmtuner-0.6.2.tar.gz]
+[2024-04-21 17:15:01] INFO root fetch - processPackages [llmtuner]: Remove: archive file [/home/abi/fetcher/tmp/llmtuner-0.6.3.tar.gz]
+[2024-04-21 17:15:01] INFO root fetch - main [MainThread]: End processing [llmtuner]: success
+[2024-04-21 17:15:02] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.68.tar.gz]
+[2024-04-21 17:15:02] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.70.tar.gz]
+[2024-04-21 17:15:02] INFO root fetch - main [MainThread]: End processing [ObjectToString]: success
+[2024-04-21 17:15:02] INFO root fetch - main [MainThread]: Store serial: [22865925]
