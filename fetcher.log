@@ -3983,3 +3983,26 @@
 [2024-04-21 06:15:06] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.9.tar.gz]
 [2024-04-21 06:15:06] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
 [2024-04-21 06:15:06] INFO root fetch - main [MainThread]: Store serial: [22861847]
+[2024-04-21 06:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861847]
+[2024-04-21 06:17:14] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 06:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861847]
+[2024-04-21 06:19:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 06:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scikit-build-core
+[2024-04-21 06:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqrecord-expanded
+[2024-04-21 06:19:20] INFO root fetch - processPackages [seqrecord-expanded]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 06:19:20] INFO root fetch - processPackages [scikit-build-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-21 06:19:20] INFO root fetch - processPackages [scikit-build-core]: Downloading https://files.pythonhosted.org/packages/11/7f/ad9a790fbe661cadb3e05934df836ab3083ecff378887285b58bfcff0e36/scikit_build_core-0.9.1.tar.gz
+[2024-04-21 06:19:20] INFO root fetch - processPackages [seqrecord-expanded]: Downloading https://files.pythonhosted.org/packages/61/3e/7271cacece1d40b59e4354d252939a29835730afef444bae795325317c5c/seqrecord_expanded-0.2.8.tar.gz
+[2024-04-21 06:19:20] INFO root fetch - processPackages [scikit-build-core]: Downloading https://files.pythonhosted.org/packages/c2/fe/8254f8b334d61da20c28df93dfcb7e36c2780b33f0e3807730577c9333e5/scikit_build_core-0.9.2.tar.gz
+[2024-04-21 06:19:21] INFO root fetch - processPackages [seqrecord-expanded]: Downloading https://files.pythonhosted.org/packages/67/dd/39b6ce82d2a532d86141382a75d73b54e124f9bdd7f716f8207c1f6fec8c/seqrecord_expanded-0.2.9.tar.gz
+[2024-04-21 06:19:21] INFO root fetch - processPackages [scikit-build-core]: executing diffoscope
+[2024-04-21 06:19:21] INFO root fetch - processPackages [scikit-build-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_build_core-0.9.1.tar.gz tmp/scikit_build_core-0.9.2.tar.gz --markdown 20240421/s/scikit-build-core/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-21 06:19:21] INFO root fetch - processPackages [seqrecord-expanded]: executing diffoscope
+[2024-04-21 06:19:21] INFO root fetch - processPackages [seqrecord-expanded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqrecord_expanded-0.2.8.tar.gz tmp/seqrecord_expanded-0.2.9.tar.gz --markdown 20240421/s/seqrecord-expanded/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 06:19:21] INFO root fetch - processPackages [seqrecord-expanded]: Remove: archive file [/home/abi/fetcher/tmp/seqrecord_expanded-0.2.8.tar.gz]
+[2024-04-21 06:19:21] INFO root fetch - processPackages [seqrecord-expanded]: Remove: archive file [/home/abi/fetcher/tmp/seqrecord_expanded-0.2.9.tar.gz]
+[2024-04-21 06:19:21] INFO root fetch - main [MainThread]: End processing [seqrecord-expanded]: success
+[2024-04-21 06:19:22] INFO root fetch - processPackages [scikit-build-core]: Remove: archive file [/home/abi/fetcher/tmp/scikit_build_core-0.9.1.tar.gz]
+[2024-04-21 06:19:22] INFO root fetch - processPackages [scikit-build-core]: Remove: archive file [/home/abi/fetcher/tmp/scikit_build_core-0.9.2.tar.gz]
+[2024-04-21 06:19:22] INFO root fetch - main [MainThread]: End processing [scikit-build-core]: success
+[2024-04-21 06:19:22] INFO root fetch - main [MainThread]: Store serial: [22861853]
