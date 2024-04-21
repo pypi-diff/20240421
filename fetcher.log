@@ -6101,3 +6101,32 @@
 [2024-04-21 09:37:57] INFO root fetch - processPackages [mailme-py]: Remove: archive file [/home/abi/fetcher/tmp/mailme-py-0.1.4.tar.gz]
 [2024-04-21 09:37:57] INFO root fetch - main [MainThread]: End processing [mailme-py]: success
 [2024-04-21 09:37:57] INFO root fetch - main [MainThread]: Store serial: [22862820]
+[2024-04-21 09:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862820]
+[2024-04-21 09:40:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2024-04-21 09:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xklb
+[2024-04-21 09:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kv-api
+[2024-04-21 09:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thriftify
+[2024-04-21 09:40:05] INFO root fetch - processPackages [kv-api]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 09:40:05] WARNING root fetch - processPackages [thriftify]: Skipping, unable to determine old version
+[2024-04-21 09:40:05] INFO root fetch - main [MainThread]: End processing [thriftify] error
+[2024-04-21 09:40:05] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/37/54/23cce8ded6eb2d05d11a6311b62f223f72fddc2b4f1b9b78c2b4bf76541d/kv_api-0.1.4.tar.gz
+[2024-04-21 09:40:06] INFO root fetch - processPackages [xklb]: New version: [2.6.9] Old Version: [2.6.7]
+[2024-04-21 09:40:06] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-04-21 09:40:06] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/46/41/c512c317eb2ae2d35249254bf75a51ac5cb3082e4b2c8992d9c73bfdc0a1/kv_api-0.1.5.tar.gz
+[2024-04-21 09:40:06] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/c0/69/2094cbc3ea1d5a61a495e8303da8cddfa7571c720b175d62baf286a00111/xklb-2.6.7.tar.gz
+[2024-04-21 09:40:06] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 09:40:06] INFO root fetch - processPackages [kv-api]: executing diffoscope
+[2024-04-21 09:40:06] INFO root fetch - processPackages [kv-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_api-0.1.4.tar.gz tmp/kv_api-0.1.5.tar.gz --markdown 20240421/k/kv-api/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 09:40:06] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-04-21 09:40:06] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-04-21 09:40:06] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/38/2a/2958f5a1fedda07c3aa6cb197a1270734f34698793fb935ae5debd5e8c0c/xklb-2.6.9.tar.gz
+[2024-04-21 09:40:06] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-04-21 09:40:06] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.6.7.tar.gz tmp/xklb-2.6.9.tar.gz --markdown 20240421/x/xklb/2.6.7-2.6.9/README.md --exclude *.pyd
+[2024-04-21 09:40:06] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.4.tar.gz]
+[2024-04-21 09:40:06] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.5.tar.gz]
+[2024-04-21 09:40:06] INFO root fetch - main [MainThread]: End processing [kv-api]: success
+[2024-04-21 09:40:08] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.7.tar.gz]
+[2024-04-21 09:40:08] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.9.tar.gz]
+[2024-04-21 09:40:08] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-04-21 09:40:08] INFO root fetch - main [MainThread]: Store serial: [22862845]
