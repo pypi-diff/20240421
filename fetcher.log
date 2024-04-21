@@ -3431,3 +3431,24 @@
 [2024-04-21 05:14:24] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.1.tar.gz]
 [2024-04-21 05:14:24] INFO root fetch - main [MainThread]: End processing [FSRS-Optimizer]: success
 [2024-04-21 05:14:24] INFO root fetch - main [MainThread]: Store serial: [22861616]
+[2024-04-21 05:16:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861616]
+[2024-04-21 05:16:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FastSnake
+[2024-04-21 05:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NNSOM
+[2024-04-21 05:16:32] INFO root fetch - processPackages [FastSnake]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-21 05:16:32] INFO root fetch - processPackages [NNSOM]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-04-21 05:16:32] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/4e/39/3975e123076085cab12818bfdb5453f139c02ec8e1ab8b44b6aa19b34e48/fastsnake-1.4.8.tar.gz
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/6e/5a/68a38070afee67b9b22640c7120fb7ab9af681048932649328ba2a963f84/nnsom-1.7.3.tar.gz
+[2024-04-21 05:16:33] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/ba/f6/2239174616fa357132ef7f9a94eb64ac1b356e4f1d96dd885ccf70181298/fastsnake-1.4.9.tar.gz
+[2024-04-21 05:16:33] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-04-21 05:16:33] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.8.tar.gz tmp/fastsnake-1.4.9.tar.gz --markdown 20240421/F/FastSnake/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/ed/a8/a871b98088bb6c923679814e9712da8945088d4d4171e8a4d4f290f66f03/nnsom-1.7.4.tar.gz
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.7.3.tar.gz tmp/nnsom-1.7.4.tar.gz --markdown 20240421/N/NNSOM/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-04-21 05:16:33] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.8.tar.gz]
+[2024-04-21 05:16:33] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.9.tar.gz]
+[2024-04-21 05:16:33] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.3.tar.gz]
+[2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.4.tar.gz]
+[2024-04-21 05:16:33] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-21 05:16:33] INFO root fetch - main [MainThread]: Store serial: [22861624]
