@@ -8854,3 +8854,30 @@
 [2024-04-21 13:24:15] WARNING root fetch - processPackages [PythonTestLJC431]: Skipping, unable to determine old version
 [2024-04-21 13:24:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC431] error
 [2024-04-21 13:24:15] INFO root fetch - main [MainThread]: Store serial: [22863951]
+[2024-04-21 13:26:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863951]
+[2024-04-21 13:26:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 13:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sortie
+[2024-04-21 13:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2024-04-21 13:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yamlcore
+[2024-04-21 13:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovoenergy
+[2024-04-21 13:26:24] WARNING root fetch - processPackages [sortie]: Skipping, unable to determine old version
+[2024-04-21 13:26:24] INFO root fetch - main [MainThread]: End processing [sortie] error
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: New version: [2.0.0.dev0] Old Version: [1.3.1.dev0]
+[2024-04-21 13:26:24] WARNING root fetch - processPackages [yamlcore]: Skipping, unable to determine old version
+[2024-04-21 13:26:24] INFO root fetch - main [MainThread]: End processing [yamlcore] error
+[2024-04-21 13:26:24] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.4.20] Old Version: [2024.4.19]
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: Downloading https://files.pythonhosted.org/packages/e3/e4/2bc33026f4477d6df402c3804a0377c949375986dfedad38c9df8dfa5283/ovoenergy-1.3.1.dev0.tar.gz
+[2024-04-21 13:26:24] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/27/e9/ceb832ef0275e030318770a547a42c3820da21700045a15d15590e1b70ec/torchx_nightly-2024.4.19-py3-none-any.whl
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: Downloading https://files.pythonhosted.org/packages/24/c5/159f4a9a8778b6ad283acd681fdaaba5ed6b8f79c68b0ea9ac077b1eb1d4/ovoenergy-2.0.0.dev0.tar.gz
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: executing diffoscope
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovoenergy-1.3.1.dev0.tar.gz tmp/ovoenergy-2.0.0.dev0.tar.gz --markdown 20240421/o/ovoenergy/1.3.1.dev0-2.0.0.dev0/README.md --exclude *.pyd
+[2024-04-21 13:26:24] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/fc/07/43f3e3a9e4a9089fe181933333127393517176933036545b7a35d3c9d38b/torchx_nightly-2024.4.20-py3-none-any.whl
+[2024-04-21 13:26:24] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-04-21 13:26:24] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.4.19-py3-none-any.whl.zip tmp/torchx_nightly-2024.4.20-py3-none-any.whl.zip --markdown 20240421/t/torchx-nightly/2024.4.19-2024.4.20/README.md --exclude *.pyd
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: Remove: archive file [/home/abi/fetcher/tmp/ovoenergy-1.3.1.dev0.tar.gz]
+[2024-04-21 13:26:24] INFO root fetch - processPackages [ovoenergy]: Remove: archive file [/home/abi/fetcher/tmp/ovoenergy-2.0.0.dev0.tar.gz]
+[2024-04-21 13:26:24] INFO root fetch - main [MainThread]: End processing [ovoenergy]: success
+[2024-04-21 13:26:25] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.19-py3-none-any.whl.zip]
+[2024-04-21 13:26:25] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.20-py3-none-any.whl.zip]
+[2024-04-21 13:26:25] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-04-21 13:26:25] INFO root fetch - main [MainThread]: Store serial: [22863962]
