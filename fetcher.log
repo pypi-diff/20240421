@@ -7936,3 +7936,33 @@
 [2024-04-21 12:13:48] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.1a1.tar.gz]
 [2024-04-21 12:13:48] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-21 12:13:48] INFO root fetch - main [MainThread]: Store serial: [22863609]
+[2024-04-21 12:15:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863609]
+[2024-04-21 12:15:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 12:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclonedx-bom
+[2024-04-21 12:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyracf
+[2024-04-21 12:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: youtube-comment-downloader
+[2024-04-21 12:15:58] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.2a1] Old Version: [4.3.1a1]
+[2024-04-21 12:15:58] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/a7/46/b73ae35e9649ddb982f09af49c352d9aa159e0e1ee40bd63f965d36a4464/cyclonedx_bom-4.3.1a1.tar.gz
+[2024-04-21 12:15:58] INFO root fetch - processPackages [youtube-comment-downloader]: New version: [0.1.73] Old Version: [0.1.72]
+[2024-04-21 12:15:58] INFO root fetch - processPackages [pyracf]: New version: [0.8.6] Old Version: [0.8.4]
+[2024-04-21 12:15:59] INFO root fetch - processPackages [youtube-comment-downloader]: Downloading https://files.pythonhosted.org/packages/31/37/bb92fa3b5582e66d57136db87f95c0c404e82110d83883d30dbe1572cf3c/youtube-comment-downloader-0.1.72.tar.gz
+[2024-04-21 12:15:59] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/bd/2f/f3e581dd89fc17dceae65c40c8e83bc376c513bc0ed686fa2b0c6f163bf6/pyracf-0.8.4.tar.gz
+[2024-04-21 12:15:59] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/ee/a6/d206aff5f6b713f6ace6f754b7c594708c970b5f40f88b0e7b7852ff85f6/cyclonedx_bom-4.3.2a1.tar.gz
+[2024-04-21 12:15:59] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/8e/a2/9046bcaff32c5e396b04d3ac68f5f5353f591dc6c4e68c58eafc680c489f/pyracf-0.8.6.tar.gz
+[2024-04-21 12:15:59] INFO root fetch - processPackages [youtube-comment-downloader]: Downloading https://files.pythonhosted.org/packages/74/6a/dda14ea85da905be6dc0b2e2d913479e4e4a816c275a383d5aba7c7c26e7/youtube_comment_downloader-0.1.73.tar.gz
+[2024-04-21 12:15:59] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 12:15:59] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.1a1.tar.gz tmp/cyclonedx_bom-4.3.2a1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.1a1-4.3.2a1/README.md --exclude *.pyd
+[2024-04-21 12:15:59] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2024-04-21 12:15:59] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.8.4.tar.gz tmp/pyracf-0.8.6.tar.gz --markdown 20240421/p/pyracf/0.8.4-0.8.6/README.md --exclude *.pyd
+[2024-04-21 12:15:59] INFO root fetch - processPackages [youtube-comment-downloader]: executing diffoscope
+[2024-04-21 12:15:59] INFO root fetch - processPackages [youtube-comment-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube-comment-downloader-0.1.72.tar.gz tmp/youtube_comment_downloader-0.1.73.tar.gz --markdown 20240421/y/youtube-comment-downloader/0.1.72-0.1.73/README.md --exclude *.pyd
+[2024-04-21 12:16:00] INFO root fetch - processPackages [youtube-comment-downloader]: Remove: archive file [/home/abi/fetcher/tmp/youtube-comment-downloader-0.1.72.tar.gz]
+[2024-04-21 12:16:00] INFO root fetch - processPackages [youtube-comment-downloader]: Remove: archive file [/home/abi/fetcher/tmp/youtube_comment_downloader-0.1.73.tar.gz]
+[2024-04-21 12:16:00] INFO root fetch - main [MainThread]: End processing [youtube-comment-downloader]: success
+[2024-04-21 12:16:00] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.4.tar.gz]
+[2024-04-21 12:16:00] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.6.tar.gz]
+[2024-04-21 12:16:00] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2024-04-21 12:16:08] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.1a1.tar.gz]
+[2024-04-21 12:16:08] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.2a1.tar.gz]
+[2024-04-21 12:16:08] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 12:16:08] INFO root fetch - main [MainThread]: Store serial: [22863621]
