@@ -3707,3 +3707,30 @@
 [2024-04-21 05:42:37] INFO root fetch - processPackages [lamda]: Remove: archive file [/home/abi/fetcher/tmp/lamda-7.65.tar.gz]
 [2024-04-21 05:42:37] INFO root fetch - main [MainThread]: End processing [lamda]: success
 [2024-04-21 05:42:37] INFO root fetch - main [MainThread]: Store serial: [22861760]
+[2024-04-21 05:44:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861760]
+[2024-04-21 05:44:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 05:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: milkcow
+[2024-04-21 05:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypipr
+[2024-04-21 05:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lichesspy
+[2024-04-21 05:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC362
+[2024-04-21 05:44:45] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 05:44:45] INFO root fetch - processPackages [lichesspy]: New version: [6.0.2] Old Version: [6.0.1]
+[2024-04-21 05:44:45] WARNING root fetch - processPackages [milkcow]: Skipping, unable to determine old version
+[2024-04-21 05:44:45] INFO root fetch - main [MainThread]: End processing [milkcow] error
+[2024-04-21 05:44:45] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-21 05:44:45] WARNING root fetch - processPackages [PythonTestLJC362]: Skipping, unable to determine old version
+[2024-04-21 05:44:45] INFO root fetch - main [MainThread]: End processing [PythonTestLJC362] error
+[2024-04-21 05:44:45] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-21 05:44:45] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/34/01/fc09713cb1d441f47a1cc3c793ba87cf50d40b4e5c855a321584c14d4cc5/lichesspy-6.0.1.tar.gz
+[2024-04-21 05:44:45] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-21 05:44:45] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240421/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 05:44:45] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/21/98/1997f1a8d7953f3f65693780c0f11e7e92f2344bf76eb15860d8497c692b/lichesspy-6.0.2.tar.gz
+[2024-04-21 05:44:46] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 05:44:46] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.1.tar.gz tmp/lichesspy-6.0.2.tar.gz --markdown 20240421/l/lichesspy/6.0.1-6.0.2/README.md --exclude *.pyd
+[2024-04-21 05:44:46] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-21 05:44:46] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-21 05:44:46] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-21 05:44:46] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.1.tar.gz]
+[2024-04-21 05:44:46] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.2.tar.gz]
+[2024-04-21 05:44:46] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 05:44:46] INFO root fetch - main [MainThread]: Store serial: [22861775]
