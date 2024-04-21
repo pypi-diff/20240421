@@ -15808,3 +15808,51 @@
 [2024-04-21 20:30:02] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
 [2024-04-21 20:30:02] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-04-21 20:30:02] INFO root fetch - main [MainThread]: Store serial: [22867400]
+[2024-04-21 20:32:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867400]
+[2024-04-21 20:32:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arithmetic-dice-roller
+[2024-04-21 20:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asyncpraw-stubs
+[2024-04-21 20:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chamco-ragbot
+[2024-04-21 20:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorsequence
+[2024-04-21 20:32:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yajwiz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [asyncpraw-stubs]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 20:32:11] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 20:32:11] INFO root fetch - processPackages [tensorsequence]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-21 20:32:11] INFO root fetch - processPackages [arithmetic-dice-roller]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-21 20:32:11] INFO root fetch - processPackages [asyncpraw-stubs]: Downloading https://files.pythonhosted.org/packages/5e/6c/88a9c743be2cca21383cebea24e0691da1b7680e561e9592b2c843ae0209/asyncpraw_stubs-0.0.1.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [yajwiz]: New version: [0.9] Old Version: [0.8]
+[2024-04-21 20:32:11] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [tensorsequence]: Downloading https://files.pythonhosted.org/packages/0f/48/eaeab12c5d1dd2981f81c80bebe6fcdee2d095316b7b45b8b1d7e015d855/tensorsequence-0.1.0.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [arithmetic-dice-roller]: Downloading https://files.pythonhosted.org/packages/47/2b/ae4416875119ec2037c67c149fef4faaf1f5cc0d42da68eed32211df0a4c/arithmetic-dice-roller-0.3.2.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [asyncpraw-stubs]: Downloading https://files.pythonhosted.org/packages/4d/95/89c8543b24556abb92dec0768ce5fd91206c6aa448347d42032404f04727/asyncpraw_stubs-0.0.2.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [tensorsequence]: Downloading https://files.pythonhosted.org/packages/51/86/40aa226d61df307931c3c000c458ca37042a622f58f777eb7691eb36ac9c/tensorsequence-0.2.0.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [yajwiz]: Downloading https://files.pythonhosted.org/packages/06/eb/80fd34a72e390de93889580266d29d63e4fbaa428d00a88efde73b24d88b/yajwiz-0.8.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [asyncpraw-stubs]: executing diffoscope
+[2024-04-21 20:32:11] INFO root fetch - processPackages [asyncpraw-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncpraw_stubs-0.0.1.tar.gz tmp/asyncpraw_stubs-0.0.2.tar.gz --markdown 20240421/a/asyncpraw-stubs/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 20:32:11] INFO root fetch - processPackages [tensorsequence]: executing diffoscope
+[2024-04-21 20:32:11] INFO root fetch - processPackages [tensorsequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorsequence-0.1.0.tar.gz tmp/tensorsequence-0.2.0.tar.gz --markdown 20240421/t/tensorsequence/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-21 20:32:11] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 20:32:11] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 20:32:11] INFO root fetch - processPackages [arithmetic-dice-roller]: Downloading https://files.pythonhosted.org/packages/6c/19/1b4c7e141d034e73b8d07e1b236ca2e8ec5c1b89893e18084217731bb38c/arithmetic_dice_roller-0.3.3.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [yajwiz]: Downloading https://files.pythonhosted.org/packages/3c/b2/9ea3c77b3b3c2764c28253b946b2fd437ad6d515b6a43dbcdbe76c52fcf2/yajwiz-0.9.tar.gz
+[2024-04-21 20:32:11] INFO root fetch - processPackages [arithmetic-dice-roller]: executing diffoscope
+[2024-04-21 20:32:11] INFO root fetch - processPackages [arithmetic-dice-roller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetic-dice-roller-0.3.2.tar.gz tmp/arithmetic_dice_roller-0.3.3.tar.gz --markdown 20240421/a/arithmetic-dice-roller/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-21 20:32:11] INFO root fetch - processPackages [yajwiz]: executing diffoscope
+[2024-04-21 20:32:11] INFO root fetch - processPackages [yajwiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yajwiz-0.8.tar.gz tmp/yajwiz-0.9.tar.gz --markdown 20240421/y/yajwiz/0.8-0.9/README.md --exclude *.pyd
+[2024-04-21 20:32:12] INFO root fetch - processPackages [asyncpraw-stubs]: Remove: archive file [/home/abi/fetcher/tmp/asyncpraw_stubs-0.0.1.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - processPackages [asyncpraw-stubs]: Remove: archive file [/home/abi/fetcher/tmp/asyncpraw_stubs-0.0.2.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [asyncpraw-stubs]: success
+[2024-04-21 20:32:12] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 20:32:12] INFO root fetch - processPackages [tensorsequence]: Remove: archive file [/home/abi/fetcher/tmp/tensorsequence-0.1.0.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - processPackages [tensorsequence]: Remove: archive file [/home/abi/fetcher/tmp/tensorsequence-0.2.0.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [tensorsequence]: success
+[2024-04-21 20:32:12] INFO root fetch - processPackages [arithmetic-dice-roller]: Remove: archive file [/home/abi/fetcher/tmp/arithmetic-dice-roller-0.3.2.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - processPackages [arithmetic-dice-roller]: Remove: archive file [/home/abi/fetcher/tmp/arithmetic_dice_roller-0.3.3.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [arithmetic-dice-roller]: success
+[2024-04-21 20:32:12] INFO root fetch - processPackages [yajwiz]: Remove: archive file [/home/abi/fetcher/tmp/yajwiz-0.8.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - processPackages [yajwiz]: Remove: archive file [/home/abi/fetcher/tmp/yajwiz-0.9.tar.gz]
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [yajwiz]: success
+[2024-04-21 20:32:12] INFO root fetch - main [MainThread]: Store serial: [22867414]
