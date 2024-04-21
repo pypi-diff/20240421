@@ -6569,3 +6569,38 @@
 [2024-04-21 10:21:31] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.2.1-py3-none-any.whl.zip]
 [2024-04-21 10:21:31] INFO root fetch - main [MainThread]: End processing [inmanta-module-files]: success
 [2024-04-21 10:21:31] INFO root fetch - main [MainThread]: Store serial: [22863071]
+[2024-04-21 10:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863071]
+[2024-04-21 10:23:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlx
+[2024-04-21 10:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-21 10:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-learning-nlp
+[2024-04-21 10:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dtaas-cli
+[2024-04-21 10:23:39] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 10:23:39] INFO root fetch - processPackages [bellek]: New version: [0.94.0] Old Version: [0.93.0]
+[2024-04-21 10:23:39] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-21 10:23:39] INFO root fetch - processPackages [dtaas-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 10:23:39] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/07/1f/d72606976ffdc16cf0518a2f76636dea9b8bf1f56d868900735e14eba1d1/bellek-0.93.0.tar.gz
+[2024-04-21 10:23:39] INFO root fetch - processPackages [mlx]: New version: [0.9.1.dev20240407] Old Version: [0.9.1]
+[2024-04-21 10:23:39] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/62/dd/9d5f45821bd3f5a1fca34162d72704523afd875508deeb0a9914e6d53579/dtaas_cli-0.1.4.tar.gz
+[2024-04-21 10:23:39] INFO root fetch - processPackages [mlx]: Downloading https://files.pythonhosted.org/packages/1a/4d/db965d36f516eb50b63bc732589057aa7cb2fc14c6c30f6504688a2b307c/mlx-0.9.1-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-21 10:23:39] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-21 10:23:39] WARNING root fetch - processPackages [mlx]: Skipping package: exceeds size limit 31967351>=10485760
+[2024-04-21 10:23:39] INFO root fetch - main [MainThread]: End processing [mlx] error
+[2024-04-21 10:23:39] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-21 10:23:39] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240421/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 10:23:39] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/d5/0c/d87f9ce04618528e89f7cb239ce9a00977ff7fd1207fe382234f3c7e5fed/bellek-0.94.0.tar.gz
+[2024-04-21 10:23:39] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/cb/27/b7a2ab0e5dbd6dcbf8fc7c66f477690d712da5e33c0dc7b36fcf493923f9/dtaas_cli-0.1.5.tar.gz
+[2024-04-21 10:23:39] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-21 10:23:39] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.93.0.tar.gz tmp/bellek-0.94.0.tar.gz --markdown 20240421/b/bellek/0.93.0-0.94.0/README.md --exclude *.pyd
+[2024-04-21 10:23:40] INFO root fetch - processPackages [dtaas-cli]: executing diffoscope
+[2024-04-21 10:23:40] INFO root fetch - processPackages [dtaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtaas_cli-0.1.4.tar.gz tmp/dtaas_cli-0.1.5.tar.gz --markdown 20240421/d/dtaas-cli/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 10:23:40] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-21 10:23:40] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.93.0.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.94.0.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-21 10:23:40] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.4.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.5.tar.gz]
+[2024-04-21 10:23:40] INFO root fetch - main [MainThread]: End processing [dtaas-cli]: success
+[2024-04-21 10:23:40] INFO root fetch - main [MainThread]: Store serial: [22863091]
