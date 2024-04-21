@@ -7704,3 +7704,40 @@
 [2024-04-21 11:51:57] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.3.tar.gz]
 [2024-04-21 11:51:57] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 11:51:57] INFO root fetch - main [MainThread]: Store serial: [22863506]
+[2024-04-21 11:54:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863506]
+[2024-04-21 11:54:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 11:56:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863506]
+[2024-04-21 11:56:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 11:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GirardProxy
+[2024-04-21 11:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-21 11:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cx-Freeze
+[2024-04-21 11:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textile-metric
+[2024-04-21 11:56:12] INFO root fetch - processPackages [GirardProxy]: New version: [0.9.3] Old Version: [0.9.0]
+[2024-04-21 11:56:12] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-21 11:56:12] INFO root fetch - processPackages [textile-metric]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 11:56:12] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/3e/aa/8cf2cb96981c4e0c58417559243bb4b402bf3adb9aba29770f6caaaaa5d6/textile_metric-0.0.3.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/9e/30/04a3153a715dfcb7d1979068767212d0f39b58e469517634410b20a13238/girardproxy-0.9.0.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [cx-Freeze]: New version: [7.0.0rc0] Old Version: [7.0.0]
+[2024-04-21 11:56:12] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [cx-Freeze]: Downloading https://files.pythonhosted.org/packages/f6/7b/03763ac56898e6db7dd0c718c79db5d072e8d129aedd45f2169f4b5d5503/cx_Freeze-7.0.0-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-04-21 11:56:12] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-21 11:56:12] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240421/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-21 11:56:12] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/9c/c0/ad3770d459356d010b0efcae259533ec0ecccea4b12910b4ad5b4304cf4e/girardproxy-0.9.3.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/f0/c7/e45e1ffaebc38a277fbb6ee5ea2517876f70dd1e9b1aec944e9de97ab89e/textile_metric-0.0.4.tar.gz
+[2024-04-21 11:56:12] INFO root fetch - processPackages [GirardProxy]: executing diffoscope
+[2024-04-21 11:56:12] INFO root fetch - processPackages [GirardProxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girardproxy-0.9.0.tar.gz tmp/girardproxy-0.9.3.tar.gz --markdown 20240421/G/GirardProxy/0.9.0-0.9.3/README.md --exclude *.pyd
+[2024-04-21 11:56:12] WARNING root fetch - processPackages [cx-Freeze]: Skipping package: exceeds size limit 14637136>=10485760
+[2024-04-21 11:56:12] INFO root fetch - main [MainThread]: End processing [cx-Freeze] error
+[2024-04-21 11:56:13] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 11:56:13] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.3.tar.gz tmp/textile_metric-0.0.4.tar.gz --markdown 20240421/t/textile-metric/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 11:56:13] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.0.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.3.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - main [MainThread]: End processing [GirardProxy]: success
+[2024-04-21 11:56:13] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-21 11:56:13] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.3.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.4.tar.gz]
+[2024-04-21 11:56:13] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 11:56:13] INFO root fetch - main [MainThread]: Store serial: [22863519]
