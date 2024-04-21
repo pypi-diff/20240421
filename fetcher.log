@@ -17101,3 +17101,36 @@
 [2024-04-21 21:31:40] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.2.tar.gz]
 [2024-04-21 21:31:40] INFO root fetch - main [MainThread]: End processing [epyt]: success
 [2024-04-21 21:31:40] INFO root fetch - main [MainThread]: Store serial: [22868081]
+[2024-04-21 21:33:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868081]
+[2024-04-21 21:33:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 21:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kometautils
+[2024-04-21 21:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cbmshell
+[2024-04-21 21:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hepai
+[2024-04-21 21:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC600
+[2024-04-21 21:33:52] WARNING root fetch - processPackages [PythonTestLJC600]: Skipping, unable to determine old version
+[2024-04-21 21:33:52] INFO root fetch - main [MainThread]: End processing [PythonTestLJC600] error
+[2024-04-21 21:33:52] INFO root fetch - processPackages [kometautils]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-21 21:33:52] INFO root fetch - processPackages [cbmshell]: New version: [1.9] Old Version: [1.8]
+[2024-04-21 21:33:52] INFO root fetch - processPackages [hepai]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-21 21:33:52] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/7b/4d/243e47934622dae9e43f2e44a948a2405f866e3c825eb4bc6d9907ae607d/kometautils-0.3.1.tar.gz
+[2024-04-21 21:33:52] INFO root fetch - processPackages [cbmshell]: Downloading https://files.pythonhosted.org/packages/a6/53/7a99a858373eb5826deaf60f2baefc6f5298842e59fa00739ea1c402c2d1/cbmshell-1.8.tar.gz
+[2024-04-21 21:33:52] INFO root fetch - processPackages [hepai]: Downloading https://files.pythonhosted.org/packages/af/d6/3eb11e233c100217f0da50df2080c5912973b5c58e7b286c1c0d857ec100/hepai-1.1.5.tar.gz
+[2024-04-21 21:33:53] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/40/7a/0e29201429eb68c5119af3e47efc226ddb5b002c7d44f85cb59694120162/kometautils-0.3.2.tar.gz
+[2024-04-21 21:33:53] INFO root fetch - processPackages [cbmshell]: Downloading https://files.pythonhosted.org/packages/19/fd/4eb2307da7d6225b4d566b8ea2839d6e0b0fad82ad24550276a4a014e997/cbmshell-1.9.tar.gz
+[2024-04-21 21:33:53] INFO root fetch - processPackages [hepai]: Downloading https://files.pythonhosted.org/packages/37/8f/36c6c536d75689ce6e9d5218fcdf8c8ca0691b4caa8374c464129e60d9e6/hepai-1.1.6.tar.gz
+[2024-04-21 21:33:53] INFO root fetch - processPackages [kometautils]: executing diffoscope
+[2024-04-21 21:33:53] INFO root fetch - processPackages [kometautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kometautils-0.3.1.tar.gz tmp/kometautils-0.3.2.tar.gz --markdown 20240421/k/kometautils/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-21 21:33:53] INFO root fetch - processPackages [cbmshell]: executing diffoscope
+[2024-04-21 21:33:53] INFO root fetch - processPackages [cbmshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbmshell-1.8.tar.gz tmp/cbmshell-1.9.tar.gz --markdown 20240421/c/cbmshell/1.8-1.9/README.md --exclude *.pyd
+[2024-04-21 21:33:53] INFO root fetch - processPackages [hepai]: executing diffoscope
+[2024-04-21 21:33:53] INFO root fetch - processPackages [hepai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hepai-1.1.5.tar.gz tmp/hepai-1.1.6.tar.gz --markdown 20240421/h/hepai/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-21 21:33:53] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.1.tar.gz]
+[2024-04-21 21:33:53] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.2.tar.gz]
+[2024-04-21 21:33:53] INFO root fetch - main [MainThread]: End processing [kometautils]: success
+[2024-04-21 21:33:53] INFO root fetch - processPackages [cbmshell]: Remove: archive file [/home/abi/fetcher/tmp/cbmshell-1.8.tar.gz]
+[2024-04-21 21:33:53] INFO root fetch - processPackages [cbmshell]: Remove: archive file [/home/abi/fetcher/tmp/cbmshell-1.9.tar.gz]
+[2024-04-21 21:33:53] INFO root fetch - main [MainThread]: End processing [cbmshell]: success
+[2024-04-21 21:33:54] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.5.tar.gz]
+[2024-04-21 21:33:54] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.6.tar.gz]
+[2024-04-21 21:33:54] INFO root fetch - main [MainThread]: End processing [hepai]: success
+[2024-04-21 21:33:54] INFO root fetch - main [MainThread]: Store serial: [22868095]
