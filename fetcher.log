@@ -6232,3 +6232,15 @@
 [2024-04-21 09:50:55] INFO root fetch - main [MainThread]: End processing [galxiai] error
 [2024-04-21 09:50:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC412] error
 [2024-04-21 09:50:55] INFO root fetch - main [MainThread]: Store serial: [22862910]
+[2024-04-21 09:52:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862910]
+[2024-04-21 09:53:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 09:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IPFS-Toolkit
+[2024-04-21 09:53:04] INFO root fetch - processPackages [IPFS-Toolkit]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-21 09:53:04] INFO root fetch - processPackages [IPFS-Toolkit]: Downloading https://files.pythonhosted.org/packages/cd/e2/4760f29a8f55bc6dfd69fc50b7991c620ef4e6a41640650e2d74ebc42bf0/IPFS-Toolkit-0.5.8.tar.gz
+[2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: Downloading https://files.pythonhosted.org/packages/b1/f9/4eb14828d48781ff746727ef1fd9fc3dd837698a4d01a5521712c4feb6ee/IPFS-Toolkit-0.5.9.tar.gz
+[2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: executing diffoscope
+[2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IPFS-Toolkit-0.5.8.tar.gz tmp/IPFS-Toolkit-0.5.9.tar.gz --markdown 20240421/I/IPFS-Toolkit/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: Remove: archive file [/home/abi/fetcher/tmp/IPFS-Toolkit-0.5.8.tar.gz]
+[2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: Remove: archive file [/home/abi/fetcher/tmp/IPFS-Toolkit-0.5.9.tar.gz]
+[2024-04-21 09:53:05] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
+[2024-04-21 09:53:05] INFO root fetch - main [MainThread]: Store serial: [22862915]
