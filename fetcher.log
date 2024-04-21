@@ -4992,3 +4992,24 @@
 [2024-04-21 08:08:02] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.2.tar.gz]
 [2024-04-21 08:08:02] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
 [2024-04-21 08:08:02] INFO root fetch - main [MainThread]: Store serial: [22862321]
+[2024-04-21 08:10:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862321]
+[2024-04-21 08:10:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: github-custom-actions
+[2024-04-21 08:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hspylib-clitt
+[2024-04-21 08:10:11] INFO root fetch - processPackages [github-custom-actions]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-21 08:10:11] INFO root fetch - processPackages [hspylib-clitt]: New version: [0.9.98] Old Version: [0.9.97]
+[2024-04-21 08:10:11] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/a7/65/de98f1791d0b8b4afec8362924fe540fb992a12a128393f5b720528fe451/github_custom_actions-1.2.0.tar.gz
+[2024-04-21 08:10:11] INFO root fetch - processPackages [hspylib-clitt]: Downloading https://files.pythonhosted.org/packages/a5/6e/770851279a1231e6148aa2efce49324900cc1156ecb1b6d0e9b3a83e241b/hspylib-clitt-0.9.97.tar.gz
+[2024-04-21 08:10:11] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/10/0d/a07ee7dae838abea33473e8cb0fc32e3cddc7602bf712c97a17f00417769/github_custom_actions-1.2.1.tar.gz
+[2024-04-21 08:10:11] INFO root fetch - processPackages [hspylib-clitt]: Downloading https://files.pythonhosted.org/packages/b2/48/af5284ac733b0c159a82940a2b450546c61b54d0aec3768dd58557b3542d/hspylib-clitt-0.9.98.tar.gz
+[2024-04-21 08:10:11] INFO root fetch - processPackages [github-custom-actions]: executing diffoscope
+[2024-04-21 08:10:11] INFO root fetch - processPackages [github-custom-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_custom_actions-1.2.0.tar.gz tmp/github_custom_actions-1.2.1.tar.gz --markdown 20240421/g/github-custom-actions/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-21 08:10:12] INFO root fetch - processPackages [hspylib-clitt]: executing diffoscope
+[2024-04-21 08:10:12] INFO root fetch - processPackages [hspylib-clitt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hspylib-clitt-0.9.97.tar.gz tmp/hspylib-clitt-0.9.98.tar.gz --markdown 20240421/h/hspylib-clitt/0.9.97-0.9.98/README.md --exclude *.pyd
+[2024-04-21 08:10:12] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.2.0.tar.gz]
+[2024-04-21 08:10:12] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.2.1.tar.gz]
+[2024-04-21 08:10:12] INFO root fetch - main [MainThread]: End processing [github-custom-actions]: success
+[2024-04-21 08:10:12] INFO root fetch - processPackages [hspylib-clitt]: Remove: archive file [/home/abi/fetcher/tmp/hspylib-clitt-0.9.97.tar.gz]
+[2024-04-21 08:10:12] INFO root fetch - processPackages [hspylib-clitt]: Remove: archive file [/home/abi/fetcher/tmp/hspylib-clitt-0.9.98.tar.gz]
+[2024-04-21 08:10:12] INFO root fetch - main [MainThread]: End processing [hspylib-clitt]: success
+[2024-04-21 08:10:12] INFO root fetch - main [MainThread]: Store serial: [22862328]
