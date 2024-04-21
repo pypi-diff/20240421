@@ -2557,3 +2557,36 @@
 [2024-04-21 03:53:26] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django_seeding-1.1.2.tar.gz]
 [2024-04-21 03:53:26] INFO root fetch - main [MainThread]: End processing [django-seeding]: success
 [2024-04-21 03:53:26] INFO root fetch - main [MainThread]: Store serial: [22861134]
+[2024-04-21 03:55:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861134]
+[2024-04-21 03:55:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 03:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC322
+[2024-04-21 03:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lollms-client
+[2024-04-21 03:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pg-alchemy-kit
+[2024-04-21 03:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyqtgraph
+[2024-04-21 03:55:34] INFO root fetch - processPackages [pg-alchemy-kit]: New version: [0.9.1b0] Old Version: [0.9.14b0]
+[2024-04-21 03:55:34] WARNING root fetch - processPackages [PythonTestLJC322]: Skipping, unable to determine old version
+[2024-04-21 03:55:34] INFO root fetch - main [MainThread]: End processing [PythonTestLJC322] error
+[2024-04-21 03:55:34] INFO root fetch - processPackages [lollms-client]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-21 03:55:34] INFO root fetch - processPackages [pyqtgraph]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-21 03:55:34] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/e2/0e/aa844689d797bc7e19412b39009e0b2a3f963bcfac6e00dd451feee24d28/pg_alchemy_kit-0.9.14b0.tar.gz
+[2024-04-21 03:55:34] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/21/1b/db9b7997e290a3a73fa61125f669e940757ef41896089df950bf255c4dc4/lollms_client-0.3.0.tar.gz
+[2024-04-21 03:55:34] INFO root fetch - processPackages [pyqtgraph]: Downloading https://files.pythonhosted.org/packages/ed/1e/6d130184f35c8c4aeb8488c7da0b06cbae239710648fc1086778391e32bf/pyqtgraph-0.9.7.tar.gz
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pg-alchemy-kit]: Downloading https://files.pythonhosted.org/packages/15/77/9606182a8ca268d744c73ee5fe74a3c2311f9ee66380afa1f220c118f43f/pg_alchemy_kit-0.9.1b0.tar.gz
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pg-alchemy-kit]: executing diffoscope
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pg-alchemy-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_alchemy_kit-0.9.14b0.tar.gz tmp/pg_alchemy_kit-0.9.1b0.tar.gz --markdown 20240421/p/pg-alchemy-kit/0.9.14b0-0.9.1b0/README.md --exclude *.pyd
+[2024-04-21 03:55:35] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/ef/c8/f9a06ed9286a43e1b5fe81a52a16f7fb3984f1294c489144ad588ef118fa/lollms_client-0.3.1.tar.gz
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pyqtgraph]: Downloading https://files.pythonhosted.org/packages/3c/ae/482ffc3f9c4a0e21502417cb0504acd8b91779ce0381018518a4173b36ab/pyqtgraph-0.9.8.tar.gz
+[2024-04-21 03:55:35] INFO root fetch - processPackages [lollms-client]: executing diffoscope
+[2024-04-21 03:55:35] INFO root fetch - processPackages [lollms-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lollms_client-0.3.0.tar.gz tmp/lollms_client-0.3.1.tar.gz --markdown 20240421/l/lollms-client/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pyqtgraph]: executing diffoscope
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pyqtgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqtgraph-0.9.7.tar.gz tmp/pyqtgraph-0.9.8.tar.gz --markdown 20240421/p/pyqtgraph/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.14b0.tar.gz]
+[2024-04-21 03:55:35] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
+[2024-04-21 03:55:35] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
+[2024-04-21 03:55:35] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.3.0.tar.gz]
+[2024-04-21 03:55:35] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.3.1.tar.gz]
+[2024-04-21 03:55:35] INFO root fetch - main [MainThread]: End processing [lollms-client]: success
+[2024-04-21 03:55:40] INFO root fetch - processPackages [pyqtgraph]: Remove: archive file [/home/abi/fetcher/tmp/pyqtgraph-0.9.7.tar.gz]
+[2024-04-21 03:55:40] INFO root fetch - processPackages [pyqtgraph]: Remove: archive file [/home/abi/fetcher/tmp/pyqtgraph-0.9.8.tar.gz]
+[2024-04-21 03:55:40] INFO root fetch - main [MainThread]: End processing [pyqtgraph]: success
+[2024-04-21 03:55:40] INFO root fetch - main [MainThread]: Store serial: [22861148]
