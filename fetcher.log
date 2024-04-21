@@ -8074,3 +8074,42 @@
 [2024-04-21 12:24:52] INFO root fetch - processPackages [feeluown]: Remove: archive file [/home/abi/fetcher/tmp/feeluown-4.1.3.tar.gz]
 [2024-04-21 12:24:52] INFO root fetch - main [MainThread]: End processing [feeluown]: success
 [2024-04-21 12:24:52] INFO root fetch - main [MainThread]: Store serial: [22863657]
+[2024-04-21 12:26:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863657]
+[2024-04-21 12:27:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 12:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dishka
+[2024-04-21 12:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drawdraw
+[2024-04-21 12:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textile-metric
+[2024-04-21 12:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cyclonedx-bom
+[2024-04-21 12:27:00] INFO root fetch - processPackages [textile-metric]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 12:27:00] INFO root fetch - processPackages [drawdraw]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-21 12:27:00] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.2a1] Old Version: [4.3.1a1]
+[2024-04-21 12:27:00] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/73/22/478ae8921149820945fb163018e1c77923019d43b6622e7c42676b780960/textile_metric-0.0.8.tar.gz
+[2024-04-21 12:27:00] INFO root fetch - processPackages [dishka]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-21 12:27:00] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/1f/e0/657d933c429b489d5d27ad08ba00a842046146ee3102c1bd46c9b47f2442/drawdraw-0.0.7-py3-none-any.whl
+[2024-04-21 12:27:01] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/a7/46/b73ae35e9649ddb982f09af49c352d9aa159e0e1ee40bd63f965d36a4464/cyclonedx_bom-4.3.1a1.tar.gz
+[2024-04-21 12:27:01] INFO root fetch - processPackages [dishka]: Downloading https://files.pythonhosted.org/packages/f2/be/07a881dc4d7fea484546bf5cec411540d4306d8b9dbc942141e1121d6072/dishka-1.0.0.tar.gz
+[2024-04-21 12:27:01] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/ff/b2/aa41764cb2a4d073b72ea65c47774a5086d2fca64c324988c08000bb5185/drawdraw-0.0.8-py3-none-any.whl
+[2024-04-21 12:27:01] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/ee/a6/d206aff5f6b713f6ace6f754b7c594708c970b5f40f88b0e7b7852ff85f6/cyclonedx_bom-4.3.2a1.tar.gz
+[2024-04-21 12:27:01] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 12:27:01] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.7-py3-none-any.whl.zip tmp/drawdraw-0.0.8-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-21 12:27:01] INFO root fetch - processPackages [dishka]: Downloading https://files.pythonhosted.org/packages/d1/64/a0e6e205fb68f47f89ce312f6de39a2d0d55e4a3672b5e1fc147f86a4c54/dishka-1.1.0.tar.gz
+[2024-04-21 12:27:01] INFO root fetch - processPackages [dishka]: executing diffoscope
+[2024-04-21 12:27:01] INFO root fetch - processPackages [dishka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dishka-1.0.0.tar.gz tmp/dishka-1.1.0.tar.gz --markdown 20240421/d/dishka/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-21 12:27:01] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/48/30/fa56bd89ea1403cbec6b21acf104caf5820a5340031e919f2d70751382c3/textile_metric-0.0.9.tar.gz
+[2024-04-21 12:27:01] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 12:27:01] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.1a1.tar.gz tmp/cyclonedx_bom-4.3.2a1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.1a1-4.3.2a1/README.md --exclude *.pyd
+[2024-04-21 12:27:01] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.7-py3-none-any.whl.zip]
+[2024-04-21 12:27:01] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.8-py3-none-any.whl.zip]
+[2024-04-21 12:27:01] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 12:27:02] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:27:02] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.8.tar.gz tmp/textile_metric-0.0.9.tar.gz --markdown 20240421/t/textile-metric/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 12:27:02] INFO root fetch - processPackages [dishka]: Remove: archive file [/home/abi/fetcher/tmp/dishka-1.0.0.tar.gz]
+[2024-04-21 12:27:02] INFO root fetch - processPackages [dishka]: Remove: archive file [/home/abi/fetcher/tmp/dishka-1.1.0.tar.gz]
+[2024-04-21 12:27:02] INFO root fetch - main [MainThread]: End processing [dishka]: success
+[2024-04-21 12:27:02] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.8.tar.gz]
+[2024-04-21 12:27:02] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.9.tar.gz]
+[2024-04-21 12:27:02] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:27:10] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.1a1.tar.gz]
+[2024-04-21 12:27:10] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.2a1.tar.gz]
+[2024-04-21 12:27:10] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 12:27:10] INFO root fetch - main [MainThread]: Store serial: [22863668]
