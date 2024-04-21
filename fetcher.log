@@ -11345,3 +11345,15 @@
 [2024-04-21 16:04:33] INFO root fetch - processPackages [aa-intel-tool]: Remove: archive file [/home/abi/fetcher/tmp/aa_intel_tool-2.1.0.tar.gz]
 [2024-04-21 16:04:33] INFO root fetch - main [MainThread]: End processing [aa-intel-tool]: success
 [2024-04-21 16:04:33] INFO root fetch - main [MainThread]: Store serial: [22865263]
+[2024-04-21 16:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865263]
+[2024-04-21 16:06:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 16:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mwxlib
+[2024-04-21 16:06:43] INFO root fetch - processPackages [mwxlib]: New version: [0.94.0] Old Version: [0.93.9]
+[2024-04-21 16:06:43] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/c2/36/1c4edd0cd018e07fb1b4a53c2bb108a05181ac41dde5c19921b038122167/mwxlib-0.93.9-py3-none-any.whl
+[2024-04-21 16:06:43] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/ae/3b/0cc455b0ae0c28fca5b561a27757d3ec5c95e6adaf740aa3ec6505ec64de/mwxlib-0.94.0-py3-none-any.whl
+[2024-04-21 16:06:44] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2024-04-21 16:06:44] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.93.9-py3-none-any.whl.zip tmp/mwxlib-0.94.0-py3-none-any.whl.zip --markdown 20240421/m/mwxlib/0.93.9-0.94.0/README.md --exclude *.pyd
+[2024-04-21 16:06:44] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.93.9-py3-none-any.whl.zip]
+[2024-04-21 16:06:44] INFO root fetch - processPackages [mwxlib]: Remove: archive file [/home/abi/fetcher/tmp/mwxlib-0.94.0-py3-none-any.whl.zip]
+[2024-04-21 16:06:44] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2024-04-21 16:06:44] INFO root fetch - main [MainThread]: Store serial: [22865275]
