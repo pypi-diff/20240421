@@ -10260,3 +10260,28 @@
 [2024-04-21 15:05:16] INFO root fetch - processPackages [aa-forum]: Remove: archive file [/home/abi/fetcher/tmp/aa_forum-2.1.0.tar.gz]
 [2024-04-21 15:05:16] INFO root fetch - main [MainThread]: End processing [aa-forum]: success
 [2024-04-21 15:05:16] INFO root fetch - main [MainThread]: Store serial: [22864765]
+[2024-04-21 15:07:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864765]
+[2024-04-21 15:07:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libpss
+[2024-04-21 15:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprit
+[2024-04-21 15:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hahomematic
+[2024-04-21 15:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC461
+[2024-04-21 15:07:25] INFO root fetch - processPackages [libpss]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:07:25] INFO root fetch - processPackages [sprit]: New version: [0.1.9] Old Version: [0.1.74.dev0]
+[2024-04-21 15:07:25] INFO root fetch - processPackages [hahomematic]: New version: [2024.4.9b2] Old Version: [2024.4.9b1]
+[2024-04-21 15:07:25] WARNING root fetch - processPackages [PythonTestLJC461]: Skipping, unable to determine old version
+[2024-04-21 15:07:25] INFO root fetch - main [MainThread]: End processing [PythonTestLJC461] error
+[2024-04-21 15:07:25] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/81/91/9891c6832e1587efb47c6d50c612a5cc7e0eec02825d6413ac1f4b16abf6/hahomematic-2024.4.9b1.tar.gz
+[2024-04-21 15:07:25] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/c3/25024206e3d32063c6db11c299263371aeca50fe56e8095220fedb9d91a0/libpss-0.1.8.tar.gz
+[2024-04-21 15:07:25] INFO root fetch - processPackages [sprit]: Downloading https://files.pythonhosted.org/packages/87/c7/136c54a497b7c0b1e305ad0fb9752d4cb5297267730a08e3e0bcfc672b75/sprit-0.1.74.dev0.tar.gz
+[2024-04-21 15:07:25] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12679379>=10485760
+[2024-04-21 15:07:25] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 15:07:25] WARNING root fetch - processPackages [sprit]: Skipping package: exceeds size limit 13887592>=10485760
+[2024-04-21 15:07:25] INFO root fetch - main [MainThread]: End processing [sprit] error
+[2024-04-21 15:07:25] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/73/77/08a504d8e21c3618788a1df0dcbcdc32d48ae1fbeb07845b788563829933/hahomematic-2024.4.9b2.tar.gz
+[2024-04-21 15:07:25] INFO root fetch - processPackages [hahomematic]: executing diffoscope
+[2024-04-21 15:07:25] INFO root fetch - processPackages [hahomematic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hahomematic-2024.4.9b1.tar.gz tmp/hahomematic-2024.4.9b2.tar.gz --markdown 20240421/h/hahomematic/2024.4.9b1-2024.4.9b2/README.md --exclude *.pyd
+[2024-04-21 15:07:26] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b1.tar.gz]
+[2024-04-21 15:07:26] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b2.tar.gz]
+[2024-04-21 15:07:26] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
+[2024-04-21 15:07:26] INFO root fetch - main [MainThread]: Store serial: [22864793]
