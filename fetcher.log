@@ -16675,3 +16675,48 @@
 [2024-04-21 21:14:00] WARNING root fetch - processPackages [PythonTestLJC593]: Skipping, unable to determine old version
 [2024-04-21 21:14:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC593] error
 [2024-04-21 21:14:00] INFO root fetch - main [MainThread]: Store serial: [22867885]
+[2024-04-21 21:16:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867885]
+[2024-04-21 21:16:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lisa-on-cuda
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chamco-ragbot
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: teaspoon
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opex-manifest-generator
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FunPayPy
+[2024-04-21 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: filemac
+[2024-04-21 21:16:09] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 21:16:09] WARNING root fetch - processPackages [FunPayPy]: Skipping, unable to determine old version
+[2024-04-21 21:16:09] INFO root fetch - processPackages [teaspoon]: New version: [1.5.2] Old Version: [1.4.8]
+[2024-04-21 21:16:09] INFO root fetch - main [MainThread]: End processing [FunPayPy] error
+[2024-04-21 21:16:09] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [opex-manifest-generator]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-21 21:16:09] INFO root fetch - processPackages [lisa-on-cuda]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-21 21:16:09] WARNING root fetch - processPackages [filemac]: Skipping, unable to determine old version
+[2024-04-21 21:16:09] INFO root fetch - main [MainThread]: End processing [filemac] error
+[2024-04-21 21:16:09] INFO root fetch - processPackages [teaspoon]: Downloading https://files.pythonhosted.org/packages/30/b0/e4acbf98de87055f32ba954f2f434903002350edaa40da9ab1b8cbe7b9e8/teaspoon-1.4.8.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [opex-manifest-generator]: Downloading https://files.pythonhosted.org/packages/bd/6e/4df22681f50b06b815f5ce5fdd752c7b53b6bd682c401316fafdb57e2155/opex_manifest_generator-1.1.4.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [lisa-on-cuda]: Downloading https://files.pythonhosted.org/packages/86/70/fb9a1153c669c3e87fdc9c34fd8a9bd80edc0d4d8aa3069b25aa41158e3b/lisa_on_cuda-1.0.5.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 21:16:09] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 21:16:09] INFO root fetch - processPackages [opex-manifest-generator]: Downloading https://files.pythonhosted.org/packages/15/c0/6aca4cff87546665b7d93cb75a395d92875a6bafbb6ec127abd0c1525548/opex_manifest_generator-1.1.5.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [lisa-on-cuda]: Downloading https://files.pythonhosted.org/packages/d2/bc/e1166371f796d40cf8409ba9ace534218753d7cbd35247a3c21de988843f/lisa_on_cuda-1.0.6.tar.gz
+[2024-04-21 21:16:09] INFO root fetch - processPackages [opex-manifest-generator]: executing diffoscope
+[2024-04-21 21:16:09] INFO root fetch - processPackages [opex-manifest-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opex_manifest_generator-1.1.4.tar.gz tmp/opex_manifest_generator-1.1.5.tar.gz --markdown 20240421/o/opex-manifest-generator/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-21 21:16:10] INFO root fetch - processPackages [lisa-on-cuda]: executing diffoscope
+[2024-04-21 21:16:10] INFO root fetch - processPackages [lisa-on-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lisa_on_cuda-1.0.5.tar.gz tmp/lisa_on_cuda-1.0.6.tar.gz --markdown 20240421/l/lisa-on-cuda/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-21 21:16:10] INFO root fetch - processPackages [teaspoon]: Downloading https://files.pythonhosted.org/packages/25/9b/293b13034b58c6c59e13a78e3e6d6a5885c36662c03920415e8f0c97f252/teaspoon-1.5.2.tar.gz
+[2024-04-21 21:16:10] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 21:16:10] INFO root fetch - processPackages [opex-manifest-generator]: Remove: archive file [/home/abi/fetcher/tmp/opex_manifest_generator-1.1.4.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - processPackages [opex-manifest-generator]: Remove: archive file [/home/abi/fetcher/tmp/opex_manifest_generator-1.1.5.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - main [MainThread]: End processing [opex-manifest-generator]: success
+[2024-04-21 21:16:10] INFO root fetch - processPackages [teaspoon]: executing diffoscope
+[2024-04-21 21:16:10] INFO root fetch - processPackages [teaspoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teaspoon-1.4.8.tar.gz tmp/teaspoon-1.5.2.tar.gz --markdown 20240421/t/teaspoon/1.4.8-1.5.2/README.md --exclude *.pyd
+[2024-04-21 21:16:10] INFO root fetch - processPackages [lisa-on-cuda]: Remove: archive file [/home/abi/fetcher/tmp/lisa_on_cuda-1.0.5.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - processPackages [lisa-on-cuda]: Remove: archive file [/home/abi/fetcher/tmp/lisa_on_cuda-1.0.6.tar.gz]
+[2024-04-21 21:16:10] INFO root fetch - main [MainThread]: End processing [lisa-on-cuda]: success
+[2024-04-21 21:16:13] INFO root fetch - processPackages [teaspoon]: Remove: archive file [/home/abi/fetcher/tmp/teaspoon-1.4.8.tar.gz]
+[2024-04-21 21:16:13] INFO root fetch - processPackages [teaspoon]: Remove: archive file [/home/abi/fetcher/tmp/teaspoon-1.5.2.tar.gz]
+[2024-04-21 21:16:13] INFO root fetch - main [MainThread]: End processing [teaspoon]: success
+[2024-04-21 21:16:13] INFO root fetch - main [MainThread]: Store serial: [22867902]
