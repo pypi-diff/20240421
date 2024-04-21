@@ -9519,3 +9519,18 @@
 [2024-04-21 14:10:47] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
 [2024-04-21 14:10:47] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-21 14:10:47] INFO root fetch - main [MainThread]: Store serial: [22864329]
+[2024-04-21 14:12:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864329]
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtmf6
+[2024-04-21 14:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC441
+[2024-04-21 14:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mycalc-test
+[2024-04-21 14:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rpcprotocolsimple
+[2024-04-21 14:12:55] WARNING root fetch - processPackages [rtmf6]: Skipping, unable to determine old version
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: End processing [rtmf6] error
+[2024-04-21 14:12:55] WARNING root fetch - processPackages [mycalc-test]: Skipping, unable to determine old version
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: End processing [mycalc-test] error
+[2024-04-21 14:12:55] WARNING root fetch - processPackages [rpcprotocolsimple]: Skipping, unable to determine old version
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: End processing [rpcprotocolsimple] error
+[2024-04-21 14:12:55] WARNING root fetch - processPackages [PythonTestLJC441]: Skipping, unable to determine old version
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC441] error
+[2024-04-21 14:12:55] INFO root fetch - main [MainThread]: Store serial: [22864346]
