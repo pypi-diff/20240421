@@ -14520,3 +14520,33 @@
 [2024-04-21 19:02:52] INFO root fetch - processPackages [fastapi-gen]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_gen-0.5.1.tar.gz]
 [2024-04-21 19:02:52] INFO root fetch - main [MainThread]: End processing [fastapi-gen]: success
 [2024-04-21 19:02:52] INFO root fetch - main [MainThread]: Store serial: [22866755]
+[2024-04-21 19:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866755]
+[2024-04-21 19:05:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crispector2
+[2024-04-21 19:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chamco-ragbot
+[2024-04-21 19:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BoatBuddy
+[2024-04-21 19:05:01] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 19:05:01] INFO root fetch - processPackages [crispector2]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-21 19:05:01] INFO root fetch - processPackages [BoatBuddy]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-21 19:05:01] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 19:05:02] INFO root fetch - processPackages [crispector2]: Downloading https://files.pythonhosted.org/packages/6d/79/3a27ec43b377e9665b18c78951f8902c640e4046bdbe8e255f06b0e9da7b/crispector2-2.0.8.tar.gz
+[2024-04-21 19:05:02] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 19:05:02] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/bf/4d/9e321cfe04d1c06153ff54a1253eda867fdd54ee3739262e5d7cfc51b1c7/boatbuddy-0.9.4.tar.gz
+[2024-04-21 19:05:02] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 19:05:02] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 19:05:02] INFO root fetch - processPackages [crispector2]: Downloading https://files.pythonhosted.org/packages/1c/bb/c566e70eabd0d85862b55ed7aacd4f27a921b5a07032942487544ab89f08/crispector2-2.0.9.tar.gz
+[2024-04-21 19:05:02] INFO root fetch - processPackages [crispector2]: executing diffoscope
+[2024-04-21 19:05:02] INFO root fetch - processPackages [crispector2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crispector2-2.0.8.tar.gz tmp/crispector2-2.0.9.tar.gz --markdown 20240421/c/crispector2/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-21 19:05:02] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 19:05:02] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 19:05:02] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 19:05:02] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/fd/f5/139785198b6a0e3c5ca20dae7046eff9e2b660f9a02f1ecd73546dfff321/boatbuddy-0.9.5.tar.gz
+[2024-04-21 19:05:03] INFO root fetch - processPackages [BoatBuddy]: executing diffoscope
+[2024-04-21 19:05:03] INFO root fetch - processPackages [BoatBuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boatbuddy-0.9.4.tar.gz tmp/boatbuddy-0.9.5.tar.gz --markdown 20240421/B/BoatBuddy/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-21 19:05:03] INFO root fetch - processPackages [crispector2]: Remove: archive file [/home/abi/fetcher/tmp/crispector2-2.0.8.tar.gz]
+[2024-04-21 19:05:03] INFO root fetch - processPackages [crispector2]: Remove: archive file [/home/abi/fetcher/tmp/crispector2-2.0.9.tar.gz]
+[2024-04-21 19:05:03] INFO root fetch - main [MainThread]: End processing [crispector2]: success
+[2024-04-21 19:05:10] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.4.tar.gz]
+[2024-04-21 19:05:10] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
+[2024-04-21 19:05:10] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
+[2024-04-21 19:05:10] INFO root fetch - main [MainThread]: Store serial: [22866762]
