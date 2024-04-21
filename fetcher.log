@@ -14088,3 +14088,45 @@
 [2024-04-21 18:34:37] INFO root fetch - processPackages [swmmio]: Remove: archive file [/home/abi/fetcher/tmp/swmmio-0.7.0-py3-none-any.whl.zip]
 [2024-04-21 18:34:37] INFO root fetch - main [MainThread]: End processing [swmmio]: success
 [2024-04-21 18:34:37] INFO root fetch - main [MainThread]: Store serial: [22866517]
+[2024-04-21 18:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866517]
+[2024-04-21 18:36:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 18:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradedangerous
+[2024-04-21 18:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC536
+[2024-04-21 18:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-math
+[2024-04-21 18:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faultier
+[2024-04-21 18:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aprsd
+[2024-04-21 18:36:45] INFO root fetch - processPackages [faultier]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 18:36:45] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 18:36:45] INFO root fetch - processPackages [mo-math]: New version: [7.594.24112] Old Version: [7.593.24112]
+[2024-04-21 18:36:46] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 18:36:46] WARNING root fetch - processPackages [PythonTestLJC536]: Skipping, unable to determine old version
+[2024-04-21 18:36:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC536] error
+[2024-04-21 18:36:46] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/74/ae/0313d8b2d43776b7005c9b734541f3d99f3f86b1df791c772abbc02ddc04/mo_math-7.593.24112.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [faultier]: Downloading https://files.pythonhosted.org/packages/f3/d1/bb19403b8d96e8773f2718cc6b3620110bb3297b400aaf1f2d252b04ac5b/faultier-0.1.7.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [aprsd]: New version: [3.3.4] Old Version: [3.3.3]
+[2024-04-21 18:36:46] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/1d/70/7552a61eb556cf6df3552519b3ed97eb9476d3f58c12141bd23bd4780b0f/mo_math-7.594.24112.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [aprsd]: Downloading https://files.pythonhosted.org/packages/7b/d9/bef54d9785f545a9496829f1729438d10f7115f400a08f92ce1fb116489e/aprsd-3.3.3.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [faultier]: Downloading https://files.pythonhosted.org/packages/27/ad/58a239a68f23f88fb228355bb00b3d807df6ab0e80a0ba8f57a5a3c5424e/faultier-0.1.8.tar.gz
+[2024-04-21 18:36:46] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-04-21 18:36:46] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.593.24112.tar.gz tmp/mo_math-7.594.24112.tar.gz --markdown 20240421/m/mo-math/7.593.24112-7.594.24112/README.md --exclude *.pyd
+[2024-04-21 18:36:46] INFO root fetch - processPackages [faultier]: executing diffoscope
+[2024-04-21 18:36:46] INFO root fetch - processPackages [faultier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faultier-0.1.7.tar.gz tmp/faultier-0.1.8.tar.gz --markdown 20240421/f/faultier/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 18:36:46] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 18:36:46] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 18:36:47] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.593.24112.tar.gz]
+[2024-04-21 18:36:47] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.594.24112.tar.gz]
+[2024-04-21 18:36:47] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-04-21 18:36:47] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.7.tar.gz]
+[2024-04-21 18:36:47] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.8.tar.gz]
+[2024-04-21 18:36:47] INFO root fetch - main [MainThread]: End processing [faultier]: success
+[2024-04-21 18:36:47] INFO root fetch - processPackages [aprsd]: Downloading https://files.pythonhosted.org/packages/9b/f4/29ac6439e2a64050f733bf64f9eb72d5bb6fe27247de967da3d5310fc5e6/aprsd-3.3.4.tar.gz
+[2024-04-21 18:36:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 18:36:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 18:36:48] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 18:36:48] INFO root fetch - processPackages [aprsd]: executing diffoscope
+[2024-04-21 18:36:48] INFO root fetch - processPackages [aprsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aprsd-3.3.3.tar.gz tmp/aprsd-3.3.4.tar.gz --markdown 20240421/a/aprsd/3.3.3-3.3.4/README.md --exclude *.pyd
+[2024-04-21 18:36:49] INFO root fetch - processPackages [aprsd]: Remove: archive file [/home/abi/fetcher/tmp/aprsd-3.3.3.tar.gz]
+[2024-04-21 18:36:49] INFO root fetch - processPackages [aprsd]: Remove: archive file [/home/abi/fetcher/tmp/aprsd-3.3.4.tar.gz]
+[2024-04-21 18:36:49] INFO root fetch - main [MainThread]: End processing [aprsd]: success
+[2024-04-21 18:36:49] INFO root fetch - main [MainThread]: Store serial: [22866537]
