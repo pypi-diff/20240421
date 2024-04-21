@@ -13325,3 +13325,36 @@
 [2024-04-21 17:53:11] INFO root fetch - processPackages [resqpy]: Remove: archive file [/home/abi/fetcher/tmp/resqpy-4.9.8.tar.gz]
 [2024-04-21 17:53:11] INFO root fetch - main [MainThread]: End processing [resqpy]: success
 [2024-04-21 17:53:11] INFO root fetch - main [MainThread]: Store serial: [22866176]
+[2024-04-21 17:55:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866176]
+[2024-04-21 17:55:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC521
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ldjcourse
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: culminator
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-indie-tools
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 17:55:20] INFO root fetch - processPackages [culminator]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 17:55:20] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/37/f4/e7f7cf70bdf03d223056d4eec5f49513caccf2dd8b5fe43b6a6cd763b033/culminator-0.7.tar.gz
+[2024-04-21 17:55:20] WARNING root fetch - processPackages [PythonTestLJC521]: Skipping, unable to determine old version
+[2024-04-21 17:55:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC521] error
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/35/01/2a484fe6b6a4ba4dbe15d13397eab1eb346644807eabad995917293734ee/ldjcourse-0.0.5.tar.gz
+[2024-04-21 17:55:20] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/20/b0/fb5753400f141516ccceeb59be597de1af3bbe4fe788e8236f76dbb0ec40/culminator-0.8-py3-none-any.whl
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/07/c0/82325f0d75c8555f4ab76234017666e656a8e31c121867ad42a42aa2439f/ldjcourse-0.0.6.tar.gz
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-21 17:55:20] INFO root fetch - processPackages [culminator]: executing diffoscope
+[2024-04-21 17:55:20] INFO root fetch - processPackages [culminator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culminator-0.7.tar.gz tmp/culminator-0.8-py3-none-any.whl.zip --markdown 20240421/c/culminator/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.5.tar.gz tmp/ldjcourse-0.0.6.tar.gz --markdown 20240421/l/ldjcourse/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-21 17:55:20] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240421/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 17:55:21] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.5.tar.gz]
+[2024-04-21 17:55:21] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.6.tar.gz]
+[2024-04-21 17:55:21] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-21 17:55:21] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.7.tar.gz]
+[2024-04-21 17:55:21] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
+[2024-04-21 17:55:21] INFO root fetch - main [MainThread]: End processing [culminator]: success
+[2024-04-21 17:55:21] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-21 17:55:21] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-21 17:55:21] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-21 17:55:21] INFO root fetch - main [MainThread]: Store serial: [22866190]
