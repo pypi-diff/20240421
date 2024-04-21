@@ -7075,3 +7075,99 @@
 [2024-04-21 11:03:31] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.7.tar.gz]
 [2024-04-21 11:03:31] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
 [2024-04-21 11:03:31] INFO root fetch - main [MainThread]: Store serial: [22863272]
+[2024-04-21 11:05:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863272]
+[2024-04-21 11:05:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.common
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.core
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.features
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metaffi-api
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.tabular
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: copy-spotter
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autogluon.multimodal
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django_herobiz_ds
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autogluon.timeseries
+[2024-04-21 11:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spotdl-rockbox
+[2024-04-21 11:05:39] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [spotdl-rockbox]: New version: [4.2.6] Old Version: [4.2.5]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [autogluon.tabular]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [django_herobiz_ds]: New version: [2.1.0] Old Version: [2.0.3]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [autogluon.multimodal]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:39] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.features]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:40] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/09/93/c70a0efa5947045e93dbf9beec546f6b7f32ce6b95073fcc265c3499bbf0/metaffi_api-0.0.18.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/66/bd/ad7bcaf403a8335f0c215b96d776e6cb273e9a5d3e27a11711cb7d2684f7/autogluon.common-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] WARNING root fetch - processPackages [copy-spotter]: Skipping, unable to determine old version
+[2024-04-21 11:05:40] INFO root fetch - processPackages [copy-spotter]: Start processing: autogluon
+[2024-04-21 11:05:40] INFO root fetch - main [MainThread]: End processing [copy-spotter] error
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/5f/d3/d953554414dd155e79325d5a1c0504627c5a77da2a7baa0b4d139b4e622b/autogluon.tabular-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [django_herobiz_ds]: Downloading https://files.pythonhosted.org/packages/7f/52/4f7565381e3d808490c1f57641d7a1789c9d6f21efeb687a2190fe2cf72a/django_herobiz_ds-2.0.3.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/a1/eb/49a803c96364a0bd485660ab68161b060911b334e5c730b308efd595029e/autogluon.multimodal-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240420] Old Version: [1.1.1b20240419]
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/9a/05/a083a860e2a616ccdc369f08232ce2637513b3512bbd772b38fee0a404fe/autogluon.timeseries-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [spotdl-rockbox]: Downloading https://files.pythonhosted.org/packages/d5/ed/a8ecf99cd04c42fbc333d48e85412666848b895245e87235d463ad5cb044/spotdl_rockbox-4.2.5.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/68/8a/4a4be16272de23519f2a9a68719783ac3c8b278c4bc05c95fb63b369573f/autogluon.core-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/cb/b0/fcacd1daff7cf50e0aec65f18154801124b0e48708f7f36e27dee414d678/autogluon.features-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/48/93/c47225d7cb2fb1cbdf6e733c3f213339ae249349e8681b7a02568281c283/autogluon-1.1.1b20240419.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/77/ec/3dc3b50eb722294ea19ae2e4a6d339c9615986670797f6195f469c052311/autogluon.common-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/7f/c9/d129ba688d5cf16798b272fdc48b48731211c3370662cb142fbde9b4b767/metaffi_api-0.0.19.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240419.tar.gz tmp/autogluon.common-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.common/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/e7/df/fc04d8fa426590c4c56bcd0091d84219c041c82a235c1432cb0c9f03aad4/autogluon.tabular-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/c8/d7/4f6938e560af4a0a7c0206cf995bf48d40eac6f1724e50c8377144a5ade0/autogluon.multimodal-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.18.tar.gz tmp/metaffi_api-0.0.19.tar.gz --markdown 20240421/m/metaffi-api/0.0.18-0.0.19/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [django_herobiz_ds]: Downloading https://files.pythonhosted.org/packages/fc/21/9409161b621aab19e3fc5ebd0063aeae7ecd5f70e802a48243e0ddb410f8/django_herobiz_ds-2.1.0.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/90/93/2d003a0ee2aa6942a23d652227efbf90e7953528959526a4e65b8b01a38d/autogluon.features-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/6f/b7/83ebd054c9b0057bf85e9ce2d0b95bc5d30381ef1c8194e5a18cc49de72b/autogluon.core-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/e6/34/af25af65d9e227f02e8b1894dcf8d9b3e436669522b51617de46a000d1d6/autogluon.timeseries-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [spotdl-rockbox]: Downloading https://files.pythonhosted.org/packages/24/ad/d9264b3ad19e3e887fce65d4cbc4eb89610bc6a8a790bdc54e144a160556/spotdl_rockbox-4.2.6.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/95/8d/3d77520fb993624e058c4e8161081a44fa2ed059c377b6e233e670a9d6f7/autogluon-1.1.1b20240420.tar.gz
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-1.1.1b20240419.tar.gz tmp/autogluon.tabular-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.tabular/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.1.1b20240419.tar.gz tmp/autogluon.features-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.features/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240419.tar.gz tmp/autogluon.core-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.core/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-1.1.1b20240419.tar.gz tmp/autogluon.multimodal-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.multimodal/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240419.tar.gz tmp/autogluon.timeseries-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon.timeseries/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:40] INFO root fetch - processPackages [spotdl-rockbox]: executing diffoscope
+[2024-04-21 11:05:40] INFO root fetch - processPackages [spotdl-rockbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotdl_rockbox-4.2.5.tar.gz tmp/spotdl_rockbox-4.2.6.tar.gz --markdown 20240421/s/spotdl-rockbox/4.2.5-4.2.6/README.md --exclude *.pyd
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240419.tar.gz tmp/autogluon-1.1.1b20240420.tar.gz --markdown 20240421/a/autogluon/1.1.1b20240419-1.1.1b20240420/README.md --exclude *.pyd
+[2024-04-21 11:05:41] INFO root fetch - processPackages [django_herobiz_ds]: executing diffoscope
+[2024-04-21 11:05:41] INFO root fetch - processPackages [django_herobiz_ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_herobiz_ds-2.0.3.tar.gz tmp/django_herobiz_ds-2.1.0.tar.gz --markdown 20240421/d/django_herobiz_ds/2.0.3-2.1.0/README.md --exclude *.pyd
+[2024-04-21 11:05:41] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.18.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.19.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:41] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2024-04-21 11:05:42] INFO root fetch - processPackages [spotdl-rockbox]: Remove: archive file [/home/abi/fetcher/tmp/spotdl_rockbox-4.2.5.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - processPackages [spotdl-rockbox]: Remove: archive file [/home/abi/fetcher/tmp/spotdl_rockbox-4.2.6.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - main [MainThread]: End processing [spotdl-rockbox]: success
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240419.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240420.tar.gz]
+[2024-04-21 11:05:42] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2024-04-21 11:05:43] INFO root fetch - processPackages [django_herobiz_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_ds-2.0.3.tar.gz]
+[2024-04-21 11:05:43] INFO root fetch - processPackages [django_herobiz_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_herobiz_ds-2.1.0.tar.gz]
+[2024-04-21 11:05:43] INFO root fetch - main [MainThread]: End processing [django_herobiz_ds]: success
+[2024-04-21 11:05:43] INFO root fetch - main [MainThread]: Store serial: [22863308]
