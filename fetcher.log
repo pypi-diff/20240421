@@ -16324,3 +16324,27 @@
 [2024-04-21 20:56:12] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.9.tar.gz]
 [2024-04-21 20:56:12] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
 [2024-04-21 20:56:12] INFO root fetch - main [MainThread]: Store serial: [22867682]
+[2024-04-21 20:58:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867682]
+[2024-04-21 20:58:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lichesspy
+[2024-04-21 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC587
+[2024-04-21 20:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pybts
+[2024-04-21 20:58:21] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev1] Old Version: [6.0.4.dev0]
+[2024-04-21 20:58:21] INFO root fetch - processPackages [pybts]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-04-21 20:58:21] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/a8/07/a075b125143ff20c37c03e5866d99d99fcd974e9bd2afb455520ea00ba99/pybts-1.7.1.tar.gz
+[2024-04-21 20:58:21] WARNING root fetch - processPackages [PythonTestLJC587]: Skipping, unable to determine old version
+[2024-04-21 20:58:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC587] error
+[2024-04-21 20:58:21] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/6d/6c/2dd553ebaf2118539098a0aeeb85b19f02cc724aecac5bd11e5c8c48eb1e/lichesspy-6.0.4.dev0.tar.gz
+[2024-04-21 20:58:21] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/63/af/597d4489922c44d5ac322b3602abcae538567b444a491df0b896257d079c/pybts-1.8.0.tar.gz
+[2024-04-21 20:58:21] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/a0/44/fb30df174de6c6ed2df907eed1c9a8811c33c6b87fe66a1696445d178dc5/lichesspy-6.0.4.dev1.tar.gz
+[2024-04-21 20:58:21] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 20:58:21] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.4.dev0.tar.gz tmp/lichesspy-6.0.4.dev1.tar.gz --markdown 20240421/l/lichesspy/6.0.4.dev0-6.0.4.dev1/README.md --exclude *.pyd
+[2024-04-21 20:58:21] INFO root fetch - processPackages [pybts]: executing diffoscope
+[2024-04-21 20:58:21] INFO root fetch - processPackages [pybts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybts-1.7.1.tar.gz tmp/pybts-1.8.0.tar.gz --markdown 20240421/p/pybts/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-04-21 20:58:22] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev0.tar.gz]
+[2024-04-21 20:58:22] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev1.tar.gz]
+[2024-04-21 20:58:22] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 20:58:22] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.7.1.tar.gz]
+[2024-04-21 20:58:22] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.0.tar.gz]
+[2024-04-21 20:58:22] INFO root fetch - main [MainThread]: End processing [pybts]: success
+[2024-04-21 20:58:22] INFO root fetch - main [MainThread]: Store serial: [22867693]
