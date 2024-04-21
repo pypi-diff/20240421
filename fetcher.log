@@ -6604,3 +6604,33 @@
 [2024-04-21 10:23:40] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.5.tar.gz]
 [2024-04-21 10:23:40] INFO root fetch - main [MainThread]: End processing [dtaas-cli]: success
 [2024-04-21 10:23:40] INFO root fetch - main [MainThread]: Store serial: [22863091]
+[2024-04-21 10:25:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863091]
+[2024-04-21 10:25:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eirStru
+[2024-04-21 10:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ismember
+[2024-04-21 10:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sharepoint-utils
+[2024-04-21 10:25:50] INFO root fetch - processPackages [eirStru]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-21 10:25:50] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/cd/99/351dc57ee8b2f06004f80702500689e5271323379dc3dbe4dbad60672926/eirStru-0.3.3.tar.gz
+[2024-04-21 10:25:50] INFO root fetch - processPackages [ismember]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-21 10:25:50] INFO root fetch - processPackages [sharepoint-utils]: New version: [1.0] Old Version: [0.2]
+[2024-04-21 10:25:50] INFO root fetch - processPackages [ismember]: Downloading https://files.pythonhosted.org/packages/42/fd/e5bf44bbf29aed3793c1aaa81f24c22df33d05210544ffae09b1971efbca/ismember-1.0.2.tar.gz
+[2024-04-21 10:25:50] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/0b/dc/5ee0efea6c1da1e40f2bdd2bc23810cea341e9b8df9ccb728e39e2fc1cb9/sharepoint_utils-0.2.tar.gz
+[2024-04-21 10:25:50] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/7b/96/cfdbd9ca89de8515c0694ad3ded81bb6b7f090748894830197eea25cb8db/eirStru-0.3.4.tar.gz
+[2024-04-21 10:25:51] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 10:25:51] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.3.tar.gz tmp/eirStru-0.3.4.tar.gz --markdown 20240421/e/eirStru/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-21 10:25:51] INFO root fetch - processPackages [ismember]: Downloading https://files.pythonhosted.org/packages/14/97/9aa16eb6a035d835a138fcbc291ebb4bf73dc7bfd8fa55a26d634fcce377/ismember-1.0.3.tar.gz
+[2024-04-21 10:25:51] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/55/a6/5345af0840b8bd880cd11893ba4a869f7515e7335ab9b06adea277661368/sharepoint_utils-1.0-py3-none-any.whl
+[2024-04-21 10:25:51] INFO root fetch - processPackages [ismember]: executing diffoscope
+[2024-04-21 10:25:51] INFO root fetch - processPackages [ismember]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ismember-1.0.2.tar.gz tmp/ismember-1.0.3.tar.gz --markdown 20240421/i/ismember/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-21 10:25:51] INFO root fetch - processPackages [sharepoint-utils]: executing diffoscope
+[2024-04-21 10:25:51] INFO root fetch - processPackages [sharepoint-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharepoint_utils-0.2.tar.gz tmp/sharepoint_utils-1.0-py3-none-any.whl.zip --markdown 20240421/s/sharepoint-utils/0.2-1.0/README.md --exclude *.pyd
+[2024-04-21 10:25:51] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.3.tar.gz]
+[2024-04-21 10:25:51] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.4.tar.gz]
+[2024-04-21 10:25:51] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 10:25:51] INFO root fetch - processPackages [ismember]: Remove: archive file [/home/abi/fetcher/tmp/ismember-1.0.2.tar.gz]
+[2024-04-21 10:25:51] INFO root fetch - processPackages [ismember]: Remove: archive file [/home/abi/fetcher/tmp/ismember-1.0.3.tar.gz]
+[2024-04-21 10:25:51] INFO root fetch - main [MainThread]: End processing [ismember]: success
+[2024-04-21 10:25:51] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-0.2.tar.gz]
+[2024-04-21 10:25:51] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-1.0-py3-none-any.whl.zip]
+[2024-04-21 10:25:51] INFO root fetch - main [MainThread]: End processing [sharepoint-utils]: success
+[2024-04-21 10:25:51] INFO root fetch - main [MainThread]: Store serial: [22863096]
