@@ -10998,3 +10998,89 @@
 [2024-04-21 15:46:54] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 15:46:54] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 15:46:54] INFO root fetch - main [MainThread]: Store serial: [22865092]
+[2024-04-21 15:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865092]
+[2024-04-21 15:49:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tailucas-pylib
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adafruit-circuitpython-bno08x
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baselib
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pystra
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libpss
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tea-tasting
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: clickbait-commit-messages
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: adafruit-circuitpython-avrprog
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: polars
+[2024-04-21 15:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: feature-space
+[2024-04-21 15:49:03] WARNING root fetch - processPackages [clickbait-commit-messages]: Skipping, unable to determine old version
+[2024-04-21 15:49:03] INFO root fetch - processPackages [clickbait-commit-messages]: Start processing: PythonTestLJC476
+[2024-04-21 15:49:03] INFO root fetch - main [MainThread]: End processing [clickbait-commit-messages] error
+[2024-04-21 15:49:03] INFO root fetch - processPackages [feature-space]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tea-tasting]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/5c/71/d7f73baba1f162cddecb316241b3364ff2bfcbbf0aff1cd6af5ee658d97e/feature_space-0.0.2.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: New version: [1.5.0] Old Version: [1.4.9]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [libpss]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/98/f0/3fab021aa5977d3b218d3e6c759c83e42e6be6c125eec3b930a4f760b666/tailucas_pylib-0.2.4.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [Pystra]: New version: [1.3.0] Old Version: [1.2.3]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-21 15:49:03] INFO root fetch - processPackages [baselib]: New version: [1.1.0.2a0] Old Version: [1.1.0.2]
+[2024-04-21 15:49:03] WARNING root fetch - processPackages [PythonTestLJC476]: Skipping, unable to determine old version
+[2024-04-21 15:49:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC476] error
+[2024-04-21 15:49:03] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/e7/87/d9b28ede138dfbfa298446f324fd99a8c9f1229deeabc69024c8613d68f8/polars-0.9.8.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tea-tasting]: Downloading https://files.pythonhosted.org/packages/25/7e/ee94722fbd1fee4a245d43680cb525c43a938b285fa0fe51bc0265d93004/tea_tasting-0.0.2.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: Downloading https://files.pythonhosted.org/packages/12/db/8fac59b6d084a8d03c73873fd80732787b6e9ab90b62de1865f91c50cbae/adafruit-circuitpython-avrprog-1.4.9.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [Pystra]: Downloading https://files.pythonhosted.org/packages/dc/5a/219f1a29be47d6cc8990112cd0c4b2c4770dd30f18824f6a9f1bb4da2072/Pystra-1.2.3.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: Downloading https://files.pythonhosted.org/packages/12/20/8fd73ce165beb05759b552561852b3d265445f6f61b1b1c0c4b0c6b34ee8/adafruit-circuitpython-bno08x-1.2.5.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/c3/25024206e3d32063c6db11c299263371aeca50fe56e8095220fedb9d91a0/libpss-0.1.8.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/50/a6/bd37c880b39d9ffab7cab3768989e31565d3ccc449b1187abcf3b661dee5/baselib-1.1.0.2.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/c5/0e/d451bef72f363b83d91f8588193583f9f3e9c65df337bc23a767b37cc17f/tailucas_pylib-0.2.5.tar.gz
+[2024-04-21 15:49:03] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12679379>=10485760
+[2024-04-21 15:49:03] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 15:49:03] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/cb/bc/b384c4b91c430fa5a410e383bf0d0182ede8b392d6915d248a31cca49729/feature_space-0.0.3.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.4.tar.gz tmp/tailucas_pylib-0.2.5.tar.gz --markdown 20240421/t/tailucas-pylib/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tea-tasting]: Downloading https://files.pythonhosted.org/packages/e1/4a/ae47e902b51ee2163740542ad1acb0fc7406e71f654eb2039c76df1afb82/tea_tasting-0.0.3.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [feature-space]: executing diffoscope
+[2024-04-21 15:49:03] INFO root fetch - processPackages [feature-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_space-0.0.2.tar.gz tmp/feature_space-0.0.3.tar.gz --markdown 20240421/f/feature-space/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tea-tasting]: executing diffoscope
+[2024-04-21 15:49:03] INFO root fetch - processPackages [tea-tasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tea_tasting-0.0.2.tar.gz tmp/tea_tasting-0.0.3.tar.gz --markdown 20240421/t/tea-tasting/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: Downloading https://files.pythonhosted.org/packages/ce/26/915cec764a54afeb4d83c4633375e52736e4ac0c67e7ed93b51bd5c1797f/adafruit_circuitpython_avrprog-1.5.0.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: Downloading https://files.pythonhosted.org/packages/3f/9b/43720ba91fb181b4eb15df04d34e8c2a203c8f6cd328f98d2c9f73f89136/adafruit_circuitpython_bno08x-1.2.6.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/c7/c1/a27ea49a7643895f2a8c62fc92014074f49d40beff1839d842d9dfb322c6/baselib-1.1.0.2a0.tar.gz
+[2024-04-21 15:49:03] INFO root fetch - processPackages [Pystra]: Downloading https://files.pythonhosted.org/packages/8e/14/966cd8bc57fd74f77c6a71a621f2a6e3c834044fad1201f5f17b511f0545/pystra-1.3.0.tar.gz
+[2024-04-21 15:49:04] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/96/26/63076bebabb9ecbc73cd58cf48f924a3f05b871166f576b56d9935158194/polars-0.9.9.tar.gz
+[2024-04-21 15:49:04] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: executing diffoscope
+[2024-04-21 15:49:04] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-avrprog-1.4.9.tar.gz tmp/adafruit_circuitpython_avrprog-1.5.0.tar.gz --markdown 20240421/a/adafruit-circuitpython-avrprog/1.4.9-1.5.0/README.md --exclude *.pyd
+[2024-04-21 15:49:04] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: executing diffoscope
+[2024-04-21 15:49:04] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-bno08x-1.2.5.tar.gz tmp/adafruit_circuitpython_bno08x-1.2.6.tar.gz --markdown 20240421/a/adafruit-circuitpython-bno08x/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-21 15:49:04] INFO root fetch - processPackages [Pystra]: executing diffoscope
+[2024-04-21 15:49:04] INFO root fetch - processPackages [Pystra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pystra-1.2.3.tar.gz tmp/pystra-1.3.0.tar.gz --markdown 20240421/P/Pystra/1.2.3-1.3.0/README.md --exclude *.pyd
+[2024-04-21 15:49:04] INFO root fetch - processPackages [polars]: executing diffoscope
+[2024-04-21 15:49:04] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20240421/p/polars/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 15:49:04] INFO root fetch - processPackages [baselib]: executing diffoscope
+[2024-04-21 15:49:04] INFO root fetch - processPackages [baselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baselib-1.1.0.2.tar.gz tmp/baselib-1.1.0.2a0.tar.gz --markdown 20240421/b/baselib/1.1.0.2-1.1.0.2a0/README.md --exclude *.pyd
+[2024-04-21 15:49:04] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.4.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.5.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-21 15:49:04] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.2.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.3.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - main [MainThread]: End processing [feature-space]: success
+[2024-04-21 15:49:04] INFO root fetch - processPackages [tea-tasting]: Remove: archive file [/home/abi/fetcher/tmp/tea_tasting-0.0.2.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - processPackages [tea-tasting]: Remove: archive file [/home/abi/fetcher/tmp/tea_tasting-0.0.3.tar.gz]
+[2024-04-21 15:49:04] INFO root fetch - main [MainThread]: End processing [tea-tasting]: success
+[2024-04-21 15:49:05] INFO root fetch - processPackages [Pystra]: Remove: archive file [/home/abi/fetcher/tmp/Pystra-1.2.3.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - processPackages [Pystra]: Remove: archive file [/home/abi/fetcher/tmp/pystra-1.3.0.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - main [MainThread]: End processing [Pystra]: success
+[2024-04-21 15:49:05] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-bno08x-1.2.5.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - processPackages [adafruit-circuitpython-bno08x]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_bno08x-1.2.6.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-bno08x]: success
+[2024-04-21 15:49:05] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-avrprog-1.4.9.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - processPackages [adafruit-circuitpython-avrprog]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_avrprog-1.5.0.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-avrprog]: success
+[2024-04-21 15:49:05] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.2.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.2a0.tar.gz]
+[2024-04-21 15:49:05] INFO root fetch - main [MainThread]: End processing [baselib]: success
+[2024-04-21 15:49:06] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.8.tar.gz]
+[2024-04-21 15:49:06] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.9.tar.gz]
+[2024-04-21 15:49:06] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2024-04-21 15:49:06] INFO root fetch - main [MainThread]: Store serial: [22865129]
