@@ -8137,3 +8137,15 @@
 [2024-04-21 12:29:20] INFO root fetch - processPackages [eindex-callum]: Remove: archive file [/home/abi/fetcher/tmp/eindex-callum-0.1.1.tar.gz]
 [2024-04-21 12:29:20] INFO root fetch - main [MainThread]: End processing [eindex-callum]: success
 [2024-04-21 12:29:20] INFO root fetch - main [MainThread]: Store serial: [22863679]
+[2024-04-21 12:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863679]
+[2024-04-21 12:31:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 12:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sosin
+[2024-04-21 12:31:28] INFO root fetch - processPackages [sosin]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-21 12:31:28] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/48/3c/e569a0ace28a66a83a7c86f32d4721a2db643a777831ccdd628a38c4d0c0/sosin-1.2.3.tar.gz
+[2024-04-21 12:31:29] INFO root fetch - processPackages [sosin]: Downloading https://files.pythonhosted.org/packages/00/b9/de3ac99c34c578ebc27774bd8b6d8f93998c458de190883b7889c4514319/sosin-1.2.4.tar.gz
+[2024-04-21 12:31:29] INFO root fetch - processPackages [sosin]: executing diffoscope
+[2024-04-21 12:31:29] INFO root fetch - processPackages [sosin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosin-1.2.3.tar.gz tmp/sosin-1.2.4.tar.gz --markdown 20240421/s/sosin/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-21 12:31:30] INFO root fetch - processPackages [sosin]: Remove: archive file [/home/abi/fetcher/tmp/sosin-1.2.3.tar.gz]
+[2024-04-21 12:31:30] INFO root fetch - processPackages [sosin]: Remove: archive file [/home/abi/fetcher/tmp/sosin-1.2.4.tar.gz]
+[2024-04-21 12:31:30] INFO root fetch - main [MainThread]: End processing [sosin]: success
+[2024-04-21 12:31:30] INFO root fetch - main [MainThread]: Store serial: [22863682]
