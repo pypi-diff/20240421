@@ -5205,3 +5205,15 @@
 [2024-04-21 08:29:57] INFO root fetch - processPackages [BiochemPy]: Remove: archive file [/home/abi/fetcher/tmp/BiochemPy-0.3.0.tar.gz]
 [2024-04-21 08:29:57] INFO root fetch - main [MainThread]: End processing [BiochemPy]: success
 [2024-04-21 08:29:57] INFO root fetch - main [MainThread]: Store serial: [22862407]
+[2024-04-21 08:32:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862407]
+[2024-04-21 08:32:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 08:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genomeshader
+[2024-04-21 08:32:06] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 08:32:06] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240421/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-04-21 08:32:07] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-04-21 08:32:07] INFO root fetch - main [MainThread]: Store serial: [22862412]
