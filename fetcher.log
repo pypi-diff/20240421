@@ -16197,3 +16197,27 @@
 [2024-04-21 20:49:41] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.4.0.tar.gz]
 [2024-04-21 20:49:41] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
 [2024-04-21 20:49:41] INFO root fetch - main [MainThread]: Store serial: [22867574]
+[2024-04-21 20:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867574]
+[2024-04-21 20:51:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 20:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenguard
+[2024-04-21 20:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli-command-parser
+[2024-04-21 20:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC585
+[2024-04-21 20:51:50] INFO root fetch - processPackages [cli-command-parser]: New version: [2024.4.20] Old Version: [2023.7.30]
+[2024-04-21 20:51:50] WARNING root fetch - processPackages [PythonTestLJC585]: Skipping, unable to determine old version
+[2024-04-21 20:51:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC585] error
+[2024-04-21 20:51:50] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/f3/1b/24f22536863974ca087fcdcf377d0fb08675c20455e15f725514b5dbe50b/cli_command_parser-2023.7.30.tar.gz
+[2024-04-21 20:51:50] INFO root fetch - processPackages [zenguard]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 20:51:50] INFO root fetch - processPackages [zenguard]: Downloading https://files.pythonhosted.org/packages/8f/7a/f5cd7131c4c6941a32d1752402cf4e82a240a32d16d70f4843d9948637cf/zenguard-0.1.7.tar.gz
+[2024-04-21 20:51:50] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/2c/dc/78366ac5990cba2471eef9432938a51865ff1d9c6aebf975b378f702472a/cli_command_parser-2024.4.20.tar.gz
+[2024-04-21 20:51:50] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2024-04-21 20:51:50] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.7.30.tar.gz tmp/cli_command_parser-2024.4.20.tar.gz --markdown 20240421/c/cli-command-parser/2023.7.30-2024.4.20/README.md --exclude *.pyd
+[2024-04-21 20:51:50] INFO root fetch - processPackages [zenguard]: Downloading https://files.pythonhosted.org/packages/d4/e4/50d220535422bcda4ffee715d6fb86b40e8498cd9882e2148c5b3419d9d7/zenguard-0.1.8.tar.gz
+[2024-04-21 20:51:50] INFO root fetch - processPackages [zenguard]: executing diffoscope
+[2024-04-21 20:51:50] INFO root fetch - processPackages [zenguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenguard-0.1.7.tar.gz tmp/zenguard-0.1.8.tar.gz --markdown 20240421/z/zenguard/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 20:51:51] INFO root fetch - processPackages [zenguard]: Remove: archive file [/home/abi/fetcher/tmp/zenguard-0.1.7.tar.gz]
+[2024-04-21 20:51:51] INFO root fetch - processPackages [zenguard]: Remove: archive file [/home/abi/fetcher/tmp/zenguard-0.1.8.tar.gz]
+[2024-04-21 20:51:51] INFO root fetch - main [MainThread]: End processing [zenguard]: success
+[2024-04-21 20:51:51] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2023.7.30.tar.gz]
+[2024-04-21 20:51:51] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.4.20.tar.gz]
+[2024-04-21 20:51:51] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2024-04-21 20:51:51] INFO root fetch - main [MainThread]: Store serial: [22867587]
