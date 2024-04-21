@@ -2237,3 +2237,12 @@
 [2024-04-21 03:16:43] INFO root fetch - processPackages [pg-alchemy-kit]: Remove: archive file [/home/abi/fetcher/tmp/pg_alchemy_kit-0.9.1b0.tar.gz]
 [2024-04-21 03:16:43] INFO root fetch - main [MainThread]: End processing [pg-alchemy-kit]: success
 [2024-04-21 03:16:43] INFO root fetch - main [MainThread]: Store serial: [22860956]
+[2024-04-21 03:18:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860956]
+[2024-04-21 03:18:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: regidi
+[2024-04-21 03:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlipCache
+[2024-04-21 03:18:53] WARNING root fetch - processPackages [regidi]: Skipping, unable to determine old version
+[2024-04-21 03:18:53] INFO root fetch - main [MainThread]: End processing [regidi] error
+[2024-04-21 03:18:53] WARNING root fetch - processPackages [FlipCache]: Skipping, unable to determine old version
+[2024-04-21 03:18:53] INFO root fetch - main [MainThread]: End processing [FlipCache] error
+[2024-04-21 03:18:53] INFO root fetch - main [MainThread]: Store serial: [22860963]
