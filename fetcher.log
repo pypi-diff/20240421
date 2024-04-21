@@ -13358,3 +13358,42 @@
 [2024-04-21 17:55:21] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
 [2024-04-21 17:55:21] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
 [2024-04-21 17:55:21] INFO root fetch - main [MainThread]: Store serial: [22866190]
+[2024-04-21 17:57:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866190]
+[2024-04-21 17:57:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vite-transporter
+[2024-04-21 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rooms-shared-services
+[2024-04-21 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chamco-ragbot
+[2024-04-21 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mockalot
+[2024-04-21 17:57:30] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 17:57:30] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-21 17:57:30] INFO root fetch - processPackages [vite-transporter]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-21 17:57:30] INFO root fetch - processPackages [mockalot]: New version: [0.3.1] Old Version: [0.2.0]
+[2024-04-21 17:57:30] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [vite-transporter]: Downloading https://files.pythonhosted.org/packages/ba/d4/949fc3387d0b3a83e5d30c55fcc8d17b262f7f43e6e7c718388b380268fb/vite_transporter-0.1.0.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [mockalot]: Downloading https://files.pythonhosted.org/packages/2b/79/0c33ff1ed835181cfe0781511ccd4b749e3e37ac7eaf5fa1f799290a8b8e/mockalot-0.2.0.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-21 17:57:30] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240421/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-21 17:57:30] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 17:57:30] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 17:57:30] INFO root fetch - processPackages [vite-transporter]: Downloading https://files.pythonhosted.org/packages/3e/ed/019d7749727cb00e5918d0e584e3d704b2a732f428bde94efd85056d76d6/vite_transporter-0.2.0.tar.gz
+[2024-04-21 17:57:30] INFO root fetch - processPackages [mockalot]: Downloading https://files.pythonhosted.org/packages/06/46/84189a1f0d2b380dac4ffd51be4c0726762e6a410017bf8bcf3e5aa1c39f/mockalot-0.3.1.tar.gz
+[2024-04-21 17:57:31] INFO root fetch - processPackages [vite-transporter]: executing diffoscope
+[2024-04-21 17:57:31] INFO root fetch - processPackages [vite-transporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vite_transporter-0.1.0.tar.gz tmp/vite_transporter-0.2.0.tar.gz --markdown 20240421/v/vite-transporter/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-21 17:57:31] INFO root fetch - processPackages [mockalot]: executing diffoscope
+[2024-04-21 17:57:31] INFO root fetch - processPackages [mockalot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mockalot-0.2.0.tar.gz tmp/mockalot-0.3.1.tar.gz --markdown 20240421/m/mockalot/0.2.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 17:57:31] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-21 17:57:31] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 17:57:31] INFO root fetch - processPackages [mockalot]: Remove: archive file [/home/abi/fetcher/tmp/mockalot-0.2.0.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - processPackages [mockalot]: Remove: archive file [/home/abi/fetcher/tmp/mockalot-0.3.1.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - main [MainThread]: End processing [mockalot]: success
+[2024-04-21 17:57:31] INFO root fetch - processPackages [vite-transporter]: Remove: archive file [/home/abi/fetcher/tmp/vite_transporter-0.1.0.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - processPackages [vite-transporter]: Remove: archive file [/home/abi/fetcher/tmp/vite_transporter-0.2.0.tar.gz]
+[2024-04-21 17:57:31] INFO root fetch - main [MainThread]: End processing [vite-transporter]: success
+[2024-04-21 17:57:31] INFO root fetch - main [MainThread]: Store serial: [22866205]
