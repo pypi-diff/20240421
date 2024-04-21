@@ -14798,3 +14798,48 @@
 [2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.6.tar.gz]
 [2024-04-21 19:24:45] INFO root fetch - main [MainThread]: End processing [eirStru]: success
 [2024-04-21 19:24:45] INFO root fetch - main [MainThread]: Store serial: [22866895]
+[2024-04-21 19:26:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866895]
+[2024-04-21 19:26:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: restcraft
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC554
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eirStru
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tidal-dl-ng
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gcp-pal
+[2024-04-21 19:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: x23186925-lib
+[2024-04-21 19:26:54] INFO root fetch - processPackages [gcp-pal]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-21 19:26:54] INFO root fetch - processPackages [restcraft]: New version: [0.0.14] Old Version: [0.0.12]
+[2024-04-21 19:26:54] INFO root fetch - processPackages [eirStru]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-21 19:26:54] WARNING root fetch - processPackages [PythonTestLJC554]: Skipping, unable to determine old version
+[2024-04-21 19:26:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC554] error
+[2024-04-21 19:26:54] WARNING root fetch - processPackages [x23186925-lib]: Skipping, unable to determine old version
+[2024-04-21 19:26:54] INFO root fetch - main [MainThread]: End processing [x23186925-lib] error
+[2024-04-21 19:26:54] INFO root fetch - processPackages [restcraft]: Downloading https://files.pythonhosted.org/packages/47/9b/2a5086d40080cf538175d55325ab6bd5fed3be05a855204a38101240428e/restcraft-0.0.12.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [tidal-dl-ng]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-21 19:26:54] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/3b/2d/2733039cfc8a87b63f7d5f03d42bba1b3354634c23ea3877578386566595/eirStru-0.3.6.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/3b/36/ac6daa86ec5b76fd526175ec3e0df7a34d70f249568d558c15c9ac1a9391/gcp_pal-0.1.0.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [tidal-dl-ng]: Downloading https://files.pythonhosted.org/packages/9e/70/b555bff42679e2c523b9b185a4afc3ab84f257151c70ee2f4a4a2c8a2981/tidal_dl_ng-0.9.0.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [restcraft]: Downloading https://files.pythonhosted.org/packages/8d/18/8c532bd95483cf078e98350d3761c31e0f1ea08710b23720bdbc5731a159/restcraft-0.0.14.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/0e/16/4b882de96742a5eb54d7a6aef403358f252c3df268ab366fbda54f782c70/eirStru-0.3.7.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [restcraft]: executing diffoscope
+[2024-04-21 19:26:54] INFO root fetch - processPackages [restcraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restcraft-0.0.12.tar.gz tmp/restcraft-0.0.14.tar.gz --markdown 20240421/r/restcraft/0.0.12-0.0.14/README.md --exclude *.pyd
+[2024-04-21 19:26:54] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 19:26:54] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.6.tar.gz tmp/eirStru-0.3.7.tar.gz --markdown 20240421/e/eirStru/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-21 19:26:54] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/7e/f3/ee5b53b9b27f14143269f4a1d2a9eab0c0cc38e28f6a37a09eac484ee2a9/gcp_pal-0.1.2.tar.gz
+[2024-04-21 19:26:54] INFO root fetch - processPackages [tidal-dl-ng]: Downloading https://files.pythonhosted.org/packages/5b/ba/0352f5184c84ccc8beb455f316863bb1cd67a1a23de799df04e98159f6dd/tidal_dl_ng-0.9.1.tar.gz
+[2024-04-21 19:26:55] INFO root fetch - processPackages [gcp-pal]: executing diffoscope
+[2024-04-21 19:26:55] INFO root fetch - processPackages [gcp-pal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pal-0.1.0.tar.gz tmp/gcp_pal-0.1.2.tar.gz --markdown 20240421/g/gcp-pal/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-21 19:26:55] INFO root fetch - processPackages [tidal-dl-ng]: executing diffoscope
+[2024-04-21 19:26:55] INFO root fetch - processPackages [tidal-dl-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidal_dl_ng-0.9.0.tar.gz tmp/tidal_dl_ng-0.9.1.tar.gz --markdown 20240421/t/tidal-dl-ng/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-21 19:26:55] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.6.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.7.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 19:26:55] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-0.1.0.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-0.1.2.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - main [MainThread]: End processing [gcp-pal]: success
+[2024-04-21 19:26:55] INFO root fetch - processPackages [restcraft]: Remove: archive file [/home/abi/fetcher/tmp/restcraft-0.0.12.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - processPackages [restcraft]: Remove: archive file [/home/abi/fetcher/tmp/restcraft-0.0.14.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - main [MainThread]: End processing [restcraft]: success
+[2024-04-21 19:26:55] INFO root fetch - processPackages [tidal-dl-ng]: Remove: archive file [/home/abi/fetcher/tmp/tidal_dl_ng-0.9.0.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - processPackages [tidal-dl-ng]: Remove: archive file [/home/abi/fetcher/tmp/tidal_dl_ng-0.9.1.tar.gz]
+[2024-04-21 19:26:55] INFO root fetch - main [MainThread]: End processing [tidal-dl-ng]: success
+[2024-04-21 19:26:55] INFO root fetch - main [MainThread]: Store serial: [22866915]
