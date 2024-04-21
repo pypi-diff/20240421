@@ -1954,3 +1954,27 @@
 [2024-04-21 02:50:27] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc1.tar.gz]
 [2024-04-21 02:50:27] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-21 02:50:27] INFO root fetch - main [MainThread]: Store serial: [22860762]
+[2024-04-21 02:52:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860762]
+[2024-04-21 02:52:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC306
+[2024-04-21 02:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gliner-spacy
+[2024-04-21 02:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deflate
+[2024-04-21 02:52:36] WARNING root fetch - processPackages [PythonTestLJC306]: Skipping, unable to determine old version
+[2024-04-21 02:52:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC306] error
+[2024-04-21 02:52:36] INFO root fetch - processPackages [gliner-spacy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 02:52:36] INFO root fetch - processPackages [deflate]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-21 02:52:36] INFO root fetch - processPackages [gliner-spacy]: Downloading https://files.pythonhosted.org/packages/bb/47/30b01854133b8483e850f22ed14f92254872332a334295577a1824d2e77b/gliner-spacy-0.0.4.tar.gz
+[2024-04-21 02:52:36] INFO root fetch - processPackages [deflate]: Downloading https://files.pythonhosted.org/packages/ad/96/148a8d3e853fb76e8d274194dce9bc2f1e6127c6ba1e31a66341ceb94de8/deflate-0.5.0.tar.gz
+[2024-04-21 02:52:37] INFO root fetch - processPackages [gliner-spacy]: Downloading https://files.pythonhosted.org/packages/f9/21/49762687d83d3502673455ab8fdabefb906d02c160619d15b8010cb3d3b4/gliner-spacy-0.0.5.tar.gz
+[2024-04-21 02:52:37] INFO root fetch - processPackages [deflate]: Downloading https://files.pythonhosted.org/packages/32/e7/0c7a4d59a118c7c0391453e252f63cc37f82b2e5a81335d4b52346a2bc68/deflate-0.6.0.tar.gz
+[2024-04-21 02:52:37] INFO root fetch - processPackages [gliner-spacy]: executing diffoscope
+[2024-04-21 02:52:37] INFO root fetch - processPackages [gliner-spacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-spacy-0.0.4.tar.gz tmp/gliner-spacy-0.0.5.tar.gz --markdown 20240421/g/gliner-spacy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 02:52:37] INFO root fetch - processPackages [deflate]: executing diffoscope
+[2024-04-21 02:52:37] INFO root fetch - processPackages [deflate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deflate-0.5.0.tar.gz tmp/deflate-0.6.0.tar.gz --markdown 20240421/d/deflate/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-21 02:52:37] INFO root fetch - processPackages [gliner-spacy]: Remove: archive file [/home/abi/fetcher/tmp/gliner-spacy-0.0.4.tar.gz]
+[2024-04-21 02:52:37] INFO root fetch - processPackages [gliner-spacy]: Remove: archive file [/home/abi/fetcher/tmp/gliner-spacy-0.0.5.tar.gz]
+[2024-04-21 02:52:37] INFO root fetch - main [MainThread]: End processing [gliner-spacy]: success
+[2024-04-21 02:52:38] INFO root fetch - processPackages [deflate]: Remove: archive file [/home/abi/fetcher/tmp/deflate-0.5.0.tar.gz]
+[2024-04-21 02:52:38] INFO root fetch - processPackages [deflate]: Remove: archive file [/home/abi/fetcher/tmp/deflate-0.6.0.tar.gz]
+[2024-04-21 02:52:38] INFO root fetch - main [MainThread]: End processing [deflate]: success
+[2024-04-21 02:52:38] INFO root fetch - main [MainThread]: Store serial: [22860812]
