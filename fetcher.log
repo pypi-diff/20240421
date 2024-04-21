@@ -10061,3 +10061,29 @@
 [2024-04-21 14:45:37] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/pyptt-1.2.6.tar.gz]
 [2024-04-21 14:45:37] INFO root fetch - main [MainThread]: End processing [PyPtt]: success
 [2024-04-21 14:45:37] INFO root fetch - main [MainThread]: Store serial: [22864592]
+[2024-04-21 14:47:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864592]
+[2024-04-21 14:47:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 14:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-21 14:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sedrila
+[2024-04-21 14:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lppa
+[2024-04-21 14:47:45] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-21 14:47:45] INFO root fetch - processPackages [sedrila]: New version: [1.0.0] Old Version: [0.7.0]
+[2024-04-21 14:47:45] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-21 14:47:45] INFO root fetch - processPackages [lppa]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-21 14:47:45] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-21 14:47:45] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-21 14:47:45] INFO root fetch - processPackages [sedrila]: Downloading https://files.pythonhosted.org/packages/9d/a1/616d8395b57ddf421e810a944d5a7dca43240ed9152b3283f56abe041d7e/sedrila-0.7.0.tar.gz
+[2024-04-21 14:47:45] INFO root fetch - processPackages [lppa]: Downloading https://files.pythonhosted.org/packages/2b/c6/d904eb89794d31e2fddb41f706775aafa1aebc530c74c929d4efee4b7d72/lppa-0.2.1.tar.gz
+[2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: Downloading https://files.pythonhosted.org/packages/84/2b/e37ed9875fb47dc31707e454444c5c5e5332e10ca4b5cec0df928802a3c6/sedrila-1.0.0.tar.gz
+[2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: executing diffoscope
+[2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sedrila-0.7.0.tar.gz tmp/sedrila-1.0.0.tar.gz --markdown 20240421/s/sedrila/0.7.0-1.0.0/README.md --exclude *.pyd
+[2024-04-21 14:47:46] INFO root fetch - processPackages [lppa]: Downloading https://files.pythonhosted.org/packages/1c/45/ce7a85ccf4af8f39cec2dc0d90ed0a02e5bc507ef4de854a98ab6b10d481/lppa-0.3.0.tar.gz
+[2024-04-21 14:47:46] INFO root fetch - processPackages [lppa]: executing diffoscope
+[2024-04-21 14:47:46] INFO root fetch - processPackages [lppa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lppa-0.2.1.tar.gz tmp/lppa-0.3.0.tar.gz --markdown 20240421/l/lppa/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-21 14:47:46] INFO root fetch - processPackages [lppa]: Remove: archive file [/home/abi/fetcher/tmp/lppa-0.2.1.tar.gz]
+[2024-04-21 14:47:46] INFO root fetch - processPackages [lppa]: Remove: archive file [/home/abi/fetcher/tmp/lppa-0.3.0.tar.gz]
+[2024-04-21 14:47:46] INFO root fetch - main [MainThread]: End processing [lppa]: success
+[2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: Remove: archive file [/home/abi/fetcher/tmp/sedrila-0.7.0.tar.gz]
+[2024-04-21 14:47:46] INFO root fetch - processPackages [sedrila]: Remove: archive file [/home/abi/fetcher/tmp/sedrila-1.0.0.tar.gz]
+[2024-04-21 14:47:46] INFO root fetch - main [MainThread]: End processing [sedrila]: success
+[2024-04-21 14:47:46] INFO root fetch - main [MainThread]: Store serial: [22864600]
