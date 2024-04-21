@@ -3305,3 +3305,27 @@
 [2024-04-21 05:05:42] INFO root fetch - processPackages [seisgo]: Remove: archive file [/home/abi/fetcher/tmp/seisgo-0.8.1.tar.gz]
 [2024-04-21 05:05:42] INFO root fetch - main [MainThread]: End processing [seisgo]: success
 [2024-04-21 05:05:42] INFO root fetch - main [MainThread]: Store serial: [22861543]
+[2024-04-21 05:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861543]
+[2024-04-21 05:07:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 05:07:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC348
+[2024-04-21 05:07:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notion-graph
+[2024-04-21 05:07:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskio
+[2024-04-21 05:07:51] WARNING root fetch - processPackages [PythonTestLJC348]: Skipping, unable to determine old version
+[2024-04-21 05:07:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC348] error
+[2024-04-21 05:07:51] INFO root fetch - processPackages [notion-graph]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-21 05:07:51] INFO root fetch - processPackages [taskio]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 05:07:51] INFO root fetch - processPackages [taskio]: Downloading https://files.pythonhosted.org/packages/78/60/950e8b47ba342c3934f565b83c88e3f1f3dd1894857f444a530c4d446895/taskio-0.0.6.tar.gz
+[2024-04-21 05:07:51] INFO root fetch - processPackages [notion-graph]: Downloading https://files.pythonhosted.org/packages/de/5f/37c533fc3f0baa4f3b99a79f14ed40b7f4e9e3a7412e7f56d46a1afef10a/notion-graph-0.2.7.tar.gz
+[2024-04-21 05:07:51] INFO root fetch - processPackages [notion-graph]: Downloading https://files.pythonhosted.org/packages/b6/a4/d257f64b27a7a6268ecf7477cb5b8ab1895eb95706afc64f0efcdea9112c/notion-graph-0.2.8.tar.gz
+[2024-04-21 05:07:51] INFO root fetch - processPackages [taskio]: Downloading https://files.pythonhosted.org/packages/25/a8/4e13ea49aaa16b782c8fdfd96785718fab724fd8fd0573d16f0fe17a55c3/taskio-0.0.7.tar.gz
+[2024-04-21 05:07:51] INFO root fetch - processPackages [notion-graph]: executing diffoscope
+[2024-04-21 05:07:51] INFO root fetch - processPackages [notion-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion-graph-0.2.7.tar.gz tmp/notion-graph-0.2.8.tar.gz --markdown 20240421/n/notion-graph/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-21 05:07:51] INFO root fetch - processPackages [taskio]: executing diffoscope
+[2024-04-21 05:07:51] INFO root fetch - processPackages [taskio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskio-0.0.6.tar.gz tmp/taskio-0.0.7.tar.gz --markdown 20240421/t/taskio/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 05:07:52] INFO root fetch - processPackages [notion-graph]: Remove: archive file [/home/abi/fetcher/tmp/notion-graph-0.2.7.tar.gz]
+[2024-04-21 05:07:52] INFO root fetch - processPackages [notion-graph]: Remove: archive file [/home/abi/fetcher/tmp/notion-graph-0.2.8.tar.gz]
+[2024-04-21 05:07:52] INFO root fetch - main [MainThread]: End processing [notion-graph]: success
+[2024-04-21 05:07:52] INFO root fetch - processPackages [taskio]: Remove: archive file [/home/abi/fetcher/tmp/taskio-0.0.6.tar.gz]
+[2024-04-21 05:07:52] INFO root fetch - processPackages [taskio]: Remove: archive file [/home/abi/fetcher/tmp/taskio-0.0.7.tar.gz]
+[2024-04-21 05:07:52] INFO root fetch - main [MainThread]: End processing [taskio]: success
+[2024-04-21 05:07:52] INFO root fetch - main [MainThread]: Store serial: [22861554]
