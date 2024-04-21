@@ -6814,3 +6814,33 @@
 [2024-04-21 10:47:44] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-04-21 10:47:44] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-04-21 10:47:44] INFO root fetch - main [MainThread]: Store serial: [22863192]
+[2024-04-21 10:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863192]
+[2024-04-21 10:49:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-04-21 10:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func_adl_servicex_xaodr22
+[2024-04-21 10:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-04-21 10:49:54] INFO root fetch - processPackages [mteb]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-21 10:49:54] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/e9/cc/e306e57b77e69ddcb5127b1cd38705dab96d554e192dce39d01f7dfe6f7f/mteb-1.7.1.tar.gz
+[2024-04-21 10:49:54] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: New version: [2.0.0.22.2.107a9] Old Version: [2.0.0.22.2.107a11]
+[2024-04-21 10:49:54] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240421] Old Version: [2.17.0.dev20240420]
+[2024-04-21 10:49:54] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Downloading https://files.pythonhosted.org/packages/09/0f/74f392e9d4d520ccf69db5a15c2e09d5ead704ccac70697d7def194f7919/func_adl_servicex_xaodr22-2.0.0.22.2.107a11.tar.gz
+[2024-04-21 10:49:54] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/0d/74/42286d3d3426a51701975bbf38c8265904a7df422988b4460015df32cba3/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl
+[2024-04-21 10:49:55] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/50/9c/336b55c55e3d0ab5f329f2c86e907d619c4570d4f06eeeb1b29049ded015/mteb-1.7.2.tar.gz
+[2024-04-21 10:49:55] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-21 10:49:55] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.1.tar.gz tmp/mteb-1.7.2.tar.gz --markdown 20240421/m/mteb/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-04-21 10:49:55] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/99/af/45769ec0ab09e2f8b01826da67ba2fe129199039335090d823579363e89b/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl
+[2024-04-21 10:49:55] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Downloading https://files.pythonhosted.org/packages/61/51/00256dbc3be34ba3c1255aaa100ca89e8b3a416294c7b7b9fe3a84106f6a/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz
+[2024-04-21 10:49:55] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: executing diffoscope
+[2024-04-21 10:49:55] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a11.tar.gz tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz --markdown 20240421/f/func_adl_servicex_xaodr22/2.0.0.22.2.107a11-2.0.0.22.2.107a9/README.md --exclude *.pyd
+[2024-04-21 10:49:55] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-21 10:49:55] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip --markdown 20240421/t/tf-nightly-cpu/2.17.0.dev20240420-2.17.0.dev20240421/README.md --exclude *.pyd
+[2024-04-21 10:49:56] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip]
+[2024-04-21 10:49:56] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip]
+[2024-04-21 10:49:56] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-21 10:49:56] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.1.tar.gz]
+[2024-04-21 10:49:56] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.2.tar.gz]
+[2024-04-21 10:49:56] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-21 10:49:58] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a11.tar.gz]
+[2024-04-21 10:49:58] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz]
+[2024-04-21 10:49:58] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr22]: success
+[2024-04-21 10:49:58] INFO root fetch - main [MainThread]: Store serial: [22863203]
