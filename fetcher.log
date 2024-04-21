@@ -9908,3 +9908,21 @@
 [2024-04-21 14:34:39] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8769147235-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-21 14:34:39] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
 [2024-04-21 14:34:39] INFO root fetch - main [MainThread]: Store serial: [22864513]
+[2024-04-21 14:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864513]
+[2024-04-21 14:36:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 14:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alchemyrohan
+[2024-04-21 14:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: class-singledispatch
+[2024-04-21 14:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC450
+[2024-04-21 14:36:48] INFO root fetch - processPackages [class-singledispatch]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-21 14:36:48] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/6f/e9/aff399bbde64629237b0b40c18ca5ee6fc7415a23ae726b0ac22ec529b98/class_singledispatch-1.2.1.tar.gz
+[2024-04-21 14:36:48] WARNING root fetch - processPackages [alchemyrohan]: Skipping, unable to determine old version
+[2024-04-21 14:36:48] INFO root fetch - main [MainThread]: End processing [alchemyrohan] error
+[2024-04-21 14:36:48] WARNING root fetch - processPackages [PythonTestLJC450]: Skipping, unable to determine old version
+[2024-04-21 14:36:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC450] error
+[2024-04-21 14:36:48] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/17/d8/9f155134140b46c30d047c3e7a4f10338fd203723b7869279c4ecf199a3f/class_singledispatch-1.2.2.tar.gz
+[2024-04-21 14:36:48] INFO root fetch - processPackages [class-singledispatch]: executing diffoscope
+[2024-04-21 14:36:48] INFO root fetch - processPackages [class-singledispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_singledispatch-1.2.1.tar.gz tmp/class_singledispatch-1.2.2.tar.gz --markdown 20240421/c/class-singledispatch/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-21 14:36:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.1.tar.gz]
+[2024-04-21 14:36:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.2.tar.gz]
+[2024-04-21 14:36:49] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
+[2024-04-21 14:36:49] INFO root fetch - main [MainThread]: Store serial: [22864525]
