@@ -14166,3 +14166,50 @@
 [2024-04-21 18:38:59] INFO root fetch - processPackages [easy-exchange-rates]: Remove: archive file [/home/abi/fetcher/tmp/easy_exchange_rates-0.2.0.tar.gz]
 [2024-04-21 18:38:59] INFO root fetch - main [MainThread]: End processing [easy-exchange-rates]: success
 [2024-04-21 18:38:59] INFO root fetch - main [MainThread]: Store serial: [22866558]
+[2024-04-21 18:41:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866558]
+[2024-04-21 18:41:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chamco-ragbot
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: envix
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moss-cappa
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netbox-contract
+[2024-04-21 18:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC538
+[2024-04-21 18:41:08] INFO root fetch - processPackages [moss-cappa]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 18:41:08] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:41:08] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240421.16.17.320991] Old Version: [20240421.13.51.653898]
+[2024-04-21 18:41:08] INFO root fetch - processPackages [envix]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-21 18:41:08] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 18:41:08] INFO root fetch - processPackages [netbox-contract]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-21 18:41:08] WARNING root fetch - processPackages [PythonTestLJC538]: Skipping, unable to determine old version
+[2024-04-21 18:41:08] INFO root fetch - main [MainThread]: End processing [PythonTestLJC538] error
+[2024-04-21 18:41:08] INFO root fetch - processPackages [moss-cappa]: Downloading https://files.pythonhosted.org/packages/e8/de/5ec5e468068798c5f13c384a8d9bccba2022d90b7aee06956f2f00728529/moss_cappa-0.1.1.tar.gz
+[2024-04-21 18:41:08] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/fa/a5/7a6765f04a425c7522f2a97b6f8c486367638bb5e245a74b2883f7b33e90/certora-cli-alpha-master-20240421.13.51.653898.tar.gz
+[2024-04-21 18:41:08] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 18:41:08] INFO root fetch - processPackages [netbox-contract]: Downloading https://files.pythonhosted.org/packages/c0/83/3b7fe580151c8cc8ec7a7205873d976c41bedbbba449b8aa50a1107b9de4/netbox-contract-2.0.8.tar.gz
+[2024-04-21 18:41:08] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14529259>=10485760
+[2024-04-21 18:41:08] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-21 18:41:09] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 18:41:09] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:41:09] INFO root fetch - processPackages [envix]: Downloading https://files.pythonhosted.org/packages/0a/62/fdaf6914606d312d2814a050416ee6a8c221f7e4a0a33ead35279af867dc/envix-0.1.1.tar.gz
+[2024-04-21 18:41:09] INFO root fetch - processPackages [moss-cappa]: Downloading https://files.pythonhosted.org/packages/9b/63/86191a12e13cf1acdff08574f3bd8b421d2993c69188738c27553d24a016/moss_cappa-0.1.2.tar.gz
+[2024-04-21 18:41:09] INFO root fetch - processPackages [moss-cappa]: executing diffoscope
+[2024-04-21 18:41:09] INFO root fetch - processPackages [moss-cappa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moss_cappa-0.1.1.tar.gz tmp/moss_cappa-0.1.2.tar.gz --markdown 20240421/m/moss-cappa/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 18:41:09] INFO root fetch - processPackages [netbox-contract]: Downloading https://files.pythonhosted.org/packages/fb/0a/e5456f3011e97c5322f4160cc4830214437e2ea60c503183c2d6f724eed8/netbox-contract-2.0.9.tar.gz
+[2024-04-21 18:41:09] INFO root fetch - processPackages [netbox-contract]: executing diffoscope
+[2024-04-21 18:41:09] INFO root fetch - processPackages [netbox-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-contract-2.0.8.tar.gz tmp/netbox-contract-2.0.9.tar.gz --markdown 20240421/n/netbox-contract/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-21 18:41:09] INFO root fetch - processPackages [envix]: Downloading https://files.pythonhosted.org/packages/2d/c3/b11ae6f686a79dbcec4153cf02fdf7523a7c1eb90b7ff29280eda8f06a83/envix-0.2.0.tar.gz
+[2024-04-21 18:41:09] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 18:41:09] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 18:41:09] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 18:41:09] INFO root fetch - processPackages [envix]: executing diffoscope
+[2024-04-21 18:41:09] INFO root fetch - processPackages [envix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envix-0.1.1.tar.gz tmp/envix-0.2.0.tar.gz --markdown 20240421/e/envix/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-21 18:41:09] INFO root fetch - processPackages [moss-cappa]: Remove: archive file [/home/abi/fetcher/tmp/moss_cappa-0.1.1.tar.gz]
+[2024-04-21 18:41:09] INFO root fetch - processPackages [moss-cappa]: Remove: archive file [/home/abi/fetcher/tmp/moss_cappa-0.1.2.tar.gz]
+[2024-04-21 18:41:09] INFO root fetch - main [MainThread]: End processing [moss-cappa]: success
+[2024-04-21 18:41:10] INFO root fetch - processPackages [envix]: Remove: archive file [/home/abi/fetcher/tmp/envix-0.1.1.tar.gz]
+[2024-04-21 18:41:10] INFO root fetch - processPackages [envix]: Remove: archive file [/home/abi/fetcher/tmp/envix-0.2.0.tar.gz]
+[2024-04-21 18:41:10] INFO root fetch - main [MainThread]: End processing [envix]: success
+[2024-04-21 18:41:10] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.8.tar.gz]
+[2024-04-21 18:41:10] INFO root fetch - processPackages [netbox-contract]: Remove: archive file [/home/abi/fetcher/tmp/netbox-contract-2.0.9.tar.gz]
+[2024-04-21 18:41:10] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
+[2024-04-21 18:41:10] INFO root fetch - main [MainThread]: Store serial: [22866574]
