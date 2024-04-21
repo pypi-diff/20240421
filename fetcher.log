@@ -2533,3 +2533,27 @@
 [2024-04-21 03:51:15] WARNING root fetch - processPackages [PythonTestLJC321]: Skipping, unable to determine old version
 [2024-04-21 03:51:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC321] error
 [2024-04-21 03:51:15] INFO root fetch - main [MainThread]: Store serial: [22861124]
+[2024-04-21 03:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861124]
+[2024-04-21 03:53:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: can-weather-data
+[2024-04-21 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-seeding
+[2024-04-21 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2024-04-21 03:53:25] INFO root fetch - processPackages [django-seeding]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-21 03:53:25] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-21 03:53:25] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/76/a1/608180c68bfe126a8a4a81aed5307a1876de71eeb9bfe645b5fb982b8030/django_seeding-1.1.1.tar.gz
+[2024-04-21 03:53:25] WARNING root fetch - processPackages [can-weather-data]: Skipping, unable to determine old version
+[2024-04-21 03:53:25] INFO root fetch - main [MainThread]: End processing [can-weather-data] error
+[2024-04-21 03:53:25] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-21 03:53:25] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-21 03:53:25] INFO root fetch - processPackages [django-seeding]: Downloading https://files.pythonhosted.org/packages/40/f2/b5a6bc61cb08e98932f1422add3f4eec960371ea3ec1cad55d522bc173ea/django_seeding-1.1.2.tar.gz
+[2024-04-21 03:53:25] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-21 03:53:25] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240421/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-04-21 03:53:25] INFO root fetch - processPackages [django-seeding]: executing diffoscope
+[2024-04-21 03:53:25] INFO root fetch - processPackages [django-seeding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_seeding-1.1.1.tar.gz tmp/django_seeding-1.1.2.tar.gz --markdown 20240421/d/django-seeding/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-21 03:53:26] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-21 03:53:26] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-21 03:53:26] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-21 03:53:26] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django_seeding-1.1.1.tar.gz]
+[2024-04-21 03:53:26] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django_seeding-1.1.2.tar.gz]
+[2024-04-21 03:53:26] INFO root fetch - main [MainThread]: End processing [django-seeding]: success
+[2024-04-21 03:53:26] INFO root fetch - main [MainThread]: Store serial: [22861134]
