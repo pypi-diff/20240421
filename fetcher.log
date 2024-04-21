@@ -3530,3 +3530,15 @@
 [2024-04-21 05:23:05] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024042003.tar.gz]
 [2024-04-21 05:23:05] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-21 05:23:05] INFO root fetch - main [MainThread]: Store serial: [22861657]
+[2024-04-21 05:25:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861657]
+[2024-04-21 05:25:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 05:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vrchatapi
+[2024-04-21 05:25:14] INFO root fetch - processPackages [vrchatapi]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-21 05:25:14] INFO root fetch - processPackages [vrchatapi]: Downloading https://files.pythonhosted.org/packages/ff/8b/88945a19e189b1baa0e126c157beab97590c6faf2c036b3fe1207854fd98/vrchatapi-1.9.0.tar.gz
+[2024-04-21 05:25:14] INFO root fetch - processPackages [vrchatapi]: Downloading https://files.pythonhosted.org/packages/4c/cc/4f4d3d2b865f5784be60e8ee4c993538bac9e5dde7647891cd68fee27fb3/vrchatapi-1.9.1.tar.gz
+[2024-04-21 05:25:15] INFO root fetch - processPackages [vrchatapi]: executing diffoscope
+[2024-04-21 05:25:15] INFO root fetch - processPackages [vrchatapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vrchatapi-1.9.0.tar.gz tmp/vrchatapi-1.9.1.tar.gz --markdown 20240421/v/vrchatapi/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-21 05:25:17] INFO root fetch - processPackages [vrchatapi]: Remove: archive file [/home/abi/fetcher/tmp/vrchatapi-1.9.0.tar.gz]
+[2024-04-21 05:25:17] INFO root fetch - processPackages [vrchatapi]: Remove: archive file [/home/abi/fetcher/tmp/vrchatapi-1.9.1.tar.gz]
+[2024-04-21 05:25:17] INFO root fetch - main [MainThread]: End processing [vrchatapi]: success
+[2024-04-21 05:25:17] INFO root fetch - main [MainThread]: Store serial: [22861660]
