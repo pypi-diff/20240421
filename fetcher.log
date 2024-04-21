@@ -13256,3 +13256,72 @@
 [2024-04-21 17:51:00] INFO root fetch - processPackages [donetools]: Remove: archive file [/home/abi/fetcher/tmp/donetools-0.0.9.tar.gz]
 [2024-04-21 17:51:00] INFO root fetch - main [MainThread]: End processing [donetools]: success
 [2024-04-21 17:51:00] INFO root fetch - main [MainThread]: Store serial: [22866150]
+[2024-04-21 17:53:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866150]
+[2024-04-21 17:53:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC520
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-sanyao
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zhDateTime
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: resqpy
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flake8-bugbear
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tradedangerous
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mdpython
+[2024-04-21 17:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py_wanderer
+[2024-04-21 17:53:08] INFO root fetch - processPackages [zhDateTime]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [flake8-bugbear]: New version: [24.2.6] Old Version: [24.1.17]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 17:53:09] WARNING root fetch - processPackages [PythonTestLJC520]: Skipping, unable to determine old version
+[2024-04-21 17:53:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC520] error
+[2024-04-21 17:53:09] INFO root fetch - processPackages [zhDateTime]: Downloading https://files.pythonhosted.org/packages/97/8f/efaf86b8d8a28a818ce841c21aef468ff89ca440f6401e461bdfa14edb2b/zhdatetime-1.0.0.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [mdpython]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [nonebot-plugin-sanyao]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [py_wanderer]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [resqpy]: New version: [4.9.8] Old Version: [4.9.6]
+[2024-04-21 17:53:09] INFO root fetch - processPackages [flake8-bugbear]: Downloading https://files.pythonhosted.org/packages/f1/30/4cbcbbef8820b504a904cdd6927fe031aabca61b63667993b39368a7577c/flake8-bugbear-24.1.17.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/42/26/d93fe520459eee8c2f4b16ef77045aa74b40eb23e4db24bac20c33200c6d/nonebot_plugin_sanyao-0.1.2.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/53/fd/4e3683e760969d92f3b4a180414c71bc6b8631a3e0e66c82be1f900caeea/mdpython-0.0.6.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [py_wanderer]: Downloading https://files.pythonhosted.org/packages/57/43/73a9d78afe536c730d6f7001449dd43d7ab24cef35c8f9d0dab443fb4a23/py_wanderer-1.0.3.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/fe/f8/11102ba4b080c0ebcf111338522d2229df8ea891f7664b69cf2c47ace7a1/resqpy-4.9.6.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [zhDateTime]: Downloading https://files.pythonhosted.org/packages/0d/1b/8cfb8a9db157b3a2146958ae3ca29c768f642742ac91832e4afef01997a4/zhdatetime-1.0.1.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [zhDateTime]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [zhDateTime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhdatetime-1.0.0.tar.gz tmp/zhdatetime-1.0.1.tar.gz --markdown 20240421/z/zhDateTime/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 17:53:09] INFO root fetch - processPackages [flake8-bugbear]: Downloading https://files.pythonhosted.org/packages/e3/bc/07225e7ce0089e91f1b334102ac4526fb8cf894235e27ca1f252bd9d5c83/flake8-bugbear-24.2.6.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/89/e7/0556f05aa308469194b0ce6859e5244f9ed950cffd7c3a47c058599d52be/nonebot_plugin_sanyao-0.1.3.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/9a/6f/24597c28fa59000c9923802b4ffeb0705adeffa5ac315059d60f80468e15/mdpython-0.0.7.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [py_wanderer]: Downloading https://files.pythonhosted.org/packages/3f/03/4449d6158ed2efceacca507dd5dd514eee8aee3204a105f94623cf910f9e/py_wanderer-1.0.4.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.6.tar.gz tmp/mdpython-0.0.7.tar.gz --markdown 20240421/m/mdpython/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 17:53:09] INFO root fetch - processPackages [flake8-bugbear]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [flake8-bugbear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-bugbear-24.1.17.tar.gz tmp/flake8-bugbear-24.2.6.tar.gz --markdown 20240421/f/flake8-bugbear/24.1.17-24.2.6/README.md --exclude *.pyd
+[2024-04-21 17:53:09] INFO root fetch - processPackages [nonebot-plugin-sanyao]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [nonebot-plugin-sanyao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sanyao-0.1.2.tar.gz tmp/nonebot_plugin_sanyao-0.1.3.tar.gz --markdown 20240421/n/nonebot-plugin-sanyao/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 17:53:09] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 17:53:09] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/70/89/83cac6bb61b93b49f8d46a48b90bdd2d63c6cbcdd7c4e9457158427009c2/resqpy-4.9.8.tar.gz
+[2024-04-21 17:53:09] INFO root fetch - processPackages [py_wanderer]: executing diffoscope
+[2024-04-21 17:53:09] INFO root fetch - processPackages [py_wanderer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_wanderer-1.0.3.tar.gz tmp/py_wanderer-1.0.4.tar.gz --markdown 20240421/p/py_wanderer/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-21 17:53:10] INFO root fetch - processPackages [resqpy]: executing diffoscope
+[2024-04-21 17:53:10] INFO root fetch - processPackages [resqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resqpy-4.9.6.tar.gz tmp/resqpy-4.9.8.tar.gz --markdown 20240421/r/resqpy/4.9.6-4.9.8/README.md --exclude *.pyd
+[2024-04-21 17:53:10] INFO root fetch - processPackages [zhDateTime]: Remove: archive file [/home/abi/fetcher/tmp/zhdatetime-1.0.0.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - processPackages [zhDateTime]: Remove: archive file [/home/abi/fetcher/tmp/zhdatetime-1.0.1.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - main [MainThread]: End processing [zhDateTime]: success
+[2024-04-21 17:53:10] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.6.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.7.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-21 17:53:10] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.1.2.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.1.3.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao]: success
+[2024-04-21 17:53:10] INFO root fetch - processPackages [py_wanderer]: Remove: archive file [/home/abi/fetcher/tmp/py_wanderer-1.0.3.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - processPackages [py_wanderer]: Remove: archive file [/home/abi/fetcher/tmp/py_wanderer-1.0.4.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - main [MainThread]: End processing [py_wanderer]: success
+[2024-04-21 17:53:10] INFO root fetch - processPackages [flake8-bugbear]: Remove: archive file [/home/abi/fetcher/tmp/flake8-bugbear-24.1.17.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - processPackages [flake8-bugbear]: Remove: archive file [/home/abi/fetcher/tmp/flake8-bugbear-24.2.6.tar.gz]
+[2024-04-21 17:53:10] INFO root fetch - main [MainThread]: End processing [flake8-bugbear]: success
+[2024-04-21 17:53:11] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 17:53:11] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 17:53:11] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 17:53:11] INFO root fetch - processPackages [resqpy]: Remove: archive file [/home/abi/fetcher/tmp/resqpy-4.9.6.tar.gz]
+[2024-04-21 17:53:11] INFO root fetch - processPackages [resqpy]: Remove: archive file [/home/abi/fetcher/tmp/resqpy-4.9.8.tar.gz]
+[2024-04-21 17:53:11] INFO root fetch - main [MainThread]: End processing [resqpy]: success
+[2024-04-21 17:53:11] INFO root fetch - main [MainThread]: Store serial: [22866176]
