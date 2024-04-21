@@ -16981,3 +16981,27 @@
 [2024-04-21 21:24:57] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.75.tar.gz]
 [2024-04-21 21:24:57] INFO root fetch - main [MainThread]: End processing [danielutils]: success
 [2024-04-21 21:24:57] INFO root fetch - main [MainThread]: Store serial: [22868011]
+[2024-04-21 21:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868011]
+[2024-04-21 21:27:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 21:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC597
+[2024-04-21 21:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: filemac
+[2024-04-21 21:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kungfupanda
+[2024-04-21 21:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pixegami234-hello
+[2024-04-21 21:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: muxtools
+[2024-04-21 21:27:06] WARNING root fetch - processPackages [filemac]: Skipping, unable to determine old version
+[2024-04-21 21:27:06] INFO root fetch - main [MainThread]: End processing [filemac] error
+[2024-04-21 21:27:06] WARNING root fetch - processPackages [kungfupanda]: Skipping, unable to determine old version
+[2024-04-21 21:27:06] INFO root fetch - main [MainThread]: End processing [kungfupanda] error
+[2024-04-21 21:27:06] WARNING root fetch - processPackages [PythonTestLJC597]: Skipping, unable to determine old version
+[2024-04-21 21:27:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC597] error
+[2024-04-21 21:27:06] INFO root fetch - processPackages [muxtools]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-21 21:27:06] WARNING root fetch - processPackages [pixegami234-hello]: Skipping, unable to determine old version
+[2024-04-21 21:27:06] INFO root fetch - main [MainThread]: End processing [pixegami234-hello] error
+[2024-04-21 21:27:06] INFO root fetch - processPackages [muxtools]: Downloading https://files.pythonhosted.org/packages/a0/65/67f82e3fb154a193b994fc3e70d2094d3602d3dbe832b44d57a2a93f864e/muxtools-0.0.9.tar.gz
+[2024-04-21 21:27:07] INFO root fetch - processPackages [muxtools]: Downloading https://files.pythonhosted.org/packages/cf/ab/316b3598f4d304239427d7d3ef7f24d3521caa2e5749b9860b6a72cc3340/muxtools-0.1.0.tar.gz
+[2024-04-21 21:27:07] INFO root fetch - processPackages [muxtools]: executing diffoscope
+[2024-04-21 21:27:07] INFO root fetch - processPackages [muxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muxtools-0.0.9.tar.gz tmp/muxtools-0.1.0.tar.gz --markdown 20240421/m/muxtools/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-21 21:27:08] INFO root fetch - processPackages [muxtools]: Remove: archive file [/home/abi/fetcher/tmp/muxtools-0.0.9.tar.gz]
+[2024-04-21 21:27:08] INFO root fetch - processPackages [muxtools]: Remove: archive file [/home/abi/fetcher/tmp/muxtools-0.1.0.tar.gz]
+[2024-04-21 21:27:08] INFO root fetch - main [MainThread]: End processing [muxtools]: success
+[2024-04-21 21:27:08] INFO root fetch - main [MainThread]: Store serial: [22868030]
