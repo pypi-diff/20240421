@@ -7855,3 +7855,15 @@
 [2024-04-21 12:07:08] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.45.tar.gz]
 [2024-04-21 12:07:08] INFO root fetch - main [MainThread]: End processing [magictk]: success
 [2024-04-21 12:07:08] INFO root fetch - main [MainThread]: Store serial: [22863586]
+[2024-04-21 12:09:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863586]
+[2024-04-21 12:09:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 12:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textile-metric
+[2024-04-21 12:09:16] INFO root fetch - processPackages [textile-metric]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-21 12:09:16] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/63/09/dfd97ab8efbc09206ac0c9646b8d3028cc2492692db45c19868530d3f222/textile_metric-0.0.6.tar.gz
+[2024-04-21 12:09:17] INFO root fetch - processPackages [textile-metric]: Downloading https://files.pythonhosted.org/packages/24/bc/159ebef142757ac8a6d6dbc86eae930354d5f4a85c200730a4d01495b163/textile_metric-0.0.7.tar.gz
+[2024-04-21 12:09:17] INFO root fetch - processPackages [textile-metric]: executing diffoscope
+[2024-04-21 12:09:17] INFO root fetch - processPackages [textile-metric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textile_metric-0.0.6.tar.gz tmp/textile_metric-0.0.7.tar.gz --markdown 20240421/t/textile-metric/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-21 12:09:18] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.6.tar.gz]
+[2024-04-21 12:09:18] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.7.tar.gz]
+[2024-04-21 12:09:18] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
+[2024-04-21 12:09:18] INFO root fetch - main [MainThread]: Store serial: [22863589]
