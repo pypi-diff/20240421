@@ -15856,3 +15856,69 @@
 [2024-04-21 20:32:12] INFO root fetch - processPackages [yajwiz]: Remove: archive file [/home/abi/fetcher/tmp/yajwiz-0.9.tar.gz]
 [2024-04-21 20:32:12] INFO root fetch - main [MainThread]: End processing [yajwiz]: success
 [2024-04-21 20:32:12] INFO root fetch - main [MainThread]: Store serial: [22867414]
+[2024-04-21 20:34:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867414]
+[2024-04-21 20:34:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC578
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wood-nano
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtps-http
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magic-list
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vot-toolkit
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: temmies
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chamco-ragbot
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: visitorcounter
+[2024-04-21 20:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gtsystem
+[2024-04-21 20:34:21] INFO root fetch - processPackages [gtsystem]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 20:34:21] INFO root fetch - processPackages [dtps-http]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-21 20:34:21] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 20:34:21] INFO root fetch - processPackages [temmies]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 20:34:21] WARNING root fetch - processPackages [PythonTestLJC578]: Skipping, unable to determine old version
+[2024-04-21 20:34:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC578] error
+[2024-04-21 20:34:21] WARNING root fetch - processPackages [visitorcounter]: Skipping, unable to determine old version
+[2024-04-21 20:34:21] INFO root fetch - main [MainThread]: End processing [visitorcounter] error
+[2024-04-21 20:34:21] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/77/e7/a7df463a1a77fab78cef9c3dc0f840b2fb104a01142de2ead5a878d97e40/gtsystem-0.1.6.tar.gz
+[2024-04-21 20:34:21] WARNING root fetch - processPackages [wood-nano]: Skipping, unable to determine old version
+[2024-04-21 20:34:21] INFO root fetch - main [MainThread]: End processing [wood-nano] error
+[2024-04-21 20:34:21] INFO root fetch - processPackages [magic-list]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-04-21 20:34:21] INFO root fetch - processPackages [vot-toolkit]: New version: [0.7.0] Old Version: [0.6.4]
+[2024-04-21 20:34:21] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/87/8c/9cac397d24d7bb7f993b1aaeb015d20ecc6eb557ea2169521e2d3d6673eb/dtps_http-1.3.0-py3-none-any.whl
+[2024-04-21 20:34:21] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [temmies]: Downloading https://files.pythonhosted.org/packages/cb/07/df3248b61e31a101b7553dc7f780fa3a2dc93ed0e557814031acf508515d/temmies-1.0.0.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [vot-toolkit]: Downloading https://files.pythonhosted.org/packages/cd/e6/7e5f45579d22902db6071a5d6b9daf1c2a481fc22bd255d49c89bec8a8f3/vot-toolkit-0.6.4.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/33/5b/9a6065f6079062b0600cead93a74c9c77609c1b49d7d10c697bbdecfd4b3/magic-list-2.0.1.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 20:34:21] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 20:34:21] INFO root fetch - processPackages [dtps-http]: Downloading https://files.pythonhosted.org/packages/51/9f/9254705a30243d739fc9aab9b9cd855c7c4da67116bc7598a9de8fbd8ee2/dtps_http-1.3.1-py3-none-any.whl
+[2024-04-21 20:34:21] INFO root fetch - processPackages [temmies]: Downloading https://files.pythonhosted.org/packages/e3/de/001a0b3772b524faf1816a4a7b7a72a9df95d02a58657b2f1171ea7afe6d/temmies-1.0.1.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/36/df/1f8e8d106ef5a58081196f4622fe7d6e23440764506cca4968e7341d4a25/magic_list-2.1.0.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/67/d1/c1798f2f39fe75c61fb4dd9d22b1d46ef8b1534ac46ab985af3fe6402fd9/gtsystem-0.1.7.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [vot-toolkit]: Downloading https://files.pythonhosted.org/packages/75/a3/2183b7f623ef02d43ec95a84a204e5869a6ff1d8cfa2c8f843d40dee5dcc/vot-toolkit-0.7.0.tar.gz
+[2024-04-21 20:34:21] INFO root fetch - processPackages [temmies]: executing diffoscope
+[2024-04-21 20:34:21] INFO root fetch - processPackages [temmies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/temmies-1.0.0.tar.gz tmp/temmies-1.0.1.tar.gz --markdown 20240421/t/temmies/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 20:34:21] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-21 20:34:21] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.1.6.tar.gz tmp/gtsystem-0.1.7.tar.gz --markdown 20240421/g/gtsystem/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 20:34:22] INFO root fetch - processPackages [magic-list]: executing diffoscope
+[2024-04-21 20:34:22] INFO root fetch - processPackages [magic-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic-list-2.0.1.tar.gz tmp/magic_list-2.1.0.tar.gz --markdown 20240421/m/magic-list/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-04-21 20:34:22] INFO root fetch - processPackages [vot-toolkit]: executing diffoscope
+[2024-04-21 20:34:22] INFO root fetch - processPackages [vot-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vot-toolkit-0.6.4.tar.gz tmp/vot-toolkit-0.7.0.tar.gz --markdown 20240421/v/vot-toolkit/0.6.4-0.7.0/README.md --exclude *.pyd
+[2024-04-21 20:34:22] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 20:34:22] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic-list-2.0.1.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.1.0.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - main [MainThread]: End processing [magic-list]: success
+[2024-04-21 20:34:22] INFO root fetch - processPackages [temmies]: Remove: archive file [/home/abi/fetcher/tmp/temmies-1.0.0.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - processPackages [temmies]: Remove: archive file [/home/abi/fetcher/tmp/temmies-1.0.1.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - main [MainThread]: End processing [temmies]: success
+[2024-04-21 20:34:22] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.6.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.7.tar.gz]
+[2024-04-21 20:34:22] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-21 20:34:23] INFO root fetch - processPackages [dtps-http]: executing diffoscope
+[2024-04-21 20:34:23] INFO root fetch - processPackages [dtps-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtps_http-1.3.0-py3-none-any.whl.zip tmp/dtps_http-1.3.1-py3-none-any.whl.zip --markdown 20240421/d/dtps-http/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-21 20:34:23] INFO root fetch - processPackages [vot-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/vot-toolkit-0.6.4.tar.gz]
+[2024-04-21 20:34:23] INFO root fetch - processPackages [vot-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/vot-toolkit-0.7.0.tar.gz]
+[2024-04-21 20:34:23] INFO root fetch - main [MainThread]: End processing [vot-toolkit]: success
+[2024-04-21 20:34:23] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.0-py3-none-any.whl.zip]
+[2024-04-21 20:34:23] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.1-py3-none-any.whl.zip]
+[2024-04-21 20:34:23] INFO root fetch - main [MainThread]: End processing [dtps-http]: success
+[2024-04-21 20:34:23] INFO root fetch - main [MainThread]: Store serial: [22867443]
