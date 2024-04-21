@@ -5070,3 +5070,45 @@
 [2024-04-21 08:14:34] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240420.tar.gz]
 [2024-04-21 08:14:34] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-21 08:14:34] INFO root fetch - main [MainThread]: Store serial: [22862351]
+[2024-04-21 08:16:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862351]
+[2024-04-21 08:16:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pretext
+[2024-04-21 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2024-04-21 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fake-bpy-module
+[2024-04-21 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fei-crypto
+[2024-04-21 08:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: explainitall
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240420] Old Version: [20240419]
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240420] Old Version: [20240419]
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fei-crypto]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 08:16:44] WARNING root fetch - processPackages [explainitall]: Skipping, unable to determine old version
+[2024-04-21 08:16:44] INFO root fetch - main [MainThread]: End processing [explainitall] error
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/70/0c/e955ad8772eaa9312e939d01d105849a859da4ead7b53e9545ce89adcacf/fake_bpy_module-20240419.tar.gz
+[2024-04-21 08:16:44] INFO root fetch - processPackages [pretext]: New version: [2.3.9.dev20240302] Old Version: [2.3.9.dev20240229]
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/01/b8/92ba760462cd0e40b0de9904f4b48e4cc974dbecb05078806bf1adac9343/fake_bpy_module_latest-20240419.tar.gz
+[2024-04-21 08:16:44] INFO root fetch - processPackages [fei-crypto]: Downloading https://files.pythonhosted.org/packages/0d/2a/b97ebba3b899e4a99ed7f294659ef2131c2ef4424a065e5882fad1c6c1d4/fei_crypto-0.1.7.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/ce/64/85bc57578fbf3322df1cb4958d7c6cf0dda4d8184eb5611f8245cb5d98eb/pretext-2.3.9.dev20240229.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/7a/0d/85656606685b46527ac7b2385c2b9ca114c493ec018751396121fc5f1c2d/fake_bpy_module-20240420.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/ba/e5/c2c85cad97419a3f69fddb8ce051f406160283536c8aea51d3699ab9a203/fake_bpy_module_latest-20240420.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fei-crypto]: Downloading https://files.pythonhosted.org/packages/d6/0a/4b0e91ea1dfa7633823ffdaf1274fb7ad9a6bbde3bb8265489072c0c635b/fei_crypto-0.1.8.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fei-crypto]: executing diffoscope
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fei-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fei_crypto-0.1.7.tar.gz tmp/fei_crypto-0.1.8.tar.gz --markdown 20240421/f/fei-crypto/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240419.tar.gz tmp/fake_bpy_module-20240420.tar.gz --markdown 20240421/f/fake-bpy-module/20240419-20240420/README.md --exclude *.pyd
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-04-21 08:16:45] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240419.tar.gz tmp/fake_bpy_module_latest-20240420.tar.gz --markdown 20240421/f/fake-bpy-module-latest/20240419-20240420/README.md --exclude *.pyd
+[2024-04-21 08:16:45] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/3f/2d/22e687f1fb945aeb16176a4f9c25da1aab63664c88cd2966d7ad79f1b144/pretext-2.3.9.dev20240302.tar.gz
+[2024-04-21 08:16:45] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-04-21 08:16:45] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.3.9.dev20240229.tar.gz tmp/pretext-2.3.9.dev20240302.tar.gz --markdown 20240421/p/pretext/2.3.9.dev20240229-2.3.9.dev20240302/README.md --exclude *.pyd
+[2024-04-21 08:16:46] INFO root fetch - processPackages [fei-crypto]: Remove: archive file [/home/abi/fetcher/tmp/fei_crypto-0.1.7.tar.gz]
+[2024-04-21 08:16:46] INFO root fetch - processPackages [fei-crypto]: Remove: archive file [/home/abi/fetcher/tmp/fei_crypto-0.1.8.tar.gz]
+[2024-04-21 08:16:46] INFO root fetch - main [MainThread]: End processing [fei-crypto]: success
+[2024-04-21 08:16:49] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240229.tar.gz]
+[2024-04-21 08:16:49] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240302.tar.gz]
+[2024-04-21 08:16:49] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-04-21 08:16:52] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240419.tar.gz]
+[2024-04-21 08:16:52] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240420.tar.gz]
+[2024-04-21 08:16:52] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-04-21 08:16:52] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240419.tar.gz]
+[2024-04-21 08:16:52] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240420.tar.gz]
+[2024-04-21 08:16:52] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-04-21 08:16:52] INFO root fetch - main [MainThread]: Store serial: [22862368]
