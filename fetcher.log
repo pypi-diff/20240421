@@ -3079,3 +3079,18 @@
 [2024-04-21 04:39:46] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload_ng-0.5.0b3.dev82.tar.gz]
 [2024-04-21 04:39:46] INFO root fetch - main [MainThread]: End processing [pyload-ng]: success
 [2024-04-21 04:39:46] INFO root fetch - main [MainThread]: Store serial: [22861434]
+[2024-04-21 04:41:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861434]
+[2024-04-21 04:41:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC339
+[2024-04-21 04:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemini-output-wrapper
+[2024-04-21 04:41:54] INFO root fetch - processPackages [gemini-output-wrapper]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-21 04:41:54] INFO root fetch - processPackages [gemini-output-wrapper]: Downloading https://files.pythonhosted.org/packages/ad/38/04ee1fc102f9f6830a4ebab7027c0b6c0b5cdba077eb3803a750f939b157/gemini-output-wrapper-0.2.2.tar.gz
+[2024-04-21 04:41:54] WARNING root fetch - processPackages [PythonTestLJC339]: Skipping, unable to determine old version
+[2024-04-21 04:41:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC339] error
+[2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: Downloading https://files.pythonhosted.org/packages/40/53/1e055ec5776e2b2d29e18657a652687950b3733be9d93d166680bb4c38e5/gemini-output-wrapper-0.2.3.tar.gz
+[2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: executing diffoscope
+[2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini-output-wrapper-0.2.2.tar.gz tmp/gemini-output-wrapper-0.2.3.tar.gz --markdown 20240421/g/gemini-output-wrapper/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/gemini-output-wrapper-0.2.2.tar.gz]
+[2024-04-21 04:41:55] INFO root fetch - processPackages [gemini-output-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/gemini-output-wrapper-0.2.3.tar.gz]
+[2024-04-21 04:41:55] INFO root fetch - main [MainThread]: End processing [gemini-output-wrapper]: success
+[2024-04-21 04:41:55] INFO root fetch - main [MainThread]: Store serial: [22861442]
