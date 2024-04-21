@@ -2291,3 +2291,18 @@
 [2024-04-21 03:23:13] INFO root fetch - processPackages [parametrize-from-file]: Remove: archive file [/home/abi/fetcher/tmp/parametrize_from_file-0.9.1.tar.gz]
 [2024-04-21 03:23:13] INFO root fetch - main [MainThread]: End processing [parametrize-from-file]: success
 [2024-04-21 03:23:13] INFO root fetch - main [MainThread]: Store serial: [22860988]
+[2024-04-21 03:25:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860988]
+[2024-04-21 03:25:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC314
+[2024-04-21 03:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-21 03:25:21] WARNING root fetch - processPackages [PythonTestLJC314]: Skipping, unable to determine old version
+[2024-04-21 03:25:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC314] error
+[2024-04-21 03:25:21] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-21 03:25:22] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-21 03:25:22] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-21 03:25:22] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-21 03:25:22] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240421/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-21 03:25:23] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-21 03:25:23] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-21 03:25:23] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-21 03:25:23] INFO root fetch - main [MainThread]: Store serial: [22860997]
