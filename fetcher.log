@@ -15137,3 +15137,39 @@
 [2024-04-21 19:44:21] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.5.tar.gz]
 [2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [llmflex]: success
 [2024-04-21 19:44:21] INFO root fetch - main [MainThread]: Store serial: [22867054]
+[2024-04-21 19:46:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867054]
+[2024-04-21 19:46:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 19:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-sanyao
+[2024-04-21 19:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC561
+[2024-04-21 19:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blastpipe
+[2024-04-21 19:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-21 19:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fuconv
+[2024-04-21 19:46:30] INFO root fetch - processPackages [nonebot-plugin-sanyao]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-21 19:46:30] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 19:46:30] INFO root fetch - processPackages [blastpipe]: New version: [2024.0.5] Old Version: [2024.0.4]
+[2024-04-21 19:46:30] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/15/78/4bc7b5da04cec6d29a99246d1b565117adced63e6211f7b1cc801f3288ff/nonebot_plugin_sanyao-0.1.7.tar.gz
+[2024-04-21 19:46:30] WARNING root fetch - processPackages [fuconv]: Skipping, unable to determine old version
+[2024-04-21 19:46:30] INFO root fetch - main [MainThread]: End processing [fuconv] error
+[2024-04-21 19:46:30] WARNING root fetch - processPackages [PythonTestLJC561]: Skipping, unable to determine old version
+[2024-04-21 19:46:30] INFO root fetch - main [MainThread]: End processing [PythonTestLJC561] error
+[2024-04-21 19:46:30] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/d5/34/e9768ac710aa6e1820debbff440d0f34d3b81f5c0d376d3873b0e5b81924/dune_rivals-0.5.0.tar.gz
+[2024-04-21 19:46:30] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/fd/00/f0d30f79069c457bfdc0ea1358d431691599a2389418234742c1712f0be5/blastpipe-2024.0.4.tar.gz
+[2024-04-21 19:46:31] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/55/57/726ee2ccede465f8cc6c44871f804ddd89fcab2ef23e221c348c00771255/nonebot_plugin_sanyao-0.1.9.tar.gz
+[2024-04-21 19:46:31] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/4f/cf/54b00827d85dea603eadef89f0e16193f71b0e0c6beab471816f8b50d824/dune_rivals-0.5.1.tar.gz
+[2024-04-21 19:46:31] INFO root fetch - processPackages [nonebot-plugin-sanyao]: executing diffoscope
+[2024-04-21 19:46:31] INFO root fetch - processPackages [nonebot-plugin-sanyao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sanyao-0.1.7.tar.gz tmp/nonebot_plugin_sanyao-0.1.9.tar.gz --markdown 20240421/n/nonebot-plugin-sanyao/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-21 19:46:31] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 19:46:31] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.0.tar.gz tmp/dune_rivals-0.5.1.tar.gz --markdown 20240421/d/dune-rivals/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 19:46:31] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/20/40/cce6de47615cb90dcc7a9f37d409a4de1e6d324cb1458115ab46fef1a42a/blastpipe-2024.0.5.tar.gz
+[2024-04-21 19:46:31] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-21 19:46:31] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.0.4.tar.gz tmp/blastpipe-2024.0.5.tar.gz --markdown 20240421/b/blastpipe/2024.0.4-2024.0.5/README.md --exclude *.pyd
+[2024-04-21 19:46:31] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.0.tar.gz]
+[2024-04-21 19:46:31] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.1.tar.gz]
+[2024-04-21 19:46:31] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 19:46:31] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.1.7.tar.gz]
+[2024-04-21 19:46:31] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.1.9.tar.gz]
+[2024-04-21 19:46:31] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao]: success
+[2024-04-21 19:46:32] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.4.tar.gz]
+[2024-04-21 19:46:32] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.5.tar.gz]
+[2024-04-21 19:46:32] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-21 19:46:32] INFO root fetch - main [MainThread]: Store serial: [22867075]
