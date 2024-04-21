@@ -14246,3 +14246,30 @@
 [2024-04-21 18:43:20] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.2.tar.gz]
 [2024-04-21 18:43:20] INFO root fetch - main [MainThread]: End processing [pyobs-flipro]: success
 [2024-04-21 18:43:20] INFO root fetch - main [MainThread]: Store serial: [22866587]
+[2024-04-21 18:45:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866587]
+[2024-04-21 18:45:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 18:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC539
+[2024-04-21 18:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robust-extraction
+[2024-04-21 18:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BS-RoFormer
+[2024-04-21 18:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: standard-asyncore
+[2024-04-21 18:45:29] INFO root fetch - processPackages [robust-extraction]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-21 18:45:29] INFO root fetch - processPackages [BS-RoFormer]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-21 18:45:29] WARNING root fetch - processPackages [standard-asyncore]: Skipping, unable to determine old version
+[2024-04-21 18:45:29] INFO root fetch - main [MainThread]: End processing [standard-asyncore] error
+[2024-04-21 18:45:29] WARNING root fetch - processPackages [PythonTestLJC539]: Skipping, unable to determine old version
+[2024-04-21 18:45:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC539] error
+[2024-04-21 18:45:29] INFO root fetch - processPackages [robust-extraction]: Downloading https://files.pythonhosted.org/packages/c5/54/2c7e5704f74ce181abf96db12461af7d25763d636c602720a09c3c753cec/robust_extraction-0.1.5.tar.gz
+[2024-04-21 18:45:29] INFO root fetch - processPackages [BS-RoFormer]: Downloading https://files.pythonhosted.org/packages/33/8c/22826db04203a6f39ebde1c98839c90eecd75df0e7002001b7823e162949/BS-RoFormer-0.4.0.tar.gz
+[2024-04-21 18:45:29] INFO root fetch - processPackages [robust-extraction]: Downloading https://files.pythonhosted.org/packages/f8/b6/11c565df5cda111b7344866e98e13e7a1ca1583e30387ec7e9476fef1000/robust_extraction-0.1.6.tar.gz
+[2024-04-21 18:45:29] INFO root fetch - processPackages [BS-RoFormer]: Downloading https://files.pythonhosted.org/packages/5d/aa/7e932baf920c4b2c0d1fdccad0d5199aae89e6650cc44e889d2cd101316f/bs_roformer-0.4.1.tar.gz
+[2024-04-21 18:45:29] INFO root fetch - processPackages [robust-extraction]: executing diffoscope
+[2024-04-21 18:45:29] INFO root fetch - processPackages [robust-extraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robust_extraction-0.1.5.tar.gz tmp/robust_extraction-0.1.6.tar.gz --markdown 20240421/r/robust-extraction/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-21 18:45:29] INFO root fetch - processPackages [BS-RoFormer]: executing diffoscope
+[2024-04-21 18:45:29] INFO root fetch - processPackages [BS-RoFormer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BS-RoFormer-0.4.0.tar.gz tmp/bs_roformer-0.4.1.tar.gz --markdown 20240421/B/BS-RoFormer/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-21 18:45:30] INFO root fetch - processPackages [BS-RoFormer]: Remove: archive file [/home/abi/fetcher/tmp/BS-RoFormer-0.4.0.tar.gz]
+[2024-04-21 18:45:30] INFO root fetch - processPackages [BS-RoFormer]: Remove: archive file [/home/abi/fetcher/tmp/bs_roformer-0.4.1.tar.gz]
+[2024-04-21 18:45:30] INFO root fetch - main [MainThread]: End processing [BS-RoFormer]: success
+[2024-04-21 18:45:30] INFO root fetch - processPackages [robust-extraction]: Remove: archive file [/home/abi/fetcher/tmp/robust_extraction-0.1.5.tar.gz]
+[2024-04-21 18:45:30] INFO root fetch - processPackages [robust-extraction]: Remove: archive file [/home/abi/fetcher/tmp/robust_extraction-0.1.6.tar.gz]
+[2024-04-21 18:45:30] INFO root fetch - main [MainThread]: End processing [robust-extraction]: success
+[2024-04-21 18:45:30] INFO root fetch - main [MainThread]: Store serial: [22866602]
