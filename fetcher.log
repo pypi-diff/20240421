@@ -4136,3 +4136,27 @@
 [2024-04-21 06:38:49] INFO root fetch - processPackages [dataset-creator]: Remove: archive file [/home/abi/fetcher/tmp/dataset_creator-0.6.0.tar.gz]
 [2024-04-21 06:38:49] INFO root fetch - main [MainThread]: End processing [dataset-creator]: success
 [2024-04-21 06:38:49] INFO root fetch - main [MainThread]: Store serial: [22861936]
+[2024-04-21 06:40:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861936]
+[2024-04-21 06:40:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 06:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nog642-util
+[2024-04-21 06:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC365
+[2024-04-21 06:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-slack
+[2024-04-21 06:40:57] INFO root fetch - processPackages [nog642-util]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-04-21 06:40:57] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/85/ee/8f2543b32d9c20c36da8233babaef9ef0d92c5f4af9f25577c1b1d83c657/nog642_util-0.0.0.tar.gz
+[2024-04-21 06:40:57] WARNING root fetch - processPackages [PythonTestLJC365]: Skipping, unable to determine old version
+[2024-04-21 06:40:57] INFO root fetch - main [MainThread]: End processing [PythonTestLJC365] error
+[2024-04-21 06:40:57] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.5a1713673482] Old Version: [0.4.5a1713561382]
+[2024-04-21 06:40:58] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/af/cc/46eeb74ff34342f992de4642ce7d7d93648fb5fa8a5b17b03fd63e7de584/nog642_util-0.1.0.tar.gz
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/61/a3/87925b737b7509aca7e89782613f3aca3f07da8dd6ba705cb68c4513a2b6/pulumi_slack-0.4.5a1713561382.tar.gz
+[2024-04-21 06:40:58] INFO root fetch - processPackages [nog642-util]: executing diffoscope
+[2024-04-21 06:40:58] INFO root fetch - processPackages [nog642-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nog642_util-0.0.0.tar.gz tmp/nog642_util-0.1.0.tar.gz --markdown 20240421/n/nog642-util/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/40/3b/e6d2806d59a9429096a76b3a6c612074c0450db8d6c97beb13450cb20985/pulumi_slack-0.4.5a1713673482.tar.gz
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.5a1713561382.tar.gz tmp/pulumi_slack-0.4.5a1713673482.tar.gz --markdown 20240421/p/pulumi-slack/0.4.5a1713561382-0.4.5a1713673482/README.md --exclude *.pyd
+[2024-04-21 06:40:58] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.0.0.tar.gz]
+[2024-04-21 06:40:58] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.1.0.tar.gz]
+[2024-04-21 06:40:58] INFO root fetch - main [MainThread]: End processing [nog642-util]: success
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_slack-0.4.5a1713561382.tar.gz]
+[2024-04-21 06:40:58] INFO root fetch - processPackages [pulumi-slack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_slack-0.4.5a1713673482.tar.gz]
+[2024-04-21 06:40:58] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2024-04-21 06:40:58] INFO root fetch - main [MainThread]: Store serial: [22861948]
