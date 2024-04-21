@@ -16774,3 +16774,12 @@
 [2024-04-21 21:18:24] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.8.2.tar.gz]
 [2024-04-21 21:18:24] INFO root fetch - main [MainThread]: End processing [pybts]: success
 [2024-04-21 21:18:24] INFO root fetch - main [MainThread]: Store serial: [22867928]
+[2024-04-21 21:20:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867928]
+[2024-04-21 21:20:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 21:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC595
+[2024-04-21 21:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kungfupanda
+[2024-04-21 21:20:33] WARNING root fetch - processPackages [kungfupanda]: Skipping, unable to determine old version
+[2024-04-21 21:20:33] INFO root fetch - main [MainThread]: End processing [kungfupanda] error
+[2024-04-21 21:20:33] WARNING root fetch - processPackages [PythonTestLJC595]: Skipping, unable to determine old version
+[2024-04-21 21:20:33] INFO root fetch - main [MainThread]: End processing [PythonTestLJC595] error
+[2024-04-21 21:20:33] INFO root fetch - main [MainThread]: Store serial: [22867939]
