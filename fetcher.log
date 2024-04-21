@@ -8233,3 +8233,45 @@
 [2024-04-21 12:38:09] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.9.tar.gz]
 [2024-04-21 12:38:09] INFO root fetch - main [MainThread]: End processing [spotpython]: success
 [2024-04-21 12:38:09] INFO root fetch - main [MainThread]: Store serial: [22863709]
+[2024-04-21 12:40:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863709]
+[2024-04-21 12:40:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 12:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygifconvt-test-jw
+[2024-04-21 12:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skypilot-nightly
+[2024-04-21 12:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-transformation-yfhsi
+[2024-04-21 12:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymemgpt-nightly
+[2024-04-21 12:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sinol-make
+[2024-04-21 12:40:18] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.2.1a0] Old Version: [0.1.1a0]
+[2024-04-21 12:40:18] WARNING root fetch - processPackages [pygifconvt-test-jw]: Skipping, unable to determine old version
+[2024-04-21 12:40:18] INFO root fetch - main [MainThread]: End processing [pygifconvt-test-jw] error
+[2024-04-21 12:40:18] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-04-21 12:40:18] INFO root fetch - processPackages [sinol-make]: New version: [1.6.0.dev4] Old Version: [1.6.0.dev3]
+[2024-04-21 12:40:18] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-04-21 12:40:18] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240421] Old Version: [1.0.0.dev20240420]
+[2024-04-21 12:40:18] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/42/0c/02d7625faa48229755c9e4866c979d5e5a19424d3d438ec1f30dfe200049/data_transformation_yfhsi-0.1.1a0.tar.gz
+[2024-04-21 12:40:18] INFO root fetch - processPackages [sinol-make]: Downloading https://files.pythonhosted.org/packages/8f/42/0d4af9a7ace1cbbfa13eb6b23023b402ecd1976dc027170297245a95eedb/sinol_make-1.6.0.dev3.tar.gz
+[2024-04-21 12:40:18] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/2e/32/cebf1337c1d7b4ee4cc9804aad4a9b925e5bf4441e7ef3f4ccb27f83eda7/skypilot_nightly-1.0.0.dev20240420.tar.gz
+[2024-04-21 12:40:18] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-04-21 12:40:18] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-21 12:40:18] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240421/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-04-21 12:40:19] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6d/19/a734f6ad0eb96370971bfb49edfa643afab240849414df861500cd903ebe/data_transformation_yfhsi-0.2.1a0.tar.gz
+[2024-04-21 12:40:19] INFO root fetch - processPackages [sinol-make]: Downloading https://files.pythonhosted.org/packages/18/88/218a8cd904df1a4fb1b2ae6d433ad3ff002bc12cd4b355b85dc2a482b009/sinol_make-1.6.0.dev4.tar.gz
+[2024-04-21 12:40:19] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 12:40:19] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.1.1a0.tar.gz tmp/data_transformation_yfhsi-0.2.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.1.1a0-0.2.1a0/README.md --exclude *.pyd
+[2024-04-21 12:40:19] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/b6/fb/32e488700b25966e6436be2ddc437fbf076004335856c5e0831a9d80319b/skypilot_nightly-1.0.0.dev20240421.tar.gz
+[2024-04-21 12:40:19] INFO root fetch - processPackages [sinol-make]: executing diffoscope
+[2024-04-21 12:40:19] INFO root fetch - processPackages [sinol-make]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinol_make-1.6.0.dev3.tar.gz tmp/sinol_make-1.6.0.dev4.tar.gz --markdown 20240421/s/sinol-make/1.6.0.dev3-1.6.0.dev4/README.md --exclude *.pyd
+[2024-04-21 12:40:19] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-04-21 12:40:19] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240420.tar.gz tmp/skypilot_nightly-1.0.0.dev20240421.tar.gz --markdown 20240421/s/skypilot-nightly/1.0.0.dev20240420-1.0.0.dev20240421/README.md --exclude *.pyd
+[2024-04-21 12:40:19] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.1.1a0.tar.gz]
+[2024-04-21 12:40:19] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.2.1a0.tar.gz]
+[2024-04-21 12:40:19] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 12:40:19] INFO root fetch - processPackages [sinol-make]: Remove: archive file [/home/abi/fetcher/tmp/sinol_make-1.6.0.dev3.tar.gz]
+[2024-04-21 12:40:19] INFO root fetch - processPackages [sinol-make]: Remove: archive file [/home/abi/fetcher/tmp/sinol_make-1.6.0.dev4.tar.gz]
+[2024-04-21 12:40:19] INFO root fetch - main [MainThread]: End processing [sinol-make]: success
+[2024-04-21 12:40:20] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-04-21 12:40:20] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-04-21 12:40:20] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-21 12:40:20] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240420.tar.gz]
+[2024-04-21 12:40:20] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240421.tar.gz]
+[2024-04-21 12:40:20] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-04-21 12:40:20] INFO root fetch - main [MainThread]: Store serial: [22863729]
