@@ -8517,3 +8517,54 @@
 [2024-04-21 12:58:04] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
 [2024-04-21 12:58:04] INFO root fetch - main [MainThread]: End processing [nestpython]: success
 [2024-04-21 12:58:04] INFO root fetch - main [MainThread]: Store serial: [22863809]
+[2024-04-21 13:00:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863809]
+[2024-04-21 13:00:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiopioneer
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ossStudy
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygifconvt-test-jw
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightkube-models
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syncloud-lib
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dolibarrpy
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ossStudy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 13:00:12] WARNING root fetch - processPackages [pygifconvt-test-jw]: Skipping, unable to determine old version
+[2024-04-21 13:00:12] INFO root fetch - main [MainThread]: End processing [pygifconvt-test-jw] error
+[2024-04-21 13:00:12] INFO root fetch - processPackages [dolibarrpy]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-21 13:00:12] INFO root fetch - processPackages [aiopioneer]: New version: [0.6.0rc1] Old Version: [0.6.0b1]
+[2024-04-21 13:00:12] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/b6/d3/d3c9c31630492f4ff89b78987a3ccb396420f811f674f07f0dda75f71efb/ossStudy-0.0.1-py3-none-any.whl
+[2024-04-21 13:00:13] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/30/a1/37bb6eadd3730203c368486ab13764a045ceb27bd76050869c0300c79353/dolibarrpy-0.3.2.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [syncloud-lib]: New version: [99] Old Version: [98]
+[2024-04-21 13:00:13] INFO root fetch - processPackages [lightkube-models]: New version: [1.30.0.7] Old Version: [1.29.0.7]
+[2024-04-21 13:00:13] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/22/9c/57889931bb7ec5b2b9295cca252664a7c415a68f959015b0334467900eeb/aiopioneer-0.6.0b1.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [lightkube-models]: Downloading https://files.pythonhosted.org/packages/4c/2c/66d294a8274bbc8d5614358eee3395be95e4f5108defef0667a78dfe2730/lightkube-models-1.29.0.7.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/eb/47/46fcc907c66f84d54bb4511b19d9a23d7c91adea96f7e60ce0c74aa570ef/syncloud-lib-98.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/0d/53/0df14f2346eea728edf5e5dbe5aab841756760f65347e9e395a609d7d144/ossStudy-0.0.2-py3-none-any.whl
+[2024-04-21 13:00:13] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/57/fd/a04f9802503815b3ca43b83d9ea42ac7648a38719d84d426c3cafd18762c/dolibarrpy-0.3.3.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [ossStudy]: executing diffoscope
+[2024-04-21 13:00:13] INFO root fetch - processPackages [ossStudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossStudy-0.0.1-py3-none-any.whl.zip tmp/ossStudy-0.0.2-py3-none-any.whl.zip --markdown 20240421/o/ossStudy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 13:00:13] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-21 13:00:13] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.3.2.tar.gz tmp/dolibarrpy-0.3.3.tar.gz --markdown 20240421/d/dolibarrpy/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-21 13:00:13] INFO root fetch - processPackages [lightkube-models]: Downloading https://files.pythonhosted.org/packages/6f/dc/f2fc4578b0a087673f6ba3f3ab17da7addc18cf559ba39c74fdb35a24d46/lightkube-models-1.30.0.7.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [syncloud-lib]: Downloading https://files.pythonhosted.org/packages/44/7a/6896c6fbe515ce1d82cba0202681a2dab694b82a4fcab8fe2813ac3b6806/syncloud-lib-99.tar.gz
+[2024-04-21 13:00:13] INFO root fetch - processPackages [lightkube-models]: executing diffoscope
+[2024-04-21 13:00:13] INFO root fetch - processPackages [lightkube-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightkube-models-1.29.0.7.tar.gz tmp/lightkube-models-1.30.0.7.tar.gz --markdown 20240421/l/lightkube-models/1.29.0.7-1.30.0.7/README.md --exclude *.pyd
+[2024-04-21 13:00:13] INFO root fetch - processPackages [syncloud-lib]: executing diffoscope
+[2024-04-21 13:00:13] INFO root fetch - processPackages [syncloud-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncloud-lib-98.tar.gz tmp/syncloud-lib-99.tar.gz --markdown 20240421/s/syncloud-lib/98-99/README.md --exclude *.pyd
+[2024-04-21 13:00:13] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 13:00:13] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 13:00:13] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
+[2024-04-21 13:00:14] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.3.2.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/8e/2b/e03b84384254634697a270dab64d879aef0342ad67013c9aab2734edc1f6/aiopioneer-0.6.0rc1.tar.gz
+[2024-04-21 13:00:14] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.3.3.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: executing diffoscope
+[2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiopioneer-0.6.0b1.tar.gz tmp/aiopioneer-0.6.0rc1.tar.gz --markdown 20240421/a/aiopioneer/0.6.0b1-0.6.0rc1/README.md --exclude *.pyd
+[2024-04-21 13:00:14] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-98.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - processPackages [syncloud-lib]: Remove: archive file [/home/abi/fetcher/tmp/syncloud-lib-99.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - main [MainThread]: End processing [syncloud-lib]: success
+[2024-04-21 13:00:14] INFO root fetch - processPackages [lightkube-models]: Remove: archive file [/home/abi/fetcher/tmp/lightkube-models-1.29.0.7.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - processPackages [lightkube-models]: Remove: archive file [/home/abi/fetcher/tmp/lightkube-models-1.30.0.7.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - main [MainThread]: End processing [lightkube-models]: success
+[2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: Remove: archive file [/home/abi/fetcher/tmp/aiopioneer-0.6.0b1.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - processPackages [aiopioneer]: Remove: archive file [/home/abi/fetcher/tmp/aiopioneer-0.6.0rc1.tar.gz]
+[2024-04-21 13:00:14] INFO root fetch - main [MainThread]: End processing [aiopioneer]: success
+[2024-04-21 13:00:14] INFO root fetch - main [MainThread]: Store serial: [22863838]
