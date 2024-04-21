@@ -7966,3 +7966,42 @@
 [2024-04-21 12:16:08] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.2a1.tar.gz]
 [2024-04-21 12:16:08] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-21 12:16:08] INFO root fetch - main [MainThread]: Store serial: [22863621]
+[2024-04-21 12:18:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863621]
+[2024-04-21 12:18:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 12:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monopoly-sg
+[2024-04-21 12:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AstroScript
+[2024-04-21 12:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequifier
+[2024-04-21 12:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GirardProxy
+[2024-04-21 12:18:19] INFO root fetch - processPackages [AstroScript]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-21 12:18:19] INFO root fetch - processPackages [monopoly-sg]: New version: [0.7.7] Old Version: [0.7.6rc0]
+[2024-04-21 12:18:19] INFO root fetch - processPackages [GirardProxy]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-21 12:18:19] INFO root fetch - processPackages [AstroScript]: Downloading https://files.pythonhosted.org/packages/27/c4/aeb6f712ae5e917b18e325c5cbb20749315ddcc4072877ed9f1db9635d23/astroscript-1.0.2.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [sequifier]: New version: [2.0.0] Old Version: [1.1.4]
+[2024-04-21 12:18:19] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/0c/d2/8e8477d64ae08c73ebdbdca1856d9ba0a9feaffc416500c56a3f42e20004/monopoly_sg-0.7.6rc0.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/9c/c0/ad3770d459356d010b0efcae259533ec0ecccea4b12910b4ad5b4304cf4e/girardproxy-0.9.3.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [sequifier]: Downloading https://files.pythonhosted.org/packages/32/51/793a85e5a4b708c3fc335f04fd3e1d1bc71c1acd42eb37fb9973430718b7/sequifier-1.1.4.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/c5/75/9bf891c967d0003644412a3c5b58475f5056e74b71f53ea531ca1549948b/monopoly_sg-0.7.7.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [GirardProxy]: Downloading https://files.pythonhosted.org/packages/60/d5/1cfe36de181c1b47b0a595f2701318e1d401e1f76454d9e7b4378a7cd2e4/girardproxy-0.9.4.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [AstroScript]: Downloading https://files.pythonhosted.org/packages/4e/50/453ce7fbaeb7ad026545d10cb874400038c3ff0dc0790877b387d1003720/astroscript-1.0.3.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [GirardProxy]: executing diffoscope
+[2024-04-21 12:18:19] INFO root fetch - processPackages [GirardProxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girardproxy-0.9.3.tar.gz tmp/girardproxy-0.9.4.tar.gz --markdown 20240421/G/GirardProxy/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-21 12:18:19] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-04-21 12:18:19] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.6rc0.tar.gz tmp/monopoly_sg-0.7.7.tar.gz --markdown 20240421/m/monopoly-sg/0.7.6rc0-0.7.7/README.md --exclude *.pyd
+[2024-04-21 12:18:19] INFO root fetch - processPackages [sequifier]: Downloading https://files.pythonhosted.org/packages/00/7c/26f9de9dd0d57c7dbcbb88426bfd54fa88b27c36cc35b75ac8bfe7de9a5a/sequifier-2.0.0.tar.gz
+[2024-04-21 12:18:19] INFO root fetch - processPackages [AstroScript]: executing diffoscope
+[2024-04-21 12:18:19] INFO root fetch - processPackages [AstroScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroscript-1.0.2.tar.gz tmp/astroscript-1.0.3.tar.gz --markdown 20240421/A/AstroScript/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-21 12:18:19] INFO root fetch - processPackages [sequifier]: executing diffoscope
+[2024-04-21 12:18:19] INFO root fetch - processPackages [sequifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequifier-1.1.4.tar.gz tmp/sequifier-2.0.0.tar.gz --markdown 20240421/s/sequifier/1.1.4-2.0.0/README.md --exclude *.pyd
+[2024-04-21 12:18:20] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.3.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - processPackages [GirardProxy]: Remove: archive file [/home/abi/fetcher/tmp/girardproxy-0.9.4.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - main [MainThread]: End processing [GirardProxy]: success
+[2024-04-21 12:18:20] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6rc0.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.7.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-04-21 12:18:20] INFO root fetch - processPackages [sequifier]: Remove: archive file [/home/abi/fetcher/tmp/sequifier-1.1.4.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - processPackages [sequifier]: Remove: archive file [/home/abi/fetcher/tmp/sequifier-2.0.0.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - main [MainThread]: End processing [sequifier]: success
+[2024-04-21 12:18:20] INFO root fetch - processPackages [AstroScript]: Remove: archive file [/home/abi/fetcher/tmp/astroscript-1.0.2.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - processPackages [AstroScript]: Remove: archive file [/home/abi/fetcher/tmp/astroscript-1.0.3.tar.gz]
+[2024-04-21 12:18:20] INFO root fetch - main [MainThread]: End processing [AstroScript]: success
+[2024-04-21 12:18:20] INFO root fetch - main [MainThread]: Store serial: [22863634]
