@@ -10610,3 +10610,32 @@
 [2024-04-21 15:27:00] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.2.0.tar.gz]
 [2024-04-21 15:27:00] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
 [2024-04-21 15:27:00] INFO root fetch - main [MainThread]: Store serial: [22864916]
+[2024-04-21 15:29:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864916]
+[2024-04-21 15:29:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backends
+[2024-04-21 15:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: claspin
+[2024-04-21 15:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adr-viewer
+[2024-04-21 15:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simply-cli
+[2024-04-21 15:29:09] WARNING root fetch - processPackages [claspin]: Skipping, unable to determine old version
+[2024-04-21 15:29:09] INFO root fetch - main [MainThread]: End processing [claspin] error
+[2024-04-21 15:29:09] INFO root fetch - processPackages [simply-cli]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-04-21 15:29:09] INFO root fetch - processPackages [adr-viewer]: New version: [1.4.0rc1] Old Version: [1.4.0]
+[2024-04-21 15:29:09] INFO root fetch - processPackages [backends]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-21 15:29:09] INFO root fetch - processPackages [simply-cli]: Downloading https://files.pythonhosted.org/packages/4d/80/8d9840e3e8d97bf5c34805ec2df967be733d5978832dad24a294c92aa7a2/simply_cli-0.1.1.tar.gz
+[2024-04-21 15:29:09] INFO root fetch - processPackages [adr-viewer]: Downloading https://files.pythonhosted.org/packages/1b/72/0f787da38d0f9d69c06b31d8f412735ed4fad383edd7f7d2286f4fc7b5b0/adr_viewer-1.4.0.tar.gz
+[2024-04-21 15:29:09] WARNING root fetch - processPackages [simply-cli]: Skipping package: exceeds size limit 19372265>=10485760
+[2024-04-21 15:29:09] INFO root fetch - main [MainThread]: End processing [simply-cli] error
+[2024-04-21 15:29:09] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/3a/b7/7e4332d33fbc05a0608efb82c620385365072ffe712fccf17cbfc94e4241/backends-1.6.1.tar.gz
+[2024-04-21 15:29:09] INFO root fetch - processPackages [adr-viewer]: Downloading https://files.pythonhosted.org/packages/1e/c4/cdc380fd3da92efc0a8f71180d412ab18982b020f5e3e9b3283cc3e34bea/adr-viewer-1.4.0rc1.tar.gz
+[2024-04-21 15:29:09] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/20/ea/496b60fb4117f73d129ccba4022dd54da5de32d31d3f8f89652a1741ec66/backends-1.6.2.tar.gz
+[2024-04-21 15:29:09] INFO root fetch - processPackages [backends]: executing diffoscope
+[2024-04-21 15:29:09] INFO root fetch - processPackages [backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backends-1.6.1.tar.gz tmp/backends-1.6.2.tar.gz --markdown 20240421/b/backends/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-21 15:29:10] INFO root fetch - processPackages [adr-viewer]: executing diffoscope
+[2024-04-21 15:29:10] INFO root fetch - processPackages [adr-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adr_viewer-1.4.0.tar.gz tmp/adr-viewer-1.4.0rc1.tar.gz --markdown 20240421/a/adr-viewer/1.4.0-1.4.0rc1/README.md --exclude *.pyd
+[2024-04-21 15:29:10] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.1.tar.gz]
+[2024-04-21 15:29:10] INFO root fetch - processPackages [backends]: Remove: archive file [/home/abi/fetcher/tmp/backends-1.6.2.tar.gz]
+[2024-04-21 15:29:10] INFO root fetch - main [MainThread]: End processing [backends]: success
+[2024-04-21 15:29:10] INFO root fetch - processPackages [adr-viewer]: Remove: archive file [/home/abi/fetcher/tmp/adr_viewer-1.4.0.tar.gz]
+[2024-04-21 15:29:10] INFO root fetch - processPackages [adr-viewer]: Remove: archive file [/home/abi/fetcher/tmp/adr-viewer-1.4.0rc1.tar.gz]
+[2024-04-21 15:29:10] INFO root fetch - main [MainThread]: End processing [adr-viewer]: success
+[2024-04-21 15:29:10] INFO root fetch - main [MainThread]: Store serial: [22864928]
