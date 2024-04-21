@@ -8788,3 +8788,24 @@
 [2024-04-21 13:15:27] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-04-21 13:15:27] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-04-21 13:15:27] INFO root fetch - main [MainThread]: Store serial: [22863914]
+[2024-04-21 13:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863914]
+[2024-04-21 13:17:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclonedx-bom
+[2024-04-21 13:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tailucas-pylib
+[2024-04-21 13:17:36] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.4.0] Old Version: [4.3.4a1]
+[2024-04-21 13:17:36] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-21 13:17:36] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/ee/6f/7dcc61832350159d19dfe5c881e4ff0d1abc82c810cfe13bb13ea0de9785/cyclonedx_bom-4.3.4a1.tar.gz
+[2024-04-21 13:17:36] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/98/f0/3fab021aa5977d3b218d3e6c759c83e42e6be6c125eec3b930a4f760b666/tailucas_pylib-0.2.4.tar.gz
+[2024-04-21 13:17:37] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/d7/e6/3c4c2f7d549cfe2535d86967f5382ab3561bc2742db12605eeb302da7755/cyclonedx_bom-4.4.0.tar.gz
+[2024-04-21 13:17:37] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/c5/0e/d451bef72f363b83d91f8588193583f9f3e9c65df337bc23a767b37cc17f/tailucas_pylib-0.2.5.tar.gz
+[2024-04-21 13:17:37] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-21 13:17:37] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.4.tar.gz tmp/tailucas_pylib-0.2.5.tar.gz --markdown 20240421/t/tailucas-pylib/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-21 13:17:37] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 13:17:37] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.3.4a1.tar.gz tmp/cyclonedx_bom-4.4.0.tar.gz --markdown 20240421/c/cyclonedx-bom/4.3.4a1-4.4.0/README.md --exclude *.pyd
+[2024-04-21 13:17:37] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.4.tar.gz]
+[2024-04-21 13:17:37] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.5.tar.gz]
+[2024-04-21 13:17:37] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-21 13:17:46] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.4a1.tar.gz]
+[2024-04-21 13:17:46] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.4.0.tar.gz]
+[2024-04-21 13:17:46] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 13:17:46] INFO root fetch - main [MainThread]: Store serial: [22863923]
