@@ -15988,3 +15988,64 @@
 [2024-04-21 20:38:44] INFO root fetch - processPackages [ansible-playbook-grapher]: Remove: archive file [/home/abi/fetcher/tmp/ansible_playbook_grapher-2.2.0-py2.py3-none-any.whl.zip]
 [2024-04-21 20:38:44] INFO root fetch - main [MainThread]: End processing [ansible-playbook-grapher]: success
 [2024-04-21 20:38:44] INFO root fetch - main [MainThread]: Store serial: [22867468]
+[2024-04-21 20:40:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867468]
+[2024-04-21 20:40:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-iotedge
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hltv-async-api
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: standard-smtpd
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: standard-smtpd
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-smtpd
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: standard-smtpd
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: standard-smtpd
+[2024-04-21 20:40:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC581
+[2024-04-21 20:40:53] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-21 20:40:53] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:40:53] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:40:53] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:40:53] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:40:53] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:40:53] WARNING root fetch - processPackages [PythonTestLJC581]: Skipping, unable to determine old version
+[2024-04-21 20:40:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC581] error
+[2024-04-21 20:40:53] INFO root fetch - processPackages [hltv-async-api]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/79/f3/ca65b24e4a948fe84a4f71aeb0579763026eae9c4733a06f51c864624857/tendril_iotedge-0.3.9.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [hltv-async-api]: Downloading https://files.pythonhosted.org/packages/b1/17/1a512ca20e902b6234469f90e24e9764bf448ab5c38c0807112f245fd51a/hltv_async_api-0.6.2.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/7a/aa/a06c627bef3d0a1c7a0cfcf978c0525896dc8a653a9e3e62eaa5440191d3/tendril_iotedge-0.4.0.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [hltv-async-api]: Downloading https://files.pythonhosted.org/packages/f5/06/5ce187944fb475577f0fb066b23472088671ce2bd8e8fbe7732779b9b5a2/hltv_async_api-0.6.3.tar.gz
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.9.tar.gz tmp/tendril_iotedge-0.4.0.tar.gz --markdown 20240421/t/tendril-iotedge/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-21 20:40:54] INFO root fetch - processPackages [hltv-async-api]: executing diffoscope
+[2024-04-21 20:40:54] INFO root fetch - processPackages [hltv-async-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hltv_async_api-0.6.2.tar.gz tmp/hltv_async_api-0.6.3.tar.gz --markdown 20240421/h/hltv-async-api/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-21 20:40:55] INFO root fetch - processPackages [hltv-async-api]: Remove: archive file [/home/abi/fetcher/tmp/hltv_async_api-0.6.2.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - processPackages [hltv-async-api]: Remove: archive file [/home/abi/fetcher/tmp/hltv_async_api-0.6.3.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [hltv-async-api]: success
+[2024-04-21 20:40:55] INFO root fetch - processPackages [standard-smtpd]: Remove: archive file [/home/abi/fetcher/tmp/standard_smtpd-3.8.19.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - processPackages [standard-smtpd]: Remove: archive file [/home/abi/fetcher/tmp/standard_smtpd-3.9.19.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 20:40:55] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.9.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.0.tar.gz]
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 20:40:55] INFO root fetch - main [MainThread]: Store serial: [22867495]
