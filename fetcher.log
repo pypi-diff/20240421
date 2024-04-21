@@ -1071,3 +1071,32 @@
 [2024-04-21 02:00:26] INFO root fetch - processPackages [invariant-client]: Remove: archive file [/home/abi/fetcher/tmp/invariant_client-1.1.2.tar.gz]
 [2024-04-21 02:00:26] INFO root fetch - main [MainThread]: End processing [invariant-client]: success
 [2024-04-21 02:00:26] INFO root fetch - main [MainThread]: Store serial: [22860373]
+[2024-04-21 02:02:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860373]
+[2024-04-21 02:02:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC288
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikGapps
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mytestpkgfranktcao
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ibis-framework
+[2024-04-21 02:02:35] INFO root fetch - processPackages [mytestpkgfranktcao]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 02:02:35] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/71/32/8cf025ffef69e43d3a1ed854ebdf9d351208912284b1fdaa54d5f197a7da/mytestpkgfranktcao-0.1.0.tar.gz
+[2024-04-21 02:02:35] WARNING root fetch - processPackages [PythonTestLJC288]: Skipping, unable to determine old version
+[2024-04-21 02:02:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC288] error
+[2024-04-21 02:02:35] INFO root fetch - processPackages [NikGapps]: New version: [2.56] Old Version: [2.55]
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev665]
+[2024-04-21 02:02:35] INFO root fetch - processPackages [mytestpkgfranktcao]: Downloading https://files.pythonhosted.org/packages/9d/a2/7a1f542fbdc834af779e919cfb49544981b05f6e3b1e649de220c3d95c43/mytestpkgfranktcao-0.1.1.tar.gz
+[2024-04-21 02:02:35] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/ba/9b/0bab0ffe4c99dd05ea0516ed1d8620267c30fde7971e1e31f7e169718084/nikgapps-2.55.tar.gz
+[2024-04-21 02:02:35] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 44655956>=10485760
+[2024-04-21 02:02:35] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2024-04-21 02:02:35] INFO root fetch - processPackages [mytestpkgfranktcao]: executing diffoscope
+[2024-04-21 02:02:35] INFO root fetch - processPackages [mytestpkgfranktcao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytestpkgfranktcao-0.1.0.tar.gz tmp/mytestpkgfranktcao-0.1.1.tar.gz --markdown 20240421/m/mytestpkgfranktcao/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 02:02:35] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/b4/aa/2ec7db8d437e660451047a03a7cd5c8f4849198372d93173df215d1ce2ad/ibis_framework-9.0.0.dev665.tar.gz
+[2024-04-21 02:02:36] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.0.tar.gz]
+[2024-04-21 02:02:36] INFO root fetch - processPackages [mytestpkgfranktcao]: Remove: archive file [/home/abi/fetcher/tmp/mytestpkgfranktcao-0.1.1.tar.gz]
+[2024-04-21 02:02:36] INFO root fetch - main [MainThread]: End processing [mytestpkgfranktcao]: success
+[2024-04-21 02:02:37] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-04-21 02:02:38] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-04-21 02:02:38] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev665.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240421/i/ibis-framework/9.0.0.dev665-v0.6.0/README.md --exclude *.pyd
+[2024-04-21 02:02:39] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev665.tar.gz]
+[2024-04-21 02:02:39] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-04-21 02:02:39] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-04-21 02:02:39] INFO root fetch - main [MainThread]: Store serial: [22860387]
