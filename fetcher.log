@@ -6071,3 +6071,18 @@
 [2024-04-21 09:33:38] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.9.tar.gz]
 [2024-04-21 09:33:38] INFO root fetch - main [MainThread]: End processing [agt-server]: success
 [2024-04-21 09:33:38] INFO root fetch - main [MainThread]: Store serial: [22862796]
+[2024-04-21 09:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862796]
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shelltool
+[2024-04-21 09:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intellipandora
+[2024-04-21 09:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-pos-receipt-replace-user-by-trigram-hr
+[2024-04-21 09:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-pos-receipt-replace-user-by-trigram
+[2024-04-21 09:35:47] WARNING root fetch - processPackages [shelltool]: Skipping, unable to determine old version
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: End processing [shelltool] error
+[2024-04-21 09:35:47] WARNING root fetch - processPackages [odoo-addon-pos-receipt-replace-user-by-trigram]: Skipping, unable to determine old version
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-receipt-replace-user-by-trigram] error
+[2024-04-21 09:35:47] WARNING root fetch - processPackages [intellipandora]: Skipping, unable to determine old version
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: End processing [intellipandora] error
+[2024-04-21 09:35:47] WARNING root fetch - processPackages [odoo-addon-pos-receipt-replace-user-by-trigram-hr]: Skipping, unable to determine old version
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-receipt-replace-user-by-trigram-hr] error
+[2024-04-21 09:35:47] INFO root fetch - main [MainThread]: Store serial: [22862814]
