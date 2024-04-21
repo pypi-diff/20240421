@@ -14780,3 +14780,21 @@
 [2024-04-21 19:22:36] INFO root fetch - processPackages [tksheet]: Remove: archive file [/home/abi/fetcher/tmp/tksheet-7.1.9.tar.gz]
 [2024-04-21 19:22:36] INFO root fetch - main [MainThread]: End processing [tksheet]: success
 [2024-04-21 19:22:36] INFO root fetch - main [MainThread]: Store serial: [22866883]
+[2024-04-21 19:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866883]
+[2024-04-21 19:24:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC553
+[2024-04-21 19:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eirStru
+[2024-04-21 19:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taep
+[2024-04-21 19:24:44] INFO root fetch - processPackages [eirStru]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-21 19:24:44] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/8a/f7/a1c0d6cb9f4ad2f3f0d0563730bb8c5bf190750c338dd953e8d3707e8e2c/eirStru-0.3.5.tar.gz
+[2024-04-21 19:24:44] WARNING root fetch - processPackages [taep]: Skipping, unable to determine old version
+[2024-04-21 19:24:44] INFO root fetch - main [MainThread]: End processing [taep] error
+[2024-04-21 19:24:44] WARNING root fetch - processPackages [PythonTestLJC553]: Skipping, unable to determine old version
+[2024-04-21 19:24:44] INFO root fetch - main [MainThread]: End processing [PythonTestLJC553] error
+[2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/3b/2d/2733039cfc8a87b63f7d5f03d42bba1b3354634c23ea3877578386566595/eirStru-0.3.6.tar.gz
+[2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.5.tar.gz tmp/eirStru-0.3.6.tar.gz --markdown 20240421/e/eirStru/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.5.tar.gz]
+[2024-04-21 19:24:45] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.6.tar.gz]
+[2024-04-21 19:24:45] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 19:24:45] INFO root fetch - main [MainThread]: Store serial: [22866895]
