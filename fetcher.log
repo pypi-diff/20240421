@@ -7611,3 +7611,12 @@
 [2024-04-21 11:41:05] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.5.0.tar.gz]
 [2024-04-21 11:41:05] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
 [2024-04-21 11:41:05] INFO root fetch - main [MainThread]: Store serial: [22863466]
+[2024-04-21 11:43:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863466]
+[2024-04-21 11:43:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 11:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mycalc0002
+[2024-04-21 11:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roff
+[2024-04-21 11:43:16] WARNING root fetch - processPackages [roff]: Skipping, unable to determine old version
+[2024-04-21 11:43:16] INFO root fetch - main [MainThread]: End processing [roff] error
+[2024-04-21 11:43:16] WARNING root fetch - processPackages [mycalc0002]: Skipping, unable to determine old version
+[2024-04-21 11:43:16] INFO root fetch - main [MainThread]: End processing [mycalc0002] error
+[2024-04-21 11:43:16] INFO root fetch - main [MainThread]: Store serial: [22863476]
