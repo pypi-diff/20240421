@@ -8733,3 +8733,46 @@
 [2024-04-21 13:11:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-04-21 13:11:07] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-04-21 13:11:07] INFO root fetch - main [MainThread]: Store serial: [22863890]
+[2024-04-21 13:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863890]
+[2024-04-21 13:13:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: photobooth-app
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nestpython
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tb-nightly
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC427
+[2024-04-21 13:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-core-cpp
+[2024-04-21 13:13:15] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc82.post1] Old Version: [0.0.2rc81.post1]
+[2024-04-21 13:13:15] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 13:13:15] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-21 13:13:15] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/a6/d7/d15b87f660649d1df710640fbe40b198c64a8eafbd2b71c2cfa28b550941/py_dbchat-0.0.2rc81.post1.tar.gz
+[2024-04-21 13:13:15] INFO root fetch - processPackages [photobooth-app]: New version: [2.0a5] Old Version: [2.0a4]
+[2024-04-21 13:13:15] WARNING root fetch - processPackages [PythonTestLJC427]: Skipping, unable to determine old version
+[2024-04-21 13:13:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC427] error
+[2024-04-21 13:13:15] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-21 13:13:15] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-21 13:13:15] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240421] Old Version: [2.5.0b20240420]
+[2024-04-21 13:13:15] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/19/99/00ce1a5db8479269b864cc6f7f7fa80caf763345cfd5287a30105dfe9a7b/photobooth_app-2.0a4.tar.gz
+[2024-04-21 13:13:15] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-21 13:13:15] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 18927305>=10485760
+[2024-04-21 13:13:15] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-04-21 13:13:16] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/c1/e1/36c813d847be28eccee1373aa025efa186ee3e7c8df91c027cd574633cbb/bigdl_core_cpp-2.5.0b20240420-py3-none-win_amd64.whl
+[2024-04-21 13:13:16] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 54452002>=10485760
+[2024-04-21 13:13:16] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-21 13:13:16] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-21 13:13:16] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240421/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 13:13:16] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/ac/d1/f2d3cc8ffcce8066a388837c2c76ba35f85585adac9b9ea6dd100e0c2436/py_dbchat-0.0.2rc82.post1.tar.gz
+[2024-04-21 13:13:16] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-21 13:13:16] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-21 13:13:16] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc81.post1.tar.gz tmp/py_dbchat-0.0.2rc82.post1.tar.gz --markdown 20240421/p/py-dbchat/0.0.2rc81.post1-0.0.2rc82.post1/README.md --exclude *.pyd
+[2024-04-21 13:13:16] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-21 13:13:16] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-21 13:13:16] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-21 13:13:16] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-21 13:13:16] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240421/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-04-21 13:13:16] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc81.post1.tar.gz]
+[2024-04-21 13:13:16] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc82.post1.tar.gz]
+[2024-04-21 13:13:16] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-21 13:13:18] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-21 13:13:18] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-21 13:13:18] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-21 13:13:18] INFO root fetch - main [MainThread]: Store serial: [22863910]
