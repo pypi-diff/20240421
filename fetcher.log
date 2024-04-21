@@ -2590,3 +2590,9 @@
 [2024-04-21 03:55:40] INFO root fetch - processPackages [pyqtgraph]: Remove: archive file [/home/abi/fetcher/tmp/pyqtgraph-0.9.8.tar.gz]
 [2024-04-21 03:55:40] INFO root fetch - main [MainThread]: End processing [pyqtgraph]: success
 [2024-04-21 03:55:40] INFO root fetch - main [MainThread]: Store serial: [22861148]
+[2024-04-21 03:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861148]
+[2024-04-21 03:57:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 03:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC323
+[2024-04-21 03:57:49] WARNING root fetch - processPackages [PythonTestLJC323]: Skipping, unable to determine old version
+[2024-04-21 03:57:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC323] error
+[2024-04-21 03:57:49] INFO root fetch - main [MainThread]: Store serial: [22861153]
