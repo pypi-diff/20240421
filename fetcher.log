@@ -15481,3 +15481,33 @@
 [2024-04-21 20:08:17] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
 [2024-04-21 20:08:17] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2024-04-21 20:08:17] INFO root fetch - main [MainThread]: Store serial: [22867232]
+[2024-04-21 20:10:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867232]
+[2024-04-21 20:10:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dublib
+[2024-04-21 20:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wifitest
+[2024-04-21 20:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC570
+[2024-04-21 20:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dunesios
+[2024-04-21 20:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arrapi
+[2024-04-21 20:10:26] INFO root fetch - processPackages [arrapi]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-21 20:10:26] WARNING root fetch - processPackages [wifitest]: Skipping, unable to determine old version
+[2024-04-21 20:10:26] INFO root fetch - main [MainThread]: End processing [wifitest] error
+[2024-04-21 20:10:26] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/e0/f1/f3e13f21a4fdfc0a7fcaaa70d3548a3c718cbc3bd798fced1ca085d10d10/arrapi-1.4.7.tar.gz
+[2024-04-21 20:10:26] WARNING root fetch - processPackages [dunesios]: Skipping, unable to determine old version
+[2024-04-21 20:10:26] INFO root fetch - main [MainThread]: End processing [dunesios] error
+[2024-04-21 20:10:26] WARNING root fetch - processPackages [PythonTestLJC570]: Skipping, unable to determine old version
+[2024-04-21 20:10:26] INFO root fetch - main [MainThread]: End processing [PythonTestLJC570] error
+[2024-04-21 20:10:26] INFO root fetch - processPackages [dublib]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-21 20:10:26] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/82/75/502ee58116644d44aec18bcb2803e5f097c4f437170867c28da2105cd61b/arrapi-1.4.8.tar.gz
+[2024-04-21 20:10:26] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/df/97/1b4cb85f7d713f68b3235d453017a3c917022b9fd77284f04dbc1febe773/dublib-0.5.0.tar.gz
+[2024-04-21 20:10:27] INFO root fetch - processPackages [arrapi]: executing diffoscope
+[2024-04-21 20:10:27] INFO root fetch - processPackages [arrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrapi-1.4.7.tar.gz tmp/arrapi-1.4.8.tar.gz --markdown 20240421/a/arrapi/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-21 20:10:27] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/70/25/aed7b31b73effe7b05e17e663da39af801141ec349bafc1840f5a72133ff/dublib-0.5.1.tar.gz
+[2024-04-21 20:10:27] INFO root fetch - processPackages [dublib]: executing diffoscope
+[2024-04-21 20:10:27] INFO root fetch - processPackages [dublib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dublib-0.5.0.tar.gz tmp/dublib-0.5.1.tar.gz --markdown 20240421/d/dublib/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-21 20:10:27] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.7.tar.gz]
+[2024-04-21 20:10:27] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.8.tar.gz]
+[2024-04-21 20:10:27] INFO root fetch - main [MainThread]: End processing [arrapi]: success
+[2024-04-21 20:10:27] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.5.0.tar.gz]
+[2024-04-21 20:10:27] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.5.1.tar.gz]
+[2024-04-21 20:10:27] INFO root fetch - main [MainThread]: End processing [dublib]: success
+[2024-04-21 20:10:27] INFO root fetch - main [MainThread]: Store serial: [22867254]
