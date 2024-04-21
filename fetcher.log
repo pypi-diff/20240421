@@ -16783,3 +16783,144 @@
 [2024-04-21 21:20:33] WARNING root fetch - processPackages [PythonTestLJC595]: Skipping, unable to determine old version
 [2024-04-21 21:20:33] INFO root fetch - main [MainThread]: End processing [PythonTestLJC595] error
 [2024-04-21 21:20:33] INFO root fetch - main [MainThread]: Store serial: [22867939]
+[2024-04-21 21:22:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867939]
+[2024-04-21 21:22:42] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarer.aws-secure-flow-log-bucket
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: noteshrunk
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: standard-aifc
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: standard-cgi
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-cgitb
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC596
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: standard-crypt
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: standard-imghdr
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: standard-mailcap
+[2024-04-21 21:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: standard-nntplib
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgitb]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-mailcap]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-nntplib]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-imghdr]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgi]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-aifc]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-crypt]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-04-21 21:22:43] WARNING root fetch - processPackages [PythonTestLJC596]: Skipping, unable to determine old version
+[2024-04-21 21:22:43] INFO root fetch - processPackages [PythonTestLJC596]: Start processing: standard-pipes
+[2024-04-21 21:22:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC596] error
+[2024-04-21 21:22:43] INFO root fetch - processPackages [noteshrunk]: New version: [1.5.0] Old Version: [1.4.2]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-imghdr]: Downloading https://files.pythonhosted.org/packages/09/d2/2eb5521072c9598886035c65c023f39f7384bcb73eed70794f469e34efac/standard_imghdr-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-pipes]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgitb]: Downloading https://files.pythonhosted.org/packages/6e/fd/a1ca54c1953463fd7dd9f7332508d471eeda7276e0972d0a0e9b0c76c65d/standard_cgitb-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-nntplib]: Downloading https://files.pythonhosted.org/packages/f7/84/498d81502131bb1688431b31e82389acf8160a7f536dc4fec84f5097efd9/standard_nntplib-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-crypt]: Downloading https://files.pythonhosted.org/packages/17/24/76b770d0113716e584670ef910a14ded9c2fb33b5675a1d759bb76162f4d/standard_crypt-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgi]: Downloading https://files.pythonhosted.org/packages/39/aa/4cb32e465fd9d51d486d44cac9c80a8e786cf778aff8c35755acf73c2a76/standard_cgi-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-mailcap]: Downloading https://files.pythonhosted.org/packages/08/4a/dee5079519372dacb85a29c8fd6dde401f547c19d428bfb90015a7d0722a/standard_mailcap-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-aifc]: Downloading https://files.pythonhosted.org/packages/22/30/a680de4016f9729374e760f082dbb43b44b951f781a0363554957868e690/standard_aifc-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/fd/99/95cd828e8f14e6eadaca6fb63a42642cb1a3d2d9ac28cc42d2f122a60c10/gammarer.aws-secure-flow-log-bucket-1.3.5.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/14/f2/6da70f81124b5e341a8d5114eb034fd272f2fbb06a845a974e41f07b98fb/noteshrunk-1.4.2.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-pipes]: Downloading https://files.pythonhosted.org/packages/fb/89/6c39b3598558a6f8a3289a58a6f6bfd9cb5092b98c5d678527996bb46b8f/standard_pipes-3.10.14.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-imghdr]: Downloading https://files.pythonhosted.org/packages/77/cd/af0b1967097b315e52d34863a95c5e2da938ba2a2d47d103d8502ef651c9/standard_imghdr-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgitb]: Downloading https://files.pythonhosted.org/packages/2c/b9/32bc568afe00889f21108698b2d33ea039ab63cdd64e8ea1b1dec61825cf/standard_cgitb-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-nntplib]: Downloading https://files.pythonhosted.org/packages/e7/bb/e89abea9e9aecbceb9923ec4068417f4b5d3d557767fcf096b9cb9d900cc/standard_nntplib-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-aifc]: Downloading https://files.pythonhosted.org/packages/23/04/7a7411c51125b2b27ad8bffa2907742b37885dd0a4f0b95daba96003a880/standard_aifc-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgi]: Downloading https://files.pythonhosted.org/packages/48/97/7d6dc4793f7b2e6e1e88ae81041d7b79ba2d85c06e144b42ea9ae0d51e56/standard_cgi-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-crypt]: Downloading https://files.pythonhosted.org/packages/bf/0e/4277c670ca82c9e564aaa3a539baa204e24e0b2d39d71396bb4f2b82a7b3/standard_crypt-3.11.9.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/0a/d0/a6a008eec15a5ce7d889c1bb5dd85e8dd56f5e6c554d01a3cdafde87a3bd/gammarer.aws-secure-flow-log-bucket-1.3.6.tar.gz
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-imghdr]: executing diffoscope
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-imghdr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_imghdr-3.10.14.tar.gz tmp/standard_imghdr-3.11.9.tar.gz --markdown 20240421/s/standard-imghdr/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgitb]: executing diffoscope
+[2024-04-21 21:22:43] INFO root fetch - processPackages [standard-cgitb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_cgitb-3.10.14.tar.gz tmp/standard_cgitb-3.11.9.tar.gz --markdown 20240421/s/standard-cgitb/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:43] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/57/22/95b8675cc97b0c22df04eb661a9e9f7d119babdf7b56983247b0c266a0ee/noteshrunk-1.5.0.tar.gz
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-nntplib]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-nntplib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_nntplib-3.10.14.tar.gz tmp/standard_nntplib-3.11.9.tar.gz --markdown 20240421/s/standard-nntplib/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-aifc]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-aifc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_aifc-3.10.14.tar.gz tmp/standard_aifc-3.11.9.tar.gz --markdown 20240421/s/standard-aifc/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-cgi]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-cgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_cgi-3.10.14.tar.gz tmp/standard_cgi-3.11.9.tar.gz --markdown 20240421/s/standard-cgi/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-crypt]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-crypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_crypt-3.10.14.tar.gz tmp/standard_crypt-3.11.9.tar.gz --markdown 20240421/s/standard-crypt/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-pipes]: Downloading https://files.pythonhosted.org/packages/6c/fe/7c0935173967be9517a2b3830840abc7c716e9078a878c19096fefae1be5/standard_pipes-3.11.9.tar.gz
+[2024-04-21 21:22:44] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-flow-log-bucket-1.3.5.tar.gz tmp/gammarer.aws-secure-flow-log-bucket-1.3.6.tar.gz --markdown 20240421/g/gammarer.aws-secure-flow-log-bucket/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [noteshrunk]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [noteshrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteshrunk-1.4.2.tar.gz tmp/noteshrunk-1.5.0.tar.gz --markdown 20240421/n/noteshrunk/1.4.2-1.5.0/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-pipes]: executing diffoscope
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-pipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_pipes-3.10.14.tar.gz tmp/standard_pipes-3.11.9.tar.gz --markdown 20240421/s/standard-pipes/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-imghdr]: Remove: archive file [/home/abi/fetcher/tmp/standard_imghdr-3.10.14.tar.gz]
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-imghdr]: Remove: archive file [/home/abi/fetcher/tmp/standard_imghdr-3.11.9.tar.gz]
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-imghdr]: Start processing: standard-sndhdr
+[2024-04-21 21:22:44] INFO root fetch - main [MainThread]: End processing [standard-imghdr]: success
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-sndhdr]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:44] INFO root fetch - processPackages [standard-mailcap]: Downloading https://files.pythonhosted.org/packages/4f/1f/9fca99ad3df91928c5481f07d6ae5685d9a683c843071a0383d32ea5e05f/standard_mailcap-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-aifc]: Remove: archive file [/home/abi/fetcher/tmp/standard_aifc-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-aifc]: Remove: archive file [/home/abi/fetcher/tmp/standard_aifc-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-aifc]: Start processing: standard-sunau
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-aifc]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-flow-log-bucket-1.3.5.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-flow-log-bucket-1.3.6.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Start processing: standard-telnetlib
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-flow-log-bucket]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sunau]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-mailcap]: executing diffoscope
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-mailcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_mailcap-3.10.14.tar.gz tmp/standard_mailcap-3.11.9.tar.gz --markdown 20240421/s/standard-mailcap/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-cgitb]: Remove: archive file [/home/abi/fetcher/tmp/standard_cgitb-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-cgitb]: Remove: archive file [/home/abi/fetcher/tmp/standard_cgitb-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-cgitb]: Start processing: standard-uu
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-cgitb]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-nntplib]: Remove: archive file [/home/abi/fetcher/tmp/standard_nntplib-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-nntplib]: Remove: archive file [/home/abi/fetcher/tmp/standard_nntplib-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-nntplib]: Start processing: standard-xdrlib
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-nntplib]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-telnetlib]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sndhdr]: Downloading https://files.pythonhosted.org/packages/bf/08/7f66b104b9ab7a2daea9b1729acdb01ac1c481db650efc36886d0650477e/standard_sndhdr-3.10.14.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-pipes]: Remove: archive file [/home/abi/fetcher/tmp/standard_pipes-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-pipes]: Remove: archive file [/home/abi/fetcher/tmp/standard_pipes-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-pipes]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-uu]: New version: [3.11.9] Old Version: [3.10.14]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-cgi]: Remove: archive file [/home/abi/fetcher/tmp/standard_cgi-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-cgi]: Remove: archive file [/home/abi/fetcher/tmp/standard_cgi-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-cgi]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-xdrlib]: New version: [3.12.2] Old Version: [3.11.9]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.4.2.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.5.0.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sunau]: Downloading https://files.pythonhosted.org/packages/3d/d1/bb7f18a7791d158d35dfb0f943dc62b84849fc660b27758d5ef71450252d/standard_sunau-3.10.14.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-crypt]: Remove: archive file [/home/abi/fetcher/tmp/standard_crypt-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-crypt]: Remove: archive file [/home/abi/fetcher/tmp/standard_crypt-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-crypt]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-telnetlib]: Downloading https://files.pythonhosted.org/packages/6c/4e/dfc899e6561e95e714f95ba44e0ba2bddbf17ab1b030d08ba9c835568760/standard_telnetlib-3.10.14.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-uu]: Downloading https://files.pythonhosted.org/packages/5b/76/5a865669a09297f1d70d9c631f4b4b892ceb5b7108c22cfef03903a2ff85/standard_uu-3.10.14.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-xdrlib]: Downloading https://files.pythonhosted.org/packages/83/cf/42bbea21460ed0d5dcb4345eac71c9eebfedcf0c280376445280b8f0b4e9/standard_xdrlib-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sndhdr]: Downloading https://files.pythonhosted.org/packages/27/08/cc5564adaf3f5860bfc1666727f95024959eafab305876ed900c633de1ec/standard_sndhdr-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-telnetlib]: Downloading https://files.pythonhosted.org/packages/cc/ad/e9b4319e1a87dc9b329d5bea8462622b48da47a61d9e9d63c4b2d3581778/standard_telnetlib-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sunau]: Downloading https://files.pythonhosted.org/packages/e2/87/c5005b215d54311bfdeda186c95abf726629ae88e8e1c9d7b6fbf7d9aa0a/standard_sunau-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-mailcap]: Remove: archive file [/home/abi/fetcher/tmp/standard_mailcap-3.10.14.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-mailcap]: Remove: archive file [/home/abi/fetcher/tmp/standard_mailcap-3.11.9.tar.gz]
+[2024-04-21 21:22:45] INFO root fetch - main [MainThread]: End processing [standard-mailcap]: success
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-uu]: Downloading https://files.pythonhosted.org/packages/f1/0b/a071214fca8d599b6d5cd6c95b95aa5c3ae6214d80cbe5c453e936d70dc8/standard_uu-3.11.9.tar.gz
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sndhdr]: executing diffoscope
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sndhdr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_sndhdr-3.10.14.tar.gz tmp/standard_sndhdr-3.11.9.tar.gz --markdown 20240421/s/standard-sndhdr/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sunau]: executing diffoscope
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-sunau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_sunau-3.10.14.tar.gz tmp/standard_sunau-3.11.9.tar.gz --markdown 20240421/s/standard-sunau/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-telnetlib]: executing diffoscope
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-telnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_telnetlib-3.10.14.tar.gz tmp/standard_telnetlib-3.11.9.tar.gz --markdown 20240421/s/standard-telnetlib/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-uu]: executing diffoscope
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-uu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_uu-3.10.14.tar.gz tmp/standard_uu-3.11.9.tar.gz --markdown 20240421/s/standard-uu/3.10.14-3.11.9/README.md --exclude *.pyd
+[2024-04-21 21:22:45] INFO root fetch - processPackages [standard-xdrlib]: Downloading https://files.pythonhosted.org/packages/5b/47/e5c3e38c99d463497a00e255faf3247a16e98187ee02b87dad8850fdff8c/standard_xdrlib-3.12.2.tar.gz
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-xdrlib]: executing diffoscope
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-xdrlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_xdrlib-3.11.9.tar.gz tmp/standard_xdrlib-3.12.2.tar.gz --markdown 20240421/s/standard-xdrlib/3.11.9-3.12.2/README.md --exclude *.pyd
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-sndhdr]: Remove: archive file [/home/abi/fetcher/tmp/standard_sndhdr-3.10.14.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-sndhdr]: Remove: archive file [/home/abi/fetcher/tmp/standard_sndhdr-3.11.9.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: End processing [standard-sndhdr]: success
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-sunau]: Remove: archive file [/home/abi/fetcher/tmp/standard_sunau-3.10.14.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-sunau]: Remove: archive file [/home/abi/fetcher/tmp/standard_sunau-3.11.9.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: End processing [standard-sunau]: success
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-uu]: Remove: archive file [/home/abi/fetcher/tmp/standard_uu-3.10.14.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-uu]: Remove: archive file [/home/abi/fetcher/tmp/standard_uu-3.11.9.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: End processing [standard-uu]: success
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-telnetlib]: Remove: archive file [/home/abi/fetcher/tmp/standard_telnetlib-3.10.14.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-telnetlib]: Remove: archive file [/home/abi/fetcher/tmp/standard_telnetlib-3.11.9.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: End processing [standard-telnetlib]: success
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-xdrlib]: Remove: archive file [/home/abi/fetcher/tmp/standard_xdrlib-3.11.9.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - processPackages [standard-xdrlib]: Remove: archive file [/home/abi/fetcher/tmp/standard_xdrlib-3.12.2.tar.gz]
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: End processing [standard-xdrlib]: success
+[2024-04-21 21:22:46] INFO root fetch - main [MainThread]: Store serial: [22867989]
