@@ -15394,3 +15394,66 @@
 [2024-04-21 20:03:55] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.8.tar.gz]
 [2024-04-21 20:03:55] INFO root fetch - main [MainThread]: End processing [arrapi]: success
 [2024-04-21 20:03:55] INFO root fetch - main [MainThread]: Store serial: [22867195]
+[2024-04-21 20:05:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867195]
+[2024-04-21 20:06:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arrapi
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kv-fs
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bastet
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kv-sqlite-sync
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: queue-api
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: queue-kv
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cpp-x23186925
+[2024-04-21 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dune-rivals
+[2024-04-21 20:06:04] INFO root fetch - processPackages [bastet]: New version: [0.0.20.dev8] Old Version: [0.0.20.dev7]
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-fs]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-sqlite-sync]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 20:06:04] INFO root fetch - processPackages [arrapi]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-21 20:06:04] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-21 20:06:04] WARNING root fetch - processPackages [queue-kv]: Skipping, unable to determine old version
+[2024-04-21 20:06:04] INFO root fetch - main [MainThread]: End processing [queue-kv] error
+[2024-04-21 20:06:04] INFO root fetch - processPackages [queue-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/cf/32/03377517184b15ea9db7021260ce713787d2fe7d662a20f3538c2cc90766/kv_fs-0.1.6.tar.gz
+[2024-04-21 20:06:04] WARNING root fetch - processPackages [cpp-x23186925]: Skipping, unable to determine old version
+[2024-04-21 20:06:04] INFO root fetch - main [MainThread]: End processing [cpp-x23186925] error
+[2024-04-21 20:06:04] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/3c/fe/dd187ed39412f0b90c8317b548a3612bfdcb1a60b34ed3b2ff6f3aeae994/bastet-0.0.20.dev7.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/f0/e0/b8b20d40d49b5f32d743819836194a1158fe3b372f97c1a07e8fcce1ea32/dune_rivals-0.5.3.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-sqlite-sync]: Downloading https://files.pythonhosted.org/packages/30/4e/c3ae23b4c06b8912ca39cb42d87b79b3d5324fc98f4152bfd9eed88720ea/kv_sqlite_sync-0.1.4.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/e0/f1/f3e13f21a4fdfc0a7fcaaa70d3548a3c718cbc3bd798fced1ca085d10d10/arrapi-1.4.7.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [queue-api]: Downloading https://files.pythonhosted.org/packages/04/55/1620b2ad27949d8a84e665c118511ff796b4d1eccad19bf0f01cdcd8ff49/queue_api-0.1.1.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/e9/b6/8b11f754ad6effdaffcbfca1db026c272d2e5a0464a3c3997dc524e0d9af/kv_fs-0.1.7.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/66/27/e41a58af9e46c09ad0deb31b7fb841d6a434f36e9d45230122caf2743c3e/bastet-0.0.20.dev8.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-sqlite-sync]: Downloading https://files.pythonhosted.org/packages/88/6f/6e50965bce2e0ca33f49cb0dc9149d92bf6e6c0e075925996256feed2a89/kv_sqlite_sync-0.1.5.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/82/75/502ee58116644d44aec18bcb2803e5f097c4f437170867c28da2105cd61b/arrapi-1.4.8.tar.gz
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-fs]: executing diffoscope
+[2024-04-21 20:06:04] INFO root fetch - processPackages [kv-fs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_fs-0.1.6.tar.gz tmp/kv_fs-0.1.7.tar.gz --markdown 20240421/k/kv-fs/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 20:06:04] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/66/50/75fa81f6e7c136b8d36b262dfa81032f254dba62a3c96ad353493bfd60b9/dune_rivals-0.5.4.tar.gz
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-sqlite-sync]: executing diffoscope
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-sqlite-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_sqlite_sync-0.1.4.tar.gz tmp/kv_sqlite_sync-0.1.5.tar.gz --markdown 20240421/k/kv-sqlite-sync/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 20:06:05] INFO root fetch - processPackages [arrapi]: executing diffoscope
+[2024-04-21 20:06:05] INFO root fetch - processPackages [arrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrapi-1.4.7.tar.gz tmp/arrapi-1.4.8.tar.gz --markdown 20240421/a/arrapi/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-21 20:06:05] INFO root fetch - processPackages [queue-api]: Downloading https://files.pythonhosted.org/packages/cf/16/9cb0a7861bd8492354d453f7d796ad63942b106635a51d1788256c95792c/queue_api-0.1.2.tar.gz
+[2024-04-21 20:06:05] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 20:06:05] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.3.tar.gz tmp/dune_rivals-0.5.4.tar.gz --markdown 20240421/d/dune-rivals/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-21 20:06:05] INFO root fetch - processPackages [bastet]: executing diffoscope
+[2024-04-21 20:06:05] INFO root fetch - processPackages [bastet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bastet-0.0.20.dev7.tar.gz tmp/bastet-0.0.20.dev8.tar.gz --markdown 20240421/b/bastet/0.0.20.dev7-0.0.20.dev8/README.md --exclude *.pyd
+[2024-04-21 20:06:05] INFO root fetch - processPackages [queue-api]: executing diffoscope
+[2024-04-21 20:06:05] INFO root fetch - processPackages [queue-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue_api-0.1.1.tar.gz tmp/queue_api-0.1.2.tar.gz --markdown 20240421/q/queue-api/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 20:06:05] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.3.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.4.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.6.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.7.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [kv-fs]: success
+[2024-04-21 20:06:05] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.7.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.8.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [arrapi]: success
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-sqlite-sync]: Remove: archive file [/home/abi/fetcher/tmp/kv_sqlite_sync-0.1.4.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [kv-sqlite-sync]: Remove: archive file [/home/abi/fetcher/tmp/kv_sqlite_sync-0.1.5.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [kv-sqlite-sync]: success
+[2024-04-21 20:06:05] INFO root fetch - processPackages [queue-api]: Remove: archive file [/home/abi/fetcher/tmp/queue_api-0.1.1.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev7.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [queue-api]: Remove: archive file [/home/abi/fetcher/tmp/queue_api-0.1.2.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev8.tar.gz]
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [queue-api]: success
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: End processing [bastet]: success
+[2024-04-21 20:06:05] INFO root fetch - main [MainThread]: Store serial: [22867222]
