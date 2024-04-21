@@ -5775,3 +5775,34 @@
 [2024-04-21 09:11:53] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-21 09:11:53] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-21 09:11:53] INFO root fetch - main [MainThread]: Store serial: [22862675]
+[2024-04-21 09:13:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862675]
+[2024-04-21 09:14:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC398
+[2024-04-21 09:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-21 09:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 09:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713682417] Old Version: [0.0.18a1713670785]
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713682417] Old Version: [0.0.18a1713670785]
+[2024-04-21 09:14:03] INFO root fetch - processPackages [cerbogen]: New version: [0.0.48] Old Version: [0.0.47]
+[2024-04-21 09:14:03] WARNING root fetch - processPackages [PythonTestLJC398]: Skipping, unable to determine old version
+[2024-04-21 09:14:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC398] error
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/1b/ee/f980a81c26badf9fae895a82249273846ba8c7249a28ff3cea7e29a5bae2/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/1b/ee/f980a81c26badf9fae895a82249273846ba8c7249a28ff3cea7e29a5bae2/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/a7/5d/4acc6cfe27c6932abc7fa88d87946c6c69711f62a2d60021ebea3c6eb039/cerbogen-0.0.47.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/27/d9/39820f9d23c0bec4c52644e7b32036fa3aef4cf58dbed5d55fcf3196e96f/cerbogen-0.0.48.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 09:14:03] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.47.tar.gz tmp/cerbogen-0.0.48.tar.gz --markdown 20240421/c/cerbogen/0.0.47-0.0.48/README.md --exclude *.pyd
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a8/75/90a91d3a5949d716ed5037629f4cf05eb4b57b005095cab2715d8e2d0db3/pulumi_kubernetes_the_hard_way-0.0.19a1713682417.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a8/75/90a91d3a5949d716ed5037629f4cf05eb4b57b005095cab2715d8e2d0db3/pulumi_kubernetes_the_hard_way-0.0.19a1713682417.tar.gz
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682417.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.18a1713670785-0.0.19a1713682417/README.md --exclude *.pyd
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-21 09:14:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682417.tar.gz --markdown 20240421/p/pulumi-kubernetes-the-hard-way/0.0.18a1713670785-0.0.19a1713682417/README.md --exclude *.pyd
+[2024-04-21 09:14:04] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.47.tar.gz]
+[2024-04-21 09:14:04] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.48.tar.gz]
+[2024-04-21 09:14:04] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 09:14:04] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713670785.tar.gz]
+[2024-04-21 09:14:04] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682417.tar.gz]
+[2024-04-21 09:14:04] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 09:14:04] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-21 09:14:04] INFO root fetch - main [MainThread]: Store serial: [22862689]
