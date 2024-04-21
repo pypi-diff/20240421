@@ -13041,3 +13041,27 @@
 [2024-04-21 17:31:28] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
 [2024-04-21 17:31:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
 [2024-04-21 17:31:28] INFO root fetch - main [MainThread]: Store serial: [22866051]
+[2024-04-21 17:33:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866051]
+[2024-04-21 17:33:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 17:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prophyle
+[2024-04-21 17:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-evals-plugin
+[2024-04-21 17:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-graphql
+[2024-04-21 17:33:37] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-04-21 17:33:37] ERROR root fetch - processPackages [llm-evals-plugin]: Unable to get metadata: No such project 'llm-evals-plugin'
+[2024-04-21 17:33:37] INFO root fetch - main [MainThread]: End processing [llm-evals-plugin] error
+[2024-04-21 17:33:38] INFO root fetch - processPackages [prophyle]: New version: [0.3.3.2] Old Version: [0.3.3.1]
+[2024-04-21 17:33:38] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-04-21 17:33:38] INFO root fetch - processPackages [prophyle]: Downloading https://files.pythonhosted.org/packages/3a/97/d1e47f6de73f8af6ad70814db1d00bd06273dabac7ac97cb71a9861e3e1a/prophyle-0.3.3.1.tar.gz
+[2024-04-21 17:33:38] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-04-21 17:33:38] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-04-21 17:33:38] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240421/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-04-21 17:33:38] INFO root fetch - processPackages [prophyle]: Downloading https://files.pythonhosted.org/packages/f9/4f/ee7bc6343066e1dbd685da6b3dc4318b7678db88299cd5fe2dee831d2f93/prophyle-0.3.3.2.tar.gz
+[2024-04-21 17:33:38] INFO root fetch - processPackages [prophyle]: executing diffoscope
+[2024-04-21 17:33:38] INFO root fetch - processPackages [prophyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophyle-0.3.3.1.tar.gz tmp/prophyle-0.3.3.2.tar.gz --markdown 20240421/p/prophyle/0.3.3.1-0.3.3.2/README.md --exclude *.pyd
+[2024-04-21 17:33:39] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-04-21 17:33:39] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-04-21 17:33:39] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-04-21 17:33:40] INFO root fetch - processPackages [prophyle]: Remove: archive file [/home/abi/fetcher/tmp/prophyle-0.3.3.1.tar.gz]
+[2024-04-21 17:33:40] INFO root fetch - processPackages [prophyle]: Remove: archive file [/home/abi/fetcher/tmp/prophyle-0.3.3.2.tar.gz]
+[2024-04-21 17:33:40] INFO root fetch - main [MainThread]: End processing [prophyle]: success
+[2024-04-21 17:33:40] INFO root fetch - main [MainThread]: Store serial: [22866066]
