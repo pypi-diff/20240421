@@ -13232,3 +13232,27 @@
 [2024-04-21 17:48:50] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
 [2024-04-21 17:48:50] INFO root fetch - main [MainThread]: End processing [culminator]: success
 [2024-04-21 17:48:50] INFO root fetch - main [MainThread]: Store serial: [22866142]
+[2024-04-21 17:50:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866142]
+[2024-04-21 17:50:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 17:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: donetools
+[2024-04-21 17:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: culminator
+[2024-04-21 17:50:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-optimization
+[2024-04-21 17:50:59] WARNING root fetch - processPackages [python-optimization]: Skipping, unable to determine old version
+[2024-04-21 17:50:59] INFO root fetch - main [MainThread]: End processing [python-optimization] error
+[2024-04-21 17:50:59] INFO root fetch - processPackages [culminator]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 17:50:59] INFO root fetch - processPackages [donetools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 17:50:59] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/37/f4/e7f7cf70bdf03d223056d4eec5f49513caccf2dd8b5fe43b6a6cd763b033/culminator-0.7.tar.gz
+[2024-04-21 17:50:59] INFO root fetch - processPackages [donetools]: Downloading https://files.pythonhosted.org/packages/1d/e7/16ef7ef33b09a9634459bb56e910fc56d348769263fd89f5074d35a6aa31/donetools-0.0.8.tar.gz
+[2024-04-21 17:50:59] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/20/b0/fb5753400f141516ccceeb59be597de1af3bbe4fe788e8236f76dbb0ec40/culminator-0.8-py3-none-any.whl
+[2024-04-21 17:50:59] INFO root fetch - processPackages [culminator]: executing diffoscope
+[2024-04-21 17:50:59] INFO root fetch - processPackages [culminator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culminator-0.7.tar.gz tmp/culminator-0.8-py3-none-any.whl.zip --markdown 20240421/c/culminator/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 17:50:59] INFO root fetch - processPackages [donetools]: Downloading https://files.pythonhosted.org/packages/bc/28/cc26a1e320fe8c7340f7a8a47ad56f46fe697a88680abb956588b9650e76/donetools-0.0.9.tar.gz
+[2024-04-21 17:50:59] INFO root fetch - processPackages [donetools]: executing diffoscope
+[2024-04-21 17:50:59] INFO root fetch - processPackages [donetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donetools-0.0.8.tar.gz tmp/donetools-0.0.9.tar.gz --markdown 20240421/d/donetools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 17:51:00] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.7.tar.gz]
+[2024-04-21 17:51:00] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
+[2024-04-21 17:51:00] INFO root fetch - main [MainThread]: End processing [culminator]: success
+[2024-04-21 17:51:00] INFO root fetch - processPackages [donetools]: Remove: archive file [/home/abi/fetcher/tmp/donetools-0.0.8.tar.gz]
+[2024-04-21 17:51:00] INFO root fetch - processPackages [donetools]: Remove: archive file [/home/abi/fetcher/tmp/donetools-0.0.9.tar.gz]
+[2024-04-21 17:51:00] INFO root fetch - main [MainThread]: End processing [donetools]: success
+[2024-04-21 17:51:00] INFO root fetch - main [MainThread]: Store serial: [22866150]
