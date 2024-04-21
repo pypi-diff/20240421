@@ -5703,3 +5703,36 @@
 [2024-04-21 09:07:31] INFO root fetch - processPackages [scipplan]: Remove: archive file [/home/abi/fetcher/tmp/scipplan-0.1.0a2-py2.py3-none-any.whl.zip]
 [2024-04-21 09:07:31] INFO root fetch - main [MainThread]: End processing [scipplan]: success
 [2024-04-21 09:07:31] INFO root fetch - main [MainThread]: Store serial: [22862650]
+[2024-04-21 09:09:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862650]
+[2024-04-21 09:09:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-frame
+[2024-04-21 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DragonLog
+[2024-04-21 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hopla-cli
+[2024-04-21 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC397
+[2024-04-21 09:09:39] INFO root fetch - processPackages [DragonLog]: New version: [1.1] Old Version: [1.0]
+[2024-04-21 09:09:39] WARNING root fetch - processPackages [PythonTestLJC397]: Skipping, unable to determine old version
+[2024-04-21 09:09:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC397] error
+[2024-04-21 09:09:39] INFO root fetch - processPackages [hopla-cli]: New version: [0.0.37a0] Old Version: [0.0.36a0]
+[2024-04-21 09:09:39] INFO root fetch - processPackages [flask-frame]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-21 09:09:39] INFO root fetch - processPackages [hopla-cli]: Downloading https://files.pythonhosted.org/packages/2e/83/ef93877e6a80355b7a4bd59e14cef24655f1fbabb9e27cce4b87a2de78ce/hopla-cli-0.0.36a0.tar.gz
+[2024-04-21 09:09:39] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/db/b7/a7f02b0e1b75084f2973c928f6e1105291b10820baec80b0457a3f2a63ef/DragonLog-1.0.tar.gz
+[2024-04-21 09:09:40] INFO root fetch - processPackages [flask-frame]: Downloading https://files.pythonhosted.org/packages/03/99/20bcb1e5c7a19bab612d84605a8c3fa6d99da5bcaf73b4b21ab4be1378d9/flask_frame-0.6.2.tar.gz
+[2024-04-21 09:09:40] INFO root fetch - processPackages [hopla-cli]: Downloading https://files.pythonhosted.org/packages/c0/f7/b298be241bbcb282c9049178241c44b5bb11f9d7ca39cce4d4be90b3129c/hopla_cli-0.0.37a0.tar.gz
+[2024-04-21 09:09:40] INFO root fetch - processPackages [DragonLog]: Downloading https://files.pythonhosted.org/packages/53/4b/b39ab718cabbfd02d8fc1e5267aa39e019a78875ee424be04669996ee375/dragonlog-1.1.tar.gz
+[2024-04-21 09:09:40] INFO root fetch - processPackages [flask-frame]: Downloading https://files.pythonhosted.org/packages/11/f9/69bf7ed425e75293d7da5692f8ddc50430fb8a263c555b43680595ebdcde/flask_frame-0.6.3.tar.gz
+[2024-04-21 09:09:40] INFO root fetch - processPackages [hopla-cli]: executing diffoscope
+[2024-04-21 09:09:40] INFO root fetch - processPackages [hopla-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hopla-cli-0.0.36a0.tar.gz tmp/hopla_cli-0.0.37a0.tar.gz --markdown 20240421/h/hopla-cli/0.0.36a0-0.0.37a0/README.md --exclude *.pyd
+[2024-04-21 09:09:40] INFO root fetch - processPackages [flask-frame]: executing diffoscope
+[2024-04-21 09:09:40] INFO root fetch - processPackages [flask-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_frame-0.6.2.tar.gz tmp/flask_frame-0.6.3.tar.gz --markdown 20240421/f/flask-frame/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-21 09:09:40] INFO root fetch - processPackages [DragonLog]: executing diffoscope
+[2024-04-21 09:09:40] INFO root fetch - processPackages [DragonLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DragonLog-1.0.tar.gz tmp/dragonlog-1.1.tar.gz --markdown 20240421/D/DragonLog/1.0-1.1/README.md --exclude *.pyd
+[2024-04-21 09:09:41] INFO root fetch - processPackages [flask-frame]: Remove: archive file [/home/abi/fetcher/tmp/flask_frame-0.6.2.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - processPackages [flask-frame]: Remove: archive file [/home/abi/fetcher/tmp/flask_frame-0.6.3.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - main [MainThread]: End processing [flask-frame]: success
+[2024-04-21 09:09:41] INFO root fetch - processPackages [hopla-cli]: Remove: archive file [/home/abi/fetcher/tmp/hopla-cli-0.0.36a0.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - processPackages [hopla-cli]: Remove: archive file [/home/abi/fetcher/tmp/hopla_cli-0.0.37a0.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - main [MainThread]: End processing [hopla-cli]: success
+[2024-04-21 09:09:41] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/DragonLog-1.0.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - processPackages [DragonLog]: Remove: archive file [/home/abi/fetcher/tmp/dragonlog-1.1.tar.gz]
+[2024-04-21 09:09:41] INFO root fetch - main [MainThread]: End processing [DragonLog]: success
+[2024-04-21 09:09:41] INFO root fetch - main [MainThread]: Store serial: [22862664]
