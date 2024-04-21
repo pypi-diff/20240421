@@ -11885,3 +11885,38 @@
 [2024-04-21 16:28:41] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.4.tar.gz]
 [2024-04-21 16:28:41] INFO root fetch - main [MainThread]: End processing [faultier]: success
 [2024-04-21 16:28:41] INFO root fetch - main [MainThread]: Store serial: [22865507]
+[2024-04-21 16:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865507]
+[2024-04-21 16:30:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thefittest
+[2024-04-21 16:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-injection
+[2024-04-21 16:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dptb
+[2024-04-21 16:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chamco-ragbot
+[2024-04-21 16:30:49] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 16:30:49] INFO root fetch - processPackages [thefittest]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-21 16:30:49] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 16:30:49] INFO root fetch - processPackages [python-injection]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-21 16:30:49] INFO root fetch - processPackages [dptb]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-21 16:30:50] INFO root fetch - processPackages [thefittest]: Downloading https://files.pythonhosted.org/packages/1c/61/6130d2d12bef21ec5b824e079762848a9bb1dcccb1f0cc0ba6811139c3f9/thefittest-0.2.3.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [python-injection]: Downloading https://files.pythonhosted.org/packages/70/ef/ceeb262a52491ed4fec968614f1e87706b8f80d5675a40c513e699a20a9a/python_injection-0.8.2.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [dptb]: Downloading https://files.pythonhosted.org/packages/ae/3c/1f60f176b9a1bdb2c9df4d1001070192347a5f48ef2ddf4d4d8393d56cd0/dptb-2.0.0.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 16:30:50] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 16:30:50] WARNING root fetch - processPackages [dptb]: Skipping package: exceeds size limit 42924824>=10485760
+[2024-04-21 16:30:50] INFO root fetch - main [MainThread]: End processing [dptb] error
+[2024-04-21 16:30:50] INFO root fetch - processPackages [python-injection]: Downloading https://files.pythonhosted.org/packages/f8/53/bb704315519e53c9a6faa4dea64c9d343ab6c6df613a554a7e3dd211afda/python_injection-0.8.3.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [thefittest]: Downloading https://files.pythonhosted.org/packages/07/2b/50151ddb54a4f7332f6cff3101c51f1a286e799a8ff87129a8864d80f2cb/thefittest-0.2.4.tar.gz
+[2024-04-21 16:30:50] INFO root fetch - processPackages [python-injection]: executing diffoscope
+[2024-04-21 16:30:50] INFO root fetch - processPackages [python-injection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_injection-0.8.2.tar.gz tmp/python_injection-0.8.3.tar.gz --markdown 20240421/p/python-injection/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-21 16:30:50] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 16:30:50] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 16:30:50] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 16:30:51] INFO root fetch - processPackages [python-injection]: Remove: archive file [/home/abi/fetcher/tmp/python_injection-0.8.2.tar.gz]
+[2024-04-21 16:30:51] INFO root fetch - processPackages [python-injection]: Remove: archive file [/home/abi/fetcher/tmp/python_injection-0.8.3.tar.gz]
+[2024-04-21 16:30:51] INFO root fetch - main [MainThread]: End processing [python-injection]: success
+[2024-04-21 16:30:51] INFO root fetch - processPackages [thefittest]: executing diffoscope
+[2024-04-21 16:30:51] INFO root fetch - processPackages [thefittest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thefittest-0.2.3.tar.gz tmp/thefittest-0.2.4.tar.gz --markdown 20240421/t/thefittest/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-21 16:30:52] INFO root fetch - processPackages [thefittest]: Remove: archive file [/home/abi/fetcher/tmp/thefittest-0.2.3.tar.gz]
+[2024-04-21 16:30:52] INFO root fetch - processPackages [thefittest]: Remove: archive file [/home/abi/fetcher/tmp/thefittest-0.2.4.tar.gz]
+[2024-04-21 16:30:52] INFO root fetch - main [MainThread]: End processing [thefittest]: success
+[2024-04-21 16:30:52] INFO root fetch - main [MainThread]: Store serial: [22865518]
