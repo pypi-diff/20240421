@@ -7834,3 +7834,24 @@
 [2024-04-21 12:04:58] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.6-py3-none-any.whl.zip]
 [2024-04-21 12:04:58] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
 [2024-04-21 12:04:58] INFO root fetch - main [MainThread]: Store serial: [22863580]
+[2024-04-21 12:07:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863580]
+[2024-04-21 12:07:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 12:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magictk
+[2024-04-21 12:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitreporter
+[2024-04-21 12:07:07] INFO root fetch - processPackages [magictk]: New version: [0.0.2.45] Old Version: [0.0.2.44]
+[2024-04-21 12:07:07] INFO root fetch - processPackages [gitreporter]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-21 12:07:07] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/4b/f6/774215289612bddcb7a295a594f4add85d3790ff51954c7173e854a69b32/magictk-0.0.2.44.tar.gz
+[2024-04-21 12:07:07] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/12/b3/dbe5ff161127766db5d61bef0492bccfe5f2d64f46078db5589ba073f674/gitreporter-0.2.3.tar.gz
+[2024-04-21 12:07:07] INFO root fetch - processPackages [gitreporter]: Downloading https://files.pythonhosted.org/packages/01/4d/5195decf6975b48d2cb8f58e8164445a9ad319732d2872fc810d50ae0fef/gitreporter-0.2.4.tar.gz
+[2024-04-21 12:07:07] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/f4/f9/a820cadfe7f2c422e457da9d916ec81fc8b1058ec92a29f5f5dd1fab8dac/magictk-0.0.2.45.tar.gz
+[2024-04-21 12:07:07] INFO root fetch - processPackages [gitreporter]: executing diffoscope
+[2024-04-21 12:07:07] INFO root fetch - processPackages [gitreporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitreporter-0.2.3.tar.gz tmp/gitreporter-0.2.4.tar.gz --markdown 20240421/g/gitreporter/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-21 12:07:07] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-21 12:07:07] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-0.0.2.44.tar.gz tmp/magictk-0.0.2.45.tar.gz --markdown 20240421/m/magictk/0.0.2.44-0.0.2.45/README.md --exclude *.pyd
+[2024-04-21 12:07:08] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.3.tar.gz]
+[2024-04-21 12:07:08] INFO root fetch - processPackages [gitreporter]: Remove: archive file [/home/abi/fetcher/tmp/gitreporter-0.2.4.tar.gz]
+[2024-04-21 12:07:08] INFO root fetch - main [MainThread]: End processing [gitreporter]: success
+[2024-04-21 12:07:08] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.44.tar.gz]
+[2024-04-21 12:07:08] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.45.tar.gz]
+[2024-04-21 12:07:08] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-21 12:07:08] INFO root fetch - main [MainThread]: Store serial: [22863586]
