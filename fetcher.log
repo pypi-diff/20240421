@@ -7204,3 +7204,33 @@
 [2024-04-21 11:10:02] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.6rc0.tar.gz]
 [2024-04-21 11:10:02] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
 [2024-04-21 11:10:02] INFO root fetch - main [MainThread]: Store serial: [22863317]
+[2024-04-21 11:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863317]
+[2024-04-21 11:12:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 11:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polars-candle
+[2024-04-21 11:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hfutils
+[2024-04-21 11:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pasta-man
+[2024-04-21 11:12:11] INFO root fetch - processPackages [pasta-man]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 11:12:11] INFO root fetch - processPackages [hfutils]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-21 11:12:11] INFO root fetch - processPackages [pasta-man]: Downloading https://files.pythonhosted.org/packages/f3/98/fd5db769ab35b9d4221c6f05e325e09ddd0ab7ecc6a9ac07ed7b8189ddca/pasta_man-1.0.8.tar.gz
+[2024-04-21 11:12:11] INFO root fetch - processPackages [polars-candle]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 11:12:11] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/11/32/0f09f314e0020ea783dccefeaa40015a87a3adc2124c3f3c36bd838dbf76/hfutils-0.1.2.tar.gz
+[2024-04-21 11:12:11] INFO root fetch - processPackages [pasta-man]: Downloading https://files.pythonhosted.org/packages/47/13/8f823f9f944f8411c7e035a2cb166d5820e6fcc036d266460790b4de451a/pasta_man-1.0.9.tar.gz
+[2024-04-21 11:12:11] INFO root fetch - processPackages [polars-candle]: Downloading https://files.pythonhosted.org/packages/8b/cc/adb6823c4c4db12c8560feedb1d2dc1b670d20aeb6aa64eedf3bc341ac51/polars_candle-0.1.0.tar.gz
+[2024-04-21 11:12:11] INFO root fetch - processPackages [pasta-man]: executing diffoscope
+[2024-04-21 11:12:11] INFO root fetch - processPackages [pasta-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pasta_man-1.0.8.tar.gz tmp/pasta_man-1.0.9.tar.gz --markdown 20240421/p/pasta-man/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 11:12:11] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/cd/c5/d3b637104c22fc6c22f417f283d814056d8e7fc334cdc5d9b89843524d94/hfutils-0.2.0.tar.gz
+[2024-04-21 11:12:11] INFO root fetch - processPackages [hfutils]: executing diffoscope
+[2024-04-21 11:12:11] INFO root fetch - processPackages [hfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfutils-0.1.2.tar.gz tmp/hfutils-0.2.0.tar.gz --markdown 20240421/h/hfutils/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: Downloading https://files.pythonhosted.org/packages/4e/6b/2f05f5099c24f77efb4cf854ca6042d18ec9d628bc6731d8ef85a319dfd2/polars_candle-0.1.1.tar.gz
+[2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: executing diffoscope
+[2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_candle-0.1.0.tar.gz tmp/polars_candle-0.1.1.tar.gz --markdown 20240421/p/polars-candle/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 11:12:12] INFO root fetch - processPackages [pasta-man]: Remove: archive file [/home/abi/fetcher/tmp/pasta_man-1.0.8.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - processPackages [pasta-man]: Remove: archive file [/home/abi/fetcher/tmp/pasta_man-1.0.9.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - main [MainThread]: End processing [pasta-man]: success
+[2024-04-21 11:12:12] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.2.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.0.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - main [MainThread]: End processing [hfutils]: success
+[2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: Remove: archive file [/home/abi/fetcher/tmp/polars_candle-0.1.0.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - processPackages [polars-candle]: Remove: archive file [/home/abi/fetcher/tmp/polars_candle-0.1.1.tar.gz]
+[2024-04-21 11:12:12] INFO root fetch - main [MainThread]: End processing [polars-candle]: success
+[2024-04-21 11:12:12] INFO root fetch - main [MainThread]: Store serial: [22863326]
