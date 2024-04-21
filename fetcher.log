@@ -8845,3 +8845,12 @@
 [2024-04-21 13:22:06] INFO root fetch - processPackages [python-signal-edges]: Remove: archive file [/home/abi/fetcher/tmp/python_signal_edges-1.0.5-py3-none-any.whl.zip]
 [2024-04-21 13:22:06] INFO root fetch - main [MainThread]: End processing [python-signal-edges]: success
 [2024-04-21 13:22:06] INFO root fetch - main [MainThread]: Store serial: [22863937]
+[2024-04-21 13:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863937]
+[2024-04-21 13:24:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: morebuiltins
+[2024-04-21 13:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC431
+[2024-04-21 13:24:15] WARNING root fetch - processPackages [morebuiltins]: Skipping, unable to determine old version
+[2024-04-21 13:24:15] INFO root fetch - main [MainThread]: End processing [morebuiltins] error
+[2024-04-21 13:24:15] WARNING root fetch - processPackages [PythonTestLJC431]: Skipping, unable to determine old version
+[2024-04-21 13:24:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC431] error
+[2024-04-21 13:24:15] INFO root fetch - main [MainThread]: Store serial: [22863951]
