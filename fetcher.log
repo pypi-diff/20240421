@@ -14130,3 +14130,39 @@
 [2024-04-21 18:36:49] INFO root fetch - processPackages [aprsd]: Remove: archive file [/home/abi/fetcher/tmp/aprsd-3.3.4.tar.gz]
 [2024-04-21 18:36:49] INFO root fetch - main [MainThread]: End processing [aprsd]: success
 [2024-04-21 18:36:49] INFO root fetch - main [MainThread]: Store serial: [22866537]
+[2024-04-21 18:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866537]
+[2024-04-21 18:38:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 18:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dem-roughness-calculator
+[2024-04-21 18:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyobs-flipro
+[2024-04-21 18:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC537
+[2024-04-21 18:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-exchange-rates
+[2024-04-21 18:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bastet
+[2024-04-21 18:38:58] INFO root fetch - processPackages [pyobs-flipro]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 18:38:58] INFO root fetch - processPackages [bastet]: New version: [0.0.20.dev8] Old Version: [0.0.20.dev7]
+[2024-04-21 18:38:58] WARNING root fetch - processPackages [dem-roughness-calculator]: Skipping, unable to determine old version
+[2024-04-21 18:38:58] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator] error
+[2024-04-21 18:38:58] INFO root fetch - processPackages [easy-exchange-rates]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-21 18:38:58] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/f7/ad/9f110c91d9f22db3299a71052d7ea2d75ec9a539f4f3ad65fa72795bc70b/pyobs_flipro-1.0.0.tar.gz
+[2024-04-21 18:38:58] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/3c/fe/dd187ed39412f0b90c8317b548a3612bfdcb1a60b34ed3b2ff6f3aeae994/bastet-0.0.20.dev7.tar.gz
+[2024-04-21 18:38:58] WARNING root fetch - processPackages [PythonTestLJC537]: Skipping, unable to determine old version
+[2024-04-21 18:38:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC537] error
+[2024-04-21 18:38:58] INFO root fetch - processPackages [easy-exchange-rates]: Downloading https://files.pythonhosted.org/packages/34/3c/706949097d0b2d1b954e68db84de0b285b0953af9200913962ea34e43a59/easy_exchange_rates-0.1.4.tar.gz
+[2024-04-21 18:38:58] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/d1/65/795b0bbdadfcf6eec985d5d80077d9d54d99eb7087c47f3b5273bcb42b7a/pyobs_flipro-1.0.1.tar.gz
+[2024-04-21 18:38:58] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/66/27/e41a58af9e46c09ad0deb31b7fb841d6a434f36e9d45230122caf2743c3e/bastet-0.0.20.dev8.tar.gz
+[2024-04-21 18:38:58] INFO root fetch - processPackages [pyobs-flipro]: executing diffoscope
+[2024-04-21 18:38:58] INFO root fetch - processPackages [pyobs-flipro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobs_flipro-1.0.0.tar.gz tmp/pyobs_flipro-1.0.1.tar.gz --markdown 20240421/p/pyobs-flipro/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 18:38:58] INFO root fetch - processPackages [bastet]: executing diffoscope
+[2024-04-21 18:38:58] INFO root fetch - processPackages [bastet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bastet-0.0.20.dev7.tar.gz tmp/bastet-0.0.20.dev8.tar.gz --markdown 20240421/b/bastet/0.0.20.dev7-0.0.20.dev8/README.md --exclude *.pyd
+[2024-04-21 18:38:58] INFO root fetch - processPackages [easy-exchange-rates]: Downloading https://files.pythonhosted.org/packages/da/fe/ac239b8bb92391bb7ebdc2e4eefb5eddb5c143df298ce0d555b95f862ba8/easy_exchange_rates-0.2.0.tar.gz
+[2024-04-21 18:38:59] INFO root fetch - processPackages [easy-exchange-rates]: executing diffoscope
+[2024-04-21 18:38:59] INFO root fetch - processPackages [easy-exchange-rates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_exchange_rates-0.1.4.tar.gz tmp/easy_exchange_rates-0.2.0.tar.gz --markdown 20240421/e/easy-exchange-rates/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-21 18:38:59] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev7.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev8.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - main [MainThread]: End processing [bastet]: success
+[2024-04-21 18:38:59] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.0.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.1.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - main [MainThread]: End processing [pyobs-flipro]: success
+[2024-04-21 18:38:59] INFO root fetch - processPackages [easy-exchange-rates]: Remove: archive file [/home/abi/fetcher/tmp/easy_exchange_rates-0.1.4.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - processPackages [easy-exchange-rates]: Remove: archive file [/home/abi/fetcher/tmp/easy_exchange_rates-0.2.0.tar.gz]
+[2024-04-21 18:38:59] INFO root fetch - main [MainThread]: End processing [easy-exchange-rates]: success
+[2024-04-21 18:38:59] INFO root fetch - main [MainThread]: Store serial: [22866558]
