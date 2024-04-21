@@ -12765,3 +12765,39 @@
 [2024-04-21 17:15:02] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.70.tar.gz]
 [2024-04-21 17:15:02] INFO root fetch - main [MainThread]: End processing [ObjectToString]: success
 [2024-04-21 17:15:02] INFO root fetch - main [MainThread]: Store serial: [22865925]
+[2024-04-21 17:17:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865925]
+[2024-04-21 17:17:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 17:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC507
+[2024-04-21 17:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qat
+[2024-04-21 17:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-code-samples
+[2024-04-21 17:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py3d
+[2024-04-21 17:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-hosts
+[2024-04-21 17:17:10] WARNING root fetch - processPackages [fastapi-code-samples]: Skipping, unable to determine old version
+[2024-04-21 17:17:10] INFO root fetch - main [MainThread]: End processing [fastapi-code-samples] error
+[2024-04-21 17:17:10] INFO root fetch - processPackages [python-hosts]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-21 17:17:10] INFO root fetch - processPackages [py3d]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 17:17:11] INFO root fetch - processPackages [qat]: New version: [1.0.0] Old Version: [0.6.2]
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/ed/a9/a05c44c1c9aa694e130c9d19cdc9859cfe777d1cd54002e7af34b37a840d/py3d-0.1.8.tar.gz
+[2024-04-21 17:17:11] WARNING root fetch - processPackages [PythonTestLJC507]: Skipping, unable to determine old version
+[2024-04-21 17:17:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC507] error
+[2024-04-21 17:17:11] INFO root fetch - processPackages [python-hosts]: Downloading https://files.pythonhosted.org/packages/b6/d0/cdb318a9a3986b2fac8f89937964e1649b18e3d51001436b4266087df2d8/python-hosts-1.0.4.tar.gz
+[2024-04-21 17:17:11] INFO root fetch - processPackages [qat]: Downloading https://files.pythonhosted.org/packages/e3/05/e618b560f7fcde4186468d34b97356b9482c75aca17fa954fad942a16468/qat-0.6.2.tar.gz
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/6f/e8/f37aed7244bfb8dde96399a57b78193b3257dc10559f13dfea723db768d4/py3d-0.1.9.tar.gz
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.1.8.tar.gz tmp/py3d-0.1.9.tar.gz --markdown 20240421/p/py3d/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 17:17:11] INFO root fetch - processPackages [python-hosts]: Downloading https://files.pythonhosted.org/packages/ab/c0/391123154a6556982f605abbc72038fd58cd411ee9daef065eb9e5122164/python-hosts-1.0.5.tar.gz
+[2024-04-21 17:17:11] INFO root fetch - processPackages [python-hosts]: executing diffoscope
+[2024-04-21 17:17:11] INFO root fetch - processPackages [python-hosts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-hosts-1.0.4.tar.gz tmp/python-hosts-1.0.5.tar.gz --markdown 20240421/p/python-hosts/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-21 17:17:11] INFO root fetch - processPackages [qat]: Downloading https://files.pythonhosted.org/packages/1b/84/615fb7f45d00ec4b8ae063f2cd3da569f93632e6a074623b9d8cfefcdc9e/qat-1.0.0.tar.gz
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.8.tar.gz]
+[2024-04-21 17:17:11] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
+[2024-04-21 17:17:11] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2024-04-21 17:17:12] INFO root fetch - processPackages [qat]: executing diffoscope
+[2024-04-21 17:17:12] INFO root fetch - processPackages [qat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qat-0.6.2.tar.gz tmp/qat-1.0.0.tar.gz --markdown 20240421/q/qat/0.6.2-1.0.0/README.md --exclude *.pyd
+[2024-04-21 17:17:12] INFO root fetch - processPackages [python-hosts]: Remove: archive file [/home/abi/fetcher/tmp/python-hosts-1.0.4.tar.gz]
+[2024-04-21 17:17:12] INFO root fetch - processPackages [python-hosts]: Remove: archive file [/home/abi/fetcher/tmp/python-hosts-1.0.5.tar.gz]
+[2024-04-21 17:17:12] INFO root fetch - main [MainThread]: End processing [python-hosts]: success
+[2024-04-21 17:18:11] INFO root fetch - processPackages [qat]: Remove: archive file [/home/abi/fetcher/tmp/qat-0.6.2.tar.gz]
+[2024-04-21 17:18:11] INFO root fetch - processPackages [qat]: Remove: archive file [/home/abi/fetcher/tmp/qat-1.0.0.tar.gz]
+[2024-04-21 17:18:11] INFO root fetch - main [MainThread]: End processing [qat]: success
+[2024-04-21 17:18:11] INFO root fetch - main [MainThread]: Store serial: [22865942]
