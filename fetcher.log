@@ -13397,3 +13397,51 @@
 [2024-04-21 17:57:31] INFO root fetch - processPackages [vite-transporter]: Remove: archive file [/home/abi/fetcher/tmp/vite_transporter-0.2.0.tar.gz]
 [2024-04-21 17:57:31] INFO root fetch - main [MainThread]: End processing [vite-transporter]: success
 [2024-04-21 17:57:31] INFO root fetch - main [MainThread]: Store serial: [22866205]
+[2024-04-21 17:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866205]
+[2024-04-21 17:59:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: storage-local
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duckdb_engine
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipytest
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-optimization
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: culminator
+[2024-04-21 17:59:40] INFO root fetch - processPackages [culminator]: New version: [0.8] Old Version: [0.7]
+[2024-04-21 17:59:40] INFO root fetch - processPackages [python-optimization]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 17:59:40] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/37/f4/e7f7cf70bdf03d223056d4eec5f49513caccf2dd8b5fe43b6a6cd763b033/culminator-0.7.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [storage-local]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ipytest]: New version: [0.9.1] Old Version: [0.9.0b1]
+[2024-04-21 17:59:40] INFO root fetch - processPackages [duckdb_engine]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-21 17:59:40] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/5a/2e/01cfce943febc826ced396ca151901f5b966403e99768f8b4fdebdec4e4b/python_optimization-0.0.1.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/b7/63/976ced0597974a94e0db7472bfb4f03e6c82e5276610b0176be638f047e6/storage-local-0.1.8.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [ipytest]: Downloading https://files.pythonhosted.org/packages/23/fe/888360e92a90f4e4c75d80f85a30a90051515b89ce5115e1f6890a17879d/ipytest-0.9.0b1.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/c0/58/45ec039d7ee30f4acfa14fd7496e9ed81494e336d456c05f5dc412c5df6f/duckdb_engine-0.9.4.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [culminator]: Downloading https://files.pythonhosted.org/packages/20/b0/fb5753400f141516ccceeb59be597de1af3bbe4fe788e8236f76dbb0ec40/culminator-0.8-py3-none-any.whl
+[2024-04-21 17:59:40] INFO root fetch - processPackages [culminator]: executing diffoscope
+[2024-04-21 17:59:40] INFO root fetch - processPackages [culminator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culminator-0.7.tar.gz tmp/culminator-0.8-py3-none-any.whl.zip --markdown 20240421/c/culminator/0.7-0.8/README.md --exclude *.pyd
+[2024-04-21 17:59:40] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/1b/0f/1ef66a9e04bc81021fffc0301f2b9dd145a4c92b721dd50c9b1a1dbec4b9/python_optimization-0.0.2.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/80/92/c5f00ebfa1349b712e17441e635a7037dea493f636ec7cb5309d3f303ed3/storage-local-0.1.9.tar.gz
+[2024-04-21 17:59:40] INFO root fetch - processPackages [python-optimization]: executing diffoscope
+[2024-04-21 17:59:40] INFO root fetch - processPackages [python-optimization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_optimization-0.0.1.tar.gz tmp/python_optimization-0.0.2.tar.gz --markdown 20240421/p/python-optimization/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/88/e6/96f825b215f7893dcb5cced97d436355f2baab2cddb553187e1be19c8d9a/duckdb_engine-0.9.5.tar.gz
+[2024-04-21 17:59:41] INFO root fetch - processPackages [storage-local]: executing diffoscope
+[2024-04-21 17:59:41] INFO root fetch - processPackages [storage-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/storage-local-0.1.8.tar.gz tmp/storage-local-0.1.9.tar.gz --markdown 20240421/s/storage-local/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 17:59:41] INFO root fetch - processPackages [ipytest]: Downloading https://files.pythonhosted.org/packages/c9/c9/60ea2bf7523f6063dcddc6b8c28c7cf34368466d5c1b64d8b122c6f793f3/ipytest-0.9.1.tar.gz
+[2024-04-21 17:59:41] INFO root fetch - processPackages [ipytest]: executing diffoscope
+[2024-04-21 17:59:41] INFO root fetch - processPackages [ipytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipytest-0.9.0b1.tar.gz tmp/ipytest-0.9.1.tar.gz --markdown 20240421/i/ipytest/0.9.0b1-0.9.1/README.md --exclude *.pyd
+[2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: executing diffoscope
+[2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_engine-0.9.4.tar.gz tmp/duckdb_engine-0.9.5.tar.gz --markdown 20240421/d/duckdb_engine/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-21 17:59:41] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.7.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - processPackages [culminator]: Remove: archive file [/home/abi/fetcher/tmp/culminator-0.8-py3-none-any.whl.zip]
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [culminator]: success
+[2024-04-21 17:59:41] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.8.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.9.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [storage-local]: success
+[2024-04-21 17:59:41] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.1.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.2.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [python-optimization]: success
+[2024-04-21 17:59:41] INFO root fetch - processPackages [ipytest]: Remove: archive file [/home/abi/fetcher/tmp/ipytest-0.9.0b1.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - processPackages [ipytest]: Remove: archive file [/home/abi/fetcher/tmp/ipytest-0.9.1.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [ipytest]: success
+[2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.4.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.5.tar.gz]
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: End processing [duckdb_engine]: success
+[2024-04-21 17:59:41] INFO root fetch - main [MainThread]: Store serial: [22866217]
