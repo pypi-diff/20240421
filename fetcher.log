@@ -6045,3 +6045,29 @@
 [2024-04-21 09:31:28] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.0.5.tar.gz]
 [2024-04-21 09:31:28] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
 [2024-04-21 09:31:28] INFO root fetch - main [MainThread]: Store serial: [22862781]
+[2024-04-21 09:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862781]
+[2024-04-21 09:33:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 09:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: download-stats
+[2024-04-21 09:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agt-server
+[2024-04-21 09:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gtrace
+[2024-04-21 09:33:37] INFO root fetch - processPackages [download-stats]: New version: [2.0.0] Old Version: [1.3.1]
+[2024-04-21 09:33:37] INFO root fetch - processPackages [gtrace]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-21 09:33:37] INFO root fetch - processPackages [agt-server]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-21 09:33:37] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/36/9f/5eb178ea7ad13e83f760619a9c19e59976238c354dc8b1536e70f0000e28/agt_server-1.2.8.tar.gz
+[2024-04-21 09:33:37] INFO root fetch - processPackages [download-stats]: Downloading https://files.pythonhosted.org/packages/20/89/c7c07b98d8696e79fcafe6435ce4d1aaa5ed5c546756768c4586f0926f7d/download_stats-1.3.1.tar.gz
+[2024-04-21 09:33:37] INFO root fetch - processPackages [gtrace]: Downloading https://files.pythonhosted.org/packages/7f/c3/72a3e36107297c5a4b15ae88b81f67f4550ac90dbe12ee09388ad412d825/gtrace-0.2.1.tar.gz
+[2024-04-21 09:33:37] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/35/f7/291ed498714891b733e79ea12cb87b8e56760f5dee7cef35e85ab05f26b1/agt_server-1.2.9.tar.gz
+[2024-04-21 09:33:37] WARNING root fetch - processPackages [gtrace]: Skipping package: exceeds size limit 23659281>=10485760
+[2024-04-21 09:33:37] INFO root fetch - main [MainThread]: End processing [gtrace] error
+[2024-04-21 09:33:37] INFO root fetch - processPackages [agt-server]: executing diffoscope
+[2024-04-21 09:33:37] INFO root fetch - processPackages [agt-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agt_server-1.2.8.tar.gz tmp/agt_server-1.2.9.tar.gz --markdown 20240421/a/agt-server/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-21 09:33:37] INFO root fetch - processPackages [download-stats]: Downloading https://files.pythonhosted.org/packages/12/c8/bae287e2a09d1ab8172c7349d894365ba4c2c0b70ffa40c676f832577faa/download_stats-2.0.0.tar.gz
+[2024-04-21 09:33:37] INFO root fetch - processPackages [download-stats]: executing diffoscope
+[2024-04-21 09:33:37] INFO root fetch - processPackages [download-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_stats-1.3.1.tar.gz tmp/download_stats-2.0.0.tar.gz --markdown 20240421/d/download-stats/1.3.1-2.0.0/README.md --exclude *.pyd
+[2024-04-21 09:33:38] INFO root fetch - processPackages [download-stats]: Remove: archive file [/home/abi/fetcher/tmp/download_stats-1.3.1.tar.gz]
+[2024-04-21 09:33:38] INFO root fetch - processPackages [download-stats]: Remove: archive file [/home/abi/fetcher/tmp/download_stats-2.0.0.tar.gz]
+[2024-04-21 09:33:38] INFO root fetch - main [MainThread]: End processing [download-stats]: success
+[2024-04-21 09:33:38] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.8.tar.gz]
+[2024-04-21 09:33:38] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.9.tar.gz]
+[2024-04-21 09:33:38] INFO root fetch - main [MainThread]: End processing [agt-server]: success
+[2024-04-21 09:33:38] INFO root fetch - main [MainThread]: Store serial: [22862796]
