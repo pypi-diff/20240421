@@ -13706,3 +13706,47 @@
 [2024-04-21 18:17:03] WARNING root fetch - processPackages [geometric_kernels]: Skipping, unable to determine old version
 [2024-04-21 18:17:03] INFO root fetch - main [MainThread]: End processing [geometric_kernels] error
 [2024-04-21 18:17:03] INFO root fetch - main [MainThread]: Store serial: [22866336]
+[2024-04-21 18:19:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866336]
+[2024-04-21 18:19:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hexital
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-pyproject
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s3i
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gitlab-projects-migrate
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: filerev
+[2024-04-21 18:19:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonTestLJC530
+[2024-04-21 18:19:12] WARNING root fetch - processPackages [cdk-pyproject]: Skipping, unable to determine old version
+[2024-04-21 18:19:12] INFO root fetch - main [MainThread]: End processing [cdk-pyproject] error
+[2024-04-21 18:19:12] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240421.13.51.653898] Old Version: [20240420.3.57.337885]
+[2024-04-21 18:19:12] INFO root fetch - processPackages [hexital]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-21 18:19:12] WARNING root fetch - processPackages [PythonTestLJC530]: Skipping, unable to determine old version
+[2024-04-21 18:19:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC530] error
+[2024-04-21 18:19:12] INFO root fetch - processPackages [s3i]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-21 18:19:12] INFO root fetch - processPackages [filerev]: New version: [0.0.2] Old Version: [0.0.1.2]
+[2024-04-21 18:19:12] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/59/30/88baf73b048052706547a9d581bdbdf24aa10dce4f6ca528a3ba1c161eea/certora-cli-alpha-master-20240420.3.57.337885.tar.gz
+[2024-04-21 18:19:12] WARNING root fetch - processPackages [gitlab-projects-migrate]: Skipping, unable to determine old version
+[2024-04-21 18:19:12] INFO root fetch - main [MainThread]: End processing [gitlab-projects-migrate] error
+[2024-04-21 18:19:12] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14529211>=10485760
+[2024-04-21 18:19:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-21 18:19:12] INFO root fetch - processPackages [hexital]: Downloading https://files.pythonhosted.org/packages/b0/0f/d6b9ac8254235e48e3330e6596c87d73825b4d1c83b700a2370514ce4f03/hexital-1.0.1.tar.gz
+[2024-04-21 18:19:12] INFO root fetch - processPackages [filerev]: Downloading https://files.pythonhosted.org/packages/22/a8/e0ea59cef59b2776006c688a5ed3c89516ec12c4dcaac9753b9d6665629c/filerev-0.0.1.2.tar.gz
+[2024-04-21 18:19:12] INFO root fetch - processPackages [s3i]: Downloading https://files.pythonhosted.org/packages/52/42/d52519593dd9bbc80c355eb04ff0a5dfb3e745704af83abf198806132f3b/s3i-0.7.0-py3-none-any.whl
+[2024-04-21 18:19:13] INFO root fetch - processPackages [filerev]: Downloading https://files.pythonhosted.org/packages/ad/5d/a1fe28626c46a06172a7bdf07463d5346cbf9d36a3efe9dbbe613192fcc6/filerev-0.0.2.tar.gz
+[2024-04-21 18:19:13] INFO root fetch - processPackages [s3i]: Downloading https://files.pythonhosted.org/packages/0a/3a/b12feac3cb7dc6c8ed6dc3836de522dfb3939d3a770b133b37e653271c1e/s3i-0.7.1-py3-none-any.whl
+[2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: Downloading https://files.pythonhosted.org/packages/86/e6/59610e3f39677df817065fccde06bcee0bc2fa88a99dc70cd0dbf063beba/hexital-1.1.0.tar.gz
+[2024-04-21 18:19:13] INFO root fetch - processPackages [filerev]: executing diffoscope
+[2024-04-21 18:19:13] INFO root fetch - processPackages [filerev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filerev-0.0.1.2.tar.gz tmp/filerev-0.0.2.tar.gz --markdown 20240421/f/filerev/0.0.1.2-0.0.2/README.md --exclude *.pyd
+[2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: executing diffoscope
+[2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexital-1.0.1.tar.gz tmp/hexital-1.1.0.tar.gz --markdown 20240421/h/hexital/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-21 18:19:13] INFO root fetch - processPackages [s3i]: executing diffoscope
+[2024-04-21 18:19:13] INFO root fetch - processPackages [s3i]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3i-0.7.0-py3-none-any.whl.zip tmp/s3i-0.7.1-py3-none-any.whl.zip --markdown 20240421/s/s3i/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-21 18:19:13] INFO root fetch - processPackages [filerev]: Remove: archive file [/home/abi/fetcher/tmp/filerev-0.0.1.2.tar.gz]
+[2024-04-21 18:19:13] INFO root fetch - processPackages [filerev]: Remove: archive file [/home/abi/fetcher/tmp/filerev-0.0.2.tar.gz]
+[2024-04-21 18:19:13] INFO root fetch - main [MainThread]: End processing [filerev]: success
+[2024-04-21 18:19:13] INFO root fetch - processPackages [s3i]: Remove: archive file [/home/abi/fetcher/tmp/s3i-0.7.0-py3-none-any.whl.zip]
+[2024-04-21 18:19:13] INFO root fetch - processPackages [s3i]: Remove: archive file [/home/abi/fetcher/tmp/s3i-0.7.1-py3-none-any.whl.zip]
+[2024-04-21 18:19:13] INFO root fetch - main [MainThread]: End processing [s3i]: success
+[2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: Remove: archive file [/home/abi/fetcher/tmp/hexital-1.0.1.tar.gz]
+[2024-04-21 18:19:13] INFO root fetch - processPackages [hexital]: Remove: archive file [/home/abi/fetcher/tmp/hexital-1.1.0.tar.gz]
+[2024-04-21 18:19:13] INFO root fetch - main [MainThread]: End processing [hexital]: success
+[2024-04-21 18:19:13] INFO root fetch - main [MainThread]: Store serial: [22866362]
