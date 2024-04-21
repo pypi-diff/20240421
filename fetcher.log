@@ -6946,3 +6946,33 @@
 [2024-04-21 10:56:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-21 10:56:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-21 10:56:31] INFO root fetch - main [MainThread]: Store serial: [22863234]
+[2024-04-21 10:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863234]
+[2024-04-21 10:58:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 10:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TPE-Bot
+[2024-04-21 10:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dolibarrpy
+[2024-04-21 10:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-learning-nlp
+[2024-04-21 10:58:40] INFO root fetch - processPackages [dolibarrpy]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-21 10:58:40] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 10:58:40] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.5] Old Version: [6.8.4]
+[2024-04-21 10:58:40] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/a7/d7/86f0a44e5a2e915a9d52176c7f20f6cb547aa15d0c679ced86a24be29daf/dolibarrpy-0.2.9.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/1f/15/05de0d546261c2100074fb0a5fa28ad30ae39eba06aeb6e6825f69b8d2a1/TPE-Bot-6.8.4.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/3b/a7/da9e890b78c6da52993ab964cc96840c56cac370f7aed6805309bdbadadb/dolibarrpy-0.3.0.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-21 10:58:40] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240421/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 10:58:40] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/a2/d5/dd4cfd691a507f9ca31e248e0a08f594b2355709a48febb335b3365347ee/TPE-Bot-6.8.5.tar.gz
+[2024-04-21 10:58:40] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-21 10:58:40] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.9.tar.gz tmp/dolibarrpy-0.3.0.tar.gz --markdown 20240421/d/dolibarrpy/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-21 10:58:40] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-21 10:58:40] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.4.tar.gz tmp/TPE-Bot-6.8.5.tar.gz --markdown 20240421/T/TPE-Bot/6.8.4-6.8.5/README.md --exclude *.pyd
+[2024-04-21 10:58:41] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-21 10:58:41] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.9.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.3.0.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-21 10:58:41] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.4.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.5.tar.gz]
+[2024-04-21 10:58:41] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-21 10:58:41] INFO root fetch - main [MainThread]: Store serial: [22863241]
