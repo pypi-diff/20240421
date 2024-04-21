@@ -9735,3 +9735,39 @@
 [2024-04-21 14:23:42] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.6.9.tar.gz]
 [2024-04-21 14:23:42] INFO root fetch - main [MainThread]: End processing [iinfer]: success
 [2024-04-21 14:23:42] INFO root fetch - main [MainThread]: Store serial: [22864432]
+[2024-04-21 14:25:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864432]
+[2024-04-21 14:25:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 14:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sciveo
+[2024-04-21 14:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuroflow-yalab
+[2024-04-21 14:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-transformation-yfhsi
+[2024-04-21 14:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appthreat-vulnerability-db
+[2024-04-21 14:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC446
+[2024-04-21 14:25:51] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.8.1a0] Old Version: [0.7.1a0]
+[2024-04-21 14:25:51] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/31/a8/0d97d672ec950e017a1760d2bd45e13ece4b882e3d0f0fb457af782d3cfd/data_transformation_yfhsi-0.7.1a0.tar.gz
+[2024-04-21 14:25:51] WARNING root fetch - processPackages [PythonTestLJC446]: Skipping, unable to determine old version
+[2024-04-21 14:25:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC446] error
+[2024-04-21 14:25:51] WARNING root fetch - processPackages [neuroflow-yalab]: Skipping, unable to determine old version
+[2024-04-21 14:25:51] INFO root fetch - main [MainThread]: End processing [neuroflow-yalab] error
+[2024-04-21 14:25:51] INFO root fetch - processPackages [sciveo]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 14:25:51] INFO root fetch - processPackages [appthreat-vulnerability-db]: New version: [6.0.2] Old Version: [6.0.1]
+[2024-04-21 14:25:51] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/73/5f/59f13dfd3593abab1e3ddb0296d4defb72e1aee5e99cc39bbe2d549cb815/sciveo-0.1.6.tar.gz
+[2024-04-21 14:25:51] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-21 14:25:51] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/f8/e9/d9ccfc307f148884f71d6baa747875f66b5d0f4379ef0f69e8272a3cf821/appthreat-vulnerability-db-6.0.1.tar.gz
+[2024-04-21 14:25:52] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 14:25:52] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.7.1a0.tar.gz tmp/data_transformation_yfhsi-0.8.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.7.1a0-0.8.1a0/README.md --exclude *.pyd
+[2024-04-21 14:25:52] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/49/64/5c26cd6e68ae0f6196b4c783e36bd192d48e9f6228fecd10743981b9c849/sciveo-0.1.7.tar.gz
+[2024-04-21 14:25:52] INFO root fetch - processPackages [appthreat-vulnerability-db]: Downloading https://files.pythonhosted.org/packages/81/49/dfa150a2359b7d04ff3afa4fe52ae1404160348cf59ce6ca3f101b61dd71/appthreat_vulnerability_db-6.0.2.tar.gz
+[2024-04-21 14:25:52] INFO root fetch - processPackages [sciveo]: executing diffoscope
+[2024-04-21 14:25:52] INFO root fetch - processPackages [sciveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciveo-0.1.6.tar.gz tmp/sciveo-0.1.7.tar.gz --markdown 20240421/s/sciveo/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-21 14:25:52] INFO root fetch - processPackages [appthreat-vulnerability-db]: executing diffoscope
+[2024-04-21 14:25:52] INFO root fetch - processPackages [appthreat-vulnerability-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appthreat-vulnerability-db-6.0.1.tar.gz tmp/appthreat_vulnerability_db-6.0.2.tar.gz --markdown 20240421/a/appthreat-vulnerability-db/6.0.1-6.0.2/README.md --exclude *.pyd
+[2024-04-21 14:25:52] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.7.1a0.tar.gz]
+[2024-04-21 14:25:52] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-21 14:25:52] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 14:25:52] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.1.6.tar.gz]
+[2024-04-21 14:25:52] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.1.7.tar.gz]
+[2024-04-21 14:25:52] INFO root fetch - main [MainThread]: End processing [sciveo]: success
+[2024-04-21 14:25:53] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat-vulnerability-db-6.0.1.tar.gz]
+[2024-04-21 14:25:53] INFO root fetch - processPackages [appthreat-vulnerability-db]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_vulnerability_db-6.0.2.tar.gz]
+[2024-04-21 14:25:53] INFO root fetch - main [MainThread]: End processing [appthreat-vulnerability-db]: success
+[2024-04-21 14:25:53] INFO root fetch - main [MainThread]: Store serial: [22864450]
