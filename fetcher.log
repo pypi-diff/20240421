@@ -8656,3 +8656,65 @@
 [2024-04-21 13:06:44] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.5-py3-none-any.whl.zip]
 [2024-04-21 13:06:44] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
 [2024-04-21 13:06:44] INFO root fetch - main [MainThread]: Store serial: [22863858]
+[2024-04-21 13:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863858]
+[2024-04-21 13:08:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finprotest
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raptor-labsdk
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ossStudy
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: auth-middleware
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qwak-core
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: VenC
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ossStudy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [raptor-labsdk]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 13:08:53] WARNING root fetch - processPackages [finprotest]: Skipping, unable to determine old version
+[2024-04-21 13:08:53] INFO root fetch - main [MainThread]: End processing [finprotest] error
+[2024-04-21 13:08:53] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240421] Old Version: [2.5.0b20240420]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [VenC]: New version: [3.2.0] Old Version: [3.1.1]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240421] Old Version: [2.5.0b20240420]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [raptor-labsdk]: Downloading https://files.pythonhosted.org/packages/08/17/e667197596bf6cf056b9d0c3845b81be80d511457970301a1178bd441c9f/raptor-labsdk-0.3.0.tar.gz
+[2024-04-21 13:08:53] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-04-21 13:08:53] INFO root fetch - processPackages [qwak-core]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-21 13:08:53] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/05/1a/164a3c1c3b48746abeaca103d0aa766e82f47e8b715a8bf3be40923889b0/ossStudy-0.0.5-py3-none-any.whl
+[2024-04-21 13:08:53] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/1c/86/f0c3d3ef9ee37ab8abb6b30aeb106dc23580e0f1206977d4d0dba826bf53/bigdl_core_xe_esimd-2.5.0b20240420-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-21 13:08:53] INFO root fetch - processPackages [VenC]: Downloading https://files.pythonhosted.org/packages/a7/cf/c0e6edd25c89ab24f7c938bde20b0a7fe9a732805ec80d832f56d9e1dd90/VenC-3.1.1.tar.gz
+[2024-04-21 13:08:53] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/54/1b/00e055a6fe9c70ffc39f7c300de126a2b40ef1d91946469c5f7d99c870aa/bigdl_core_xe_esimd_21-2.5.0b20240420-cp39-cp39-win_amd64.whl
+[2024-04-21 13:08:53] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/59/3f/bd28e625e13a379a9463795eed9d170cceaf191d98c6ea302e910c4788e1/qwak_core-0.3.98.tar.gz
+[2024-04-21 13:08:53] INFO root fetch - processPackages [raptor-labsdk]: Downloading https://files.pythonhosted.org/packages/6c/0c/3a4a127229ff0f33decf4ddef121f6270fea09416bdfd87f86d2dc7a83bc/raptor_labsdk-0.3.1.tar.gz
+[2024-04-21 13:08:53] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/82/09/803273cd28dac3a0477244fbe67e635462cb4604351a1141f5d544d12f50/auth_middleware-0.1.9.tar.gz
+[2024-04-21 13:08:53] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871662>=10485760
+[2024-04-21 13:08:53] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-21 13:08:54] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-21 13:08:54] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.8.tar.gz tmp/auth_middleware-0.1.9.tar.gz --markdown 20240421/a/auth-middleware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 13:08:54] INFO root fetch - processPackages [raptor-labsdk]: executing diffoscope
+[2024-04-21 13:08:54] INFO root fetch - processPackages [raptor-labsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raptor-labsdk-0.3.0.tar.gz tmp/raptor_labsdk-0.3.1.tar.gz --markdown 20240421/r/raptor-labsdk/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 13:08:54] INFO root fetch - processPackages [ossStudy]: Downloading https://files.pythonhosted.org/packages/83/79/8e458c9e9d7413b4787cbfc167d0c59877be183126b679c136ba14922ef7/ossStudy-0.0.6-py3-none-any.whl
+[2024-04-21 13:08:54] INFO root fetch - processPackages [VenC]: Downloading https://files.pythonhosted.org/packages/9a/00/bc303d8ea18fcbdf4a56f214ec54c621a44e50d0ac2f605995a6e0571012/VenC-3.2.0.tar.gz
+[2024-04-21 13:08:54] INFO root fetch - processPackages [ossStudy]: executing diffoscope
+[2024-04-21 13:08:54] INFO root fetch - processPackages [ossStudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossStudy-0.0.5-py3-none-any.whl.zip tmp/ossStudy-0.0.6-py3-none-any.whl.zip --markdown 20240421/o/ossStudy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 13:08:54] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/f8/48/f24ce72e929c3b79954def1381e5f0794746de4f286c92794a3a3a1e751d/bigdl_core_xe_esimd_21-2.5.0b20240421-cp310-cp310-manylinux2010_x86_64.whl
+[2024-04-21 13:08:54] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/71/0e/e7c880c764df31bf9e71679c2a411ac1a48667bfd4caee997236b1cc61fb/qwak_core-0.3.99.tar.gz
+[2024-04-21 13:08:54] INFO root fetch - processPackages [VenC]: executing diffoscope
+[2024-04-21 13:08:54] INFO root fetch - processPackages [VenC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VenC-3.1.1.tar.gz tmp/VenC-3.2.0.tar.gz --markdown 20240421/V/VenC/3.1.1-3.2.0/README.md --exclude *.pyd
+[2024-04-21 13:08:54] WARNING root fetch - processPackages [bigdl-core-xe-esimd-21]: Skipping package: exceeds size limit 46710728>=10485760
+[2024-04-21 13:08:54] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-21 13:08:54] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-04-21 13:08:54] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.3.98.tar.gz tmp/qwak_core-0.3.99.tar.gz --markdown 20240421/q/qwak-core/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-21 13:08:54] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-04-21 13:08:54] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
+[2024-04-21 13:08:54] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-21 13:08:54] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 13:08:54] INFO root fetch - processPackages [ossStudy]: Remove: archive file [/home/abi/fetcher/tmp/ossStudy-0.0.6-py3-none-any.whl.zip]
+[2024-04-21 13:08:54] INFO root fetch - main [MainThread]: End processing [ossStudy]: success
+[2024-04-21 13:08:54] INFO root fetch - processPackages [raptor-labsdk]: Remove: archive file [/home/abi/fetcher/tmp/raptor-labsdk-0.3.0.tar.gz]
+[2024-04-21 13:08:54] INFO root fetch - processPackages [raptor-labsdk]: Remove: archive file [/home/abi/fetcher/tmp/raptor_labsdk-0.3.1.tar.gz]
+[2024-04-21 13:08:54] INFO root fetch - main [MainThread]: End processing [raptor-labsdk]: success
+[2024-04-21 13:08:55] INFO root fetch - processPackages [VenC]: Remove: archive file [/home/abi/fetcher/tmp/VenC-3.1.1.tar.gz]
+[2024-04-21 13:08:55] INFO root fetch - processPackages [VenC]: Remove: archive file [/home/abi/fetcher/tmp/VenC-3.2.0.tar.gz]
+[2024-04-21 13:08:55] INFO root fetch - main [MainThread]: End processing [VenC]: success
+[2024-04-21 13:08:57] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.98.tar.gz]
+[2024-04-21 13:08:57] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.99.tar.gz]
+[2024-04-21 13:08:57] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-04-21 13:08:57] INFO root fetch - main [MainThread]: Store serial: [22863880]
