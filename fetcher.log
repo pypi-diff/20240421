@@ -10672,3 +10672,44 @@
 [2024-04-21 15:31:20] INFO root fetch - processPackages [mlpro-int-gymnasium]: Remove: archive file [/home/abi/fetcher/tmp/mlpro_int_gymnasium-1.0.1.tar.gz]
 [2024-04-21 15:31:20] INFO root fetch - main [MainThread]: End processing [mlpro-int-gymnasium]: success
 [2024-04-21 15:31:20] INFO root fetch - main [MainThread]: Store serial: [22864941]
+[2024-04-21 15:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864941]
+[2024-04-21 15:33:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: longling
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenyx
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC470
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stockslibrary
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libpss
+[2024-04-21 15:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: drxtract
+[2024-04-21 15:33:29] INFO root fetch - processPackages [longling]: New version: [1.4.1] Old Version: [1.3.9]
+[2024-04-21 15:33:29] INFO root fetch - processPackages [libpss]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:33:29] INFO root fetch - processPackages [zenyx]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-21 15:33:29] INFO root fetch - processPackages [drxtract]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-21 15:33:29] WARNING root fetch - processPackages [stockslibrary]: Skipping, unable to determine old version
+[2024-04-21 15:33:29] INFO root fetch - main [MainThread]: End processing [stockslibrary] error
+[2024-04-21 15:33:29] WARNING root fetch - processPackages [PythonTestLJC470]: Skipping, unable to determine old version
+[2024-04-21 15:33:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC470] error
+[2024-04-21 15:33:29] INFO root fetch - processPackages [longling]: Downloading https://files.pythonhosted.org/packages/b2/cf/d16cec9382c1bf2ffff089e42dbc71787f4747c596666850ae971558ce0d/longling-1.3.9.tar.gz
+[2024-04-21 15:33:29] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/89/c3/25024206e3d32063c6db11c299263371aeca50fe56e8095220fedb9d91a0/libpss-0.1.8.tar.gz
+[2024-04-21 15:33:29] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/3f/cc/3ab7611bfb491f42b1bdef6ad501ef51f052ac9f5d5ae57a2df6760ace9d/zenyx-2.2.0.tar.gz
+[2024-04-21 15:33:29] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12679379>=10485760
+[2024-04-21 15:33:29] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 15:33:29] INFO root fetch - processPackages [drxtract]: Downloading https://files.pythonhosted.org/packages/f9/9e/ea77c8ad3c6a54e174478e528d3254afac7684e59fce40ef58f7a85ecb18/drxtract-0.1.3.tar.gz
+[2024-04-21 15:33:29] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/5d/c9/91a472c036f4b1f3262c6ef537b65332b430fcb03d51af0ac6e0dfa653d8/zenyx-2.2.1.tar.gz
+[2024-04-21 15:33:29] INFO root fetch - processPackages [longling]: Downloading https://files.pythonhosted.org/packages/cd/6c/e7fd75918ff11eea2432f484f5ead1d58db13a64bc5151c7d41ebaf9d5a3/longling-1.4.1.tar.gz
+[2024-04-21 15:33:29] INFO root fetch - processPackages [zenyx]: executing diffoscope
+[2024-04-21 15:33:29] INFO root fetch - processPackages [zenyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenyx-2.2.0.tar.gz tmp/zenyx-2.2.1.tar.gz --markdown 20240421/z/zenyx/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-21 15:33:29] INFO root fetch - processPackages [longling]: executing diffoscope
+[2024-04-21 15:33:29] INFO root fetch - processPackages [longling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longling-1.3.9.tar.gz tmp/longling-1.4.1.tar.gz --markdown 20240421/l/longling/1.3.9-1.4.1/README.md --exclude *.pyd
+[2024-04-21 15:33:29] INFO root fetch - processPackages [drxtract]: Downloading https://files.pythonhosted.org/packages/60/55/f33f0e7c4db88227527c8ec72c67b242ea5f0a2fffe1fc5f61cd3725cf2f/drxtract-0.1.4-py3-none-any.whl
+[2024-04-21 15:33:30] INFO root fetch - processPackages [drxtract]: executing diffoscope
+[2024-04-21 15:33:30] INFO root fetch - processPackages [drxtract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drxtract-0.1.3.tar.gz tmp/drxtract-0.1.4-py3-none-any.whl.zip --markdown 20240421/d/drxtract/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-21 15:33:30] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.2.0.tar.gz]
+[2024-04-21 15:33:30] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.2.1.tar.gz]
+[2024-04-21 15:33:30] INFO root fetch - main [MainThread]: End processing [zenyx]: success
+[2024-04-21 15:33:30] INFO root fetch - processPackages [longling]: Remove: archive file [/home/abi/fetcher/tmp/longling-1.3.9.tar.gz]
+[2024-04-21 15:33:30] INFO root fetch - processPackages [longling]: Remove: archive file [/home/abi/fetcher/tmp/longling-1.4.1.tar.gz]
+[2024-04-21 15:33:30] INFO root fetch - main [MainThread]: End processing [longling]: success
+[2024-04-21 15:33:30] INFO root fetch - processPackages [drxtract]: Remove: archive file [/home/abi/fetcher/tmp/drxtract-0.1.3.tar.gz]
+[2024-04-21 15:33:30] INFO root fetch - processPackages [drxtract]: Remove: archive file [/home/abi/fetcher/tmp/drxtract-0.1.4-py3-none-any.whl.zip]
+[2024-04-21 15:33:30] INFO root fetch - main [MainThread]: End processing [drxtract]: success
+[2024-04-21 15:33:30] INFO root fetch - main [MainThread]: Store serial: [22864963]
