@@ -15346,3 +15346,27 @@
 [2024-04-21 19:59:34] INFO root fetch - processPackages [chopcal]: Remove: archive file [/home/abi/fetcher/tmp/chopcal-0.3.0.tar.gz]
 [2024-04-21 19:59:34] INFO root fetch - main [MainThread]: End processing [chopcal]: success
 [2024-04-21 19:59:34] INFO root fetch - main [MainThread]: Store serial: [22867176]
+[2024-04-21 20:01:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867176]
+[2024-04-21 20:01:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 20:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clear-skies-stripe
+[2024-04-21 20:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-21 20:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC567
+[2024-04-21 20:01:43] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-21 20:01:43] INFO root fetch - processPackages [clear-skies-stripe]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-21 20:01:43] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/55/20/b8c74ca5703de7e6b22ee60f62879a32d9eb8a62b5ce988e3740a3f15a41/dune_rivals-0.5.2.tar.gz
+[2024-04-21 20:01:43] WARNING root fetch - processPackages [PythonTestLJC567]: Skipping, unable to determine old version
+[2024-04-21 20:01:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC567] error
+[2024-04-21 20:01:43] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/bb/39/9cb0aa093c683b8c6b8a765ea8cbe03e7202a5bae54053c98fa8cbebda90/clear_skies_stripe-0.9.2.tar.gz
+[2024-04-21 20:01:43] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/f0/e0/b8b20d40d49b5f32d743819836194a1158fe3b372f97c1a07e8fcce1ea32/dune_rivals-0.5.3.tar.gz
+[2024-04-21 20:01:43] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 20:01:43] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.2.tar.gz tmp/dune_rivals-0.5.3.tar.gz --markdown 20240421/d/dune-rivals/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-21 20:01:43] INFO root fetch - processPackages [clear-skies-stripe]: Downloading https://files.pythonhosted.org/packages/a2/c8/e874d3bb04483680db01e3d02e23e66a7a890fff26f2c7565cfa63b06d75/clear_skies_stripe-0.9.3.tar.gz
+[2024-04-21 20:01:43] INFO root fetch - processPackages [clear-skies-stripe]: executing diffoscope
+[2024-04-21 20:01:43] INFO root fetch - processPackages [clear-skies-stripe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear_skies_stripe-0.9.2.tar.gz tmp/clear_skies_stripe-0.9.3.tar.gz --markdown 20240421/c/clear-skies-stripe/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-21 20:01:44] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.2.tar.gz]
+[2024-04-21 20:01:44] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.3.tar.gz]
+[2024-04-21 20:01:44] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 20:01:44] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.2.tar.gz]
+[2024-04-21 20:01:44] INFO root fetch - processPackages [clear-skies-stripe]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_stripe-0.9.3.tar.gz]
+[2024-04-21 20:01:44] INFO root fetch - main [MainThread]: End processing [clear-skies-stripe]: success
+[2024-04-21 20:01:44] INFO root fetch - main [MainThread]: Store serial: [22867187]
