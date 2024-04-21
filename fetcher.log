@@ -10032,3 +10032,32 @@
 [2024-04-21 14:43:27] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.2.3-py3-none-any.whl.zip]
 [2024-04-21 14:43:27] INFO root fetch - main [MainThread]: End processing [libsrg]: success
 [2024-04-21 14:43:27] INFO root fetch - main [MainThread]: Store serial: [22864579]
+[2024-04-21 14:45:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864579]
+[2024-04-21 14:45:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Products.urban
+[2024-04-21 14:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC453
+[2024-04-21 14:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: minimax-client
+[2024-04-21 14:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyPtt
+[2024-04-21 14:45:35] INFO root fetch - processPackages [minimax-client]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-21 14:45:35] INFO root fetch - processPackages [Products.urban]: New version: [2.7.9] Old Version: [2.7.8]
+[2024-04-21 14:45:35] WARNING root fetch - processPackages [PythonTestLJC453]: Skipping, unable to determine old version
+[2024-04-21 14:45:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC453] error
+[2024-04-21 14:45:35] INFO root fetch - processPackages [PyPtt]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-21 14:45:35] INFO root fetch - processPackages [Products.urban]: Downloading https://files.pythonhosted.org/packages/62/cf/1ffb24c7205fcd21981095d8787cc318af5c5db4ae86ce3f94784b119e50/Products.urban-2.7.8.tar.gz
+[2024-04-21 14:45:35] INFO root fetch - processPackages [minimax-client]: Downloading https://files.pythonhosted.org/packages/61/b7/c505631dca7fa525993bf572dbef3942a47c132d5155297700ceb6efa639/minimax_client-0.5.4.tar.gz
+[2024-04-21 14:45:35] WARNING root fetch - processPackages [Products.urban]: Skipping package: exceeds size limit 20169294>=10485760
+[2024-04-21 14:45:35] INFO root fetch - main [MainThread]: End processing [Products.urban] error
+[2024-04-21 14:45:35] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/2f/28/062c6deecde1b48eb7a8a7f0575dd97614781e169a90f73ed4fbd61c5cc5/PyPtt-1.2.5.tar.gz
+[2024-04-21 14:45:36] INFO root fetch - processPackages [minimax-client]: Downloading https://files.pythonhosted.org/packages/c5/12/1665c624ed6fec9934045595e80da1a5afd76a6c4c8930ab839349291447/minimax_client-0.5.5.tar.gz
+[2024-04-21 14:45:36] INFO root fetch - processPackages [minimax-client]: executing diffoscope
+[2024-04-21 14:45:36] INFO root fetch - processPackages [minimax-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minimax_client-0.5.4.tar.gz tmp/minimax_client-0.5.5.tar.gz --markdown 20240421/m/minimax-client/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-21 14:45:36] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/0b/03/904bd48905abf621df151621b2357e91520d3b05cffd2771ac0093ef4cb2/pyptt-1.2.6.tar.gz
+[2024-04-21 14:45:36] INFO root fetch - processPackages [PyPtt]: executing diffoscope
+[2024-04-21 14:45:36] INFO root fetch - processPackages [PyPtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPtt-1.2.5.tar.gz tmp/pyptt-1.2.6.tar.gz --markdown 20240421/P/PyPtt/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-21 14:45:36] INFO root fetch - processPackages [minimax-client]: Remove: archive file [/home/abi/fetcher/tmp/minimax_client-0.5.4.tar.gz]
+[2024-04-21 14:45:36] INFO root fetch - processPackages [minimax-client]: Remove: archive file [/home/abi/fetcher/tmp/minimax_client-0.5.5.tar.gz]
+[2024-04-21 14:45:36] INFO root fetch - main [MainThread]: End processing [minimax-client]: success
+[2024-04-21 14:45:37] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/PyPtt-1.2.5.tar.gz]
+[2024-04-21 14:45:37] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/pyptt-1.2.6.tar.gz]
+[2024-04-21 14:45:37] INFO root fetch - main [MainThread]: End processing [PyPtt]: success
+[2024-04-21 14:45:37] INFO root fetch - main [MainThread]: Store serial: [22864592]
