@@ -1850,3 +1850,18 @@
 [2024-04-21 02:38:40] INFO root fetch - processPackages [OpenGeode-Inspector]: Remove: archive file [/home/abi/fetcher/tmp/OpenGeode_Inspector-5.1.2rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-04-21 02:38:40] INFO root fetch - main [MainThread]: End processing [OpenGeode-Inspector]: success
 [2024-04-21 02:38:40] INFO root fetch - main [MainThread]: Store serial: [22860705]
+[2024-04-21 02:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860705]
+[2024-04-21 02:40:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 02:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC302
+[2024-04-21 02:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxtal
+[2024-04-21 02:40:49] WARNING root fetch - processPackages [PythonTestLJC302]: Skipping, unable to determine old version
+[2024-04-21 02:40:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC302] error
+[2024-04-21 02:40:49] INFO root fetch - processPackages [pyxtal]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-21 02:40:49] INFO root fetch - processPackages [pyxtal]: Downloading https://files.pythonhosted.org/packages/4e/2c/dc3e4cc4074799e93faa55ccda370470c5289cf02f9e447e7fc8ba5cc221/pyxtal-0.6.4.tar.gz
+[2024-04-21 02:40:49] INFO root fetch - processPackages [pyxtal]: Downloading https://files.pythonhosted.org/packages/a6/8f/1229d73d8e25970ae80ffd3090544246fee571796e94b90adf6c0c4ec64c/pyxtal-0.6.5.tar.gz
+[2024-04-21 02:40:50] INFO root fetch - processPackages [pyxtal]: executing diffoscope
+[2024-04-21 02:40:50] INFO root fetch - processPackages [pyxtal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxtal-0.6.4.tar.gz tmp/pyxtal-0.6.5.tar.gz --markdown 20240421/p/pyxtal/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-04-21 02:40:52] INFO root fetch - processPackages [pyxtal]: Remove: archive file [/home/abi/fetcher/tmp/pyxtal-0.6.4.tar.gz]
+[2024-04-21 02:40:52] INFO root fetch - processPackages [pyxtal]: Remove: archive file [/home/abi/fetcher/tmp/pyxtal-0.6.5.tar.gz]
+[2024-04-21 02:40:52] INFO root fetch - main [MainThread]: End processing [pyxtal]: success
+[2024-04-21 02:40:52] INFO root fetch - main [MainThread]: Store serial: [22860717]
