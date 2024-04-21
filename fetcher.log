@@ -3485,3 +3485,18 @@
 [2024-04-21 05:18:44] INFO root fetch - processPackages [jupyter_bokeh]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_bokeh-4.0.4.tar.gz]
 [2024-04-21 05:18:44] INFO root fetch - main [MainThread]: End processing [jupyter_bokeh]: success
 [2024-04-21 05:18:44] INFO root fetch - main [MainThread]: Store serial: [22861640]
+[2024-04-21 05:20:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861640]
+[2024-04-21 05:20:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 05:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NNSOM
+[2024-04-21 05:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC353
+[2024-04-21 05:20:52] INFO root fetch - processPackages [NNSOM]: New version: [1.7.6] Old Version: [1.7.4]
+[2024-04-21 05:20:52] WARNING root fetch - processPackages [PythonTestLJC353]: Skipping, unable to determine old version
+[2024-04-21 05:20:52] INFO root fetch - main [MainThread]: End processing [PythonTestLJC353] error
+[2024-04-21 05:20:52] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/ed/a8/a871b98088bb6c923679814e9712da8945088d4d4171e8a4d4f290f66f03/nnsom-1.7.4.tar.gz
+[2024-04-21 05:20:52] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/92/0a/23dcad44c77daeef679dd2aea31dff2b422369bcfd365ee3c009df598fea/nnsom-1.7.6.tar.gz
+[2024-04-21 05:20:52] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-21 05:20:52] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.7.4.tar.gz tmp/nnsom-1.7.6.tar.gz --markdown 20240421/N/NNSOM/1.7.4-1.7.6/README.md --exclude *.pyd
+[2024-04-21 05:20:53] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.4.tar.gz]
+[2024-04-21 05:20:53] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.6.tar.gz]
+[2024-04-21 05:20:53] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-21 05:20:53] INFO root fetch - main [MainThread]: Store serial: [22861648]
