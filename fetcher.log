@@ -17528,3 +17528,36 @@
 [2024-04-21 21:53:42] WARNING root fetch - processPackages [righor]: Skipping package: exceeds size limit 11871922>=10485760
 [2024-04-21 21:53:42] INFO root fetch - main [MainThread]: End processing [righor] error
 [2024-04-21 21:53:42] INFO root fetch - main [MainThread]: Store serial: [22868286]
+[2024-04-21 21:55:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868286]
+[2024-04-21 21:55:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 21:55:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: techmax-energiez-x23176458
+[2024-04-21 21:55:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meteoswiss-async
+[2024-04-21 21:55:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kungfupanda
+[2024-04-21 21:55:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PHX
+[2024-04-21 21:55:54] WARNING root fetch - processPackages [techmax-energiez-x23176458]: Skipping, unable to determine old version
+[2024-04-21 21:55:54] INFO root fetch - main [MainThread]: End processing [techmax-energiez-x23176458] error
+[2024-04-21 21:55:54] INFO root fetch - processPackages [kungfupanda]: New version: [0.7] Old Version: [0.6]
+[2024-04-21 21:55:54] INFO root fetch - processPackages [meteoswiss-async]: New version: [0.1.0rc9.post1] Old Version: [0.1.0rc10.post1]
+[2024-04-21 21:55:54] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/d1/8b/0a4fb423ecbf940e6654981a56493dcc2cadd3b1ba624f857f5b35e1f270/meteoswiss_async-0.1.0rc10.post1.tar.gz
+[2024-04-21 21:55:54] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/12/b8/5257d01b842a36ccd7f5b8b327617e239461bdfa6a2755c99670a8292e63/kungfupanda-0.6.tar.gz
+[2024-04-21 21:55:54] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-21 21:55:55] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/05/f2/0eccd113533f6eabd4d7000e5e913b293170e394b13657aadd7be0ee0eaa/meteoswiss_async-0.1.0rc9.post1.tar.gz
+[2024-04-21 21:55:55] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/ad/48/a9b966f484d5fbfbde35e2c15c1211cc18359a09978bfbaafcd30f095d50/PHX-1.8.1.tar.gz
+[2024-04-21 21:55:55] INFO root fetch - processPackages [meteoswiss-async]: executing diffoscope
+[2024-04-21 21:55:55] INFO root fetch - processPackages [meteoswiss-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meteoswiss_async-0.1.0rc10.post1.tar.gz tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz --markdown 20240421/m/meteoswiss-async/0.1.0rc10.post1-0.1.0rc9.post1/README.md --exclude *.pyd
+[2024-04-21 21:55:55] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/11/fb/fd59ec0d032da628a6fcc52ced808c72f4d541f577922bdfc358c982aaec/kungfupanda-0.7.tar.gz
+[2024-04-21 21:55:55] INFO root fetch - processPackages [kungfupanda]: executing diffoscope
+[2024-04-21 21:55:55] INFO root fetch - processPackages [kungfupanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kungfupanda-0.6.tar.gz tmp/kungfupanda-0.7.tar.gz --markdown 20240421/k/kungfupanda/0.6-0.7/README.md --exclude *.pyd
+[2024-04-21 21:55:55] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/d5/cf/427f0ced8ef3cc98e22c877b4eb980575483e2cf3ac2387f5e901120b744/PHX-1.9.0.tar.gz
+[2024-04-21 21:55:55] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2024-04-21 21:55:55] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20240421/P/PHX/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-21 21:55:55] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.1.0rc10.post1.tar.gz]
+[2024-04-21 21:55:55] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz]
+[2024-04-21 21:55:55] INFO root fetch - main [MainThread]: End processing [meteoswiss-async]: success
+[2024-04-21 21:55:55] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.6.tar.gz]
+[2024-04-21 21:55:55] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.7.tar.gz]
+[2024-04-21 21:55:55] INFO root fetch - main [MainThread]: End processing [kungfupanda]: success
+[2024-04-21 21:55:56] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.8.1.tar.gz]
+[2024-04-21 21:55:56] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.9.0.tar.gz]
+[2024-04-21 21:55:56] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2024-04-21 21:55:56] INFO root fetch - main [MainThread]: Store serial: [22868354]
