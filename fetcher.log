@@ -11810,3 +11810,36 @@
 [2024-04-21 16:24:19] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.3.tar.gz]
 [2024-04-21 16:24:19] INFO root fetch - main [MainThread]: End processing [jy_lib]: success
 [2024-04-21 16:24:19] INFO root fetch - main [MainThread]: Store serial: [22865479]
+[2024-04-21 16:26:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865479]
+[2024-04-21 16:26:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adafruit-circuitpython-irremote
+[2024-04-21 16:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rips
+[2024-04-21 16:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC489
+[2024-04-21 16:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seisgo
+[2024-04-21 16:26:28] INFO root fetch - processPackages [seisgo]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-21 16:26:28] WARNING root fetch - processPackages [PythonTestLJC489]: Skipping, unable to determine old version
+[2024-04-21 16:26:28] INFO root fetch - main [MainThread]: End processing [PythonTestLJC489] error
+[2024-04-21 16:26:28] INFO root fetch - processPackages [rips]: New version: [2024.3.1.2] Old Version: [2024.3.0.2]
+[2024-04-21 16:26:28] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: New version: [5.0.0] Old Version: [4.1.9]
+[2024-04-21 16:26:28] INFO root fetch - processPackages [seisgo]: Downloading https://files.pythonhosted.org/packages/2e/32/85628b8036ded609981df47fce643e900e483628ea536c10f26bdd0049e4/seisgo-0.8.0.tar.gz
+[2024-04-21 16:26:28] INFO root fetch - processPackages [rips]: Downloading https://files.pythonhosted.org/packages/c7/c4/df8bc43300a82d5b920e3d03525837a824c8bffc514f717863ee59dd4ec5/rips-2024.3.0.2.tar.gz
+[2024-04-21 16:26:28] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/d0/74/fd48f4b91ced3acc96c7db0abd44e630ba9352ad00cfbed435a9ad82e0e0/adafruit-circuitpython-irremote-4.1.9.tar.gz
+[2024-04-21 16:26:29] INFO root fetch - processPackages [seisgo]: Downloading https://files.pythonhosted.org/packages/c4/83/06062a0892c4686494568488b786cad5dc5059189c1e21ca4b94649bfdde/seisgo-0.8.1.tar.gz
+[2024-04-21 16:26:29] INFO root fetch - processPackages [rips]: Downloading https://files.pythonhosted.org/packages/04/9a/67d057e0e379ff13b1fd14c4287fbb102ed4c64391c984ec49ba3386ed12/rips-2024.3.1.2.tar.gz
+[2024-04-21 16:26:29] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/84/c0/f44eeda5f0c831a70dea9d9917070642d11a152150d76c6d457ec66e57bf/adafruit_circuitpython_irremote-5.0.0.tar.gz
+[2024-04-21 16:26:29] INFO root fetch - processPackages [rips]: executing diffoscope
+[2024-04-21 16:26:29] INFO root fetch - processPackages [rips]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rips-2024.3.0.2.tar.gz tmp/rips-2024.3.1.2.tar.gz --markdown 20240421/r/rips/2024.3.0.2-2024.3.1.2/README.md --exclude *.pyd
+[2024-04-21 16:26:29] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: executing diffoscope
+[2024-04-21 16:26:29] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-irremote-4.1.9.tar.gz tmp/adafruit_circuitpython_irremote-5.0.0.tar.gz --markdown 20240421/a/adafruit-circuitpython-irremote/4.1.9-5.0.0/README.md --exclude *.pyd
+[2024-04-21 16:26:29] INFO root fetch - processPackages [seisgo]: executing diffoscope
+[2024-04-21 16:26:29] INFO root fetch - processPackages [seisgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seisgo-0.8.0.tar.gz tmp/seisgo-0.8.1.tar.gz --markdown 20240421/s/seisgo/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-21 16:26:30] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-irremote-4.1.9.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_irremote-5.0.0.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-irremote]: success
+[2024-04-21 16:26:30] INFO root fetch - processPackages [rips]: Remove: archive file [/home/abi/fetcher/tmp/rips-2024.3.0.2.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - processPackages [rips]: Remove: archive file [/home/abi/fetcher/tmp/rips-2024.3.1.2.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - main [MainThread]: End processing [rips]: success
+[2024-04-21 16:26:30] INFO root fetch - processPackages [seisgo]: Remove: archive file [/home/abi/fetcher/tmp/seisgo-0.8.0.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - processPackages [seisgo]: Remove: archive file [/home/abi/fetcher/tmp/seisgo-0.8.1.tar.gz]
+[2024-04-21 16:26:30] INFO root fetch - main [MainThread]: End processing [seisgo]: success
+[2024-04-21 16:26:30] INFO root fetch - main [MainThread]: Store serial: [22865491]
