@@ -5160,3 +5160,33 @@
 [2024-04-21 08:25:37] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.0.tar.gz]
 [2024-04-21 08:25:37] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-21 08:25:37] INFO root fetch - main [MainThread]: Store serial: [22862392]
+[2024-04-21 08:27:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862392]
+[2024-04-21 08:27:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 08:27:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Remote-Sensing-Analysis
+[2024-04-21 08:27:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fisspy
+[2024-04-21 08:27:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: youtube-community-alarm
+[2024-04-21 08:27:46] INFO root fetch - processPackages [Remote-Sensing-Analysis]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 08:27:46] INFO root fetch - processPackages [fisspy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 08:27:46] INFO root fetch - processPackages [youtube-community-alarm]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 08:27:46] INFO root fetch - processPackages [Remote-Sensing-Analysis]: Downloading https://files.pythonhosted.org/packages/93/48/ca83354f483fda5e2c9697f04d1d20a42c130061cb63cd05458047cf3e7e/remote_sensing_analysis-0.1.0.tar.gz
+[2024-04-21 08:27:46] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/12/22/440513fdaa0ea4911b0a3cba841fdb2e16a19e2129f0ca38c8c8ff90458b/fisspy-1.0.1.tar.gz
+[2024-04-21 08:27:46] INFO root fetch - processPackages [youtube-community-alarm]: Downloading https://files.pythonhosted.org/packages/11/77/31d095a30964f39e80b78142928e300ecfbb9a1f03db43990230fc1b2024/youtube_community_alarm-0.0.3-py3-none-any.whl
+[2024-04-21 08:27:46] INFO root fetch - processPackages [Remote-Sensing-Analysis]: Downloading https://files.pythonhosted.org/packages/6c/38/e4625c7c784cdc334b11ef868c7f425a43b6332b215b5e56e786351efa41/remote_sensing_analysis-0.1.1.tar.gz
+[2024-04-21 08:27:46] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/cb/f9/95f9d1470618c312271b9b32090401aaebbd70f58e5f5671083cfb7d3f4a/fisspy-1.0.2.tar.gz
+[2024-04-21 08:27:47] INFO root fetch - processPackages [youtube-community-alarm]: Downloading https://files.pythonhosted.org/packages/bb/92/65ff64e57a9602acdbf8b3b3b259409974ac554c7e7d4d468f79c4d3e2f6/youtube_community_alarm-0.0.4-py3-none-any.whl
+[2024-04-21 08:27:47] INFO root fetch - processPackages [Remote-Sensing-Analysis]: executing diffoscope
+[2024-04-21 08:27:47] INFO root fetch - processPackages [Remote-Sensing-Analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remote_sensing_analysis-0.1.0.tar.gz tmp/remote_sensing_analysis-0.1.1.tar.gz --markdown 20240421/R/Remote-Sensing-Analysis/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 08:27:47] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-21 08:27:47] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-1.0.1.tar.gz tmp/fisspy-1.0.2.tar.gz --markdown 20240421/f/fisspy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 08:27:47] INFO root fetch - processPackages [youtube-community-alarm]: executing diffoscope
+[2024-04-21 08:27:47] INFO root fetch - processPackages [youtube-community-alarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_community_alarm-0.0.3-py3-none-any.whl.zip tmp/youtube_community_alarm-0.0.4-py3-none-any.whl.zip --markdown 20240421/y/youtube-community-alarm/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 08:27:47] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.1.tar.gz]
+[2024-04-21 08:27:47] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.2.tar.gz]
+[2024-04-21 08:27:47] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-21 08:27:47] INFO root fetch - processPackages [Remote-Sensing-Analysis]: Remove: archive file [/home/abi/fetcher/tmp/remote_sensing_analysis-0.1.0.tar.gz]
+[2024-04-21 08:27:47] INFO root fetch - processPackages [Remote-Sensing-Analysis]: Remove: archive file [/home/abi/fetcher/tmp/remote_sensing_analysis-0.1.1.tar.gz]
+[2024-04-21 08:27:47] INFO root fetch - main [MainThread]: End processing [Remote-Sensing-Analysis]: success
+[2024-04-21 08:27:47] INFO root fetch - processPackages [youtube-community-alarm]: Remove: archive file [/home/abi/fetcher/tmp/youtube_community_alarm-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 08:27:47] INFO root fetch - processPackages [youtube-community-alarm]: Remove: archive file [/home/abi/fetcher/tmp/youtube_community_alarm-0.0.4-py3-none-any.whl.zip]
+[2024-04-21 08:27:47] INFO root fetch - main [MainThread]: End processing [youtube-community-alarm]: success
+[2024-04-21 08:27:47] INFO root fetch - main [MainThread]: Store serial: [22862400]
