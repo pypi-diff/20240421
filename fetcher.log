@@ -8896,3 +8896,18 @@
 [2024-04-21 13:28:35] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.4.8.tar.gz]
 [2024-04-21 13:28:35] INFO root fetch - main [MainThread]: End processing [throttle-client]: success
 [2024-04-21 13:28:35] INFO root fetch - main [MainThread]: Store serial: [22863976]
+[2024-04-21 13:30:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863976]
+[2024-04-21 13:30:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-21 13:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miksiai
+[2024-04-21 13:30:43] INFO root fetch - processPackages [notfunny]: New version: [0.6.8] Old Version: [0.6.6]
+[2024-04-21 13:30:43] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/42/ba/a8e5305128295bd72afad59fca9a15e0c9c664d0b166049354c2348ed749/notfunny-0.6.6.tar.gz
+[2024-04-21 13:30:43] WARNING root fetch - processPackages [miksiai]: Skipping, unable to determine old version
+[2024-04-21 13:30:43] INFO root fetch - main [MainThread]: End processing [miksiai] error
+[2024-04-21 13:30:43] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/cc/66eca7e3b8d00484f417ca9ff757e83dd28de6a13b0b385cc28d6231a599/notfunny-0.6.8.tar.gz
+[2024-04-21 13:30:43] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-21 13:30:43] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.6.tar.gz tmp/notfunny-0.6.8.tar.gz --markdown 20240421/n/notfunny/0.6.6-0.6.8/README.md --exclude *.pyd
+[2024-04-21 13:30:44] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.6.tar.gz]
+[2024-04-21 13:30:44] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.8.tar.gz]
+[2024-04-21 13:30:44] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-21 13:30:44] INFO root fetch - main [MainThread]: Store serial: [22863983]
