@@ -6005,3 +6005,43 @@
 [2024-04-21 09:29:16] WARNING root fetch - processPackages [PythonTestLJC400]: Skipping, unable to determine old version
 [2024-04-21 09:29:16] INFO root fetch - main [MainThread]: End processing [PythonTestLJC400] error
 [2024-04-21 09:29:16] INFO root fetch - main [MainThread]: Store serial: [22862766]
+[2024-04-21 09:31:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862766]
+[2024-04-21 09:31:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 09:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meteoswiss-async
+[2024-04-21 09:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django_bocor_ds
+[2024-04-21 09:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyregtokenizer
+[2024-04-21 09:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pwright
+[2024-04-21 09:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: meteoswiss-async
+[2024-04-21 09:31:25] INFO root fetch - processPackages [pwright]: New version: [9.3.0] Old Version: [9.2.0]
+[2024-04-21 09:31:25] WARNING root fetch - processPackages [pyregtokenizer]: Skipping, unable to determine old version
+[2024-04-21 09:31:25] INFO root fetch - main [MainThread]: End processing [pyregtokenizer] error
+[2024-04-21 09:31:25] INFO root fetch - processPackages [django_bocor_ds]: New version: [2.0.5] Old Version: [2.0.3]
+[2024-04-21 09:31:25] INFO root fetch - processPackages [meteoswiss-async]: New version: [0.1.0rc9.post1] Old Version: [0.0.1rc8.post1]
+[2024-04-21 09:31:25] INFO root fetch - processPackages [meteoswiss-async]: New version: [0.1.0rc9.post1] Old Version: [0.0.1rc8.post1]
+[2024-04-21 09:31:25] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/c0/1b/c5b641720da4503c1cfc643bcd1279753afbc4fcbba0648cbf50bf9623ac/pwright-9.2.0.tar.gz
+[2024-04-21 09:31:25] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/96/41/2bb624a6d0d2ac012af512a71e466ecdbc46efeb7b6ea7b6f4364cb5f056/meteoswiss_async-0.0.1rc8.post1.tar.gz
+[2024-04-21 09:31:25] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/5d/e1/c7a9f1a2aebc477dffb6de4c4ec194162879f36ba829101574e2cc534392/django_bocor_ds-2.0.3.tar.gz
+[2024-04-21 09:31:25] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/96/41/2bb624a6d0d2ac012af512a71e466ecdbc46efeb7b6ea7b6f4364cb5f056/meteoswiss_async-0.0.1rc8.post1.tar.gz
+[2024-04-21 09:31:25] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/f7/db/81a8fb1070caae69f24510f1adf351f03f79705710ebf1912fcf15de7011/pwright-9.3.0.tar.gz
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/05/f2/0eccd113533f6eabd4d7000e5e913b293170e394b13657aadd7be0ee0eaa/meteoswiss_async-0.1.0rc9.post1.tar.gz
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/05/f2/0eccd113533f6eabd4d7000e5e913b293170e394b13657aadd7be0ee0eaa/meteoswiss_async-0.1.0rc9.post1.tar.gz
+[2024-04-21 09:31:26] INFO root fetch - processPackages [pwright]: executing diffoscope
+[2024-04-21 09:31:26] INFO root fetch - processPackages [pwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwright-9.2.0.tar.gz tmp/pwright-9.3.0.tar.gz --markdown 20240421/p/pwright/9.2.0-9.3.0/README.md --exclude *.pyd
+[2024-04-21 09:31:26] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/a8/fe/49e4c03dad840231d2b906c2ee5aff012040a5341bcb82ac9604243041da/django_bocor_ds-2.0.5.tar.gz
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: executing diffoscope
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meteoswiss_async-0.0.1rc8.post1.tar.gz tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz --markdown 20240421/m/meteoswiss-async/0.0.1rc8.post1-0.1.0rc9.post1/README.md --exclude *.pyd
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: executing diffoscope
+[2024-04-21 09:31:26] INFO root fetch - processPackages [meteoswiss-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meteoswiss_async-0.0.1rc8.post1.tar.gz tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz --markdown 20240421/m/meteoswiss-async/0.0.1rc8.post1-0.1.0rc9.post1/README.md --exclude *.pyd
+[2024-04-21 09:31:26] INFO root fetch - processPackages [django_bocor_ds]: executing diffoscope
+[2024-04-21 09:31:26] INFO root fetch - processPackages [django_bocor_ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_bocor_ds-2.0.3.tar.gz tmp/django_bocor_ds-2.0.5.tar.gz --markdown 20240421/d/django_bocor_ds/2.0.3-2.0.5/README.md --exclude *.pyd
+[2024-04-21 09:31:26] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.2.0.tar.gz]
+[2024-04-21 09:31:26] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.3.0.tar.gz]
+[2024-04-21 09:31:26] INFO root fetch - main [MainThread]: End processing [pwright]: success
+[2024-04-21 09:31:27] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.0.1rc8.post1.tar.gz]
+[2024-04-21 09:31:27] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz]
+[2024-04-21 09:31:27] INFO root fetch - main [MainThread]: End processing [meteoswiss-async]: success
+[2024-04-21 09:31:27] INFO root fetch - main [MainThread]: End processing [meteoswiss-async]: success
+[2024-04-21 09:31:28] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.0.3.tar.gz]
+[2024-04-21 09:31:28] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.0.5.tar.gz]
+[2024-04-21 09:31:28] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
+[2024-04-21 09:31:28] INFO root fetch - main [MainThread]: Store serial: [22862781]
