@@ -4288,3 +4288,25 @@
 [2024-04-21 06:49:41] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.9.tar.gz]
 [2024-04-21 06:49:41] INFO root fetch - main [MainThread]: End processing [cpbox]: success
 [2024-04-21 06:49:41] INFO root fetch - main [MainThread]: Store serial: [22862007]
+[2024-04-21 06:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862007]
+[2024-04-21 06:51:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 06:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qfpy
+[2024-04-21 06:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC369
+[2024-04-21 06:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qfpy
+[2024-04-21 06:51:50] INFO root fetch - processPackages [qfpy]: New version: [6.0.1] Old Version: [6.0.0]
+[2024-04-21 06:51:50] INFO root fetch - processPackages [qfpy]: New version: [6.0.1] Old Version: [6.0.0]
+[2024-04-21 06:51:50] WARNING root fetch - processPackages [PythonTestLJC369]: Skipping, unable to determine old version
+[2024-04-21 06:51:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC369] error
+[2024-04-21 06:51:50] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/12/b4/ed4e6f772d12ea662ce7b22c6acc8353c976a89b4757cf1787749e533ce3/qfpy-6.0.0.tar.gz
+[2024-04-21 06:51:50] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/12/b4/ed4e6f772d12ea662ce7b22c6acc8353c976a89b4757cf1787749e533ce3/qfpy-6.0.0.tar.gz
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/aa/f0/2505301df68d57b1891d15b6029f9b1d6f1ebdae880c49c8ca44c26ed232/qfpy-6.0.1.tar.gz
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/aa/f0/2505301df68d57b1891d15b6029f9b1d6f1ebdae880c49c8ca44c26ed232/qfpy-6.0.1.tar.gz
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: executing diffoscope
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfpy-6.0.0.tar.gz tmp/qfpy-6.0.1.tar.gz --markdown 20240421/q/qfpy/6.0.0-6.0.1/README.md --exclude *.pyd
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: executing diffoscope
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfpy-6.0.0.tar.gz tmp/qfpy-6.0.1.tar.gz --markdown 20240421/q/qfpy/6.0.0-6.0.1/README.md --exclude *.pyd
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-6.0.0.tar.gz]
+[2024-04-21 06:51:51] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-6.0.1.tar.gz]
+[2024-04-21 06:51:51] INFO root fetch - main [MainThread]: End processing [qfpy]: success
+[2024-04-21 06:51:51] INFO root fetch - main [MainThread]: End processing [qfpy]: success
+[2024-04-21 06:51:51] INFO root fetch - main [MainThread]: Store serial: [22862018]
