@@ -12174,3 +12174,24 @@
 [2024-04-21 16:46:05] INFO root fetch - processPackages [jal]: Remove: archive file [/home/abi/fetcher/tmp/jal-2024.4.2.tar.gz]
 [2024-04-21 16:46:05] INFO root fetch - main [MainThread]: End processing [jal]: success
 [2024-04-21 16:46:05] INFO root fetch - main [MainThread]: Store serial: [22865624]
+[2024-04-21 16:48:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865624]
+[2024-04-21 16:48:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 16:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: job-processing
+[2024-04-21 16:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyicat-plus
+[2024-04-21 16:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robocupRAI
+[2024-04-21 16:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC497
+[2024-04-21 16:48:14] INFO root fetch - processPackages [pyicat-plus]: New version: [0.2.0rc1] Old Version: [0.2.0rc0]
+[2024-04-21 16:48:14] WARNING root fetch - processPackages [PythonTestLJC497]: Skipping, unable to determine old version
+[2024-04-21 16:48:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC497] error
+[2024-04-21 16:48:14] WARNING root fetch - processPackages [robocupRAI]: Skipping, unable to determine old version
+[2024-04-21 16:48:14] INFO root fetch - main [MainThread]: End processing [robocupRAI] error
+[2024-04-21 16:48:14] WARNING root fetch - processPackages [job-processing]: Skipping, unable to determine old version
+[2024-04-21 16:48:14] INFO root fetch - main [MainThread]: End processing [job-processing] error
+[2024-04-21 16:48:14] INFO root fetch - processPackages [pyicat-plus]: Downloading https://files.pythonhosted.org/packages/fa/09/4c4320e4f47f02a75292768c268ee1d9f523b9263fd5d62aae3b59936774/pyicat_plus-0.2.0rc0.tar.gz
+[2024-04-21 16:48:15] INFO root fetch - processPackages [pyicat-plus]: Downloading https://files.pythonhosted.org/packages/f0/8f/5681fd63ad54133fe7127f7c12e128493796c22c8ee8a85e9b99f204758e/pyicat_plus-0.2.0rc1.tar.gz
+[2024-04-21 16:48:15] INFO root fetch - processPackages [pyicat-plus]: executing diffoscope
+[2024-04-21 16:48:15] INFO root fetch - processPackages [pyicat-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyicat_plus-0.2.0rc0.tar.gz tmp/pyicat_plus-0.2.0rc1.tar.gz --markdown 20240421/p/pyicat-plus/0.2.0rc0-0.2.0rc1/README.md --exclude *.pyd
+[2024-04-21 16:48:16] INFO root fetch - processPackages [pyicat-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyicat_plus-0.2.0rc0.tar.gz]
+[2024-04-21 16:48:16] INFO root fetch - processPackages [pyicat-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyicat_plus-0.2.0rc1.tar.gz]
+[2024-04-21 16:48:16] INFO root fetch - main [MainThread]: End processing [pyicat-plus]: success
+[2024-04-21 16:48:16] INFO root fetch - main [MainThread]: Store serial: [22865645]
