@@ -1714,3 +1714,55 @@
 [2024-04-21 02:29:58] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
 [2024-04-21 02:29:58] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
 [2024-04-21 02:29:58] INFO root fetch - main [MainThread]: Store serial: [22860653]
+[2024-04-21 02:32:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860653]
+[2024-04-21 02:32:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zrb-ollama
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphlit-client
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hockey-scraper
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC299
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphlit-client
+[2024-04-21 02:32:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: transcribe-me
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420007] Old Version: [1.0.20240420006]
+[2024-04-21 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420007] Old Version: [1.0.20240420006]
+[2024-04-21 02:32:07] INFO root fetch - processPackages [zrb-ollama]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/d5/f1/77ae5405c1f4a00190cb341951887332ed07df705dc558e24752f1bcf2de/graphlit_client-1.0.20240420006.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-21 02:32:07] WARNING root fetch - processPackages [PythonTestLJC299]: Skipping, unable to determine old version
+[2024-04-21 02:32:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC299] error
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/d5/f1/77ae5405c1f4a00190cb341951887332ed07df705dc558e24752f1bcf2de/graphlit_client-1.0.20240420006.tar.gz
+[2024-04-21 02:32:07] WARNING root fetch - processPackages [transcribe-me]: Skipping, unable to determine old version
+[2024-04-21 02:32:07] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-21 02:32:07] INFO root fetch - processPackages [hockey-scraper]: New version: [1.40.3] Old Version: [1.40.2]
+[2024-04-21 02:32:07] INFO root fetch - processPackages [zrb-ollama]: Downloading https://files.pythonhosted.org/packages/f4/ae/69059b69235236d7f5ee8e73d5ccae36e84fcab054c8f7e2210ea50def53/zrb_ollama-0.0.8.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [hockey-scraper]: Downloading https://files.pythonhosted.org/packages/f7/5a/4359679c1c9e8a294daefe2f001a10e30405d0f63188a26cc6194fdb4268/hockey_scraper-1.40.2-py3-none-any.whl
+[2024-04-21 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/34/a2/bfa152df50b3c8669c14e3a82eb1c4f3aa73b5365783862e950b9e80f25c/graphlit_client-1.0.20240420007.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/34/a2/bfa152df50b3c8669c14e3a82eb1c4f3aa73b5365783862e950b9e80f25c/graphlit_client-1.0.20240420007.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-21 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240421/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420006.tar.gz tmp/graphlit_client-1.0.20240420007.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420006-1.0.20240420007/README.md --exclude *.pyd
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-21 02:32:07] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420006.tar.gz tmp/graphlit_client-1.0.20240420007.tar.gz --markdown 20240421/g/graphlit-client/1.0.20240420006-1.0.20240420007/README.md --exclude *.pyd
+[2024-04-21 02:32:07] INFO root fetch - processPackages [zrb-ollama]: Downloading https://files.pythonhosted.org/packages/69/23/7a6f9fb793122c69b80ff6088f3dfab05f8782dabcf0f861a1f3e8a98a56/zrb_ollama-0.0.9.tar.gz
+[2024-04-21 02:32:07] INFO root fetch - processPackages [hockey-scraper]: Downloading https://files.pythonhosted.org/packages/b9/09/11e9edce95d7241d96d121e7f9b5a22796a95110dfd17475d7a1b3583513/hockey_scraper-1.40.3-py3-none-any.whl
+[2024-04-21 02:32:07] INFO root fetch - processPackages [zrb-ollama]: executing diffoscope
+[2024-04-21 02:32:07] INFO root fetch - processPackages [zrb-ollama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb_ollama-0.0.8.tar.gz tmp/zrb_ollama-0.0.9.tar.gz --markdown 20240421/z/zrb-ollama/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 02:32:08] INFO root fetch - processPackages [hockey-scraper]: executing diffoscope
+[2024-04-21 02:32:08] INFO root fetch - processPackages [hockey-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hockey_scraper-1.40.2-py3-none-any.whl.zip tmp/hockey_scraper-1.40.3-py3-none-any.whl.zip --markdown 20240421/h/hockey-scraper/1.40.2-1.40.3/README.md --exclude *.pyd
+[2024-04-21 02:32:08] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-21 02:32:08] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420006.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420007.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 02:32:08] INFO root fetch - processPackages [zrb-ollama]: Remove: archive file [/home/abi/fetcher/tmp/zrb_ollama-0.0.8.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - processPackages [zrb-ollama]: Remove: archive file [/home/abi/fetcher/tmp/zrb_ollama-0.0.9.tar.gz]
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [zrb-ollama]: success
+[2024-04-21 02:32:08] INFO root fetch - processPackages [hockey-scraper]: Remove: archive file [/home/abi/fetcher/tmp/hockey_scraper-1.40.2-py3-none-any.whl.zip]
+[2024-04-21 02:32:08] INFO root fetch - processPackages [hockey-scraper]: Remove: archive file [/home/abi/fetcher/tmp/hockey_scraper-1.40.3-py3-none-any.whl.zip]
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [hockey-scraper]: success
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-21 02:32:08] INFO root fetch - main [MainThread]: Store serial: [22860675]
