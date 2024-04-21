@@ -15305,3 +15305,44 @@
 [2024-04-21 19:57:23] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.2.tar.gz]
 [2024-04-21 19:57:23] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
 [2024-04-21 19:57:23] INFO root fetch - main [MainThread]: Store serial: [22867155]
+[2024-04-21 19:59:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867155]
+[2024-04-21 19:59:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstall
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lichesspy
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC566
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyseoanalyzer
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datajunction-server
+[2024-04-21 19:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chopcal
+[2024-04-21 19:59:32] INFO root fetch - processPackages [lichesspy]: New version: [6.0.3] Old Version: [6.0.2]
+[2024-04-21 19:59:32] WARNING root fetch - processPackages [PythonTestLJC566]: Skipping, unable to determine old version
+[2024-04-21 19:59:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC566] error
+[2024-04-21 19:59:32] INFO root fetch - processPackages [datajunction-server]: New version: [0.0.1a8] Old Version: [0.0.1a7]
+[2024-04-21 19:59:32] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/21/98/1997f1a8d7953f3f65693780c0f11e7e92f2344bf76eb15860d8497c692b/lichesspy-6.0.2.tar.gz
+[2024-04-21 19:59:32] INFO root fetch - processPackages [pyseoanalyzer]: New version: [4.0.7] Old Version: [4.0.6]
+[2024-04-21 19:59:32] WARNING root fetch - processPackages [quickstall]: Skipping, unable to determine old version
+[2024-04-21 19:59:32] INFO root fetch - main [MainThread]: End processing [quickstall] error
+[2024-04-21 19:59:32] INFO root fetch - processPackages [chopcal]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-21 19:59:32] INFO root fetch - processPackages [pyseoanalyzer]: Downloading https://files.pythonhosted.org/packages/90/c3/d30536debd7b7984e4d8a78303ea36d735af84c3a508b0c38c0516248cbf/pyseoanalyzer-4.0.6.tar.gz
+[2024-04-21 19:59:33] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/7a/ea/63657e4bb12f613b5877f5cc6d7168acac631559d502298ef2a098931dbc/lichesspy-6.0.3.tar.gz
+[2024-04-21 19:59:33] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 19:59:33] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.2.tar.gz tmp/lichesspy-6.0.3.tar.gz --markdown 20240421/l/lichesspy/6.0.2-6.0.3/README.md --exclude *.pyd
+[2024-04-21 19:59:33] INFO root fetch - processPackages [datajunction-server]: Downloading https://files.pythonhosted.org/packages/5e/74/837b55d32da7e6b69cec7b2da69fbb3dcc2a71dc1ee1e0d3dd407363f091/datajunction_server-0.0.1a8.tar.gz
+[2024-04-21 19:59:33] INFO root fetch - processPackages [chopcal]: Downloading https://files.pythonhosted.org/packages/b8/f3/bcb43d6a27b8a1ac01c674e508e5a8e4c80b052bafd1b294d908e8a8afbf/chopcal-0.2.1.tar.gz
+[2024-04-21 19:59:33] INFO root fetch - processPackages [pyseoanalyzer]: Downloading https://files.pythonhosted.org/packages/14/79/60c7a5c3cb7bd3164757b6cc1672b030835ddd1a252dcacfa1b54509e7c9/pyseoanalyzer-4.0.7.tar.gz
+[2024-04-21 19:59:33] WARNING root fetch - processPackages [datajunction-server]: Skipping package: exceeds size limit 25698763>=10485760
+[2024-04-21 19:59:33] INFO root fetch - main [MainThread]: End processing [datajunction-server] error
+[2024-04-21 19:59:33] INFO root fetch - processPackages [pyseoanalyzer]: executing diffoscope
+[2024-04-21 19:59:33] INFO root fetch - processPackages [pyseoanalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyseoanalyzer-4.0.6.tar.gz tmp/pyseoanalyzer-4.0.7.tar.gz --markdown 20240421/p/pyseoanalyzer/4.0.6-4.0.7/README.md --exclude *.pyd
+[2024-04-21 19:59:33] INFO root fetch - processPackages [chopcal]: Downloading https://files.pythonhosted.org/packages/bd/b7/7410fc87145ce47e63db6741b83f0db99dfbaf4a424d8daeb105ad30f154/chopcal-0.3.0.tar.gz
+[2024-04-21 19:59:33] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.2.tar.gz]
+[2024-04-21 19:59:33] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.3.tar.gz]
+[2024-04-21 19:59:33] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 19:59:33] INFO root fetch - processPackages [chopcal]: executing diffoscope
+[2024-04-21 19:59:33] INFO root fetch - processPackages [chopcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chopcal-0.2.1.tar.gz tmp/chopcal-0.3.0.tar.gz --markdown 20240421/c/chopcal/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-21 19:59:33] INFO root fetch - processPackages [pyseoanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/pyseoanalyzer-4.0.6.tar.gz]
+[2024-04-21 19:59:33] INFO root fetch - processPackages [pyseoanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/pyseoanalyzer-4.0.7.tar.gz]
+[2024-04-21 19:59:33] INFO root fetch - main [MainThread]: End processing [pyseoanalyzer]: success
+[2024-04-21 19:59:34] INFO root fetch - processPackages [chopcal]: Remove: archive file [/home/abi/fetcher/tmp/chopcal-0.2.1.tar.gz]
+[2024-04-21 19:59:34] INFO root fetch - processPackages [chopcal]: Remove: archive file [/home/abi/fetcher/tmp/chopcal-0.3.0.tar.gz]
+[2024-04-21 19:59:34] INFO root fetch - main [MainThread]: End processing [chopcal]: success
+[2024-04-21 19:59:34] INFO root fetch - main [MainThread]: Store serial: [22867176]
