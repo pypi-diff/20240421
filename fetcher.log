@@ -4425,3 +4425,12 @@
 [2024-04-21 07:02:43] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.2.0.tar.gz]
 [2024-04-21 07:02:43] INFO root fetch - main [MainThread]: End processing [nog642-util]: success
 [2024-04-21 07:02:43] INFO root fetch - main [MainThread]: Store serial: [22862065]
+[2024-04-21 07:04:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862065]
+[2024-04-21 07:04:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 07:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: call-to-change
+[2024-04-21 07:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC374
+[2024-04-21 07:04:51] WARNING root fetch - processPackages [call-to-change]: Skipping, unable to determine old version
+[2024-04-21 07:04:51] INFO root fetch - main [MainThread]: End processing [call-to-change] error
+[2024-04-21 07:04:51] WARNING root fetch - processPackages [PythonTestLJC374]: Skipping, unable to determine old version
+[2024-04-21 07:04:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC374] error
+[2024-04-21 07:04:51] INFO root fetch - main [MainThread]: Store serial: [22862075]
