@@ -2864,3 +2864,18 @@
 [2024-04-21 04:20:05] INFO root fetch - processPackages [moyopy]: Remove: archive file [/home/abi/fetcher/tmp/moyopy-0.1.4.tar.gz]
 [2024-04-21 04:20:05] INFO root fetch - main [MainThread]: End processing [moyopy]: success
 [2024-04-21 04:20:05] INFO root fetch - main [MainThread]: Store serial: [22861353]
+[2024-04-21 04:22:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861353]
+[2024-04-21 04:22:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-21 04:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC332
+[2024-04-21 04:22:14] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240420] Old Version: [1.2.20240419]
+[2024-04-21 04:22:14] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/25/53/5126693717621d1f0f668c318ecdb8b773dadb712f4efd9213c1abe8b3c2/iam_actions-1.2.20240419.tar.gz
+[2024-04-21 04:22:14] WARNING root fetch - processPackages [PythonTestLJC332]: Skipping, unable to determine old version
+[2024-04-21 04:22:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC332] error
+[2024-04-21 04:22:14] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/c3/f2/ded60de846493d217d986254e7dcac705d878d1445fd90d1dcf8332b342b/iam_actions-1.2.20240420.tar.gz
+[2024-04-21 04:22:14] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-21 04:22:14] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240419.tar.gz tmp/iam_actions-1.2.20240420.tar.gz --markdown 20240421/i/iam-actions/1.2.20240419-1.2.20240420/README.md --exclude *.pyd
+[2024-04-21 04:22:19] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240419.tar.gz]
+[2024-04-21 04:22:19] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240420.tar.gz]
+[2024-04-21 04:22:19] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-21 04:22:19] INFO root fetch - main [MainThread]: Store serial: [22861361]
