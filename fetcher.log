@@ -3659,3 +3659,15 @@
 [2024-04-21 05:33:59] INFO root fetch - processPackages [litesync]: Remove: archive file [/home/abi/fetcher/tmp/litesync-0.5.1.tar.gz]
 [2024-04-21 05:33:59] INFO root fetch - main [MainThread]: End processing [litesync]: success
 [2024-04-21 05:33:59] INFO root fetch - main [MainThread]: Store serial: [22861737]
+[2024-04-21 05:36:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861737]
+[2024-04-21 05:36:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 05:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snickerdoodle
+[2024-04-21 05:36:07] INFO root fetch - processPackages [snickerdoodle]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-21 05:36:07] INFO root fetch - processPackages [snickerdoodle]: Downloading https://files.pythonhosted.org/packages/53/d5/d7e5bb23ad86c93fbb5b325b92b7e7a2d3ded0b4db7c34e336b8d3ecf151/snickerdoodle-0.1.9.tar.gz
+[2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: Downloading https://files.pythonhosted.org/packages/d2/6e/6a5005570309a3bdb4338e0022e5e5bc32dcf152ceced039199c876339c2/snickerdoodle-0.2.0.tar.gz
+[2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: executing diffoscope
+[2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snickerdoodle-0.1.9.tar.gz tmp/snickerdoodle-0.2.0.tar.gz --markdown 20240421/s/snickerdoodle/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: Remove: archive file [/home/abi/fetcher/tmp/snickerdoodle-0.1.9.tar.gz]
+[2024-04-21 05:36:08] INFO root fetch - processPackages [snickerdoodle]: Remove: archive file [/home/abi/fetcher/tmp/snickerdoodle-0.2.0.tar.gz]
+[2024-04-21 05:36:08] INFO root fetch - main [MainThread]: End processing [snickerdoodle]: success
+[2024-04-21 05:36:08] INFO root fetch - main [MainThread]: Store serial: [22861740]
