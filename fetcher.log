@@ -16666,3 +16666,12 @@
 [2024-04-21 21:11:51] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev2.tar.gz]
 [2024-04-21 21:11:51] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
 [2024-04-21 21:11:51] INFO root fetch - main [MainThread]: Store serial: [22867876]
+[2024-04-21 21:13:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867876]
+[2024-04-21 21:14:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 21:14:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kungfupanda
+[2024-04-21 21:14:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC593
+[2024-04-21 21:14:00] WARNING root fetch - processPackages [kungfupanda]: Skipping, unable to determine old version
+[2024-04-21 21:14:00] INFO root fetch - main [MainThread]: End processing [kungfupanda] error
+[2024-04-21 21:14:00] WARNING root fetch - processPackages [PythonTestLJC593]: Skipping, unable to determine old version
+[2024-04-21 21:14:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC593] error
+[2024-04-21 21:14:00] INFO root fetch - main [MainThread]: Store serial: [22867885]
