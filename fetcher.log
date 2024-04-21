@@ -6244,3 +6244,48 @@
 [2024-04-21 09:53:05] INFO root fetch - processPackages [IPFS-Toolkit]: Remove: archive file [/home/abi/fetcher/tmp/IPFS-Toolkit-0.5.9.tar.gz]
 [2024-04-21 09:53:05] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
 [2024-04-21 09:53:05] INFO root fetch - main [MainThread]: Store serial: [22862915]
+[2024-04-21 09:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862915]
+[2024-04-21 09:55:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC413
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apache-airflow-providers-cncf-kubernetes
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apache-airflow-providers-databricks
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow-providers-fab
+[2024-04-21 09:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moniza
+[2024-04-21 09:55:14] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc79.post1] Old Version: [0.0.2rc78.post1]
+[2024-04-21 09:55:14] WARNING root fetch - processPackages [PythonTestLJC413]: Skipping, unable to determine old version
+[2024-04-21 09:55:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC413] error
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-fab]: New version: [1.0.4rc1] Old Version: [1.0.4]
+[2024-04-21 09:55:14] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/98/4e/1bef9f305edb8131ab5512b751dde09617d895fe2b433477d7b458308dc0/py_dbchat-0.0.2rc78.post1.tar.gz
+[2024-04-21 09:55:14] WARNING root fetch - processPackages [moniza]: Skipping, unable to determine old version
+[2024-04-21 09:55:14] INFO root fetch - main [MainThread]: End processing [moniza] error
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-databricks]: New version: [6.3.0rc3] Old Version: [6.3.0rc2]
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: New version: [8.1.1rc1] Old Version: [8.1.1]
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-fab]: Downloading https://files.pythonhosted.org/packages/4f/ea/522b7a74d328796dc54b63a76996872170748dc5ead0f3fa4240097ebe0a/apache_airflow_providers_fab-1.0.4.tar.gz
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: Downloading https://files.pythonhosted.org/packages/36/db/b6dedeae87f0d376383e70cf58e6be67a71f6f4d7a1e348ab3ec40089a73/apache_airflow_providers_cncf_kubernetes-8.1.1.tar.gz
+[2024-04-21 09:55:14] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Downloading https://files.pythonhosted.org/packages/f4/41/11c05401f6612be8516eedc49bab3e94d36919ee2b0bf8ef3d4f8ac93911/apache_airflow_providers_databricks-6.3.0rc2.tar.gz
+[2024-04-21 09:55:15] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/89/03/b413d42f67f310b158145240ea776c799128fd71c14634deb99e10f6d18e/py_dbchat-0.0.2rc79.post1.tar.gz
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-fab]: Downloading https://files.pythonhosted.org/packages/c5/58/87f4ad021704b9d472c4dd33f52dd642f68bfe75504129f2959397f70792/apache_airflow_providers_fab-1.0.4rc1.tar.gz
+[2024-04-21 09:55:15] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-21 09:55:15] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc78.post1.tar.gz tmp/py_dbchat-0.0.2rc79.post1.tar.gz --markdown 20240421/p/py-dbchat/0.0.2rc78.post1-0.0.2rc79.post1/README.md --exclude *.pyd
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-fab]: executing diffoscope
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-fab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_fab-1.0.4.tar.gz tmp/apache_airflow_providers_fab-1.0.4rc1.tar.gz --markdown 20240421/a/apache-airflow-providers-fab/1.0.4-1.0.4rc1/README.md --exclude *.pyd
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Downloading https://files.pythonhosted.org/packages/09/b2/a4843006fe03726e603d2c8a367aac4ec71c09da6f96ec7afb68849919ce/apache_airflow_providers_databricks-6.3.0rc3.tar.gz
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: Downloading https://files.pythonhosted.org/packages/e5/6a/3be1c119fe79159872e9a72fc9e029f6752981d93e9aae1cc54dc1ab3179/apache_airflow_providers_cncf_kubernetes-8.1.1rc1.tar.gz
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-databricks]: executing diffoscope
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_databricks-6.3.0rc2.tar.gz tmp/apache_airflow_providers_databricks-6.3.0rc3.tar.gz --markdown 20240421/a/apache-airflow-providers-databricks/6.3.0rc2-6.3.0rc3/README.md --exclude *.pyd
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: executing diffoscope
+[2024-04-21 09:55:15] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_cncf_kubernetes-8.1.1.tar.gz tmp/apache_airflow_providers_cncf_kubernetes-8.1.1rc1.tar.gz --markdown 20240421/a/apache-airflow-providers-cncf-kubernetes/8.1.1-8.1.1rc1/README.md --exclude *.pyd
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_databricks-6.3.0rc2.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_databricks-6.3.0rc3.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-databricks]: success
+[2024-04-21 09:55:16] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc78.post1.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc79.post1.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-fab]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_fab-1.0.4.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-fab]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_fab-1.0.4rc1.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fab]: success
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_cncf_kubernetes-8.1.1.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - processPackages [apache-airflow-providers-cncf-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_cncf_kubernetes-8.1.1rc1.tar.gz]
+[2024-04-21 09:55:16] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-cncf-kubernetes]: success
+[2024-04-21 09:55:16] INFO root fetch - main [MainThread]: Store serial: [22862938]
