@@ -8395,3 +8395,24 @@
 [2024-04-21 12:44:55] INFO root fetch - processPackages [spotgui]: Remove: archive file [/home/abi/fetcher/tmp/spotgui-0.5.6.tar.gz]
 [2024-04-21 12:44:55] INFO root fetch - main [MainThread]: End processing [spotgui]: success
 [2024-04-21 12:44:55] INFO root fetch - main [MainThread]: Store serial: [22863766]
+[2024-04-21 12:47:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863766]
+[2024-04-21 12:47:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 12:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hfutils
+[2024-04-21 12:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyLLM
+[2024-04-21 12:47:05] INFO root fetch - processPackages [hfutils]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 12:47:05] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/cd/c5/d3b637104c22fc6c22f417f283d814056d8e7fc334cdc5d9b89843524d94/hfutils-0.2.0.tar.gz
+[2024-04-21 12:47:05] INFO root fetch - processPackages [MyLLM]: New version: [4.8.9] Old Version: [4.8.8]
+[2024-04-21 12:47:06] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/17/a3/c8c72d3fe2409e7c53f4f1b62d22d58eda0f109b746f00cee99c542888b9/myllm-4.8.8.tar.gz
+[2024-04-21 12:47:06] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/90/05/d4c02dca974d2368869aa8b6a40112882f51721ee31dd713884cd5b63df1/hfutils-0.2.1.tar.gz
+[2024-04-21 12:47:06] INFO root fetch - processPackages [hfutils]: executing diffoscope
+[2024-04-21 12:47:06] INFO root fetch - processPackages [hfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfutils-0.2.0.tar.gz tmp/hfutils-0.2.1.tar.gz --markdown 20240421/h/hfutils/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 12:47:06] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/57/3a/bfe2f2c55e10a6dee7a033bc1731f5ed17fe7c958a210478832a958f6d80/myllm-4.8.9.tar.gz
+[2024-04-21 12:47:06] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-04-21 12:47:06] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.8.tar.gz tmp/myllm-4.8.9.tar.gz --markdown 20240421/M/MyLLM/4.8.8-4.8.9/README.md --exclude *.pyd
+[2024-04-21 12:47:06] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.0.tar.gz]
+[2024-04-21 12:47:06] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.2.1.tar.gz]
+[2024-04-21 12:47:06] INFO root fetch - main [MainThread]: End processing [hfutils]: success
+[2024-04-21 12:47:07] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.8.tar.gz]
+[2024-04-21 12:47:07] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
+[2024-04-21 12:47:07] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-04-21 12:47:07] INFO root fetch - main [MainThread]: Store serial: [22863772]
