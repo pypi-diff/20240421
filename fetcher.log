@@ -2246,3 +2246,9 @@
 [2024-04-21 03:18:53] WARNING root fetch - processPackages [FlipCache]: Skipping, unable to determine old version
 [2024-04-21 03:18:53] INFO root fetch - main [MainThread]: End processing [FlipCache] error
 [2024-04-21 03:18:53] INFO root fetch - main [MainThread]: Store serial: [22860963]
+[2024-04-21 03:20:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860963]
+[2024-04-21 03:21:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 03:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FlipCache
+[2024-04-21 03:21:02] WARNING root fetch - processPackages [FlipCache]: Skipping, unable to determine old version
+[2024-04-21 03:21:02] INFO root fetch - main [MainThread]: End processing [FlipCache] error
+[2024-04-21 03:21:02] INFO root fetch - main [MainThread]: Store serial: [22860975]
