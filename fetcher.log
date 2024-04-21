@@ -13625,3 +13625,42 @@
 [2024-04-21 18:10:33] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.593.24112.tar.gz]
 [2024-04-21 18:10:33] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
 [2024-04-21 18:10:33] INFO root fetch - main [MainThread]: Store serial: [22866292]
+[2024-04-21 18:12:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866292]
+[2024-04-21 18:12:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC527
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kvm-db
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoon-data
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-optimization
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-math
+[2024-04-21 18:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pdappendunits
+[2024-04-21 18:12:42] INFO root fetch - processPackages [python-optimization]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-21 18:12:42] WARNING root fetch - processPackages [pdappendunits]: Skipping, unable to determine old version
+[2024-04-21 18:12:42] INFO root fetch - main [MainThread]: End processing [pdappendunits] error
+[2024-04-21 18:12:42] INFO root fetch - processPackages [mo-math]: New version: [7.593.24112] Old Version: [7.592.24112]
+[2024-04-21 18:12:42] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/93/29/18e82c9952b59d524f0e48c5b4d57ea453994acfa1f05b0d18a73d0b0e8a/python_optimization-0.0.4.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:12:42] WARNING root fetch - processPackages [kvm-db]: Skipping, unable to determine old version
+[2024-04-21 18:12:42] INFO root fetch - main [MainThread]: End processing [kvm-db] error
+[2024-04-21 18:12:42] WARNING root fetch - processPackages [PythonTestLJC527]: Skipping, unable to determine old version
+[2024-04-21 18:12:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC527] error
+[2024-04-21 18:12:42] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/93/12/8d64d909fb400a6feed998df6760049d11173b6218c11ac79d194fb40bf5/mo_math-7.592.24112.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [python-optimization]: Downloading https://files.pythonhosted.org/packages/e4/27/98359141736753215d8fd0ee5a128df5fdfce2c14596bdd65bdd807825aa/python_optimization-0.0.5.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/74/ae/0313d8b2d43776b7005c9b734541f3d99f3f86b1df791c772abbc02ddc04/mo_math-7.593.24112.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [python-optimization]: executing diffoscope
+[2024-04-21 18:12:42] INFO root fetch - processPackages [python-optimization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_optimization-0.0.4.tar.gz tmp/python_optimization-0.0.5.tar.gz --markdown 20240421/p/python-optimization/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-21 18:12:42] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-21 18:12:42] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-04-21 18:12:42] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.592.24112.tar.gz tmp/mo_math-7.593.24112.tar.gz --markdown 20240421/m/mo-math/7.592.24112-7.593.24112/README.md --exclude *.pyd
+[2024-04-21 18:12:42] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-21 18:12:42] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240421/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:12:43] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.4.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - processPackages [python-optimization]: Remove: archive file [/home/abi/fetcher/tmp/python_optimization-0.0.5.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - main [MainThread]: End processing [python-optimization]: success
+[2024-04-21 18:12:43] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.592.24112.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.593.24112.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-04-21 18:12:43] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-21 18:12:43] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-21 18:12:43] INFO root fetch - main [MainThread]: Store serial: [22866313]
