@@ -5478,3 +5478,24 @@
 [2024-04-21 08:45:23] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
 [2024-04-21 08:45:23] INFO root fetch - main [MainThread]: End processing [bencode2]: success
 [2024-04-21 08:45:23] INFO root fetch - main [MainThread]: Store serial: [22862544]
+[2024-04-21 08:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862544]
+[2024-04-21 08:47:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyutube
+[2024-04-21 08:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-21 08:47:31] INFO root fetch - processPackages [pyutube]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-21 08:47:31] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/0d/ce/15e259414dfa659ea1d2fa88a0ad8463a50e14b95b1c1d64eae08021d16b/pyutube-1.2.0.tar.gz
+[2024-04-21 08:47:31] INFO root fetch - processPackages [cerbogen]: New version: [0.0.48] Old Version: [0.0.47]
+[2024-04-21 08:47:31] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/a7/5d/4acc6cfe27c6932abc7fa88d87946c6c69711f62a2d60021ebea3c6eb039/cerbogen-0.0.47.tar.gz
+[2024-04-21 08:47:32] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/01/a3/5895e34a2350bff479cd34111a1a1f49c14fe3a5ebfccc9106f58d5e5850/pyutube-1.2.1.tar.gz
+[2024-04-21 08:47:32] INFO root fetch - processPackages [pyutube]: executing diffoscope
+[2024-04-21 08:47:32] INFO root fetch - processPackages [pyutube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutube-1.2.0.tar.gz tmp/pyutube-1.2.1.tar.gz --markdown 20240421/p/pyutube/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/27/d9/39820f9d23c0bec4c52644e7b32036fa3aef4cf58dbed5d55fcf3196e96f/cerbogen-0.0.48.tar.gz
+[2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.47.tar.gz tmp/cerbogen-0.0.48.tar.gz --markdown 20240421/c/cerbogen/0.0.47-0.0.48/README.md --exclude *.pyd
+[2024-04-21 08:47:32] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.0.tar.gz]
+[2024-04-21 08:47:32] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.1.tar.gz]
+[2024-04-21 08:47:32] INFO root fetch - main [MainThread]: End processing [pyutube]: success
+[2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.47.tar.gz]
+[2024-04-21 08:47:32] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.48.tar.gz]
+[2024-04-21 08:47:32] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-21 08:47:32] INFO root fetch - main [MainThread]: Store serial: [22862551]
