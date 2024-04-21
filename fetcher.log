@@ -13604,3 +13604,24 @@
 [2024-04-21 18:08:23] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.593.24112.tar.gz]
 [2024-04-21 18:08:23] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
 [2024-04-21 18:08:23] INFO root fetch - main [MainThread]: Store serial: [22866287]
+[2024-04-21 18:10:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866287]
+[2024-04-21 18:10:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networke
+[2024-04-21 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-kwargs
+[2024-04-21 18:10:32] INFO root fetch - processPackages [mo-kwargs]: New version: [7.593.24112] Old Version: [7.592.24112]
+[2024-04-21 18:10:32] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/02/ca/111794ac1cc0e4862c73505a32a47fecdf9594c44205c8de1cbae39d952f/mo_kwargs-7.592.24112.tar.gz
+[2024-04-21 18:10:32] INFO root fetch - processPackages [networke]: New version: [4.0] Old Version: [3.0]
+[2024-04-21 18:10:32] INFO root fetch - processPackages [networke]: Downloading https://files.pythonhosted.org/packages/5c/f4/8ad8161e345ac8eb08ede3d97ce590bcabfe76b5d30f343d45603a4d61e8/networke-3.0.tar.gz
+[2024-04-21 18:10:32] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/f2/08/df1368d24b54d342441414adc7df21c1bbfe69e284833543505543642b4c/mo_kwargs-7.593.24112.tar.gz
+[2024-04-21 18:10:32] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-04-21 18:10:32] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.592.24112.tar.gz tmp/mo_kwargs-7.593.24112.tar.gz --markdown 20240421/m/mo-kwargs/7.592.24112-7.593.24112/README.md --exclude *.pyd
+[2024-04-21 18:10:32] INFO root fetch - processPackages [networke]: Downloading https://files.pythonhosted.org/packages/2e/81/0e59b5353c48a2176d311a2a4e67a5be8d1e6d96bbe81c26971cd6e708d1/networke-4.0.tar.gz
+[2024-04-21 18:10:32] INFO root fetch - processPackages [networke]: executing diffoscope
+[2024-04-21 18:10:32] INFO root fetch - processPackages [networke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networke-3.0.tar.gz tmp/networke-4.0.tar.gz --markdown 20240421/n/networke/3.0-4.0/README.md --exclude *.pyd
+[2024-04-21 18:10:33] INFO root fetch - processPackages [networke]: Remove: archive file [/home/abi/fetcher/tmp/networke-3.0.tar.gz]
+[2024-04-21 18:10:33] INFO root fetch - processPackages [networke]: Remove: archive file [/home/abi/fetcher/tmp/networke-4.0.tar.gz]
+[2024-04-21 18:10:33] INFO root fetch - main [MainThread]: End processing [networke]: success
+[2024-04-21 18:10:33] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.592.24112.tar.gz]
+[2024-04-21 18:10:33] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.593.24112.tar.gz]
+[2024-04-21 18:10:33] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-04-21 18:10:33] INFO root fetch - main [MainThread]: Store serial: [22866292]
