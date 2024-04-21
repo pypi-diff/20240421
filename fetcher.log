@@ -3142,3 +3142,55 @@
 [2024-04-21 04:50:32] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240421.99.tar.gz]
 [2024-04-21 04:50:32] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
 [2024-04-21 04:50:32] INFO root fetch - main [MainThread]: Store serial: [22861466]
+[2024-04-21 04:52:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861466]
+[2024-04-21 04:52:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mns-common
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sampa
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edurpa-google
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edurpa-google
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfetch-mimic
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tool-use
+[2024-04-21 04:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonTestLJC343
+[2024-04-21 04:52:40] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-21 04:52:40] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-21 04:52:40] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.5.1] Old Version: [1.0.7.5.0]
+[2024-04-21 04:52:40] INFO root fetch - processPackages [edurpa-google]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 04:52:40] INFO root fetch - processPackages [edurpa-google]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 04:52:40] INFO root fetch - processPackages [pyfetch-mimic]: New version: [2024.4.20] Old Version: [0.0.4]
+[2024-04-21 04:52:40] WARNING root fetch - processPackages [PythonTestLJC343]: Skipping, unable to determine old version
+[2024-04-21 04:52:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC343] error
+[2024-04-21 04:52:40] INFO root fetch - processPackages [tool-use]: New version: [0.1.1rc6] Old Version: [0.1.1rc5]
+[2024-04-21 04:52:40] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/b8/e2/4f936511248a0bf80045c2642c95853a31f51e62e5b534712043b3b6a6ca/mns_common-1.0.7.5.0.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/b5/1d/bd7f83312577aedf3d093fbadf5869751613172b61e8c01e9c8bd22ffa32/edurpa_google-1.0.8-py3-none-any.whl
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/b5/1d/bd7f83312577aedf3d093fbadf5869751613172b61e8c01e9c8bd22ffa32/edurpa_google-1.0.8-py3-none-any.whl
+[2024-04-21 04:52:41] INFO root fetch - processPackages [pyfetch-mimic]: Downloading https://files.pythonhosted.org/packages/3e/b0/ed6fc79547933bc6260847dd75c373e5d743032bc31bf02145b39057b298/pyfetch_mimic-0.0.4.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/5d/1d/4fd3a32131553414f27c4ce3fcdc3025d69372a9b107f3de5e06a276065b/tool_use-0.1.1rc5.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/7e/ef/6d1ba1329173417ced71080739326b86c51104328059ca82514d02657df7/mns_common-1.0.7.5.1.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-21 04:52:41] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.5.0.tar.gz tmp/mns_common-1.0.7.5.1.tar.gz --markdown 20240421/m/mns-common/1.0.7.5.0-1.0.7.5.1/README.md --exclude *.pyd
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/bb/71/dfe1df90fc3be3127f87aecadd2ca6fd0a1e813f579c1fd383cfaaea0a8b/edurpa_google-1.0.9-py3-none-any.whl
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/bb/71/dfe1df90fc3be3127f87aecadd2ca6fd0a1e813f579c1fd383cfaaea0a8b/edurpa_google-1.0.9-py3-none-any.whl
+[2024-04-21 04:52:41] INFO root fetch - processPackages [pyfetch-mimic]: Downloading https://files.pythonhosted.org/packages/96/e9/7ebb45758e073b9f3910a9579c4651a77559962868589e833c94c9a2250b/pyfetch_mimic-2024.4.20.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/1d/ac/ba348b4e1b04bcdc6b250e8e264c27bc06744ee1092d2b95cde0d713dc85/tool_use-0.1.1rc6.tar.gz
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: executing diffoscope
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa_google-1.0.8-py3-none-any.whl.zip tmp/edurpa_google-1.0.9-py3-none-any.whl.zip --markdown 20240421/e/edurpa-google/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 04:52:41] INFO root fetch - processPackages [pyfetch-mimic]: executing diffoscope
+[2024-04-21 04:52:41] INFO root fetch - processPackages [pyfetch-mimic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfetch_mimic-0.0.4.tar.gz tmp/pyfetch_mimic-2024.4.20.tar.gz --markdown 20240421/p/pyfetch-mimic/0.0.4-2024.4.20/README.md --exclude *.pyd
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: executing diffoscope
+[2024-04-21 04:52:41] INFO root fetch - processPackages [edurpa-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa_google-1.0.8-py3-none-any.whl.zip tmp/edurpa_google-1.0.9-py3-none-any.whl.zip --markdown 20240421/e/edurpa-google/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 04:52:41] INFO root fetch - processPackages [tool-use]: executing diffoscope
+[2024-04-21 04:52:41] INFO root fetch - processPackages [tool-use]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tool_use-0.1.1rc5.tar.gz tmp/tool_use-0.1.1rc6.tar.gz --markdown 20240421/t/tool-use/0.1.1rc5-0.1.1rc6/README.md --exclude *.pyd
+[2024-04-21 04:52:42] INFO root fetch - processPackages [edurpa-google]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_google-1.0.8-py3-none-any.whl.zip]
+[2024-04-21 04:52:42] INFO root fetch - processPackages [edurpa-google]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_google-1.0.9-py3-none-any.whl.zip]
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: End processing [edurpa-google]: success
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: End processing [edurpa-google]: success
+[2024-04-21 04:52:42] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.0.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.1.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-21 04:52:42] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.1.1rc5.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.1.1rc6.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: End processing [tool-use]: success
+[2024-04-21 04:52:42] INFO root fetch - processPackages [pyfetch-mimic]: Remove: archive file [/home/abi/fetcher/tmp/pyfetch_mimic-0.0.4.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - processPackages [pyfetch-mimic]: Remove: archive file [/home/abi/fetcher/tmp/pyfetch_mimic-2024.4.20.tar.gz]
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: End processing [pyfetch-mimic]: success
+[2024-04-21 04:52:42] INFO root fetch - main [MainThread]: Store serial: [22861486]
