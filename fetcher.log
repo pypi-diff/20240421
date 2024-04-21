@@ -15628,3 +15628,30 @@
 [2024-04-21 20:19:09] INFO root fetch - processPackages [inspect-ai]: Remove: archive file [/home/abi/fetcher/tmp/inspect_ai-0.3.2.tar.gz]
 [2024-04-21 20:19:09] INFO root fetch - main [MainThread]: End processing [inspect-ai]: success
 [2024-04-21 20:19:09] INFO root fetch - main [MainThread]: Store serial: [22867308]
+[2024-04-21 20:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867308]
+[2024-04-21 20:21:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 20:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: InstagramProfilePhotosDownloader
+[2024-04-21 20:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nmbrs
+[2024-04-21 20:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dyne
+[2024-04-21 20:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC574
+[2024-04-21 20:21:17] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 20:21:17] INFO root fetch - processPackages [nmbrs]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 20:21:18] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/d0/1f/fc2236140beb1071a557e32e3a7b00d515edc4422bbe46cb379c12529913/nmbrs-0.1.4.tar.gz
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: Downloading https://files.pythonhosted.org/packages/95/4e/9433fe8423304534ee6919a79f0dc1a0d9ad04a53b4ab922ddbca5c273a1/InstagramProfilePhotosDownloader-0.1.2.tar.gz
+[2024-04-21 20:21:18] WARNING root fetch - processPackages [PythonTestLJC574]: Skipping, unable to determine old version
+[2024-04-21 20:21:18] WARNING root fetch - processPackages [dyne]: Skipping, unable to determine old version
+[2024-04-21 20:21:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC574] error
+[2024-04-21 20:21:18] INFO root fetch - main [MainThread]: End processing [dyne] error
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: Downloading https://files.pythonhosted.org/packages/4c/cf/4d0a66f396335401a0e25bc4bc4087b77663a46f615c230000616484f613/InstagramProfilePhotosDownloader-0.1.3-py3-none-any.whl
+[2024-04-21 20:21:18] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/9c/20/dca773c309db89acb5f279cde221e5979a0645fcc81227a72edffd48c25a/nmbrs-0.1.5.tar.gz
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: executing diffoscope
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InstagramProfilePhotosDownloader-0.1.2.tar.gz tmp/InstagramProfilePhotosDownloader-0.1.3-py3-none-any.whl.zip --markdown 20240421/I/InstagramProfilePhotosDownloader/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 20:21:18] INFO root fetch - processPackages [nmbrs]: executing diffoscope
+[2024-04-21 20:21:18] INFO root fetch - processPackages [nmbrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmbrs-0.1.4.tar.gz tmp/nmbrs-0.1.5.tar.gz --markdown 20240421/n/nmbrs/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: Remove: archive file [/home/abi/fetcher/tmp/InstagramProfilePhotosDownloader-0.1.2.tar.gz]
+[2024-04-21 20:21:18] INFO root fetch - processPackages [InstagramProfilePhotosDownloader]: Remove: archive file [/home/abi/fetcher/tmp/InstagramProfilePhotosDownloader-0.1.3-py3-none-any.whl.zip]
+[2024-04-21 20:21:18] INFO root fetch - main [MainThread]: End processing [InstagramProfilePhotosDownloader]: success
+[2024-04-21 20:21:19] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.4.tar.gz]
+[2024-04-21 20:21:19] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.5.tar.gz]
+[2024-04-21 20:21:19] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
+[2024-04-21 20:21:19] INFO root fetch - main [MainThread]: Store serial: [22867324]
