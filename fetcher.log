@@ -1222,3 +1222,33 @@
 [2024-04-21 02:09:14] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-04-21 02:09:14] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-04-21 02:09:14] INFO root fetch - main [MainThread]: Store serial: [22860451]
+[2024-04-21 02:11:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860451]
+[2024-04-21 02:11:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-yahoo-finance-price
+[2024-04-21 02:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openbb-nightly
+[2024-04-21 02:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amino.fix.fix
+[2024-04-21 02:11:24] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.6.dev202404200009] Old Version: [4.1.6.dev202404190009]
+[2024-04-21 02:11:24] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: New version: [0.2.4] Old Version: [0.2.0]
+[2024-04-21 02:11:24] INFO root fetch - processPackages [amino.fix.fix]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-21 02:11:24] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/c0/d2/3e183d487a4ece3885d5e3f8afcaf11e22ce2dbdd430cfbdd916b5a32eda/openbb_nightly-4.1.6.dev202404190009.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: Downloading https://files.pythonhosted.org/packages/54/dc/b5bc05b924433680f394770fa75fe69d51d4842d2c4e04c2df76d5bbb5bc/airbyte-source-yahoo-finance-price-0.2.0.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [amino.fix.fix]: Downloading https://files.pythonhosted.org/packages/59/17/5f6f24877572d0273ee1927d9d5b187616342a0f9828b6f89ed75f65411e/amino_fix_fix-1.1.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/34/64/c146b02e12e287d812ae5c64166a9b7c4e687f46cf9176e582c5591e0c67/openbb_nightly-4.1.6.dev202404200009.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: Downloading https://files.pythonhosted.org/packages/f4/f6/145a8ea77c4f7bc887c145677fa5e83ef92906fca3c4b4551c1cf11ec31a/airbyte_source_yahoo_finance_price-0.2.4.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [amino.fix.fix]: Downloading https://files.pythonhosted.org/packages/32/15/9ac18a3704bc6f181e69f9ce58fe926c0407b9aaf023d2f681387f017f1f/amino_fix_fix-1.1.1.tar.gz
+[2024-04-21 02:11:24] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: executing diffoscope
+[2024-04-21 02:11:24] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-yahoo-finance-price-0.2.0.tar.gz tmp/airbyte_source_yahoo_finance_price-0.2.4.tar.gz --markdown 20240421/a/airbyte-source-yahoo-finance-price/0.2.0-0.2.4/README.md --exclude *.pyd
+[2024-04-21 02:11:24] INFO root fetch - processPackages [amino.fix.fix]: executing diffoscope
+[2024-04-21 02:11:24] INFO root fetch - processPackages [amino.fix.fix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino_fix_fix-1.1.tar.gz tmp/amino_fix_fix-1.1.1.tar.gz --markdown 20240421/a/amino.fix.fix/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-21 02:11:24] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-21 02:11:24] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.6.dev202404190009.tar.gz tmp/openbb_nightly-4.1.6.dev202404200009.tar.gz --markdown 20240421/o/openbb-nightly/4.1.6.dev202404190009-4.1.6.dev202404200009/README.md --exclude *.pyd
+[2024-04-21 02:11:25] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-yahoo-finance-price-0.2.0.tar.gz]
+[2024-04-21 02:11:25] INFO root fetch - processPackages [airbyte-source-yahoo-finance-price]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_yahoo_finance_price-0.2.4.tar.gz]
+[2024-04-21 02:11:25] INFO root fetch - main [MainThread]: End processing [airbyte-source-yahoo-finance-price]: success
+[2024-04-21 02:11:25] INFO root fetch - processPackages [amino.fix.fix]: Remove: archive file [/home/abi/fetcher/tmp/amino_fix_fix-1.1.tar.gz]
+[2024-04-21 02:11:25] INFO root fetch - processPackages [amino.fix.fix]: Remove: archive file [/home/abi/fetcher/tmp/amino_fix_fix-1.1.1.tar.gz]
+[2024-04-21 02:11:25] INFO root fetch - main [MainThread]: End processing [amino.fix.fix]: success
+[2024-04-21 02:11:29] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404190009.tar.gz]
+[2024-04-21 02:11:29] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404200009.tar.gz]
+[2024-04-21 02:11:29] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-21 02:11:29] INFO root fetch - main [MainThread]: Store serial: [22860462]
