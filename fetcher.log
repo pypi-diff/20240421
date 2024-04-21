@@ -5217,3 +5217,24 @@
 [2024-04-21 08:32:07] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
 [2024-04-21 08:32:07] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
 [2024-04-21 08:32:07] INFO root fetch - main [MainThread]: Store serial: [22862412]
+[2024-04-21 08:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862412]
+[2024-04-21 08:34:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyadtpulse
+[2024-04-21 08:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libwrc-python
+[2024-04-21 08:34:16] INFO root fetch - processPackages [pyadtpulse]: New version: [1.2.9b1] Old Version: [1.2.9b0]
+[2024-04-21 08:34:16] INFO root fetch - processPackages [pyadtpulse]: Downloading https://files.pythonhosted.org/packages/2c/22/d6eccf163b5b2232c5bfeae033987bc989328f1f59ef4f77b3c129eaef0b/pyadtpulse-1.2.9b0.tar.gz
+[2024-04-21 08:34:16] INFO root fetch - processPackages [libwrc-python]: New version: [20240421] Old Version: [20240217]
+[2024-04-21 08:34:16] INFO root fetch - processPackages [pyadtpulse]: Downloading https://files.pythonhosted.org/packages/ab/b7/f59e6d9629a658f33950e74fc96f446c87a96429bd507def154256b8a778/pyadtpulse-1.2.9b1.tar.gz
+[2024-04-21 08:34:16] INFO root fetch - processPackages [libwrc-python]: Downloading https://files.pythonhosted.org/packages/0a/ca/e8a5e8632c4c4aa81c3aaeedbfcd7adaf313f6be649b0016572b2418e5f3/libwrc-python-20240217.tar.gz
+[2024-04-21 08:34:16] INFO root fetch - processPackages [pyadtpulse]: executing diffoscope
+[2024-04-21 08:34:16] INFO root fetch - processPackages [pyadtpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyadtpulse-1.2.9b0.tar.gz tmp/pyadtpulse-1.2.9b1.tar.gz --markdown 20240421/p/pyadtpulse/1.2.9b0-1.2.9b1/README.md --exclude *.pyd
+[2024-04-21 08:34:17] INFO root fetch - processPackages [pyadtpulse]: Remove: archive file [/home/abi/fetcher/tmp/pyadtpulse-1.2.9b0.tar.gz]
+[2024-04-21 08:34:17] INFO root fetch - processPackages [pyadtpulse]: Remove: archive file [/home/abi/fetcher/tmp/pyadtpulse-1.2.9b1.tar.gz]
+[2024-04-21 08:34:17] INFO root fetch - main [MainThread]: End processing [pyadtpulse]: success
+[2024-04-21 08:34:18] INFO root fetch - processPackages [libwrc-python]: Downloading https://files.pythonhosted.org/packages/bd/f9/641e64af60110ac8e4948f2373e440a43d607b4a3ad5aa720f6301b38ebb/libwrc-python-20240421.tar.gz
+[2024-04-21 08:34:19] INFO root fetch - processPackages [libwrc-python]: executing diffoscope
+[2024-04-21 08:34:19] INFO root fetch - processPackages [libwrc-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libwrc-python-20240217.tar.gz tmp/libwrc-python-20240421.tar.gz --markdown 20240421/l/libwrc-python/20240217-20240421/README.md --exclude *.pyd
+[2024-04-21 08:34:24] INFO root fetch - processPackages [libwrc-python]: Remove: archive file [/home/abi/fetcher/tmp/libwrc-python-20240217.tar.gz]
+[2024-04-21 08:34:24] INFO root fetch - processPackages [libwrc-python]: Remove: archive file [/home/abi/fetcher/tmp/libwrc-python-20240421.tar.gz]
+[2024-04-21 08:34:24] INFO root fetch - main [MainThread]: End processing [libwrc-python]: success
+[2024-04-21 08:34:24] INFO root fetch - main [MainThread]: Store serial: [22862415]
