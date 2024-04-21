@@ -2683,3 +2683,27 @@
 [2024-04-21 04:11:11] INFO root fetch - processPackages [Red-DiscordBot]: Remove: archive file [/home/abi/fetcher/tmp/Red-DiscordBot-3.5.8.tar.gz]
 [2024-04-21 04:11:11] INFO root fetch - main [MainThread]: End processing [Red-DiscordBot]: success
 [2024-04-21 04:11:11] INFO root fetch - main [MainThread]: Store serial: [22861279]
+[2024-04-21 04:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861279]
+[2024-04-21 04:13:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 04:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Red-DiscordBot
+[2024-04-21 04:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC329
+[2024-04-21 04:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chiasmodon
+[2024-04-21 04:13:21] INFO root fetch - processPackages [chiasmodon]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 04:13:21] INFO root fetch - processPackages [Red-DiscordBot]: New version: [3.5.9] Old Version: [3.5.8]
+[2024-04-21 04:13:21] WARNING root fetch - processPackages [PythonTestLJC329]: Skipping, unable to determine old version
+[2024-04-21 04:13:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC329] error
+[2024-04-21 04:13:21] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/f0/c7/8b583a241070ee0f0c098d035940236c5340904bc45413bdb732e1c7218e/chiasmodon-1.1.8.tar.gz
+[2024-04-21 04:13:21] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/74/83/770ed41e4445b39941fc65b17ef3ba9bc4c3fd45c7fcec723c65b8828926/Red-DiscordBot-3.5.8.tar.gz
+[2024-04-21 04:13:21] INFO root fetch - processPackages [chiasmodon]: Downloading https://files.pythonhosted.org/packages/dd/1b/67ec3f7a82f1fe6fd665d975358abf0bc73cf8b385cb97de5869ac018be5/chiasmodon-1.1.9.tar.gz
+[2024-04-21 04:13:21] INFO root fetch - processPackages [chiasmodon]: executing diffoscope
+[2024-04-21 04:13:21] INFO root fetch - processPackages [chiasmodon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiasmodon-1.1.8.tar.gz tmp/chiasmodon-1.1.9.tar.gz --markdown 20240421/c/chiasmodon/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 04:13:22] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/1c/db/d71c350b10c1ab3c721a4c6a961ad908c6e1451686d14c0a750fb1244f42/red_discordbot-3.5.9.tar.gz
+[2024-04-21 04:13:22] INFO root fetch - processPackages [Red-DiscordBot]: executing diffoscope
+[2024-04-21 04:13:22] INFO root fetch - processPackages [Red-DiscordBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Red-DiscordBot-3.5.8.tar.gz tmp/red_discordbot-3.5.9.tar.gz --markdown 20240421/R/Red-DiscordBot/3.5.8-3.5.9/README.md --exclude *.pyd
+[2024-04-21 04:13:22] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.8.tar.gz]
+[2024-04-21 04:13:22] INFO root fetch - processPackages [chiasmodon]: Remove: archive file [/home/abi/fetcher/tmp/chiasmodon-1.1.9.tar.gz]
+[2024-04-21 04:13:22] INFO root fetch - main [MainThread]: End processing [chiasmodon]: success
+[2024-04-21 04:13:30] INFO root fetch - processPackages [Red-DiscordBot]: Remove: archive file [/home/abi/fetcher/tmp/Red-DiscordBot-3.5.8.tar.gz]
+[2024-04-21 04:13:30] INFO root fetch - processPackages [Red-DiscordBot]: Remove: archive file [/home/abi/fetcher/tmp/red_discordbot-3.5.9.tar.gz]
+[2024-04-21 04:13:30] INFO root fetch - main [MainThread]: End processing [Red-DiscordBot]: success
+[2024-04-21 04:13:30] INFO root fetch - main [MainThread]: Store serial: [22861289]
