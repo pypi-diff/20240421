@@ -17038,3 +17038,66 @@
 [2024-04-21 21:29:19] INFO root fetch - processPackages [darkgraylib]: Remove: archive file [/home/abi/fetcher/tmp/darkgraylib-1.2.1.tar.gz]
 [2024-04-21 21:29:19] INFO root fetch - main [MainThread]: End processing [darkgraylib]: success
 [2024-04-21 21:29:19] INFO root fetch - main [MainThread]: Store serial: [22868054]
+[2024-04-21 21:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868054]
+[2024-04-21 21:31:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kungfupanda
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epyt
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: probe-design
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FunPayPython
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dune-rivals
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tradedangerous
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonTestLJC599
+[2024-04-21 21:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vsmuxtools
+[2024-04-21 21:31:28] INFO root fetch - processPackages [kungfupanda]: New version: [0.5] Old Version: [0.4]
+[2024-04-21 21:31:28] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-21 21:31:28] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-21 21:31:28] WARNING root fetch - processPackages [FunPayPython]: Skipping, unable to determine old version
+[2024-04-21 21:31:28] INFO root fetch - main [MainThread]: End processing [FunPayPython] error
+[2024-04-21 21:31:28] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/29/cc/934b8e38e67a43a3756e093a2a83ee4fdce1e5d543806e1699d3367cb8d8/dune_rivals-0.5.8.tar.gz
+[2024-04-21 21:31:28] WARNING root fetch - processPackages [PythonTestLJC599]: Skipping, unable to determine old version
+[2024-04-21 21:31:28] INFO root fetch - main [MainThread]: End processing [PythonTestLJC599] error
+[2024-04-21 21:31:28] INFO root fetch - processPackages [epyt]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-21 21:31:28] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [probe-design]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 21:31:28] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/19/3e/75855cae094726153b825f52d7f624372ce64b9b604fb4be465035ffe063/kungfupanda-0.4.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [vsmuxtools]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-21 21:31:28] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/c2/d8/41ed4d8645c5e075420289dfca187f5d2ef4841a03c96817ecbbbf1e8712/epyt-1.1.1.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/da/69/0832a915b6b75f98484a730feff4b2bc138b4717c97aab8ce24168747ce8/dune_rivals-0.5.9.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [probe-design]: Downloading https://files.pythonhosted.org/packages/e4/de/217073b59e430d72d25a28f92c27d4dcfed602224c5db64977da9995539e/probe_design-0.2.8.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/f5/be/16e75894deb6c78dbb2e536332b7f3712e41203c5c8dbf9ef7c3efa34448/vsmuxtools-0.0.9.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 21:31:28] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.8.tar.gz tmp/dune_rivals-0.5.9.tar.gz --markdown 20240421/d/dune-rivals/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-21 21:31:28] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/e3/75/b21faca04dae2c143d813b606e169f60d993d905e10e8ec9e4885476a763/kungfupanda-0.5.tar.gz
+[2024-04-21 21:31:28] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-21 21:31:29] INFO root fetch - processPackages [kungfupanda]: executing diffoscope
+[2024-04-21 21:31:29] INFO root fetch - processPackages [kungfupanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kungfupanda-0.4.tar.gz tmp/kungfupanda-0.5.tar.gz --markdown 20240421/k/kungfupanda/0.4-0.5/README.md --exclude *.pyd
+[2024-04-21 21:31:29] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/2c/0d/398e4b851c2c1ad6d91b01c0b9e308e80143292209b67d7261e1b669201d/vsmuxtools-0.1.0.tar.gz
+[2024-04-21 21:31:29] INFO root fetch - processPackages [probe-design]: Downloading https://files.pythonhosted.org/packages/56/10/4d2bc3f41506a6a5373b6d321509f939ebc56944086733654075c23adbba/probe_design-0.2.9.tar.gz
+[2024-04-21 21:31:29] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-21 21:31:29] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240421/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-21 21:31:29] INFO root fetch - processPackages [probe-design]: executing diffoscope
+[2024-04-21 21:31:29] INFO root fetch - processPackages [probe-design]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probe_design-0.2.8.tar.gz tmp/probe_design-0.2.9.tar.gz --markdown 20240421/p/probe-design/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 21:31:29] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.8.tar.gz]
+[2024-04-21 21:31:29] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.9.tar.gz]
+[2024-04-21 21:31:29] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 21:31:29] INFO root fetch - processPackages [vsmuxtools]: executing diffoscope
+[2024-04-21 21:31:29] INFO root fetch - processPackages [vsmuxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsmuxtools-0.0.9.tar.gz tmp/vsmuxtools-0.1.0.tar.gz --markdown 20240421/v/vsmuxtools/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-21 21:31:29] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/0d/c3/7b2e0bf4625b7a27487359d1f9eec9750fb97e45d152052a81509b946bdf/epyt-1.1.2.tar.gz
+[2024-04-21 21:31:29] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.4.tar.gz]
+[2024-04-21 21:31:29] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.5.tar.gz]
+[2024-04-21 21:31:29] INFO root fetch - main [MainThread]: End processing [kungfupanda]: success
+[2024-04-21 21:31:30] INFO root fetch - processPackages [probe-design]: Remove: archive file [/home/abi/fetcher/tmp/probe_design-0.2.8.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - processPackages [probe-design]: Remove: archive file [/home/abi/fetcher/tmp/probe_design-0.2.9.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - main [MainThread]: End processing [probe-design]: success
+[2024-04-21 21:31:30] INFO root fetch - processPackages [vsmuxtools]: Remove: archive file [/home/abi/fetcher/tmp/vsmuxtools-0.0.9.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - processPackages [vsmuxtools]: Remove: archive file [/home/abi/fetcher/tmp/vsmuxtools-0.1.0.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - main [MainThread]: End processing [vsmuxtools]: success
+[2024-04-21 21:31:30] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-21 21:31:30] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-21 21:31:36] INFO root fetch - processPackages [epyt]: executing diffoscope
+[2024-04-21 21:31:36] INFO root fetch - processPackages [epyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt-1.1.1.tar.gz tmp/epyt-1.1.2.tar.gz --markdown 20240421/e/epyt/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-21 21:31:40] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.1.tar.gz]
+[2024-04-21 21:31:40] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.2.tar.gz]
+[2024-04-21 21:31:40] INFO root fetch - main [MainThread]: End processing [epyt]: success
+[2024-04-21 21:31:40] INFO root fetch - main [MainThread]: Store serial: [22868081]
