@@ -15532,3 +15532,39 @@
 [2024-04-21 20:12:38] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.1.0.tar.gz]
 [2024-04-21 20:12:38] INFO root fetch - main [MainThread]: End processing [simple-ddl-parser]: success
 [2024-04-21 20:12:38] INFO root fetch - main [MainThread]: Store serial: [22867260]
+[2024-04-21 20:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867260]
+[2024-04-21 20:14:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC571
+[2024-04-21 20:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-utils-core
+[2024-04-21 20:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tendril-apiserver-core
+[2024-04-21 20:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wifitest
+[2024-04-21 20:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uacp
+[2024-04-21 20:14:47] INFO root fetch - processPackages [wifitest]: New version: [0.1rc1] Old Version: [0.0.1]
+[2024-04-21 20:14:47] WARNING root fetch - processPackages [PythonTestLJC571]: Skipping, unable to determine old version
+[2024-04-21 20:14:47] INFO root fetch - main [MainThread]: End processing [PythonTestLJC571] error
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-apiserver-core]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-21 20:14:47] WARNING root fetch - processPackages [uacp]: Skipping, unable to determine old version
+[2024-04-21 20:14:47] INFO root fetch - main [MainThread]: End processing [uacp] error
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-utils-core]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-21 20:14:47] INFO root fetch - processPackages [wifitest]: Downloading https://files.pythonhosted.org/packages/89/0b/9984bb68c16112c28ffc795b69009fd086d4ab042f3738ad5867ce4c113b/wifitest-0.0.1.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-utils-core]: Downloading https://files.pythonhosted.org/packages/78/7a/c75db77bcc70ae8b82192eaca8f88dcf6294f9d905aa12e9128bab27ceba/tendril-utils-core-0.5.8.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-apiserver-core]: Downloading https://files.pythonhosted.org/packages/0b/f6/a9157feef83ff20168c0130053a9a78ccb2a745b40d1d41dbb4412b5ebe9/tendril_apiserver_core-0.3.4.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [wifitest]: Downloading https://files.pythonhosted.org/packages/79/21/82ceddd7a6aecd9dc41a862e0a6c17fe3fac68a6b4a1b637dc80cb8858b3/wifitest-0.1rc1.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-utils-core]: Downloading https://files.pythonhosted.org/packages/b3/bb/7a5cfe87741b97a84cc6d7a28fe96d2bf24796a04e06e90ae6612da66612/tendril-utils-core-0.5.9.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [tendril-apiserver-core]: Downloading https://files.pythonhosted.org/packages/18/16/41674b9e33f3e4499886c60dfd3499baed454579a79a71dbec47a01a8673/tendril_apiserver_core-0.3.5.tar.gz
+[2024-04-21 20:14:47] INFO root fetch - processPackages [wifitest]: executing diffoscope
+[2024-04-21 20:14:47] INFO root fetch - processPackages [wifitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wifitest-0.0.1.tar.gz tmp/wifitest-0.1rc1.tar.gz --markdown 20240421/w/wifitest/0.0.1-0.1rc1/README.md --exclude *.pyd
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-utils-core]: executing diffoscope
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-utils-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-utils-core-0.5.8.tar.gz tmp/tendril-utils-core-0.5.9.tar.gz --markdown 20240421/t/tendril-utils-core/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-apiserver-core]: executing diffoscope
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-apiserver-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_apiserver_core-0.3.4.tar.gz tmp/tendril_apiserver_core-0.3.5.tar.gz --markdown 20240421/t/tendril-apiserver-core/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-21 20:14:48] INFO root fetch - processPackages [wifitest]: Remove: archive file [/home/abi/fetcher/tmp/wifitest-0.0.1.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - processPackages [wifitest]: Remove: archive file [/home/abi/fetcher/tmp/wifitest-0.1rc1.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - main [MainThread]: End processing [wifitest]: success
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-apiserver-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril_apiserver_core-0.3.4.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-apiserver-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril_apiserver_core-0.3.5.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - main [MainThread]: End processing [tendril-apiserver-core]: success
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.8.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.9.tar.gz]
+[2024-04-21 20:14:48] INFO root fetch - main [MainThread]: End processing [tendril-utils-core]: success
+[2024-04-21 20:14:48] INFO root fetch - main [MainThread]: Store serial: [22867277]
