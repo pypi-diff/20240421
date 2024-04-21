@@ -12645,3 +12645,87 @@
 [2024-04-21 17:10:29] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240421-py3-none-win_amd64.whl.zip]
 [2024-04-21 17:10:29] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-21 17:10:29] INFO root fetch - main [MainThread]: Store serial: [22865871]
+[2024-04-21 17:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865871]
+[2024-04-21 17:12:38] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jetblack-serialization
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpro-int-sb3
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: min1129
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: json-repair
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scrapegraphai
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autalac-de2v2-1-5
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC506
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: plum-dispatch
+[2024-04-21 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: haskellian
+[2024-04-21 17:12:38] WARNING root fetch - processPackages [min1129]: Skipping, unable to determine old version
+[2024-04-21 17:12:38] INFO root fetch - processPackages [min1129]: Start processing: jdDBusDebugger
+[2024-04-21 17:12:38] INFO root fetch - main [MainThread]: End processing [min1129] error
+[2024-04-21 17:12:38] INFO root fetch - processPackages [haskellian]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [scrapegraphai]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [plum-dispatch]: New version: [2.3.4] Old Version: [2.3.3]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [jetblack-serialization]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-04-21 17:12:38] WARNING root fetch - processPackages [PythonTestLJC506]: Skipping, unable to determine old version
+[2024-04-21 17:12:38] INFO root fetch - main [MainThread]: End processing [PythonTestLJC506] error
+[2024-04-21 17:12:38] INFO root fetch - processPackages [mlpro-int-sb3]: New version: [1.0.0] Old Version: [0.1.1]
+[2024-04-21 17:12:38] WARNING root fetch - processPackages [autalac-de2v2-1-5]: Skipping, unable to determine old version
+[2024-04-21 17:12:38] INFO root fetch - main [MainThread]: End processing [autalac-de2v2-1-5] error
+[2024-04-21 17:12:38] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [jdDBusDebugger]: New version: [3.0] Old Version: [2.0]
+[2024-04-21 17:12:38] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/37/b7/8af387c013e2cf994b43b52971e67a24ddc17c962fe5e2e4d797955c5fb5/scrapegraphai-0.2.3.tar.gz
+[2024-04-21 17:12:38] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/9d/19/4028767c4e3129d8747e6c0da4f0c4fed05693bdfac924c82fbec138bfe0/haskellian-0.3.0.tar.gz
+[2024-04-21 17:12:38] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-21 17:12:38] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/ea/d3/a8ad532816528292e1dfbe7f761da24481aab5db9b5b4538f7818b2f1f77/plum_dispatch-2.3.3.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jetblack-serialization]: Downloading https://files.pythonhosted.org/packages/85/73/c5a065ad711277fcc61080ab9602dc9b7042ee7c68ff6e10ccc5f8653116/jetblack-serialization-3.0.1.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [mlpro-int-sb3]: Downloading https://files.pythonhosted.org/packages/fb/35/75cf18ab7fccca43937c456806026f089dd448dfda87f23aef4dcec3e122/mlpro-int-sb3-0.1.1.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jdDBusDebugger]: Downloading https://files.pythonhosted.org/packages/79/18/63d5194465e263b8c24d533ec28afa6979f60d253296ab070e42c924927e/jdDBusDebugger-2.0.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/f9/81/622cc61627a325997a231156287d343fd0bc26e36043a1401147639386c7/scrapegraphai-0.2.4.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/fc/5a/1f59a50c2b2385e6ec573e224da9f72aa03201d39741a3456b1974935fb5/plum_dispatch-2.3.4.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/19/2c/284130f3c3b73ff992a857316ad501e6e3f66cdff00d608844a044f09a6c/haskellian-0.3.1.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.2.3.tar.gz tmp/scrapegraphai-0.2.4.tar.gz --markdown 20240421/s/scrapegraphai/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [plum-dispatch]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jetblack-serialization]: Downloading https://files.pythonhosted.org/packages/56/67/1e4a4e2fac0fa25ff1d32723e6c6a4ce4750fffb155b46da5ae6c2e13f19/jetblack-serialization-3.1.0.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [plum-dispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plum_dispatch-2.3.3.tar.gz tmp/plum_dispatch-2.3.4.tar.gz --markdown 20240421/p/plum-dispatch/2.3.3-2.3.4/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [mlpro-int-sb3]: Downloading https://files.pythonhosted.org/packages/af/66/044ec7e50f2f06b0fb646b6adf3530c6754245d41c8b6a5ef403f0dc025b/mlpro_int_sb3-1.0.0.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.0.tar.gz tmp/haskellian-0.3.1.tar.gz --markdown 20240421/h/haskellian/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jetblack-serialization]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jetblack-serialization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetblack-serialization-3.0.1.tar.gz tmp/jetblack-serialization-3.1.0.tar.gz --markdown 20240421/j/jetblack-serialization/3.0.1-3.1.0/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jdDBusDebugger]: Downloading https://files.pythonhosted.org/packages/05/f4/0c0c4d08b6515789dc5b838ff524501ed2b224739f629ee0fa22f86ce81b/jddbusdebugger-3.0.tar.gz
+[2024-04-21 17:12:39] INFO root fetch - processPackages [mlpro-int-sb3]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [mlpro-int-sb3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpro-int-sb3-0.1.1.tar.gz tmp/mlpro_int_sb3-1.0.0.tar.gz --markdown 20240421/m/mlpro-int-sb3/0.1.1-1.0.0/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240421/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jdDBusDebugger]: executing diffoscope
+[2024-04-21 17:12:39] INFO root fetch - processPackages [jdDBusDebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdDBusDebugger-2.0.tar.gz tmp/jddbusdebugger-3.0.tar.gz --markdown 20240421/j/jdDBusDebugger/2.0-3.0/README.md --exclude *.pyd
+[2024-04-21 17:12:40] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-21 17:12:40] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240421/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-21 17:12:40] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.1.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.2.3.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.2.4.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.3.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [plum-dispatch]: Remove: archive file [/home/abi/fetcher/tmp/plum_dispatch-2.3.4.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [plum-dispatch]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [jetblack-serialization]: Remove: archive file [/home/abi/fetcher/tmp/jetblack-serialization-3.0.1.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [jetblack-serialization]: Remove: archive file [/home/abi/fetcher/tmp/jetblack-serialization-3.1.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [jetblack-serialization]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [mlpro-int-sb3]: Remove: archive file [/home/abi/fetcher/tmp/mlpro-int-sb3-0.1.1.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [mlpro-int-sb3]: Remove: archive file [/home/abi/fetcher/tmp/mlpro_int_sb3-1.0.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [mlpro-int-sb3]: success
+[2024-04-21 17:12:40] INFO root fetch - processPackages [jdDBusDebugger]: Remove: archive file [/home/abi/fetcher/tmp/jdDBusDebugger-2.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - processPackages [jdDBusDebugger]: Remove: archive file [/home/abi/fetcher/tmp/jddbusdebugger-3.0.tar.gz]
+[2024-04-21 17:12:40] INFO root fetch - main [MainThread]: End processing [jdDBusDebugger]: success
+[2024-04-21 17:12:51] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-21 17:12:51] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-21 17:12:51] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-21 17:12:51] INFO root fetch - main [MainThread]: Store serial: [22865907]
