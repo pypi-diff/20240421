@@ -14315,3 +14315,38 @@
 [2024-04-21 18:49:50] INFO root fetch - processPackages [heimdall-tools]: Remove: archive file [/home/abi/fetcher/tmp/heimdall_tools-0.1.1.tar.gz]
 [2024-04-21 18:49:50] INFO root fetch - main [MainThread]: End processing [heimdall-tools]: success
 [2024-04-21 18:49:50] INFO root fetch - main [MainThread]: Store serial: [22866640]
+[2024-04-21 18:51:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866640]
+[2024-04-21 18:51:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 18:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pure-cv
+[2024-04-21 18:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chamco-ragbot
+[2024-04-21 18:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sparkx
+[2024-04-21 18:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-tpu
+[2024-04-21 18:51:58] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 18:51:58] INFO root fetch - processPackages [pure-cv]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-21 18:51:58] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240421] Old Version: [2.17.0.dev20240420]
+[2024-04-21 18:51:58] INFO root fetch - processPackages [sparkx]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-21 18:51:58] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-21 18:51:59] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/39/c8/698a451f5ae7eae734eed89378c8ba1e6acae6dde3695151b90c6b00ff00/pure-cv-0.1.7.tar.gz
+[2024-04-21 18:51:59] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/5b/68/895d8072aa720310f65dbf87bdcc1ae11bf5b44ec46309cb4b04250b60ae/tf_nightly_tpu-2.17.0.dev20240420-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 18:51:59] INFO root fetch - processPackages [sparkx]: Downloading https://files.pythonhosted.org/packages/1b/9b/43596d56a2b24d2d1c0aaf7a1215002f86b9917e5b4e1d4f7fb5bacde92f/sparkx-1.1.1-py3-none-any.whl
+[2024-04-21 18:51:59] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-21 18:51:59] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 220148548>=10485760
+[2024-04-21 18:51:59] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-21 18:51:59] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-21 18:51:59] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240421/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 18:51:59] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-04-21 18:51:59] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-04-21 18:51:59] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure-cv-0.1.7.tar.gz tmp/pure_cv-0.1.8.tar.gz --markdown 20240421/p/pure-cv/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-21 18:51:59] INFO root fetch - processPackages [sparkx]: Downloading https://files.pythonhosted.org/packages/af/a4/c45243985b514635df1b2c3fd53bcc0aa442a164ca96f022212b3e3032c4/sparkx-1.2.0.tar.gz
+[2024-04-21 18:51:59] INFO root fetch - processPackages [sparkx]: executing diffoscope
+[2024-04-21 18:51:59] INFO root fetch - processPackages [sparkx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkx-1.1.1-py3-none-any.whl.zip tmp/sparkx-1.2.0.tar.gz --markdown 20240421/s/sparkx/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-21 18:51:59] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-21 18:51:59] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-21 18:51:59] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-21 18:52:00] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure-cv-0.1.7.tar.gz]
+[2024-04-21 18:52:00] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.8.tar.gz]
+[2024-04-21 18:52:00] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-04-21 18:52:00] INFO root fetch - processPackages [sparkx]: Remove: archive file [/home/abi/fetcher/tmp/sparkx-1.1.1-py3-none-any.whl.zip]
+[2024-04-21 18:52:00] INFO root fetch - processPackages [sparkx]: Remove: archive file [/home/abi/fetcher/tmp/sparkx-1.2.0.tar.gz]
+[2024-04-21 18:52:00] INFO root fetch - main [MainThread]: End processing [sparkx]: success
+[2024-04-21 18:52:00] INFO root fetch - main [MainThread]: Store serial: [22866658]
