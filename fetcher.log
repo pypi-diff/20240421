@@ -12909,3 +12909,63 @@
 [2024-04-21 17:22:47] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
 [2024-04-21 17:22:47] INFO root fetch - main [MainThread]: End processing [simc-support]: success
 [2024-04-21 17:22:47] INFO root fetch - main [MainThread]: Store serial: [22865995]
+[2024-04-21 17:24:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865995]
+[2024-04-21 17:24:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: recs-searcher
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyechelle
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC510
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monacopy
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cellworld-gym
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ABSQL
+[2024-04-21 17:24:56] INFO root fetch - processPackages [monacopy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [moval]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [recs-searcher]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [monacopy]: Downloading https://files.pythonhosted.org/packages/c8/a5/df09fbf8a29671df97833c3fe69ee9e8ddf0ff0ce478d0f6096a78cdc4ca/monacopy-0.0.1.tar.gz
+[2024-04-21 17:24:56] WARNING root fetch - processPackages [PythonTestLJC510]: Skipping, unable to determine old version
+[2024-04-21 17:24:56] INFO root fetch - main [MainThread]: End processing [PythonTestLJC510] error
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ABSQL]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [pyechelle]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [cellworld-gym]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 17:24:56] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/49/3e/fa42fa8e6e7dc02ce4287b5bb107c714f457f3a927732333a56bea864ecf/moval-0.3.3.tar.gz
+[2024-04-21 17:24:56] INFO root fetch - processPackages [pyechelle]: Downloading https://files.pythonhosted.org/packages/58/d9/bb4dc284307408c9d12abd6a9b6c8ed6275d8521e67780958a990bbffd90/pyechelle-0.3.6.tar.gz
+[2024-04-21 17:24:56] INFO root fetch - processPackages [recs-searcher]: Downloading https://files.pythonhosted.org/packages/1a/e4/7fb8ffaf442dae864284c7e3faec81f32d7b2c428b129f3a66c7dbfe28bb/recs-searcher-0.0.8.tar.gz
+[2024-04-21 17:24:56] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/e3/8c/babb695bd7e268d05271fd39a088d3976c83e90353acf2e092b765ffcc60/absql-0.6.1.tar.gz
+[2024-04-21 17:24:56] INFO root fetch - processPackages [cellworld-gym]: Downloading https://files.pythonhosted.org/packages/84/fa/9ba37e2343349ff8d3480c352c91363e271253e099d3405f70ee14c77022/cellworld_gym-0.0.8.tar.gz
+[2024-04-21 17:24:56] INFO root fetch - processPackages [monacopy]: Downloading https://files.pythonhosted.org/packages/08/0c/5a2bacc56207dedf412f83769bbe37455edfc1e1aa6ade2335bdab994101/monacopy-0.0.2.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [monacopy]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [monacopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monacopy-0.0.1.tar.gz tmp/monacopy-0.0.2.tar.gz --markdown 20240421/m/monacopy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/cc/34/bdcd96652af8663c6f27545e2520885f06403f2586654eedcdabb847d860/moval-0.3.4.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [pyechelle]: Downloading https://files.pythonhosted.org/packages/ba/b7/99683ce5ade9a7fddd2f8c15e2400964a376e68089510c4a20bb791caf6c/pyechelle-0.3.7.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/00/55/b47ed44c3feafd2dbcdf56d9b8a481478c41da05e7c3284b048e855e7b4b/absql-0.6.2.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.3.tar.gz tmp/moval-0.3.4.tar.gz --markdown 20240421/m/moval/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [cellworld-gym]: Downloading https://files.pythonhosted.org/packages/9d/53/7082a6dd25f1a1b4bf7e78a266aefe1f1a8f04ca5adb408522f49a869f12/cellworld_gym-0.0.9.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [pyechelle]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [pyechelle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyechelle-0.3.6.tar.gz tmp/pyechelle-0.3.7.tar.gz --markdown 20240421/p/pyechelle/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [recs-searcher]: Downloading https://files.pythonhosted.org/packages/f8/8a/f43fc9bfadb6a92488172945b6bb574043462b71343b46c8086e716a7bfa/recs-searcher-0.0.9.tar.gz
+[2024-04-21 17:24:57] INFO root fetch - processPackages [cellworld-gym]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [cellworld-gym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellworld_gym-0.0.8.tar.gz tmp/cellworld_gym-0.0.9.tar.gz --markdown 20240421/c/cellworld-gym/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [ABSQL]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [ABSQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absql-0.6.1.tar.gz tmp/absql-0.6.2.tar.gz --markdown 20240421/A/ABSQL/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [recs-searcher]: executing diffoscope
+[2024-04-21 17:24:57] INFO root fetch - processPackages [recs-searcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recs-searcher-0.0.8.tar.gz tmp/recs-searcher-0.0.9.tar.gz --markdown 20240421/r/recs-searcher/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 17:24:57] INFO root fetch - processPackages [monacopy]: Remove: archive file [/home/abi/fetcher/tmp/monacopy-0.0.1.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - processPackages [monacopy]: Remove: archive file [/home/abi/fetcher/tmp/monacopy-0.0.2.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - main [MainThread]: End processing [monacopy]: success
+[2024-04-21 17:24:57] INFO root fetch - processPackages [cellworld-gym]: Remove: archive file [/home/abi/fetcher/tmp/cellworld_gym-0.0.8.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - processPackages [cellworld-gym]: Remove: archive file [/home/abi/fetcher/tmp/cellworld_gym-0.0.9.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - main [MainThread]: End processing [cellworld-gym]: success
+[2024-04-21 17:24:57] INFO root fetch - processPackages [pyechelle]: Remove: archive file [/home/abi/fetcher/tmp/pyechelle-0.3.6.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - processPackages [pyechelle]: Remove: archive file [/home/abi/fetcher/tmp/pyechelle-0.3.7.tar.gz]
+[2024-04-21 17:24:57] INFO root fetch - main [MainThread]: End processing [pyechelle]: success
+[2024-04-21 17:24:58] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.3.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.4.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-04-21 17:24:58] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/absql-0.6.1.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/absql-0.6.2.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - main [MainThread]: End processing [ABSQL]: success
+[2024-04-21 17:24:58] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.0.8.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - processPackages [recs-searcher]: Remove: archive file [/home/abi/fetcher/tmp/recs-searcher-0.0.9.tar.gz]
+[2024-04-21 17:24:58] INFO root fetch - main [MainThread]: End processing [recs-searcher]: success
+[2024-04-21 17:24:58] INFO root fetch - main [MainThread]: Store serial: [22866018]
