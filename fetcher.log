@@ -15568,3 +15568,21 @@
 [2024-04-21 20:14:48] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.9.tar.gz]
 [2024-04-21 20:14:48] INFO root fetch - main [MainThread]: End processing [tendril-utils-core]: success
 [2024-04-21 20:14:48] INFO root fetch - main [MainThread]: Store serial: [22867277]
+[2024-04-21 20:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867277]
+[2024-04-21 20:16:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 20:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC572
+[2024-04-21 20:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-serializer-dumps
+[2024-04-21 20:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prodpadlm-client
+[2024-04-21 20:16:57] INFO root fetch - processPackages [prodpadlm-client]: New version: [0.1.1.4.3] Old Version: [0.1.1.4.2]
+[2024-04-21 20:16:57] WARNING root fetch - processPackages [PythonTestLJC572]: Skipping, unable to determine old version
+[2024-04-21 20:16:57] INFO root fetch - main [MainThread]: End processing [PythonTestLJC572] error
+[2024-04-21 20:16:57] WARNING root fetch - processPackages [drf-serializer-dumps]: Skipping, unable to determine old version
+[2024-04-21 20:16:57] INFO root fetch - main [MainThread]: End processing [drf-serializer-dumps] error
+[2024-04-21 20:16:57] INFO root fetch - processPackages [prodpadlm-client]: Downloading https://files.pythonhosted.org/packages/87/57/484adcb278450503ee19e6ad1adffa238e28d97f0e3a6106a4d58e60f08b/prodpadlm_client-0.1.1.4.2.tar.gz
+[2024-04-21 20:16:57] INFO root fetch - processPackages [prodpadlm-client]: Downloading https://files.pythonhosted.org/packages/4e/bd/fe6de217694c91518729531c8c3c28a81cb74f7f35c932f5352187ea4365/prodpadlm_client-0.1.1.4.3.tar.gz
+[2024-04-21 20:16:57] INFO root fetch - processPackages [prodpadlm-client]: executing diffoscope
+[2024-04-21 20:16:57] INFO root fetch - processPackages [prodpadlm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodpadlm_client-0.1.1.4.2.tar.gz tmp/prodpadlm_client-0.1.1.4.3.tar.gz --markdown 20240421/p/prodpadlm-client/0.1.1.4.2-0.1.1.4.3/README.md --exclude *.pyd
+[2024-04-21 20:16:58] INFO root fetch - processPackages [prodpadlm-client]: Remove: archive file [/home/abi/fetcher/tmp/prodpadlm_client-0.1.1.4.2.tar.gz]
+[2024-04-21 20:16:58] INFO root fetch - processPackages [prodpadlm-client]: Remove: archive file [/home/abi/fetcher/tmp/prodpadlm_client-0.1.1.4.3.tar.gz]
+[2024-04-21 20:16:58] INFO root fetch - main [MainThread]: End processing [prodpadlm-client]: success
+[2024-04-21 20:16:58] INFO root fetch - main [MainThread]: Store serial: [22867291]
