@@ -16221,3 +16221,22 @@
 [2024-04-21 20:51:51] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.4.20.tar.gz]
 [2024-04-21 20:51:51] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2024-04-21 20:51:51] INFO root fetch - main [MainThread]: Store serial: [22867587]
+[2024-04-21 20:53:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867587]
+[2024-04-21 20:53:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 20:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: saadha-package
+[2024-04-21 20:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: saadha-package
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: New version: [0.2] Old Version: [0.1]
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: New version: [0.2] Old Version: [0.1]
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: Downloading https://files.pythonhosted.org/packages/14/0f/296b81e279ca6df5359945a65cd505ce3f9a502cd42f39871bb45bbc179e/saadha_package-0.1.tar.gz
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: Downloading https://files.pythonhosted.org/packages/14/0f/296b81e279ca6df5359945a65cd505ce3f9a502cd42f39871bb45bbc179e/saadha_package-0.1.tar.gz
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: Downloading https://files.pythonhosted.org/packages/51/f3/2d2b3c911b682e3eb6d68569531ca42e2b5c0b533645e9266d1bd5cf0fe5/saadha_package-0.2.tar.gz
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: Downloading https://files.pythonhosted.org/packages/51/f3/2d2b3c911b682e3eb6d68569531ca42e2b5c0b533645e9266d1bd5cf0fe5/saadha_package-0.2.tar.gz
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: executing diffoscope
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saadha_package-0.1.tar.gz tmp/saadha_package-0.2.tar.gz --markdown 20240421/s/saadha-package/0.1-0.2/README.md --exclude *.pyd
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: executing diffoscope
+[2024-04-21 20:54:00] INFO root fetch - processPackages [saadha-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saadha_package-0.1.tar.gz tmp/saadha_package-0.2.tar.gz --markdown 20240421/s/saadha-package/0.1-0.2/README.md --exclude *.pyd
+[2024-04-21 20:54:01] INFO root fetch - processPackages [saadha-package]: Remove: archive file [/home/abi/fetcher/tmp/saadha_package-0.1.tar.gz]
+[2024-04-21 20:54:01] INFO root fetch - processPackages [saadha-package]: Remove: archive file [/home/abi/fetcher/tmp/saadha_package-0.2.tar.gz]
+[2024-04-21 20:54:01] INFO root fetch - main [MainThread]: End processing [saadha-package]: success
+[2024-04-21 20:54:01] INFO root fetch - main [MainThread]: End processing [saadha-package]: success
+[2024-04-21 20:54:01] INFO root fetch - main [MainThread]: Store serial: [22867595]
