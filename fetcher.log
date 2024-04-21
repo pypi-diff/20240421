@@ -9534,3 +9534,32 @@
 [2024-04-21 14:12:55] WARNING root fetch - processPackages [PythonTestLJC441]: Skipping, unable to determine old version
 [2024-04-21 14:12:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC441] error
 [2024-04-21 14:12:55] INFO root fetch - main [MainThread]: Store serial: [22864346]
+[2024-04-21 14:14:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864346]
+[2024-04-21 14:15:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 14:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finprotest
+[2024-04-21 14:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyneople
+[2024-04-21 14:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC442
+[2024-04-21 14:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libpss
+[2024-04-21 14:15:04] INFO root fetch - processPackages [libpss]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-21 14:15:04] INFO root fetch - processPackages [finprotest]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 14:15:04] INFO root fetch - processPackages [pyneople]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-04-21 14:15:04] WARNING root fetch - processPackages [PythonTestLJC442]: Skipping, unable to determine old version
+[2024-04-21 14:15:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC442] error
+[2024-04-21 14:15:04] INFO root fetch - processPackages [libpss]: Downloading https://files.pythonhosted.org/packages/3e/04/6ae84eed7dbd20530fce2b0b7752eb4e477cd9f75c45191d855fa626bc15/libpss-0.1.6.tar.gz
+[2024-04-21 14:15:04] WARNING root fetch - processPackages [libpss]: Skipping package: exceeds size limit 12678641>=10485760
+[2024-04-21 14:15:04] INFO root fetch - main [MainThread]: End processing [libpss] error
+[2024-04-21 14:15:04] INFO root fetch - processPackages [finprotest]: Downloading https://files.pythonhosted.org/packages/cf/d6/ba115f12eeea85c1a987693c2f3e91cd5d80021a60228d68355430bb261d/finprotest-0.0.1.tar.gz
+[2024-04-21 14:15:04] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/5a/9f/5904e20076198ead0a71758e9340ae8ff0ba0974eab2c6a02a57cff2fab3/pyneople-0.1.8.tar.gz
+[2024-04-21 14:15:04] INFO root fetch - processPackages [finprotest]: Downloading https://files.pythonhosted.org/packages/0a/41/de97def24c575252da15e5d0337f152c785b87c749cc42d851dd88581a47/finprotest-0.0.2.tar.gz
+[2024-04-21 14:15:04] INFO root fetch - processPackages [finprotest]: executing diffoscope
+[2024-04-21 14:15:04] INFO root fetch - processPackages [finprotest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finprotest-0.0.1.tar.gz tmp/finprotest-0.0.2.tar.gz --markdown 20240421/f/finprotest/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 14:15:04] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/87/99/4e9a2204b4ad654be7d4ce6a8469303aa979f8496c11c294b2da3d19b0cb/pyneople-0.2.0.tar.gz
+[2024-04-21 14:15:05] INFO root fetch - processPackages [pyneople]: executing diffoscope
+[2024-04-21 14:15:05] INFO root fetch - processPackages [pyneople]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyneople-0.1.8.tar.gz tmp/pyneople-0.2.0.tar.gz --markdown 20240421/p/pyneople/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-04-21 14:15:05] INFO root fetch - processPackages [finprotest]: Remove: archive file [/home/abi/fetcher/tmp/finprotest-0.0.1.tar.gz]
+[2024-04-21 14:15:05] INFO root fetch - processPackages [finprotest]: Remove: archive file [/home/abi/fetcher/tmp/finprotest-0.0.2.tar.gz]
+[2024-04-21 14:15:05] INFO root fetch - main [MainThread]: End processing [finprotest]: success
+[2024-04-21 14:15:05] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.1.8.tar.gz]
+[2024-04-21 14:15:05] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.2.0.tar.gz]
+[2024-04-21 14:15:05] INFO root fetch - main [MainThread]: End processing [pyneople]: success
+[2024-04-21 14:15:05] INFO root fetch - main [MainThread]: Store serial: [22864361]
