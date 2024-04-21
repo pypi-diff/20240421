@@ -15766,3 +15766,45 @@
 [2024-04-21 20:27:51] INFO root fetch - processPackages [altimate-datapilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/altimate-datapilot-cli-0.0.9.tar.gz]
 [2024-04-21 20:27:51] INFO root fetch - main [MainThread]: End processing [altimate-datapilot-cli]: success
 [2024-04-21 20:27:51] INFO root fetch - main [MainThread]: Store serial: [22867383]
+[2024-04-21 20:29:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867383]
+[2024-04-21 20:30:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hotsos
+[2024-04-21 20:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lichesspy
+[2024-04-21 20:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTK-Desert
+[2024-04-21 20:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evdspy
+[2024-04-21 20:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC577
+[2024-04-21 20:30:00] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev0] Old Version: [6.0.3]
+[2024-04-21 20:30:00] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-21 20:30:00] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/7a/ea/63657e4bb12f613b5877f5cc6d7168acac631559d502298ef2a098931dbc/lichesspy-6.0.3.tar.gz
+[2024-04-21 20:30:00] WARNING root fetch - processPackages [PythonTestLJC577]: Skipping, unable to determine old version
+[2024-04-21 20:30:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC577] error
+[2024-04-21 20:30:00] INFO root fetch - processPackages [CTK-Desert]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 20:30:00] INFO root fetch - processPackages [evdspy]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-21 20:30:00] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-21 20:30:00] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/9a/73/c7239044a3b6edf571c3f5feded6aab241cff792f7acd98dd42652e44c95/CTK_Desert-0.0.8.tar.gz
+[2024-04-21 20:30:00] INFO root fetch - processPackages [evdspy]: Downloading https://files.pythonhosted.org/packages/e6/b6/7c4651a9553e9cc8eae11f65d80983e032bd9ecea7184aa0e9eaf0aba1ef/evdspy-1.1.8-py2.py3-none-any.whl
+[2024-04-21 20:30:00] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-21 20:30:00] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/6d/6c/2dd553ebaf2118539098a0aeeb85b19f02cc724aecac5bd11e5c8c48eb1e/lichesspy-6.0.4.dev0.tar.gz
+[2024-04-21 20:30:00] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 20:30:00] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.3.tar.gz tmp/lichesspy-6.0.4.dev0.tar.gz --markdown 20240421/l/lichesspy/6.0.3-6.0.4.dev0/README.md --exclude *.pyd
+[2024-04-21 20:30:00] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-21 20:30:00] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240421/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-21 20:30:01] INFO root fetch - processPackages [CTK-Desert]: Downloading https://files.pythonhosted.org/packages/6d/b4/d3af97e7bf9ae492dceb1aad8191e260b603096af0a9755ffd707156f69f/CTK_Desert-0.0.9.tar.gz
+[2024-04-21 20:30:01] INFO root fetch - processPackages [CTK-Desert]: executing diffoscope
+[2024-04-21 20:30:01] INFO root fetch - processPackages [CTK-Desert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTK_Desert-0.0.8.tar.gz tmp/CTK_Desert-0.0.9.tar.gz --markdown 20240421/C/CTK-Desert/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 20:30:01] INFO root fetch - processPackages [evdspy]: Downloading https://files.pythonhosted.org/packages/c8/6d/0ec527adcb04d357a57a3931a6722612d56e460648c4741719c3c34957fe/evdspy-1.1.9-py2.py3-none-any.whl
+[2024-04-21 20:30:01] INFO root fetch - processPackages [evdspy]: executing diffoscope
+[2024-04-21 20:30:01] INFO root fetch - processPackages [evdspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evdspy-1.1.8-py2.py3-none-any.whl.zip tmp/evdspy-1.1.9-py2.py3-none-any.whl.zip --markdown 20240421/e/evdspy/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-21 20:30:01] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.3.tar.gz]
+[2024-04-21 20:30:01] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev0.tar.gz]
+[2024-04-21 20:30:01] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 20:30:01] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.8.tar.gz]
+[2024-04-21 20:30:01] INFO root fetch - processPackages [CTK-Desert]: Remove: archive file [/home/abi/fetcher/tmp/CTK_Desert-0.0.9.tar.gz]
+[2024-04-21 20:30:01] INFO root fetch - main [MainThread]: End processing [CTK-Desert]: success
+[2024-04-21 20:30:02] INFO root fetch - processPackages [evdspy]: Remove: archive file [/home/abi/fetcher/tmp/evdspy-1.1.8-py2.py3-none-any.whl.zip]
+[2024-04-21 20:30:02] INFO root fetch - processPackages [evdspy]: Remove: archive file [/home/abi/fetcher/tmp/evdspy-1.1.9-py2.py3-none-any.whl.zip]
+[2024-04-21 20:30:02] INFO root fetch - main [MainThread]: End processing [evdspy]: success
+[2024-04-21 20:30:02] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-04-21 20:30:02] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-04-21 20:30:02] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-21 20:30:02] INFO root fetch - main [MainThread]: Store serial: [22867400]
