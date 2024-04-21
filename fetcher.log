@@ -8881,3 +8881,18 @@
 [2024-04-21 13:26:25] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.20-py3-none-any.whl.zip]
 [2024-04-21 13:26:25] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
 [2024-04-21 13:26:25] INFO root fetch - main [MainThread]: Store serial: [22863962]
+[2024-04-21 13:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863962]
+[2024-04-21 13:28:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 13:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC432
+[2024-04-21 13:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: throttle-client
+[2024-04-21 13:28:34] INFO root fetch - processPackages [throttle-client]: New version: [0.4.8] Old Version: [0.4.5]
+[2024-04-21 13:28:34] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/95/2c/50b539176a044f5bf5870e9a8681219d56129d395ead90c1302c02807430/throttle_client-0.4.5.tar.gz
+[2024-04-21 13:28:34] WARNING root fetch - processPackages [PythonTestLJC432]: Skipping, unable to determine old version
+[2024-04-21 13:28:34] INFO root fetch - main [MainThread]: End processing [PythonTestLJC432] error
+[2024-04-21 13:28:34] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/e6/61/2fb76dd16caf3df028c7594354ce2721f464f6d6b0ebac349a19807330f3/throttle_client-0.4.8.tar.gz
+[2024-04-21 13:28:34] INFO root fetch - processPackages [throttle-client]: executing diffoscope
+[2024-04-21 13:28:34] INFO root fetch - processPackages [throttle-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/throttle_client-0.4.5.tar.gz tmp/throttle_client-0.4.8.tar.gz --markdown 20240421/t/throttle-client/0.4.5-0.4.8/README.md --exclude *.pyd
+[2024-04-21 13:28:35] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.4.5.tar.gz]
+[2024-04-21 13:28:35] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.4.8.tar.gz]
+[2024-04-21 13:28:35] INFO root fetch - main [MainThread]: End processing [throttle-client]: success
+[2024-04-21 13:28:35] INFO root fetch - main [MainThread]: Store serial: [22863976]
