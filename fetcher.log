@@ -14843,3 +14843,45 @@
 [2024-04-21 19:26:55] INFO root fetch - processPackages [tidal-dl-ng]: Remove: archive file [/home/abi/fetcher/tmp/tidal_dl_ng-0.9.1.tar.gz]
 [2024-04-21 19:26:55] INFO root fetch - main [MainThread]: End processing [tidal-dl-ng]: success
 [2024-04-21 19:26:55] INFO root fetch - main [MainThread]: Store serial: [22866915]
+[2024-04-21 19:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866915]
+[2024-04-21 19:29:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 19:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepeval
+[2024-04-21 19:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psyke
+[2024-04-21 19:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EMGFlow
+[2024-04-21 19:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC555
+[2024-04-21 19:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LLMEasyTools
+[2024-04-21 19:29:04] WARNING root fetch - processPackages [PythonTestLJC555]: Skipping, unable to determine old version
+[2024-04-21 19:29:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC555] error
+[2024-04-21 19:29:04] INFO root fetch - processPackages [EMGFlow]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 19:29:04] INFO root fetch - processPackages [deepeval]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 19:29:04] INFO root fetch - processPackages [LLMEasyTools]: New version: [0.7] Old Version: [0.6]
+[2024-04-21 19:29:04] INFO root fetch - processPackages [psyke]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev8]
+[2024-04-21 19:29:05] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/9b/fc/b1b592371ae864759431feefd1ef338ef2a82662c77857a5be7a8531e0c4/emgflow-1.0.8.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/8b/4e/74892f0e4e740898d3d9bbcb8e3e22adc9d2ca430699cb8a78a8b5e2697b/deepeval-0.9.8.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/4c/87/d0daf125b499e7076b921acf89cc606746e5e1f3a77d1ade86f88680589c/psyke-0.8.2.dev8.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/9b/80/c1092eabc75777a191bf78230411820a82a7b1e68e4a304b08e404a3f6a9/LLMEasyTools-0.6.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/e3/35/012bd93ee623be7ba396bf75809e102c7e480be0327208bb5f814dfbe520/emgflow-1.0.9.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/79/cd/f07ea4ba3fa8fae91bc1bdecc3a7fc8882146f65614215058425221ac2e8/deepeval-0.9.9.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [LLMEasyTools]: Downloading https://files.pythonhosted.org/packages/79/98/e48695c464a9dbdedfa805617ed6b8d50e9fee5aca73ced31b951db267bc/LLMEasyTools-0.7.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [EMGFlow]: executing diffoscope
+[2024-04-21 19:29:05] INFO root fetch - processPackages [EMGFlow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emgflow-1.0.8.tar.gz tmp/emgflow-1.0.9.tar.gz --markdown 20240421/E/EMGFlow/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 19:29:05] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/4d/10/38c1d77a7ecc2283b9776552e9357b48c218e56be545b001f617c2ccd262/psyke-0.8.2.dev9.tar.gz
+[2024-04-21 19:29:05] INFO root fetch - processPackages [deepeval]: executing diffoscope
+[2024-04-21 19:29:05] INFO root fetch - processPackages [deepeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepeval-0.9.8.tar.gz tmp/deepeval-0.9.9.tar.gz --markdown 20240421/d/deepeval/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 19:29:05] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-04-21 19:29:05] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.2.dev8.tar.gz tmp/psyke-0.8.2.dev9.tar.gz --markdown 20240421/p/psyke/0.8.2.dev8-0.8.2.dev9/README.md --exclude *.pyd
+[2024-04-21 19:29:05] INFO root fetch - processPackages [LLMEasyTools]: executing diffoscope
+[2024-04-21 19:29:05] INFO root fetch - processPackages [LLMEasyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LLMEasyTools-0.6.tar.gz tmp/LLMEasyTools-0.7.tar.gz --markdown 20240421/L/LLMEasyTools/0.6-0.7/README.md --exclude *.pyd
+[2024-04-21 19:29:06] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.8.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.9.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - main [MainThread]: End processing [deepeval]: success
+[2024-04-21 19:29:06] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-1.0.8.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-1.0.9.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - main [MainThread]: End processing [EMGFlow]: success
+[2024-04-21 19:29:06] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.6.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - processPackages [LLMEasyTools]: Remove: archive file [/home/abi/fetcher/tmp/LLMEasyTools-0.7.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - main [MainThread]: End processing [LLMEasyTools]: success
+[2024-04-21 19:29:06] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev8.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev9.tar.gz]
+[2024-04-21 19:29:06] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-04-21 19:29:06] INFO root fetch - main [MainThread]: Store serial: [22866932]
