@@ -9594,3 +9594,45 @@
 [2024-04-21 14:19:20] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc83.post1.tar.gz]
 [2024-04-21 14:19:20] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-21 14:19:20] INFO root fetch - main [MainThread]: Store serial: [22864377]
+[2024-04-21 14:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864377]
+[2024-04-21 14:21:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 14:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argrelay
+[2024-04-21 14:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC444
+[2024-04-21 14:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mycalculator-report
+[2024-04-21 14:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-transformation-yfhsi
+[2024-04-21 14:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CachedFileDic
+[2024-04-21 14:21:29] INFO root fetch - processPackages [mycalculator-report]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 14:21:29] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.5.1a0] Old Version: [0.4.1a0]
+[2024-04-21 14:21:29] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/14/ee/7352da00d10956e22af89a8f774d80695e743662a1f251e36eefe5ae9362/data_transformation_yfhsi-0.4.1a0.tar.gz
+[2024-04-21 14:21:29] INFO root fetch - processPackages [CachedFileDic]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-21 14:21:29] WARNING root fetch - processPackages [PythonTestLJC444]: Skipping, unable to determine old version
+[2024-04-21 14:21:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC444] error
+[2024-04-21 14:21:29] INFO root fetch - processPackages [argrelay]: New version: [0.6.9] Old Version: [0.6.8.dev2]
+[2024-04-21 14:21:29] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/7b/93/c2981721fbb884ccc7481aaee7e7b1e4a95626c7a32bf6392d58d9e91023/argrelay-0.6.8.dev2.tar.gz
+[2024-04-21 14:21:29] INFO root fetch - processPackages [mycalculator-report]: Downloading https://files.pythonhosted.org/packages/15/e9/cf6e54e004bff471b7fabd5fd033527f15cc7cbb757a88e88e2abb19e62c/mycalculator_report-0.0.2-py3-none-any.whl
+[2024-04-21 14:21:29] INFO root fetch - processPackages [CachedFileDic]: Downloading https://files.pythonhosted.org/packages/82/88/90f79ff8768bbb21b0ffa61677f7ece93dff97513124ab7bf4f0f7d617c6/CachedFileDic-0.2.2.tar.gz
+[2024-04-21 14:21:30] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/2c/78/050ee5e190ebc03f434d7017ef6b15882eedbae631127177d3ee64810298/data_transformation_yfhsi-0.5.1a0.tar.gz
+[2024-04-21 14:21:30] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-21 14:21:30] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.4.1a0.tar.gz tmp/data_transformation_yfhsi-0.5.1a0.tar.gz --markdown 20240421/d/data-transformation-yfhsi/0.4.1a0-0.5.1a0/README.md --exclude *.pyd
+[2024-04-21 14:21:30] INFO root fetch - processPackages [mycalculator-report]: Downloading https://files.pythonhosted.org/packages/df/b8/a999136c7d88179fae8f532b2ae8ed25ea25a8042769e40aa359be290b6b/mycalculator_report-0.0.3-py3-none-any.whl
+[2024-04-21 14:21:30] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9f/b9/c98fecee4bc15a91526ef7afb17fbc6699846017179c9d846a2e0fa58f93/argrelay-0.6.9.tar.gz
+[2024-04-21 14:21:30] INFO root fetch - processPackages [mycalculator-report]: executing diffoscope
+[2024-04-21 14:21:30] INFO root fetch - processPackages [mycalculator-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycalculator_report-0.0.2-py3-none-any.whl.zip tmp/mycalculator_report-0.0.3-py3-none-any.whl.zip --markdown 20240421/m/mycalculator-report/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 14:21:30] INFO root fetch - processPackages [CachedFileDic]: Downloading https://files.pythonhosted.org/packages/11/bc/18da4f341a06ac6e59335b3c2313cfd2a5b169446ce0be3a850378ac3c7d/CachedFileDic-0.2.3.tar.gz
+[2024-04-21 14:21:30] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-04-21 14:21:30] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.6.8.dev2.tar.gz tmp/argrelay-0.6.9.tar.gz --markdown 20240421/a/argrelay/0.6.8.dev2-0.6.9/README.md --exclude *.pyd
+[2024-04-21 14:21:30] INFO root fetch - processPackages [CachedFileDic]: executing diffoscope
+[2024-04-21 14:21:30] INFO root fetch - processPackages [CachedFileDic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CachedFileDic-0.2.2.tar.gz tmp/CachedFileDic-0.2.3.tar.gz --markdown 20240421/C/CachedFileDic/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-21 14:21:30] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.4.1a0.tar.gz]
+[2024-04-21 14:21:30] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.5.1a0.tar.gz]
+[2024-04-21 14:21:30] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-21 14:21:30] INFO root fetch - processPackages [mycalculator-report]: Remove: archive file [/home/abi/fetcher/tmp/mycalculator_report-0.0.2-py3-none-any.whl.zip]
+[2024-04-21 14:21:30] INFO root fetch - processPackages [mycalculator-report]: Remove: archive file [/home/abi/fetcher/tmp/mycalculator_report-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 14:21:30] INFO root fetch - main [MainThread]: End processing [mycalculator-report]: success
+[2024-04-21 14:21:31] INFO root fetch - processPackages [CachedFileDic]: Remove: archive file [/home/abi/fetcher/tmp/CachedFileDic-0.2.2.tar.gz]
+[2024-04-21 14:21:31] INFO root fetch - processPackages [CachedFileDic]: Remove: archive file [/home/abi/fetcher/tmp/CachedFileDic-0.2.3.tar.gz]
+[2024-04-21 14:21:31] INFO root fetch - main [MainThread]: End processing [CachedFileDic]: success
+[2024-04-21 14:21:31] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.8.dev2.tar.gz]
+[2024-04-21 14:21:31] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
+[2024-04-21 14:21:31] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-04-21 14:21:31] INFO root fetch - main [MainThread]: Store serial: [22864392]
