@@ -10639,3 +10639,36 @@
 [2024-04-21 15:29:10] INFO root fetch - processPackages [adr-viewer]: Remove: archive file [/home/abi/fetcher/tmp/adr-viewer-1.4.0rc1.tar.gz]
 [2024-04-21 15:29:10] INFO root fetch - main [MainThread]: End processing [adr-viewer]: success
 [2024-04-21 15:29:10] INFO root fetch - main [MainThread]: Store serial: [22864928]
+[2024-04-21 15:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864928]
+[2024-04-21 15:31:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC465
+[2024-04-21 15:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpro-int-gymnasium
+[2024-04-21 15:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snapshooter
+[2024-04-21 15:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feature-space
+[2024-04-21 15:31:19] INFO root fetch - processPackages [feature-space]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 15:31:19] INFO root fetch - processPackages [snapshooter]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-21 15:31:19] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/1a/0d/ca043915b369867cdee8f41f56b650fef276eb4732bbb940548056d7af1d/feature_space-0.0.1.tar.gz
+[2024-04-21 15:31:19] INFO root fetch - processPackages [mlpro-int-gymnasium]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-21 15:31:19] INFO root fetch - processPackages [snapshooter]: Downloading https://files.pythonhosted.org/packages/28/3e/3cab03bebdb3f9044ccd02796fe9a80f10f288bdce5c2e9e7b29af49e0d7/snapshooter-1.0.7.tar.gz
+[2024-04-21 15:31:19] WARNING root fetch - processPackages [PythonTestLJC465]: Skipping, unable to determine old version
+[2024-04-21 15:31:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC465] error
+[2024-04-21 15:31:19] INFO root fetch - processPackages [mlpro-int-gymnasium]: Downloading https://files.pythonhosted.org/packages/f5/13/f3035c07399449bf32f0ca26e59c366a07a2716ddb223a01d51c8a24f849/mlpro_int_gymnasium-1.0.0.tar.gz
+[2024-04-21 15:31:19] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/5c/71/d7f73baba1f162cddecb316241b3364ff2bfcbbf0aff1cd6af5ee658d97e/feature_space-0.0.2.tar.gz
+[2024-04-21 15:31:19] INFO root fetch - processPackages [snapshooter]: Downloading https://files.pythonhosted.org/packages/52/6a/0212fa6aacdf06785d5751ec9ab26351fb6390a59d26483e355f853b082b/snapshooter-1.0.8.tar.gz
+[2024-04-21 15:31:19] INFO root fetch - processPackages [feature-space]: executing diffoscope
+[2024-04-21 15:31:19] INFO root fetch - processPackages [feature-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_space-0.0.1.tar.gz tmp/feature_space-0.0.2.tar.gz --markdown 20240421/f/feature-space/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 15:31:19] INFO root fetch - processPackages [snapshooter]: executing diffoscope
+[2024-04-21 15:31:19] INFO root fetch - processPackages [snapshooter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapshooter-1.0.7.tar.gz tmp/snapshooter-1.0.8.tar.gz --markdown 20240421/s/snapshooter/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-21 15:31:19] INFO root fetch - processPackages [mlpro-int-gymnasium]: Downloading https://files.pythonhosted.org/packages/5d/a6/c94b39b3712bbf57519cba659667b25c32c7e950dab86d8925b1848f6842/mlpro_int_gymnasium-1.0.1.tar.gz
+[2024-04-21 15:31:20] INFO root fetch - processPackages [mlpro-int-gymnasium]: executing diffoscope
+[2024-04-21 15:31:20] INFO root fetch - processPackages [mlpro-int-gymnasium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpro_int_gymnasium-1.0.0.tar.gz tmp/mlpro_int_gymnasium-1.0.1.tar.gz --markdown 20240421/m/mlpro-int-gymnasium/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-21 15:31:20] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.1.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.2.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - main [MainThread]: End processing [feature-space]: success
+[2024-04-21 15:31:20] INFO root fetch - processPackages [snapshooter]: Remove: archive file [/home/abi/fetcher/tmp/snapshooter-1.0.7.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - processPackages [snapshooter]: Remove: archive file [/home/abi/fetcher/tmp/snapshooter-1.0.8.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - main [MainThread]: End processing [snapshooter]: success
+[2024-04-21 15:31:20] INFO root fetch - processPackages [mlpro-int-gymnasium]: Remove: archive file [/home/abi/fetcher/tmp/mlpro_int_gymnasium-1.0.0.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - processPackages [mlpro-int-gymnasium]: Remove: archive file [/home/abi/fetcher/tmp/mlpro_int_gymnasium-1.0.1.tar.gz]
+[2024-04-21 15:31:20] INFO root fetch - main [MainThread]: End processing [mlpro-int-gymnasium]: success
+[2024-04-21 15:31:20] INFO root fetch - main [MainThread]: Store serial: [22864941]
