@@ -11920,3 +11920,15 @@
 [2024-04-21 16:30:52] INFO root fetch - processPackages [thefittest]: Remove: archive file [/home/abi/fetcher/tmp/thefittest-0.2.4.tar.gz]
 [2024-04-21 16:30:52] INFO root fetch - main [MainThread]: End processing [thefittest]: success
 [2024-04-21 16:30:52] INFO root fetch - main [MainThread]: Store serial: [22865518]
+[2024-04-21 16:32:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865518]
+[2024-04-21 16:33:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 16:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-dots
+[2024-04-21 16:33:01] INFO root fetch - processPackages [mo-dots]: New version: [9.592.24112] Old Version: [9.584.24095]
+[2024-04-21 16:33:01] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/83/b6/3baa68571ecb7a8b88875688315d1b401246fd058d6a240c4015c50b0e93/mo-dots-9.584.24095.tar.gz
+[2024-04-21 16:33:01] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/79/7c/d698c3aa19e0f293266a4a514fad405088b3bcc454bcbbfb318464d25b50/mo_dots-9.592.24112.tar.gz
+[2024-04-21 16:33:02] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-04-21 16:33:02] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-dots-9.584.24095.tar.gz tmp/mo_dots-9.592.24112.tar.gz --markdown 20240421/m/mo-dots/9.584.24095-9.592.24112/README.md --exclude *.pyd
+[2024-04-21 16:33:02] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo-dots-9.584.24095.tar.gz]
+[2024-04-21 16:33:02] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.592.24112.tar.gz]
+[2024-04-21 16:33:02] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-04-21 16:33:02] INFO root fetch - main [MainThread]: Store serial: [22865521]
