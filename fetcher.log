@@ -11235,3 +11235,59 @@
 [2024-04-21 15:58:01] INFO root fetch - processPackages [a9x-webstatistics-package]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics_package-0.1.3.tar.gz]
 [2024-04-21 15:58:01] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics-package]: success
 [2024-04-21 15:58:01] INFO root fetch - main [MainThread]: Store serial: [22865219]
+[2024-04-21 16:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865219]
+[2024-04-21 16:00:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-flex-report
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziptimezone
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PYield
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: longling
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdfix-sdk
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paicrypto
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: minyeopheo
+[2024-04-21 16:00:10] INFO root fetch - processPackages [longling]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.9] Old Version: [0.10.8]
+[2024-04-21 16:00:10] INFO root fetch - processPackages [django-flex-report]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-04-21 16:00:10] INFO root fetch - processPackages [longling]: Downloading https://files.pythonhosted.org/packages/cd/6c/e7fd75918ff11eea2432f484f5ead1d58db13a64bc5151c7d41ebaf9d5a3/longling-1.4.1.tar.gz
+[2024-04-21 16:00:10] INFO root fetch - processPackages [pdfix-sdk]: New version: [8.0.0] Old Version: [7.3.3]
+[2024-04-21 16:00:10] WARNING root fetch - processPackages [minyeopheo]: Skipping, unable to determine old version
+[2024-04-21 16:00:10] INFO root fetch - main [MainThread]: End processing [minyeopheo] error
+[2024-04-21 16:00:10] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/3f/d8/cec168ca5a4565430e2c5f107439bd7dcb47e0257b71d3baa3f99a36a704/ziptimezone-0.10.8.tar.gz
+[2024-04-21 16:00:10] INFO root fetch - processPackages [paicrypto]: New version: [5.0] Old Version: [3.0]
+[2024-04-21 16:00:10] INFO root fetch - processPackages [PYield]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-21 16:00:10] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/65/16/9ea6d0ae926a42c58f26879990e80494447360ddd5cd319b2b28400d69b4/django-flex-report-0.7.7.tar.gz
+[2024-04-21 16:00:10] INFO root fetch - processPackages [pdfix-sdk]: Downloading https://files.pythonhosted.org/packages/35/ee/67d643c4e786bcd6807a610996617381312a27dcb3f6c6f988a789012cda/pdfix-sdk-7.3.3.tar.gz
+[2024-04-21 16:00:10] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/2e/13/46c642e6bc4dfde54f85e1a697c2dd698b1cd7f3a9d8260a96f26f769c3d/pyield-0.7.3.tar.gz
+[2024-04-21 16:00:10] INFO root fetch - processPackages [paicrypto]: Downloading https://files.pythonhosted.org/packages/ce/88/1cc84b7937ea7a401221fc5c410022250b576678714013ec79085009bba4/paicrypto-3.0.tar.gz
+[2024-04-21 16:00:11] INFO root fetch - processPackages [longling]: Downloading https://files.pythonhosted.org/packages/00/60/95f2e6cfd8db2a1e349093b28ba16391800e1257238478dd3293d83ad27d/longling-1.4.2.tar.gz
+[2024-04-21 16:00:11] WARNING root fetch - processPackages [pdfix-sdk]: Skipping package: exceeds size limit 52334754>=10485760
+[2024-04-21 16:00:11] INFO root fetch - main [MainThread]: End processing [pdfix-sdk] error
+[2024-04-21 16:00:11] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/bf/21/e5b3da6eca2ad05e0174b86e5e3e4f7e036ba1aeef5692c1dad9d4f645a7/ziptimezone-0.10.9.tar.gz
+[2024-04-21 16:00:11] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/02/93/20f32abbd684f543cb22768d0d4606f99c37b4695c47a41d3fce87e9c6ff/django-flex-report-0.7.8.tar.gz
+[2024-04-21 16:00:11] INFO root fetch - processPackages [longling]: executing diffoscope
+[2024-04-21 16:00:11] INFO root fetch - processPackages [longling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longling-1.4.1.tar.gz tmp/longling-1.4.2.tar.gz --markdown 20240421/l/longling/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-04-21 16:00:11] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-21 16:00:11] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.8.tar.gz tmp/ziptimezone-0.10.9.tar.gz --markdown 20240421/z/ziptimezone/0.10.8-0.10.9/README.md --exclude *.pyd
+[2024-04-21 16:00:11] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-04-21 16:00:11] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-flex-report-0.7.7.tar.gz tmp/django-flex-report-0.7.8.tar.gz --markdown 20240421/d/django-flex-report/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-04-21 16:00:11] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/53/37/be93f0fc02143f49d802fc5a417b6eeb844d8b086493a0080a0ed7694551/pyield-0.7.4.tar.gz
+[2024-04-21 16:00:11] INFO root fetch - processPackages [paicrypto]: Downloading https://files.pythonhosted.org/packages/66/46/59e5b4fc6a3ecc1fe75ad42ff24b5c33892502adabebcd968113d5a479f0/paicrypto-5.0.tar.gz
+[2024-04-21 16:00:11] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-21 16:00:11] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.7.3.tar.gz tmp/pyield-0.7.4.tar.gz --markdown 20240421/P/PYield/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-21 16:00:11] INFO root fetch - processPackages [paicrypto]: executing diffoscope
+[2024-04-21 16:00:11] INFO root fetch - processPackages [paicrypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paicrypto-3.0.tar.gz tmp/paicrypto-5.0.tar.gz --markdown 20240421/p/paicrypto/3.0-5.0/README.md --exclude *.pyd
+[2024-04-21 16:00:11] INFO root fetch - processPackages [longling]: Remove: archive file [/home/abi/fetcher/tmp/longling-1.4.1.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - processPackages [longling]: Remove: archive file [/home/abi/fetcher/tmp/longling-1.4.2.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - main [MainThread]: End processing [longling]: success
+[2024-04-21 16:00:11] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.8.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.9.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-21 16:00:11] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.7.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.8.tar.gz]
+[2024-04-21 16:00:11] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-04-21 16:00:12] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.3.tar.gz]
+[2024-04-21 16:00:12] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.4.tar.gz]
+[2024-04-21 16:00:12] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-21 16:00:12] INFO root fetch - processPackages [paicrypto]: Remove: archive file [/home/abi/fetcher/tmp/paicrypto-3.0.tar.gz]
+[2024-04-21 16:00:12] INFO root fetch - processPackages [paicrypto]: Remove: archive file [/home/abi/fetcher/tmp/paicrypto-5.0.tar.gz]
+[2024-04-21 16:00:12] INFO root fetch - main [MainThread]: End processing [paicrypto]: success
+[2024-04-21 16:00:12] INFO root fetch - main [MainThread]: Store serial: [22865242]
