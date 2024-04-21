@@ -6907,3 +6907,42 @@
 [2024-04-21 10:54:20] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.4.4.tar.gz]
 [2024-04-21 10:54:20] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
 [2024-04-21 10:54:20] INFO root fetch - main [MainThread]: Store serial: [22863223]
+[2024-04-21 10:56:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863223]
+[2024-04-21 10:56:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metaffi-api
+[2024-04-21 10:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-proxmoxve
+[2024-04-21 10:56:29] INFO root fetch - processPackages [bellek]: New version: [0.94.1] Old Version: [0.94.0]
+[2024-04-21 10:56:29] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-21 10:56:29] INFO root fetch - processPackages [metaffi-api]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-04-21 10:56:29] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [6.4.1] Old Version: [6.4.0]
+[2024-04-21 10:56:29] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/d5/0c/d87f9ce04618528e89f7cb239ce9a00977ff7fd1207fe382234f3c7e5fed/bellek-0.94.0.tar.gz
+[2024-04-21 10:56:29] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/9a/06/d3a697846a1ccd3da8261a34abd0ad7c4549c3fd588e1b0a7444f38e4742/metaffi_api-0.0.17.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/d3/4c/1a7fc3e9ebcce87cf91e80a12acd94fad79f0e0a5e18e9f2be4e14f8ca3c/pulumi_proxmoxve-6.4.0.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/8f/0e/7a8ae7c691eb57b88da0d1b7b04ff8bdbb8b33db961beec4a9f8629b0915/bellek-0.94.1.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-21 10:56:30] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240421/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-21 10:56:30] INFO root fetch - processPackages [metaffi-api]: Downloading https://files.pythonhosted.org/packages/09/93/c70a0efa5947045e93dbf9beec546f6b7f32ce6b95073fcc265c3499bbf0/metaffi_api-0.0.18.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-21 10:56:30] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.94.0.tar.gz tmp/bellek-0.94.1.tar.gz --markdown 20240421/b/bellek/0.94.0-0.94.1/README.md --exclude *.pyd
+[2024-04-21 10:56:30] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/6c/ae/3c8a7c53895adc33e5e50b8e3f3fdd736699c1413fc4e32f87c7e295488f/pulumi_proxmoxve-6.4.1.tar.gz
+[2024-04-21 10:56:30] INFO root fetch - processPackages [metaffi-api]: executing diffoscope
+[2024-04-21 10:56:30] INFO root fetch - processPackages [metaffi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaffi_api-0.0.17.tar.gz tmp/metaffi_api-0.0.18.tar.gz --markdown 20240421/m/metaffi-api/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-04-21 10:56:30] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2024-04-21 10:56:30] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-6.4.0.tar.gz tmp/pulumi_proxmoxve-6.4.1.tar.gz --markdown 20240421/p/pulumi-proxmoxve/6.4.0-6.4.1/README.md --exclude *.pyd
+[2024-04-21 10:56:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.17.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - processPackages [metaffi-api]: Remove: archive file [/home/abi/fetcher/tmp/metaffi_api-0.0.18.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - main [MainThread]: End processing [metaffi-api]: success
+[2024-04-21 10:56:31] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.94.0.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.94.1.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-21 10:56:31] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.4.0.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.4.1.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2024-04-21 10:56:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-21 10:56:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-21 10:56:31] INFO root fetch - main [MainThread]: Store serial: [22863234]
