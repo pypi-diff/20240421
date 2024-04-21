@@ -4959,3 +4959,24 @@
 [2024-04-21 08:03:42] INFO root fetch - processPackages [vcorelib]: Remove: archive file [/home/abi/fetcher/tmp/vcorelib-3.2.4.tar.gz]
 [2024-04-21 08:03:42] INFO root fetch - main [MainThread]: End processing [vcorelib]: success
 [2024-04-21 08:03:42] INFO root fetch - main [MainThread]: Store serial: [22862313]
+[2024-04-21 08:05:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862313]
+[2024-04-21 08:05:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 08:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuon
+[2024-04-21 08:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commonmeta-py
+[2024-04-21 08:05:51] INFO root fetch - processPackages [nuon]: New version: [0.19.99] Old Version: [0.19.98]
+[2024-04-21 08:05:51] INFO root fetch - processPackages [commonmeta-py]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-21 08:05:51] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/8d/82/73a4a9564f53819f1d2ce0052786b8fbaac8797092a6e5b9ad8368807e5a/nuon-0.19.98.tar.gz
+[2024-04-21 08:05:51] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/52/c0/e7c87877f28428fc995c494cd79586152481d7b23c1e0bbb364b89a4b025/commonmeta_py-0.9.3.tar.gz
+[2024-04-21 08:05:51] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/2e/32/73fde17d65f51538c324ffecb418e1d8709cd44e594ad86a351bb39fa67f/nuon-0.19.99.tar.gz
+[2024-04-21 08:05:51] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/a7/bd/df628255dc3f849e7da2d4b39759e0fb92720cf93c1cfbfa4d9ffff22942/commonmeta_py-0.9.4.tar.gz
+[2024-04-21 08:05:51] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-04-21 08:05:51] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.98.tar.gz tmp/nuon-0.19.99.tar.gz --markdown 20240421/n/nuon/0.19.98-0.19.99/README.md --exclude *.pyd
+[2024-04-21 08:05:51] INFO root fetch - processPackages [commonmeta-py]: executing diffoscope
+[2024-04-21 08:05:51] INFO root fetch - processPackages [commonmeta-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonmeta_py-0.9.3.tar.gz tmp/commonmeta_py-0.9.4.tar.gz --markdown 20240421/c/commonmeta-py/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-21 08:05:52] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.3.tar.gz]
+[2024-04-21 08:05:52] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.4.tar.gz]
+[2024-04-21 08:05:52] INFO root fetch - main [MainThread]: End processing [commonmeta-py]: success
+[2024-04-21 08:05:53] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
+[2024-04-21 08:05:53] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
+[2024-04-21 08:05:53] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-04-21 08:05:53] INFO root fetch - main [MainThread]: Store serial: [22862319]
