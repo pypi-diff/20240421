@@ -2611,3 +2611,27 @@
 [2024-04-21 03:59:59] INFO root fetch - processPackages [django-seeding]: Remove: archive file [/home/abi/fetcher/tmp/django_seeding-1.2.1.tar.gz]
 [2024-04-21 03:59:59] INFO root fetch - main [MainThread]: End processing [django-seeding]: success
 [2024-04-21 03:59:59] INFO root fetch - main [MainThread]: Store serial: [22861161]
+[2024-04-21 04:02:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861161]
+[2024-04-21 04:02:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 04:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nacos-sdk-rust-binding-py
+[2024-04-21 04:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: entelecheia
+[2024-04-21 04:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC325
+[2024-04-21 04:02:07] WARNING root fetch - processPackages [PythonTestLJC325]: Skipping, unable to determine old version
+[2024-04-21 04:02:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC325] error
+[2024-04-21 04:02:07] INFO root fetch - processPackages [entelecheia]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-21 04:02:08] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: New version: [0.3.6a0] Old Version: [0.3.6]
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: Downloading https://files.pythonhosted.org/packages/50/dc/882b17f5e70ad0a60eb3afe8cc13f98a973b1f52be725d61b661cf6d8932/entelecheia-0.3.1.tar.gz
+[2024-04-21 04:02:08] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Downloading https://files.pythonhosted.org/packages/28/2d/669580fbd61d4c5b1e2431bb7fc77151d9e52f6f0b00a32795156ab9be49/nacos_sdk_rust_binding_py-0.3.6-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: Downloading https://files.pythonhosted.org/packages/7d/56/a6e8e12ff5d7c36a719ca4fe5e8ff301d1093cdfe53367e72a06db7939ba/entelecheia-0.3.2.tar.gz
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: executing diffoscope
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entelecheia-0.3.1.tar.gz tmp/entelecheia-0.3.2.tar.gz --markdown 20240421/e/entelecheia/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: Remove: archive file [/home/abi/fetcher/tmp/entelecheia-0.3.1.tar.gz]
+[2024-04-21 04:02:08] INFO root fetch - processPackages [entelecheia]: Remove: archive file [/home/abi/fetcher/tmp/entelecheia-0.3.2.tar.gz]
+[2024-04-21 04:02:08] INFO root fetch - main [MainThread]: End processing [entelecheia]: success
+[2024-04-21 04:02:11] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Downloading https://files.pythonhosted.org/packages/d8/94/3dbe7766391ee9da060fb252a01b4403b0aacf55dd72d5229a7a1f105063/nacos_sdk_rust_binding_py-0.3.6a0.tar.gz
+[2024-04-21 04:02:11] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: executing diffoscope
+[2024-04-21 04:02:11] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacos_sdk_rust_binding_py-0.3.6-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip tmp/nacos_sdk_rust_binding_py-0.3.6a0.tar.gz --markdown 20240421/n/nacos-sdk-rust-binding-py/0.3.6-0.3.6a0/README.md --exclude *.pyd
+[2024-04-21 04:02:15] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.3.6-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-04-21 04:02:15] INFO root fetch - processPackages [nacos-sdk-rust-binding-py]: Remove: archive file [/home/abi/fetcher/tmp/nacos_sdk_rust_binding_py-0.3.6a0.tar.gz]
+[2024-04-21 04:02:15] INFO root fetch - main [MainThread]: End processing [nacos-sdk-rust-binding-py]: success
+[2024-04-21 04:02:15] INFO root fetch - main [MainThread]: Store serial: [22861220]
