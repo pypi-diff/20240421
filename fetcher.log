@@ -16459,3 +16459,72 @@
 [2024-04-21 21:03:04] INFO root fetch - processPackages [pyqint]: Remove: archive file [/home/abi/fetcher/tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-21 21:03:04] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2024-04-21 21:03:04] INFO root fetch - main [MainThread]: Store serial: [22867756]
+[2024-04-21 21:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867756]
+[2024-04-21 21:05:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC589
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipez
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tendril-structures-imageset
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: weo
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lavague
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tmdbapis
+[2024-04-21 21:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: freeze-uuid
+[2024-04-21 21:05:14] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tmdbapis]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/99/ea/5126619e105019c0130af3aec86df87cfb2a96ce7a5018656e1ff0e26567/dune_rivals-0.5.6.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/cb/b1/9ef1c2ae10e178aaaca57e943572bec7770a8e9935279738498792c6a7a0/tmdbapis-1.2.7.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tendril-structures-imageset]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [freeze-uuid]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [lavague]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [weo]: New version: [0.8.3] Old Version: [0.7.4]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [pipez]: New version: [0.0.91] Old Version: [0.0.90]
+[2024-04-21 21:05:14] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/b5/18/4771dfd14429fe73da8b3939664129e5945014cf84b86ee724664ed35388/pipez-0.0.90.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [freeze-uuid]: Downloading https://files.pythonhosted.org/packages/56/d3/43572d41c2aeb8db463fea244a597cd1b587c0ab52e28710e034ad850609/freeze_uuid-0.3.1.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tendril-structures-imageset]: Downloading https://files.pythonhosted.org/packages/17/18/cf65d3cb23fbc43347ad7ac4d7f84c260232e89364beba6f30e6027be38f/tendril-structures-imageset-0.1.8.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [weo]: Downloading https://files.pythonhosted.org/packages/e8/bc/3a6db221240a71f2f1db4e60fe38e305500714e45e3761fd1b41582e5eb8/weo-0.7.4.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/6a/27/50e4953ce5ea5bed911f6b876bc462e17de9fc3cc3a5f44e903cc4e88176/tmdbapis-1.2.9.tar.gz
+[2024-04-21 21:05:14] WARNING root fetch - processPackages [PythonTestLJC589]: Skipping, unable to determine old version
+[2024-04-21 21:05:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC589] error
+[2024-04-21 21:05:14] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/da/6d/d24d3a24f663ff4d79a29a8c72c7bc33e1ff45a92d9e55e50736c7035d71/dune_rivals-0.5.7.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 21:05:14] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.6.tar.gz tmp/dune_rivals-0.5.7.tar.gz --markdown 20240421/d/dune-rivals/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tmdbapis]: executing diffoscope
+[2024-04-21 21:05:14] INFO root fetch - processPackages [tmdbapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmdbapis-1.2.7.tar.gz tmp/tmdbapis-1.2.9.tar.gz --markdown 20240421/t/tmdbapis/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-04-21 21:05:14] INFO root fetch - processPackages [lavague]: Downloading https://files.pythonhosted.org/packages/fb/fc/d3795da907cb8de4abf95d2c6afb9f6947988283a4dcd5e7a1e9e5994c82/lavague-1.0.6.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [freeze-uuid]: Downloading https://files.pythonhosted.org/packages/51/62/ae9c8a7d3554508cd2fcef7b94157a0f9149e1b075a33a0351ab6a43de7b/freeze_uuid-0.4.0.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [weo]: Downloading https://files.pythonhosted.org/packages/b1/26/1a16b526e03d4c559c4855916f190a1b9e26a7f5c98899dbab85d412b416/weo-0.8.3.tar.gz
+[2024-04-21 21:05:14] INFO root fetch - processPackages [freeze-uuid]: executing diffoscope
+[2024-04-21 21:05:14] INFO root fetch - processPackages [freeze-uuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeze_uuid-0.3.1.tar.gz tmp/freeze_uuid-0.4.0.tar.gz --markdown 20240421/f/freeze-uuid/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-21 21:05:15] INFO root fetch - processPackages [lavague]: Downloading https://files.pythonhosted.org/packages/31/d1/0cfe91a31c6d2c5ee49c6ca68dbd67d5686859789142a8739e5bca0b0f64/lavague-1.0.7.tar.gz
+[2024-04-21 21:05:15] INFO root fetch - processPackages [weo]: executing diffoscope
+[2024-04-21 21:05:15] INFO root fetch - processPackages [weo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weo-0.7.4.tar.gz tmp/weo-0.8.3.tar.gz --markdown 20240421/w/weo/0.7.4-0.8.3/README.md --exclude *.pyd
+[2024-04-21 21:05:15] INFO root fetch - processPackages [lavague]: executing diffoscope
+[2024-04-21 21:05:15] INFO root fetch - processPackages [lavague]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lavague-1.0.6.tar.gz tmp/lavague-1.0.7.tar.gz --markdown 20240421/l/lavague/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-21 21:05:15] INFO root fetch - processPackages [tendril-structures-imageset]: Downloading https://files.pythonhosted.org/packages/14/58/73d5225572e6f9f36687db53ef2664f99f317842200fb4ea27b45583b2a3/tendril-structures-imageset-0.1.9.tar.gz
+[2024-04-21 21:05:15] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.6.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.7.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 21:05:15] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/e5/ae/26b4e1b86ea1166857dc29953b6985dc638d190d78068fa4f1f209b4b137/pipez-0.0.91.tar.gz
+[2024-04-21 21:05:15] INFO root fetch - processPackages [tendril-structures-imageset]: executing diffoscope
+[2024-04-21 21:05:15] INFO root fetch - processPackages [tendril-structures-imageset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-structures-imageset-0.1.8.tar.gz tmp/tendril-structures-imageset-0.1.9.tar.gz --markdown 20240421/t/tendril-structures-imageset/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 21:05:15] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.7.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.9.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - main [MainThread]: End processing [tmdbapis]: success
+[2024-04-21 21:05:15] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-21 21:05:15] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.90.tar.gz tmp/pipez-0.0.91.tar.gz --markdown 20240421/p/pipez/0.0.90-0.0.91/README.md --exclude *.pyd
+[2024-04-21 21:05:15] INFO root fetch - processPackages [weo]: Remove: archive file [/home/abi/fetcher/tmp/weo-0.7.4.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - processPackages [weo]: Remove: archive file [/home/abi/fetcher/tmp/weo-0.8.3.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - main [MainThread]: End processing [weo]: success
+[2024-04-21 21:05:15] INFO root fetch - processPackages [freeze-uuid]: Remove: archive file [/home/abi/fetcher/tmp/freeze_uuid-0.3.1.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - processPackages [freeze-uuid]: Remove: archive file [/home/abi/fetcher/tmp/freeze_uuid-0.4.0.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - main [MainThread]: End processing [freeze-uuid]: success
+[2024-04-21 21:05:15] INFO root fetch - processPackages [lavague]: Remove: archive file [/home/abi/fetcher/tmp/lavague-1.0.6.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - processPackages [lavague]: Remove: archive file [/home/abi/fetcher/tmp/lavague-1.0.7.tar.gz]
+[2024-04-21 21:05:15] INFO root fetch - main [MainThread]: End processing [lavague]: success
+[2024-04-21 21:05:16] INFO root fetch - processPackages [tendril-structures-imageset]: Remove: archive file [/home/abi/fetcher/tmp/tendril-structures-imageset-0.1.8.tar.gz]
+[2024-04-21 21:05:16] INFO root fetch - processPackages [tendril-structures-imageset]: Remove: archive file [/home/abi/fetcher/tmp/tendril-structures-imageset-0.1.9.tar.gz]
+[2024-04-21 21:05:16] INFO root fetch - main [MainThread]: End processing [tendril-structures-imageset]: success
+[2024-04-21 21:05:16] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.90.tar.gz]
+[2024-04-21 21:05:16] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.91.tar.gz]
+[2024-04-21 21:05:16] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-21 21:05:16] INFO root fetch - main [MainThread]: Store serial: [22867784]
