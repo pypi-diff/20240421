@@ -5148,3 +5148,15 @@
 [2024-04-21 08:23:27] WARNING root fetch - processPackages [vtuna]: Skipping, unable to determine old version
 [2024-04-21 08:23:27] INFO root fetch - main [MainThread]: End processing [vtuna] error
 [2024-04-21 08:23:27] INFO root fetch - main [MainThread]: Store serial: [22862388]
+[2024-04-21 08:25:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862388]
+[2024-04-21 08:25:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 08:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-04-21 08:25:35] INFO root fetch - processPackages [mteb]: New version: [1.7.0] Old Version: [1.6.9]
+[2024-04-21 08:25:35] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/39/e6/fa07e5c98f057d7eb0090af3864941061ad7740ba54db99ebe917a9659a5/mteb-1.6.9.tar.gz
+[2024-04-21 08:25:36] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/28/8f/efe06e8ef3f3b09d68d5bbcabb979a0d2cf3f6b955f8307feddf794fa338/mteb-1.7.0.tar.gz
+[2024-04-21 08:25:36] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-21 08:25:36] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.6.9.tar.gz tmp/mteb-1.7.0.tar.gz --markdown 20240421/m/mteb/1.6.9-1.7.0/README.md --exclude *.pyd
+[2024-04-21 08:25:37] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.6.9.tar.gz]
+[2024-04-21 08:25:37] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.0.tar.gz]
+[2024-04-21 08:25:37] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-21 08:25:37] INFO root fetch - main [MainThread]: Store serial: [22862392]
