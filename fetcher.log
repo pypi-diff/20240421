@@ -4834,3 +4834,20 @@
 [2024-04-21 07:50:45] WARNING root fetch - processPackages [stock-lab]: Skipping, unable to determine old version
 [2024-04-21 07:50:45] INFO root fetch - main [MainThread]: End processing [stock-lab] error
 [2024-04-21 07:50:45] INFO root fetch - main [MainThread]: Store serial: [22862261]
+[2024-04-21 07:52:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862261]
+[2024-04-21 07:52:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 07:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862261]
+[2024-04-21 07:55:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 07:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackNqueue
+[2024-04-21 07:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modguard
+[2024-04-21 07:55:00] WARNING root fetch - processPackages [stackNqueue]: Skipping, unable to determine old version
+[2024-04-21 07:55:00] INFO root fetch - main [MainThread]: End processing [stackNqueue] error
+[2024-04-21 07:55:00] INFO root fetch - processPackages [modguard]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-21 07:55:00] INFO root fetch - processPackages [modguard]: Downloading https://files.pythonhosted.org/packages/3c/7f/5bf873c9d1834dba81e0a0a72034be760ef2037012cddfdbbeabc7f23dbb/modguard-0.7.0.tar.gz
+[2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: Downloading https://files.pythonhosted.org/packages/d0/75/7e2f22323f00fb9cb07377666b8fe12765102ff2b5b310f9009b326467ba/modguard-0.7.1.tar.gz
+[2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: executing diffoscope
+[2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modguard-0.7.0.tar.gz tmp/modguard-0.7.1.tar.gz --markdown 20240421/m/modguard/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: Remove: archive file [/home/abi/fetcher/tmp/modguard-0.7.0.tar.gz]
+[2024-04-21 07:55:01] INFO root fetch - processPackages [modguard]: Remove: archive file [/home/abi/fetcher/tmp/modguard-0.7.1.tar.gz]
+[2024-04-21 07:55:01] INFO root fetch - main [MainThread]: End processing [modguard]: success
+[2024-04-21 07:55:01] INFO root fetch - main [MainThread]: Store serial: [22862267]
