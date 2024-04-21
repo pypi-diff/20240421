@@ -6696,3 +6696,24 @@
 [2024-04-21 10:32:21] INFO root fetch - processPackages [pycvodes]: Remove: archive file [/home/abi/fetcher/tmp/pycvodes-0.9.2.tar.gz]
 [2024-04-21 10:32:21] INFO root fetch - main [MainThread]: End processing [pycvodes]: success
 [2024-04-21 10:32:21] INFO root fetch - main [MainThread]: Store serial: [22863120]
+[2024-04-21 10:34:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863120]
+[2024-04-21 10:34:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 10:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pwright
+[2024-04-21 10:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-lab
+[2024-04-21 10:34:31] INFO root fetch - processPackages [data-prep-lab]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 10:34:31] INFO root fetch - processPackages [pwright]: New version: [9.3.0] Old Version: [9.2.0]
+[2024-04-21 10:34:31] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/88/56/e64b73281f5ac9698b19eb9f80d0236c009fa7dfe8cd6c61c70f19eb41a1/data_prep_lab-0.1.0.tar.gz
+[2024-04-21 10:34:31] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/c0/1b/c5b641720da4503c1cfc643bcd1279753afbc4fcbba0648cbf50bf9623ac/pwright-9.2.0.tar.gz
+[2024-04-21 10:34:31] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/f7/db/81a8fb1070caae69f24510f1adf351f03f79705710ebf1912fcf15de7011/pwright-9.3.0.tar.gz
+[2024-04-21 10:34:31] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/88/94/f53745c266ce80cbf1bbfd64ae03320ef2883a25602f8c0a1ee5f7882afc/data_prep_lab-0.1.1.tar.gz
+[2024-04-21 10:34:32] INFO root fetch - processPackages [pwright]: executing diffoscope
+[2024-04-21 10:34:32] INFO root fetch - processPackages [pwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwright-9.2.0.tar.gz tmp/pwright-9.3.0.tar.gz --markdown 20240421/p/pwright/9.2.0-9.3.0/README.md --exclude *.pyd
+[2024-04-21 10:34:32] INFO root fetch - processPackages [data-prep-lab]: executing diffoscope
+[2024-04-21 10:34:32] INFO root fetch - processPackages [data-prep-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab-0.1.0.tar.gz tmp/data_prep_lab-0.1.1.tar.gz --markdown 20240421/d/data-prep-lab/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 10:34:32] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.2.0.tar.gz]
+[2024-04-21 10:34:32] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.3.0.tar.gz]
+[2024-04-21 10:34:32] INFO root fetch - main [MainThread]: End processing [pwright]: success
+[2024-04-21 10:34:32] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.0.tar.gz]
+[2024-04-21 10:34:32] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.1.tar.gz]
+[2024-04-21 10:34:32] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
+[2024-04-21 10:34:32] INFO root fetch - main [MainThread]: Store serial: [22863126]
