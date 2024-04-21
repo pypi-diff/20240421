@@ -13490,3 +13490,27 @@
 [2024-04-21 18:01:52] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.2.tar.gz]
 [2024-04-21 18:01:52] INFO root fetch - main [MainThread]: End processing [haskellian]: success
 [2024-04-21 18:01:52] INFO root fetch - main [MainThread]: Store serial: [22866237]
+[2024-04-21 18:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866237]
+[2024-04-21 18:04:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: testirequesti
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ark-mainsail
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emergingtrajectories
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ark-mainsail]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-21 18:04:00] WARNING root fetch - processPackages [testirequesti]: Skipping, unable to determine old version
+[2024-04-21 18:04:00] INFO root fetch - main [MainThread]: End processing [testirequesti] error
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/0b/6a/145e9dc350c36ea93515877c5f13a8f53a0c97a39f67e546c83b13052224/ark-mainsail-1.0.1.tar.gz
+[2024-04-21 18:04:00] INFO root fetch - processPackages [emergingtrajectories]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 18:04:00] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/63/ad/865a49a1829dad8b7764bffaf2d335c8ee0f43d7cec306097082a7c3ef84/ark-mainsail-1.1.0.tar.gz
+[2024-04-21 18:04:00] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/1f/3e/3229d6759c17920a1ecd3722791f03aed62c9a3f9ef850794188474c7fb5/emergingtrajectories-0.2.8.tar.gz
+[2024-04-21 18:04:01] INFO root fetch - processPackages [ark-mainsail]: executing diffoscope
+[2024-04-21 18:04:01] INFO root fetch - processPackages [ark-mainsail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ark-mainsail-1.0.1.tar.gz tmp/ark-mainsail-1.1.0.tar.gz --markdown 20240421/a/ark-mainsail/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/44/2f/dc231c0377b6642a32797154e1fd951c910f0b0cd2dbf06a9b7ef5c3c3cc/emergingtrajectories-0.2.9.tar.gz
+[2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: executing diffoscope
+[2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emergingtrajectories-0.2.8.tar.gz tmp/emergingtrajectories-0.2.9.tar.gz --markdown 20240421/e/emergingtrajectories/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 18:04:01] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.0.1.tar.gz]
+[2024-04-21 18:04:01] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.1.0.tar.gz]
+[2024-04-21 18:04:01] INFO root fetch - main [MainThread]: End processing [ark-mainsail]: success
+[2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.8.tar.gz]
+[2024-04-21 18:04:01] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
+[2024-04-21 18:04:01] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
+[2024-04-21 18:04:01] INFO root fetch - main [MainThread]: Store serial: [22866247]
