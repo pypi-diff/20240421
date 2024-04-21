@@ -13152,3 +13152,27 @@
 [2024-04-21 17:42:20] INFO root fetch - processPackages [asilib]: Remove: archive file [/home/abi/fetcher/tmp/asilib-0.23.0.tar.gz]
 [2024-04-21 17:42:20] INFO root fetch - main [MainThread]: End processing [asilib]: success
 [2024-04-21 17:42:20] INFO root fetch - main [MainThread]: Store serial: [22866104]
+[2024-04-21 17:44:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866104]
+[2024-04-21 17:44:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 17:44:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ldjcourse
+[2024-04-21 17:44:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC517
+[2024-04-21 17:44:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-learning-nlp
+[2024-04-21 17:44:29] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 17:44:29] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-21 17:44:29] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 17:44:29] WARNING root fetch - processPackages [PythonTestLJC517]: Skipping, unable to determine old version
+[2024-04-21 17:44:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC517] error
+[2024-04-21 17:44:29] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/35/01/2a484fe6b6a4ba4dbe15d13397eab1eb346644807eabad995917293734ee/ldjcourse-0.0.5.tar.gz
+[2024-04-21 17:44:29] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-21 17:44:29] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-21 17:44:29] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240421/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/07/c0/82325f0d75c8555f4ab76234017666e656a8e31c121867ad42a42aa2439f/ldjcourse-0.0.6.tar.gz
+[2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.5.tar.gz tmp/ldjcourse-0.0.6.tar.gz --markdown 20240421/l/ldjcourse/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 17:44:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-21 17:44:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-21 17:44:30] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.5.tar.gz]
+[2024-04-21 17:44:30] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.6.tar.gz]
+[2024-04-21 17:44:30] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-21 17:44:30] INFO root fetch - main [MainThread]: Store serial: [22866114]
