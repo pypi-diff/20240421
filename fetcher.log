@@ -8317,3 +8317,81 @@
 [2024-04-21 12:42:39] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.3a1.tar.gz]
 [2024-04-21 12:42:39] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-21 12:42:39] INFO root fetch - main [MainThread]: Store serial: [22863741]
+[2024-04-21 12:44:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863741]
+[2024-04-21 12:44:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baselib
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotgui
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libfwevt-python
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neuanwi02
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OrganisorAndLoginRequiredMixin
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bridgecrew
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bambooai
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ml-indie-tools
+[2024-04-21 12:44:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: oarepo-vocabularies
+[2024-04-21 12:44:48] INFO root fetch - processPackages [baselib]: New version: [1.1.0.2] Old Version: [1.1.0.1b0]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [spotgui]: New version: [0.5.6] Old Version: [0.5.2]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [libfwevt-python]: New version: [20240419] Old Version: [20240416]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/03/ef/23535a1849f9177aca607a5588fc964c0fa58978be31220f77731bfcde2f/baselib-1.1.0.1b0.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [neuanwi02]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-21 12:44:49] WARNING root fetch - processPackages [OrganisorAndLoginRequiredMixin]: Skipping, unable to determine old version
+[2024-04-21 12:44:49] INFO root fetch - main [MainThread]: End processing [OrganisorAndLoginRequiredMixin] error
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bambooai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [oarepo-vocabularies]: New version: [2.0.84] Old Version: [2.0.83]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [spotgui]: Downloading https://files.pythonhosted.org/packages/cb/0f/b5b78b7be14978343c5b9d771f8110ea87bf7d1fb0584f7cddb2e0892f88/spotgui-0.5.2.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-21 12:44:49] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/8f/b8/2aeb219584607f4cd9266c03408e181fcc462eb6f8c60ccd8420ed7049f8/libfwevt-python-20240416.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [neuanwi02]: Downloading https://files.pythonhosted.org/packages/49/46/f0f13094836f13c60727b5e901383056f0607b451ccac9c96b99168f0a9a/neuanwi02-0.0.5-py3-none-any.whl
+[2024-04-21 12:44:49] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/29/b8/25d5c39de00e9707b02a10c4063bd0bbebf1533f4eb3ca07614e4543f763/oarepo-vocabularies-2.0.83.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [baselib]: Downloading https://files.pythonhosted.org/packages/50/a6/bd37c880b39d9ffab7cab3768989e31565d3ccc449b1187abcf3b661dee5/baselib-1.1.0.2.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/32/81/667ba343ba60a295254f89b642987cfea30c5f5389f53750ed5c6b6865c2/bambooai-0.3.8.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/10/ba/dce7980ff0b7c11c6b0d4933f275f376eb8a4c997f0527cc483ac2310c8b/bridgecrew-3.2.8.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [baselib]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [baselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baselib-1.1.0.1b0.tar.gz tmp/baselib-1.1.0.2.tar.gz --markdown 20240421/b/baselib/1.1.0.1b0-1.1.0.2/README.md --exclude *.pyd
+[2024-04-21 12:44:49] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240421/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 12:44:49] INFO root fetch - processPackages [neuanwi02]: Downloading https://files.pythonhosted.org/packages/f4/9d/e669b5903c029f7e89d3514c1abe9ae9d2f466523e361a5834f05433e601/neuanwi02-0.0.6-py3-none-any.whl
+[2024-04-21 12:44:49] INFO root fetch - processPackages [spotgui]: Downloading https://files.pythonhosted.org/packages/5d/40/1c357121eb1a149c57ab9709039d12fad5771a4ca7a10dd3636b02910eca/spotgui-0.5.6.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/88/36/6510d6fcef3de8c94c0ad6070e227209d083d254dfc4f416f44a1cdfa0b0/libfwevt-python-20240419.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [neuanwi02]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [neuanwi02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuanwi02-0.0.5-py3-none-any.whl.zip tmp/neuanwi02-0.0.6-py3-none-any.whl.zip --markdown 20240421/n/neuanwi02/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-21 12:44:49] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/61/6d/7a4ff5baedef9f7b1b14b0b2ec5cedcfea1ff3c37a1bf79a39c1812f7dc3/oarepo_vocabularies-2.0.84.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/ea/a0/d05c4cc2cbb7dcb2bdaea0ccdee9f888f37edeb6b0a643084744079f4939/bambooai-0.3.9.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/f5/cd/d4c4caa7926c87e041723a31e232e562f13e2fa83f05b7451436564fe03f/bridgecrew-3.2.9.tar.gz
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.3.8.tar.gz tmp/bambooai-0.3.9.tar.gz --markdown 20240421/b/bambooai/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 12:44:49] INFO root fetch - processPackages [oarepo-vocabularies]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [oarepo-vocabularies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-vocabularies-2.0.83.tar.gz tmp/oarepo_vocabularies-2.0.84.tar.gz --markdown 20240421/o/oarepo-vocabularies/2.0.83-2.0.84/README.md --exclude *.pyd
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-04-21 12:44:49] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.8.tar.gz tmp/bridgecrew-3.2.9.tar.gz --markdown 20240421/b/bridgecrew/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-21 12:44:50] INFO root fetch - processPackages [libfwevt-python]: executing diffoscope
+[2024-04-21 12:44:50] INFO root fetch - processPackages [libfwevt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libfwevt-python-20240416.tar.gz tmp/libfwevt-python-20240419.tar.gz --markdown 20240421/l/libfwevt-python/20240416-20240419/README.md --exclude *.pyd
+[2024-04-21 12:44:50] INFO root fetch - processPackages [spotgui]: executing diffoscope
+[2024-04-21 12:44:50] INFO root fetch - processPackages [spotgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotgui-0.5.2.tar.gz tmp/spotgui-0.5.6.tar.gz --markdown 20240421/s/spotgui/0.5.2-0.5.6/README.md --exclude *.pyd
+[2024-04-21 12:44:50] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.1b0.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [baselib]: Remove: archive file [/home/abi/fetcher/tmp/baselib-1.1.0.2.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [baselib]: success
+[2024-04-21 12:44:50] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-21 12:44:50] INFO root fetch - processPackages [neuanwi02]: Remove: archive file [/home/abi/fetcher/tmp/neuanwi02-0.0.5-py3-none-any.whl.zip]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [neuanwi02]: Remove: archive file [/home/abi/fetcher/tmp/neuanwi02-0.0.6-py3-none-any.whl.zip]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [neuanwi02]: success
+[2024-04-21 12:44:50] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.8.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.9.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-04-21 12:44:50] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.8.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.9.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2024-04-21 12:44:50] INFO root fetch - processPackages [oarepo-vocabularies]: Remove: archive file [/home/abi/fetcher/tmp/oarepo-vocabularies-2.0.83.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - processPackages [oarepo-vocabularies]: Remove: archive file [/home/abi/fetcher/tmp/oarepo_vocabularies-2.0.84.tar.gz]
+[2024-04-21 12:44:50] INFO root fetch - main [MainThread]: End processing [oarepo-vocabularies]: success
+[2024-04-21 12:44:53] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240416.tar.gz]
+[2024-04-21 12:44:53] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240419.tar.gz]
+[2024-04-21 12:44:53] INFO root fetch - main [MainThread]: End processing [libfwevt-python]: success
+[2024-04-21 12:44:55] INFO root fetch - processPackages [spotgui]: Remove: archive file [/home/abi/fetcher/tmp/spotgui-0.5.2.tar.gz]
+[2024-04-21 12:44:55] INFO root fetch - processPackages [spotgui]: Remove: archive file [/home/abi/fetcher/tmp/spotgui-0.5.6.tar.gz]
+[2024-04-21 12:44:55] INFO root fetch - main [MainThread]: End processing [spotgui]: success
+[2024-04-21 12:44:55] INFO root fetch - main [MainThread]: Store serial: [22863766]
