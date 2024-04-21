@@ -7741,3 +7741,15 @@
 [2024-04-21 11:56:13] INFO root fetch - processPackages [textile-metric]: Remove: archive file [/home/abi/fetcher/tmp/textile_metric-0.0.4.tar.gz]
 [2024-04-21 11:56:13] INFO root fetch - main [MainThread]: End processing [textile-metric]: success
 [2024-04-21 11:56:13] INFO root fetch - main [MainThread]: Store serial: [22863519]
+[2024-04-21 11:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863519]
+[2024-04-21 11:58:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 11:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-04-21 11:58:22] INFO root fetch - processPackages [mteb]: New version: [1.7.3] Old Version: [1.7.2]
+[2024-04-21 11:58:22] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/50/9c/336b55c55e3d0ab5f329f2c86e907d619c4570d4f06eeeb1b29049ded015/mteb-1.7.2.tar.gz
+[2024-04-21 11:58:23] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/49/d8/29f51bfba2a161370887532e191bc9d9d675c257f7c603e1b30e5e3335f1/mteb-1.7.3.tar.gz
+[2024-04-21 11:58:23] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-21 11:58:23] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.2.tar.gz tmp/mteb-1.7.3.tar.gz --markdown 20240421/m/mteb/1.7.2-1.7.3/README.md --exclude *.pyd
+[2024-04-21 11:58:24] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.2.tar.gz]
+[2024-04-21 11:58:24] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.3.tar.gz]
+[2024-04-21 11:58:24] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-21 11:58:24] INFO root fetch - main [MainThread]: Store serial: [22863522]
