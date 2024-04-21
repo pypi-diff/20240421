@@ -16104,3 +16104,45 @@
 [2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
 [2024-04-21 20:43:06] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
 [2024-04-21 20:43:06] INFO root fetch - main [MainThread]: Store serial: [22867520]
+[2024-04-21 20:45:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867520]
+[2024-04-21 20:45:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-04-21 20:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CustomChat
+[2024-04-21 20:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC582
+[2024-04-21 20:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmdbapis
+[2024-04-21 20:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-asynchat
+[2024-04-21 20:45:20] INFO root fetch - processPackages [standard-asynchat]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 20:45:20] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/80/e5/6d47cd2acfe45e8d068fe5202471cfce14193ad179c903eae4e5b2b7c115/standard_asynchat-3.8.19.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [tmdbapis]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-04-21 20:45:20] INFO root fetch - processPackages [CustomChat]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 20:45:20] WARNING root fetch - processPackages [PythonTestLJC582]: Skipping, unable to determine old version
+[2024-04-21 20:45:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC582] error
+[2024-04-21 20:45:20] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 20:45:20] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/cb/b1/9ef1c2ae10e178aaaca57e943572bec7770a8e9935279738498792c6a7a0/tmdbapis-1.2.7.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [CustomChat]: Downloading https://files.pythonhosted.org/packages/b3/85/e856def927a346b4f40a53211e1d447452fe8c16a464cac5222263993656/CustomChat-1.0.8.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/24/c8/0cd0336784cbb408eb6d52c3bdc4233f8b9afdf5e3b8d6423516307d2f42/standard_asynchat-3.9.19-py3-none-any.whl
+[2024-04-21 20:45:20] INFO root fetch - processPackages [standard-asynchat]: executing diffoscope
+[2024-04-21 20:45:20] INFO root fetch - processPackages [standard-asynchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asynchat-3.8.19.tar.gz tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip --markdown 20240421/s/standard-asynchat/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 20:45:20] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/6a/27/50e4953ce5ea5bed911f6b876bc462e17de9fc3cc3a5f44e903cc4e88176/tmdbapis-1.2.9.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [CustomChat]: Downloading https://files.pythonhosted.org/packages/44/81/dea00a5304db33d22fb06f8692d600db4e6361070d26d0828deb7ee8aee9/CustomChat-1.0.9.tar.gz
+[2024-04-21 20:45:20] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-21 20:45:20] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240421/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 20:45:20] INFO root fetch - processPackages [CustomChat]: executing diffoscope
+[2024-04-21 20:45:20] INFO root fetch - processPackages [CustomChat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomChat-1.0.8.tar.gz tmp/CustomChat-1.0.9.tar.gz --markdown 20240421/C/CustomChat/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 20:45:20] INFO root fetch - processPackages [tmdbapis]: executing diffoscope
+[2024-04-21 20:45:20] INFO root fetch - processPackages [tmdbapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmdbapis-1.2.7.tar.gz tmp/tmdbapis-1.2.9.tar.gz --markdown 20240421/t/tmdbapis/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-04-21 20:45:21] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.8.19.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.9.19-py3-none-any.whl.zip]
+[2024-04-21 20:45:21] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
+[2024-04-21 20:45:21] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-21 20:45:21] INFO root fetch - processPackages [CustomChat]: Remove: archive file [/home/abi/fetcher/tmp/CustomChat-1.0.8.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - processPackages [CustomChat]: Remove: archive file [/home/abi/fetcher/tmp/CustomChat-1.0.9.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - main [MainThread]: End processing [CustomChat]: success
+[2024-04-21 20:45:21] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.7.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.9.tar.gz]
+[2024-04-21 20:45:21] INFO root fetch - main [MainThread]: End processing [tmdbapis]: success
+[2024-04-21 20:45:21] INFO root fetch - main [MainThread]: Store serial: [22867537]
