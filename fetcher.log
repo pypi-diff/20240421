@@ -15083,3 +15083,57 @@
 [2024-04-21 19:42:10] INFO root fetch - processPackages [dbt-sqlite]: Remove: archive file [/home/abi/fetcher/tmp/dbt_sqlite-1.5.0.tar.gz]
 [2024-04-21 19:42:10] INFO root fetch - main [MainThread]: End processing [dbt-sqlite]: success
 [2024-04-21 19:42:10] INFO root fetch - main [MainThread]: Store serial: [22867029]
+[2024-04-21 19:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867029]
+[2024-04-21 19:44:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC560
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-x23186925
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mddtoolkit
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cli-FSD
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eirStru
+[2024-04-21 19:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llmflex
+[2024-04-21 19:44:19] INFO root fetch - processPackages [cli-FSD]: New version: [1.0.1] Old Version: [0.9.43]
+[2024-04-21 19:44:19] INFO root fetch - processPackages [eirStru]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-21 19:44:19] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-04-21 19:44:20] INFO root fetch - processPackages [cli-FSD]: Downloading https://files.pythonhosted.org/packages/3f/b6/793ab95d0ac03ed904d01e64918243e66bf49212c51f8f13fa79ac9faffb/cli-FSD-0.9.43.tar.gz
+[2024-04-21 19:44:20] WARNING root fetch - processPackages [PythonTestLJC560]: Skipping, unable to determine old version
+[2024-04-21 19:44:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC560] error
+[2024-04-21 19:44:20] WARNING root fetch - processPackages [test-x23186925]: Skipping, unable to determine old version
+[2024-04-21 19:44:20] INFO root fetch - main [MainThread]: End processing [test-x23186925] error
+[2024-04-21 19:44:20] INFO root fetch - processPackages [mddtoolkit]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-21 19:44:20] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/0e/16/4b882de96742a5eb54d7a6aef403358f252c3df268ab366fbda54f782c70/eirStru-0.3.7.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [llmflex]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-21 19:44:20] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/a3/33/70ab6029974562bd9283602549370b286328e9533c2c154bbd2389fba8d0/dune_rivals-0.4.5.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [mddtoolkit]: Downloading https://files.pythonhosted.org/packages/d8/2f/86ce1747cfbe633e9a702c4791b55084f4297dc2088b4b7eaa661e3c4831/mddtoolkit-0.2.0.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [cli-FSD]: Downloading https://files.pythonhosted.org/packages/b9/37/82e0a1b22a395f31c12f469478a02bc53ce9e67fbfad341e75b1c767e4f3/cli-FSD-1.0.1.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/41/9a/92e5f6941fa788954fce9991427e7eef999cad5ca22581d39ca52d2f7f23/llmflex-0.1.4.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/d5/34/e9768ac710aa6e1820debbff440d0f34d3b81f5c0d376d3873b0e5b81924/dune_rivals-0.5.0.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [cli-FSD]: executing diffoscope
+[2024-04-21 19:44:20] INFO root fetch - processPackages [cli-FSD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli-FSD-0.9.43.tar.gz tmp/cli-FSD-1.0.1.tar.gz --markdown 20240421/c/cli-FSD/0.9.43-1.0.1/README.md --exclude *.pyd
+[2024-04-21 19:44:20] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/b5/2a/25fb95363a9110b32ccbc230c8a5f6207e35c7c5906b6f63320a4ca71535/eirStru-0.3.8.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 19:44:20] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.4.5.tar.gz tmp/dune_rivals-0.5.0.tar.gz --markdown 20240421/d/dune-rivals/0.4.5-0.5.0/README.md --exclude *.pyd
+[2024-04-21 19:44:20] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-21 19:44:20] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.7.tar.gz tmp/eirStru-0.3.8.tar.gz --markdown 20240421/e/eirStru/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-21 19:44:20] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/7e/f2/1d4e894953d4037f27ccfb2503134808588dd7a4a5174b1308c3c51680dd/llmflex-0.1.5.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [mddtoolkit]: Downloading https://files.pythonhosted.org/packages/b4/8f/477cc9a3e7ca95c915aa8b47d8ef13cdcef407d6a5c740c0ed9db3779c5b/mddtoolkit-0.3.0.tar.gz
+[2024-04-21 19:44:20] INFO root fetch - processPackages [mddtoolkit]: executing diffoscope
+[2024-04-21 19:44:20] INFO root fetch - processPackages [mddtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mddtoolkit-0.2.0.tar.gz tmp/mddtoolkit-0.3.0.tar.gz --markdown 20240421/m/mddtoolkit/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-21 19:44:20] INFO root fetch - processPackages [llmflex]: executing diffoscope
+[2024-04-21 19:44:20] INFO root fetch - processPackages [llmflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmflex-0.1.4.tar.gz tmp/llmflex-0.1.5.tar.gz --markdown 20240421/l/llmflex/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-21 19:44:21] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.7.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.8.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-21 19:44:21] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.4.5.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.0.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 19:44:21] INFO root fetch - processPackages [cli-FSD]: Remove: archive file [/home/abi/fetcher/tmp/cli-FSD-0.9.43.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - processPackages [cli-FSD]: Remove: archive file [/home/abi/fetcher/tmp/cli-FSD-1.0.1.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [cli-FSD]: success
+[2024-04-21 19:44:21] INFO root fetch - processPackages [mddtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/mddtoolkit-0.2.0.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - processPackages [mddtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/mddtoolkit-0.3.0.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [mddtoolkit]: success
+[2024-04-21 19:44:21] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.4.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.5.tar.gz]
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: End processing [llmflex]: success
+[2024-04-21 19:44:21] INFO root fetch - main [MainThread]: Store serial: [22867054]
