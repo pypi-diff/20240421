@@ -9124,3 +9124,21 @@
 [2024-04-21 13:42:07] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 13:42:07] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 13:42:07] INFO root fetch - main [MainThread]: Store serial: [22864080]
+[2024-04-21 13:44:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864080]
+[2024-04-21 13:44:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 13:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nestpython
+[2024-04-21 13:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC438
+[2024-04-21 13:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oss-song2
+[2024-04-21 13:44:16] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 13:44:16] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-21 13:44:16] WARNING root fetch - processPackages [oss-song2]: Skipping, unable to determine old version
+[2024-04-21 13:44:16] INFO root fetch - main [MainThread]: End processing [oss-song2] error
+[2024-04-21 13:44:16] WARNING root fetch - processPackages [PythonTestLJC438]: Skipping, unable to determine old version
+[2024-04-21 13:44:16] INFO root fetch - main [MainThread]: End processing [PythonTestLJC438] error
+[2024-04-21 13:44:16] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-21 13:44:16] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-21 13:44:16] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240421/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 13:44:17] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-21 13:44:17] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-21 13:44:17] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-21 13:44:17] INFO root fetch - main [MainThread]: Store serial: [22864092]
