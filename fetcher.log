@@ -3452,3 +3452,36 @@
 [2024-04-21 05:16:33] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.4.tar.gz]
 [2024-04-21 05:16:33] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-21 05:16:33] INFO root fetch - main [MainThread]: Store serial: [22861624]
+[2024-04-21 05:18:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861624]
+[2024-04-21 05:18:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitsunekko-tools
+[2024-04-21 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter_bokeh
+[2024-04-21 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC352
+[2024-04-21 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transcribe-me
+[2024-04-21 05:18:42] INFO root fetch - processPackages [kitsunekko-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 05:18:42] INFO root fetch - processPackages [transcribe-me]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-21 05:18:42] WARNING root fetch - processPackages [PythonTestLJC352]: Skipping, unable to determine old version
+[2024-04-21 05:18:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC352] error
+[2024-04-21 05:18:42] INFO root fetch - processPackages [jupyter_bokeh]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-21 05:18:42] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/16/c4/5b6310cd2c6798b408a1bd9b0fbdf656512ea92726281473c9fcd40d64c4/transcribe_me-0.1.2.tar.gz
+[2024-04-21 05:18:42] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/5e/87/215b77c6e6058c3d33c66921806f3a6b2d317370bb0a732bea4e47c09755/kitsunekko_tools-0.0.2.tar.gz
+[2024-04-21 05:18:42] INFO root fetch - processPackages [jupyter_bokeh]: Downloading https://files.pythonhosted.org/packages/22/6c/9aaf51c67fcf6acaaf889bb8bd5f72a0b0d17bbd43d251312fb15323dcb8/jupyter_bokeh-4.0.3.tar.gz
+[2024-04-21 05:18:42] INFO root fetch - processPackages [transcribe-me]: Downloading https://files.pythonhosted.org/packages/d8/e0/121ed38e223b23becc77233b053fca5465a0844ac9f27394efe342cbbfb5/transcribe_me-0.1.3.tar.gz
+[2024-04-21 05:18:42] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/d8/e2/f2cb1492fa65ade02a93cae1b7215917a0eb4e249ef5cda2c3e4618b34bf/kitsunekko_tools-0.0.3.tar.gz
+[2024-04-21 05:18:42] INFO root fetch - processPackages [transcribe-me]: executing diffoscope
+[2024-04-21 05:18:42] INFO root fetch - processPackages [transcribe-me]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transcribe_me-0.1.2.tar.gz tmp/transcribe_me-0.1.3.tar.gz --markdown 20240421/t/transcribe-me/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-21 05:18:42] INFO root fetch - processPackages [kitsunekko-tools]: executing diffoscope
+[2024-04-21 05:18:42] INFO root fetch - processPackages [kitsunekko-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitsunekko_tools-0.0.2.tar.gz tmp/kitsunekko_tools-0.0.3.tar.gz --markdown 20240421/k/kitsunekko-tools/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 05:18:42] INFO root fetch - processPackages [jupyter_bokeh]: Downloading https://files.pythonhosted.org/packages/80/3f/66755bc8a2c0bf0b88dbcb4d95ae64046edd9e41bc73290394706607f23c/jupyter_bokeh-4.0.4.tar.gz
+[2024-04-21 05:18:43] INFO root fetch - processPackages [jupyter_bokeh]: executing diffoscope
+[2024-04-21 05:18:43] INFO root fetch - processPackages [jupyter_bokeh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_bokeh-4.0.3.tar.gz tmp/jupyter_bokeh-4.0.4.tar.gz --markdown 20240421/j/jupyter_bokeh/4.0.3-4.0.4/README.md --exclude *.pyd
+[2024-04-21 05:18:43] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-0.0.2.tar.gz]
+[2024-04-21 05:18:43] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-0.0.3.tar.gz]
+[2024-04-21 05:18:43] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools]: success
+[2024-04-21 05:18:43] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.2.tar.gz]
+[2024-04-21 05:18:43] INFO root fetch - processPackages [transcribe-me]: Remove: archive file [/home/abi/fetcher/tmp/transcribe_me-0.1.3.tar.gz]
+[2024-04-21 05:18:43] INFO root fetch - main [MainThread]: End processing [transcribe-me]: success
+[2024-04-21 05:18:44] INFO root fetch - processPackages [jupyter_bokeh]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_bokeh-4.0.3.tar.gz]
+[2024-04-21 05:18:44] INFO root fetch - processPackages [jupyter_bokeh]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_bokeh-4.0.4.tar.gz]
+[2024-04-21 05:18:44] INFO root fetch - main [MainThread]: End processing [jupyter_bokeh]: success
+[2024-04-21 05:18:44] INFO root fetch - main [MainThread]: Store serial: [22861640]
