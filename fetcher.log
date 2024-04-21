@@ -11735,3 +11735,45 @@
 [2024-04-21 16:19:59] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-04-21 16:19:59] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-04-21 16:19:59] INFO root fetch - main [MainThread]: Store serial: [22865451]
+[2024-04-21 16:22:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865451]
+[2024-04-21 16:22:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 16:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sae-vis
+[2024-04-21 16:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyweatherfr
+[2024-04-21 16:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neuralnetlib
+[2024-04-21 16:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beepy-web
+[2024-04-21 16:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moss-cappa
+[2024-04-21 16:22:07] INFO root fetch - processPackages [neuralnetlib]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-21 16:22:07] INFO root fetch - processPackages [beepy-web]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 16:22:07] INFO root fetch - processPackages [pyweatherfr]: New version: [5.3.0] Old Version: [5.2.5]
+[2024-04-21 16:22:07] WARNING root fetch - processPackages [moss-cappa]: Skipping, unable to determine old version
+[2024-04-21 16:22:07] INFO root fetch - main [MainThread]: End processing [moss-cappa] error
+[2024-04-21 16:22:07] INFO root fetch - processPackages [sae-vis]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-21 16:22:07] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/1b/3d/8b58243ebd92987e366a8109f99d81e40f1eb0367dafb0eedcc26dc48196/pyweatherfr-5.2.5.tar.gz
+[2024-04-21 16:22:07] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/8a/06/e97fa0aaa89cabae58e07f6a5b6e240af1cf7e5f64ab4915f027abffbe9f/neuralnetlib-2.1.0.tar.gz
+[2024-04-21 16:22:07] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/d7/3f/b7d3e31509c0ecfb60a9aefd8a4e605a3da71962ea5a0eee9eb4c2ed3fc3/beepy_web-0.9.8.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/41/60/b7fdf368aed9c8dd61c0db677bd692930cc6ea73b861fd2925fab6460c71/sae-vis-0.2.8.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/9a/d8/3f26a6d88a92c5b934e32fe091ab6fb94396845bd0185820c727286dd363/pyweatherfr-5.3.0.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-21 16:22:08] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.2.5.tar.gz tmp/pyweatherfr-5.3.0.tar.gz --markdown 20240421/p/pyweatherfr/5.2.5-5.3.0/README.md --exclude *.pyd
+[2024-04-21 16:22:08] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/84/6d/92d5d901b7fc3e5bf2db3df4989f38f8ba2deb7e723ac23bd075e0098d4b/neuralnetlib-2.2.0.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/8c/3e/2b4aeafca1e0f40864da2b1218629441331ed758319d572d96c2a72c933f/beepy_web-0.9.9.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [beepy-web]: executing diffoscope
+[2024-04-21 16:22:08] INFO root fetch - processPackages [beepy-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beepy_web-0.9.8.tar.gz tmp/beepy_web-0.9.9.tar.gz --markdown 20240421/b/beepy-web/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 16:22:08] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/7f/ab/3d421c7c8ad6574d57aec3c2ae9cf540fd37978ef92c9492e7a82839af9d/sae-vis-0.2.9.tar.gz
+[2024-04-21 16:22:08] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-04-21 16:22:08] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-2.1.0.tar.gz tmp/neuralnetlib-2.2.0.tar.gz --markdown 20240421/n/neuralnetlib/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-21 16:22:08] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-21 16:22:08] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.8.tar.gz tmp/sae-vis-0.2.9.tar.gz --markdown 20240421/s/sae-vis/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-21 16:22:08] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.2.5.tar.gz]
+[2024-04-21 16:22:08] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.0.tar.gz]
+[2024-04-21 16:22:08] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-21 16:22:09] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.1.0.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.2.0.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-04-21 16:22:09] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.8.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.9.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-21 16:22:09] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.8.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.9.tar.gz]
+[2024-04-21 16:22:09] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
+[2024-04-21 16:22:09] INFO root fetch - main [MainThread]: Store serial: [22865466]
