@@ -10887,3 +10887,42 @@
 [2024-04-21 15:42:14] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.5.tar.gz]
 [2024-04-21 15:42:14] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
 [2024-04-21 15:42:14] INFO root fetch - main [MainThread]: Store serial: [22865032]
+[2024-04-21 15:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865032]
+[2024-04-21 15:44:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-dread-rando
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smaht-submitr
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyclonedx-bom
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CVE-2023-29489
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC474
+[2024-04-21 15:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datable-ai
+[2024-04-21 15:44:23] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.4.1] Old Version: [4.4.0]
+[2024-04-21 15:44:23] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.0.1b9] Old Version: [0.8.0.1b8]
+[2024-04-21 15:44:23] INFO root fetch - processPackages [open-dread-rando]: New version: [2.9.0] Old Version: [2.8.3]
+[2024-04-21 15:44:23] WARNING root fetch - processPackages [CVE-2023-29489]: Skipping, unable to determine old version
+[2024-04-21 15:44:23] INFO root fetch - main [MainThread]: End processing [CVE-2023-29489] error
+[2024-04-21 15:44:23] WARNING root fetch - processPackages [PythonTestLJC474]: Skipping, unable to determine old version
+[2024-04-21 15:44:23] INFO root fetch - main [MainThread]: End processing [PythonTestLJC474] error
+[2024-04-21 15:44:23] WARNING root fetch - processPackages [datable-ai]: Skipping, unable to determine old version
+[2024-04-21 15:44:23] INFO root fetch - main [MainThread]: End processing [datable-ai] error
+[2024-04-21 15:44:23] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/d7/e6/3c4c2f7d549cfe2535d86967f5382ab3561bc2742db12605eeb302da7755/cyclonedx_bom-4.4.0.tar.gz
+[2024-04-21 15:44:23] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/79/ad/69a49972361f3dd7698be4e52572630203c3c66d2562b3864e2814efd485/smaht_submitr-0.8.0.1b8.tar.gz
+[2024-04-21 15:44:23] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/2e/10/88c91f289de46189e8c8a0c7b5bb55acf28fd440b8489e47618e2f53b049/open-dread-rando-2.8.3.tar.gz
+[2024-04-21 15:44:23] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/a9/b9/54c39138072c920a1d8d5107253bf98513c92a68aae12fec8962cedc0dd9/smaht_submitr-0.8.0.1b9.tar.gz
+[2024-04-21 15:44:23] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-21 15:44:23] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.0.1b8.tar.gz tmp/smaht_submitr-0.8.0.1b9.tar.gz --markdown 20240421/s/smaht-submitr/0.8.0.1b8-0.8.0.1b9/README.md --exclude *.pyd
+[2024-04-21 15:44:23] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/07/34/02d247f9dfb5488948e55a30025da096c77c48f11245b578313b0f65ce0f/cyclonedx_bom-4.4.1.tar.gz
+[2024-04-21 15:44:24] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-21 15:44:24] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.4.0.tar.gz tmp/cyclonedx_bom-4.4.1.tar.gz --markdown 20240421/c/cyclonedx-bom/4.4.0-4.4.1/README.md --exclude *.pyd
+[2024-04-21 15:44:24] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b8.tar.gz]
+[2024-04-21 15:44:24] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b9.tar.gz]
+[2024-04-21 15:44:24] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-21 15:44:24] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/d6/ee/313af16cec0c3e6cf0d9740ad07d7139f8ec8977f7a53c50d41ae6e6e461/open-dread-rando-2.9.0.tar.gz
+[2024-04-21 15:44:25] INFO root fetch - processPackages [open-dread-rando]: executing diffoscope
+[2024-04-21 15:44:25] INFO root fetch - processPackages [open-dread-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-dread-rando-2.8.3.tar.gz tmp/open-dread-rando-2.9.0.tar.gz --markdown 20240421/o/open-dread-rando/2.8.3-2.9.0/README.md --exclude *.pyd
+[2024-04-21 15:44:26] INFO root fetch - processPackages [open-dread-rando]: Remove: archive file [/home/abi/fetcher/tmp/open-dread-rando-2.8.3.tar.gz]
+[2024-04-21 15:44:26] INFO root fetch - processPackages [open-dread-rando]: Remove: archive file [/home/abi/fetcher/tmp/open-dread-rando-2.9.0.tar.gz]
+[2024-04-21 15:44:26] INFO root fetch - main [MainThread]: End processing [open-dread-rando]: success
+[2024-04-21 15:44:32] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.4.0.tar.gz]
+[2024-04-21 15:44:32] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.4.1.tar.gz]
+[2024-04-21 15:44:32] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-21 15:44:32] INFO root fetch - main [MainThread]: Store serial: [22865060]
