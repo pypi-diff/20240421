@@ -1865,3 +1865,21 @@
 [2024-04-21 02:40:52] INFO root fetch - processPackages [pyxtal]: Remove: archive file [/home/abi/fetcher/tmp/pyxtal-0.6.5.tar.gz]
 [2024-04-21 02:40:52] INFO root fetch - main [MainThread]: End processing [pyxtal]: success
 [2024-04-21 02:40:52] INFO root fetch - main [MainThread]: Store serial: [22860717]
+[2024-04-21 02:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860717]
+[2024-04-21 02:43:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ck-apstra-api
+[2024-04-21 02:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC303
+[2024-04-21 02:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transcribe-me
+[2024-04-21 02:43:00] INFO root fetch - processPackages [ck-apstra-api]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-21 02:43:00] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/dc/40/ee507ae501e4a3b7aca59c4548c03f984a891162adc467495e853534a882/ck_apstra_api-0.2.9.tar.gz
+[2024-04-21 02:43:00] ERROR root fetch - processPackages [transcribe-me]: Unable to get metadata: No such project 'transcribe-me'
+[2024-04-21 02:43:00] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-21 02:43:00] WARNING root fetch - processPackages [PythonTestLJC303]: Skipping, unable to determine old version
+[2024-04-21 02:43:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC303] error
+[2024-04-21 02:43:01] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/2a/7e/ba69e7c241bd376143c9ba62b6a5add369eb6b2fcb4b6fd68d391bf209d9/ck_apstra_api-0.3.0.tar.gz
+[2024-04-21 02:43:01] INFO root fetch - processPackages [ck-apstra-api]: executing diffoscope
+[2024-04-21 02:43:01] INFO root fetch - processPackages [ck-apstra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ck_apstra_api-0.2.9.tar.gz tmp/ck_apstra_api-0.3.0.tar.gz --markdown 20240421/c/ck-apstra-api/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-21 02:43:02] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.9.tar.gz]
+[2024-04-21 02:43:02] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.3.0.tar.gz]
+[2024-04-21 02:43:02] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
+[2024-04-21 02:43:02] INFO root fetch - main [MainThread]: Store serial: [22860728]
