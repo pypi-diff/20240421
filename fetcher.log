@@ -2002,3 +2002,36 @@
 [2024-04-21 02:55:06] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-21 02:55:06] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-21 02:55:06] INFO root fetch - main [MainThread]: Store serial: [22860826]
+[2024-04-21 02:57:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860826]
+[2024-04-21 02:57:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 02:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaarlo
+[2024-04-21 02:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plantable
+[2024-04-21 02:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC308
+[2024-04-21 02:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-curl
+[2024-04-21 02:57:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-21 02:57:14] INFO root fetch - processPackages [plantable]: New version: [2024.4.1] Old Version: [2024.1.2]
+[2024-04-21 02:57:14] WARNING root fetch - processPackages [PythonTestLJC308]: Skipping, unable to determine old version
+[2024-04-21 02:57:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC308] error
+[2024-04-21 02:57:14] INFO root fetch - processPackages [pyaarlo]: New version: [0.8.0b9] Old Version: [0.8.0b8]
+[2024-04-21 02:57:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-21 02:57:14] INFO root fetch - processPackages [plantable]: Downloading https://files.pythonhosted.org/packages/c4/5d/10a7f77f79309e66426bdf22305eab8db0dde26cbb3cc4f41505c91bba2e/plantable-2024.1.2.tar.gz
+[2024-04-21 02:57:14] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ad/f8/0078c87421b7a3bf4958cb497033cca473ed2a1bf197ce6c3f2da6ac0675/pyaarlo-0.8.0b8.tar.gz
+[2024-04-21 02:57:15] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-21 02:57:15] INFO root fetch - processPackages [plantable]: Downloading https://files.pythonhosted.org/packages/0c/bc/03a1439b83d3295281759d5147681507a723956356905c81e65c115cc013/plantable-2024.4.1.tar.gz
+[2024-04-21 02:57:15] INFO root fetch - processPackages [plantable]: executing diffoscope
+[2024-04-21 02:57:15] INFO root fetch - processPackages [plantable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantable-2024.1.2.tar.gz tmp/plantable-2024.4.1.tar.gz --markdown 20240421/p/plantable/2024.1.2-2024.4.1/README.md --exclude *.pyd
+[2024-04-21 02:57:15] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-21 02:57:15] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240421/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-21 02:57:15] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ac/5c/af5555a3bb1fcdde057bcaec37241b24fa59b79aaa5f5e868a05dd18f476/pyaarlo-0.8.0b9.tar.gz
+[2024-04-21 02:57:15] INFO root fetch - processPackages [pyaarlo]: executing diffoscope
+[2024-04-21 02:57:15] INFO root fetch - processPackages [pyaarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaarlo-0.8.0b8.tar.gz tmp/pyaarlo-0.8.0b9.tar.gz --markdown 20240421/p/pyaarlo/0.8.0b8-0.8.0b9/README.md --exclude *.pyd
+[2024-04-21 02:57:15] INFO root fetch - processPackages [plantable]: Remove: archive file [/home/abi/fetcher/tmp/plantable-2024.1.2.tar.gz]
+[2024-04-21 02:57:15] INFO root fetch - processPackages [plantable]: Remove: archive file [/home/abi/fetcher/tmp/plantable-2024.4.1.tar.gz]
+[2024-04-21 02:57:15] INFO root fetch - main [MainThread]: End processing [plantable]: success
+[2024-04-21 02:57:16] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b8.tar.gz]
+[2024-04-21 02:57:16] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b9.tar.gz]
+[2024-04-21 02:57:16] INFO root fetch - main [MainThread]: End processing [pyaarlo]: success
+[2024-04-21 02:57:16] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-21 02:57:16] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-21 02:57:16] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-21 02:57:16] INFO root fetch - main [MainThread]: Store serial: [22860854]
