@@ -4503,3 +4503,21 @@
 [2024-04-21 07:11:55] INFO root fetch - processPackages [mdod]: Remove: archive file [/home/abi/fetcher/tmp/mdod-0.1.7.tar.gz]
 [2024-04-21 07:11:55] INFO root fetch - main [MainThread]: End processing [mdod]: success
 [2024-04-21 07:11:55] INFO root fetch - main [MainThread]: Store serial: [22862103]
+[2024-04-21 07:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862103]
+[2024-04-21 07:14:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 07:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logoo
+[2024-04-21 07:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unnecessary-abstraction
+[2024-04-21 07:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC377
+[2024-04-21 07:14:04] WARNING root fetch - processPackages [unnecessary-abstraction]: Skipping, unable to determine old version
+[2024-04-21 07:14:04] INFO root fetch - main [MainThread]: End processing [unnecessary-abstraction] error
+[2024-04-21 07:14:04] INFO root fetch - processPackages [logoo]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-04-21 07:14:04] WARNING root fetch - processPackages [PythonTestLJC377]: Skipping, unable to determine old version
+[2024-04-21 07:14:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC377] error
+[2024-04-21 07:14:04] INFO root fetch - processPackages [logoo]: Downloading https://files.pythonhosted.org/packages/23/0a/5fc9ebdee3499bdc8cf3b88194925a56ba50f2219b2163de765a5999c241/logoo-1.4.0.tar.gz
+[2024-04-21 07:14:04] INFO root fetch - processPackages [logoo]: Downloading https://files.pythonhosted.org/packages/5d/97/f56b072983676f9e43fedb0deea0c23208a71431340b0fcf77edef48e95c/logoo-1.5.0.tar.gz
+[2024-04-21 07:14:05] INFO root fetch - processPackages [logoo]: executing diffoscope
+[2024-04-21 07:14:05] INFO root fetch - processPackages [logoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logoo-1.4.0.tar.gz tmp/logoo-1.5.0.tar.gz --markdown 20240421/l/logoo/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-04-21 07:14:05] INFO root fetch - processPackages [logoo]: Remove: archive file [/home/abi/fetcher/tmp/logoo-1.4.0.tar.gz]
+[2024-04-21 07:14:05] INFO root fetch - processPackages [logoo]: Remove: archive file [/home/abi/fetcher/tmp/logoo-1.5.0.tar.gz]
+[2024-04-21 07:14:05] INFO root fetch - main [MainThread]: End processing [logoo]: success
+[2024-04-21 07:14:05] INFO root fetch - main [MainThread]: Store serial: [22862117]
