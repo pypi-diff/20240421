@@ -17241,3 +17241,56 @@
 [2024-04-21 21:40:25] INFO root fetch - processPackages [pdf-tools-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pdf_tools_sdk-1.5.0rc2.tar.gz]
 [2024-04-21 21:40:25] INFO root fetch - main [MainThread]: End processing [pdf-tools-sdk]: success
 [2024-04-21 21:40:25] INFO root fetch - main [MainThread]: Store serial: [22868126]
+[2024-04-21 21:42:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868126]
+[2024-04-21 21:42:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modal
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modal-client
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chainner-ext
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lichesspy
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clusterenv
+[2024-04-21 21:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dem-roughness-calculator
+[2024-04-21 21:42:34] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev3] Old Version: [6.0.4.dev2]
+[2024-04-21 21:42:34] INFO root fetch - processPackages [dem-roughness-calculator]: New version: [1.0.3] Old Version: [1.0.0]
+[2024-04-21 21:42:34] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/3c/87/a50e2efb2a7652e1fa524117217d83d10fc45b79c8c19e15a2310a3113a5/lichesspy-6.0.4.dev2.tar.gz
+[2024-04-21 21:42:34] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/2e/18/2155e679432bb65b5db22ff788a00fe5f650f9ac579bc144fb64ebf84a33/dem_roughness_calculator-1.0.0.tar.gz
+[2024-04-21 21:42:34] INFO root fetch - processPackages [clusterenv]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-21 21:42:35] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/d7/fa/cc43c19f6390ba1dbe580c0797e37c85b7f779185c28a1bc8c8664b93a1a/lichesspy-6.0.4.dev3.tar.gz
+[2024-04-21 21:42:35] INFO root fetch - processPackages [modal]: New version: [0.62.98] Old Version: [0.62.97]
+[2024-04-21 21:42:35] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-21 21:42:35] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.4.dev2.tar.gz tmp/lichesspy-6.0.4.dev3.tar.gz --markdown 20240421/l/lichesspy/6.0.4.dev2-6.0.4.dev3/README.md --exclude *.pyd
+[2024-04-21 21:42:35] INFO root fetch - processPackages [clusterenv]: Downloading https://files.pythonhosted.org/packages/6a/2f/02c26f864e41078192d8feeffe577e5484f6627a52c6d08ccf31b61cee77/clusterenv-0.2.0.tar.gz
+[2024-04-21 21:42:35] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/1e/21/ff89dfa775cca20284f58ededd91b0114c94b8d7d2b97798866cb14703f2/dem_roughness_calculator-1.0.3.tar.gz
+[2024-04-21 21:42:35] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/22/ad/c488b5a55db9ff37c8a3a7fabf90ceb9cba796e18c02abedb6d90c227be1/modal-0.62.97-py3-none-any.whl
+[2024-04-21 21:42:35] INFO root fetch - processPackages [dem-roughness-calculator]: executing diffoscope
+[2024-04-21 21:42:35] INFO root fetch - processPackages [dem-roughness-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dem_roughness_calculator-1.0.0.tar.gz tmp/dem_roughness_calculator-1.0.3.tar.gz --markdown 20240421/d/dem-roughness-calculator/1.0.0-1.0.3/README.md --exclude *.pyd
+[2024-04-21 21:42:35] INFO root fetch - processPackages [clusterenv]: Downloading https://files.pythonhosted.org/packages/e6/54/861881926248d9239cd35872bb8d522fccccda2c60dfb43720a32c9f48be/clusterenv-0.3.0.tar.gz
+[2024-04-21 21:42:35] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev2.tar.gz]
+[2024-04-21 21:42:35] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev3.tar.gz]
+[2024-04-21 21:42:35] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-21 21:42:35] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/b5/38/bb0788928bcf76bff83916023bd1f84d88b1eb03c43f34ae832eff523ed0/modal-0.62.98-py3-none-any.whl
+[2024-04-21 21:42:35] INFO root fetch - processPackages [clusterenv]: executing diffoscope
+[2024-04-21 21:42:35] INFO root fetch - processPackages [clusterenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterenv-0.2.0.tar.gz tmp/clusterenv-0.3.0.tar.gz --markdown 20240421/c/clusterenv/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-21 21:42:35] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-21 21:42:35] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.97-py3-none-any.whl.zip tmp/modal-0.62.98-py3-none-any.whl.zip --markdown 20240421/m/modal/0.62.97-0.62.98/README.md --exclude *.pyd
+[2024-04-21 21:42:36] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.0.0.tar.gz]
+[2024-04-21 21:42:36] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.0.3.tar.gz]
+[2024-04-21 21:42:36] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator]: success
+[2024-04-21 21:42:36] INFO root fetch - processPackages [clusterenv]: Remove: archive file [/home/abi/fetcher/tmp/clusterenv-0.2.0.tar.gz]
+[2024-04-21 21:42:36] INFO root fetch - processPackages [clusterenv]: Remove: archive file [/home/abi/fetcher/tmp/clusterenv-0.3.0.tar.gz]
+[2024-04-21 21:42:36] INFO root fetch - main [MainThread]: End processing [clusterenv]: success
+[2024-04-21 21:42:36] INFO root fetch - processPackages [chainner-ext]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 21:42:37] INFO root fetch - processPackages [chainner-ext]: Downloading https://files.pythonhosted.org/packages/5c/b8/91db0d69fd6976f624397e7ba027f528ecd06f18a74f2bdb87b0480e3ad5/chainner_ext-0.3.8.tar.gz
+[2024-04-21 21:42:37] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.97-py3-none-any.whl.zip]
+[2024-04-21 21:42:37] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.98-py3-none-any.whl.zip]
+[2024-04-21 21:42:37] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-21 21:42:37] WARNING root fetch - processPackages [chainner-ext]: Skipping package: exceeds size limit 31941009>=10485760
+[2024-04-21 21:42:37] INFO root fetch - main [MainThread]: End processing [chainner-ext] error
+[2024-04-21 21:42:38] INFO root fetch - processPackages [modal-client]: New version: [0.62.98] Old Version: [0.62.97]
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/7b/73/6d3aed68b5958886607dfd3ccd242d2fd27b39b9a62ee6a70ed228184721/modal_client-0.62.97-py3-none-any.whl
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/e1/43/8909e36efe8c88188326519159ac1faa149227f01c6a0d968acc30efedde/modal_client-0.62.98-py3-none-any.whl
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.97-py3-none-any.whl.zip tmp/modal_client-0.62.98-py3-none-any.whl.zip --markdown 20240421/m/modal-client/0.62.97-0.62.98/README.md --exclude *.pyd
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.97-py3-none-any.whl.zip]
+[2024-04-21 21:42:39] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.98-py3-none-any.whl.zip]
+[2024-04-21 21:42:39] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-21 21:42:39] INFO root fetch - main [MainThread]: Store serial: [22868184]
