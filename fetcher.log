@@ -10152,3 +10152,19 @@
 [2024-04-21 14:52:17] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 14:52:17] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 14:52:17] INFO root fetch - main [MainThread]: Store serial: [22864651]
+[2024-04-21 14:54:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864651]
+[2024-04-21 14:54:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 14:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC456
+[2024-04-21 14:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprit
+[2024-04-21 14:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mediapipe-nightly
+[2024-04-21 14:54:26] INFO root fetch - processPackages [sprit]: New version: [0.1.9] Old Version: [0.1.73.dev0]
+[2024-04-21 14:54:26] WARNING root fetch - processPackages [PythonTestLJC456]: Skipping, unable to determine old version
+[2024-04-21 14:54:26] INFO root fetch - main [MainThread]: End processing [PythonTestLJC456] error
+[2024-04-21 14:54:26] INFO root fetch - processPackages [mediapipe-nightly]: New version: [0.10.13.post20240421] Old Version: [0.10.13.post20240420]
+[2024-04-21 14:54:26] INFO root fetch - processPackages [sprit]: Downloading https://files.pythonhosted.org/packages/97/eb/b4139ddb1b96d39e8004cd79aeec4c016214db7677a34abf6e31b42b5df6/sprit-0.1.73.dev0.tar.gz
+[2024-04-21 14:54:27] WARNING root fetch - processPackages [sprit]: Skipping package: exceeds size limit 13887582>=10485760
+[2024-04-21 14:54:27] INFO root fetch - main [MainThread]: End processing [sprit] error
+[2024-04-21 14:54:27] INFO root fetch - processPackages [mediapipe-nightly]: Downloading https://files.pythonhosted.org/packages/8e/f4/260c07a4dfbb959f8a47447739c66d9e202d94ec9539247d3f8b20a8f111/mediapipe_nightly-0.10.13.post20240420-cp39-cp39-macosx_11_0_x86_64.whl
+[2024-04-21 14:54:27] WARNING root fetch - processPackages [mediapipe-nightly]: Skipping package: exceeds size limit 49978923>=10485760
+[2024-04-21 14:54:27] INFO root fetch - main [MainThread]: End processing [mediapipe-nightly] error
+[2024-04-21 14:54:27] INFO root fetch - main [MainThread]: Store serial: [22864708]
