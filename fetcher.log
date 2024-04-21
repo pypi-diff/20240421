@@ -11455,3 +11455,82 @@
 [2024-04-21 16:11:05] INFO root fetch - processPackages [simpleworkspace]: Remove: archive file [/home/abi/fetcher/tmp/simpleworkspace-1.2.188.tar.gz]
 [2024-04-21 16:11:05] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
 [2024-04-21 16:11:05] INFO root fetch - main [MainThread]: Store serial: [22865318]
+[2024-04-21 16:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22865318]
+[2024-04-21 16:13:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: routrs
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC484
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openshift-python-wrapper
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openshift-python-wrapper
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Sonihi-K
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: treescriptify
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-tailwind-cli
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhelper-utils
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rosa-python-client
+[2024-04-21 16:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tsad
+[2024-04-21 16:13:15] WARNING root fetch - processPackages [routrs]: Skipping, unable to determine old version
+[2024-04-21 16:13:15] INFO root fetch - main [MainThread]: End processing [routrs] error
+[2024-04-21 16:13:15] INFO root fetch - processPackages [Sonihi-K]: New version: [0.2.0] Old Version: [0.0.1]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [django-tailwind-cli]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-04-21 16:13:15] WARNING root fetch - processPackages [PythonTestLJC484]: Skipping, unable to determine old version
+[2024-04-21 16:13:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC484] error
+[2024-04-21 16:13:15] INFO root fetch - processPackages [tsad]: New version: [0.9] Old Version: [0.8]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [pyhelper-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [rosa-python-client]: New version: [1.0.9] Old Version: [1.0.83]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [treescriptify]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2024-04-21 16:13:15] INFO root fetch - processPackages [Sonihi-K]: Downloading https://files.pythonhosted.org/packages/32/55/a694a7ff5e5eef7ea03ef961a2b3fe5d9204fe192f59ccbaee17a1862c14/Sonihi_K-0.0.1-py3-none-any.whl
+[2024-04-21 16:13:15] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/5d/ab/68c0c075b0ea17fdad6040cb621eff744daec8f08ec652a0661ca92b8abc/rosa_python_client-1.0.83.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [django-tailwind-cli]: Downloading https://files.pythonhosted.org/packages/46/25/71ef0f52d2b1cf1344c4668bdf04b13687a4d811151054bf48800ec6a8eb/django_tailwind_cli-2.8.1.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [tsad]: Downloading https://files.pythonhosted.org/packages/4c/98/23e07bc2ddbb3d9b8861d1508bcf89e75547b305033fb3cb2023ddda201d/tsad-0.8.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [pyhelper-utils]: Downloading https://files.pythonhosted.org/packages/b0/79/7f514832f284b942b0701ed9c59de4c8e6ea368ae1637fe0e5bbf4346cec/pyhelper_utils-0.0.8.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [treescriptify]: Downloading https://files.pythonhosted.org/packages/e5/b5/c77c351ca5bef2450b69f6bbfdc751eb69b78f12dca9fd584a711fc284da/treescriptify-0.1.1.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [Sonihi-K]: Downloading https://files.pythonhosted.org/packages/5e/1f/3159efb296dd63564a2f1802b21d5333364f5393f3634831f553367b9028/Sonihi_K-0.2.0-py3-none-any.whl
+[2024-04-21 16:13:15] INFO root fetch - processPackages [treescriptify]: Downloading https://files.pythonhosted.org/packages/9f/1f/97e55368aa1fc42c91c49dc79d3fdeddb6ef022eb8d3994d361fce1cb83a/treescriptify-0.1.2.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [Sonihi-K]: executing diffoscope
+[2024-04-21 16:13:15] INFO root fetch - processPackages [Sonihi-K]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sonihi_K-0.0.1-py3-none-any.whl.zip tmp/Sonihi_K-0.2.0-py3-none-any.whl.zip --markdown 20240421/S/Sonihi-K/0.0.1-0.2.0/README.md --exclude *.pyd
+[2024-04-21 16:13:15] INFO root fetch - processPackages [pyhelper-utils]: Downloading https://files.pythonhosted.org/packages/36/fc/49838721a63519de9a0bf1ceec71298239af5e448eaef761acf5b828a024/pyhelper_utils-0.0.9.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [tsad]: Downloading https://files.pythonhosted.org/packages/8e/ff/f0a44e66f33d06735fcdb1216720a2bdca6eb182ecf6c4716a0f125219c1/tsad-0.9.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/57/71/77aa94783e126449ad00cda27a853d3161809a6117e0e34f7ab67ade9050/rosa_python_client-1.0.9.tar.gz
+[2024-04-21 16:13:15] INFO root fetch - processPackages [django-tailwind-cli]: Downloading https://files.pythonhosted.org/packages/fa/52/7b903f97018f1c2b4f3328fca27635150511fd96785586199bff8159141c/django_tailwind_cli-2.9.0.tar.gz
+[2024-04-21 16:13:16] INFO root fetch - processPackages [treescriptify]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [treescriptify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/treescriptify-0.1.1.tar.gz tmp/treescriptify-0.1.2.tar.gz --markdown 20240421/t/treescriptify/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [tsad]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [tsad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsad-0.8.tar.gz tmp/tsad-0.9.tar.gz --markdown 20240421/t/tsad/0.8-0.9/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [rosa-python-client]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [rosa-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosa_python_client-1.0.83.tar.gz tmp/rosa_python_client-1.0.9.tar.gz --markdown 20240421/r/rosa-python-client/1.0.83-1.0.9/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [django-tailwind-cli]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [django-tailwind-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tailwind_cli-2.8.1.tar.gz tmp/django_tailwind_cli-2.9.0.tar.gz --markdown 20240421/d/django-tailwind-cli/2.8.1-2.9.0/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [pyhelper-utils]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [pyhelper-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhelper_utils-0.0.8.tar.gz tmp/pyhelper_utils-0.0.9.tar.gz --markdown 20240421/p/pyhelper-utils/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20240421/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2024-04-21 16:13:16] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20240421/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/README.md --exclude *.pyd
+[2024-04-21 16:13:16] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.83.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.9.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [rosa-python-client]: success
+[2024-04-21 16:13:16] INFO root fetch - processPackages [treescriptify]: Remove: archive file [/home/abi/fetcher/tmp/treescriptify-0.1.1.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [treescriptify]: Remove: archive file [/home/abi/fetcher/tmp/treescriptify-0.1.2.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [treescriptify]: success
+[2024-04-21 16:13:16] INFO root fetch - processPackages [Sonihi-K]: Remove: archive file [/home/abi/fetcher/tmp/Sonihi_K-0.0.1-py3-none-any.whl.zip]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [Sonihi-K]: Remove: archive file [/home/abi/fetcher/tmp/Sonihi_K-0.2.0-py3-none-any.whl.zip]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [Sonihi-K]: success
+[2024-04-21 16:13:16] INFO root fetch - processPackages [tsad]: Remove: archive file [/home/abi/fetcher/tmp/tsad-0.8.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [tsad]: Remove: archive file [/home/abi/fetcher/tmp/tsad-0.9.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [tsad]: success
+[2024-04-21 16:13:16] INFO root fetch - processPackages [pyhelper-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyhelper_utils-0.0.8.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [pyhelper-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyhelper_utils-0.0.9.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [pyhelper-utils]: success
+[2024-04-21 16:13:16] INFO root fetch - processPackages [django-tailwind-cli]: Remove: archive file [/home/abi/fetcher/tmp/django_tailwind_cli-2.8.1.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - processPackages [django-tailwind-cli]: Remove: archive file [/home/abi/fetcher/tmp/django_tailwind_cli-2.9.0.tar.gz]
+[2024-04-21 16:13:16] INFO root fetch - main [MainThread]: End processing [django-tailwind-cli]: success
+[2024-04-21 16:13:17] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.7.12.tar.gz]
+[2024-04-21 16:13:17] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.9.12.tar.gz]
+[2024-04-21 16:13:17] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2024-04-21 16:13:17] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2024-04-21 16:13:17] INFO root fetch - main [MainThread]: Store serial: [22865345]
