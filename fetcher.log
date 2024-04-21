@@ -8221,3 +8221,15 @@
 [2024-04-21 12:35:58] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
 [2024-04-21 12:35:58] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-04-21 12:35:58] INFO root fetch - main [MainThread]: Store serial: [22863703]
+[2024-04-21 12:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22863703]
+[2024-04-21 12:38:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 12:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotpython
+[2024-04-21 12:38:07] INFO root fetch - processPackages [spotpython]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 12:38:07] INFO root fetch - processPackages [spotpython]: Downloading https://files.pythonhosted.org/packages/aa/01/87762fb27b6d307e4614269c8a41952ca3bec4ec77adfc08459351394a0d/spotPython-0.9.8.tar.gz
+[2024-04-21 12:38:07] INFO root fetch - processPackages [spotpython]: Downloading https://files.pythonhosted.org/packages/24/be/283dfbac35854cc80323c97a62b46a4b61ef023695b46910af3abc4b765b/spotPython-0.9.9.tar.gz
+[2024-04-21 12:38:08] INFO root fetch - processPackages [spotpython]: executing diffoscope
+[2024-04-21 12:38:08] INFO root fetch - processPackages [spotpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.9.8.tar.gz tmp/spotPython-0.9.9.tar.gz --markdown 20240421/s/spotpython/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 12:38:09] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.8.tar.gz]
+[2024-04-21 12:38:09] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.9.tar.gz]
+[2024-04-21 12:38:09] INFO root fetch - main [MainThread]: End processing [spotpython]: success
+[2024-04-21 12:38:09] INFO root fetch - main [MainThread]: Store serial: [22863709]
