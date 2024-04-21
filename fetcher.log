@@ -10248,3 +10248,15 @@
 [2024-04-21 15:03:04] INFO root fetch - processPackages [tarandm-analytics]: Remove: archive file [/home/abi/fetcher/tmp/tarandm_analytics-0.1.1.tar.gz]
 [2024-04-21 15:03:04] INFO root fetch - main [MainThread]: End processing [tarandm-analytics]: success
 [2024-04-21 15:03:04] INFO root fetch - main [MainThread]: Store serial: [22864758]
+[2024-04-21 15:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864758]
+[2024-04-21 15:05:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aa-forum
+[2024-04-21 15:05:13] INFO root fetch - processPackages [aa-forum]: New version: [2.1.0] Old Version: [2.0.0b3]
+[2024-04-21 15:05:13] INFO root fetch - processPackages [aa-forum]: Downloading https://files.pythonhosted.org/packages/d6/1e/0095fc096e4f056067eef8fa480fd8b43e3c860061a745eb18c2e9327875/aa_forum-2.0.0b3.tar.gz
+[2024-04-21 15:05:14] INFO root fetch - processPackages [aa-forum]: Downloading https://files.pythonhosted.org/packages/ee/48/8ba8dd0f74a0b1f63f928f743707d7f18c111f78b18f9d05ab7ced027a6c/aa_forum-2.1.0.tar.gz
+[2024-04-21 15:05:14] INFO root fetch - processPackages [aa-forum]: executing diffoscope
+[2024-04-21 15:05:14] INFO root fetch - processPackages [aa-forum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_forum-2.0.0b3.tar.gz tmp/aa_forum-2.1.0.tar.gz --markdown 20240421/a/aa-forum/2.0.0b3-2.1.0/README.md --exclude *.pyd
+[2024-04-21 15:05:16] INFO root fetch - processPackages [aa-forum]: Remove: archive file [/home/abi/fetcher/tmp/aa_forum-2.0.0b3.tar.gz]
+[2024-04-21 15:05:16] INFO root fetch - processPackages [aa-forum]: Remove: archive file [/home/abi/fetcher/tmp/aa_forum-2.1.0.tar.gz]
+[2024-04-21 15:05:16] INFO root fetch - main [MainThread]: End processing [aa-forum]: success
+[2024-04-21 15:05:16] INFO root fetch - main [MainThread]: Store serial: [22864765]
