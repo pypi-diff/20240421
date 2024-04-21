@@ -17762,3 +17762,90 @@
 [2024-04-21 22:06:49] INFO root fetch - processPackages [moat-mqtt]: Remove: archive file [/home/abi/fetcher/tmp/moat-mqtt-0.40.2.tar.gz]
 [2024-04-21 22:06:49] INFO root fetch - main [MainThread]: End processing [moat-mqtt]: success
 [2024-04-21 22:06:49] INFO root fetch - main [MainThread]: Store serial: [22868450]
+[2024-04-21 22:08:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868450]
+[2024-04-21 22:08:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 22:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-04-21 22:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-04-21 22:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim
+[2024-04-21 22:08:58] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-21 22:08:58] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-21 22:08:58] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-21 22:08:58] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-04-21 22:08:58] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-21 22:08:59] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-04-21 22:08:59] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-04-21 22:09:23] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-21 22:09:23] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240421/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-04-21 22:09:24] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-04-21 22:09:24] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-04-21 22:11:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22868450]
+[2024-04-21 22:11:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gie-py
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xango
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FoxDotEditor
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: renardo
+[2024-04-21 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: renardo-lib
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo]: New version: [1.0.0.dev2] Old Version: [1.0.0.dev0]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo-lib]: New version: [1.0.0.dev2] Old Version: [1.0.0.dev0]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [FoxDotEditor]: New version: [1.0.0.dev2] Old Version: [1.0.0.dev0]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/d7/53/f0fbea31ba1b19244de69bd084b7abe6184be25b003680e2c00819e5794d/renardo_lib-1.0.0.dev0.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [gie-py]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [xango]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/cb/53/ba9692ed0169b195ec9c197c37b07bb9ad83196c94a767c047bf49e91a9b/renardo-1.0.0.dev0.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/0d/6a/86418935320a8a4a4639303bd074473354dd80d08a59f886cf6f2540afdb/foxdoteditor-1.0.0.dev0.tar.gz
+[2024-04-21 22:11:31] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-21 22:11:31] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-21 22:11:31] INFO root fetch - processPackages [gie-py]: Downloading https://files.pythonhosted.org/packages/33/03/1f9ebc6df3e94baddf6d940e6864114ef9477d94bc1524d822ffef546c9a/gie-py-0.4.4.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [xango]: Downloading https://files.pythonhosted.org/packages/ea/bb/6590658e1d716ffeae719b948b828463fcc51eda0ff85a21a0ef9a4224a5/xango-0.1.8.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/2f/43/a793887a1c2a19230f05304345ff1b841987efdc74d48e3abbac46a0a4cf/renardo-1.0.0.dev2.tar.gz
+[2024-04-21 22:11:31] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/82/23/d7535a4b0d97ced3b20eb6273f03c82acab42022093c6f82ec4b14631d4b/renardo_lib-1.0.0.dev2.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-1.0.0.dev0.tar.gz tmp/renardo-1.0.0.dev2.tar.gz --markdown 20240421/r/renardo/1.0.0.dev0-1.0.0.dev2/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-1.0.0.dev0.tar.gz tmp/renardo_lib-1.0.0.dev2.tar.gz --markdown 20240421/r/renardo-lib/1.0.0.dev0-1.0.0.dev2/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [xango]: Downloading https://files.pythonhosted.org/packages/fd/15/049aae2999c87d2b0e60fe0d62873c56152f7dfc90733d341eaa80bc4e30/xango-0.1.9.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/42/b7/e4bbd3a713650a87daefa189b51de61297bd2f850594500a7f3ad1b85a38/foxdoteditor-1.0.0.dev2.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [gie-py]: Downloading https://files.pythonhosted.org/packages/06/51/d5b94c5ee9e954f5aafc01b15525e2e048f84b9c63e750b0326ea1dc1dab/gie_py-0.4.5.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [xango]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [xango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xango-0.1.8.tar.gz tmp/xango-0.1.9.tar.gz --markdown 20240421/x/xango/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240421/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [gie-py]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [gie-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gie-py-0.4.4.tar.gz tmp/gie_py-0.4.5.tar.gz --markdown 20240421/g/gie-py/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foxdoteditor-1.0.0.dev0.tar.gz tmp/foxdoteditor-1.0.0.dev2.tar.gz --markdown 20240421/F/FoxDotEditor/1.0.0.dev0-1.0.0.dev2/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-21 22:11:32] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-21 22:11:32] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240421/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-1.0.0.dev0.tar.gz]
+[2024-04-21 22:11:32] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-1.0.0.dev2.tar.gz]
+[2024-04-21 22:11:32] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-21 22:11:33] INFO root fetch - processPackages [gie-py]: Remove: archive file [/home/abi/fetcher/tmp/gie-py-0.4.4.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - processPackages [gie-py]: Remove: archive file [/home/abi/fetcher/tmp/gie_py-0.4.5.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - main [MainThread]: End processing [gie-py]: success
+[2024-04-21 22:11:33] INFO root fetch - processPackages [xango]: Remove: archive file [/home/abi/fetcher/tmp/xango-0.1.8.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - processPackages [xango]: Remove: archive file [/home/abi/fetcher/tmp/xango-0.1.9.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - main [MainThread]: End processing [xango]: success
+[2024-04-21 22:11:33] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-1.0.0.dev0.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-1.0.0.dev2.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-21 22:11:33] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-1.0.0.dev0.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-1.0.0.dev2.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-21 22:11:33] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-04-21 22:11:33] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-21 22:11:37] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-21 22:11:37] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-21 22:11:37] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-21 22:11:37] INFO root fetch - main [MainThread]: Store serial: [22868481]
