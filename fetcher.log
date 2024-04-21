@@ -4077,3 +4077,18 @@
 [2024-04-21 06:32:22] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.3.tar.gz]
 [2024-04-21 06:32:22] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-21 06:32:22] INFO root fetch - main [MainThread]: Store serial: [22861872]
+[2024-04-21 06:34:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861872]
+[2024-04-21 06:34:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 06:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfilebrowser
+[2024-04-21 06:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC363
+[2024-04-21 06:34:32] INFO root fetch - processPackages [pyfilebrowser]: New version: [0.0.9b0] Old Version: [0.0.9a0]
+[2024-04-21 06:34:32] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/2f/eb/10b988a7590f89409d807e02c017d767dd502674e53d5bdba3ea5a365981/pyfilebrowser-0.0.9a0-py3-none-any.whl
+[2024-04-21 06:34:32] WARNING root fetch - processPackages [PythonTestLJC363]: Skipping, unable to determine old version
+[2024-04-21 06:34:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC363] error
+[2024-04-21 06:34:32] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/57/a9/7d7bcb29de7ad354a2f7bfdf7ed9105991a9ba058bba47bb85aa4020554e/pyfilebrowser-0.0.9b0-py3-none-any.whl
+[2024-04-21 06:34:32] INFO root fetch - processPackages [pyfilebrowser]: executing diffoscope
+[2024-04-21 06:34:32] INFO root fetch - processPackages [pyfilebrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip --markdown 20240421/p/pyfilebrowser/0.0.9a0-0.0.9b0/README.md --exclude *.pyd
+[2024-04-21 06:34:33] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip]
+[2024-04-21 06:34:33] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip]
+[2024-04-21 06:34:33] INFO root fetch - main [MainThread]: End processing [pyfilebrowser]: success
+[2024-04-21 06:34:33] INFO root fetch - main [MainThread]: Store serial: [22861879]
