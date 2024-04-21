@@ -14574,3 +14574,39 @@
 [2024-04-21 19:07:20] INFO root fetch - processPackages [darkgray-dev-tools]: Remove: archive file [/home/abi/fetcher/tmp/darkgray_dev_tools-0.1.0.tar.gz]
 [2024-04-21 19:07:20] INFO root fetch - main [MainThread]: End processing [darkgray-dev-tools]: success
 [2024-04-21 19:07:20] INFO root fetch - main [MainThread]: Store serial: [22866775]
+[2024-04-21 19:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866775]
+[2024-04-21 19:09:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 19:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meteoswiss-async
+[2024-04-21 19:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: propertree
+[2024-04-21 19:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC548
+[2024-04-21 19:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: searchkit
+[2024-04-21 19:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-asyncore
+[2024-04-21 19:09:29] WARNING root fetch - processPackages [standard-asyncore]: Skipping, unable to determine old version
+[2024-04-21 19:09:29] INFO root fetch - main [MainThread]: End processing [standard-asyncore] error
+[2024-04-21 19:09:29] INFO root fetch - processPackages [meteoswiss-async]: New version: [0.1.0rc9.post1] Old Version: [0.1.0rc10.post1]
+[2024-04-21 19:09:29] WARNING root fetch - processPackages [PythonTestLJC548]: Skipping, unable to determine old version
+[2024-04-21 19:09:29] INFO root fetch - processPackages [propertree]: New version: [1.1.0.post4] Old Version: [1.1.0.post2]
+[2024-04-21 19:09:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC548] error
+[2024-04-21 19:09:29] INFO root fetch - processPackages [searchkit]: New version: [0.4.1.post1] Old Version: [0.4.1]
+[2024-04-21 19:09:29] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/d1/8b/0a4fb423ecbf940e6654981a56493dcc2cadd3b1ba624f857f5b35e1f270/meteoswiss_async-0.1.0rc10.post1.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [propertree]: Downloading https://files.pythonhosted.org/packages/16/13/46b907f3c9c25ae0f072c10ebddaa440aa2fdbe4e9ffb5af1729d4746e29/propertree-1.1.0.post2.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/68/dd/080003ab9153899083b03362010dc008dbc6c8bd0fa17f51eb6326d042b3/searchkit-0.4.1.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [meteoswiss-async]: Downloading https://files.pythonhosted.org/packages/05/f2/0eccd113533f6eabd4d7000e5e913b293170e394b13657aadd7be0ee0eaa/meteoswiss_async-0.1.0rc9.post1.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/02/ff/ac7e2356dd0fb7deba519aa9e363dc610f6c2c69814741326c7b1c05df96/searchkit-0.4.1.post1.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [propertree]: Downloading https://files.pythonhosted.org/packages/46/03/41527ca79c4b663b2e50da513ecbff7e7e913b95f64d74c11a20165a83dd/propertree-1.1.0.post4.tar.gz
+[2024-04-21 19:09:29] INFO root fetch - processPackages [meteoswiss-async]: executing diffoscope
+[2024-04-21 19:09:29] INFO root fetch - processPackages [meteoswiss-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meteoswiss_async-0.1.0rc10.post1.tar.gz tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz --markdown 20240421/m/meteoswiss-async/0.1.0rc10.post1-0.1.0rc9.post1/README.md --exclude *.pyd
+[2024-04-21 19:09:30] INFO root fetch - processPackages [propertree]: executing diffoscope
+[2024-04-21 19:09:30] INFO root fetch - processPackages [propertree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propertree-1.1.0.post2.tar.gz tmp/propertree-1.1.0.post4.tar.gz --markdown 20240421/p/propertree/1.1.0.post2-1.1.0.post4/README.md --exclude *.pyd
+[2024-04-21 19:09:30] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2024-04-21 19:09:30] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.4.1.tar.gz tmp/searchkit-0.4.1.post1.tar.gz --markdown 20240421/s/searchkit/0.4.1-0.4.1.post1/README.md --exclude *.pyd
+[2024-04-21 19:09:30] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.1.0rc10.post1.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - processPackages [meteoswiss-async]: Remove: archive file [/home/abi/fetcher/tmp/meteoswiss_async-0.1.0rc9.post1.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - main [MainThread]: End processing [meteoswiss-async]: success
+[2024-04-21 19:09:30] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - processPackages [searchkit]: Remove: archive file [/home/abi/fetcher/tmp/searchkit-0.4.1.post1.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2024-04-21 19:09:30] INFO root fetch - processPackages [propertree]: Remove: archive file [/home/abi/fetcher/tmp/propertree-1.1.0.post2.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - processPackages [propertree]: Remove: archive file [/home/abi/fetcher/tmp/propertree-1.1.0.post4.tar.gz]
+[2024-04-21 19:09:30] INFO root fetch - main [MainThread]: End processing [propertree]: success
+[2024-04-21 19:09:30] INFO root fetch - main [MainThread]: Store serial: [22866801]
