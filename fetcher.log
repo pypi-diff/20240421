@@ -3200,3 +3200,15 @@
 [2024-04-21 04:54:51] WARNING root fetch - processPackages [PythonTestLJC344]: Skipping, unable to determine old version
 [2024-04-21 04:54:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC344] error
 [2024-04-21 04:54:51] INFO root fetch - main [MainThread]: Store serial: [22861491]
+[2024-04-21 04:56:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861491]
+[2024-04-21 04:56:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 04:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bttc
+[2024-04-21 04:56:59] INFO root fetch - processPackages [bttc]: New version: [0.0.75] Old Version: [0.0.74.1]
+[2024-04-21 04:56:59] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/a7/ae/d04ecdf5087952074423951cd4f2964c8d6447dbbf935078b78328ae6b3a/bttc-0.0.74.1.tar.gz
+[2024-04-21 04:56:59] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/11/56/b6b4d941ced9e2ef5f79edf325963dead339f29d9cd2151ae7c764e52fbd/bttc-0.0.75.tar.gz
+[2024-04-21 04:57:00] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-04-21 04:57:00] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.74.1.tar.gz tmp/bttc-0.0.75.tar.gz --markdown 20240421/b/bttc/0.0.74.1-0.0.75/README.md --exclude *.pyd
+[2024-04-21 04:57:00] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.74.1.tar.gz]
+[2024-04-21 04:57:00] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.75.tar.gz]
+[2024-04-21 04:57:00] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-04-21 04:57:00] INFO root fetch - main [MainThread]: Store serial: [22861494]
