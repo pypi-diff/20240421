@@ -2462,3 +2462,22 @@
 [2024-04-21 03:34:06] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
 [2024-04-21 03:34:06] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-04-21 03:34:06] INFO root fetch - main [MainThread]: Store serial: [22861084]
+[2024-04-21 03:36:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861084]
+[2024-04-21 03:36:14] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 03:38:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861084]
+[2024-04-21 03:38:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 03:40:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861084]
+[2024-04-21 03:40:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaarlo
+[2024-04-21 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemini-output-wrapper
+[2024-04-21 03:40:26] INFO root fetch - processPackages [pyaarlo]: New version: [0.8.0b9] Old Version: [0.8.0b8]
+[2024-04-21 03:40:26] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ad/f8/0078c87421b7a3bf4958cb497033cca473ed2a1bf197ce6c3f2da6ac0675/pyaarlo-0.8.0b8.tar.gz
+[2024-04-21 03:40:26] WARNING root fetch - processPackages [gemini-output-wrapper]: Skipping, unable to determine old version
+[2024-04-21 03:40:26] INFO root fetch - main [MainThread]: End processing [gemini-output-wrapper] error
+[2024-04-21 03:40:26] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ac/5c/af5555a3bb1fcdde057bcaec37241b24fa59b79aaa5f5e868a05dd18f476/pyaarlo-0.8.0b9.tar.gz
+[2024-04-21 03:40:26] INFO root fetch - processPackages [pyaarlo]: executing diffoscope
+[2024-04-21 03:40:26] INFO root fetch - processPackages [pyaarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaarlo-0.8.0b8.tar.gz tmp/pyaarlo-0.8.0b9.tar.gz --markdown 20240421/p/pyaarlo/0.8.0b8-0.8.0b9/README.md --exclude *.pyd
+[2024-04-21 03:40:27] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b8.tar.gz]
+[2024-04-21 03:40:27] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b9.tar.gz]
+[2024-04-21 03:40:27] INFO root fetch - main [MainThread]: End processing [pyaarlo]: success
+[2024-04-21 03:40:27] INFO root fetch - main [MainThread]: Store serial: [22861095]
