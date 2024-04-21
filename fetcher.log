@@ -1883,3 +1883,27 @@
 [2024-04-21 02:43:02] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.3.0.tar.gz]
 [2024-04-21 02:43:02] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
 [2024-04-21 02:43:02] INFO root fetch - main [MainThread]: Store serial: [22860728]
+[2024-04-21 02:45:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860728]
+[2024-04-21 02:45:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:45:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2024-04-21 02:45:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dynamodb-csv
+[2024-04-21 02:45:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC304
+[2024-04-21 02:45:10] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202404200044] Old Version: [4.9.4.dev202404190044]
+[2024-04-21 02:45:10] INFO root fetch - processPackages [dynamodb-csv]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-04-21 02:45:10] WARNING root fetch - processPackages [PythonTestLJC304]: Skipping, unable to determine old version
+[2024-04-21 02:45:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC304] error
+[2024-04-21 02:45:10] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/da/36/cf842f7819c93159fd5615ab676d04869e0305965ea8042235df2ad553fc/tfds-nightly-4.9.4.dev202404190044.tar.gz
+[2024-04-21 02:45:10] INFO root fetch - processPackages [dynamodb-csv]: Downloading https://files.pythonhosted.org/packages/6d/a0/58bc55195e72159ff1c31ee24099a9b52d6d93d8192c56073d788b034f3c/dynamodb-csv-1.5.2.tar.gz
+[2024-04-21 02:45:11] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/a1/67/08b1c17b17c879bb000ee3ecee567bc841f09c60c71698a6a52e18584af6/tfds-nightly-4.9.4.dev202404200044.tar.gz
+[2024-04-21 02:45:11] INFO root fetch - processPackages [dynamodb-csv]: Downloading https://files.pythonhosted.org/packages/5c/1e/f2396e378528ba7208068a68956a0624f7db34ea69b4c66dc49cca960528/dynamodb_csv-1.5.3.tar.gz
+[2024-04-21 02:45:11] INFO root fetch - processPackages [dynamodb-csv]: executing diffoscope
+[2024-04-21 02:45:11] INFO root fetch - processPackages [dynamodb-csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamodb-csv-1.5.2.tar.gz tmp/dynamodb_csv-1.5.3.tar.gz --markdown 20240421/d/dynamodb-csv/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-04-21 02:45:11] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-04-21 02:45:11] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202404190044.tar.gz tmp/tfds-nightly-4.9.4.dev202404200044.tar.gz --markdown 20240421/t/tfds-nightly/4.9.4.dev202404190044-4.9.4.dev202404200044/README.md --exclude *.pyd
+[2024-04-21 02:45:12] INFO root fetch - processPackages [dynamodb-csv]: Remove: archive file [/home/abi/fetcher/tmp/dynamodb-csv-1.5.2.tar.gz]
+[2024-04-21 02:45:12] INFO root fetch - processPackages [dynamodb-csv]: Remove: archive file [/home/abi/fetcher/tmp/dynamodb_csv-1.5.3.tar.gz]
+[2024-04-21 02:45:12] INFO root fetch - main [MainThread]: End processing [dynamodb-csv]: success
+[2024-04-21 02:45:20] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404190044.tar.gz]
+[2024-04-21 02:45:20] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404200044.tar.gz]
+[2024-04-21 02:45:20] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-04-21 02:45:20] INFO root fetch - main [MainThread]: Store serial: [22860740]
