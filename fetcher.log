@@ -10375,3 +10375,27 @@
 [2024-04-21 15:13:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.21-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-04-21 15:13:58] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-21 15:13:58] INFO root fetch - main [MainThread]: Store serial: [22864833]
+[2024-04-21 15:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864833]
+[2024-04-21 15:16:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 15:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STC7-0
+[2024-04-21 15:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenyx
+[2024-04-21 15:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC464
+[2024-04-21 15:16:07] INFO root fetch - processPackages [zenyx]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-21 15:16:07] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/ad/7c/e0d4861e75b0be7b6dec37d48d977a7c51c6611a173de40eafc2aeabd907/zenyx-2.1.0.tar.gz
+[2024-04-21 15:16:07] INFO root fetch - processPackages [STC7-0]: New version: [0.0.3] Old Version: [0.0.0]
+[2024-04-21 15:16:07] WARNING root fetch - processPackages [PythonTestLJC464]: Skipping, unable to determine old version
+[2024-04-21 15:16:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC464] error
+[2024-04-21 15:16:07] INFO root fetch - processPackages [STC7-0]: Downloading https://files.pythonhosted.org/packages/59/ab/22fcd5eff7b2442887247a8813f8cfe8d69456cdf48345173d1985296804/STC7_0-0.0.0-py3-none-any.whl
+[2024-04-21 15:16:07] INFO root fetch - processPackages [zenyx]: Downloading https://files.pythonhosted.org/packages/3f/cc/3ab7611bfb491f42b1bdef6ad501ef51f052ac9f5d5ae57a2df6760ace9d/zenyx-2.2.0.tar.gz
+[2024-04-21 15:16:07] INFO root fetch - processPackages [zenyx]: executing diffoscope
+[2024-04-21 15:16:07] INFO root fetch - processPackages [zenyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenyx-2.1.0.tar.gz tmp/zenyx-2.2.0.tar.gz --markdown 20240421/z/zenyx/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-21 15:16:07] INFO root fetch - processPackages [STC7-0]: Downloading https://files.pythonhosted.org/packages/a7/e3/cace1a3e74557078394638ece25578594dbc0416f19b73509893ba324f2c/STC7_0-0.0.3-py3-none-any.whl
+[2024-04-21 15:16:07] INFO root fetch - processPackages [STC7-0]: executing diffoscope
+[2024-04-21 15:16:07] INFO root fetch - processPackages [STC7-0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STC7_0-0.0.0-py3-none-any.whl.zip tmp/STC7_0-0.0.3-py3-none-any.whl.zip --markdown 20240421/S/STC7-0/0.0.0-0.0.3/README.md --exclude *.pyd
+[2024-04-21 15:16:08] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.1.0.tar.gz]
+[2024-04-21 15:16:08] INFO root fetch - processPackages [zenyx]: Remove: archive file [/home/abi/fetcher/tmp/zenyx-2.2.0.tar.gz]
+[2024-04-21 15:16:08] INFO root fetch - main [MainThread]: End processing [zenyx]: success
+[2024-04-21 15:16:08] INFO root fetch - processPackages [STC7-0]: Remove: archive file [/home/abi/fetcher/tmp/STC7_0-0.0.0-py3-none-any.whl.zip]
+[2024-04-21 15:16:08] INFO root fetch - processPackages [STC7-0]: Remove: archive file [/home/abi/fetcher/tmp/STC7_0-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 15:16:08] INFO root fetch - main [MainThread]: End processing [STC7-0]: success
+[2024-04-21 15:16:08] INFO root fetch - main [MainThread]: Store serial: [22864843]
