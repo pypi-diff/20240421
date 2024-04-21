@@ -1907,3 +1907,29 @@
 [2024-04-21 02:45:20] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404200044.tar.gz]
 [2024-04-21 02:45:20] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-04-21 02:45:20] INFO root fetch - main [MainThread]: Store serial: [22860740]
+[2024-04-21 02:47:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22860740]
+[2024-04-21 02:47:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 02:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nm-magic-wand-nightly
+[2024-04-21 02:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bumpsemver
+[2024-04-21 02:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Geode-Implicit
+[2024-04-21 02:47:30] INFO root fetch - processPackages [bumpsemver]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-21 02:47:30] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240421] Old Version: [0.2.2.20240420]
+[2024-04-21 02:47:30] INFO root fetch - processPackages [Geode-Implicit]: New version: [2.8.5rc1] Old Version: [2.8.5]
+[2024-04-21 02:47:30] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/e6/d1/2e73c44e1299043260001b8c481d436c2e2786f85ee1b7dd5bb882d71c00/nm_magic_wand_nightly-0.2.2.20240420-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-04-21 02:47:30] INFO root fetch - processPackages [bumpsemver]: Downloading https://files.pythonhosted.org/packages/8f/dd/249307ae4c04d6df1063ec7ab1832cb657fa94c10f256d07e2cb90725e46/bumpsemver-2.0.0.tar.gz
+[2024-04-21 02:47:30] INFO root fetch - processPackages [Geode-Implicit]: Downloading https://files.pythonhosted.org/packages/48/a8/80312a51d255a2d21d958e5e5e5758ad03a71325f93911eed480a21fd10c/Geode_Implicit-2.8.5-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-21 02:47:30] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 76591190>=10485760
+[2024-04-21 02:47:30] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-04-21 02:47:30] INFO root fetch - processPackages [bumpsemver]: Downloading https://files.pythonhosted.org/packages/36/97/95bf8b8ea0ed20bb6349897d4cbb5bbad4a68781378562105765d03c27f7/bumpsemver-2.1.0.tar.gz
+[2024-04-21 02:47:31] INFO root fetch - processPackages [bumpsemver]: executing diffoscope
+[2024-04-21 02:47:31] INFO root fetch - processPackages [bumpsemver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumpsemver-2.0.0.tar.gz tmp/bumpsemver-2.1.0.tar.gz --markdown 20240421/b/bumpsemver/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-04-21 02:47:31] INFO root fetch - processPackages [Geode-Implicit]: Downloading https://files.pythonhosted.org/packages/f7/fa/28e4e33b06c3dcad81846ffa072282d735f5172774daa8be50922809c3b7/Geode_Implicit-2.8.5rc1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-21 02:47:31] INFO root fetch - processPackages [bumpsemver]: Remove: archive file [/home/abi/fetcher/tmp/bumpsemver-2.0.0.tar.gz]
+[2024-04-21 02:47:31] INFO root fetch - processPackages [bumpsemver]: Remove: archive file [/home/abi/fetcher/tmp/bumpsemver-2.1.0.tar.gz]
+[2024-04-21 02:47:31] INFO root fetch - main [MainThread]: End processing [bumpsemver]: success
+[2024-04-21 02:47:31] INFO root fetch - processPackages [Geode-Implicit]: executing diffoscope
+[2024-04-21 02:47:31] INFO root fetch - processPackages [Geode-Implicit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Implicit-2.8.5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Implicit-2.8.5rc1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240421/G/Geode-Implicit/2.8.5-2.8.5rc1/README.md --exclude *.pyd
+[2024-04-21 02:48:17] INFO root fetch - processPackages [Geode-Implicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Implicit-2.8.5-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-21 02:48:17] INFO root fetch - processPackages [Geode-Implicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Implicit-2.8.5rc1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-21 02:48:17] INFO root fetch - main [MainThread]: End processing [Geode-Implicit]: success
+[2024-04-21 02:48:17] INFO root fetch - main [MainThread]: Store serial: [22860753]
