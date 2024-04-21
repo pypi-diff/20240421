@@ -5585,3 +5585,24 @@
 [2024-04-21 08:54:03] INFO root fetch - processPackages [stackNqueue]: Remove: archive file [/home/abi/fetcher/tmp/stackNqueue-0.0.3-py3-none-any.whl.zip]
 [2024-04-21 08:54:03] INFO root fetch - main [MainThread]: End processing [stackNqueue]: success
 [2024-04-21 08:54:03] INFO root fetch - main [MainThread]: Store serial: [22862590]
+[2024-04-21 08:56:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862590]
+[2024-04-21 08:56:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 08:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SmjaAi
+[2024-04-21 08:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fixerio-client
+[2024-04-21 08:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jy.wb2024
+[2024-04-21 08:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC392
+[2024-04-21 08:56:12] INFO root fetch - processPackages [SmjaAi]: New version: [0.6] Old Version: [0.4]
+[2024-04-21 08:56:12] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/50/95/ed591ff02e1a2a8ba46c225abd2def268398c94c06b694ec1dfc77af6e66/smjaai-0.4.tar.gz
+[2024-04-21 08:56:12] WARNING root fetch - processPackages [fixerio-client]: Skipping, unable to determine old version
+[2024-04-21 08:56:12] INFO root fetch - main [MainThread]: End processing [fixerio-client] error
+[2024-04-21 08:56:12] WARNING root fetch - processPackages [jy.wb2024]: Skipping, unable to determine old version
+[2024-04-21 08:56:12] INFO root fetch - main [MainThread]: End processing [jy.wb2024] error
+[2024-04-21 08:56:12] WARNING root fetch - processPackages [PythonTestLJC392]: Skipping, unable to determine old version
+[2024-04-21 08:56:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC392] error
+[2024-04-21 08:56:12] INFO root fetch - processPackages [SmjaAi]: Downloading https://files.pythonhosted.org/packages/0c/50/40020a8a879c619c706f347951f0d7ddb68d867035956e74f1eef821f8a4/smjaai-0.6.tar.gz
+[2024-04-21 08:56:12] INFO root fetch - processPackages [SmjaAi]: executing diffoscope
+[2024-04-21 08:56:12] INFO root fetch - processPackages [SmjaAi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smjaai-0.4.tar.gz tmp/smjaai-0.6.tar.gz --markdown 20240421/S/SmjaAi/0.4-0.6/README.md --exclude *.pyd
+[2024-04-21 08:56:13] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.4.tar.gz]
+[2024-04-21 08:56:13] INFO root fetch - processPackages [SmjaAi]: Remove: archive file [/home/abi/fetcher/tmp/smjaai-0.6.tar.gz]
+[2024-04-21 08:56:13] INFO root fetch - main [MainThread]: End processing [SmjaAi]: success
+[2024-04-21 08:56:13] INFO root fetch - main [MainThread]: Store serial: [22862606]
