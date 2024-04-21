@@ -4434,3 +4434,24 @@
 [2024-04-21 07:04:51] WARNING root fetch - processPackages [PythonTestLJC374]: Skipping, unable to determine old version
 [2024-04-21 07:04:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC374] error
 [2024-04-21 07:04:51] INFO root fetch - main [MainThread]: Store serial: [22862075]
+[2024-04-21 07:06:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862075]
+[2024-04-21 07:07:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 07:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salinic
+[2024-04-21 07:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2024-04-21 07:07:00] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240420] Old Version: [0.1.2.dev20240419]
+[2024-04-21 07:07:00] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/7e/5a/3a2b2345cc141573ba13eabb6ebdb1c82dec1eaa750c86feb9e70d70937c/rapid_pe-0.1.2.dev20240419.tar.gz
+[2024-04-21 07:07:00] INFO root fetch - processPackages [salinic]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-21 07:07:00] INFO root fetch - processPackages [salinic]: Downloading https://files.pythonhosted.org/packages/33/a9/82d81ed5043b9f94bb25e9c687948d044e0b376b5a7527f8662aec11e082/salinic-0.3.8.tar.gz
+[2024-04-21 07:07:00] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/91/74/9226878cfd84a2646c2d66f187ec939dcd8bac2a51ddbe7c93cd7fe47cd5/rapid_pe-0.1.2.dev20240420.tar.gz
+[2024-04-21 07:07:00] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-04-21 07:07:00] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240419.tar.gz tmp/rapid_pe-0.1.2.dev20240420.tar.gz --markdown 20240421/r/rapid-pe/0.1.2.dev20240419-0.1.2.dev20240420/README.md --exclude *.pyd
+[2024-04-21 07:07:00] INFO root fetch - processPackages [salinic]: Downloading https://files.pythonhosted.org/packages/47/18/8fe918155d156336763a724c0df8ca5b84c4bcc7928de38f5a01487dfcd1/salinic-0.3.9.tar.gz
+[2024-04-21 07:07:01] INFO root fetch - processPackages [salinic]: executing diffoscope
+[2024-04-21 07:07:01] INFO root fetch - processPackages [salinic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salinic-0.3.8.tar.gz tmp/salinic-0.3.9.tar.gz --markdown 20240421/s/salinic/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-21 07:07:01] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240419.tar.gz]
+[2024-04-21 07:07:01] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240420.tar.gz]
+[2024-04-21 07:07:01] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-04-21 07:07:01] INFO root fetch - processPackages [salinic]: Remove: archive file [/home/abi/fetcher/tmp/salinic-0.3.8.tar.gz]
+[2024-04-21 07:07:01] INFO root fetch - processPackages [salinic]: Remove: archive file [/home/abi/fetcher/tmp/salinic-0.3.9.tar.gz]
+[2024-04-21 07:07:01] INFO root fetch - main [MainThread]: End processing [salinic]: success
+[2024-04-21 07:07:01] INFO root fetch - main [MainThread]: Store serial: [22862081]
