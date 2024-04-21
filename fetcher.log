@@ -16528,3 +16528,93 @@
 [2024-04-21 21:05:16] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.91.tar.gz]
 [2024-04-21 21:05:16] INFO root fetch - main [MainThread]: End processing [pipez]: success
 [2024-04-21 21:05:16] INFO root fetch - main [MainThread]: Store serial: [22867784]
+[2024-04-21 21:07:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867784]
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: standard-aifc
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: standard-asynchat
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: standard-asyncore
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: standard-cgi
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: standard-cgitb
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: standard-crypt
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: standard-imghdr
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: standard-mailcap
+[2024-04-21 21:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: standard-nntplib
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-cgi]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-cgi]: Start processing: standard-pipes
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-cgi] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asynchat]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-crypt]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-crypt]: Start processing: standard-smtpd
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-crypt] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [dune-rivals]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-nntplib]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-nntplib]: Start processing: standard-sndhdr
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-nntplib] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-cgitb]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-cgitb]: Start processing: phidata
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-cgitb] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-aifc]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-aifc]: Start processing: standard-sunau
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-aifc] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asyncore]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-mailcap]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-mailcap]: Start processing: standard-telnetlib
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-mailcap] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-imghdr]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-imghdr]: Start processing: standard-uu
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-imghdr] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-telnetlib]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-telnetlib]: Start processing: standard-xdrlib
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-telnetlib] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-pipes]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-pipes]: Start processing: memory-machine
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-pipes] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-smtpd]: New version: [3.9.19] Old Version: [3.8.19]
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-sndhdr]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-sndhdr] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-sunau]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-sunau] error
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-xdrlib]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-xdrlib] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/80/e5/6d47cd2acfe45e8d068fe5202471cfce14193ad179c903eae4e5b2b7c115/standard_asynchat-3.8.19.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/da/6d/d24d3a24f663ff4d79a29a8c72c7bc33e1ff45a92d9e55e50736c7035d71/dune_rivals-0.5.7.tar.gz
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [standard-uu]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [standard-uu] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/31/2b/5fde84c80e3ed06b36ef5918a5f432c21499f04bdf63ff844b9edf7b9068/standard_smtpd-3.8.19.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/68/67/4200453c3ede995a10109e88b3497f45d1f6ef55004d7a1d36ccf7f34224/standard_asyncore-3.8.19-py3-none-any.whl
+[2024-04-21 21:07:26] WARNING root fetch - processPackages [memory-machine]: Skipping, unable to determine old version
+[2024-04-21 21:07:26] INFO root fetch - main [MainThread]: End processing [memory-machine] error
+[2024-04-21 21:07:26] INFO root fetch - processPackages [phidata]: New version: [2.3.9] Old Version: [2.3.80]
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asynchat]: Downloading https://files.pythonhosted.org/packages/5d/a6/b65ab907c0a30ee2dd2ae01460dcb2d1779970b951c51d041ec580820ddc/standard_asynchat-3.9.19.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-smtpd]: Downloading https://files.pythonhosted.org/packages/73/67/0c637369b4f23739ddf04ff83543aa29d1ca67cda51786df3d40fd1e6f41/standard_smtpd-3.9.19.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asyncore]: Downloading https://files.pythonhosted.org/packages/37/ac/712ec0f7af8b8b71e8bb65b98b47aac0ab7fc62d5fe508c82464a9b7a3e7/standard_asyncore-3.9.19-py3-none-any.whl
+[2024-04-21 21:07:26] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/29/cc/934b8e38e67a43a3756e093a2a83ee4fdce1e5d543806e1699d3367cb8d8/dune_rivals-0.5.8.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/e2/0f/8443f652def6960f13722d194abb577a60c1217b3949dbd045a932a5adab/phidata-2.3.80.tar.gz
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asynchat]: executing diffoscope
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asynchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asynchat-3.8.19.tar.gz tmp/standard_asynchat-3.9.19.tar.gz --markdown 20240421/s/standard-asynchat/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-smtpd]: executing diffoscope
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-smtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_smtpd-3.8.19.tar.gz tmp/standard_smtpd-3.9.19.tar.gz --markdown 20240421/s/standard-smtpd/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asyncore]: executing diffoscope
+[2024-04-21 21:07:26] INFO root fetch - processPackages [standard-asyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard_asyncore-3.8.19-py3-none-any.whl.zip tmp/standard_asyncore-3.9.19-py3-none-any.whl.zip --markdown 20240421/s/standard-asyncore/3.8.19-3.9.19/README.md --exclude *.pyd
+[2024-04-21 21:07:26] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-21 21:07:26] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.5.7.tar.gz tmp/dune_rivals-0.5.8.tar.gz --markdown 20240421/d/dune-rivals/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-04-21 21:07:27] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/51/63/c5ed33bf592cd65cdcb90c64ded88ab6bc7786db2184c64f6484d61e92d0/phidata-2.3.9.tar.gz
+[2024-04-21 21:07:27] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-04-21 21:07:27] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.3.80.tar.gz tmp/phidata-2.3.9.tar.gz --markdown 20240421/p/phidata/2.3.80-2.3.9/README.md --exclude *.pyd
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.8.19.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-asynchat]: Remove: archive file [/home/abi/fetcher/tmp/standard_asynchat-3.9.19.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - main [MainThread]: End processing [standard-asynchat]: success
+[2024-04-21 21:07:27] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.7.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.5.8.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-smtpd]: Remove: archive file [/home/abi/fetcher/tmp/standard_smtpd-3.8.19.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-smtpd]: Remove: archive file [/home/abi/fetcher/tmp/standard_smtpd-3.9.19.tar.gz]
+[2024-04-21 21:07:27] INFO root fetch - main [MainThread]: End processing [standard-smtpd]: success
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-asyncore]: Remove: archive file [/home/abi/fetcher/tmp/standard_asyncore-3.8.19-py3-none-any.whl.zip]
+[2024-04-21 21:07:27] INFO root fetch - processPackages [standard-asyncore]: Remove: archive file [/home/abi/fetcher/tmp/standard_asyncore-3.9.19-py3-none-any.whl.zip]
+[2024-04-21 21:07:27] INFO root fetch - main [MainThread]: End processing [standard-asyncore]: success
+[2024-04-21 21:07:29] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.80.tar.gz]
+[2024-04-21 21:07:29] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
+[2024-04-21 21:07:29] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-04-21 21:07:29] INFO root fetch - main [MainThread]: Store serial: [22867846]
