@@ -6130,3 +6130,9 @@
 [2024-04-21 09:40:08] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.9.tar.gz]
 [2024-04-21 09:40:08] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-04-21 09:40:08] INFO root fetch - main [MainThread]: Store serial: [22862845]
+[2024-04-21 09:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862845]
+[2024-04-21 09:42:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 09:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ojcalc
+[2024-04-21 09:42:17] WARNING root fetch - processPackages [ojcalc]: Skipping, unable to determine old version
+[2024-04-21 09:42:17] INFO root fetch - main [MainThread]: End processing [ojcalc] error
+[2024-04-21 09:42:17] INFO root fetch - main [MainThread]: Store serial: [22862849]
