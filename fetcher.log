@@ -9142,3 +9142,21 @@
 [2024-04-21 13:44:17] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
 [2024-04-21 13:44:17] INFO root fetch - main [MainThread]: End processing [nestpython]: success
 [2024-04-21 13:44:17] INFO root fetch - main [MainThread]: Store serial: [22864092]
+[2024-04-21 13:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864092]
+[2024-04-21 13:46:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 13:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: echoai-transformer-block
+[2024-04-21 13:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-flex-report
+[2024-04-21 13:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optionresult
+[2024-04-21 13:46:25] WARNING root fetch - processPackages [optionresult]: Skipping, unable to determine old version
+[2024-04-21 13:46:25] INFO root fetch - main [MainThread]: End processing [optionresult] error
+[2024-04-21 13:46:25] INFO root fetch - processPackages [django-flex-report]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-21 13:46:25] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/76/f6/a322d1bc92974e97a45ff99a11e42c29494184b2fb48f433c337a703691e/django-flex-report-0.7.6.tar.gz
+[2024-04-21 13:46:25] WARNING root fetch - processPackages [echoai-transformer-block]: Skipping, unable to determine old version
+[2024-04-21 13:46:25] INFO root fetch - main [MainThread]: End processing [echoai-transformer-block] error
+[2024-04-21 13:46:25] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/65/16/9ea6d0ae926a42c58f26879990e80494447360ddd5cd319b2b28400d69b4/django-flex-report-0.7.7.tar.gz
+[2024-04-21 13:46:25] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-04-21 13:46:25] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-flex-report-0.7.6.tar.gz tmp/django-flex-report-0.7.7.tar.gz --markdown 20240421/d/django-flex-report/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-21 13:46:26] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.6.tar.gz]
+[2024-04-21 13:46:26] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.7.7.tar.gz]
+[2024-04-21 13:46:26] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-04-21 13:46:26] INFO root fetch - main [MainThread]: Store serial: [22864103]
