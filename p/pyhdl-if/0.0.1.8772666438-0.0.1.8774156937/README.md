@@ -1,0 +1,370 @@
+# Comparing `tmp/pyhdl_if-0.0.1.8772666438-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip` & `tmp/pyhdl_if-0.0.1.8774156937-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip`
+
+## zipinfo {}
+
+```diff
+@@ -1,73 +1,73 @@
+-Zip file size: 88808 bytes, number of entries: 71
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 pyhdl_if.libs/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/cmd/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/pi/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/call/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/tlm/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/
+--rw-r--r--  2.0 unx     2034 b- defN 24-Apr-21 12:33 hdl_if/backend.py
+--rw-r--r--  2.0 unx     3532 b- defN 24-Apr-21 12:33 hdl_if/decorators.py
+--rw-r--r--  2.0 unx     2240 b- defN 24-Apr-21 12:33 hdl_if/pkginfo.py
+--rw-r--r--  2.0 unx       21 b- defN 24-Apr-21 12:33 hdl_if/__build_num__.py
+--rw-r--r--  2.0 unx     2358 b- defN 24-Apr-21 12:33 hdl_if/__init__.py
+--rw-r--r--  2.0 unx     2018 b- defN 24-Apr-21 12:33 hdl_if/__main__.py
+--rwxr-xr-x  2.0 unx    33152 b- defN 24-Apr-21 12:33 hdl_if/entry.cpython-39-x86_64-linux-gnu.so
+--rw-r--r--  2.0 unx     1563 b- defN 24-Apr-21 12:33 hdl_if/hdl_services.py
+--rw-r--r--  2.0 unx     1928 b- defN 24-Apr-21 12:33 hdl_if/cmd/cmd_api_gen_sv.py
+--rw-r--r--  2.0 unx     2054 b- defN 24-Apr-21 12:33 hdl_if/cmd/cmd_ifc_gen_sv.py
+--rw-r--r--  2.0 unx        0 b- defN 24-Apr-21 12:33 hdl_if/pi/__init__.py
+--rw-r--r--  2.0 unx     2210 b- defN 24-Apr-21 12:33 hdl_if/call/call_proxy.py
+--rw-r--r--  2.0 unx     1271 b- defN 24-Apr-21 12:33 hdl_if/call/hdl_call_endpoint.py
+--rw-r--r--  2.0 unx     1105 b- defN 24-Apr-21 12:33 hdl_if/tlm/tlm_method.py
+--rw-r--r--  2.0 unx     1267 b- defN 24-Apr-21 12:33 hdl_if/tlm/tlm_ifc_rgy.py
+--rw-r--r--  2.0 unx       26 b- defN 24-Apr-21 12:33 hdl_if/tlm/__init__.py
+--rw-r--r--  2.0 unx     3221 b- defN 24-Apr-21 12:33 hdl_if/tlm/stream_rgy.py
+--rw-r--r--  2.0 unx     1400 b- defN 24-Apr-21 12:33 hdl_if/tlm/tlm_ifc.py
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/dpi/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/vpi/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/pi/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/call/
+-drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 12:33 hdl_if/impl/tlm/
+--rw-r--r--  2.0 unx      209 b- defN 24-Apr-21 12:33 hdl_if/impl/__init__.py
+--rw-r--r--  2.0 unx      572 b- defN 24-Apr-21 12:33 hdl_if/impl/dpi/__init__.py
+--rw-r--r--  2.0 unx     2071 b- defN 24-Apr-21 12:33 hdl_if/impl/dpi/hdl_services_dpi.py
+--rw-r--r--  2.0 unx    20357 b- defN 24-Apr-21 12:33 hdl_if/impl/vpi/api.py
+--rw-r--r--  2.0 unx   295619 b- defN 24-Apr-21 12:33 hdl_if/impl/vpi/pytf.py
+--rw-r--r--  2.0 unx     2422 b- defN 24-Apr-21 12:33 hdl_if/impl/vpi/__init__.py
+--rw-r--r--  2.0 unx        0 b- defN 24-Apr-21 12:33 hdl_if/impl/pi/__init__.py
+--rw-r--r--  2.0 unx     1838 b- defN 24-Apr-21 12:33 hdl_if/impl/pi/backend_asyncio.py
+--rw-r--r--  2.0 unx      966 b- defN 24-Apr-21 12:33 hdl_if/impl/pi/backend_cocotb.py
+--rw-r--r--  2.0 unx     1490 b- defN 24-Apr-21 12:33 hdl_if/impl/call/imp_task_impl.py
+--rw-r--r--  2.0 unx     2219 b- defN 24-Apr-21 12:33 hdl_if/impl/call/method_decorator_impl.py
+--rw-r--r--  2.0 unx     1894 b- defN 24-Apr-21 12:33 hdl_if/impl/call/api_decorator_impl.py
+--rw-r--r--  2.0 unx     1435 b- defN 24-Apr-21 12:33 hdl_if/impl/call/api_def.py
+--rw-r--r--  2.0 unx     1600 b- defN 24-Apr-21 12:33 hdl_if/impl/call/method_def.py
+--rw-r--r--  2.0 unx     1404 b- defN 24-Apr-21 12:33 hdl_if/impl/call/ctor.py
+--rw-r--r--  2.0 unx        1 b- defN 24-Apr-21 12:33 hdl_if/impl/call/__init__.py
+--rw-r--r--  2.0 unx     4032 b- defN 24-Apr-21 12:33 hdl_if/impl/call/hdl_call_endpoint_dpi.py
+--rw-r--r--  2.0 unx     1474 b- defN 24-Apr-21 12:33 hdl_if/impl/call/imp_func_impl.py
+--rw-r--r--  2.0 unx     2168 b- defN 24-Apr-21 12:33 hdl_if/impl/call/call_proxy_dpi.py
+--rw-r--r--  2.0 unx     1340 b- defN 24-Apr-21 12:33 hdl_if/impl/call/context.py
+--rw-r--r--  2.0 unx     1389 b- defN 24-Apr-21 12:33 hdl_if/impl/call/api_def_rgy.py
+--rw-r--r--  2.0 unx    21157 b- defN 24-Apr-21 12:33 hdl_if/impl/call/gen_sv_class.py
+--rw-r--r--  2.0 unx      902 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/stream_req_rsp.py
+--rw-r--r--  2.0 unx     2088 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/rsp_fifo_decorator_impl.py
+--rw-r--r--  2.0 unx      918 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/model_info_tlm_if.py
+--rw-r--r--  2.0 unx     6982 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/gen_ifc_sv.py
+--rw-r--r--  2.0 unx     2231 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/req_fifo_decorator_impl.py
+--rw-r--r--  2.0 unx      106 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/__init__.py
+--rw-r--r--  2.0 unx     1269 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/stream_req.py
+--rw-r--r--  2.0 unx     1822 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/type_info_tlm_if.py
+--rw-r--r--  2.0 unx     1308 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/stream.py
+--rw-r--r--  2.0 unx     2106 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/tlm_interface_decorator_impl.py
+--rw-r--r--  2.0 unx     1117 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/interface_decorator_impl_base.py
+--rw-r--r--  2.0 unx     1092 b- defN 24-Apr-21 12:33 hdl_if/impl/tlm/stream_rsp.py
+--rw-r--r--  2.0 unx    11357 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/LICENSE
+--rw-r--r--  2.0 unx      411 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/METADATA
+--rw-rw-r--  2.0 unx     5079 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/RECORD
+--rw-r--r--  2.0 unx        7 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/top_level.txt
+--rw-r--r--  2.0 unx      100 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/entry_points.txt
+--rw-r--r--  2.0 unx      148 b- defN 24-Apr-21 12:33 pyhdl_if-0.0.1.8772666438.dist-info/WHEEL
+-71 files, 466100 bytes uncompressed, 79428 bytes compressed:  83.0%
++Zip file size: 88905 bytes, number of entries: 71
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 pyhdl_if.libs/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/cmd/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/pi/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/call/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/tlm/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/
++-rw-r--r--  2.0 unx     2034 b- defN 24-Apr-21 16:54 hdl_if/backend.py
++-rw-r--r--  2.0 unx     3532 b- defN 24-Apr-21 16:54 hdl_if/decorators.py
++-rw-r--r--  2.0 unx     2240 b- defN 24-Apr-21 16:54 hdl_if/pkginfo.py
++-rw-r--r--  2.0 unx       21 b- defN 24-Apr-21 16:54 hdl_if/__build_num__.py
++-rw-r--r--  2.0 unx     2358 b- defN 24-Apr-21 16:54 hdl_if/__init__.py
++-rw-r--r--  2.0 unx     2018 b- defN 24-Apr-21 16:54 hdl_if/__main__.py
++-rwxr-xr-x  2.0 unx    33152 b- defN 24-Apr-21 16:54 hdl_if/entry.cpython-39-x86_64-linux-gnu.so
++-rw-r--r--  2.0 unx     1563 b- defN 24-Apr-21 16:54 hdl_if/hdl_services.py
++-rw-r--r--  2.0 unx     1928 b- defN 24-Apr-21 16:54 hdl_if/cmd/cmd_api_gen_sv.py
++-rw-r--r--  2.0 unx     2054 b- defN 24-Apr-21 16:54 hdl_if/cmd/cmd_ifc_gen_sv.py
++-rw-r--r--  2.0 unx        0 b- defN 24-Apr-21 16:54 hdl_if/pi/__init__.py
++-rw-r--r--  2.0 unx     2210 b- defN 24-Apr-21 16:54 hdl_if/call/call_proxy.py
++-rw-r--r--  2.0 unx     1271 b- defN 24-Apr-21 16:54 hdl_if/call/hdl_call_endpoint.py
++-rw-r--r--  2.0 unx     1105 b- defN 24-Apr-21 16:54 hdl_if/tlm/tlm_method.py
++-rw-r--r--  2.0 unx     1267 b- defN 24-Apr-21 16:54 hdl_if/tlm/tlm_ifc_rgy.py
++-rw-r--r--  2.0 unx       26 b- defN 24-Apr-21 16:54 hdl_if/tlm/__init__.py
++-rw-r--r--  2.0 unx     3221 b- defN 24-Apr-21 16:54 hdl_if/tlm/stream_rgy.py
++-rw-r--r--  2.0 unx     1400 b- defN 24-Apr-21 16:54 hdl_if/tlm/tlm_ifc.py
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/dpi/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/vpi/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/pi/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/call/
++drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-21 16:54 hdl_if/impl/tlm/
++-rw-r--r--  2.0 unx      209 b- defN 24-Apr-21 16:54 hdl_if/impl/__init__.py
++-rw-r--r--  2.0 unx      572 b- defN 24-Apr-21 16:54 hdl_if/impl/dpi/__init__.py
++-rw-r--r--  2.0 unx     2071 b- defN 24-Apr-21 16:54 hdl_if/impl/dpi/hdl_services_dpi.py
++-rw-r--r--  2.0 unx    20357 b- defN 24-Apr-21 16:54 hdl_if/impl/vpi/api.py
++-rw-r--r--  2.0 unx   295619 b- defN 24-Apr-21 16:54 hdl_if/impl/vpi/pytf.py
++-rw-r--r--  2.0 unx     2422 b- defN 24-Apr-21 16:54 hdl_if/impl/vpi/__init__.py
++-rw-r--r--  2.0 unx        0 b- defN 24-Apr-21 16:54 hdl_if/impl/pi/__init__.py
++-rw-r--r--  2.0 unx     1838 b- defN 24-Apr-21 16:54 hdl_if/impl/pi/backend_asyncio.py
++-rw-r--r--  2.0 unx      966 b- defN 24-Apr-21 16:54 hdl_if/impl/pi/backend_cocotb.py
++-rw-r--r--  2.0 unx     1490 b- defN 24-Apr-21 16:54 hdl_if/impl/call/imp_task_impl.py
++-rw-r--r--  2.0 unx     2219 b- defN 24-Apr-21 16:54 hdl_if/impl/call/method_decorator_impl.py
++-rw-r--r--  2.0 unx     1894 b- defN 24-Apr-21 16:54 hdl_if/impl/call/api_decorator_impl.py
++-rw-r--r--  2.0 unx     1435 b- defN 24-Apr-21 16:54 hdl_if/impl/call/api_def.py
++-rw-r--r--  2.0 unx     1600 b- defN 24-Apr-21 16:54 hdl_if/impl/call/method_def.py
++-rw-r--r--  2.0 unx     1404 b- defN 24-Apr-21 16:54 hdl_if/impl/call/ctor.py
++-rw-r--r--  2.0 unx        1 b- defN 24-Apr-21 16:54 hdl_if/impl/call/__init__.py
++-rw-r--r--  2.0 unx     4032 b- defN 24-Apr-21 16:54 hdl_if/impl/call/hdl_call_endpoint_dpi.py
++-rw-r--r--  2.0 unx     1474 b- defN 24-Apr-21 16:54 hdl_if/impl/call/imp_func_impl.py
++-rw-r--r--  2.0 unx     2168 b- defN 24-Apr-21 16:54 hdl_if/impl/call/call_proxy_dpi.py
++-rw-r--r--  2.0 unx     1340 b- defN 24-Apr-21 16:54 hdl_if/impl/call/context.py
++-rw-r--r--  2.0 unx     1389 b- defN 24-Apr-21 16:54 hdl_if/impl/call/api_def_rgy.py
++-rw-r--r--  2.0 unx    21157 b- defN 24-Apr-21 16:54 hdl_if/impl/call/gen_sv_class.py
++-rw-r--r--  2.0 unx      902 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/stream_req_rsp.py
++-rw-r--r--  2.0 unx     2275 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/rsp_fifo_decorator_impl.py
++-rw-r--r--  2.0 unx      918 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/model_info_tlm_if.py
++-rw-r--r--  2.0 unx     6982 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/gen_ifc_sv.py
++-rw-r--r--  2.0 unx     2159 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/req_fifo_decorator_impl.py
++-rw-r--r--  2.0 unx      106 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/__init__.py
++-rw-r--r--  2.0 unx     1322 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/stream_req.py
++-rw-r--r--  2.0 unx     1822 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/type_info_tlm_if.py
++-rw-r--r--  2.0 unx     1308 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/stream.py
++-rw-r--r--  2.0 unx     2106 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/tlm_interface_decorator_impl.py
++-rw-r--r--  2.0 unx     1117 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/interface_decorator_impl_base.py
++-rw-r--r--  2.0 unx     1087 b- defN 24-Apr-21 16:54 hdl_if/impl/tlm/stream_rsp.py
++-rw-r--r--  2.0 unx    11357 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/LICENSE
++-rw-r--r--  2.0 unx      411 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/METADATA
++-rw-rw-r--  2.0 unx     5079 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/RECORD
++-rw-r--r--  2.0 unx        7 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/top_level.txt
++-rw-r--r--  2.0 unx      100 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/entry_points.txt
++-rw-r--r--  2.0 unx      148 b- defN 24-Apr-21 16:54 pyhdl_if-0.0.1.8774156937.dist-info/WHEEL
++71 files, 466263 bytes uncompressed, 79525 bytes compressed:  82.9%
+```
+
+## zipnote {}
+
+```diff
+@@ -1,14 +1,14 @@
+ Filename: hdl_if/
+ Comment: 
+ 
+-Filename: pyhdl_if.libs/
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/
++Filename: pyhdl_if.libs/
+ Comment: 
+ 
+ Filename: hdl_if/cmd/
+ Comment: 
+ 
+ Filename: hdl_if/pi/
+ Comment: 
+@@ -189,26 +189,26 @@
+ 
+ Filename: hdl_if/impl/tlm/interface_decorator_impl_base.py
+ Comment: 
+ 
+ Filename: hdl_if/impl/tlm/stream_rsp.py
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/LICENSE
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/LICENSE
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/METADATA
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/METADATA
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/RECORD
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/RECORD
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/top_level.txt
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/top_level.txt
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/entry_points.txt
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/entry_points.txt
+ Comment: 
+ 
+-Filename: pyhdl_if-0.0.1.8772666438.dist-info/WHEEL
++Filename: pyhdl_if-0.0.1.8774156937.dist-info/WHEEL
+ Comment: 
+ 
+ Zip file comment:
+```
+
+## hdl_if/__build_num__.py
+
+```diff
+@@ -1 +1 @@
+-BUILD_NUM=8772666438
++BUILD_NUM=8774156937
+```
+
+## hdl_if/impl/tlm/rsp_fifo_decorator_impl.py
+
+```diff
+@@ -40,19 +40,28 @@
+         if not hasattr(rtype, "_fields_"):
+             raise Exception("FIFO response type must derive from ctypes.Structure")
+ 
+         self.proxy = TlmMethod(T.__name__, TlmMethodKind.Rsp, None, rtype)
+ 
+         async def closure(self):
+             model = self._model
+-            obj = params[0][0]()
+             if T.__name__ not in model._if_m.keys():
+                 raise Exception("Method %s is unbound" % T.__name__)
+             ifc = model._if_m[T.__name__]
+             ival = await ifc.get()
++            sz = int(((ival-1)/8)+1)
++            bval = bytearray(sz)
++
++            for i in range(sz):
++                bval[i] = (ival & 0xFF)
++                ival >>= 8
++
++            obj = rtype.from_buffer_copy(bval)
++
+             # TODO: populate obj from ival
++
+             return obj
+         return closure
+ 
+     def register(self, T, Tp):
+         super().register(T, self.proxy)
+```
+
+## hdl_if/impl/tlm/req_fifo_decorator_impl.py
+
+```diff
+@@ -46,15 +46,14 @@
+             raise Exception("FIFO data-parameter type (%s) must derived from ctypes.Structure" % str(type(ptype)))
+         
+         self.proxy = TlmMethod(T.__name__, TlmMethodKind.Req, ptype, None)
+ 
+         async def closure(self, obj):
+             model = self._model
+             if T.__name__ not in model._if_m.keys():
+-                print("keys: %s" % str(model._if_m.keys()), flush=True)
+                 raise Exception("Method %s is unbound" % T.__name__)
+             ifc = model._if_m[T.__name__]
+             await ifc.put(obj)
+         return closure
+     
+     def register(self, T, Tp):
+         super().register(T, self.proxy)
+```
+
+## hdl_if/impl/tlm/stream_req.py
+
+```diff
+@@ -30,12 +30,13 @@
+         dat_arr = bytes(obj)
+         data = 0
+         for d in reversed(dat_arr):
+             data <<= 8
+             data |= d
+ 
+         # TODO: Check if this is a valid object
++        print("put::data 0x%08x" % data, flush=True)
+         await self.proxy.invoke_hdl_t(
+             "put",
+             (data,)
+         )
+```
+
+## hdl_if/impl/tlm/stream_rsp.py
+
+```diff
+@@ -22,13 +22,11 @@
+ from .stream import Stream, StreamKind
+ 
+ class StreamRsp(Stream):
+ 
+     def __init__(self, name):
+         super().__init__(StreamKind.Rsp, name)
+ 
+-    async def get(self, obj):
+-        await self.proxy.invoke_hdl_t(
+-            "get",
+-            (obj,)
+-        )
++    async def get(self) -> int:
++        intval = await self.proxy.invoke_hdl_t("get", ())
++        return intval
+```
+
+## Comparing `pyhdl_if-0.0.1.8772666438.dist-info/LICENSE` & `pyhdl_if-0.0.1.8774156937.dist-info/LICENSE`
+
+ * *Files identical despite different names*
+
+## Comparing `pyhdl_if-0.0.1.8772666438.dist-info/RECORD` & `pyhdl_if-0.0.1.8774156937.dist-info/RECORD`
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -1,11 +1,11 @@
+ hdl_if/backend.py,sha256=-FpSPdP23Ruas0IBGnhpCh7rgK_iKsejsEM2NlEbiPM,2034
+ hdl_if/decorators.py,sha256=MaB5m3bsBkG6-_eUgcdYRQ3pNitHOupZ_97h8NVQ3Jk,3532
+ hdl_if/pkginfo.py,sha256=fG7m8HzRp55FI4Ys2esk691TAkbTlYOGcL4X1sNJLOI,2240
+-hdl_if/__build_num__.py,sha256=LU0LDuIztla7oj8jQAP-4Zb-fmYJSezlW0-Yu8e6Arw,21
++hdl_if/__build_num__.py,sha256=A-hZcteMMoak46yrBp7ehsOKcQpTz4_m4QeD5PC3DTk,21
+ hdl_if/__init__.py,sha256=QQePr9JlKW85FiB_g5_1cSHY1kNATvqe5bGrz68ObDY,2358
+ hdl_if/__main__.py,sha256=aRB8qBsOlGMGw07aZv7w-J5jveeI_vaa2cNUaubbWIA,2018
+ hdl_if/entry.cpython-39-x86_64-linux-gnu.so,sha256=Kd3MusP2qGaJTCCWXH5IDVAU67zW9JnYYhCcuXeNFEw,33152
+ hdl_if/hdl_services.py,sha256=BLr1In_cbONLBHgBnT-P-CFeZV7Xa__oJPf30_aVBHI,1563
+ hdl_if/cmd/cmd_api_gen_sv.py,sha256=L6YuQ4yyNF7O0C0j_cls7aj7mqTxw_406xzyEPcks-8,1928
+ hdl_if/cmd/cmd_ifc_gen_sv.py,sha256=DMHk68OaTI0d7ODlpTnU1PEt1lGJr2FIdye4dugeagU,2054
+ hdl_if/pi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+@@ -35,24 +35,24 @@
+ hdl_if/impl/call/hdl_call_endpoint_dpi.py,sha256=O1-2qWbhZPD-FImDReoYdNYr8XTWaca3RoVTnfaSRxM,4032
+ hdl_if/impl/call/imp_func_impl.py,sha256=sGJwhSWdOsmqcZzcwPnOwKciznCYFfa0Oy6FVNVrxmQ,1474
+ hdl_if/impl/call/call_proxy_dpi.py,sha256=D2FU-mYlUr-6jBWGXfV8tIPvwBtv0mw2qQk6fhTFncY,2168
+ hdl_if/impl/call/context.py,sha256=2F13-zbhPyokhJcvwgdzmYB_kd2LnN2XVxFeRWqO7g8,1340
+ hdl_if/impl/call/api_def_rgy.py,sha256=e0l07AQUk1B-1-PfAKq7vK-l9LdKzpvhJoZxnnxkBTQ,1389
+ hdl_if/impl/call/gen_sv_class.py,sha256=W3G4riHZNf8emnuabvzREQaTQ_bPgXxag6oq1_odEHc,21157
+ hdl_if/impl/tlm/stream_req_rsp.py,sha256=e8cbnO_cAXiDW4p-vs4wAiLHfrGypQr_b-x--9LMyPk,902
+-hdl_if/impl/tlm/rsp_fifo_decorator_impl.py,sha256=BCaveN2HNcaigvFuIMA6pnIWzPIrxLhnSwkCGvdfKHs,2088
++hdl_if/impl/tlm/rsp_fifo_decorator_impl.py,sha256=bdlDa0kjuq42r6uRFAqFcP6hHFyN18ZhEbSO0z9zZj8,2275
+ hdl_if/impl/tlm/model_info_tlm_if.py,sha256=W_525KYox1B_PP2YM-lpBdzacDmLtvGLT_YVY-80888,918
+ hdl_if/impl/tlm/gen_ifc_sv.py,sha256=r3MbtwHpoEcBdEzIHfrQkYaQy0AgK8_5W3oRcg4QqSc,6982
+-hdl_if/impl/tlm/req_fifo_decorator_impl.py,sha256=O9-6pj2uRQut1Gbbm4K-kDxieQZya9w-ICVrVWpnAFo,2231
++hdl_if/impl/tlm/req_fifo_decorator_impl.py,sha256=m3JNw7-4JwUlt2moVY4cO_9qdjv7NcozcayAStpoS7U,2159
+ hdl_if/impl/tlm/__init__.py,sha256=VCHJJxY_JYy1Z_Ri0J9n_CZ3Dc6sQm3qsyMBIbcya90,106
+-hdl_if/impl/tlm/stream_req.py,sha256=rqP1Yz_TNfFcLERvSajMUQdaiI7e1mwF7NQkEDrCxHs,1269
++hdl_if/impl/tlm/stream_req.py,sha256=ZJhkQP33XbS_HXaxJsMOM_Rd43RZYX2b35yoRdmIR4E,1322
+ hdl_if/impl/tlm/type_info_tlm_if.py,sha256=IGnwpDqsvCdmQu3EJgweL9xyofcfAcH024XfrQlI0vg,1822
+ hdl_if/impl/tlm/stream.py,sha256=tR36GZN6CMJ1bC2eq_ZPm4gfhzGuJd5ENKZuZe7gz1o,1308
+ hdl_if/impl/tlm/tlm_interface_decorator_impl.py,sha256=SrUXxEVpd8KH7oiH30diK1uf3ytlDfaT997Gp0WGLpc,2106
+ hdl_if/impl/tlm/interface_decorator_impl_base.py,sha256=b_o_ZfLycp4LItT1VboRgRm3v7Qu-CFh2BSijayqhk0,1117
+-hdl_if/impl/tlm/stream_rsp.py,sha256=ETgYykHRnLkhOiizs79EnHJIqGaIp9doJD40zXacGM0,1092
+-pyhdl_if-0.0.1.8772666438.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+-pyhdl_if-0.0.1.8772666438.dist-info/METADATA,sha256=OJhFZPGPlOf7gEovfnV4PZnCZtM8x969oJE6iIsKJBM,411
+-pyhdl_if-0.0.1.8772666438.dist-info/RECORD,,
+-pyhdl_if-0.0.1.8772666438.dist-info/top_level.txt,sha256=pUgHcB-Jzzq6njBWigdxiNQ-iX2XDr9TvdkJ8_fERGA,7
+-pyhdl_if-0.0.1.8772666438.dist-info/entry_points.txt,sha256=1E9TG7Ldku5J9z0z3MPKrqbEXhSrSFOrZN3DtWzjZsk,100
+-pyhdl_if-0.0.1.8772666438.dist-info/WHEEL,sha256=rY0Y6THYM7EImsHfF-zs67o8pQciAsMw9_YuSvftjrQ,148
++hdl_if/impl/tlm/stream_rsp.py,sha256=oCgkj5LZedPkV0y_dBstMtZMpSFQEHK_ZkhWvT-P1H8,1087
++pyhdl_if-0.0.1.8774156937.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
++pyhdl_if-0.0.1.8774156937.dist-info/METADATA,sha256=iIfnzqg0E6dda5l3dCbjRnosfksWOMp1E2fJJrXiVxk,411
++pyhdl_if-0.0.1.8774156937.dist-info/RECORD,,
++pyhdl_if-0.0.1.8774156937.dist-info/top_level.txt,sha256=pUgHcB-Jzzq6njBWigdxiNQ-iX2XDr9TvdkJ8_fERGA,7
++pyhdl_if-0.0.1.8774156937.dist-info/entry_points.txt,sha256=1E9TG7Ldku5J9z0z3MPKrqbEXhSrSFOrZN3DtWzjZsk,100
++pyhdl_if-0.0.1.8774156937.dist-info/WHEEL,sha256=rY0Y6THYM7EImsHfF-zs67o8pQciAsMw9_YuSvftjrQ,148
+```
+

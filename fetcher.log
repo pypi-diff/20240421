@@ -15011,3 +15011,36 @@
 [2024-04-21 19:37:49] INFO root fetch - processPackages [pmutt]: Remove: archive file [/home/abi/fetcher/tmp/pmutt-1.4.9.tar.gz]
 [2024-04-21 19:37:49] INFO root fetch - main [MainThread]: End processing [pmutt]: success
 [2024-04-21 19:37:49] INFO root fetch - main [MainThread]: Store serial: [22866996]
+[2024-04-21 19:39:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866996]
+[2024-04-21 19:39:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 19:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vbimagetotext
+[2024-04-21 19:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhdl-if
+[2024-04-21 19:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC559
+[2024-04-21 19:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cs2-battle-bot-api-client
+[2024-04-21 19:39:58] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-21 19:39:58] INFO root fetch - processPackages [pyhdl-if]: New version: [0.0.1.8774156937] Old Version: [0.0.1.8772666438]
+[2024-04-21 19:39:58] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/09/e1/13077bdf8a46b8db34269ebbd7ec2a1179ac4f4230cd17e17c6a86eaeb8e/pyhdl_if-0.0.1.8772666438-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 19:39:58] WARNING root fetch - processPackages [PythonTestLJC559]: Skipping, unable to determine old version
+[2024-04-21 19:39:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC559] error
+[2024-04-21 19:39:58] INFO root fetch - processPackages [vbimagetotext]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-21 19:39:58] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-21 19:39:59] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/74/23/204cc7afa938cda1a13f2fdc2653677acbc8077b92dede34cc66653fe9f9/vbimagetotext-0.1.0.tar.gz
+[2024-04-21 19:39:59] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-21 19:39:59] INFO root fetch - processPackages [pyhdl-if]: Downloading https://files.pythonhosted.org/packages/85/88/84d86c137ab22abbe28cfa34c302735432c3f130cd678f6bb1ce6e66c282/pyhdl_if-0.0.1.8774156937-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-21 19:39:59] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-21 19:39:59] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240421/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-21 19:39:59] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/3b/be/98b550c5073659930e9a674ef04a1094591884de26bbafc0b31b01921bea/vbimagetotext-0.1.1.tar.gz
+[2024-04-21 19:39:59] INFO root fetch - processPackages [pyhdl-if]: executing diffoscope
+[2024-04-21 19:39:59] INFO root fetch - processPackages [pyhdl-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_if-0.0.1.8772666438-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_if-0.0.1.8774156937-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240421/p/pyhdl-if/0.0.1.8772666438-0.0.1.8774156937/README.md --exclude *.pyd
+[2024-04-21 19:39:59] INFO root fetch - processPackages [vbimagetotext]: executing diffoscope
+[2024-04-21 19:39:59] INFO root fetch - processPackages [vbimagetotext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimagetotext-0.1.0.tar.gz tmp/vbimagetotext-0.1.1.tar.gz --markdown 20240421/v/vbimagetotext/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-21 19:40:00] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.0.tar.gz]
+[2024-04-21 19:40:00] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.1.tar.gz]
+[2024-04-21 19:40:00] INFO root fetch - main [MainThread]: End processing [vbimagetotext]: success
+[2024-04-21 19:40:00] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8772666438-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 19:40:00] INFO root fetch - processPackages [pyhdl-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_if-0.0.1.8774156937-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-21 19:40:00] INFO root fetch - main [MainThread]: End processing [pyhdl-if]: success
+[2024-04-21 19:40:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-21 19:40:00] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-21 19:40:00] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-21 19:40:00] INFO root fetch - main [MainThread]: Store serial: [22867013]
