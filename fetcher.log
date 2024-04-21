@@ -15922,3 +15922,45 @@
 [2024-04-21 20:34:23] INFO root fetch - processPackages [dtps-http]: Remove: archive file [/home/abi/fetcher/tmp/dtps_http-1.3.1-py3-none-any.whl.zip]
 [2024-04-21 20:34:23] INFO root fetch - main [MainThread]: End processing [dtps-http]: success
 [2024-04-21 20:34:23] INFO root fetch - main [MainThread]: Store serial: [22867443]
+[2024-04-21 20:36:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22867443]
+[2024-04-21 20:36:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 20:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expressmoney
+[2024-04-21 20:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: temmies
+[2024-04-21 20:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC579
+[2024-04-21 20:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsformatter
+[2024-04-21 20:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: student-vote-electionn
+[2024-04-21 20:36:32] INFO root fetch - processPackages [temmies]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-21 20:36:32] INFO root fetch - processPackages [student-vote-electionn]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-21 20:36:32] WARNING root fetch - processPackages [PythonTestLJC579]: Skipping, unable to determine old version
+[2024-04-21 20:36:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC579] error
+[2024-04-21 20:36:32] INFO root fetch - processPackages [temmies]: Downloading https://files.pythonhosted.org/packages/e3/de/001a0b3772b524faf1816a4a7b7a72a9df95d02a58657b2f1171ea7afe6d/temmies-1.0.1.tar.gz
+[2024-04-21 20:36:32] INFO root fetch - processPackages [student-vote-electionn]: Downloading https://files.pythonhosted.org/packages/d5/a3/42cf76050be7bd02afe87afadf10038a2ef752e0e917076c1961c1170f13/student_vote_electionn-0.0.2.tar.gz
+[2024-04-21 20:36:32] INFO root fetch - processPackages [tsformatter]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-21 20:36:32] INFO root fetch - processPackages [expressmoney]: New version: [9.9.1] Old Version: [9.9.0]
+[2024-04-21 20:36:33] INFO root fetch - processPackages [tsformatter]: Downloading https://files.pythonhosted.org/packages/66/4f/bf70c5256362eced35f649257e6599eef340b414a7df0a6271cb1c5c8836/tsformatter-0.2.0.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [expressmoney]: Downloading https://files.pythonhosted.org/packages/66/33/8e08f8dddb0b22a27da61c435f93c7d8f5ea098532ef8a9e21aba17fd4e9/expressmoney-9.9.0.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [temmies]: Downloading https://files.pythonhosted.org/packages/9c/2c/9b703e6dad1aa514898d69da32f684298ed8e08cfeddb576c9eb7bde7537/temmies-1.0.2.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [temmies]: executing diffoscope
+[2024-04-21 20:36:33] INFO root fetch - processPackages [temmies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/temmies-1.0.1.tar.gz tmp/temmies-1.0.2.tar.gz --markdown 20240421/t/temmies/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-21 20:36:33] INFO root fetch - processPackages [expressmoney]: Downloading https://files.pythonhosted.org/packages/68/85/baf2ff28a5cd675870802f90fab795c8d2bf16c7e6137edf5b738fc98d54/expressmoney-9.9.1.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [tsformatter]: Downloading https://files.pythonhosted.org/packages/a0/3a/f854d6101da5a87d7ea9014f8b4614a34e698515cd49f6285e0d4af21a20/tsformatter-0.2.1.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [expressmoney]: executing diffoscope
+[2024-04-21 20:36:33] INFO root fetch - processPackages [expressmoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expressmoney-9.9.0.tar.gz tmp/expressmoney-9.9.1.tar.gz --markdown 20240421/e/expressmoney/9.9.0-9.9.1/README.md --exclude *.pyd
+[2024-04-21 20:36:33] INFO root fetch - processPackages [tsformatter]: executing diffoscope
+[2024-04-21 20:36:33] INFO root fetch - processPackages [tsformatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsformatter-0.2.0.tar.gz tmp/tsformatter-0.2.1.tar.gz --markdown 20240421/t/tsformatter/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-21 20:36:33] INFO root fetch - processPackages [student-vote-electionn]: Downloading https://files.pythonhosted.org/packages/9b/80/ef2ef5ac07f7572679b4fd59faca602802ecf7ca8956de459a43cc0c144a/student_vote_electionn-0.0.3.tar.gz
+[2024-04-21 20:36:33] INFO root fetch - processPackages [student-vote-electionn]: executing diffoscope
+[2024-04-21 20:36:33] INFO root fetch - processPackages [student-vote-electionn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/student_vote_electionn-0.0.2.tar.gz tmp/student_vote_electionn-0.0.3.tar.gz --markdown 20240421/s/student-vote-electionn/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-21 20:36:34] INFO root fetch - processPackages [temmies]: Remove: archive file [/home/abi/fetcher/tmp/temmies-1.0.1.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - processPackages [temmies]: Remove: archive file [/home/abi/fetcher/tmp/temmies-1.0.2.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - main [MainThread]: End processing [temmies]: success
+[2024-04-21 20:36:34] INFO root fetch - processPackages [expressmoney]: Remove: archive file [/home/abi/fetcher/tmp/expressmoney-9.9.0.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - processPackages [expressmoney]: Remove: archive file [/home/abi/fetcher/tmp/expressmoney-9.9.1.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - main [MainThread]: End processing [expressmoney]: success
+[2024-04-21 20:36:34] INFO root fetch - processPackages [tsformatter]: Remove: archive file [/home/abi/fetcher/tmp/tsformatter-0.2.0.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - processPackages [tsformatter]: Remove: archive file [/home/abi/fetcher/tmp/tsformatter-0.2.1.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - main [MainThread]: End processing [tsformatter]: success
+[2024-04-21 20:36:34] INFO root fetch - processPackages [student-vote-electionn]: Remove: archive file [/home/abi/fetcher/tmp/student_vote_electionn-0.0.2.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - processPackages [student-vote-electionn]: Remove: archive file [/home/abi/fetcher/tmp/student_vote_electionn-0.0.3.tar.gz]
+[2024-04-21 20:36:34] INFO root fetch - main [MainThread]: End processing [student-vote-electionn]: success
+[2024-04-21 20:36:34] INFO root fetch - main [MainThread]: Store serial: [22867458]
