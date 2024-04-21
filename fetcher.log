@@ -4056,3 +4056,24 @@
 [2024-04-21 06:30:07] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
 [2024-04-21 06:30:07] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
 [2024-04-21 06:30:07] INFO root fetch - main [MainThread]: Store serial: [22861866]
+[2024-04-21 06:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861866]
+[2024-04-21 06:32:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeargument-python-version2
+[2024-04-21 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccxt
+[2024-04-21 06:32:15] INFO root fetch - processPackages [codeargument-python-version2]: New version: [2.1] Old Version: [2]
+[2024-04-21 06:32:15] INFO root fetch - processPackages [ccxt]: New version: [4.3.3] Old Version: [4.3.2]
+[2024-04-21 06:32:15] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/4d/e1/18afc31b1a8159ddb8da153fc4e6e05be13b72f1e390081aaf6a88e83331/ccxt-4.3.2.tar.gz
+[2024-04-21 06:32:15] INFO root fetch - processPackages [codeargument-python-version2]: Downloading https://files.pythonhosted.org/packages/c5/16/a8f44864387ed2b3c20a4aab58b39c4110c10a0fc1b710d7d4116fef533b/codeargument_python_version2-2.tar.gz
+[2024-04-21 06:32:16] INFO root fetch - processPackages [codeargument-python-version2]: Downloading https://files.pythonhosted.org/packages/c1/61/83878fe51f9d2c5027e15a081a8684f293419f804b55c1e58c29bb263525/codeargument_python_version2-2.1.tar.gz
+[2024-04-21 06:32:16] INFO root fetch - processPackages [codeargument-python-version2]: executing diffoscope
+[2024-04-21 06:32:16] INFO root fetch - processPackages [codeargument-python-version2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeargument_python_version2-2.tar.gz tmp/codeargument_python_version2-2.1.tar.gz --markdown 20240421/c/codeargument-python-version2/2-2.1/README.md --exclude *.pyd
+[2024-04-21 06:32:16] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/cc/eb/0a8c1d1e33b7891935640c5af22a6f151b01cab7e90c74a12338748a4ca0/ccxt-4.3.3.tar.gz
+[2024-04-21 06:32:16] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-04-21 06:32:16] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.2.tar.gz tmp/ccxt-4.3.3.tar.gz --markdown 20240421/c/ccxt/4.3.2-4.3.3/README.md --exclude *.pyd
+[2024-04-21 06:32:16] INFO root fetch - processPackages [codeargument-python-version2]: Remove: archive file [/home/abi/fetcher/tmp/codeargument_python_version2-2.tar.gz]
+[2024-04-21 06:32:16] INFO root fetch - processPackages [codeargument-python-version2]: Remove: archive file [/home/abi/fetcher/tmp/codeargument_python_version2-2.1.tar.gz]
+[2024-04-21 06:32:16] INFO root fetch - main [MainThread]: End processing [codeargument-python-version2]: success
+[2024-04-21 06:32:22] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.2.tar.gz]
+[2024-04-21 06:32:22] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.3.tar.gz]
+[2024-04-21 06:32:22] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-04-21 06:32:22] INFO root fetch - main [MainThread]: Store serial: [22861872]
