@@ -14472,3 +14472,21 @@
 [2024-04-21 18:58:32] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.5.tar.gz]
 [2024-04-21 18:58:32] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
 [2024-04-21 18:58:32] INFO root fetch - main [MainThread]: Store serial: [22866733]
+[2024-04-21 19:00:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22866733]
+[2024-04-21 19:00:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-21 19:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotify2ytmusic
+[2024-04-21 19:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: standard-asynchat
+[2024-04-21 19:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC545
+[2024-04-21 19:00:41] WARNING root fetch - processPackages [PythonTestLJC545]: Skipping, unable to determine old version
+[2024-04-21 19:00:41] WARNING root fetch - processPackages [standard-asynchat]: Skipping, unable to determine old version
+[2024-04-21 19:00:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC545] error
+[2024-04-21 19:00:41] INFO root fetch - main [MainThread]: End processing [standard-asynchat] error
+[2024-04-21 19:00:41] INFO root fetch - processPackages [spotify2ytmusic]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-21 19:00:41] INFO root fetch - processPackages [spotify2ytmusic]: Downloading https://files.pythonhosted.org/packages/74/30/6e5c12e5c357730602f852e3338969ce96caddb677d2cc838b2335987f88/spotify2ytmusic-0.9.8.tar.gz
+[2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: Downloading https://files.pythonhosted.org/packages/87/4b/659713391317a1e2c0fab89a593ce5d1e5f06d37c6d4c836b23ff6be913e/spotify2ytmusic-0.9.9.tar.gz
+[2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: executing diffoscope
+[2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify2ytmusic-0.9.8.tar.gz tmp/spotify2ytmusic-0.9.9.tar.gz --markdown 20240421/s/spotify2ytmusic/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: Remove: archive file [/home/abi/fetcher/tmp/spotify2ytmusic-0.9.8.tar.gz]
+[2024-04-21 19:00:42] INFO root fetch - processPackages [spotify2ytmusic]: Remove: archive file [/home/abi/fetcher/tmp/spotify2ytmusic-0.9.9.tar.gz]
+[2024-04-21 19:00:42] INFO root fetch - main [MainThread]: End processing [spotify2ytmusic]: success
+[2024-04-21 19:00:42] INFO root fetch - main [MainThread]: Store serial: [22866746]
