@@ -3269,3 +3269,39 @@
 [2024-04-21 05:03:28] INFO root fetch - processPackages [chainzpy]: Remove: archive file [/home/abi/fetcher/tmp/chainzpy-0.6.tar.gz]
 [2024-04-21 05:03:28] INFO root fetch - main [MainThread]: End processing [chainzpy]: success
 [2024-04-21 05:03:28] INFO root fetch - main [MainThread]: Store serial: [22861527]
+[2024-04-21 05:05:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861527]
+[2024-04-21 05:05:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 05:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mydev
+[2024-04-21 05:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: restcraft
+[2024-04-21 05:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seisgo
+[2024-04-21 05:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-payment-order
+[2024-04-21 05:05:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chainzpy
+[2024-04-21 05:05:38] WARNING root fetch - processPackages [restcraft]: Skipping, unable to determine old version
+[2024-04-21 05:05:38] INFO root fetch - main [MainThread]: End processing [restcraft] error
+[2024-04-21 05:05:38] INFO root fetch - processPackages [odoo-addon-account-payment-order]: New version: [17.0.1.1.0.3] Old Version: [17.0.1.1.0.2]
+[2024-04-21 05:05:38] INFO root fetch - processPackages [chainzpy]: New version: [0.6] Old Version: [0.5]
+[2024-04-21 05:05:38] INFO root fetch - processPackages [seisgo]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-21 05:05:38] WARNING root fetch - processPackages [mydev]: Skipping, unable to determine old version
+[2024-04-21 05:05:38] INFO root fetch - main [MainThread]: End processing [mydev] error
+[2024-04-21 05:05:38] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/46/d4/f26ad06bbeb2121a17121ff5685ccb563d81eb1b4b51b4fe3855be43c9fb/odoo_addon_account_payment_order-17.0.1.1.0.2-py3-none-any.whl
+[2024-04-21 05:05:38] INFO root fetch - processPackages [chainzpy]: Downloading https://files.pythonhosted.org/packages/bf/79/497a412890f5013d12ee692e44aa0f30877b0ecb3f20ac576893513d7cdd/chainzpy-0.5.tar.gz
+[2024-04-21 05:05:38] INFO root fetch - processPackages [seisgo]: Downloading https://files.pythonhosted.org/packages/2e/32/85628b8036ded609981df47fce643e900e483628ea536c10f26bdd0049e4/seisgo-0.8.0.tar.gz
+[2024-04-21 05:05:38] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/9a/ab/d0fc63ca31b3e3ea9a6999fe5feb5f659cfe1088268198c8c2574c495979/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl
+[2024-04-21 05:05:38] INFO root fetch - processPackages [chainzpy]: Downloading https://files.pythonhosted.org/packages/b7/8d/180d3a9129d7a7104a3efba85aecd604e18dcd585e7201a7a3e9f55b579b/chainzpy-0.6.tar.gz
+[2024-04-21 05:05:39] INFO root fetch - processPackages [chainzpy]: executing diffoscope
+[2024-04-21 05:05:39] INFO root fetch - processPackages [chainzpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainzpy-0.5.tar.gz tmp/chainzpy-0.6.tar.gz --markdown 20240421/c/chainzpy/0.5-0.6/README.md --exclude *.pyd
+[2024-04-21 05:05:39] INFO root fetch - processPackages [odoo-addon-account-payment-order]: executing diffoscope
+[2024-04-21 05:05:39] INFO root fetch - processPackages [odoo-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_order-17.0.1.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl.zip --markdown 20240421/o/odoo-addon-account-payment-order/17.0.1.1.0.2-17.0.1.1.0.3/README.md --exclude *.pyd
+[2024-04-21 05:05:39] INFO root fetch - processPackages [chainzpy]: Remove: archive file [/home/abi/fetcher/tmp/chainzpy-0.5.tar.gz]
+[2024-04-21 05:05:39] INFO root fetch - processPackages [chainzpy]: Remove: archive file [/home/abi/fetcher/tmp/chainzpy-0.6.tar.gz]
+[2024-04-21 05:05:39] INFO root fetch - main [MainThread]: End processing [chainzpy]: success
+[2024-04-21 05:05:39] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_order-17.0.1.1.0.2-py3-none-any.whl.zip]
+[2024-04-21 05:05:39] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl.zip]
+[2024-04-21 05:05:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-order]: success
+[2024-04-21 05:05:40] INFO root fetch - processPackages [seisgo]: Downloading https://files.pythonhosted.org/packages/c4/83/06062a0892c4686494568488b786cad5dc5059189c1e21ca4b94649bfdde/seisgo-0.8.1.tar.gz
+[2024-04-21 05:05:40] INFO root fetch - processPackages [seisgo]: executing diffoscope
+[2024-04-21 05:05:40] INFO root fetch - processPackages [seisgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seisgo-0.8.0.tar.gz tmp/seisgo-0.8.1.tar.gz --markdown 20240421/s/seisgo/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-21 05:05:42] INFO root fetch - processPackages [seisgo]: Remove: archive file [/home/abi/fetcher/tmp/seisgo-0.8.0.tar.gz]
+[2024-04-21 05:05:42] INFO root fetch - processPackages [seisgo]: Remove: archive file [/home/abi/fetcher/tmp/seisgo-0.8.1.tar.gz]
+[2024-04-21 05:05:42] INFO root fetch - main [MainThread]: End processing [seisgo]: success
+[2024-04-21 05:05:42] INFO root fetch - main [MainThread]: Store serial: [22861543]
