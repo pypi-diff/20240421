@@ -6136,3 +6136,48 @@
 [2024-04-21 09:42:17] WARNING root fetch - processPackages [ojcalc]: Skipping, unable to determine old version
 [2024-04-21 09:42:17] INFO root fetch - main [MainThread]: End processing [ojcalc] error
 [2024-04-21 09:42:17] INFO root fetch - main [MainThread]: Store serial: [22862849]
+[2024-04-21 09:44:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862849]
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-easily-auth
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC405
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-sanyao
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfineflow
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: met-annot-unifier
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: drawdraw
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: factorial-nhk
+[2024-04-21 09:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: intellipandora
+[2024-04-21 09:44:25] WARNING root fetch - processPackages [intellipandora]: Skipping, unable to determine old version
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: End processing [intellipandora] error
+[2024-04-21 09:44:25] WARNING root fetch - processPackages [nonebot-plugin-sanyao]: Skipping, unable to determine old version
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao] error
+[2024-04-21 09:44:25] INFO root fetch - processPackages [pyfineflow]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-21 09:44:25] WARNING root fetch - processPackages [met-annot-unifier]: Skipping, unable to determine old version
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: End processing [met-annot-unifier] error
+[2024-04-21 09:44:25] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/0e/19/8c9b5862486b7a2c1c5e0b57e91663467321bcac7a6a468ee5ea83da4a5e/pyfineflow-1.1.1.tar.gz
+[2024-04-21 09:44:25] INFO root fetch - processPackages [drf-easily-auth]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-21 09:44:25] WARNING root fetch - processPackages [PythonTestLJC405]: Skipping, unable to determine old version
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: End processing [PythonTestLJC405] error
+[2024-04-21 09:44:25] WARNING root fetch - processPackages [factorial-nhk]: Skipping, unable to determine old version
+[2024-04-21 09:44:25] INFO root fetch - main [MainThread]: End processing [factorial-nhk] error
+[2024-04-21 09:44:25] INFO root fetch - processPackages [drawdraw]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/9c/6e/3c73f707ad50b0424934b5877079eacef7d1482d7af7dd0957ee3b48e5f1/drawdraw-0.0.3-py3-none-any.whl
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drf-easily-auth]: Downloading https://files.pythonhosted.org/packages/70/8c/9000e85e7d852639d623af2d05db33a854650b8f1ba439fd127f9887837c/drf_easily_auth-0.1.5.tar.gz
+[2024-04-21 09:44:26] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/35/c1/2afc1529fd5e9e13215328356935736b3accaada8ddc7aa6b188aa78e88b/pyfineflow-1.1.2.tar.gz
+[2024-04-21 09:44:26] INFO root fetch - processPackages [pyfineflow]: executing diffoscope
+[2024-04-21 09:44:26] INFO root fetch - processPackages [pyfineflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfineflow-1.1.1.tar.gz tmp/pyfineflow-1.1.2.tar.gz --markdown 20240421/p/pyfineflow/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: Downloading https://files.pythonhosted.org/packages/51/d0/ac10d75469512624bc7863b7635edc79cbf8ba05571a8e2124e02abb6965/drawdraw-0.0.4-py3-none-any.whl
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drf-easily-auth]: Downloading https://files.pythonhosted.org/packages/f7/2f/47128c284b7863ff1e4ec8277f32ed94624dbca58fdd0e6356dd5b412afd/drf_easily_auth-0.1.6.tar.gz
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: executing diffoscope
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawdraw-0.0.3-py3-none-any.whl.zip tmp/drawdraw-0.0.4-py3-none-any.whl.zip --markdown 20240421/d/drawdraw/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drf-easily-auth]: executing diffoscope
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drf-easily-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_easily_auth-0.1.5.tar.gz tmp/drf_easily_auth-0.1.6.tar.gz --markdown 20240421/d/drf-easily-auth/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-21 09:44:26] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.1.1.tar.gz]
+[2024-04-21 09:44:26] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.1.2.tar.gz]
+[2024-04-21 09:44:26] INFO root fetch - main [MainThread]: End processing [pyfineflow]: success
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.3-py3-none-any.whl.zip]
+[2024-04-21 09:44:26] INFO root fetch - processPackages [drawdraw]: Remove: archive file [/home/abi/fetcher/tmp/drawdraw-0.0.4-py3-none-any.whl.zip]
+[2024-04-21 09:44:26] INFO root fetch - main [MainThread]: End processing [drawdraw]: success
+[2024-04-21 09:44:27] INFO root fetch - processPackages [drf-easily-auth]: Remove: archive file [/home/abi/fetcher/tmp/drf_easily_auth-0.1.5.tar.gz]
+[2024-04-21 09:44:27] INFO root fetch - processPackages [drf-easily-auth]: Remove: archive file [/home/abi/fetcher/tmp/drf_easily_auth-0.1.6.tar.gz]
+[2024-04-21 09:44:27] INFO root fetch - main [MainThread]: End processing [drf-easily-auth]: success
+[2024-04-21 09:44:27] INFO root fetch - main [MainThread]: Store serial: [22862877]
