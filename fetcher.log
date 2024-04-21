@@ -10547,3 +10547,36 @@
 [2024-04-21 15:22:40] INFO root fetch - processPackages [caliber]: Remove: archive file [/home/abi/fetcher/tmp/caliber-0.1.9.tar.gz]
 [2024-04-21 15:22:40] INFO root fetch - main [MainThread]: End processing [caliber]: success
 [2024-04-21 15:22:40] INFO root fetch - main [MainThread]: Store serial: [22864897]
+[2024-04-21 15:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864897]
+[2024-04-21 15:24:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-21 15:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ppnnxe
+[2024-04-21 15:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feature-space
+[2024-04-21 15:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edurpa-google
+[2024-04-21 15:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astabc
+[2024-04-21 15:24:49] INFO root fetch - processPackages [astabc]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-21 15:24:49] INFO root fetch - processPackages [edurpa-google]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-21 15:24:49] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/1e/f2/1d4d43c331adaeeee0bfee3114e9d19aaf9e9d2fe6dc0e7d8486fbfc197b/astabc-0.1.8.tar.gz
+[2024-04-21 15:24:49] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/b5/1d/bd7f83312577aedf3d093fbadf5869751613172b61e8c01e9c8bd22ffa32/edurpa_google-1.0.8-py3-none-any.whl
+[2024-04-21 15:24:49] WARNING root fetch - processPackages [ppnnxe]: Skipping, unable to determine old version
+[2024-04-21 15:24:49] INFO root fetch - main [MainThread]: End processing [ppnnxe] error
+[2024-04-21 15:24:49] INFO root fetch - processPackages [feature-space]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-21 15:24:49] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/1a/0d/ca043915b369867cdee8f41f56b650fef276eb4732bbb940548056d7af1d/feature_space-0.0.1.tar.gz
+[2024-04-21 15:24:49] INFO root fetch - processPackages [edurpa-google]: Downloading https://files.pythonhosted.org/packages/bb/71/dfe1df90fc3be3127f87aecadd2ca6fd0a1e813f579c1fd383cfaaea0a8b/edurpa_google-1.0.9-py3-none-any.whl
+[2024-04-21 15:24:49] INFO root fetch - processPackages [edurpa-google]: executing diffoscope
+[2024-04-21 15:24:49] INFO root fetch - processPackages [edurpa-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa_google-1.0.8-py3-none-any.whl.zip tmp/edurpa_google-1.0.9-py3-none-any.whl.zip --markdown 20240421/e/edurpa-google/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-21 15:24:49] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/20/b6/fc8c192705d2493ea558b2c7dfe4d4b24f9fa2f78e6b0abb6698dfb5b4f8/astabc-0.1.9.tar.gz
+[2024-04-21 15:24:49] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-21 15:24:49] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.8.tar.gz tmp/astabc-0.1.9.tar.gz --markdown 20240421/a/astabc/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-21 15:24:49] INFO root fetch - processPackages [feature-space]: Downloading https://files.pythonhosted.org/packages/5c/71/d7f73baba1f162cddecb316241b3364ff2bfcbbf0aff1cd6af5ee658d97e/feature_space-0.0.2.tar.gz
+[2024-04-21 15:24:50] INFO root fetch - processPackages [edurpa-google]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_google-1.0.8-py3-none-any.whl.zip]
+[2024-04-21 15:24:50] INFO root fetch - processPackages [edurpa-google]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_google-1.0.9-py3-none-any.whl.zip]
+[2024-04-21 15:24:50] INFO root fetch - main [MainThread]: End processing [edurpa-google]: success
+[2024-04-21 15:24:50] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.8.tar.gz]
+[2024-04-21 15:24:50] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.9.tar.gz]
+[2024-04-21 15:24:50] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-21 15:24:50] INFO root fetch - processPackages [feature-space]: executing diffoscope
+[2024-04-21 15:24:50] INFO root fetch - processPackages [feature-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_space-0.0.1.tar.gz tmp/feature_space-0.0.2.tar.gz --markdown 20240421/f/feature-space/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-21 15:24:50] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.1.tar.gz]
+[2024-04-21 15:24:50] INFO root fetch - processPackages [feature-space]: Remove: archive file [/home/abi/fetcher/tmp/feature_space-0.0.2.tar.gz]
+[2024-04-21 15:24:50] INFO root fetch - main [MainThread]: End processing [feature-space]: success
+[2024-04-21 15:24:50] INFO root fetch - main [MainThread]: Store serial: [22864907]
