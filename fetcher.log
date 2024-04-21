@@ -2897,3 +2897,18 @@
 [2024-04-21 04:26:38] INFO root fetch - processPackages [openmc-geometry-plot]: Remove: archive file [/home/abi/fetcher/tmp/openmc_geometry_plot-0.4.3.tar.gz]
 [2024-04-21 04:26:38] INFO root fetch - main [MainThread]: End processing [openmc-geometry-plot]: success
 [2024-04-21 04:26:38] INFO root fetch - main [MainThread]: Store serial: [22861369]
+[2024-04-21 04:28:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861369]
+[2024-04-21 04:28:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 04:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC334
+[2024-04-21 04:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wagtail-fedit
+[2024-04-21 04:28:46] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.5.3rc6] Old Version: [1.5.3rc5]
+[2024-04-21 04:28:46] WARNING root fetch - processPackages [PythonTestLJC334]: Skipping, unable to determine old version
+[2024-04-21 04:28:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC334] error
+[2024-04-21 04:28:46] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/40/43/59252f07110e41ff047e2ee10e9d1687fa11ef3b35ff3b7fcaf25c28982c/wagtail_fedit-1.5.3rc5.tar.gz
+[2024-04-21 04:28:46] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/a1/82/fdb440f76db526bb21addeb9875020388b8fbac7c8d702ab13fa6511e002/wagtail_fedit-1.5.3rc6.tar.gz
+[2024-04-21 04:28:46] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-21 04:28:46] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.5.3rc5.tar.gz tmp/wagtail_fedit-1.5.3rc6.tar.gz --markdown 20240421/w/wagtail-fedit/1.5.3rc5-1.5.3rc6/README.md --exclude *.pyd
+[2024-04-21 04:28:47] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc5.tar.gz]
+[2024-04-21 04:28:47] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.3rc6.tar.gz]
+[2024-04-21 04:28:47] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-21 04:28:47] INFO root fetch - main [MainThread]: Store serial: [22861376]
