@@ -9050,3 +9050,41 @@
 [2024-04-21 13:37:25] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-21 13:37:25] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-21 13:37:25] INFO root fetch - main [MainThread]: Store serial: [22864046]
+[2024-04-21 13:39:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22864046]
+[2024-04-21 13:39:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-21 13:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: that-depends
+[2024-04-21 13:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2024-04-21 13:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-21
+[2024-04-21 13:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clickbait-commit-messages
+[2024-04-21 13:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: absbox
+[2024-04-21 13:39:34] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-21 13:39:34] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-21 13:39:34] WARNING root fetch - processPackages [clickbait-commit-messages]: Skipping, unable to determine old version
+[2024-04-21 13:39:34] INFO root fetch - main [MainThread]: End processing [clickbait-commit-messages] error
+[2024-04-21 13:39:34] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-21 13:39:34] INFO root fetch - processPackages [that-depends]: New version: [1.6.0] Old Version: [1.5.3]
+[2024-04-21 13:39:34] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240421] Old Version: [2.5.0b20240420]
+[2024-04-21 13:39:34] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-21 13:39:35] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/c6/2c/0d77ee6bc0d7b091b0c749dc8e20002536a818715d17c6ba30d269c7a696/that_depends-1.5.3.tar.gz
+[2024-04-21 13:39:35] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/a5/3d/2edf315b44d4e97c04c589914fb4c62317340b9511f99edffc714d474a2e/bigdl_core_xe_21-2.5.0b20240420-cp39-cp39-win_amd64.whl
+[2024-04-21 13:39:35] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-21 13:39:35] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 28724935>=10485760
+[2024-04-21 13:39:35] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-21 13:39:35] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-21 13:39:35] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240421/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-21 13:39:35] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/2a/25/29085a099218593f0db1721952c914dac5a810f2141f58526725b9bb5fb6/that_depends-1.6.0.tar.gz
+[2024-04-21 13:39:35] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-21 13:39:35] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-04-21 13:39:35] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.5.3.tar.gz tmp/that_depends-1.6.0.tar.gz --markdown 20240421/t/that-depends/1.5.3-1.6.0/README.md --exclude *.pyd
+[2024-04-21 13:39:35] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-21 13:39:35] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240421/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-21 13:39:36] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-21 13:39:36] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-21 13:39:36] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-21 13:39:36] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.5.3.tar.gz]
+[2024-04-21 13:39:36] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.6.0.tar.gz]
+[2024-04-21 13:39:36] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-04-21 13:39:46] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-21 13:39:46] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-21 13:39:46] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-21 13:39:46] INFO root fetch - main [MainThread]: Store serial: [22864061]
