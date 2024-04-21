@@ -4018,3 +4018,17 @@
 [2024-04-21 06:21:31] INFO root fetch - processPackages [gmaps-avoid-swiss]: Remove: archive file [/home/abi/fetcher/tmp/gmaps_avoid_swiss-0.1.6.tar.gz]
 [2024-04-21 06:21:31] INFO root fetch - main [MainThread]: End processing [gmaps-avoid-swiss]: success
 [2024-04-21 06:21:31] INFO root fetch - main [MainThread]: Store serial: [22861857]
+[2024-04-21 06:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861857]
+[2024-04-21 06:23:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-21 06:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22861857]
+[2024-04-21 06:25:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-21 06:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TkEasyGUI
+[2024-04-21 06:25:45] INFO root fetch - processPackages [TkEasyGUI]: New version: [0.2.55] Old Version: [0.2.49]
+[2024-04-21 06:25:45] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/32/f7/a7d210d3355fb9efe87390ce3a33a8a53818de1bae9fc21f5aa2619b067c/tkeasygui-0.2.49.tar.gz
+[2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/f0/f1/cc0f3140fd14ec268cd017a4c5f7765b91d000416b3d2aacb58a981ff6ab/tkeasygui-0.2.55.tar.gz
+[2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: executing diffoscope
+[2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkeasygui-0.2.49.tar.gz tmp/tkeasygui-0.2.55.tar.gz --markdown 20240421/T/TkEasyGUI/0.2.49-0.2.55/README.md --exclude *.pyd
+[2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.49.tar.gz]
+[2024-04-21 06:25:46] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.55.tar.gz]
+[2024-04-21 06:25:46] INFO root fetch - main [MainThread]: End processing [TkEasyGUI]: success
+[2024-04-21 06:25:46] INFO root fetch - main [MainThread]: Store serial: [22861860]
