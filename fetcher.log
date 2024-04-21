@@ -5664,3 +5664,18 @@
 [2024-04-21 09:03:10] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240419.tar.gz]
 [2024-04-21 09:03:10] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-04-21 09:03:10] INFO root fetch - main [MainThread]: Store serial: [22862631]
+[2024-04-21 09:05:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22862631]
+[2024-04-21 09:05:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-21 09:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Pruning-Engine-SFSU-MICLab
+[2024-04-21 09:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: osu.py
+[2024-04-21 09:05:19] WARNING root fetch - processPackages [Pruning-Engine-SFSU-MICLab]: Skipping, unable to determine old version
+[2024-04-21 09:05:19] INFO root fetch - main [MainThread]: End processing [Pruning-Engine-SFSU-MICLab] error
+[2024-04-21 09:05:19] INFO root fetch - processPackages [osu.py]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-04-21 09:05:19] INFO root fetch - processPackages [osu.py]: Downloading https://files.pythonhosted.org/packages/07/39/daf4b9d60187d3d536805dcecab13fdcccaf00402d47a6508acb9391feba/osu.py-1.2.0.tar.gz
+[2024-04-21 09:05:19] INFO root fetch - processPackages [osu.py]: Downloading https://files.pythonhosted.org/packages/32/30/a42d7288829af67fad28735f3655625acb2e38bb198461f221d917314cce/osu_py-2.0.0.tar.gz
+[2024-04-21 09:05:19] INFO root fetch - processPackages [osu.py]: executing diffoscope
+[2024-04-21 09:05:19] INFO root fetch - processPackages [osu.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240421:/home/abi/fetcher/20240421:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osu.py-1.2.0.tar.gz tmp/osu_py-2.0.0.tar.gz --markdown 20240421/o/osu.py/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-04-21 09:05:20] INFO root fetch - processPackages [osu.py]: Remove: archive file [/home/abi/fetcher/tmp/osu.py-1.2.0.tar.gz]
+[2024-04-21 09:05:20] INFO root fetch - processPackages [osu.py]: Remove: archive file [/home/abi/fetcher/tmp/osu_py-2.0.0.tar.gz]
+[2024-04-21 09:05:20] INFO root fetch - main [MainThread]: End processing [osu.py]: success
+[2024-04-21 09:05:20] INFO root fetch - main [MainThread]: Store serial: [22862640]
